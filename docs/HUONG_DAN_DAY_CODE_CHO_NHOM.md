@@ -19,9 +19,11 @@ File của Tấn trên nhánh riêng vẫn nằm ở `src/LietKe.cpp`; sau khi g
 Các tên file dưới đây chỉ là ví dụ để hiểu vị trí đặt code theo phân công, không phải bộ khung bắt buộc:
 
 - **Thành:** `src/DocGia.h`, `src/DocGia.cpp`, `src/MuonTra.h`, `src/MuonTra.cpp`; điều phối `src/main.cpp`.
-- **Thái:** `src/Sach.h`, `src/Sach.cpp`, `src/ThongKe.h`, `src/ThongKe.cpp`; phụ trách chính `src/GiaoDien.h`, `src/GiaoDien.cpp`.
+- **Thái:** `src/Sach.h`, `src/Sach.cpp`, `src/ThongKe.h`, `src/ThongKe.cpp`, gồm giao diện phần mình.
 - **Tấn:** `src/LietKe.h`, `src/LietKe.cpp`, `src/Menu.h`, `src/Menu.cpp`.
 - **Dùng chung:** `src/KhaiBao.h`, do cả nhóm thống nhất và Thành điều phối thay đổi.
+
+Mỗi người tự làm giao diện chức năng mình phụ trách. Nếu nhóm tách file giao diện dùng chung, cả ba tự thống nhất tên file và người phụ trách từng phần; không mặc định giao file đó cho Thái. Báo nhau trước khi sửa cùng một file để dễ review và ghép.
 
 **Mỗi người tự thiết kế và tạo file khi cần; nhóm tự thống nhất tên và cách chia.** Đọc [hướng đi tự làm](HUONG_DI_TU_LAM_CHO_TUNG_THANH_VIEN.md) trước khi bắt đầu. Repo giữ bản khai báo nhóm tự viết `src/CODE-ĐỒ-ÁN-THƯ-VIỆN-DSA.cpp`; không có bộ hàm AI để điền. Nhóm tự thống nhất cách tách khai báo dùng chung, không chép struct thành nhiều bản khác nhau. Khi file đã có thì sửa file đó, không thêm hậu tố `final`, `v2`, `moi_nhat` để giữ nhiều bản song song. Git lưu lịch sử thay đổi.
 

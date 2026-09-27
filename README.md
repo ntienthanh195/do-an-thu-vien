@@ -5,10 +5,12 @@
 ## Thành viên và nhiệm vụ
 
 - **Thành:** a, f, g; độc giả, mượn–trả, ngày tháng, đọc/ghi độc giả và lịch sử; điều phối tích hợp.
-- **Thái:** c, e, i, j; sách, thống kê, đọc/ghi sách; phụ trách chính bộ hỗ trợ giao diện console.
+- **Thái:** c, e, i, j; sách, thống kê, đọc/ghi sách và giao diện các chức năng tương ứng.
 - **Tấn:** b, d, h; liệt kê dữ liệu và màn hình tương ứng; menu chính. Làm lần lượt h, b theo mã, b theo tên+họ, d.
 
 Chi tiết ở [phân công nhóm](docs/PHAN_CONG_DO_AN_THU_VIEN.md), phần A. Phần B là lịch sử mốc khai báo, không thay phân công hiện hành.
+
+**Giao diện console:** cả ba tự làm màn hình phần mình (Thành: a, f, g; Thái: c, e, i, j; Tấn: b, d, h và menu). Cùng thống nhất bố cục, phím và các phần dùng chung; chia người phụ trách từng phần dùng chung khi có nhu cầu, không mặc định dồn cho Thái.
 
 ## Yêu cầu cấu trúc
 

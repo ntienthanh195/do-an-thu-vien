@@ -36,7 +36,7 @@ Tự xây các màn hình thuộc a, f, g trên quy ước console chung. Phối
 
 ## 2. Thái — từ đầu sách/cuốn sách đến thống kê
 
-**Đích cần làm được:** c, e, i, j; đọc/ghi sách; màn hình tương ứng; phụ trách chính các thành phần console dùng chung, có Thành hỗ trợ.
+**Đích cần làm được:** c, e, i, j; đọc/ghi sách và tự làm các màn hình tương ứng. Các thành phần console dùng chung do cả ba thống nhất và chia việc theo nhu cầu, không mặc định Thái phụ trách chính.
 
 ### Mốc đầu: dữ liệu sách và tra cứu
 
@@ -82,7 +82,7 @@ Nếu còn thiếu nền cây hoặc sắp xếp, học đúng phần đang cầ
 
 ### Menu và màn hình
 
-Dùng các thành phần console mà nhóm thống nhất để làm menu chính và màn hình b, d, h. Chốt với Thành cách chuyển màn hình, quay lại và thoát. Dữ liệu dài phải xem được đầy đủ; phạm vi nào chưa có điều hướng/phân trang thì ghi rõ.
+Tấn tự thiết kế và cài giao diện menu chính, màn hình b, d, h theo quy ước nhóm; cùng tham gia xây dựng phần console dùng chung phù hợp khả năng. Chốt với Thành cách chuyển màn hình, quay lại và thoát. Dữ liệu dài phải xem được đầy đủ; phạm vi nào chưa có điều hướng/phân trang thì ghi rõ. Không cần chờ Thái làm sẵn toàn bộ giao diện mới bắt đầu.
 
 **Cần trao đổi trước khi viết riêng:** cách tìm độc giả; cách truy cập lịch sử và tìm tên sách; cách đọc dữ liệu mà không sửa trạng thái; cách sử dụng phím, bảng và thông báo của nhóm.
 
