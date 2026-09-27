@@ -99,6 +99,61 @@ Một PR dễ review cần có mục tiêu, phạm vi thực tế, phần phụ 
 
 Thành điều phối ghép; Thái review phần Thành, Thành review phần Thái; PR của Tấn được Thành review dữ liệu độc giả/lịch sử hoặc Thái review dữ liệu sách. Sau góp ý, tác giả sửa và push tiếp trên cùng nhánh. Sau khi ghép, cập nhật main trước khối mới. Giữ quy trình nhánh riêng → PR → review → ghép, không push thẳng main.
 
-## 6. Điều chỉnh so với danh sách mốc cũ
+## 6. Lịch triển khai và luyện vấn đáp đến kỳ thi tháng 12/2026
+
+Lịch nhóm thống nhất ngày 27/09/2026, dựa trên dự kiến thi giữa tháng 12; chưa phải lịch thi chính thức của thầy. Các ngày dưới đây đều thuộc năm 2026. Đối chiếu lịch học/lịch thi thực tế để trao đổi điều chỉnh sớm, không tự kéo dài khi sát hạn. Đây là mục tiêu công việc, không xác nhận phần nào đã hoàn thành.
+
+**Hai hạn chính: đủ chức năng vào 31/10; ổn định bản nộp chậm nhất 15/11.** Nửa đầu tháng 11 là khoảng đệm kiểm thử và sửa lỗi, không phải thời gian mặc định để bắt đầu các chức năng còn thiếu. Luyện giải thích khi review xuyên suốt; tháng 11 tập trung đọc code của nhau và vấn đáp.
+
+### 27/09–04/10 — nền chung và dữ liệu dùng thử
+
+- **Thành:** cùng Thái chốt định dạng và quan hệ mã; chuẩn bị mẫu độc giả/lịch sử và phần đọc tối thiểu vào đúng cấu trúc.
+- **Thái:** cùng Thành chốt định dạng; chuẩn bị mẫu đầu sách/cuốn sách và phần đọc tối thiểu. Cung cấp cách tra cứu dữ liệu sách cho Thành/Tấn khi đã sẵn sàng.
+- **Tấn:** tìm hiểu cấu trúc chung, chuẩn bị yêu cầu/màn hình và dữ liệu thử cho h; tự làm menu cơ bản sau khi thống nhất điều hướng. Hỗ trợ tạo mẫu theo định dạng đã chốt.
+- **Cả ba:** thống nhất môi trường biên dịch, cách chạy, quy ước console và giao tiếp giữa các phần. Chuẩn C++ đang hoãn xác định cần được chốt ở mốc này sau khi kiểm tra môi trường; tài liệu này không tự ấn định một chuẩn.
+- **Điểm kiểm tra:** có bộ nhỏ khớp mã và kết quả đối chiếu, đọc được vào cấu trúc; tiếp đó bổ sung bộ dài hợp lệ để thử chức năng. Ai có phần dữ liệu trước thì push nhánh trước, không đợi 04/10 hoặc đợi đủ mọi file mới chia sẻ; ghi rõ phần chưa thử/chưa khớp.
+
+### 05–18/10 — hoàn thành khối nền và ghép chạy sớm
+
+- **Thành:** khối A — quản lý độc giả, đọc/ghi dữ liệu liên quan và màn hình; cung cấp phần ngày dùng chung sớm cho Thái, không chờ xong toàn bộ mượn–trả.
+- **Thái:** khối A — quản lý sách, tìm kiếm, đọc/ghi và màn hình; bàn giao tra cứu sách sớm nếu Thành/Tấn đang cần.
+- **Tấn:** khối A — h và menu cơ bản; làm tiếp khối B khi đủ dữ liệu và nền kiến thức. Thành/Thái hỗ trợ giải thích phần phụ thuộc, Tấn tự cài phần mình.
+- **Điểm kiểm tra:** các khối nền có thể chạy thử bằng dữ liệu chung và có luồng ghép ban đầu. Thành thực hiện khối C xuyên suốt; mỗi tác giả sửa lỗi phần mình. Không chờ cả ba xong mới ghép.
+
+### 19–31/10 — đủ a–j và các màn hình tương ứng
+
+- **Thành:** hoàn thành khối B — ngày tháng, mượn–trả và màn hình; tiếp tục khối C để nối nạp/lưu/thoát và các phần của nhóm.
+- **Thái:** hoàn thành khối B — thống kê quá hạn, top 10 và màn hình; dùng quy tắc đã làm rõ và phần ngày chung.
+- **Tấn:** hoàn thành khối B/C — cả hai cách xem độc giả, liệt kê đầu sách theo thể loại/tên, xem dữ liệu dài và nối menu.
+- **Đích 31/10:** bản chung chạy được a–j với màn hình, dữ liệu mẫu và đọc/ghi; đã thử trong phạm vi từng chức năng. Có thể còn lỗi cần sửa nhưng không còn nguyên phân hệ chưa triển khai. Push hoặc mở PR chưa đủ để ghi đạt mốc.
+
+### 01–15/11 — kiểm thử tổng hợp, sửa lỗi và luyện song song
+
+- **Cả ba:** kiểm tra dữ liệu dài, nhập sai, chuỗi mượn–trả, trạng thái giữa sách/lịch sử và lưu–tắt–mở lại; kiểm tra toàn bộ điều hướng console.
+- **Thành:** điều phối kiểm tra bản ghép; **Thái và Tấn:** cùng kiểm tra, tự sửa phần phụ trách. Không dồn mọi lỗi cho Thành.
+- Bắt đầu các buổi đọc và truy vết code của nhau; mỗi người giải thích phần mình và học cách các phần khác kết nối.
+- **Đích 15/11:** chốt bản ổn định đã đối chiếu yêu cầu, ghi rõ lỗi/giới hạn còn tồn tại nếu có; không gọi bản còn lỗi bắt buộc là đã hoàn tất. Hạn chế đổi thiết kế lớn sau mốc này; lỗi ảnh hưởng tính đúng hoặc yêu cầu vẫn phải sửa và kiểm thử lại.
+
+### 16–30/11 — tập trung hiểu code và bảo vệ đồ án
+
+- Thành, Thái và Tấn luân phiên vai chạy chương trình, đặt câu hỏi và theo dõi code; đổi vai qua các buổi.
+- Luyện giải thích cấu trúc/thuật toán, truy vết ca khó có nhiều điều kiện, tìm lỗi và tự sửa phần ngắn rồi kiểm thử lại. Hỏi trên đúng phiên bản code của nhóm.
+- Cả ba học phần kết nối và code của nhau, không chỉ thuộc phần mình viết. Người giải thích được code đồng đội không được ghi là tác giả phần đó.
+- Ghi ngắn phần còn yếu để luyện lại; không xem việc tham gia buổi luyện là bằng chứng đã hiểu toàn bộ.
+
+### 01/12 đến trước ngày thi — thi thử và kiểm tra bản nộp
+
+- Thi thử theo hình thức thầy đã thông báo; luyện lại phần còn yếu, không tự giả định quy chế cho phép trả lời thay đồng đội.
+- Chạy bản dự kiến nộp trên môi trường trình bày, kiểm tra dữ liệu đi kèm và hướng dẫn chạy.
+- Tránh thêm tính năng ngoài đề sát ngày thi. Nếu sửa lỗi, kiểm thử lại luồng bị ảnh hưởng và cập nhật đúng bản dùng chung.
+
+### Nhịp theo dõi để không trễ mốc
+
+- Mỗi tuần cả ba có một buổi kiểm tra ngắn, tự thống nhất giờ phù hợp: phần đã chạy được, kết quả thử, điểm đang kẹt và người cần hỗ trợ. Ghi ngắn kết quả thực tế cùng link nhánh/PR để nhóm theo dõi.
+- Báo ngay khi có nguy cơ trễ hoặc phần phụ thuộc chặn người khác; không đợi tới ngày hết hạn. Trao đổi cách hỗ trợ/điều chỉnh công việc và ghi lại nếu đổi mốc, không âm thầm lùi lịch.
+- Mốc là hạn có kết quả để kiểm tra, không phải ngày duy nhất được push. Giữ điểm dừng tự nhiên, chia sẻ sớm phần đã sẵn sàng, không ép push sau từng hàm và không đặt số PR bắt buộc.
+- Giữ quy trình nhánh riêng → PR → review → ghép main. Dữ liệu, code và kết quả kiểm thử phải được mô tả đúng trạng thái thực tế.
+
+## 7. Điều chỉnh so với danh sách mốc cũ
 
 Các mã THANH-01…08, THAI-01…06, TAN-01…05 trong phiên bản trước được thay bằng các khối A/B/C ở trên. Nội dung công việc vẫn giữ, chỉ đổi nhịp bàn giao để không ép dừng sau từng chức năng nhỏ. Không có tiến độ, điểm hay bằng chứng độc lập nào được tạo hoặc xóa do việc gộp mốc.

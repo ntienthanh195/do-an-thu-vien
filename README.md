@@ -29,6 +29,8 @@ Chưa chốt cấu hình build và định dạng dữ liệu. Nhóm sẽ bổ s
 
 **Chia việc để gửi PR sớm:** xem [Nhóm công việc và mốc PR của cả ba thành viên](docs/NHOM_CONG_VIEC_VA_MOC_PR.md). Mỗi nhóm việc có phạm vi, phụ thuộc và điều kiện bàn giao; không đợi code xong toàn bộ mới push.
 
+**Lịch nhóm đến kỳ thi:** mục 6 trong tài liệu trên ghi lịch cụ thể cho Thành, Thái và Tấn: có nền dữ liệu trước 04/10, đủ chức năng vào 31/10, ổn định bản nộp chậm nhất 15/11/2026. Tháng 11 tập trung kiểm thử và luyện vấn đáp, đầu tháng 12 thi thử/kiểm tra bản nộp. Đây là mục tiêu dựa trên dự kiến thi giữa tháng 12, chưa phải tiến độ hoàn thành hoặc lịch thi chính thức.
+
 **Bắt đầu triển khai:** đọc [Hướng đi tự làm cho từng thành viên](docs/HUONG_DI_TU_LAM_CHO_TUNG_THANH_VIEN.md). Mỗi người tự thiết kế, tạo file, đặt tên hàm và viết code từ yêu cầu; repo không cung cấp bộ khung hàm để điền. Cả nhóm thống nhất cách gọi giữa các phần trước khi làm riêng.
 
 **Thái và Tấn đọc trước:** [Hướng dẫn đặt file và đẩy code từng bước](docs/HUONG_DAN_DAY_CODE_CHO_NHOM.md) — vị trí file, GitHub Desktop, tạo nhánh, commit, push và gửi yêu cầu ghép.
