@@ -30,7 +30,7 @@ Tự cài và tự đề xuất ca kiểm thử có kết quả mong đợi. Ch�
 
 ### Giao diện và phối hợp
 
-Tự xây các màn hình thuộc a, f, g trên quy ước console chung. Phối hợp với Tấn khi cần hiển thị sách đang mượn, với Thái khi cần tra sách và tính thống kê. Điều phối nạp/lưu/thoát và ghép chương trình, không làm thay toàn bộ chức năng của hai bạn.
+Thành tự xây các màn hình thuộc a, f, g trên quy ước console chung. Phối hợp với Tấn khi cần hiển thị sách đang mượn, với Thái khi cần tra sách và tính thống kê. Thành điều phối nạp/lưu/thoát và ghép chương trình; Thái và Tấn tự thực hiện, tự sửa chức năng mình phụ trách.
 
 **Cần trao đổi trước khi viết riêng:** Tấn/Thái cần lấy thông tin độc giả/lịch sử gì; phần nào được sửa; kết quả khi không tìm thấy; phần ngày dùng chung; ai quản lý và giải phóng dữ liệu liên quan.
 
@@ -46,8 +46,8 @@ Tự xây các màn hình thuộc a, f, g trên quy ước console chung. Phối
 
 - **Cần đạt:** nhập được thông tin theo đề, cấp mã cuốn duy nhất và giữ danh sách đầu sách tăng theo tên. Thái tự làm màn hình nhập và thông báo kết quả.
 - **Tự quyết định:** cách chia xử lý, cấp mã, tra cứu và tổ chức file; giải thích lựa chọn theo ràng buộc đề, không tự thay cấu trúc.
-- **Phối hợp:** Thành cần tìm cuốn để mượn/trả; Tấn cần lấy tên đầu sách theo mã cuốn và đọc danh sách đầu sách. Thái đề xuất cách các bạn sử dụng phần mình, không viết thay chức năng của các bạn.
-- **Bàn giao/chuyển mốc:** code đúng phạm vi đã nhận, dữ liệu thử do Thái chọn cùng kết quả mong đợi/thực tế; các bạn hiểu cách tra cứu. Phần chưa cài phải ghi rõ, không coi xong một thao tác là xong toàn bộ c.
+- **Phối hợp:** Thái cung cấp cho Thành cách tìm cuốn để mượn/trả; cung cấp cho Tấn cách lấy tên đầu sách theo mã cuốn và đọc danh sách đầu sách. Thành và Tấn dùng phần tra cứu này để tự viết chức năng mình phụ trách.
+- **Bàn giao/chuyển mốc:** code đúng phạm vi đã nhận, dữ liệu thử do Thái chọn cùng kết quả mong đợi/thực tế; Thành và Tấn hiểu cách tra cứu do Thái cung cấp. Phần chưa cài phải ghi rõ, không coi xong một thao tác là xong toàn bộ c.
 
 ### Mốc 2 — đọc/ghi sách và mục e
 
@@ -76,7 +76,7 @@ Các mốc không phải hạn theo ngày. c/e và đọc file có thể xen k�
 
 ## 3. Tấn — tự làm liệt kê dữ liệu rồi mở rộng giao diện
 
-**Đích cần làm được:** h, b, d và màn hình tương ứng; menu chính. Tấn tự viết phần duyệt, lọc, chuẩn bị thứ tự và hiển thị, không chỉ in dữ liệu đã được hai bạn xử lý xong.
+**Đích cần làm được:** h, b, d và màn hình tương ứng; menu chính. Tấn tự viết phần duyệt, lọc, chuẩn bị thứ tự và hiển thị, không chỉ in dữ liệu đã được Thành và Thái xử lý xong.
 
 ### Bắt đầu buổi đầu tiên
 
@@ -86,7 +86,8 @@ Chỉ tập trung mục h. Đọc đề và khai báo liên quan, viết vài c�
 
 - **Nền cần hiểu:** vai trò mã thẻ, mã cuốn, đầu sách và một bản ghi mượn; ý nghĩa các trạng thái. Chỗ nào chưa hiểu thì hỏi đúng chỗ đó trước khi viết.
 - **Tấn tự làm:** thiết kế và cài phần liệt kê theo yêu cầu, gồm xử lý dữ liệu cần hiển thị và màn hình nhận mã thẻ/xem kết quả. Tự tạo file và đặt tên hàm sau khi chốt cách dùng chung.
-- **Hai bạn cung cấp:** cách tìm độc giả, đọc lịch sử và tra tên sách. Dùng dữ liệu mẫu hợp lệ; không phải chờ nghiệp vụ mượn–trả hoàn chỉnh. Đây là tra cứu nền, không phải kết quả h đã được làm sẵn.
+- **Thành cung cấp cho Tấn:** cách tìm độc giả và đọc lịch sử mượn–trả, cùng dữ liệu độc giả/lịch sử mẫu hợp lệ.
+- **Thái cung cấp cho Tấn:** cách tra tên đầu sách theo mã cuốn, cùng dữ liệu sách mẫu khớp với lịch sử. Tấn không phải chờ nghiệp vụ mượn–trả hoàn chỉnh. Thành và Thái cung cấp phần tra cứu nền; Tấn tự xử lý yêu cầu h.
 - **Bàn giao/chuyển mốc:** Tấn tự đề xuất dữ liệu, kết quả mong đợi và lý do thử; chạy đối chiếu khi đủ phụ thuộc, giải thích dữ liệu nào quyết định kết quả. Không làm thay đổi dữ liệu khi chỉ xem danh sách. Nếu thiếu phụ thuộc, ghi rõ đã làm đến đâu.
 
 ### Mốc 2 — phần b: xem độc giả theo mã
@@ -100,7 +101,7 @@ Chỉ tập trung mục h. Đọc đề và khai báo liên quan, viết vài c�
 
 - **Cần đạt:** cùng dữ liệu độc giả, người dùng chọn xem theo tên+họ tăng dần hoặc theo mã. Thống nhất cách so sánh tên/họ và trường hợp bằng nhau trước khi cài.
 - **Tấn tự quyết định:** cách tạo thứ tự hiển thị; không làm sai cấu trúc BST theo mã khi đổi lựa chọn xem. Không được chỉ đổi nhãn cột rồi coi thứ tự đã đúng.
-- **Phối hợp:** nếu cần học sắp xếp hoặc cách dùng dữ liệu tạm, trao đổi với hai bạn về nền và ràng buộc, rồi tự đề xuất cách làm. Không sao chép một lời giải hoàn chỉnh để coi là tự thiết kế.
+- **Phối hợp:** Tấn trao đổi với Thành về dữ liệu cây và ràng buộc độc giả; có thể nhờ Thành hoặc Thái giải thích nền sắp xếp/cách dùng dữ liệu tạm, rồi Tấn tự đề xuất cách làm. Không sao chép một lời giải hoàn chỉnh để coi là tự thiết kế.
 - **Bàn giao/chuyển mốc:** hai lựa chọn cho kết quả đúng trên dữ liệu do Tấn chọn và phần quản lý độc giả vẫn dùng được; nêu rõ mức hỗ trợ đã nhận.
 
 ### Mốc 4 — mục d: đầu sách theo thể loại và tên
@@ -108,7 +109,7 @@ Chỉ tập trung mục h. Đọc đề và khai báo liên quan, viết vài c�
 - **Cần đạt:** xem đầu sách theo từng thể loại; tên sách tăng dần trong từng thể loại. Màn hình phải xem được dữ liệu dài.
 - **Phối hợp:** Thái cung cấp dữ liệu đầu sách và cách truy cập. Nhóm làm rõ cách trình bày/thứ tự giữa các thể loại nếu đề chưa quy định.
 - **Tấn tự quyết định:** cách tổ chức kết quả hiển thị, giữ nguyên tính đúng và thứ tự lưu bắt buộc của dữ liệu gốc; không đổi cấu trúc đề để tiện in.
-- **Bàn giao:** code, màn hình, dữ liệu/kết quả thử và giải thích lựa chọn; hai bạn review sau khi Tấn đã đề xuất ca thử.
+- **Bàn giao:** Tấn gửi code, màn hình, dữ liệu/kết quả thử và giải thích lựa chọn; Thái review phần dữ liệu sách, Thành cùng kiểm tra cách ghép sau khi Tấn đã đề xuất ca thử.
 
 Nếu còn mắc ở một mốc, thu hẹp đúng điểm mắc để học và sửa, không đồng loạt mở thêm các mục. Những lần được giải thích vẫn là học có hỗ trợ; chuyển mốc không tự chứng minh đã tự chủ toàn bộ kiến thức.
 

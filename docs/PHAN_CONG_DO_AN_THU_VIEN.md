@@ -29,7 +29,7 @@ Xây dựng ứng dụng quản lý Thư viện theo đề số 3, gồm đủ c
 - Điều phối điểm chạy chung, nạp dữ liệu, lưu/thoát và ghép các chức năng với menu do Tấn làm.
 - Cùng Thái và Tấn thống nhất quy ước giao diện; chia người phụ trách từng thành phần dùng chung theo nhu cầu, không mặc định giao riêng cho một người.
 
-**Cung cấp cho các bạn:** khả năng tìm độc giả theo mã, truy cập dữ liệu độc giả/lịch sử mượn để liệt kê, và các hàm ngày tháng đã thống nhất. Chức năng liệt kê phải chỉ đọc dữ liệu nghiệp vụ.
+**Thành cung cấp cho Tấn:** cách tìm độc giả và đọc dữ liệu độc giả/lịch sử để làm b, h. **Thành cung cấp cho Thái:** dữ liệu độc giả/lịch sử và phần tính ngày dùng cho i, j. Chức năng liệt kê phải chỉ đọc dữ liệu nghiệp vụ.
 
 ### 3. Thái — sách, thống kê và giao diện phần mình
 
@@ -47,7 +47,7 @@ Xây dựng ứng dụng quản lý Thư viện theo đề số 3, gồm đủ c
 - Tự làm giao diện các chức năng c, e, i, j. Cả ba cùng thống nhất khung, màu, điều hướng, bảng và phân trang; chia phần dùng chung khi cần, không mặc định Thái phụ trách toàn bộ bộ hỗ trợ console.
 - Phối hợp làm phần giao diện dùng chung tối thiểu khi cần, rồi mở rộng theo nhu cầu thật; Thành và Tấn cũng tự làm màn hình phần mình.
 
-**Cung cấp cho các bạn:** khả năng tìm cuốn sách/đầu sách và lấy thông tin liên quan, quy ước sử dụng trạng thái cuốn sách. Phần giao diện dùng chung được bàn giao theo người phụ trách mà cả nhóm đã thống nhất. Việc thay đổi trạng thái khi mượn–trả phải thống nhất với Thành, tránh hai phần cập nhật độc lập gây lệch dữ liệu.
+**Thái cung cấp cho Thành:** cách tìm cuốn và quy ước trạng thái để làm mượn–trả. **Thái cung cấp cho Tấn:** cách lấy tên đầu sách theo mã cuốn và đọc danh sách đầu sách để làm h, d. Phần giao diện dùng chung được bàn giao theo người phụ trách mà cả nhóm đã thống nhất. Việc thay đổi trạng thái khi mượn–trả phải thống nhất với Thành, tránh hai phần cập nhật độc lập gây lệch dữ liệu.
 
 ### 4. Tấn — liệt kê dữ liệu và các màn hình tương ứng
 
@@ -65,7 +65,7 @@ Xây dựng ứng dụng quản lý Thư viện theo đề số 3, gồm đủ c
 **Hỗ trợ và dữ liệu thử:**
 
 - Thành và Thái cung cấp các hàm tra cứu, hướng dẫn cách gọi và dữ liệu mẫu nhất quán.
-- Tấn tự đề xuất dữ liệu và kết quả mong đợi cho phần mình; hai bạn review và bổ sung những ca còn thiếu.
+- Tấn tự đề xuất dữ liệu và kết quả mong đợi cho phần mình; Thành review dữ liệu độc giả/lịch sử, Thái review dữ liệu sách; Thành và Thái cùng góp ý ca thử còn thiếu.
 - Tấn hỗ trợ chuẩn bị dữ liệu dài theo định dạng chung và ghi lỗi giao diện/chức năng gặp khi thử. Đây là việc hỗ trợ thêm, không thay phần code trực tiếp.
 
 ### Phạm vi bàn giao của từng người — bản rõ hóa 27/09/2026
@@ -130,7 +130,7 @@ Mỗi người chịu trách nhiệm nhập liệu, thông báo, quay lại và 
 
 Mỗi lần giao code phải kèm: chức năng đã làm, cách gọi/phụ thuộc, ca thử và kết quả, phần còn thiếu. Người viết tự sửa phần mình sau review; Thành điều phối bản ghép, không nhận làm thay mọi phần.
 
-Từ 27/09/2026, mã nguồn và tài liệu triển khai chung được quản lý tại repo riêng tư [do-an-thu-vien](https://github.com/ntienthanh195/do-an-thu-vien). Mỗi nhiệm vụ làm trên một nhánh, gửi pull request để review và ghép vào main; Thành điều phối ghép sau kiểm tra. Drive ở phần B dùng cho đề, tài liệu, ảnh/video hoặc bản đóng gói, không giữ một bản code chính thức song song. Ghép theo mốc nhỏ, không đợi cả ba hoàn thành toàn bộ mới ghép. Thái và Tấn cần được mời vào repo bằng tài khoản GitHub của từng người; chưa coi việc tạo repo là đã cấp quyền cho hai bạn.
+Từ 27/09/2026, mã nguồn và tài liệu triển khai chung được quản lý tại repo riêng tư [do-an-thu-vien](https://github.com/ntienthanh195/do-an-thu-vien). Mỗi nhiệm vụ làm trên một nhánh, gửi pull request để review và ghép vào main; Thành điều phối ghép sau kiểm tra. Drive ở phần B dùng cho đề, tài liệu, ảnh/video hoặc bản đóng gói, không giữ một bản code chính thức song song. Ghép theo mốc nhỏ, không đợi cả ba hoàn thành toàn bộ mới ghép. Thái và Tấn cần được mời vào repo bằng tài khoản GitHub của từng người; chưa coi việc tạo repo là đã cấp quyền cho Thái và Tấn.
 
 ### 8. Những điểm phải làm rõ trước khi chốt hành vi liên quan
 
