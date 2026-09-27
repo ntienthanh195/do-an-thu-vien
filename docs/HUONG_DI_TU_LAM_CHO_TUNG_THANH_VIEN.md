@@ -131,6 +131,8 @@ Menu làm song song ở phạm vi nhỏ sau khi thống nhất điều hướng.
 
 ## 5. Bàn giao một phần như thế nào?
 
+Thực hiện theo [nhóm công việc và mốc PR](NHOM_CONG_VIEC_VA_MOC_PR.md): THANH-01…08, THAI-01…06, TAN-01…05. Đây là các nhóm bàn giao dự kiến, không phải lịch cứng hoặc kết quả đã đạt. Các mốc học phía trên có thể gồm nhiều PR nhỏ; hoàn tất phạm vi đủ kiểm tra thì gửi ngay, không chờ hoàn thành mọi nhiệm vụ.
+
 Người viết tự tạo file trong `src` với tên nhóm đã thống nhất. Một phần bàn giao gồm: code của mình, mục đích, cách phần khác sử dụng, dữ liệu/kết quả thử, điểm chưa hoàn thành hoặc cần hỏi thầy. Không cần đợi xong toàn bộ phân công mới gửi.
 
 Làm trên nhánh riêng, mở PR và cùng review theo [hướng dẫn GitHub](HUONG_DAN_DAY_CODE_CHO_NHOM.md). Hướng dẫn vị trí thư mục chỉ giúp tổ chức dự án; không yêu cầu tạo sẵn tất cả file hoặc làm theo tên hàm/biến do AI đặt.

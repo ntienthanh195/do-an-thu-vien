@@ -122,6 +122,8 @@ Mỗi người chịu trách nhiệm nhập liệu, thông báo, quay lại và 
 
 ### 7. Các mốc ghép và cách bàn giao
 
+**Bàn giao theo nhóm nhỏ:** đọc tài liệu docs/NHOM_CONG_VIEC_VA_MOC_PR.md trong repo: Thành có THANH-01…08, Thái có THAI-01…06, Tấn có TAN-01…05. Mỗi nhóm việc ghi phạm vi, phụ thuộc và kết quả cần kiểm tra. Đây là mốc dự kiến, có thể tách thêm phần độc lập khi cần, không phải quota PR. Commit/push trên nhánh riêng trong lúc làm; đủ phạm vi review thì mở PR ngay, còn dở dùng Draft PR. Không chờ làm hết toàn bộ phân công mới gửi. Các mốc ghép dưới đây là mốc tích hợp chung, không phải yêu cầu gộp tất cả vào một PR.
+
 1. **Chốt nền chung:** bộ khai báo, cách gọi hàm giữa ba phần, định dạng file và quy ước giao diện; bản chung biên dịch được.
 2. **Luồng đầu tiên:** mở chương trình → đọc file sách mẫu → menu → bảng sách xem được dữ liệu dài → quay lại → thoát. Thái làm đọc sách, Tấn tự làm màn hình liệt kê ở mức phù hợp và menu, Thành nối khởi động; phần hỗ trợ bảng chung do nhóm phân người phối hợp thực hiện. Màn hình tạm chưa đủ nhóm thể loại/thứ tự không được tính là hoàn thành mục d.
 3. **Dữ liệu độc giả và liệt kê:** ghép phần độc giả, dữ liệu lịch sử mẫu và các màn hình b, h; mở rộng d theo đúng đề.
