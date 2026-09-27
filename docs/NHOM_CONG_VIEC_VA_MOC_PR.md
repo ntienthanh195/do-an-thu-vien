@@ -85,6 +85,8 @@ B → C là nhịp học gợi ý, không phải lịch cứng. Nếu thiếu ph
 
 ## 5. Giao diện và review không làm đứt mạch làm việc
 
+**Dữ liệu mẫu chia sẻ sớm:** Thành, Thái hoặc Tấn chuẩn bị xong file theo định dạng chung thì đưa vào `data/samples/`, push nhánh riêng và gửi PR ngay ở mốc đó; không cần đợi xong khối code hoặc đợi bộ dữ liệu của người khác hoàn chỉnh. PR có thể chỉ chứa dữ liệu và mô tả định dạng/phụ thuộc. Thành review độc giả/lịch sử, Thái review sách; ghi rõ đã thử đọc bằng chương trình hay mới kiểm tra nội dung. File chưa khớp các mã liên quan hoặc còn nháp phải được đánh dấu trong Draft PR, chưa coi là bộ mẫu hợp lệ chung. Quy định này nhằm chia sẻ dữ liệu sớm, không ép dừng để push sau từng hàm.
+
 Mỗi người làm cả xử lý và màn hình phần mình. Có thể gom điều chỉnh giao diện liên quan vào PR của chức năng, hoặc gửi PR hoàn thiện giao diện riêng khi đủ ý nghĩa. Thành, Thái và Tấn cùng thống nhất bố cục/phím/thông báo; phần console dùng chung chia người thực hiện theo nhu cầu, không dồn riêng cho Thái.
 
 Trước khi viết riêng, chốt những giao tiếp cần dùng ngay; không cần thiết kế xong toàn ứng dụng mới bắt đầu. Luồng ghép đầu có thể là đọc sách → menu → bảng sách cơ bản → quay lại. Bảng thử đó không tính là hoàn thành d và không bắt Tấn bỏ h để làm toàn bộ d trước.
