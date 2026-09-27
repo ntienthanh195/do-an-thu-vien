@@ -17,11 +17,11 @@ Chi tiết ở [phân công nhóm](docs/PHAN_CONG_DO_AN_THU_VIEN.md), phần A. 
 - Độc giả: cây nhị phân tìm kiếm.
 - Mượn–trả: danh sách liên kết đơn gắn với từng độc giả.
 
-## Trạng thái ban đầu
+## Bộ khung hiện tại
 
 `src/CODE-ĐỒ-ÁN-THƯ-VIỆN-DSA.cpp` là bản khai báo nhóm ngày 25/09/2026 được sao chép nguyên văn. Chưa có `main`, giao diện, chức năng a–j hoặc phần đọc/ghi dữ liệu; chưa phải chương trình hoàn chỉnh để chạy. Việc tạo repo không tạo thêm bằng chứng kiểm thử hoặc tiến độ triển khai.
 
-Chưa chốt cấu hình build và định dạng dữ liệu. Nhóm sẽ bổ sung hướng dẫn chạy khi có bản thực thi đầu tiên.
+Đã thêm bộ khung `.h/.cpp` cho cả ba người theo yêu cầu ngày 27/09/2026. **Đọc [hướng dẫn bộ khung](docs/HUONG_DAN_KHUNG_CODE.md)** để biết file phụ trách, tham số, biến gợi ý và cách build bằng `build.ps1` (g++ C++17). Các hàm nghiệp vụ/giao diện/file vẫn là TODO; main chỉ in thông báo bộ khung. Định dạng dữ liệu chưa được chốt.
 
 ## Cách làm việc
 
