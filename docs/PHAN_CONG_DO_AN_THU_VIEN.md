@@ -68,6 +68,16 @@ Xây dựng ứng dụng quản lý Thư viện theo đề số 3, gồm đủ c
 - Tấn tự đề xuất dữ liệu và kết quả mong đợi cho phần mình; hai bạn review và bổ sung những ca còn thiếu.
 - Tấn hỗ trợ chuẩn bị dữ liệu dài theo định dạng chung và ghi lỗi giao diện/chức năng gặp khi thử. Đây là việc hỗ trợ thêm, không thay phần code trực tiếp.
 
+### Phạm vi bàn giao của từng người — bản rõ hóa 27/09/2026
+
+- **Thành — a, f, g:** làm đầy đủ xử lý và màn hình thêm/xóa/sửa thẻ, mượn và trả sách; xử lý ngày dùng chung; đọc/ghi độc giả cùng toàn bộ lịch sử mượn–trả. Ở f phải hiển thị sách độc giả đang mượn, phối hợp dùng phần h của Tấn thay vì viết hai bản liệt kê khác nhau. Thành vẫn chịu trách nhiệm các điều kiện mượn và dữ liệu sau thao tác. Điều phối nạp/lưu/thoát, ghép chương trình và review; tác giả từng phần tự sửa lỗi của mình, không chuyển mọi việc sửa về Thành.
+- **Thái — c, e, i, j:** làm đầy đủ xử lý và màn hình nhập đầu sách/cấp mã cuốn, tìm theo tên, liệt kê độc giả quá hạn và top 10; đọc/ghi đầu sách/cuốn sách. Cung cấp tra cứu sách cho Thành/Tấn. i và j do Thái tự tính/lập kết quả từ dữ liệu chung, không chờ Thành làm sẵn thống kê. Thái dùng phần tính ngày của Thành cho i; không gánh toàn bộ giao diện nhóm.
+- **Tấn — b, d, h và menu:** tự làm cả xử lý liệt kê, thứ tự kết quả và giao diện: b có hai lựa chọn mã hoặc tên+họ; d nhóm thể loại và tên tăng trong nhóm; h hiển thị mã/tên sách đang mượn của độc giả được chọn. Làm menu để chuyển màn hình, phối hợp Thành về luồng chạy. Chức năng chỉ xem không tự sửa dữ liệu nghiệp vụ. Hỗ trợ bộ dữ liệu mẫu sau khi định dạng đã chốt; không được xem việc tạo dữ liệu thay cho phần code trực tiếp.
+
+Mỗi người chịu trách nhiệm nhập liệu, thông báo, quay lại và xem dữ liệu dài khi phù hợp với màn hình mình làm; tự kiểm thử phần mình rồi cùng kiểm tra khi ghép. Quy ước phím/bố cục và phần console dùng chung do cả ba trao đổi và chia người thực hiện theo nhu cầu.
+
+**Đọc hướng đi:** bản trong repo có tài liệu `docs/HUONG_DI_TU_LAM_CHO_TUNG_THANH_VIEN.md`, với các mốc cụ thể cho Thái và Tấn. Các mốc là kế hoạch để học và làm, không phải kết quả đã hoàn thành. Chỉ giao bổ sung hoặc đổi người phụ trách khi có trao đổi dựa trên tiến độ thật.
+
 ### 5. Quy ước chung để ghép code thuận tiện
 
 **Lựa chọn học tập ngày 27/09/2026:** mỗi người đọc đề và tự thiết kế, tự tạo file, tự đặt tên hàm và viết code. AI chỉ nêu hướng đi, yêu cầu và tiêu chí; không cung cấp sẵn bộ hàm/biến để điền. Các tên file đề xuất dưới đây chỉ minh họa cách tổ chức, không bắt buộc tạo trước. Người viết tự đề xuất giao tiếp giữa các phần, cả nhóm thống nhất trước khi triển khai riêng. Bộ khung AI vừa đề xuất đã được rút khỏi bản làm việc; bản khai báo do nhóm viết vẫn được giữ. Việc rút khung không xóa lịch sử đã được xem/hỗ trợ và không tạo kết quả học tập mới.
