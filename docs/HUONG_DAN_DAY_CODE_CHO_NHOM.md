@@ -129,7 +129,6 @@ Thái làm tương tự với nhánh và file phần sách/thống kê của mì
 
 ## Tài liệu GitHub chính thức
 
-- [GitHub Desktop](https://docs.github.com/en/desktop): công cụ giao diện để làm việc với GitHub.
 - [Clone repo](https://docs.github.com/en/desktop/adding-and-cloning-repositories).
 - [Tạo nhánh và lưu thay đổi](https://docs.github.com/en/get-started/start-your-journey/writing-and-storing-your-code).
 - [Xem thay đổi và commit](https://docs.github.com/en/desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop).
