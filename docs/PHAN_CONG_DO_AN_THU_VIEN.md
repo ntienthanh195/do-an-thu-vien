@@ -116,7 +116,7 @@ Xây dựng ứng dụng quản lý Thư viện theo đề số 3, gồm đủ c
 
 Mỗi lần giao code phải kèm: chức năng đã làm, cách gọi/phụ thuộc, ca thử và kết quả, phần còn thiếu. Người viết tự sửa phần mình sau review; Thành điều phối bản ghép, không nhận làm thay mọi phần.
 
-Tiếp tục dùng thư mục Drive nhóm đã ghi ở phần B để bàn giao nếu nhóm chưa đổi nơi lưu. Ghi rõ người viết và phiên bản; không ghi đè phần người khác. Ghép theo mốc nhỏ, không đợi cả ba hoàn thành toàn bộ mới ghép.
+Từ 27/09/2026, mã nguồn và tài liệu triển khai chung được quản lý tại repo riêng tư [do-an-thu-vien](https://github.com/ntienthanh195/do-an-thu-vien). Mỗi nhiệm vụ làm trên một nhánh, gửi pull request để review và ghép vào main; Thành điều phối ghép sau kiểm tra. Drive ở phần B dùng cho đề, tài liệu, ảnh/video hoặc bản đóng gói, không giữ một bản code chính thức song song. Ghép theo mốc nhỏ, không đợi cả ba hoàn thành toàn bộ mới ghép. Thái và Tấn cần được mời vào repo bằng tài khoản GitHub của từng người; chưa coi việc tạo repo là đã cấp quyền cho hai bạn.
 
 ### 8. Những điểm phải làm rõ trước khi chốt hành vi liên quan
 
