@@ -15,6 +15,8 @@ Các khối dưới đây là ranh giới để xem xét bàn giao, không phả
 
 ## 2. Thành — ba khối chính
 
+**Ưu tiên chung trước các khối chức năng:** Thành và Thái thống nhất định dạng rồi ưu tiên hoàn thành bộ dữ liệu mẫu cùng phần đọc tối thiểu để nạp dữ liệu vào cấu trúc. Thành làm độc giả/lịch sử, Thái làm sách/cuốn, Tấn hỗ trợ chuẩn bị mẫu. Kiểm tra bộ nhỏ trước rồi bổ sung bộ dài có liên kết mã và trạng thái nhất quán; chia sẻ ngay phần đã sẵn sàng qua nhánh riêng/PR. Nhờ đó, chức năng vừa viết xong có thể dùng bộ mẫu chung để thử ngay. Mốc dữ liệu nằm ở đầu khối A của Thành/Thái, không đợi xong quản lý độc giả, tìm kiếm, mượn–trả hoặc giao diện hoàn chỉnh. Không yêu cầu hoàn tất mọi khả năng ghi file hoặc mọi bộ dữ liệu lỗi trước khi viết nghiệp vụ; người viết vẫn tự chọn ca thử riêng cho chức năng mình.
+
 ### Khối Thành A — quản lý độc giả và dữ liệu file
 
 **Phạm vi liền mạch:** mục a gồm thêm/tìm/sửa/xóa thẻ, cấp mã, màn hình quản lý; đọc/ghi độc giả và lịch sử để có dữ liệu dùng chung. Thành có thể làm nối tiếp các thao tác rồi thử tổng hợp, không gửi riêng từng thao tác nhỏ.
@@ -84,6 +86,10 @@ Các khối dưới đây là ranh giới để xem xét bàn giao, không phả
 B → C là nhịp học gợi ý, không phải lịch cứng. Nếu thiếu phụ thuộc, Thành, Thái và Tấn trao đổi để chọn khối đủ nền và dữ liệu. Không dồn nhiều việc mới cho Tấn chỉ để tránh chờ.
 
 ## 5. Giao diện và review không làm đứt mạch làm việc
+
+**Push để nhóm xem và góp ý:** ai làm xong phần dữ liệu của mình thì cứ push lên nhánh riêng trước và gửi link nhánh/PR cho Thành, Thái và Tấn xem có ổn không; không cần đợi được duyệt mới push. Thành chuẩn bị xong thì Thái và Tấn xem; Thái chuẩn bị xong thì Thành và Tấn xem; Tấn chuẩn bị xong thì Thành và Thái xem. Cùng góp ý định dạng, nội dung, liên kết mã và mức phù hợp để thử chức năng; chưa có phần dữ liệu liên quan hoặc chưa chạy thử thì ghi rõ. Push là chia sẻ để xem xét, chưa phải ghép vào main hay xác nhận dữ liệu đã đúng.
+
+**Dữ liệu mẫu chia sẻ sớm:** Thành, Thái hoặc Tấn chuẩn bị xong file theo định dạng chung thì đưa vào `data/samples/`, push nhánh riêng và gửi PR ngay ở mốc đó; không cần đợi xong khối code hoặc đợi bộ dữ liệu của người khác hoàn chỉnh. PR có thể chỉ chứa dữ liệu và mô tả định dạng/phụ thuộc. Thành review độc giả/lịch sử, Thái review sách; ghi rõ đã thử đọc bằng chương trình hay mới kiểm tra nội dung. File chưa khớp các mã liên quan hoặc còn nháp phải được đánh dấu trong Draft PR, chưa coi là bộ mẫu hợp lệ chung. Quy định này nhằm chia sẻ dữ liệu sớm, không ép dừng để push sau từng hàm.
 
 Mỗi người làm cả xử lý và màn hình phần mình. Có thể gom điều chỉnh giao diện liên quan vào PR của chức năng, hoặc gửi PR hoàn thiện giao diện riêng khi đủ ý nghĩa. Thành, Thái và Tấn cùng thống nhất bố cục/phím/thông báo; phần console dùng chung chia người thực hiện theo nhu cầu, không dồn riêng cho Thái.
 

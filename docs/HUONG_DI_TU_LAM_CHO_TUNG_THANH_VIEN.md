@@ -8,6 +8,8 @@ Phân công a–j giữ theo [phần A của hồ sơ phân công](PHAN_CONG_DO_
 
 ## 1. Thành — từ quản lý độc giả đến mượn–trả
 
+**Ưu tiên dữ liệu chung:** Thành và Thái chốt định dạng và làm bộ mẫu cùng khả năng đọc tối thiểu trước khi mở rộng các chức năng. Thành phụ trách độc giả/lịch sử; Thái phụ trách đầu sách/cuốn sách; Tấn hỗ trợ mẫu theo định dạng đã chốt. Cần nạp được bộ nhỏ đã đối chiếu, rồi có bộ dài hợp lệ để mỗi chức năng làm xong được thử ngay. Các mốc dưới đây mô tả nội dung học/làm, không có nghĩa phải xong hết thao tác quản lý mới chuẩn bị dữ liệu. Phần ghi file và kiểm tra lưu–mở lại được hoàn thiện tiếp theo phân công; không trì hoãn bộ mẫu chỉ vì phần ghi chưa xong.
+
 **Đích cần làm được:** a, f, g; ngày tháng; đọc/ghi độc giả và lịch sử; màn hình tương ứng và điều phối ghép chương trình.
 
 ### Mốc đầu: dữ liệu độc giả và thao tác nền
