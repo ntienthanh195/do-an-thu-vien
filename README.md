@@ -5,10 +5,12 @@
 ## Thành viên và nhiệm vụ
 
 - **Thành:** a, f, g; độc giả, mượn–trả, ngày tháng, đọc/ghi độc giả và lịch sử; điều phối tích hợp.
-- **Thái:** c, e, i, j; sách, thống kê, đọc/ghi sách; phụ trách chính bộ hỗ trợ giao diện console.
+- **Thái:** c, e, i, j; sách, thống kê, đọc/ghi sách và giao diện các chức năng tương ứng.
 - **Tấn:** b, d, h; liệt kê dữ liệu và màn hình tương ứng; menu chính. Làm lần lượt h, b theo mã, b theo tên+họ, d.
 
 Chi tiết ở [phân công nhóm](docs/PHAN_CONG_DO_AN_THU_VIEN.md), phần A. Phần B là lịch sử mốc khai báo, không thay phân công hiện hành.
+
+**Giao diện console:** cả ba tự làm màn hình phần mình (Thành: a, f, g; Thái: c, e, i, j; Tấn: b, d, h và menu). Cùng thống nhất bố cục, phím và các phần dùng chung; chia người phụ trách từng phần dùng chung khi có nhu cầu, không mặc định dồn cho Thái.
 
 ## Yêu cầu cấu trúc
 
@@ -24,6 +26,8 @@ Chi tiết ở [phân công nhóm](docs/PHAN_CONG_DO_AN_THU_VIEN.md), phần A. 
 Chưa chốt cấu hình build và định dạng dữ liệu. Nhóm sẽ bổ sung hướng dẫn chạy khi có bản thực thi đầu tiên.
 
 ## Cách làm việc
+
+**Chia việc để gửi PR sớm:** xem [Nhóm công việc và mốc PR của cả ba thành viên](docs/NHOM_CONG_VIEC_VA_MOC_PR.md). Mỗi nhóm việc có phạm vi, phụ thuộc và điều kiện bàn giao; không đợi code xong toàn bộ mới push.
 
 **Bắt đầu triển khai:** đọc [Hướng đi tự làm cho từng thành viên](docs/HUONG_DI_TU_LAM_CHO_TUNG_THANH_VIEN.md). Mỗi người tự thiết kế, tạo file, đặt tên hàm và viết code từ yêu cầu; repo không cung cấp bộ khung hàm để điền. Cả nhóm thống nhất cách gọi giữa các phần trước khi làm riêng.
 

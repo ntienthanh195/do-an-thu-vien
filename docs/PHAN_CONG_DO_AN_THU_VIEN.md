@@ -27,11 +27,11 @@ Xây dựng ứng dụng quản lý Thư viện theo đề số 3, gồm đủ c
 - Làm màn hình nhập/sửa độc giả, mượn và trả sách bằng bộ hỗ trợ giao diện chung.
 - Phụ trách đọc/ghi độc giả và lịch sử mượn–trả, bao gồm dữ liệu cần duy trì quy tắc cấp mã qua các lần chạy.
 - Điều phối điểm chạy chung, nạp dữ liệu, lưu/thoát và ghép các chức năng với menu do Tấn làm.
-- Cùng Thái hỗ trợ xây dựng và thống nhất cách sử dụng các thành phần giao diện chung.
+- Cùng Thái và Tấn thống nhất quy ước giao diện; chia người phụ trách từng thành phần dùng chung theo nhu cầu, không mặc định giao riêng cho một người.
 
-**Cung cấp cho các bạn:** khả năng tìm độc giả theo mã, truy cập dữ liệu độc giả/lịch sử mượn để liệt kê, và các hàm ngày tháng đã thống nhất. Chức năng liệt kê phải chỉ đọc dữ liệu nghiệp vụ.
+**Thành cung cấp cho Tấn:** cách tìm độc giả và đọc dữ liệu độc giả/lịch sử để làm b, h. **Thành cung cấp cho Thái:** dữ liệu độc giả/lịch sử và phần tính ngày dùng cho i, j. Chức năng liệt kê phải chỉ đọc dữ liệu nghiệp vụ.
 
-### 3. Thái — sách, thống kê và hỗ trợ giao diện chung
+### 3. Thái — sách, thống kê và giao diện phần mình
 
 **Chức năng chính:**
 
@@ -44,10 +44,10 @@ Xây dựng ứng dụng quản lý Thư viện theo đề số 3, gồm đủ c
 
 - Làm các màn hình nhập sách, tìm kiếm và thống kê thuộc phần mình.
 - Phụ trách đọc/ghi đầu sách và cuốn sách.
-- Phụ trách chính bộ hỗ trợ console dùng chung: khung, màu, tô sáng lựa chọn, nhận phím điều hướng, hỗ trợ bảng và phân trang. Thành cùng hỗ trợ; Thái không phải làm thay tất cả màn hình của hai bạn.
-- Làm bản hỗ trợ tối thiểu đủ dùng trước, mở rộng theo nhu cầu thật của các màn hình.
+- Tự làm giao diện các chức năng c, e, i, j. Cả ba cùng thống nhất khung, màu, điều hướng, bảng và phân trang; chia phần dùng chung khi cần, không mặc định Thái phụ trách toàn bộ bộ hỗ trợ console.
+- Phối hợp làm phần giao diện dùng chung tối thiểu khi cần, rồi mở rộng theo nhu cầu thật; Thành và Tấn cũng tự làm màn hình phần mình.
 
-**Cung cấp cho các bạn:** khả năng tìm cuốn sách/đầu sách và lấy thông tin liên quan, quy ước sử dụng trạng thái cuốn sách, các thành phần giao diện dùng chung. Việc thay đổi trạng thái khi mượn–trả phải thống nhất với Thành, tránh hai phần cập nhật độc lập gây lệch dữ liệu.
+**Thái cung cấp cho Thành:** cách tìm cuốn và quy ước trạng thái để làm mượn–trả. **Thái cung cấp cho Tấn:** cách lấy tên đầu sách theo mã cuốn và đọc danh sách đầu sách để làm h, d. Phần giao diện dùng chung được bàn giao theo người phụ trách mà cả nhóm đã thống nhất. Việc thay đổi trạng thái khi mượn–trả phải thống nhất với Thành, tránh hai phần cập nhật độc lập gây lệch dữ liệu.
 
 ### 4. Tấn — liệt kê dữ liệu và các màn hình tương ứng
 
@@ -56,17 +56,27 @@ Xây dựng ứng dụng quản lý Thư viện theo đề số 3, gồm đủ c
 - **h — Liệt kê sách một độc giả đang mượn:** hiển thị mã sách và tên sách theo mã thẻ được chọn; sử dụng khả năng tìm độc giả của Thành và tra cứu sách của Thái.
 - **b — In danh sách độc giả:** hỗ trợ thứ tự mã thẻ tăng dần và tên+họ tăng dần theo lựa chọn.
 - **d — In danh sách đầu sách:** theo từng thể loại, trong mỗi thể loại tăng theo tên sách.
-- Làm menu chính và nối đến các màn hình bằng bộ hỗ trợ chung; phối hợp với Thành khi ghép luồng chương trình.
+- Tự làm giao diện b, d, h và menu chính theo quy ước chung; phối hợp với Thành khi ghép luồng chương trình. Cùng tham gia phần console dùng chung phù hợp khả năng, không chỉ chờ Thái cung cấp.
 
 **Phạm vi trực tiếp làm:** Tấn tự viết phần duyệt, lọc, chuẩn bị thứ tự kết quả và hiển thị của b, d, h; không chỉ nhận dữ liệu đã xử lý xong để in. Việc liệt kê không được làm sai cấu trúc hoặc thứ tự lưu bắt buộc của dữ liệu gốc.
 
-**Thứ tự triển khai:** h → b theo mã → b theo tên+họ → d. Mỗi mốc là một chức năng có thể chạy thử. Khi cần kiến thức cây hoặc sắp xếp, nhóm hỗ trợ giải thích rồi Tấn tự cài và kiểm thử. Menu có thể làm song song khi bộ hỗ trợ đã đủ dùng.
+**Thứ tự triển khai:** h → b theo mã → b theo tên+họ → d. Mỗi mốc là một chức năng có thể chạy thử. Khi cần kiến thức cây hoặc sắp xếp, nhóm hỗ trợ giải thích rồi Tấn tự cài và kiểm thử. Menu có thể làm song song sau khi thống nhất cách điều hướng; phần dùng chung còn thiếu được nhóm phối hợp thực hiện.
 
 **Hỗ trợ và dữ liệu thử:**
 
 - Thành và Thái cung cấp các hàm tra cứu, hướng dẫn cách gọi và dữ liệu mẫu nhất quán.
-- Tấn tự đề xuất dữ liệu và kết quả mong đợi cho phần mình; hai bạn review và bổ sung những ca còn thiếu.
+- Tấn tự đề xuất dữ liệu và kết quả mong đợi cho phần mình; Thành review dữ liệu độc giả/lịch sử, Thái review dữ liệu sách; Thành và Thái cùng góp ý ca thử còn thiếu.
 - Tấn hỗ trợ chuẩn bị dữ liệu dài theo định dạng chung và ghi lỗi giao diện/chức năng gặp khi thử. Đây là việc hỗ trợ thêm, không thay phần code trực tiếp.
+
+### Phạm vi bàn giao của từng người — bản rõ hóa 27/09/2026
+
+- **Thành — a, f, g:** làm đầy đủ xử lý và màn hình thêm/xóa/sửa thẻ, mượn và trả sách; xử lý ngày dùng chung; đọc/ghi độc giả cùng toàn bộ lịch sử mượn–trả. Ở f phải hiển thị sách độc giả đang mượn, phối hợp dùng phần h của Tấn thay vì viết hai bản liệt kê khác nhau. Thành vẫn chịu trách nhiệm các điều kiện mượn và dữ liệu sau thao tác. Điều phối nạp/lưu/thoát, ghép chương trình và review; tác giả từng phần tự sửa lỗi của mình, không chuyển mọi việc sửa về Thành.
+- **Thái — c, e, i, j:** làm đầy đủ xử lý và màn hình nhập đầu sách/cấp mã cuốn, tìm theo tên, liệt kê độc giả quá hạn và top 10; đọc/ghi đầu sách/cuốn sách. Cung cấp tra cứu sách cho Thành/Tấn. i và j do Thái tự tính/lập kết quả từ dữ liệu chung, không chờ Thành làm sẵn thống kê. Thái dùng phần tính ngày của Thành cho i; không gánh toàn bộ giao diện nhóm.
+- **Tấn — b, d, h và menu:** tự làm cả xử lý liệt kê, thứ tự kết quả và giao diện: b có hai lựa chọn mã hoặc tên+họ; d nhóm thể loại và tên tăng trong nhóm; h hiển thị mã/tên sách đang mượn của độc giả được chọn. Làm menu để chuyển màn hình, phối hợp Thành về luồng chạy. Chức năng chỉ xem không tự sửa dữ liệu nghiệp vụ. Hỗ trợ bộ dữ liệu mẫu sau khi định dạng đã chốt; không được xem việc tạo dữ liệu thay cho phần code trực tiếp.
+
+Mỗi người chịu trách nhiệm nhập liệu, thông báo, quay lại và xem dữ liệu dài khi phù hợp với màn hình mình làm; tự kiểm thử phần mình rồi cùng kiểm tra khi ghép. Quy ước phím/bố cục và phần console dùng chung do cả ba trao đổi và chia người thực hiện theo nhu cầu.
+
+**Đọc hướng đi:** bản trong repo có tài liệu `docs/HUONG_DI_TU_LAM_CHO_TUNG_THANH_VIEN.md`, với các mốc cụ thể cho Thái và Tấn. Các mốc là kế hoạch để học và làm, không phải kết quả đã hoàn thành. Chỉ giao bổ sung hoặc đổi người phụ trách khi có trao đổi dựa trên tiến độ thật.
 
 ### 5. Quy ước chung để ghép code thuận tiện
 
@@ -86,12 +96,14 @@ Xây dựng ứng dụng quản lý Thư viện theo đề số 3, gồm đủ c
 - `DocGia.h/.cpp`, `MuonTra.h/.cpp`: phần Thành phụ trách; ngày tháng có thể tách file khi cần.
 - `Sach.h/.cpp`, `ThongKe.h/.cpp`: phần Thái phụ trách.
 - `LietKe.h/.cpp`, `Menu.h/.cpp`: phần Tấn phụ trách.
-- `GiaoDien.h/.cpp`: bộ hỗ trợ chung, Thái phụ trách chính và Thành hỗ trợ.
+- `GiaoDien.h/.cpp`: ví dụ file hỗ trợ chung nếu nhóm thấy cần; cả ba tự chia trách nhiệm từng phần, không mặc định thuộc Thái.
 - `main.cpp`: một điểm chạy duy nhất, Thành điều phối. Chương trình thử riêng của từng người giữ ngoài bản ghép.
 
 Đây là cách chia file dự kiến, chưa phải các file đã được tạo. `.h` công bố cách gọi; `.cpp` chứa cài đặt. Chia file không thay đổi bốn cấu trúc dữ liệu theo đề.
 
 **Giao diện console:**
+
+- Thành tự làm màn hình a, f, g; Thái tự làm c, e, i, j; Tấn tự làm b, d, h và menu. Mỗi người tự kiểm thử giao diện phần mình và cùng kiểm tra khi ghép. Các thành phần dùng chung do cả ba thống nhất và phân người phụ trách cụ thể theo từng mốc.
 
 - Nhóm thống nhất kích thước bố cục, màu, cách nhận phím và ý nghĩa Enter/Esc/quay lại trước khi làm nhiều màn hình.
 - Có thể kết hợp phím số với Enter, phím mũi tên và tô sáng lựa chọn. Đề xuất: ↑/↓ chọn menu, Enter mở, Esc quay lại; nhóm chốt quy ước cuối cùng và dùng nhất quán.
@@ -110,15 +122,17 @@ Xây dựng ứng dụng quản lý Thư viện theo đề số 3, gồm đủ c
 
 ### 7. Các mốc ghép và cách bàn giao
 
+**Bàn giao theo khối liền mạch:** đọc tài liệu docs/NHOM_CONG_VIEC_VA_MOC_PR.md trong repo. Thành có ba khối, Thái hai khối, Tấn ba khối; đây là ranh giới xem xét bàn giao, không phải số PR bắt buộc. Không ép dừng sau một hàm hoặc chức năng nhỏ. Thành viên tự chọn lúc commit/push; gửi PR khi khép một khối đủ kiểm tra hoặc phần phụ thuộc cần trao sớm, còn dở có thể dùng Draft PR. Có thể gộp việc liên quan hoặc tách phần độc lập, giữ nhịp làm việc và tránh dồn toàn bộ đến cuối. Các mốc dưới đây là mốc tích hợp chung.
+
 1. **Chốt nền chung:** bộ khai báo, cách gọi hàm giữa ba phần, định dạng file và quy ước giao diện; bản chung biên dịch được.
-2. **Luồng đầu tiên:** mở chương trình → đọc file sách mẫu → menu → bảng sách xem được dữ liệu dài → quay lại → thoát. Thái làm đọc sách và hỗ trợ bảng, Tấn làm màn hình liệt kê ở mức phù hợp và menu, Thành nối khởi động. Màn hình tạm chưa đủ nhóm thể loại/thứ tự không được tính là hoàn thành mục d.
+2. **Luồng đầu tiên:** mở chương trình → đọc file sách mẫu → menu → bảng sách xem được dữ liệu dài → quay lại → thoát. Thái làm đọc sách, Tấn tự làm màn hình liệt kê ở mức phù hợp và menu, Thành nối khởi động; phần hỗ trợ bảng chung do nhóm phân người phối hợp thực hiện. Màn hình tạm chưa đủ nhóm thể loại/thứ tự không được tính là hoàn thành mục d.
 3. **Dữ liệu độc giả và liệt kê:** ghép phần độc giả, dữ liệu lịch sử mẫu và các màn hình b, h; mở rộng d theo đúng đề.
 4. **Mượn–trả:** ghép f, g với độc giả, sách và lịch sử; kiểm tra các màn hình liệt kê phản ánh đúng thay đổi.
 5. **Hoàn thiện:** c, e, i, j cùng các yêu cầu còn thiếu; kiểm thử lưu/đọc, dữ liệu dài, nhập sai và toàn bộ luồng giao diện. Một số phần có thể làm song song khi phụ thuộc đã sẵn sàng.
 
 Mỗi lần giao code phải kèm: chức năng đã làm, cách gọi/phụ thuộc, ca thử và kết quả, phần còn thiếu. Người viết tự sửa phần mình sau review; Thành điều phối bản ghép, không nhận làm thay mọi phần.
 
-Từ 27/09/2026, mã nguồn và tài liệu triển khai chung được quản lý tại repo riêng tư [do-an-thu-vien](https://github.com/ntienthanh195/do-an-thu-vien). Mỗi nhiệm vụ làm trên một nhánh, gửi pull request để review và ghép vào main; Thành điều phối ghép sau kiểm tra. Drive ở phần B dùng cho đề, tài liệu, ảnh/video hoặc bản đóng gói, không giữ một bản code chính thức song song. Ghép theo mốc nhỏ, không đợi cả ba hoàn thành toàn bộ mới ghép. Thái và Tấn cần được mời vào repo bằng tài khoản GitHub của từng người; chưa coi việc tạo repo là đã cấp quyền cho hai bạn.
+Từ 27/09/2026, mã nguồn và tài liệu triển khai chung được quản lý tại repo riêng tư [do-an-thu-vien](https://github.com/ntienthanh195/do-an-thu-vien). Mỗi nhiệm vụ làm trên một nhánh, gửi pull request để review và ghép vào main; Thành điều phối ghép sau kiểm tra. Drive ở phần B dùng cho đề, tài liệu, ảnh/video hoặc bản đóng gói, không giữ một bản code chính thức song song. Ghép theo mốc nhỏ, không đợi cả ba hoàn thành toàn bộ mới ghép. Thái và Tấn cần được mời vào repo bằng tài khoản GitHub của từng người; chưa coi việc tạo repo là đã cấp quyền cho Thái và Tấn.
 
 ### 8. Những điểm phải làm rõ trước khi chốt hành vi liên quan
 
