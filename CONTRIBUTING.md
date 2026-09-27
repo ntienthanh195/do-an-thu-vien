@@ -1,5 +1,7 @@
 # Cách cộng tác của nhóm
 
+Mới dùng GitHub: đọc [hướng dẫn từng bước dành cho nhóm](docs/HUONG_DAN_DAY_CODE_CHO_NHOM.md) trước. Tài liệu đó có cách đặt file đúng thư mục, lấy repo về máy và bàn giao chức năng đã viết.
+
 ## Một nhiệm vụ, một nhánh
 
 1. Lấy bản `main` mới nhất trước khi bắt đầu.

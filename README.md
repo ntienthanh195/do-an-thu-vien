@@ -25,6 +25,8 @@ Chưa chốt cấu hình build và định dạng dữ liệu. Nhóm sẽ bổ s
 
 ## Cách làm việc
 
+**Thái và Tấn đọc trước:** [Hướng dẫn đặt file và đẩy code từng bước](docs/HUONG_DAN_DAY_CODE_CHO_NHOM.md) — vị trí file, GitHub Desktop, tạo nhánh, commit, push và gửi yêu cầu ghép.
+
 Xem [hướng dẫn cộng tác](CONTRIBUTING.md). GitHub là nơi giữ bản code chung; Drive dành cho đề, tài liệu, ảnh/video và bản đóng gói khi cần. Ghi chú bàn giao Drive trong hồ sơ cũ được thay bằng quy trình GitHub đối với mã nguồn.
 
 Mốc tích hợp đầu tiên: mở ứng dụng → đọc dữ liệu sách mẫu → menu → bảng sách xem được dữ liệu dài → quay lại → thoát. Đây là mục tiêu, chưa hoàn thành.
