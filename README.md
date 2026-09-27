@@ -25,6 +25,8 @@ Chưa chốt cấu hình build và định dạng dữ liệu. Nhóm sẽ bổ s
 
 ## Cách làm việc
 
+**Bắt đầu triển khai:** đọc [Hướng đi tự làm cho từng thành viên](docs/HUONG_DI_TU_LAM_CHO_TUNG_THANH_VIEN.md). Mỗi người tự thiết kế, tạo file, đặt tên hàm và viết code từ yêu cầu; repo không cung cấp bộ khung hàm để điền. Cả nhóm thống nhất cách gọi giữa các phần trước khi làm riêng.
+
 **Thái và Tấn đọc trước:** [Hướng dẫn đặt file và đẩy code từng bước](docs/HUONG_DAN_DAY_CODE_CHO_NHOM.md) — vị trí file, GitHub Desktop, tạo nhánh, commit, push và gửi yêu cầu ghép.
 
 Xem [hướng dẫn cộng tác](CONTRIBUTING.md). GitHub là nơi giữ bản code chung; Drive dành cho đề, tài liệu, ảnh/video và bản đóng gói khi cần. Ghi chú bàn giao Drive trong hồ sơ cũ được thay bằng quy trình GitHub đối với mã nguồn.

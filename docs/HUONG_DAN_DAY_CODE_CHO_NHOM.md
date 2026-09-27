@@ -16,14 +16,14 @@ Phân biệt ba việc:
 
 File của Tấn trên nhánh riêng vẫn nằm ở `src/LietKe.cpp`; sau khi ghép vào `main`, đường dẫn vẫn như vậy. Không tạo ba thư mục tên người để chứa ba bản chương trình riêng.
 
-Các file dự kiến theo phân công:
+Các tên file dưới đây chỉ là ví dụ để hiểu vị trí đặt code theo phân công, không phải bộ khung bắt buộc:
 
 - **Thành:** `src/DocGia.h`, `src/DocGia.cpp`, `src/MuonTra.h`, `src/MuonTra.cpp`; điều phối `src/main.cpp`.
 - **Thái:** `src/Sach.h`, `src/Sach.cpp`, `src/ThongKe.h`, `src/ThongKe.cpp`; phụ trách chính `src/GiaoDien.h`, `src/GiaoDien.cpp`.
 - **Tấn:** `src/LietKe.h`, `src/LietKe.cpp`, `src/Menu.h`, `src/Menu.cpp`.
 - **Dùng chung:** `src/KhaiBao.h`, do cả nhóm thống nhất và Thành điều phối thay đổi.
 
-**Các tên trên là dự kiến, chưa phải tất cả file đã có.** Hiện repo khởi tạo có bản khai báo `src/CODE-ĐỒ-ÁN-THƯ-VIỆN-DSA.cpp`. Nhóm phải thống nhất tách khai báo trước; không tự chép toàn bộ struct vào mỗi file hoặc cùng tạo nhiều bản `KhaiBao.h` khác nhau. Khi file phụ trách chưa có, tạo đúng đường dẫn đã chốt; khi đã có, sửa file đó, không thêm hậu tố `final`, `v2`, `moi_nhat` để giữ nhiều bản song song. Git lưu lịch sử thay đổi.
+**Mỗi người tự thiết kế và tạo file khi cần; nhóm tự thống nhất tên và cách chia.** Đọc [hướng đi tự làm](HUONG_DI_TU_LAM_CHO_TUNG_THANH_VIEN.md) trước khi bắt đầu. Repo giữ bản khai báo nhóm tự viết `src/CODE-ĐỒ-ÁN-THƯ-VIỆN-DSA.cpp`; không có bộ hàm AI để điền. Nhóm tự thống nhất cách tách khai báo dùng chung, không chép struct thành nhiều bản khác nhau. Khi file đã có thì sửa file đó, không thêm hậu tố `final`, `v2`, `moi_nhat` để giữ nhiều bản song song. Git lưu lịch sử thay đổi.
 
 Các loại tài liệu/dữ liệu khác:
 
@@ -129,7 +129,6 @@ Thái làm tương tự với nhánh và file phần sách/thống kê của mì
 
 ## Tài liệu GitHub chính thức
 
-- [GitHub Desktop](https://docs.github.com/en/desktop): công cụ giao diện để làm việc với GitHub.
 - [Clone repo](https://docs.github.com/en/desktop/adding-and-cloning-repositories).
 - [Tạo nhánh và lưu thay đổi](https://docs.github.com/en/get-started/start-your-journey/writing-and-storing-your-code).
 - [Xem thay đổi và commit](https://docs.github.com/en/desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop).
