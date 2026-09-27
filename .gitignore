@@ -1,0 +1,28 @@
+# Build outputs
+build/
+bin/
+obj/
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+*.a
+*.lib
+
+# Local IDE state
+.vs/
+.idea/
+*.user
+*.suo
+
+# Data changed during local runs
+data/runtime/
+*.log
+
+# Local secrets and OS files
+.env
+.env.*
+!.env.example
+Thumbs.db
+.DS_Store
