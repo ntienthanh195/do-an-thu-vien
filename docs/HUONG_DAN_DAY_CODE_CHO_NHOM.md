@@ -16,14 +16,14 @@ Phân biệt ba việc:
 
 File của Tấn trên nhánh riêng vẫn nằm ở `src/LietKe.cpp`; sau khi ghép vào `main`, đường dẫn vẫn như vậy. Không tạo ba thư mục tên người để chứa ba bản chương trình riêng.
 
-Các file trong bộ khung hiện tại theo phân công:
+Các tên file dưới đây chỉ là ví dụ để hiểu vị trí đặt code theo phân công, không phải bộ khung bắt buộc:
 
 - **Thành:** `src/DocGia.h`, `src/DocGia.cpp`, `src/MuonTra.h`, `src/MuonTra.cpp`; điều phối `src/main.cpp`.
 - **Thái:** `src/Sach.h`, `src/Sach.cpp`, `src/ThongKe.h`, `src/ThongKe.cpp`; phụ trách chính `src/GiaoDien.h`, `src/GiaoDien.cpp`.
 - **Tấn:** `src/LietKe.h`, `src/LietKe.cpp`, `src/Menu.h`, `src/Menu.cpp`.
 - **Dùng chung:** `src/KhaiBao.h`, do cả nhóm thống nhất và Thành điều phối thay đổi.
 
-**Các file trên đã có bộ khung TODO, chưa có xử lý nghiệp vụ.** `src/KhaiBao.h` chứa bản sao các cấu trúc đã có; `src/CODE-ĐỒ-ÁN-THƯ-VIỆN-DSA.cpp` giữ nguyên để đối chiếu và không tham gia build. Không tự chép toàn bộ struct vào mỗi file hoặc tạo nhiều bản `KhaiBao.h` khác nhau. Sửa đúng file phụ trách, không thêm hậu tố `final`, `v2`, `moi_nhat` để giữ nhiều bản song song. Git lưu lịch sử thay đổi.
+**Mỗi người tự thiết kế và tạo file khi cần; nhóm tự thống nhất tên và cách chia.** Đọc [hướng đi tự làm](HUONG_DI_TU_LAM_CHO_TUNG_THANH_VIEN.md) trước khi bắt đầu. Repo giữ bản khai báo nhóm tự viết `src/CODE-ĐỒ-ÁN-THƯ-VIỆN-DSA.cpp`; không có bộ hàm AI để điền. Nhóm tự thống nhất cách tách khai báo dùng chung, không chép struct thành nhiều bản khác nhau. Khi file đã có thì sửa file đó, không thêm hậu tố `final`, `v2`, `moi_nhat` để giữ nhiều bản song song. Git lưu lịch sử thay đổi.
 
 Các loại tài liệu/dữ liệu khác:
 
@@ -33,8 +33,6 @@ Các loại tài liệu/dữ liệu khác:
 - File `.exe`, `.o`, `.obj` và thư mục build không đưa lên làm mã nguồn.
 
 Hai thư mục dữ liệu chưa được tạo trong bản khởi tạo. Khi có định dạng, người phụ trách thêm file dữ liệu đúng chỗ; Git không lưu thư mục rỗng.
-
-**Cập nhật bộ khung 27/09:** ngoài các file phía trên còn có `DuLieu.h/.cpp` cho đọc/ghi và `build.ps1`. Đọc [hướng dẫn khung code](HUONG_DAN_KHUNG_CODE.md) trước khi cài; không tạo thêm bộ file trùng với skeleton hiện có.
 
 ## 2. Chuẩn bị lần đầu
 

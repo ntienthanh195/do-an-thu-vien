@@ -70,6 +70,8 @@ Xây dựng ứng dụng quản lý Thư viện theo đề số 3, gồm đủ c
 
 ### 5. Quy ước chung để ghép code thuận tiện
 
+**Lựa chọn học tập ngày 27/09/2026:** mỗi người đọc đề và tự thiết kế, tự tạo file, tự đặt tên hàm và viết code. AI chỉ nêu hướng đi, yêu cầu và tiêu chí; không cung cấp sẵn bộ hàm/biến để điền. Các tên file đề xuất dưới đây chỉ minh họa cách tổ chức, không bắt buộc tạo trước. Người viết tự đề xuất giao tiếp giữa các phần, cả nhóm thống nhất trước khi triển khai riêng. Bộ khung AI vừa đề xuất đã được rút khỏi bản làm việc; bản khai báo do nhóm viết vẫn được giữ. Việc rút khung không xóa lịch sử đã được xem/hỗ trợ và không tạo kết quả học tập mới.
+
 **Khai báo và trách nhiệm:**
 
 - Dùng một bộ cấu trúc và hằng trạng thái chung đã được cả nhóm đối chiếu đề. Thay đổi tên, kiểu hoặc ý nghĩa trường phải trao đổi trước khi sửa.

@@ -15,6 +15,7 @@ Mới dùng GitHub: đọc [hướng dẫn từng bước dành cho nhóm](docs/
 
 ## Phối hợp
 
+- Mỗi người tự thiết kế, tự tạo file và tự đặt tên hàm từ đề; tham khảo [hướng đi từng thành viên](docs/HUONG_DI_TU_LAM_CHO_TUNG_THANH_VIEN.md). Không dùng bộ khung hàm AI làm bài điền sẵn. Cùng thống nhất giao tiếp giữa các phần do người viết đề xuất.
 - Không tự đổi tên/kiểu dữ liệu hoặc cách gọi hàm dùng chung mà chưa trao đổi.
 - Một hàm dùng chung có một nơi cài đặt; các phần khác gọi lại.
 - Mỗi người làm màn hình phần mình bằng bộ hỗ trợ giao diện chung.
