@@ -24,6 +24,8 @@ Mới dùng GitHub: đọc [hướng dẫn từng bước dành cho nhóm](docs/
 
 ## Dữ liệu mẫu
 
+**Ưu tiên trước khi triển khai hàng loạt chức năng:** Thành và Thái chốt định dạng, chuẩn bị bộ dữ liệu mẫu chung và phần đọc tối thiểu để nạp vào đúng cấu trúc. Thành phụ trách độc giả/lịch sử; Thái phụ trách đầu sách/cuốn sách; Tấn hỗ trợ tạo dữ liệu theo định dạng đã chốt. Làm bộ nhỏ có kết quả đối chiếu trước, tiếp đến bộ dài hợp lệ. Mục tiêu là khi một chức năng vừa cài xong, người viết có ngay dữ liệu để chạy thử, không lúc đó mới bắt đầu chuẩn bị file. Không cần chờ hoàn chỉnh mọi chức năng ghi file hoặc mọi tình huống dữ liệu lỗi mới bắt đầu viết nghiệp vụ; phần ghi và lưu–mở lại vẫn phải hoàn thiện theo phân công.
+
 **Có file dữ liệu mẫu trước thì đưa lên GitHub trước:** Thành, Thái hoặc Tấn chuẩn bị xong bộ mẫu theo định dạng đã thống nhất thì lưu vào `data/samples/`, commit/push lên nhánh riêng và gửi PR để nhóm dùng sớm. Không chờ hoàn thành cả khối chức năng hoặc chờ tất cả bộ dữ liệu cùng xong; không push thẳng `main`. Có thể gửi PR chỉ chứa dữ liệu và mô tả. Nếu chưa có code đọc để thử thì ghi rõ “chưa kiểm thử bằng chương trình”, không coi file mẫu là bằng chứng phần đọc/ghi đã chạy đúng.
 
 Kèm mô tả ngắn về định dạng, mục đích thử và những file cần dùng cùng để khớp mã. Thành kiểm tra phần độc giả/lịch sử, Thái kiểm tra phần sách, kể cả bộ mẫu do Tấn hỗ trợ chuẩn bị. Bộ mẫu mới không được âm thầm làm lệch dữ liệu liên quan đã có. Dữ liệu còn nháp hoặc chưa khớp được chia sẻ qua Draft PR và ghi rõ giới hạn trước khi ghép.

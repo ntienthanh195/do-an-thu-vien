@@ -15,6 +15,8 @@ Các khối dưới đây là ranh giới để xem xét bàn giao, không phả
 
 ## 2. Thành — ba khối chính
 
+**Ưu tiên chung trước các khối chức năng:** Thành và Thái thống nhất định dạng rồi ưu tiên hoàn thành bộ dữ liệu mẫu cùng phần đọc tối thiểu để nạp dữ liệu vào cấu trúc. Thành làm độc giả/lịch sử, Thái làm sách/cuốn, Tấn hỗ trợ chuẩn bị mẫu. Kiểm tra bộ nhỏ trước rồi bổ sung bộ dài có liên kết mã và trạng thái nhất quán; chia sẻ ngay phần đã sẵn sàng qua nhánh riêng/PR. Nhờ đó, chức năng vừa viết xong có thể dùng bộ mẫu chung để thử ngay. Mốc dữ liệu nằm ở đầu khối A của Thành/Thái, không đợi xong quản lý độc giả, tìm kiếm, mượn–trả hoặc giao diện hoàn chỉnh. Không yêu cầu hoàn tất mọi khả năng ghi file hoặc mọi bộ dữ liệu lỗi trước khi viết nghiệp vụ; người viết vẫn tự chọn ca thử riêng cho chức năng mình.
+
 ### Khối Thành A — quản lý độc giả và dữ liệu file
 
 **Phạm vi liền mạch:** mục a gồm thêm/tìm/sửa/xóa thẻ, cấp mã, màn hình quản lý; đọc/ghi độc giả và lịch sử để có dữ liệu dùng chung. Thành có thể làm nối tiếp các thao tác rồi thử tổng hợp, không gửi riêng từng thao tác nhỏ.

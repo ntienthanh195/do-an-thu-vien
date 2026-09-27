@@ -113,6 +113,8 @@ Mỗi người chịu trách nhiệm nhập liệu, thông báo, quay lại và 
 
 ### 6. Dữ liệu file và kiểm thử
 
+- **Ưu tiên làm dữ liệu trước:** Thành và Thái chốt định dạng, chuẩn bị bộ mẫu và phần đọc tối thiểu để nạp được vào đúng cấu trúc ngay đầu khối A. Thành làm độc giả/lịch sử; Thái làm đầu sách/cuốn sách; Tấn hỗ trợ tạo mẫu theo định dạng chung. Kiểm tra bộ nhỏ trước rồi bổ sung bộ dài hợp lệ, khớp mã và trạng thái. Mục tiêu là khi cài xong một chức năng đã có sẵn dữ liệu để chạy thử, không chờ hoàn thiện nghiệp vụ hoặc giao diện mới chuẩn bị file. Phần ghi và kiểm tra lưu–mở lại vẫn phải hoàn thiện theo phân công; không cần hoàn tất mọi xử lý file lỗi trước khi triển khai nghiệp vụ.
+
 - **Ai có dữ liệu mẫu trước thì đưa lên GitHub trước:** Thành, Thái hoặc Tấn chuẩn bị xong file theo định dạng đã thống nhất thì lưu ở data/samples, commit/push lên nhánh riêng và gửi PR, không chờ làm xong cả khối chức năng hoặc chờ toàn bộ dữ liệu. PR có thể chỉ gồm file mẫu và mô tả định dạng, mục đích thử, các file/mã liên quan. Thành kiểm tra độc giả/lịch sử, Thái kiểm tra sách. Ghi rõ đã thử đọc bằng chương trình hay chưa; mẫu còn nháp/chưa khớp chia sẻ qua Draft PR, không coi là dữ liệu hợp lệ chung. Không push thẳng main.
 
 - Thành và Thái chốt định dạng file, quan hệ giữa mã thẻ/mã cuốn/lịch sử mượn, quy tắc đọc/ghi và cách báo lỗi. Tấn chuẩn bị dữ liệu theo định dạng đã chốt, không phải tự quyết định định dạng cho cả nhóm.
