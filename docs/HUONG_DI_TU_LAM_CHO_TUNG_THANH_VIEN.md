@@ -131,7 +131,7 @@ Menu làm song song ở phạm vi nhỏ sau khi thống nhất điều hướng.
 
 ## 5. Bàn giao một phần như thế nào?
 
-Thực hiện theo [nhóm công việc và mốc PR](NHOM_CONG_VIEC_VA_MOC_PR.md): THANH-01…08, THAI-01…06, TAN-01…05. Đây là các nhóm bàn giao dự kiến, không phải lịch cứng hoặc kết quả đã đạt. Các mốc học phía trên có thể gồm nhiều PR nhỏ; hoàn tất phạm vi đủ kiểm tra thì gửi ngay, không chờ hoàn thành mọi nhiệm vụ.
+Thực hiện theo [khối công việc liền mạch và điểm bàn giao PR](NHOM_CONG_VIEC_VA_MOC_PR.md): Thành có ba khối, Thái hai khối, Tấn ba khối. Các mốc học phía trên giúp hiểu trình tự học, không bắt dừng để push hay mở PR sau mỗi mốc. Thành viên tự chọn điểm dừng tự nhiên để commit/push và gửi khối đủ review; có thể gộp việc liên quan hoặc tách phần phụ thuộc cần bàn giao sớm. Không có quota PR và không chờ dồn toàn bộ đồ án mới gửi.
 
 Người viết tự tạo file trong `src` với tên nhóm đã thống nhất. Một phần bàn giao gồm: code của mình, mục đích, cách phần khác sử dụng, dữ liệu/kết quả thử, điểm chưa hoàn thành hoặc cần hỏi thầy. Không cần đợi xong toàn bộ phân công mới gửi.
 
