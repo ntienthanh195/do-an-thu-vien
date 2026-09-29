@@ -1,0 +1,29 @@
+📁 DuLieu/DuLieuMau.txt
+- Phân công:
+  - Thái: Viết dữ liệu mẫu phần đầu sách và cuốn sách.
+  - Thành: Viết dữ liệu mẫu phần độc giả và lịch sử mượn trả; khớp nối mã chéo giữa các phần.
+  - Tấn: Hỗ trợ bổ sung thêm bộ dữ liệu dài đúng theo định dạng đã chốt.
+- Ghi chú: Phải kèm theo văn bản mô tả chi tiết kết quả mong đợi khi nạp dữ liệu mẫu.
+📁 DuLieu/DuLieuRong.txt
+- Phân công:
+  - Tấn: Trực tiếp tạo file và chịu trách nhiệm giữ đúng chuẩn định dạng file rỗng.
+📁 TestKey/TestNhapDung.txt
+- Phân công:
+  - Cả ba: Mỗi người tự đóng góp các ca thử nghiệm (test case) chuẩn cho các chức năng do mình sở hữu.
+  - Thành: Bổ sung thêm các ca thử tích hợp luồng nghiệp vụ (Mượn sách → Trả sách → Lưu file → Mở lại chương trình).
+  - Tấn: Chịu trách nhiệm quản lý và duy trì cấu trúc của file tổng hợp.
+📁 TestKey/TestNhapSai.txt
+- Phân công:
+  - Thái: Viết kịch bản nhập bậy / dữ liệu không hợp lệ cho đầu sách và cuốn sách.
+  - Thành: Viết kịch bản nhập sai phái, ngày tháng sai quy cách, mượn vượt quá số lượng cho phép (quá 3 cuốn).
+  - Tấn: Viết kịch bản chọn sai menu điều hướng, mã thẻ chứa ký tự không phải số.
+📁 TaiLieu/SoDoLienKet.md
+- Phân công:
+  - Thái: Vẽ sơ đồ cấu trúc mảng con trỏ + danh sách liên kết đơn các cuốn sách.
+  - Thành: Vẽ sơ đồ cấu trúc cây nhị phân tìm kiếm (BST) độc giả + danh sách liên kết kép lịch sử mượn trả.
+  - Tấn: Vẽ sơ đồ luồng hiển thị liệt kê và menu điều hướng.
+  - Thành: Tổng hợp và ghép các sơ đồ thành bản hoàn chỉnh cuối cùng.
+📁 TaiLieu/CauHoiHoiThay.md
+- Phân công:
+  - Cả ba: Mỗi người tự ghi lại các giả định và thắc mắc nghiệp vụ của mình (ví dụ: cách tính top-10 theo đầu sách hay cuốn sách, xử lý trường hợp đồng hạng, mốc thời gian tính quá hạn, ghi nhận ngày trả khi báo mất sách, xử lý ngày tháng 0/0/0, giới hạn MAX_DAU_SACH).
+  - Thành: Chốt và duyệt lại danh sách câu hỏi tổng trước khi cả nhóm gặp thầy hướng dẫn.
