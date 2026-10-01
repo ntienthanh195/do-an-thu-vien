@@ -1,5 +1,7 @@
 # Hướng đi tự làm cho Thành, Thái và Tấn
 
+**Cập nhật 02/10/2026:** nhóm đã chốt cách chia và tạo sẵn file trống; xem [vị trí file hiện hành](HUONG_DAN_DAY_CODE_CHO_NHOM.md). Lựa chọn tự tạo file ngày 27/09 bên dưới là lịch sử; quyền tự thiết kế và tự viết code vẫn giữ.
+
 ## Cách dùng tài liệu
 
 Theo lựa chọn của Thành ngày 27/09/2026, mỗi người đọc đề, tự thiết kế, tự tạo file, tự đặt tên hàm và tự viết code như đã làm ở mốc khai báo. Tài liệu chỉ nêu mục tiêu, yêu cầu, phần cần phối hợp và dấu hiệu có thể chuyển mốc; không cung cấp khung code, danh sách hàm bắt buộc, biến mẫu hoặc thuật toán để chép.
@@ -87,7 +89,7 @@ Chỉ tập trung mục h. Đọc đề và khai báo liên quan, viết vài c�
 ### Mốc 1 — mục h: sách một độc giả đang mượn
 
 - **Nền cần hiểu:** vai trò mã thẻ, mã cuốn, đầu sách và một bản ghi mượn; ý nghĩa các trạng thái. Chỗ nào chưa hiểu thì hỏi đúng chỗ đó trước khi viết.
-- **Tấn tự làm:** thiết kế và cài phần liệt kê theo yêu cầu, gồm xử lý dữ liệu cần hiển thị và màn hình nhận mã thẻ/xem kết quả. Tự tạo file và đặt tên hàm sau khi chốt cách dùng chung.
+- **Tấn tự làm:** thiết kế và cài phần liệt kê theo yêu cầu, gồm xử lý dữ liệu cần hiển thị và màn hình nhận mã thẻ/xem kết quả. Dùng file đã tạo sẵn theo phân công, thống nhất tên hàm và cách dùng chung trước khi cài.
 - **Thành cung cấp cho Tấn:** cách tìm độc giả và đọc lịch sử mượn–trả, cùng dữ liệu độc giả/lịch sử mẫu hợp lệ.
 - **Thái cung cấp cho Tấn:** cách tra tên đầu sách theo mã cuốn, cùng dữ liệu sách mẫu khớp với lịch sử. Tấn không phải chờ nghiệp vụ mượn–trả hoàn chỉnh. Thành và Thái cung cấp phần tra cứu nền; Tấn tự xử lý yêu cầu h.
 - **Bàn giao/chuyển mốc:** Tấn tự đề xuất dữ liệu, kết quả mong đợi và lý do thử; chạy đối chiếu khi đủ phụ thuộc, giải thích dữ liệu nào quyết định kết quả. Không làm thay đổi dữ liệu khi chỉ xem danh sách. Nếu thiếu phụ thuộc, ghi rõ đã làm đến đâu.
@@ -135,8 +137,8 @@ Menu làm song song ở phạm vi nhỏ sau khi thống nhất điều hướng.
 
 Thực hiện theo [khối công việc liền mạch và điểm bàn giao PR](NHOM_CONG_VIEC_VA_MOC_PR.md): Thành có ba khối, Thái hai khối, Tấn ba khối. Các mốc học phía trên giúp hiểu trình tự học, không bắt dừng để push hay mở PR sau mỗi mốc. Thành viên tự chọn điểm dừng tự nhiên để commit/push và gửi khối đủ review; có thể gộp việc liên quan hoặc tách phần phụ thuộc cần bàn giao sớm. Không có quota PR và không chờ dồn toàn bộ đồ án mới gửi.
 
-Người viết tự tạo file trong `src` với tên nhóm đã thống nhất. Một phần bàn giao gồm: code của mình, mục đích, cách phần khác sử dụng, dữ liệu/kết quả thử, điểm chưa hoàn thành hoặc cần hỏi thầy. Không cần đợi xong toàn bộ phân công mới gửi.
+Người viết sửa phần mình trong các file đã tạo sẵn ở `MaNguon/` theo phân công nhóm. Một phần bàn giao gồm: code của mình, mục đích, cách phần khác sử dụng, dữ liệu/kết quả thử, điểm chưa hoàn thành hoặc cần hỏi thầy. Không cần đợi xong toàn bộ phân công mới gửi.
 
 Làm trên nhánh riêng, mở PR và cùng review theo [hướng dẫn GitHub](HUONG_DAN_DAY_CODE_CHO_NHOM.md). Hướng dẫn vị trí thư mục chỉ giúp tổ chức dự án; không yêu cầu tạo sẵn tất cả file hoặc làm theo tên hàm/biến do AI đặt.
 
-Bước bắt đầu cho mỗi người: chọn mốc đầu thuộc phần mình, đọc yêu cầu và khai báo có liên quan, trình bày ngắn dự định cùng điểm cần phối hợp, rồi tự tạo file và cài phạm vi đã thống nhất. Khi mắc, hỏi đúng điểm để nhận gợi ý tăng dần; không cần chờ hoàn thành cả phân hệ mới trao đổi.
+Bước bắt đầu cho mỗi người: chọn mốc đầu thuộc phần mình, đọc yêu cầu và khai báo có liên quan, trình bày ngắn dự định cùng điểm cần phối hợp, rồi mở file đã tạo sẵn và tự cài phạm vi đã thống nhất. Khi mắc, hỏi đúng điểm để nhận gợi ý tăng dần; không cần chờ hoàn thành cả phân hệ mới trao đổi.

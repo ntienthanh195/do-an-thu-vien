@@ -6,35 +6,32 @@ Hướng dẫn này dùng GitHub Desktop để thao tác bằng nút bấm. Code
 
 ## 1. Code đặt ở đâu?
 
-**Mọi file mã nguồn `.cpp` và khai báo `.h` của chương trình đặt trong thư mục `src` của repo đã clone về máy.** Push sẽ đưa các thay đổi lên đúng đường dẫn đó trên GitHub; không có bước chọn “thư mục nhận” mỗi lần push.
+**Theo cách chia nhóm đã chốt, code mới đặt trong `MaNguon/`.** Các file đã tạo sẵn để Thành, Thái và Tấn mở đúng file rồi tự viết; không có thân hàm hoặc mẫu lời giải. Quy ước vị trí này thay các ví dụ `src/` và `DuLieu/` trong hướng dẫn cũ; lịch làm việc và phân công chức năng a–j không đổi.
 
-Phân biệt ba việc:
+- `00_KhaiBaoChung.h`: khai báo chung, Thành điều phối; cả ba thống nhất thay đổi.
+- `01_HamTienIch.cpp`: Thành làm ngày tháng/kiểm tra dữ liệu phần mình; Thái làm tiện ích chuỗi/trạng thái sách.
+- `02_XuLyDauSach.cpp`: Thái quản lý/tìm đầu sách; Tấn liệt kê theo thể loại.
+- `03_XuLyCuonSach.cpp`: Thái quản lý/tra cứu cuốn sách.
+- `04_XuLyDocGia.cpp`: Thành quản lý độc giả; Tấn làm hai cách xem độc giả.
+- `05_XuLyMuonTra.cpp`: Thành xử lý danh sách lịch sử; Tấn liệt kê sách đang mượn.
+- `06_NghiepVuTongHop.cpp`: Thành làm nghiệp vụ mượn/trả; Thái làm thống kê quá hạn/top 10.
+- `07_LuuDocFile.cpp`: Thành đọc/ghi độc giả và lịch sử, phối hợp lưu/nạp chung; Thái đọc/ghi sách. Backup tự động là tùy chọn làm sau.
+- `08_ChuongTrinhChinh.cpp`: Tấn làm menu; Thành nối luồng chính, nạp/lưu/thoát. Helper giao diện dùng chung được cả ba chia việc cụ thể, không giao hết cho Tấn.
 
-- **Thư mục:** vị trí file, ví dụ `src/LietKe.cpp`.
-- **Nhánh:** phiên bản đang làm việc, ví dụ `tan/liet-ke-dang-muon`.
-- **Pull request (PR):** yêu cầu xem xét và ghép thay đổi từ nhánh đó vào `main`.
+Mỗi người tự làm màn hình chức năng mình phụ trách. Báo nhau trước khi cùng sửa một file; làm trên nhánh riêng, gửi PR để review rồi mới ghép main. Ví dụ Tấn sửa phần liệt kê trong `MaNguon/05_XuLyMuonTra.cpp` trên nhánh `tan/liet-ke-dang-muon`; sau khi ghép, đường dẫn file không đổi. Không tạo ba bản chương trình theo tên người hoặc thêm hậu tố `final`, `v2`, `moi_nhat`; Git giữ lịch sử.
 
-File của Tấn trên nhánh riêng vẫn nằm ở `src/LietKe.cpp`; sau khi ghép vào `main`, đường dẫn vẫn như vậy. Không tạo ba thư mục tên người để chứa ba bản chương trình riêng.
+Header mới hiện trống để giữ chỗ. Bản khai báo cũ trong `src/CODE-ĐỒ-ÁN-THƯ-VIỆN-DSA.cpp` và bản Thái gửi PR #5 được giữ nguyên. Nhóm cần đưa bản khai báo đã duyệt vào header chung trước khi dùng để biên dịch; không duy trì nhiều bản struct sửa song song. Bộ file trống chưa phải chương trình chạy được.
 
-Các tên file dưới đây chỉ là ví dụ để hiểu vị trí đặt code theo phân công, không phải bộ khung bắt buộc:
+Các thư mục còn lại:
 
-- **Thành:** `src/DocGia.h`, `src/DocGia.cpp`, `src/MuonTra.h`, `src/MuonTra.cpp`; điều phối `src/main.cpp`.
-- **Thái:** `src/Sach.h`, `src/Sach.cpp`, `src/ThongKe.h`, `src/ThongKe.cpp`, gồm giao diện phần mình.
-- **Tấn:** `src/LietKe.h`, `src/LietKe.cpp`, `src/Menu.h`, `src/Menu.cpp`.
-- **Dùng chung:** `src/KhaiBao.h`, do cả nhóm thống nhất và Thành điều phối thay đổi.
+- `DuLieu/DuLieuMau.txt`: nơi nhóm tự soạn mẫu sau khi chốt định dạng, kèm kết quả mong đợi.
+- `DuLieu/DuLieuRong.txt`: mẫu hệ thống rỗng; file hiện trống chưa chứng minh đúng định dạng của bộ đọc sau này.
+- `DuLieu/runtime/`: bản sao dữ liệu để chạy thử; Git bỏ qua để không ghi đè bộ mẫu chung.
+- `TestKey/TestNhapDung.txt`, `TestKey/TestNhapSai.txt`: kịch bản thử do cả ba bổ sung cho phần mình; chưa có kịch bản hay kết quả kiểm thử.
+- `TaiLieu/SoDoLienKet.md`, `TaiLieu/CauHoiHoiThay.md`: nơi nhóm tự viết sơ đồ và câu hỏi; hiện trống.
+- `docs/`: giữ tài liệu phân công, lịch và hướng dẫn cộng tác đã có.
 
-Mỗi người tự làm giao diện chức năng mình phụ trách. Nếu nhóm tách file giao diện dùng chung, cả ba tự thống nhất tên file và người phụ trách từng phần; không mặc định giao file đó cho Thái. Báo nhau trước khi sửa cùng một file để dễ review và ghép.
-
-**Mỗi người tự thiết kế và tạo file khi cần; nhóm tự thống nhất tên và cách chia.** Đọc [hướng đi tự làm](HUONG_DI_TU_LAM_CHO_TUNG_THANH_VIEN.md) trước khi bắt đầu. Repo giữ bản khai báo nhóm tự viết `src/CODE-ĐỒ-ÁN-THƯ-VIỆN-DSA.cpp`; không có bộ hàm AI để điền. Nhóm tự thống nhất cách tách khai báo dùng chung, không chép struct thành nhiều bản khác nhau. Khi file đã có thì sửa file đó, không thêm hậu tố `final`, `v2`, `moi_nhat` để giữ nhiều bản song song. Git lưu lịch sử thay đổi.
-
-Các loại tài liệu/dữ liệu khác:
-
-- `docs/`: phân công, hướng dẫn và ghi chú kỹ thuật dùng chung.
-- `data/samples/`: dữ liệu mẫu giả lập, chỉ thêm sau khi chốt định dạng; kèm mô tả dữ liệu và kết quả cần kiểm tra.
-- `data/runtime/`: bản sao dùng để chạy thử trên máy mỗi người; Git bỏ qua thư mục này.
-- File `.exe`, `.o`, `.obj` và thư mục build không đưa lên làm mã nguồn.
-
-Hai thư mục dữ liệu chưa được tạo trong bản khởi tạo. Khi có định dạng, người phụ trách thêm file dữ liệu đúng chỗ; Git không lưu thư mục rỗng.
+File `.exe`, `.o`, `.obj` và thư mục build không đưa lên làm mã nguồn. Đọc [hướng đi tự làm](HUONG_DI_TU_LAM_CHO_TUNG_THANH_VIEN.md) để hiểu trách nhiệm; vị trí file mới theo mục này.
 
 ## 2. Chuẩn bị lần đầu
 
@@ -73,7 +70,7 @@ Sau khi clone, cập nhật `main` và tạo nhánh như trên, sao chép có ch
 ## 5. Code xong: commit và push
 
 1. Lưu file trong editor, biên dịch/chạy thử phạm vi có thể kiểm tra.
-2. Quay lại Desktop, mở **Changes**. Phải nhìn thấy đường dẫn dự kiến như `src/LietKe.cpp` hoặc `src/Sach.cpp`.
+2. Quay lại Desktop, mở **Changes**. Phải nhìn thấy đường dẫn dự kiến như `MaNguon/05_XuLyMuonTra.cpp` hoặc `MaNguon/02_XuLyDauSach.cpp`.
 3. Bấm từng file để xem các dòng thêm/xóa. Chỉ chọn những file thuộc nhiệm vụ; nếu có file lạ, cả project hoặc thay đổi của người khác, kiểm tra lại trước khi commit.
 4. Nhập **Summary** cụ thể, ví dụ `Thêm liệt kê sách độc giả đang mượn`. Ghi mô tả bổ sung nếu cần.
 5. Kiểm tra nút **Commit to ...** đang ghi đúng nhánh nhiệm vụ, rồi commit.
@@ -121,11 +118,11 @@ Nếu đang làm dở một nhánh khác và cần thay đổi mới của đồ
 - **Không mở được repo hoặc push bị từ chối:** kiểm tra đúng tài khoản, đã nhận lời mời và quyền truy cập. Không gửi mật khẩu/token cho nhóm.
 - **Desktop báo conflict/xung đột:** giữ nguyên công việc, báo Thành cùng xem phần trùng. Không chọn đại phiên bản, không force push để vượt lỗi.
 - **Sửa nhầm trên main nhưng chưa commit:** giữ thay đổi, nhờ Thành hỗ trợ chuyển sang nhánh phù hợp; không xóa code để làm lại. Nếu đã commit/push nhầm thì báo rõ trước khi sửa lịch sử.
-- **Có dữ liệu test dài:** đưa bộ mẫu đã thống nhất vào `data/samples`, không đưa dữ liệu cá nhân thật hoặc kết quả chạy thay đổi liên tục vào đó.
+- **Có dữ liệu test dài:** đưa bộ mẫu đã thống nhất vào `DuLieu`, không đưa dữ liệu cá nhân thật hoặc kết quả chạy thay đổi liên tục vào đó.
 
 ## 9. Ví dụ bàn giao của Tấn
 
-Tấn nhận mục h → lấy `main` mới nhất → tạo `tan/liet-ke-dang-muon` → tự viết phần phụ trách ở `src/LietKe.h/.cpp` theo cách gọi đã thống nhất → thử dữ liệu và ghi kết quả → commit → Publish branch/Push origin → PR vào `main` → sửa theo review → Thành điều phối ghép → cả nhóm Pull bản mới.
+Tấn nhận mục h → lấy `main` mới nhất → tạo `tan/liet-ke-dang-muon` → tự viết phần phụ trách ở `MaNguon/05_XuLyMuonTra.cpp` theo cách gọi đã thống nhất → thử dữ liệu và ghi kết quả → commit → Publish branch/Push origin → PR vào `main` → sửa theo review → Thành điều phối ghép → cả nhóm Pull bản mới.
 
 Thái làm tương tự với nhánh và file phần sách/thống kê của mình. Không gửi một file `Thai_final.cpp` hoặc `Tan_final.cpp` lên thư mục gốc rồi chờ người khác tự tìm cách ghép.
 

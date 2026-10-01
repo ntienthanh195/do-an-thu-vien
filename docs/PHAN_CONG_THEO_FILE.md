@@ -1,5 +1,11 @@
-BẢNG PHÂN CÔNG TỔNG THỂ (MaNguon/)
-🔹 00_KhaiBaoChung.h
+# Phân công code theo file trong MaNguon/
+
+Cập nhật 02/10/2026 từ phân công của Thái, sau trao đổi với Thành. Chức năng a–j giữ theo [phân công chung](PHAN_CONG_DO_AN_THU_VIEN.md); hạn thực hiện theo [lịch nhóm](NHOM_CONG_VIEC_VA_MOC_PR.md). Đây là nhiệm vụ, chưa xác nhận code đã viết hoặc kiểm thử.
+
+Các file đã tạo sẵn để mỗi người tự cài. Tên hàm dưới đây là đề xuất của Thái để trao đổi giao tiếp, chưa phải toàn bộ hàm đã tồn tại hay đặc tả đầu vào/đầu ra đã chốt. Muốn đổi tên/cách gọi dùng chung phải thống nhất trước. Đọc thêm [phân công dữ liệu](PHAN_CONG_DU_LIEU.md).
+
+## 00_KhaiBaoChung.h
+
 - Chủ sở hữu chính: Thành (điều phối)
 - Người góp: Cả ba người
 - Nội dung cụ thể:
@@ -11,7 +17,9 @@ BẢNG PHÂN CÔNG TỔNG THỂ (MaNguon/)
   - Mỗi người tự viết prototype cho các hàm do mình cài đặt, sau đó Thành ghép lại thành một bản duy nhất.
   - Mọi thay đổi về struct hoặc hằng số phải thống nhất cả nhóm trước.
   - File này chỉ chứa khai báo, không chứa thân hàm (ngoại trừ hàm constructor inline ngắn).
-🔹 01_HamTienIch.cpp
+
+## 01_HamTienIch.cpp
+
 - Chủ sở hữu chính: Chia theo miền
 - Người góp: —
 - Nội dung cụ thể:
@@ -20,7 +28,9 @@ BẢNG PHÂN CÔNG TỔNG THỂ (MaNguon/)
 - Ghi chú phối hợp:
   - Tuân thủ quy tắc ngày 27/09: Thái dùng phần tính ngày của Thành cho chức năng (i), tuyệt đối không tự viết một cách tính khác.
   - Thành và Thái thống nhất cách hàm tiện ích trả kết quả/báo dữ liệu không hợp lệ và tách trách nhiệm xử lý với hiển thị. Không mặc định cout hoặc throw là lỗi; chỉ kết luận lỗi trên bản code cụ thể đã đọc.
-🔹 02_XuLyDauSach.cpp
+
+## 02_XuLyDauSach.cpp
+
 - Chủ sở hữu chính: Thái
 - Người góp: Tấn
 - Nội dung cụ thể:
@@ -28,15 +38,19 @@ BẢNG PHÂN CÔNG TỔNG THỂ (MaNguon/)
   - Tấn: Cài đặt InDauSachTheoTheLoai và màn hình (d) (tự thực hiện nhóm thể loại, sắp xếp thứ tự, phân trang — không nhận dữ liệu đã qua xử lý sẵn).
 - Ghi chú phối hợp:
   - Tấn gọi dữ liệu thông qua các hàm truy cập của Thái bằng tham chiếu const, không được sửa đổi thứ tự lưu trữ bắt buộc.
-🔹 03_XuLyCuonSach.cpp
-- Chủ sở hữu chính: Thái (độc quyền)
+
+## 03_XuLyCuonSach.cpp
+
+- Chủ sở hữu chính: Thái
 - Người góp: —
 - Nội dung cụ thể:
   - Các hàm: HopLeCuonSach, TrungMaSachTrongDauSach, TrungMaSachToanCuc, ThemCuonSach, TimCuonSachTrongDauSach, TimCuonSachToanCuc, SinhMaSachTuDong, HuyDanhMucCuonSach.
   - Hàm hỗ trợ: LayTenDauSachTheoMaCuon (phục vụ chức năng (h) và (f) — có mục đích rõ ràng, không thêm nghiệp vụ).
 - Ghi chú phối hợp:
-  - Thái bàn giao cơ chế tra cứu cho Thành (cho chức năng f/g) và Tấn (cho chức năng h) trước khi hai người bắt đầu cài đặt.
-🔹 04_XuLyDocGia.cpp
+  - Thái bàn giao cơ chế tra cứu cho Thành (cho chức năng f/g) và Tấn (cho chức năng h) sớm để hai người ghép phần phụ thuộc; Thành và Tấn vẫn có thể làm phần độc lập trong lúc chờ.
+
+## 04_XuLyDocGia.cpp
+
 - Chủ sở hữu chính: Thành
 - Người góp: Tấn
 - Nội dung cụ thể:
@@ -44,7 +58,9 @@ BẢNG PHÂN CÔNG TỔNG THỂ (MaNguon/)
   - Tấn: InDocGiaTheoMa, InDocGiaTheoTenHo và màn hình (b) (gồm 2 lựa chọn; dùng danh sách tạm, không làm xáo trộn BST theo mã).
 - Ghi chú phối hợp:
   - Tấn không sửa đổi dữ liệu nghiệp vụ trong các chức năng chỉ có thao tác xem.
-🔹 05_XuLyMuonTra.cpp
+
+## 05_XuLyMuonTra.cpp
+
 - Chủ sở hữu chính: Thành
 - Người góp: Tấn
 - Nội dung cụ thể:
@@ -52,25 +68,31 @@ BẢNG PHÂN CÔNG TỔNG THỂ (MaNguon/)
   - Tấn: LietKeSachDangMuon và màn hình (h).
 - Ghi chú phối hợp:
   - Màn hình (f) của Thành sẽ gọi lại hàm LietKeSachDangMuon của Tấn — không viết hai bản liệt kê song song.
-🔹 06_NghiepVuTongHop.cpp
+
+## 06_NghiepVuTongHop.cpp
+
 - Chủ sở hữu chính: Thành + Thái
 - Người góp: —
 - Nội dung cụ thể:
   - Thành: MuonSach, TraSach ở mức ThuVien (chịu trách nhiệm bảo đảm tính nhất quán toàn nghiệp vụ) và màn hình (f), (g).
   - Thái: InDocGiaQuaHan (i), InTop10SachDuocMuonNhieuNhat (j) và màn hình (i), (j).
 - Ghi chú phối hợp:
-  - Chức năng (i) và (j) chỉ được đọc dữ liệu nghiệp vụ. Các quy tắc về top-10/quá hạn nếu chưa chốt thì giữ câu hỏi mở trong file CauHoiHoiThay.md.
-🔹 07_LuuDocFile.cpp
+  - Chức năng (i) và (j) chỉ được đọc dữ liệu nghiệp vụ. Các quy tắc về top-10/quá hạn nếu chưa chốt thì giữ câu hỏi mở trong file TaiLieu/CauHoiHoiThay.md.
+
+## 07_LuuDocFile.cpp
+
 - Chủ sở hữu chính: Thái + Thành
 - Người góp: Tấn (dữ liệu mẫu)
 - Nội dung cụ thể:
   - Thái: Ghi/đọc đầu sách + cuốn sách (dựng lại liên kết danh mục sách).
   - Thành: Ghi/đọc độc giả + lịch sử (bảo đảm giữ quy tắc cấp mã thẻ qua các lần chạy), LuuFile/DocFile ở mức ThuVien.
   - Backup (sao lưu dữ liệu): tùy chọn làm sau khi đọc/ghi cơ bản và kiểm thử lưu–mở lại đã ổn; không phải nhiệm vụ bắt buộc hiện tại của Thành. Nếu triển khai, cả nhóm thống nhất phạm vi dữ liệu, thời điểm sao lưu và người phụ trách trước.
-  - Tấn: Không cài hàm ghi/đọc file, chỉ đối chiếu định dạng.
+  - Tấn: Không phụ trách cài hàm ghi/đọc file; hỗ trợ chuẩn bị mẫu, đối chiếu định dạng và chạy thử theo phân công dữ liệu.
 - Ghi chú phối hợp:
   - Nghiêm cấm ghi địa chỉ con trỏ hoặc dump nhị phân struct chứa string hoặc con trỏ.
-🔹 08_ChuongTrinhChinh.cpp
+
+## 08_ChuongTrinhChinh.cpp
+
 - Chủ sở hữu chính: Tấn (menu) + Thành (luồng chính)
 - Người góp: —
 - Nội dung cụ thể:
