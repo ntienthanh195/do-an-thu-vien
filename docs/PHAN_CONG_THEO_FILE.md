@@ -4,6 +4,15 @@ Cập nhật 02/10/2026 từ phân công của Thái, sau trao đổi với Thà
 
 Các file đã tạo sẵn để mỗi người tự cài. Tên hàm dưới đây là đề xuất của Thái để trao đổi giao tiếp, chưa phải toàn bộ hàm đã tồn tại hay đặc tả đầu vào/đầu ra đã chốt. Muốn đổi tên/cách gọi dùng chung phải thống nhất trước. Đọc thêm [phân công dữ liệu](PHAN_CONG_DU_LIEU.md).
 
+## Việc đầu tiên — hoàn thiện và đưa khai báo chung lên trước
+
+1. **Thành và Thái ưu tiên hoàn thiện các kiểu dữ liệu, struct và hằng trạng thái theo phần được giao bên dưới**, đối chiếu đủ trường và đúng bốn cấu trúc của đề. Tấn cùng đọc để hiểu cách truy cập dữ liệu cho phần liệt kê/menu. Dùng bản khai báo nhóm và bản Thái đã gửi PR #5 làm cơ sở review, không bắt viết lại từ đầu.
+2. **Ai chuẩn bị xong phần khai báo thì push nhánh riêng và gửi PR cho hai thành viên còn lại xem ngay**, không đợi viết xong hàm nghiệp vụ, đọc/ghi file hoặc giao diện. Phần còn nháp/thiếu phải ghi rõ; push chưa đồng nghĩa đã duyệt.
+3. **Thành điều phối ghép bản đã thống nhất vào `MaNguon/00_KhaiBaoChung.h` qua PR vào main.** Khi tiếp tục PR #5, cần thống nhất đích file theo đường dẫn mới này. Cả nhóm kiểm tra header dùng chung biên dịch được trong môi trường đã thống nhất và tránh lỗi nạp lặp; kiểm tra đó chỉ xác nhận phần khai báo, chưa chứng minh chức năng chạy đúng. Sau khi ghép, cả ba cập nhật main và dùng cùng bản, không sửa nhiều bản struct song song.
+4. **Sau khi chốt kiểu dữ liệu chung, Thành và Thái chốt định dạng file rồi chuẩn bị bộ mẫu nhỏ cùng phần đọc tối thiểu**, tiếp đến bộ dài để thử chức năng. Đây là bước đầu của mốc nền chung đến 04/10/2026, không thay lịch đã thống nhất.
+
+Mốc khai báo đầu tiên tập trung vào kiểu dữ liệu và hằng chung; không phải chờ thiết kế hết prototype của toàn bộ chương trình mới được bàn giao. Các khai báo hàm bổ sung dần khi người viết và bên gọi thống nhất giao tiếp. Trong lúc chờ review, mỗi người vẫn có thể đọc đề, phác màn hình và làm phần độc lập.
+
 ## 00_KhaiBaoChung.h
 
 - Chủ sở hữu chính: Thành (điều phối)
