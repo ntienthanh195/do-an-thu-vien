@@ -15,10 +15,11 @@ BẢNG PHÂN CÔNG TỔNG THỂ (MaNguon/)
 - Chủ sở hữu chính: Chia theo miền
 - Người góp: —
 - Nội dung cụ thể:
-  - Thành: Nhóm xử lý ngày tháng từ NamNhuan → QuaHan7Ngay (bao gồm sửa lỗi: thiếu return ở QuaHan7Ngay, bỏ cout trong hàm tiện ích, bỏ throw ở SoNgayTrongThang). Đồng thời phụ trách HopLePhai, HopLeTrangThaiThe, HopLeTrangThaiMuonTra.
+  - Thành: Nhóm xử lý ngày tháng từ NamNhuan → QuaHan7Ngay: kiểm tra ngày hợp lệ và tính thời gian phục vụ mượn–trả/quá hạn. Đồng thời phụ trách HopLePhai, HopLeTrangThaiThe, HopLeTrangThaiMuonTra.
   - Thái: Nhóm xử lý chuỗi LaChuoiRong, ChuanHoaChuoi và HopLeTrangThaiSach.
 - Ghi chú phối hợp:
   - Tuân thủ quy tắc ngày 27/09: Thái dùng phần tính ngày của Thành cho chức năng (i), tuyệt đối không tự viết một cách tính khác.
+  - Thành và Thái thống nhất cách hàm tiện ích trả kết quả/báo dữ liệu không hợp lệ và tách trách nhiệm xử lý với hiển thị. Không mặc định cout hoặc throw là lỗi; chỉ kết luận lỗi trên bản code cụ thể đã đọc.
 🔹 02_XuLyDauSach.cpp
 - Chủ sở hữu chính: Thái
 - Người góp: Tấn
@@ -73,5 +74,6 @@ BẢNG PHÂN CÔNG TỔNG THỂ (MaNguon/)
 - Chủ sở hữu chính: Tấn (menu) + Thành (luồng chính)
 - Người góp: —
 - Nội dung cụ thể:
-  - Tấn: Menu chính, xử lý điều hướng (phím ↑/↓, Enter, Esc) và các helper hiển thị bảng/phân trang dùng chung.
+  - Tấn: Tự làm menu chính, điều hướng theo quy ước nhóm và helper hiển thị cơ bản (tiêu đề, đường kẻ, thông báo, căn cột); thử bảng/phân trang ở màn hình mình phụ trách trước khi đưa thành phần phù hợp ra dùng chung.
+  - Thành và Thái: Cùng Tấn chốt cách dùng helper; chia người phụ trách cụ thể cho phần xử lý phím ↑/↓, Enter, Esc và bảng/phân trang dùng chung khi vượt phần cơ bản. Hỗ trợ giải thích, review và tự cài phần được chia; không mặc định giao toàn bộ console chung cho Tấn. Mỗi người vẫn tự làm màn hình chức năng của mình.
   - Thành: Hàm main() tạo một đối tượng ThuVien duy nhất, nạp dữ liệu đầu chương trình, xử lý lưu/thoát, kết nối menu với các hàm chức năng.
