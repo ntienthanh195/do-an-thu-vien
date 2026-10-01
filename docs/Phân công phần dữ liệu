@@ -4,6 +4,9 @@
   - Thành: Viết dữ liệu mẫu phần độc giả và lịch sử mượn trả; khớp nối mã chéo giữa các phần.
   - Tấn: Hỗ trợ bổ sung thêm bộ dữ liệu dài đúng theo định dạng đã chốt.
 - Ghi chú: Phải kèm theo văn bản mô tả chi tiết kết quả mong đợi khi nạp dữ liệu mẫu.
+- Thành và Thái chốt định dạng file trước khi tạo mẫu: các trường, cách ghi ngày/trạng thái và quan hệ mã thẻ/mã cuốn/lịch sử. Cùng đối chiếu mã và trạng thái giữa phần sách với phần độc giả/lịch sử; Tấn tạo thêm mẫu theo định dạng đã thống nhất.
+- Ưu tiên bộ nhỏ đã đối chiếu cùng phần đọc tối thiểu trước, rồi bổ sung bộ dài hợp lệ để thử chức năng. Ai chuẩn bị xong phần nào thì push nhánh riêng để hai thành viên còn lại xem, không đợi xong cả khối code; ghi rõ đã thử đọc bằng chương trình hay chưa và phần dữ liệu liên quan còn thiếu.
+- Giữ bộ mẫu gốc để đối chiếu; chạy thử thêm/xóa/mượn/trả trên bản sao dữ liệu. Mẫu lỗi có chủ đích được đánh dấu và tách khỏi bộ hợp lệ. Việc giữ bản mẫu không yêu cầu phải có chức năng backup tự động.
 📁 DuLieu/DuLieuRong.txt
 - Phân công:
   - Tấn: Trực tiếp tạo file và chịu trách nhiệm giữ đúng chuẩn định dạng file rỗng.
@@ -20,7 +23,7 @@
 📁 TaiLieu/SoDoLienKet.md
 - Phân công:
   - Thái: Vẽ sơ đồ cấu trúc mảng con trỏ + danh sách liên kết đơn các cuốn sách.
-  - Thành: Vẽ sơ đồ cấu trúc cây nhị phân tìm kiếm (BST) độc giả + danh sách liên kết kép lịch sử mượn trả.
+  - Thành: Vẽ sơ đồ cấu trúc cây nhị phân tìm kiếm (BST) độc giả + danh sách liên kết đơn lịch sử mượn trả.
   - Tấn: Vẽ sơ đồ luồng hiển thị liệt kê và menu điều hướng.
   - Thành: Tổng hợp và ghép các sơ đồ thành bản hoàn chỉnh cuối cùng.
 📁 TaiLieu/CauHoiHoiThay.md
