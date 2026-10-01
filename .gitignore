@@ -18,6 +18,7 @@ obj/
 
 # Data changed during local runs
 data/runtime/
+DuLieu/runtime/
 *.log
 
 # Local secrets and OS files

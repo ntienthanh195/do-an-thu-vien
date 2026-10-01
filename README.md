@@ -27,11 +27,15 @@ Chưa chốt cấu hình build và định dạng dữ liệu. Nhóm sẽ bổ s
 
 ## Cách làm việc
 
+**File đã tạo sẵn theo cách chia nhóm chốt ngày 02/10/2026:** mở `MaNguon/` để viết code, `DuLieu/` để soạn dữ liệu, `TestKey/` để ghi kịch bản thử và `TaiLieu/` để ghi sơ đồ/câu hỏi. Các file mới hiện trống, chưa có hàm, dữ liệu hợp lệ hay chương trình chạy. Thành, Thái và Tấn sửa file tương ứng trên nhánh riêng rồi gửi PR; xem phân công vị trí trong [hướng dẫn đặt file](docs/HUONG_DAN_DAY_CODE_CHO_NHOM.md).
+
+`MaNguon/00_KhaiBaoChung.h` hiện chỉ giữ chỗ. Bản khai báo nhóm trong `src/` và bản Thái gửi ở PR #5 được giữ nguyên; khi nhóm chốt khai báo, đưa bản đã duyệt vào header chung và thống nhất cách dùng, không duy trì nhiều bản struct để sửa song song. File dữ liệu rỗng mới tạo không được coi là đã đúng định dạng; nhóm vẫn cần chốt định dạng và chuẩn bị mẫu.
+
 **Chia việc để gửi PR sớm:** xem [Nhóm công việc và mốc PR của cả ba thành viên](docs/NHOM_CONG_VIEC_VA_MOC_PR.md). Mỗi nhóm việc có phạm vi, phụ thuộc và điều kiện bàn giao; không đợi code xong toàn bộ mới push.
 
 **Lịch nhóm đến kỳ thi:** mục 6 trong tài liệu trên ghi lịch cụ thể cho Thành, Thái và Tấn: có nền dữ liệu trước 04/10, đủ chức năng vào 31/10, ổn định bản nộp chậm nhất 15/11/2026. Tháng 11 tập trung kiểm thử và luyện vấn đáp, đầu tháng 12 thi thử/kiểm tra bản nộp. Đây là mục tiêu dựa trên dự kiến thi giữa tháng 12, chưa phải tiến độ hoàn thành hoặc lịch thi chính thức.
 
-**Bắt đầu triển khai:** đọc [Hướng đi tự làm cho từng thành viên](docs/HUONG_DI_TU_LAM_CHO_TUNG_THANH_VIEN.md). Mỗi người tự thiết kế, tạo file, đặt tên hàm và viết code từ yêu cầu; repo không cung cấp bộ khung hàm để điền. Cả nhóm thống nhất cách gọi giữa các phần trước khi làm riêng.
+**Bắt đầu triển khai:** đọc [Hướng đi tự làm cho từng thành viên](docs/HUONG_DI_TU_LAM_CHO_TUNG_THANH_VIEN.md). Mỗi người tự thiết kế, đặt tên hàm và viết code từ yêu cầu trong các file đã tạo sẵn; repo không cung cấp bộ khung hàm để điền. Cả nhóm thống nhất cách gọi giữa các phần trước khi làm riêng.
 
 **Thái và Tấn đọc trước:** [Hướng dẫn đặt file và đẩy code từng bước](docs/HUONG_DAN_DAY_CODE_CHO_NHOM.md) — vị trí file, GitHub Desktop, tạo nhánh, commit, push và gửi yêu cầu ghép.
 
