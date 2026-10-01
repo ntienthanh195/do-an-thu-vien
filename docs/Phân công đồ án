@@ -64,7 +64,8 @@ BẢNG PHÂN CÔNG TỔNG THỂ (MaNguon/)
 - Người góp: Tấn (dữ liệu mẫu)
 - Nội dung cụ thể:
   - Thái: Ghi/đọc đầu sách + cuốn sách (dựng lại liên kết danh mục sách).
-  - Thành: Ghi/đọc độc giả + lịch sử (bảo đảm giữ quy tắc cấp mã thẻ qua các lần chạy), LuuFile/DocFile ở mức ThuVien, backup.
+  - Thành: Ghi/đọc độc giả + lịch sử (bảo đảm giữ quy tắc cấp mã thẻ qua các lần chạy), LuuFile/DocFile ở mức ThuVien.
+  - Backup (sao lưu dữ liệu): tùy chọn làm sau khi đọc/ghi cơ bản và kiểm thử lưu–mở lại đã ổn; không phải nhiệm vụ bắt buộc hiện tại của Thành. Nếu triển khai, cả nhóm thống nhất phạm vi dữ liệu, thời điểm sao lưu và người phụ trách trước.
   - Tấn: Không cài hàm ghi/đọc file, chỉ đối chiếu định dạng.
 - Ghi chú phối hợp:
   - Nghiêm cấm ghi địa chỉ con trỏ hoặc dump nhị phân struct chứa string hoặc con trỏ.
