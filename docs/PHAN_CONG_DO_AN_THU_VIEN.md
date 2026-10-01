@@ -80,6 +80,8 @@ Mỗi người chịu trách nhiệm nhập liệu, thông báo, quay lại và 
 
 ### 5. Quy ước chung để ghép code thuận tiện
 
+**Cập nhật 02/10/2026:** Thành yêu cầu tạo sẵn file trống theo sơ đồ Thái. Cách đặt file mới theo hướng dẫn hiện hành; không cung cấp hàm mẫu và không ghi nhận hoàn thành chức năng từ việc tạo file. Phân công a–j và lịch triển khai giữ nguyên.
+
 **Lựa chọn học tập ngày 27/09/2026:** mỗi người đọc đề và tự thiết kế, tự tạo file, tự đặt tên hàm và viết code. AI chỉ nêu hướng đi, yêu cầu và tiêu chí; không cung cấp sẵn bộ hàm/biến để điền. Các tên file đề xuất dưới đây chỉ minh họa cách tổ chức, không bắt buộc tạo trước. Người viết tự đề xuất giao tiếp giữa các phần, cả nhóm thống nhất trước khi triển khai riêng. Bộ khung AI vừa đề xuất đã được rút khỏi bản làm việc; bản khai báo do nhóm viết vẫn được giữ. Việc rút khung không xóa lịch sử đã được xem/hỗ trợ và không tạo kết quả học tập mới.
 
 **Khai báo và trách nhiệm:**
@@ -90,7 +92,7 @@ Mỗi người chịu trách nhiệm nhập liệu, thông báo, quay lại và 
 - Chương trình chung sử dụng cùng một bộ dữ liệu Thư viện. Không để mỗi phần tạo một bản độc giả hoặc sách riêng rồi xử lý lệch nhau.
 - Chức năng mượn–trả do Thành chịu trách nhiệm tính nhất quán toàn nghiệp vụ; chức năng chỉ đọc của Tấn không cập nhật trạng thái hoặc lịch sử.
 
-**Tổ chức file đề xuất để nhóm thống nhất:**
+**Tổ chức file đề xuất ngày 27/09 (giữ để tra cứu, đã được thay thế):**
 
 - `KhaiBao.h`: cấu trúc và hằng dùng chung; Thành điều phối thay đổi sau trao đổi nhóm.
 - `DocGia.h/.cpp`, `MuonTra.h/.cpp`: phần Thành phụ trách; ngày tháng có thể tách file khi cần.
@@ -99,7 +101,7 @@ Mỗi người chịu trách nhiệm nhập liệu, thông báo, quay lại và 
 - `GiaoDien.h/.cpp`: ví dụ file hỗ trợ chung nếu nhóm thấy cần; cả ba tự chia trách nhiệm từng phần, không mặc định thuộc Thái.
 - `main.cpp`: một điểm chạy duy nhất, Thành điều phối. Chương trình thử riêng của từng người giữ ngoài bản ghép.
 
-Đây là cách chia file dự kiến, chưa phải các file đã được tạo. `.h` công bố cách gọi; `.cpp` chứa cài đặt. Chia file không thay đổi bốn cấu trúc dữ liệu theo đề.
+Danh sách tên file phía trên là phương án cũ. Theo cập nhật 02/10, sử dụng các file đã tạo sẵn trong `MaNguon/`; xem [hướng dẫn vị trí file hiện hành](HUONG_DAN_DAY_CODE_CHO_NHOM.md). `.h` công bố cách gọi; `.cpp` chứa cài đặt. Chia file không thay đổi bốn cấu trúc dữ liệu theo đề.
 
 **Giao diện console:**
 
@@ -117,7 +119,7 @@ Mỗi người chịu trách nhiệm nhập liệu, thông báo, quay lại và 
 
 - **Ưu tiên làm dữ liệu trước:** Thành và Thái chốt định dạng, chuẩn bị bộ mẫu và phần đọc tối thiểu để nạp được vào đúng cấu trúc ngay đầu khối A. Thành làm độc giả/lịch sử; Thái làm đầu sách/cuốn sách; Tấn hỗ trợ tạo mẫu theo định dạng chung. Kiểm tra bộ nhỏ trước rồi bổ sung bộ dài hợp lệ, khớp mã và trạng thái. Mục tiêu là khi cài xong một chức năng đã có sẵn dữ liệu để chạy thử, không chờ hoàn thiện nghiệp vụ hoặc giao diện mới chuẩn bị file. Phần ghi và kiểm tra lưu–mở lại vẫn phải hoàn thiện theo phân công; không cần hoàn tất mọi xử lý file lỗi trước khi triển khai nghiệp vụ.
 
-- **Ai có dữ liệu mẫu trước thì đưa lên GitHub trước:** Thành, Thái hoặc Tấn chuẩn bị xong file theo định dạng đã thống nhất thì lưu ở data/samples, commit/push lên nhánh riêng và gửi PR, không chờ làm xong cả khối chức năng hoặc chờ toàn bộ dữ liệu. PR có thể chỉ gồm file mẫu và mô tả định dạng, mục đích thử, các file/mã liên quan. Thành kiểm tra độc giả/lịch sử, Thái kiểm tra sách. Ghi rõ đã thử đọc bằng chương trình hay chưa; mẫu còn nháp/chưa khớp chia sẻ qua Draft PR, không coi là dữ liệu hợp lệ chung. Không push thẳng main.
+- **Ai có dữ liệu mẫu trước thì đưa lên GitHub trước:** Thành, Thái hoặc Tấn chuẩn bị xong file theo định dạng đã thống nhất thì lưu ở DuLieu, commit/push lên nhánh riêng và gửi PR, không chờ làm xong cả khối chức năng hoặc chờ toàn bộ dữ liệu. PR có thể chỉ gồm file mẫu và mô tả định dạng, mục đích thử, các file/mã liên quan. Thành kiểm tra độc giả/lịch sử, Thái kiểm tra sách. Ghi rõ đã thử đọc bằng chương trình hay chưa; mẫu còn nháp/chưa khớp chia sẻ qua Draft PR, không coi là dữ liệu hợp lệ chung. Không push thẳng main.
 
 - Thành và Thái chốt định dạng file, quan hệ giữa mã thẻ/mã cuốn/lịch sử mượn, quy tắc đọc/ghi và cách báo lỗi. Tấn chuẩn bị dữ liệu theo định dạng đã chốt, không phải tự quyết định định dạng cho cả nhóm.
 - Chuẩn bị bộ nhỏ có kết quả mong đợi rõ; bộ lớn hợp lệ, liên kết nhất quán để thử dữ liệu dài; và bộ lỗi có chủ đích được giữ riêng để thử xử lý dữ liệu sai.

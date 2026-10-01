@@ -6,7 +6,7 @@ Hướng dẫn này dùng GitHub Desktop để thao tác bằng nút bấm. Code
 
 ## 1. Code đặt ở đâu?
 
-**Theo cách chia nhóm đã chốt, code mới đặt trong `MaNguon/`.** Các file đã tạo sẵn để Thành, Thái và Tấn mở đúng file rồi tự viết; không có thân hàm hoặc mẫu lời giải. Quy ước vị trí này thay các ví dụ `src/` và `data/samples/` trong hướng dẫn cũ; lịch làm việc và phân công chức năng a–j không đổi.
+**Theo cách chia nhóm đã chốt, code mới đặt trong `MaNguon/`.** Các file đã tạo sẵn để Thành, Thái và Tấn mở đúng file rồi tự viết; không có thân hàm hoặc mẫu lời giải. Quy ước vị trí này thay các ví dụ `src/` và `DuLieu/` trong hướng dẫn cũ; lịch làm việc và phân công chức năng a–j không đổi.
 
 - `00_KhaiBaoChung.h`: khai báo chung, Thành điều phối; cả ba thống nhất thay đổi.
 - `01_HamTienIch.cpp`: Thành làm ngày tháng/kiểm tra dữ liệu phần mình; Thái làm tiện ích chuỗi/trạng thái sách.
@@ -70,7 +70,7 @@ Sau khi clone, cập nhật `main` và tạo nhánh như trên, sao chép có ch
 ## 5. Code xong: commit và push
 
 1. Lưu file trong editor, biên dịch/chạy thử phạm vi có thể kiểm tra.
-2. Quay lại Desktop, mở **Changes**. Phải nhìn thấy đường dẫn dự kiến như `src/LietKe.cpp` hoặc `src/Sach.cpp`.
+2. Quay lại Desktop, mở **Changes**. Phải nhìn thấy đường dẫn dự kiến như `MaNguon/05_XuLyMuonTra.cpp` hoặc `MaNguon/02_XuLyDauSach.cpp`.
 3. Bấm từng file để xem các dòng thêm/xóa. Chỉ chọn những file thuộc nhiệm vụ; nếu có file lạ, cả project hoặc thay đổi của người khác, kiểm tra lại trước khi commit.
 4. Nhập **Summary** cụ thể, ví dụ `Thêm liệt kê sách độc giả đang mượn`. Ghi mô tả bổ sung nếu cần.
 5. Kiểm tra nút **Commit to ...** đang ghi đúng nhánh nhiệm vụ, rồi commit.
@@ -118,11 +118,11 @@ Nếu đang làm dở một nhánh khác và cần thay đổi mới của đồ
 - **Không mở được repo hoặc push bị từ chối:** kiểm tra đúng tài khoản, đã nhận lời mời và quyền truy cập. Không gửi mật khẩu/token cho nhóm.
 - **Desktop báo conflict/xung đột:** giữ nguyên công việc, báo Thành cùng xem phần trùng. Không chọn đại phiên bản, không force push để vượt lỗi.
 - **Sửa nhầm trên main nhưng chưa commit:** giữ thay đổi, nhờ Thành hỗ trợ chuyển sang nhánh phù hợp; không xóa code để làm lại. Nếu đã commit/push nhầm thì báo rõ trước khi sửa lịch sử.
-- **Có dữ liệu test dài:** đưa bộ mẫu đã thống nhất vào `data/samples`, không đưa dữ liệu cá nhân thật hoặc kết quả chạy thay đổi liên tục vào đó.
+- **Có dữ liệu test dài:** đưa bộ mẫu đã thống nhất vào `DuLieu`, không đưa dữ liệu cá nhân thật hoặc kết quả chạy thay đổi liên tục vào đó.
 
 ## 9. Ví dụ bàn giao của Tấn
 
-Tấn nhận mục h → lấy `main` mới nhất → tạo `tan/liet-ke-dang-muon` → tự viết phần phụ trách ở `src/LietKe.h/.cpp` theo cách gọi đã thống nhất → thử dữ liệu và ghi kết quả → commit → Publish branch/Push origin → PR vào `main` → sửa theo review → Thành điều phối ghép → cả nhóm Pull bản mới.
+Tấn nhận mục h → lấy `main` mới nhất → tạo `tan/liet-ke-dang-muon` → tự viết phần phụ trách ở `MaNguon/05_XuLyMuonTra.cpp` theo cách gọi đã thống nhất → thử dữ liệu và ghi kết quả → commit → Publish branch/Push origin → PR vào `main` → sửa theo review → Thành điều phối ghép → cả nhóm Pull bản mới.
 
 Thái làm tương tự với nhánh và file phần sách/thống kê của mình. Không gửi một file `Thai_final.cpp` hoặc `Tan_final.cpp` lên thư mục gốc rồi chờ người khác tự tìm cách ghép.
 
