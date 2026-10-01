@@ -27,6 +27,8 @@ Chưa chốt cấu hình build và định dạng dữ liệu. Nhóm sẽ bổ s
 
 ## Cách làm việc
 
+**Làm trước:** Thành và Thái hoàn thiện phần kiểu dữ liệu/struct/hằng chung, ai xong phần nào thì push nhánh và gửi PR để nhóm review sớm; Thành điều phối ghép bản thống nhất vào `MaNguon/00_KhaiBaoChung.h`. Sau đó chốt định dạng file và làm dữ liệu mẫu cùng phần đọc tối thiểu. Không đợi xong nghiệp vụ/giao diện hoặc mọi prototype mới bàn giao khai báo. Chi tiết ở mục đầu [phân công code theo file](docs/PHAN_CONG_THEO_FILE.md).
+
 **Cả ba đọc trước khi viết:** [Phân công code theo từng file](docs/PHAN_CONG_THEO_FILE.md) và [Phân công dữ liệu, kiểm thử, tài liệu](docs/PHAN_CONG_DU_LIEU.md). Đây là bản phân công của Thái đã chỉnh lại phần tiện ích, helper giao diện, backup và cấu trúc lịch sử mượn–trả.
 
 **File đã tạo sẵn theo cách chia nhóm chốt ngày 02/10/2026:** mở `MaNguon/` để viết code, `DuLieu/` để soạn dữ liệu, `TestKey/` để ghi kịch bản thử và `TaiLieu/` để ghi sơ đồ/câu hỏi. Các file mới hiện trống, chưa có hàm, dữ liệu hợp lệ hay chương trình chạy. Thành, Thái và Tấn sửa file tương ứng trên nhánh riêng rồi gửi PR; xem phân công vị trí trong [hướng dẫn đặt file](docs/HUONG_DAN_DAY_CODE_CHO_NHOM.md).

@@ -2,6 +2,8 @@
 
 Cập nhật 02/10/2026 từ phân công của Thái. Các file đã được tạo trống, mỗi người tự bổ sung nội dung; chưa có dữ liệu hợp lệ hoặc kết quả kiểm thử từ việc tạo file. Xem [phân công code theo file](PHAN_CONG_THEO_FILE.md) và [lịch nhóm](NHOM_CONG_VIEC_VA_MOC_PR.md).
 
+**Thứ tự bắt đầu:** hoàn thiện và chia sẻ sớm các kiểu dữ liệu/struct/hằng chung → review, ghép bản thống nhất vào `MaNguon/00_KhaiBaoChung.h` → chốt định dạng file → tạo bộ mẫu nhỏ và phần đọc tối thiểu → mở rộng bộ mẫu dài. Xem trách nhiệm và cách bàn giao ở mục đầu của [phân công code](PHAN_CONG_THEO_FILE.md). Kiểu dữ liệu trong code và dữ liệu mẫu trong file là hai đầu việc khác nhau; không cần chờ các hàm nghiệp vụ hoàn chỉnh mới gửi khai báo chung.
+
 ## DuLieu/DuLieuMau.txt
 
 - Phân công:
