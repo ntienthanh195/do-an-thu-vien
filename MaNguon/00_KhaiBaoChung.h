@@ -4,7 +4,8 @@
 using namespace std;
 
 /*HẰNG SỐ*/
-
+// Năm hiện tại 
+const int NAM_HIEN_TAI = 2026;
 // Số đầu sách tối đa. Đề chưa quy định, đây là đề xuất của nhóm.
 const int MAX_DAU_SACH = 10000;
 
