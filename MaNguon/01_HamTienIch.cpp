@@ -14,3 +14,8 @@ bool LaChuoiRong(const string& s){
     }
     return true;
 }
+
+// cần trao đổi thêm lại với thầy năm hợp lệ của cuốn sách bắt đầu và kết thúc 
+bool LaNamHopLe(int nam){
+    return nam >= 1 && nam <= NAM_HIEN_TAI;
+}
