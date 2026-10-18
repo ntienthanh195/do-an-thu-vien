@@ -1,21 +1,65 @@
-# Tài liệu tham khảo AI — luyện đối đáp Thư viện
+# Bắt đầu ôn ở đây
 
-Bộ tài liệu học tập riêng cho nhóm, bám bản mã nguồn tham khảo AI được chốt ngày 17/10/2026 và biên tập ngày 18/10/2026.
+**Chọn phần bên dưới để đọc ngay. Không cần mở các thư mục kỹ thuật.**
 
-## Mở để ôn
+## Chọn phần muốn ôn
 
-- [325 câu hỏi: Thái 100, Thành 100, Tấn 100 và chung 25](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/01_CAU_HOI.md)
-- [Đáp án và câu phụ](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/02_DAP_AN.md)
-- [Tải ZIP để gửi nhóm hoặc đọc ngoại tuyến](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI.zip) — mở tệp trên GitHub rồi chọn Download raw file.
-- [SHA-256 của ZIP](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI.zip.sha256)
+### Thái — sách, tìm kiếm và thống kê
+
+**[Mở 100 câu của Thái](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/01_CAU_HOI.md#thai)** · [Đáp án phần Thái](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/02_DAP_AN.md#thai)
+
+Đầu sách, cuốn sách, tìm kiếm, quá hạn và top 10; chức năng c/e/i/j.
+
+### Thành — độc giả và mượn–trả
+
+**[Mở 100 câu của Thành](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/01_CAU_HOI.md#thanh)** · [Đáp án phần Thành](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/02_DAP_AN.md#thanh)
+
+BST độc giả, lịch sử, điều kiện mượn, trả/báo mất và ngày tháng; chức năng a/f/g.
+
+### Tấn — liệt kê và giao diện terminal
+
+**[Mở 100 câu của Tấn](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/01_CAU_HOI.md#tan)** · [Đáp án phần Tấn](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/02_DAP_AN.md#tan)
+
+Thứ tự kết quả, danh sách theo mã/tên/thể loại, sách đang mượn, menu và nhập liệu; chức năng b/d/h.
+
+### Cả nhóm — ghép hệ thống và bảo vệ code
+
+**[Mở 25 câu chung](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/01_CAU_HOI.md#chung)** · [Đáp án phần chung](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/02_DAP_AN.md#chung)
+
+Giao tiếp giữa module, lưu/đọc file, con trỏ, quyền sở hữu và xử lý lỗi.
+
+## Chưa biết bắt đầu từ đâu?
+
+**[Bắt đầu bằng 20 câu ôn trước](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/01_CAU_HOI.md#on-truoc)** → ôn sâu phần mình → hỏi chéo hai phần còn lại và phần chung.
+
+20 câu này được chọn từ bộ 325, không phải câu cộng thêm. Mọi người đều có thể đọc toàn bộ ba phần; tên thành viên chỉ giúp tìm nhanh phần phụ trách.
+
+## Cách đọc và tìm câu
+
+1. Mở câu hỏi bằng các liên kết trên, tự dự đoán kết quả rồi chỉ vào code.
+2. Trả lời câu phụ để thử khi điều kiện thay đổi; sau đó mới bấm **Mở đáp án** ngay dưới câu.
+3. Muốn tìm lại một câu, dùng **Ctrl+F** với mã như `TV226`, `TH301`, `TN202` hoặc từ khóa.
+
+Trên GitHub, chọn **Preview** nếu đang thấy ký hiệu Markdown. Màn hình **Files changed** của PR dùng để xem thay đổi; để học, mở trang README này ở chế độ xem file bình thường.
+
+## Tải về để gửi nhóm
+
+**[Tải bộ ZIP đầy đủ](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI.zip)** — mở liên kết rồi chọn **Download raw file**.
+
+Giải nén toàn bộ. Mở `01_CAU_HOI.md` bằng VS Code và nhấn **Ctrl+Shift+V**; `02_DAP_AN.md` là file đáp án. Giữ thư mục `ThamKhao` đi cùng để các liên kết code vẫn mở được.
+
+<details>
+<summary><strong>Tra cứu code, giả định và kiểm chứng — chỉ mở khi cần</strong></summary>
+
+- [9 file code tham khảo](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/)
+- [Yêu cầu và giả định G01–G12](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/01_YEU_CAU_VA_GIA_DINH.md)
 - [Báo cáo kiểm tra và giới hạn](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/BAO_CAO_KIEM_TRA.md)
+- [SHA-256 của ZIP](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI.zip.sha256)
 
-Mỗi người ưu tiên phần được giao, sau đó hỏi chéo cả ba phần và phần chung. Tự dự đoán kết quả, chỉ vào code và giải thích trước khi mở đáp án. Trong file câu hỏi có 20 câu ôn trước; chúng thuộc bộ 325, không phải câu cộng thêm.
+Các file JSON, manifest và script trong `ThamKhao` phục vụ biên soạn/kiểm định; không cần đọc lần lượt để ôn vấn đáp.
 
-## Phạm vi sử dụng
+Nguồn đi kèm là bản tham khảo AI chốt ngày 17/10/2026, tài liệu biên tập ngày 18/10/2026. Code đồ án nhóm đang làm ở `MaNguon/` tại gốc repo. Không ghép nguồn tham khảo vào project build của nhóm; khi code nhóm đổi, đối chiếu lại đáp án.
 
-Mã trong `BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/` là bản tham khảo AI đi kèm để truy vết đáp án. Mã đồ án nhóm đang phát triển nằm ở thư mục `MaNguon/` tại gốc repo. Hai bản có mục đích và phiên bản riêng; không ghép các tệp tham khảo vào project build của nhóm.
+G01–G12 vẫn cần giảng viên xác nhận. Bộ này không phải đề thi chính thức hoặc bằng chứng thành viên đã tự viết/hiểu code. Bằng chứng kiểm thử và giới hạn được ghi trong báo cáo; chưa kiểm toàn bộ TUI, tải triệu hay truy cập đồng thời.
 
-Khi code nhóm thay đổi, đối chiếu lại đáp án với đúng code nhóm. G01–G12 vẫn là các giả định cần giảng viên xác nhận. Bộ câu hỏi không phải đề thi chính thức hoặc bằng chứng thành viên đã tự viết/hiểu toàn bộ code.
-
-Bằng chứng được ghi theo phạm vi: 25 ca CLI lịch sử; đợt kiểm định sau gồm 16 lượt assertion và 2 timeout chủ đích. Chưa kiểm trực tiếp toàn bộ TUI, tải hàng triệu bản ghi hoặc truy cập đồng thời. Lần đưa lên GitHub chỉ sao chép gói đã kiểm và xác minh nội dung.
+</details>
