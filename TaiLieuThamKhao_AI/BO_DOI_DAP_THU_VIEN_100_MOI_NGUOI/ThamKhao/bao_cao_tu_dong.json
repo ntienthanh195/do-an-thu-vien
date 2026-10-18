@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-18",
+  "status": "PASS",
+  "questions": 325,
+  "counts": {
+    "thai": 100,
+    "thanh": 100,
+    "tan": 100,
+    "chung": 25
+  },
+  "scope_counts": {
+    "Hiện tại": 117,
+    "Mở rộng giả định": 79,
+    "Chẩn đoán trên bản sao": 129
+  },
+  "followups": 325,
+  "first_links": 20,
+  "question_headings": 325,
+  "answer_headings": 325,
+  "retired_redirect_anchors": 3,
+  "local_links_checked": 3607,
+  "source_references": 785,
+  "code_files_identical": 9,
+  "protected_files_unchanged": 54,
+  "old_markdown_full_content_checks": {
+    "01_CAU_HOI.md": {
+      "sha256": "51b860d05b551cd89eeeddf04dae21823a32208780c49551763ac9e1a99c948e",
+      "all_325_sections_read_and_compared": 325
+    },
+    "02_DAP_AN.md": {
+      "sha256": "e5bd08a03442f955628916cbb113698be7b7ebac15c154a10cf256889d2f121a",
+      "all_325_sections_read_and_compared": 325
+    }
+  },
+  "json_markdown_exact_renderer_match": true,
+  "new_runtime_assertion_runs": 16,
+  "new_runtime_expected_timeouts": 2,
+  "prior_runtime_cases_not_rerun": 25,
+  "limits": "Kiểm cấu trúc/liên kết/hash và assertion có phạm vi. Không chứng minh325 đáp án tuyệt đối đúng, không dùng so chuỗi thay rà ngữ nghĩa.",
+  "packaged_runner_reproduced": {
+    "status": "PASS",
+    "runs": 18,
+    "additional_distinct_cases": 0,
+    "script_sha256": "35ac8062ba9c16d644a0d87baf1ed84c3d70ef356fa285d57a41f5c3cf9b74e1"
+  }
+}

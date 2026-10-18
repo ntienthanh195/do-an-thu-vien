@@ -1,0 +1,302 @@
+{
+  "date": "2026-10-17",
+  "case_count": 25,
+  "cases": [
+    {
+      "case": "sequential_same_copy",
+      "question_ids": [
+        "TV01"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\sequential_same_copy.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\sequential_same_copy.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nKhong co sach dang muon.\nMa cuon sach:  (/huy de quay lai): Giao dich thanh cong, ngay 16/10/2026.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\sequential_same_copy.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 2 | Nguyen An\nKhong co sach dang muon.\nMa cuon sach:  (/huy de quay lai): Cuon sach dang duoc muon hoac da thanh ly.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\sequential_same_copy.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\sequential_same_copy.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "locked_full_overdue_precedence",
+      "question_ids": [
+        "TV51"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\locked_full_overdue_precedence.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\locked_full_overdue_precedence.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nX#1 | Sach X | 01/10/2026\nX#2 | Sach X | 14/10/2026\nX#3 | Sach X | 14/10/2026\nMa cuon sach:  (/huy de quay lai): The doc gia dang bi khoa.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\locked_full_overdue_precedence.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\locked_full_overdue_precedence.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "full_before_overdue",
+      "question_ids": [
+        "TV51"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\full_before_overdue.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\full_before_overdue.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nX#1 | Sach X | 01/10/2026\nX#2 | Sach X | 14/10/2026\nX#3 | Sach X | 14/10/2026\nMa cuon sach:  (/huy de quay lai): Doc gia da muon toi da 3 cuon cung luc.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\full_before_overdue.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\full_before_overdue.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "seven_eight_15",
+      "question_ids": [
+        "TV04"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 15/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\seven_eight_15.txt\n\nTHU VIEN | 15/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\seven_eight_15.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nX#1 | Sach X | 08/10/2026\nMa cuon sach:  (/huy de quay lai): Giao dich thanh cong, ngay 15/10/2026.\n\nTHU VIEN | 15/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\seven_eight_15.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\seven_eight_15.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "seven_eight_16",
+      "question_ids": [
+        "TV04"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\seven_eight_16.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\seven_eight_16.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nX#1 | Sach X | 08/10/2026\nMa cuon sach:  (/huy de quay lai): Doc gia dang giu sach qua 7 ngay; phai xu ly sach qua han truoc.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\seven_eight_16.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\seven_eight_16.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "return_then_other_borrow_old_return",
+      "question_ids": [
+        "TV05"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\return_then_other_borrow_old_return.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\return_then_other_borrow_old_return.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nX#1 | Sach X | 14/10/2026\n\nTRA / BAO MAT\n1. Tra sach\n2. Bao mat sach (khoa the, rut cuon khoi kho)\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma cuon sach:  (/huy de quay lai): Giao dich thanh cong, ngay 16/10/2026.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\return_then_other_borrow_old_return.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 2 | Nguyen An\nKhong co sach dang muon.\nMa cuon sach:  (/huy de quay lai): Giao dich thanh cong, ngay 16/10/2026.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\return_then_other_borrow_old_return.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nKhong co sach dang muon.\n\nTRA / BAO MAT\n1. Tra sach\n2. Bao mat sach (khoa the, rut cuon khoi kho)\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma cuon sach:  (/huy de quay lai): Doc gia khong dang muon cuon nay (hoac da xu ly tra/mat).\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\return_then_other_borrow_old_return.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\return_then_other_borrow_old_return.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "lost_then_return_other",
+      "question_ids": [
+        "TV06",
+        "TH247"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\lost_then_return_other.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\lost_then_return_other.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nX#1 | Sach X | 14/10/2026\nX#2 | Sach X | 14/10/2026\n\nTRA / BAO MAT\n1. Tra sach\n2. Bao mat sach (khoa the, rut cuon khoi kho)\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma cuon sach:  (/huy de quay lai): Giao dich thanh cong, ngay 16/10/2026.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\lost_then_return_other.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nX#2 | Sach X | 14/10/2026\n\nTRA / BAO MAT\n1. Tra sach\n2. Bao mat sach (khoa the, rut cuon khoi kho)\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma cuon sach:  (/huy de quay lai): Giao dich thanh cong, ngay 16/10/2026.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\lost_then_return_other.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): \na - QUAN LY DOC GIA\n1. Them doc gia\n2. Sua / khoa / mo the\n3. Xoa doc gia chua co lich su\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the (/huy de quay lai): Ho (/huy de quay lai): Ten (/huy de quay lai): Phai (Nam/Nữ) (/huy de quay lai): Trang thai the (0 khoa, 1 hoat dong) (/huy de quay lai): LOI: Chua ho tro xu ly xong mat sach; khong mo lai the co lich su mat.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\lost_then_return_other.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\lost_then_return_other.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "two_identical_day_loans",
+      "question_ids": [
+        "TH241"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\two_identical_day_loans.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\two_identical_day_loans.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nKhong co sach dang muon.\nMa cuon sach:  (/huy de quay lai): Giao dich thanh cong, ngay 16/10/2026.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\two_identical_day_loans.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nX#1 | Sach X | 16/10/2026\n\nTRA / BAO MAT\n1. Tra sach\n2. Bao mat sach (khoa the, rut cuon khoi kho)\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma cuon sach:  (/huy de quay lai): Giao dich thanh cong, ngay 16/10/2026.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\two_identical_day_loans.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nKhong co sach dang muon.\nMa cuon sach:  (/huy de quay lai): Giao dich thanh cong, ngay 16/10/2026.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\two_identical_day_loans.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nX#1 | Sach X | 16/10/2026\n\nTRA / BAO MAT\n1. Tra sach\n2. Bao mat sach (khoa the, rut cuon khoi kho)\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma cuon sach:  (/huy de quay lai): Giao dich thanh cong, ngay 16/10/2026.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\two_identical_day_loans.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): TOP TOI DA 10 DAU SACH THEO LUOT MUON\nMoi lan muon tinh 1, gom dang muon/da tra/mat. Hoa: ten tang, roi ISBN tang.\n1 | X | Sach X | 2 luot\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\two_identical_day_loans.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\two_identical_day_loans.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "lost_no_reopen",
+      "question_ids": [
+        "TV48"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\lost_no_reopen.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\lost_no_reopen.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nX#1 | Sach X | 14/10/2026\n\nTRA / BAO MAT\n1. Tra sach\n2. Bao mat sach (khoa the, rut cuon khoi kho)\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma cuon sach:  (/huy de quay lai): Giao dich thanh cong, ngay 16/10/2026.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\lost_no_reopen.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nKhong co sach dang muon.\n\nTRA / BAO MAT\n1. Tra sach\n2. Bao mat sach (khoa the, rut cuon khoi kho)\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma cuon sach:  (/huy de quay lai): Doc gia khong dang muon cuon nay (hoac da xu ly tra/mat).\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\lost_no_reopen.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\lost_no_reopen.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "book_and_copies_retry",
+      "question_ids": [
+        "TH226"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\book_and_copies_retry.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\book_and_copies_retry.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): \nNHAP SACH\n1. Them dau sach moi\n2. Them cuon cho dau sach da co\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): ISBN:  (/huy de quay lai): Ten sach:  (/huy de quay lai): So trang:  (/huy de quay lai): Tac gia:  (/huy de quay lai): Nam xuat ban:  (/huy de quay lai): The loai:  (/huy de quay lai): Da them dau sach. Nhap so cuon muon them; 0 de ket thuc.\nSo cuon can them:  (/huy de quay lai): \nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\book_and_copies_retry.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): \nNHAP SACH\n1. Them dau sach moi\n2. Them cuon cho dau sach da co\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): ISBN:  (/huy de quay lai): Ten sach:  (/huy de quay lai): So trang:  (/huy de quay lai): Tac gia:  (/huy de quay lai): Nam xuat ban:  (/huy de quay lai): The loai:  (/huy de quay lai): ISBN da ton tai.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\book_and_copies_retry.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): \nNHAP SACH\n1. Them dau sach moi\n2. Them cuon cho dau sach da co\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): ISBN dau sach:  (/huy de quay lai): So cuon can them:  (/huy de quay lai): Vi tri cuon 1:  (/huy de quay lai): Da cap ma cuon: A#1\nVi tri cuon 2:  (/huy de quay lai): Da cap ma cuon: A#2\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\book_and_copies_retry.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\book_and_copies_retry.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "new_legacy_distinct",
+      "question_ids": [
+        "TH252"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\new_legacy_distinct.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\new_legacy_distinct.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): \nNHAP SACH\n1. Them dau sach moi\n2. Them cuon cho dau sach da co\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): ISBN dau sach:  (/huy de quay lai): So cuon can them:  (/huy de quay lai): Vi tri cuon 1:  (/huy de quay lai): Da cap ma cuon: A#2\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\new_legacy_distinct.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): TOP TOI DA 10 DAU SACH THEO LUOT MUON\nMoi lan muon tinh 1, gom dang muon/da tra/mat. Hoa: ten tang, roi ISBN tang.\n1 | A | Sach A | 2 luot\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\new_legacy_distinct.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\new_legacy_distinct.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "top_twelve_ties",
+      "question_ids": [
+        "TH14",
+        "TH74"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\top_twelve_ties.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\top_twelve_ties.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): TOP TOI DA 10 DAU SACH THEO LUOT MUON\nMoi lan muon tinh 1, gom dang muon/da tra/mat. Hoa: ten tang, roi ISBN tang.\n1 | A | Same | 1 luot\n2 | B | Same | 1 luot\n3 | C | Same | 1 luot\n4 | D | Same | 1 luot\n5 | E | Same | 1 luot\n6 | F | Same | 1 luot\n7 | G | Same | 1 luot\n8 | H | Same | 1 luot\n9 | I | Same | 1 luot\n10 | J | Same | 1 luot\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\top_twelve_ties.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\top_twelve_ties.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "overdue_partial_return",
+      "question_ids": [
+        "TH61"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\overdue_partial_return.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\overdue_partial_return.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 20 | Nguyen An\nX#1 | Sach X | 01/10/2026\nX#2 | Sach X | 08/10/2026\n\nTRA / BAO MAT\n1. Tra sach\n2. Bao mat sach (khoa the, rut cuon khoi kho)\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma cuon sach:  (/huy de quay lai): Giao dich thanh cong, ngay 16/10/2026.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\overdue_partial_return.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): DOC GIA QUA HAN - ngay 16/10/2026\nXep theo so ngay VUOT 7 lon nhat trong cac cuon dang muon; hoa thi ma the tang.\n10 | Nguyen An | Qua han: 5 ngay | 1 cuon qua han\n20 | Nguyen An | Qua han: 1 ngay | 1 cuon qua han\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\overdue_partial_return.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 20 | Nguyen An\nX#2 | Sach X | 08/10/2026\nMa cuon sach:  (/huy de quay lai): Doc gia dang giu sach qua 7 ngay; phai xu ly sach qua han truoc.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\overdue_partial_return.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\overdue_partial_return.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "reader_ties_and_readonly",
+      "question_ids": [
+        "TN05"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\reader_ties_and_readonly.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\reader_ties_and_readonly.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): \nb - DOC GIA\n1. Theo ma the\n2. Theo ten + ho\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): MA THE | HO | TEN | PHAI | THE (TEN + HO)\n20 | Le | An | Nam | Hoat dong\n10 | Tran | an | Nam | Hoat dong\n30 | Tran | AN | Nam | Hoat dong\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\reader_ties_and_readonly.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Nhap THOAT de bo cac thay doi chua luu (/huy de quay lai): ",
+      "stderr": ""
+    },
+    {
+      "case": "partial_book_cancel",
+      "question_ids": [
+        "TH15"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\partial_book_cancel.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\partial_book_cancel.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): \nNHAP SACH\n1. Them dau sach moi\n2. Them cuon cho dau sach da co\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): ISBN:  (/huy de quay lai): Ten sach:  (/huy de quay lai): So trang:  (/huy de quay lai): Tac gia:  (/huy de quay lai): Nam xuat ban:  (/huy de quay lai): The loai:  (/huy de quay lai): Da them dau sach. Nhap so cuon muon them; 0 de ket thuc.\nSo cuon can them:  (/huy de quay lai): Vi tri cuon 1:  (/huy de quay lai): Da cap ma cuon: A#1\nVi tri cuon 2:  (/huy de quay lai): Da dung nhap. Dau sach va nhung cuon da them duoc giu lai.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\partial_book_cancel.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\partial_book_cancel.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "eof_unsaved",
+      "question_ids": [
+        "TN56"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\eof_unsaved.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\eof_unsaved.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): \na - QUAN LY DOC GIA\n1. Them doc gia\n2. Sua / khoa / mo the\n3. Xoa doc gia chua co lich su\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ho (/huy de quay lai): Ten (/huy de quay lai): Phai (Nam/Nữ) (/huy de quay lai): OK: ma the 21\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\eof_unsaved.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): \na - QUAN LY DOC GIA\n1. Them doc gia\n2. Sua / khoa / mo the\n3. Xoa doc gia chua co lich su\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ho (/huy de quay lai): Ten (/huy de quay lai): \nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\eof_unsaved.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): ",
+      "stderr": "EOF: thoat, thay doi chua luu se khong duoc ghi.\r\n"
+    },
+    {
+      "case": "delete_keep_highwater",
+      "question_ids": [
+        "TV08"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\delete_keep_highwater.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\delete_keep_highwater.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): \na - QUAN LY DOC GIA\n1. Them doc gia\n2. Sua / khoa / mo the\n3. Xoa doc gia chua co lich su\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the (/huy de quay lai): OK: da xoa doc gia.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\delete_keep_highwater.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): \na - QUAN LY DOC GIA\n1. Them doc gia\n2. Sua / khoa / mo the\n3. Xoa doc gia chua co lich su\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ho (/huy de quay lai): Ten (/huy de quay lai): Phai (Nam/Nữ) (/huy de quay lai): OK: ma the 21\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\delete_keep_highwater.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\delete_keep_highwater.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "leap_seven",
+      "question_ids": [
+        "TV04",
+        "TV73"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 03/03/2024\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\leap_seven.txt\n\nTHU VIEN | 03/03/2024\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\leap_seven.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nX#1 | Sach X | 25/02/2024\nMa cuon sach:  (/huy de quay lai): Giao dich thanh cong, ngay 03/03/2024.\n\nTHU VIEN | 03/03/2024\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\leap_seven.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\leap_seven.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "leap_eight",
+      "question_ids": [
+        "TV04",
+        "TV73"
+      ],
+      "status": "PASS",
+      "mode": "CLI --plain + saved-state/byte assertions",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 04/03/2024\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\leap_eight.txt\n\nTHU VIEN | 04/03/2024\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\leap_eight.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ma the doc gia:  (/huy de quay lai): DANG MUON | The 1 | Nguyen An\nX#1 | Sach X | 25/02/2024\nMa cuon sach:  (/huy de quay lai): Doc gia dang giu sach qua 7 ngay; phai xu ly sach qua han truoc.\n\nTHU VIEN | 04/03/2024\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\leap_eight.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\leap_eight.txt\n",
+      "stderr": ""
+    },
+    {
+      "case": "four_overlap",
+      "question_ids": [
+        "TV11"
+      ],
+      "status": "PASS",
+      "mode": "--check expected accept/reject",
+      "accepted": false
+    },
+    {
+      "case": "four_same_day",
+      "question_ids": [
+        "TV11"
+      ],
+      "status": "PASS",
+      "mode": "--check expected accept/reject",
+      "accepted": true
+    },
+    {
+      "case": "load_failure_keeps_ram",
+      "question_ids": [
+        "GH03",
+        "TH209"
+      ],
+      "status": "PASS",
+      "mode": "truncated file, CLI load failure then save RAM",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\r\nNgay giao dich: 16/10/2026\r\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\load_current.txt\r\n\r\nTHU VIEN | 16/10/2026\r\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\load_current.txt\r\n1. a - Them / xoa / sua doc gia\r\n2. b - Liet ke doc gia\r\n3. c - Nhap dau sach / them cuon\r\n4. d - Dau sach theo the loai\r\n5. e - Tim theo ten sach\r\n6. f - Muon sach\r\n7. g - Tra / bao mat sach\r\n8. h - Sach doc gia dang muon\r\n9. i - Doc gia qua han\r\n10. j - Top 10 dau sach\r\n11. Nap file khac\r\n12. Luu du lieu\r\n13. Thoat KHONG luu\r\n0. Quay lai / luu va thoat\r\nChon (/huy de quay lai): \r\na - QUAN LY DOC GIA\r\n1. Them doc gia\r\n2. Sua / khoa / mo the\r\n3. Xoa doc gia chua co lich su\r\n0. Quay lai / luu va thoat\r\nChon (/huy de quay lai): Ho (/huy de quay lai): Ten (/huy de quay lai): Phai (Nam/Nữ) (/huy de quay lai): OK: ma the 21\r\n\r\nTHU VIEN | 16/10/2026\r\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\load_current.txt\r\n1. a - Them / xoa / sua doc gia\r\n2. b - Liet ke doc gia\r\n3. c - Nhap dau sach / them cuon\r\n4. d - Dau sach theo the loai\r\n5. e - Tim theo ten sach\r\n6. f - Muon sach\r\n7. g - Tra / bao mat sach\r\n8. h - Sach doc gia dang muon\r\n9. i - Doc gia qua han\r\n10. j - Top 10 dau sach\r\n11. Nap file khac\r\n12. Luu du lieu\r\n13. Thoat KHONG luu\r\n0. Quay lai / luu va thoat\r\nChon (/huy de quay lai): Duong dan file UTF-8 (/huy de quay lai): Nhap NAP de thay du lieu RAM (hay luu truoc neu can) (/huy de quay lai): LOI: Dong 5: file ket thuc som.; du lieu RAM cu duoc giu nguyen.\r\n\r\nTHU VIEN | 16/10/2026\r\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\load_current.txt\r\n1. a - Them / xoa / sua doc gia\r\n2. b - Liet ke doc gia\r\n3. c - Nhap dau sach / them cuon\r\n4. d - Dau sach theo the loai\r\n5. e - Tim theo ten sach\r\n6. f - Muon sach\r\n7. g - Tra / bao mat sach\r\n8. h - Sach doc gia dang muon\r\n9. i - Doc gia qua han\r\n10. j - Top 10 dau sach\r\n11. Nap file khac\r\n12. Luu du lieu\r\n13. Thoat KHONG luu\r\n0. Quay lai / luu va thoat\r\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\load_current.txt\r\n"
+    },
+    {
+      "case": "load_success_switches_destination",
+      "question_ids": [
+        "TN73"
+      ],
+      "status": "PASS",
+      "mode": "CLI load then save destination",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\r\nNgay giao dich: 16/10/2026\r\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\load_origin.txt\r\n\r\nTHU VIEN | 16/10/2026\r\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\load_origin.txt\r\n1. a - Them / xoa / sua doc gia\r\n2. b - Liet ke doc gia\r\n3. c - Nhap dau sach / them cuon\r\n4. d - Dau sach theo the loai\r\n5. e - Tim theo ten sach\r\n6. f - Muon sach\r\n7. g - Tra / bao mat sach\r\n8. h - Sach doc gia dang muon\r\n9. i - Doc gia qua han\r\n10. j - Top 10 dau sach\r\n11. Nap file khac\r\n12. Luu du lieu\r\n13. Thoat KHONG luu\r\n0. Quay lai / luu va thoat\r\nChon (/huy de quay lai): \r\na - QUAN LY DOC GIA\r\n1. Them doc gia\r\n2. Sua / khoa / mo the\r\n3. Xoa doc gia chua co lich su\r\n0. Quay lai / luu va thoat\r\nChon (/huy de quay lai): Ho (/huy de quay lai): Ten (/huy de quay lai): Phai (Nam/Nữ) (/huy de quay lai): OK: ma the 21\r\n\r\nTHU VIEN | 16/10/2026\r\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\load_origin.txt\r\n1. a - Them / xoa / sua doc gia\r\n2. b - Liet ke doc gia\r\n3. c - Nhap dau sach / them cuon\r\n4. d - Dau sach theo the loai\r\n5. e - Tim theo ten sach\r\n6. f - Muon sach\r\n7. g - Tra / bao mat sach\r\n8. h - Sach doc gia dang muon\r\n9. i - Doc gia qua han\r\n10. j - Top 10 dau sach\r\n11. Nap file khac\r\n12. Luu du lieu\r\n13. Thoat KHONG luu\r\n0. Quay lai / luu va thoat\r\nChon (/huy de quay lai): Duong dan file UTF-8 (/huy de quay lai): Nhap NAP de thay du lieu RAM (hay luu truoc neu can) (/huy de quay lai): OK: da nap du lieu.\r\n\r\nTHU VIEN | 16/10/2026\r\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\load_target.txt\r\n1. a - Them / xoa / sua doc gia\r\n2. b - Liet ke doc gia\r\n3. c - Nhap dau sach / them cuon\r\n4. d - Dau sach theo the loai\r\n5. e - Tim theo ten sach\r\n6. f - Muon sach\r\n7. g - Tra / bao mat sach\r\n8. h - Sach doc gia dang muon\r\n9. i - Doc gia qua han\r\n10. j - Top 10 dau sach\r\n11. Nap file khac\r\n12. Luu du lieu\r\n13. Thoat KHONG luu\r\n0. Quay lai / luu va thoat\r\nChon (/huy de quay lai): OK: da luu C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\load_target.txt\r\n"
+    },
+    {
+      "case": "startup_invalid_no_overwrite",
+      "question_ids": [
+        "TN75",
+        "GH04"
+      ],
+      "status": "PASS",
+      "mode": "startup failure code2 and original file bytes"
+    },
+    {
+      "case": "save_locked_keeps_ram_file",
+      "question_ids": [
+        "GH05",
+        "TN100"
+      ],
+      "status": "PASS",
+      "mode": "Windows CreateFileW read share without delete/write; CLI save exit denied then report RAM and exit without saving",
+      "stdout": "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\save_locked.txt\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\save_locked.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): \na - QUAN LY DOC GIA\n1. Them doc gia\n2. Sua / khoa / mo the\n3. Xoa doc gia chua co lich su\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Ho (/huy de quay lai): Ten (/huy de quay lai): Phai (Nam/Nữ) (/huy de quay lai): OK: ma the 21\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\save_locked.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): LOI LUU (van giu du lieu trong RAM): Thay the file that bai (Windows 5); file cu duoc giu.\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\save_locked.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): \nb - DOC GIA\n1. Theo ma the\n2. Theo ten + ho\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): MA THE | HO | TEN | PHAI | THE\n21 | Nguyen | Moi | Nam | Hoat dong\n\nTHU VIEN | 16/10/2026\nDu lieu: C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_CHUNG_BO_325_20261017\\fixtures\\save_locked.txt\n1. a - Them / xoa / sua doc gia\n2. b - Liet ke doc gia\n3. c - Nhap dau sach / them cuon\n4. d - Dau sach theo the loai\n5. e - Tim theo ten sach\n6. f - Muon sach\n7. g - Tra / bao mat sach\n8. h - Sach doc gia dang muon\n9. i - Doc gia qua han\n10. j - Top 10 dau sach\n11. Nap file khac\n12. Luu du lieu\n13. Thoat KHONG luu\n0. Quay lai / luu va thoat\nChon (/huy de quay lai): Nhap THOAT de bo cac thay doi chua luu (/huy de quay lai): ",
+      "stderr": "",
+      "old_file_sha256": "bd01a972cefd4d13a37c7d8589c881e9adbdad0f4160cbed6e741051b2cf8932",
+      "assertions": [
+        "exit0 after explicit THOAT",
+        "replace failure reported",
+        "new reader21 still in RAM report",
+        "original target bytes unchanged",
+        "temporary save directory cleaned"
+      ]
+    }
+  ],
+  "exe_sha256": "cd303a5cd23199204c34d3aaeaa87407f6bde7ecaad5e628941f320e837676be",
+  "source_sha256": {
+    "00_KhaiBaoChung.h": "b27cd338dc56695578639b290db778750307223a9fd7b6bac1170779562458b3",
+    "01_HamTienIch.cpp": "299f9683d77b1a78dfd932f9a0adf6862eb84d97be9351eb665fbc49284c44ff",
+    "02_XuLyDauSach.cpp": "d9a4f2327fbd595365dcc7081d8a12b251d39cade0234d61fb16cf6910e93652",
+    "03_XuLyCuonSach.cpp": "4475cb538ff415820b788fad6c1d06004cf62a3053cb621d13dc34218f98cc54",
+    "04_XuLyDocGia.cpp": "77e1483567546c6458450d567022767a9b34567e640cf30b941873aca8111b01",
+    "05_XuLyMuonTra.cpp": "884ce6b5fff7c472aedcfb72bce2c42f428d18cff44df119c5d6fe432fdfa358",
+    "06_NghiepVuTongHop.cpp": "1e0c57513d4de8ba28e8b9035d94edc00b3ee3ad0bf19922f2f1dd65c8199e24",
+    "07_LuuDocFile.cpp": "c0734f4a74866f4b3c3e661d15c7ef5a3a631436063dfbbbf7ffb129a0bbbdde",
+    "08_ChuongTrinhChinh.cpp": "e01899d2c36ca1d55d3c4caa91798e86758a9fe027ec6e359d29e06a22849994"
+  },
+  "limits": "Fresh CLI/plain tests and one Windows target-file lock failure. No physical TUI/IME/mouse QA, allocation failure, other I/O fault injection, power-loss, concurrent writers, million-record benchmark or learner assessment.",
+  "executable_help": "ThuVien.exe [--data duong-dan] [--date dd/mm/yyyy] [--plain]\r\nThuVien.exe --check duong-dan\r\n--date dung ngay mo phong qua khu cho demo, khong cho ngay tuong lai.\r\nTUI: Tab/Enter chuyen o, Ctrl+Enter xac nhan, Esc huy. /huy huy khi xac nhan form.\r\n--plain: /huy huy nhap. 0 luu va thoat. EOF thoat KHONG tu luu.\r\n",
+  "compiler_version": "g++ (Rev3, Built by MSYS2 project) 16.2.0",
+  "build": {
+    "command": "g++ -std=c++17 -O2 -Wall -Wextra -pedantic <8 file .cpp trong ThamKhao/MaNguon> -lshell32 -o <vùng kiểm thử>/ThuVien.exe",
+    "exit_code": 0,
+    "diagnostics": "Không có output cảnh báo/lỗi trong lần build đã chạy.",
+    "scope": "Bản sao nguồn nguyên trạng; không kiểm trực tiếp cấu hình Dev-C++ của ba thành viên."
+  },
+  "reproduction_scripts_verified": [
+    {
+      "script": "kiem_chung_cli.py",
+      "script_sha256": "f956be79a3b7955986678c02bb7909e0e9714911f1b4354d9301ba5df926bb7a",
+      "report_sha256": "d578c0bdaeb397a73852416a00791229f3ec5fef6f3b92a7fbc1f4be6747b83a",
+      "case_count": 24,
+      "status": "PASS"
+    },
+    {
+      "script": "kiem_luu_bi_khoa.py",
+      "script_sha256": "174ceae6e8d7bb56be8ab75762fd3d59377e1a806219b8a6cbf20feab06cbc93",
+      "report_sha256": "d7fc53e25ff7c2914d18928713fff8f67dc2b22195812af5f27b731c18e1b70b",
+      "case_count": 1,
+      "status": "PASS"
+    }
+  ]
+}

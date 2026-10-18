@@ -1,0 +1,279 @@
+{
+  "date": "2026-10-18T12:42:35.249544",
+  "compiler": "g++ (Rev3, Built by MSYS2 project) 16.2.0",
+  "harness_sha256": "fef9c6ce343087a8fc22a0387d93e312b7c5c0c36595b08a47600c86d0249c0e",
+  "runner_sha256": "c6a0b6a0d8fabd9d9945eb75a742584ceddc1400c45dd2f411e520ba16aa04e8",
+  "variants": {
+    "original": {
+      "exe": "C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_DINH_BO_325_20261018\\Runtime\\original\\cases.exe",
+      "sha256": "e4f9a84ee52d5ac9f3e204e96f01d90ac82a478622e08d2ce4aede797daf8cab",
+      "diagnostics": "",
+      "source_hashes": {
+        "00_KhaiBaoChung.h": "b27cd338dc56695578639b290db778750307223a9fd7b6bac1170779562458b3",
+        "01_HamTienIch.cpp": "299f9683d77b1a78dfd932f9a0adf6862eb84d97be9351eb665fbc49284c44ff",
+        "02_XuLyDauSach.cpp": "d9a4f2327fbd595365dcc7081d8a12b251d39cade0234d61fb16cf6910e93652",
+        "03_XuLyCuonSach.cpp": "4475cb538ff415820b788fad6c1d06004cf62a3053cb621d13dc34218f98cc54",
+        "04_XuLyDocGia.cpp": "77e1483567546c6458450d567022767a9b34567e640cf30b941873aca8111b01",
+        "05_XuLyMuonTra.cpp": "884ce6b5fff7c472aedcfb72bce2c42f428d18cff44df119c5d6fe432fdfa358",
+        "06_NghiepVuTongHop.cpp": "1e0c57513d4de8ba28e8b9035d94edc00b3ee3ad0bf19922f2f1dd65c8199e24",
+        "07_LuuDocFile.cpp": "c0734f4a74866f4b3c3e661d15c7ef5a3a631436063dfbbbf7ffb129a0bbbdde",
+        "08_ChuongTrinhChinh.cpp": "e01899d2c36ca1d55d3c4caa91798e86758a9fe027ec6e359d29e06a22849994"
+      }
+    },
+    "commit_before_tail": {
+      "exe": "C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_DINH_BO_325_20261018\\Runtime\\commit_before_tail\\cases.exe",
+      "sha256": "214ed016a1187bd912318d8d938a29833259c50397fc1b147029f842bce861d6",
+      "diagnostics": "",
+      "source_hashes": {
+        "00_KhaiBaoChung.h": "b27cd338dc56695578639b290db778750307223a9fd7b6bac1170779562458b3",
+        "01_HamTienIch.cpp": "299f9683d77b1a78dfd932f9a0adf6862eb84d97be9351eb665fbc49284c44ff",
+        "02_XuLyDauSach.cpp": "d9a4f2327fbd595365dcc7081d8a12b251d39cade0234d61fb16cf6910e93652",
+        "03_XuLyCuonSach.cpp": "4475cb538ff415820b788fad6c1d06004cf62a3053cb621d13dc34218f98cc54",
+        "04_XuLyDocGia.cpp": "77e1483567546c6458450d567022767a9b34567e640cf30b941873aca8111b01",
+        "05_XuLyMuonTra.cpp": "884ce6b5fff7c472aedcfb72bce2c42f428d18cff44df119c5d6fe432fdfa358",
+        "06_NghiepVuTongHop.cpp": "e3dca1c1965bfd7bf266f31a70638372c171f753fbb7a6105a729c0535abf85b",
+        "07_LuuDocFile.cpp": "c0734f4a74866f4b3c3e661d15c7ef5a3a631436063dfbbbf7ffb129a0bbbdde",
+        "08_ChuongTrinhChinh.cpp": "e01899d2c36ca1d55d3c4caa91798e86758a9fe027ec6e359d29e06a22849994"
+      }
+    },
+    "reset_by_day": {
+      "exe": "C:\\Users\\ntien\\DO_AN_CTDL\\KIEM_DINH_BO_325_20261018\\Runtime\\reset_by_day\\cases.exe",
+      "sha256": "f31380a25ff85cc19cf2469e7d5be542e4f30c09ad76a7ab36e0f19396e05bda",
+      "diagnostics": "",
+      "source_hashes": {
+        "00_KhaiBaoChung.h": "b27cd338dc56695578639b290db778750307223a9fd7b6bac1170779562458b3",
+        "01_HamTienIch.cpp": "299f9683d77b1a78dfd932f9a0adf6862eb84d97be9351eb665fbc49284c44ff",
+        "02_XuLyDauSach.cpp": "d9a4f2327fbd595365dcc7081d8a12b251d39cade0234d61fb16cf6910e93652",
+        "03_XuLyCuonSach.cpp": "4475cb538ff415820b788fad6c1d06004cf62a3053cb621d13dc34218f98cc54",
+        "04_XuLyDocGia.cpp": "77e1483567546c6458450d567022767a9b34567e640cf30b941873aca8111b01",
+        "05_XuLyMuonTra.cpp": "884ce6b5fff7c472aedcfb72bce2c42f428d18cff44df119c5d6fe432fdfa358",
+        "06_NghiepVuTongHop.cpp": "1e0c57513d4de8ba28e8b9035d94edc00b3ee3ad0bf19922f2f1dd65c8199e24",
+        "07_LuuDocFile.cpp": "bb7b03391ada087039b24ef09731a9380b77784de3fbfaa367333f51a829dc48",
+        "08_ChuongTrinhChinh.cpp": "e01899d2c36ca1d55d3c4caa91798e86758a9fe027ec6e359d29e06a22849994"
+      }
+    }
+  },
+  "cases": [
+    {
+      "variant": "original",
+      "case": "foreign_cycle",
+      "status": "PASS",
+      "stdout": "PASS foreign_cycle\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.157,
+      "id": "original_foreign_cycle",
+      "question_ids": [
+        "TV226"
+      ]
+    },
+    {
+      "variant": "original",
+      "case": "sort_permutation",
+      "status": "PASS",
+      "stdout": "PASS sort_permutation\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.047,
+      "id": "original_sort_permutation",
+      "question_ids": [
+        "TN202"
+      ]
+    },
+    {
+      "variant": "original",
+      "case": "top_late",
+      "status": "PASS",
+      "stdout": "PASS top_late\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.046,
+      "id": "original_top_late",
+      "question_ids": [
+        "TH253"
+      ]
+    },
+    {
+      "variant": "original",
+      "case": "top_ties",
+      "status": "PASS",
+      "stdout": "PASS top_ties\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.047,
+      "id": "original_top_ties",
+      "question_ids": [
+        "TH253",
+        "TH14"
+      ]
+    },
+    {
+      "variant": "original",
+      "case": "code509",
+      "status": "PASS",
+      "stdout": "PASS code509\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.063,
+      "id": "original_code509",
+      "question_ids": [
+        "TH301"
+      ]
+    },
+    {
+      "variant": "original",
+      "case": "code510",
+      "status": "PASS",
+      "stdout": "PASS code510\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.047,
+      "id": "original_code510",
+      "question_ids": [
+        "TH301"
+      ]
+    },
+    {
+      "variant": "original",
+      "case": "publication_date",
+      "status": "PASS",
+      "stdout": "PASS publication_date\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.062,
+      "id": "original_publication_date",
+      "question_ids": [
+        "TH302"
+      ]
+    },
+    {
+      "variant": "original",
+      "case": "sweep_valid",
+      "status": "PASS",
+      "stdout": "PASS sweep_valid\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.063,
+      "id": "original_sweep_valid",
+      "question_ids": [
+        "TV233"
+      ]
+    },
+    {
+      "variant": "original",
+      "case": "sweep_four",
+      "status": "PASS",
+      "stdout": "PASS sweep_four\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.062,
+      "id": "original_sweep_four",
+      "question_ids": [
+        "TV233"
+      ]
+    },
+    {
+      "variant": "original",
+      "case": "bst_bounds",
+      "status": "PASS",
+      "stdout": "PASS bst_bounds\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.063,
+      "id": "original_bst_bounds",
+      "question_ids": [
+        "TV301"
+      ]
+    },
+    {
+      "variant": "original",
+      "case": "partial_batch",
+      "status": "PASS",
+      "stdout": "PASS partial_batch\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.047,
+      "id": "original_partial_batch",
+      "question_ids": [
+        "TH52"
+      ]
+    },
+    {
+      "variant": "original",
+      "case": "four_open",
+      "status": "PASS",
+      "stdout": "PASS four_open\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.062,
+      "id": "original_four_open",
+      "question_ids": [
+        "TH224"
+      ]
+    },
+    {
+      "variant": "original",
+      "case": "top_missing",
+      "status": "PASS",
+      "stdout": "PASS top_missing\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.047,
+      "id": "original_top_missing",
+      "question_ids": [
+        "TH21"
+      ]
+    },
+    {
+      "variant": "reset_by_day",
+      "case": "sweep_valid",
+      "status": "PASS",
+      "stdout": "PASS sweep_valid\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.141,
+      "id": "reset_by_day_sweep_valid",
+      "question_ids": [
+        "TV233"
+      ]
+    },
+    {
+      "variant": "reset_by_day",
+      "case": "sweep_four",
+      "status": "PASS",
+      "stdout": "PASS sweep_four\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.062,
+      "id": "reset_by_day_sweep_four",
+      "question_ids": [
+        "TV233"
+      ]
+    },
+    {
+      "variant": "commit_before_tail",
+      "case": "foreign_cycle",
+      "status": "PASS",
+      "stdout": "PASS foreign_cycle\r\n",
+      "stderr": "",
+      "elapsed_seconds": 0.141,
+      "id": "commit_before_tail_foreign_cycle",
+      "question_ids": [
+        "TV226"
+      ]
+    },
+    {
+      "variant": "original",
+      "case": "own_cycle",
+      "status": "EXPECTED_TIMEOUT",
+      "stdout": "BEFORE_MUON copy=0\r\n",
+      "seconds_limit": 2,
+      "meaning": "Không kết thúc trong 2s; nguyên nhân không tới commit được xác định từ thứ tự helper trong mã, không từ timeout đơn lẻ.",
+      "elapsed_seconds": 2.031,
+      "id": "original_own_cycle",
+      "question_ids": [
+        "TV226"
+      ]
+    },
+    {
+      "variant": "commit_before_tail",
+      "case": "own_cycle",
+      "status": "EXPECTED_TIMEOUT",
+      "stdout": "BEFORE_MUON copy=0\r\n",
+      "seconds_limit": 2,
+      "meaning": "Không kết thúc trong 2s; nguyên nhân không tới commit được xác định từ thứ tự helper trong mã, không từ timeout đơn lẻ.",
+      "elapsed_seconds": 2.016,
+      "id": "commit_before_tail_own_cycle",
+      "question_ids": [
+        "TV226"
+      ]
+    }
+  ],
+  "limits": "16 lượt chạy assertion + 2 tiến trình timeout có chủ đích; không phải 18 câu độc lập hay chứng nhận 325 câu. Hai biến thể chỉ sửa bản sao trong Runtime. Không QA TUI, lỗi cấp phát, tải triệu, mất điện hoặc concurrency.",
+  "source_snapshot": "ThamKhao/MaNguon; bản tham khảo AI terminal/console, không suy là code GitHub mới nhất."
+}
