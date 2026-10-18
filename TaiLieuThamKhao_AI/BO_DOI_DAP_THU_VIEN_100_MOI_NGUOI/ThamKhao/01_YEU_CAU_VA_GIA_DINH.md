@@ -115,6 +115,6 @@ Tự cài chuẩn hóa và tìm chuỗi con; tìm đầu sách/ISBN/cuốn; chè
 
 ## 6. Cách dùng tài liệu để học
 
-Đọc [bản đồ chức năng và nguồn](BAO_CAO_KIEM_TRA.md), rồi trả lời [câu hỏi](../01_CAU_HOI.md) trước khi mở [đáp án](../02_DAP_AN.md). Đáp án mô tả bản AI và giả định của nó, không phải đáp án thầy đã duyệt.
+Đọc yêu cầu và giả định trong file này, rồi trả lời [câu hỏi](../01_CAU_HOI.md) trước khi mở [đáp án](../02_DAP_AN.md). Đáp án mô tả bản AI và giả định của nó, không phải đáp án thầy đã duyệt.
 
 Che code rồi viết lại là luyện có hỗ trợ vì đã xem giải pháp. Để tự kiểm chứng, tự thiết kế thêm dữ liệu, giải thích một ca chưa xem và sửa một yêu cầu có thay đổi ý nghĩa. Không cập nhật nhật ký học hoặc điểm tự chủ chỉ vì tài liệu/bản build này tồn tại.

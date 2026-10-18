@@ -1,8 +1,8 @@
 # Đáp án — 325 câu đối đáp Thư viện
 
-**Thái 100 · Thành 100 · Tấn 100 · Cả nhóm 25.** [Câu hỏi](01_CAU_HOI.md) · [Báo cáo kiểm tra](ThamKhao/BAO_CAO_KIEM_TRA.md).
+**Thái 100 · Thành 100 · Tấn 100 · Cả nhóm 25.** [Câu hỏi](01_CAU_HOI.md) · [Hướng dẫn đọc](README.md).
 
-Bản chỉnh nội dung 18/10/2026. “Truy vết/đề xuất” không phải kết quả đã chạy. [25 ca ngày17/10](ThamKhao/KIEM_CHUNG_RUNTIME.md) là bằng chứng lịch sử, không chạy lại trong đợt này. [18 lượt kiểm mới](ThamKhao/KIEM_DINH_20261018.md) gồm16 lượt assertion và2 timeout có chủ đích. Mỗi liên kết dưới chỉ xác nhận phạm vi ca, không chứng nhận toàn câu/câu phụ hay phương án chưa cài.
+Bản chỉnh nội dung 18/10/2026, rút gọn tệp phụ để nhóm dễ đọc. “Truy vết/đề xuất” không phải kết quả đã chạy. Một số tình huống có kiểm thử liên quan; điều đó không chứng minh toàn bộ câu/câu phụ hoặc phương án chưa cài. Hồ sơ kiểm thử được lưu riêng.
 
 Quy ước D/C/R/H/h/L, giới hạn, cấu trúc bắt buộc và giả định G01–G12 nằm ở đầu file câu hỏi. Đáp án là căn cứ phản biện, không phải lời nói học thuộc hoặc bằng chứng người học đã tự làm.
 
@@ -146,9 +146,9 @@ Theo đầu hay cuốn và cách xử lý đồng hạng là giả định G01/G
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Truy top/k khi có 0, 3, 10, 12 đầu dương; thêm ứng viên cao nhất lúc k=10; kiểm không đọc/ghi ngoài 0..9 và phân biệt hai đặc tả đồng hạng.
 
-**Kiểm mới 18/10:** [original_top_ties](ThamKhao/KIEM_DINH_20261018.md#original_top_ties). Chỉ các assertion/quan sát nêu trong ca.
+**Mức bằng chứng bổ sung:** có kiểm thử liên quan ngày 18/10/2026; chỉ xác nhận phạm vi đã thử, không phải toàn bộ câu/câu phụ. Hồ sơ chi tiết được lưu riêng.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [top_twelve_ties](ThamKhao/KIEM_CHUNG_RUNTIME.md#top_twelve_ties).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `InTop10SachDuocMuonNhieuNhat`, dòng 172; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `DauSachXepTruoc`, dòng 107.
 
@@ -240,7 +240,7 @@ Báo cáo gom max và đếm số cuốn, còn quyền mượn dùng điều ki�
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Kiểm hai bản dữ liệu riêng, so báo cáo i, h và kết quả mượn W sau mỗi lượt.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [overdue_partial_return](ThamKhao/KIEM_CHUNG_RUNTIME.md#overdue_partial_return).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `InDocGiaQuaHan`, dòng 148; [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — `CoSachQuaHan7Ngay`, dòng 9; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `MuonSach`, dòng 114.
 
@@ -265,7 +265,7 @@ Yêu cầu nguyên khối cần chuẩn bị và kiểm cả cụm trước khi 
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Chạy hai cách nhập trên bản sao, hủy rồi lưu; so số đầu/cuốn và mã sinh tiếp theo. TUI không có ô nhập số lượng cuốn.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [partial_book_cancel](ThamKhao/KIEM_CHUNG_RUNTIME.md#partial_book_cancel).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — `ManHinhNhapDauSach`, dòng 128; [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — `ThemCuonSach`, dòng 74.
 
@@ -361,7 +361,7 @@ Không đổi nhánh owner<0 thành owner=0 để tiếp tục: đó là tự g�
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Chỉ tạo lỗi trên bản sao độc lập; kiểm không có tiêu đề top hoàn chỉnh và file đích cũ không bị thay.
 
-**Kiểm mới 18/10:** [original_top_missing](ThamKhao/KIEM_DINH_20261018.md#original_top_missing). Chỉ các assertion/quan sát nêu trong ca.
+**Mức bằng chứng bổ sung:** có kiểm thử liên quan ngày 18/10/2026; chỉ xác nhận phạm vi đã thử, không phải toàn bộ câu/câu phụ. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `InTop10SachDuocMuonNhieuNhat`, dòng 172; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `KiemTraNoiBo`, dòng 102.
 
@@ -733,7 +733,7 @@ Với bộ khóa lượt–tên– ISBN hiện tại và ISBN duy nhất, thứ 
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Lập expected cho cả mã chữ/số/0 đầu; kiểm cặp comparator hai chiều và top ở ngưỡng 10.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [top_twelve_ties](ThamKhao/KIEM_CHUNG_RUNTIME.md#top_twelve_ties).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `DauSachXepTruoc`, dòng 107; [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — `SoSanhDauSach`, dòng 9; [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — `HopLeDauSach`, dòng 27.
 
@@ -947,7 +947,7 @@ Số đếm điều khiển ranh giới bản ghi. Tự đoán lại sẽ khiế
 
 **Cách kiểm chứng:** Đề xuất: nạp file sai số cuốn vào phiên có dữ liệu A0, kiểm lỗi và nội dung A0 giữ nguyên; đối chiếu file đếm đúng.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [load_failure_keeps_ram](ThamKhao/KIEM_CHUNG_RUNTIME.md#load_failure_keeps_ram).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `DocNoiBo`, dòng 222; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `BoDoc`, dòng 63.
 
@@ -1262,7 +1262,7 @@ Sau giả định nâng giới hạn, phải tính chỉ mục cuốn, view đ�
 
 **Cách kiểm chứng:** Chỉ phân tích quy mô; test hiện tại phải kiểm từ chối vượt H trước, không tuyên bố benchmark triệu lượt.
 
-**Kiểm mới 18/10:** [original_four_open](ThamKhao/KIEM_DINH_20261018.md#original_four_open). Chỉ các assertion/quan sát nêu trong ca.
+**Mức bằng chứng bổ sung:** có kiểm thử liên quan ngày 18/10/2026; chỉ xác nhận phạm vi đã thử, không phải toàn bộ câu/câu phụ. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — `MAX_BAN_GHI`, dòng 9; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `DocNoiBo`, dòng 222; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `InTop10SachDuocMuonNhieuNhat`, dòng 172.
 
@@ -1304,7 +1304,7 @@ Vị trí kệ không là định danh yêu cầu hay cuốn. Hai API có ý ngh
 
 **Cách kiểm chứng:** Đề xuất: thêm A hai lần rồi thêm cuốn hai lần; mong 1 đầu, 2 cuốn, không có lịch sử mượn.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [book_and_copies_retry](ThamKhao/KIEM_CHUNG_RUNTIME.md#book_and_copies_retry).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — `ThemDauSach`, dòng 64; [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — `ThemCuonSach`, dòng 74.
 
@@ -1598,7 +1598,7 @@ V1 không có thời điểm giờ hay ID giao dịch để phân biệt hai ý 
 
 **Cách kiểm chứng:** Đề xuất: chạy hai chu kỳ trong ngày, lưu–nạp và top=2; giữ hai node, so với file cố ý mất một node.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [two_identical_day_loans](ThamKhao/KIEM_CHUNG_RUNTIME.md#two_identical_day_loans).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `MuonSach`, dòng 114; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `KetThucMuon`, dòng 54; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `InTop10SachDuocMuonNhieuNhat`, dòng 172.
 
@@ -1724,7 +1724,7 @@ Lượt mất có thể giúp nhận biết X trong mô hình G05; Y trạng th�
 
 **Cách kiểm chứng:** Đề xuất: fixture X mất/Y thanh lý không lịch sử, tìm cả hai; kiểm nhãn và giới hạn khả năng giải thích nguyên nhân.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [lost_then_return_other](ThamKhao/KIEM_CHUNG_RUNTIME.md#lost_then_return_other).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — `InMotDauSach`, dòng 14; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `DanhDauMatSach`, dòng 142; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `KiemTraNoiBo`, dòng 102.
 
@@ -1829,7 +1829,7 @@ Legacy được tra bằng toàn chuỗi, không suy ISBN/hậu tố số. Bộ 
 
 **Cách kiểm chứng:** Đề xuất: hai cuốn được mượn cùng thời gian bởi hai người vẫn hợp lệ; top cộng 2 và mã mới #2.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [new_legacy_distinct](ThamKhao/KIEM_CHUNG_RUNTIME.md#new_legacy_distinct).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — `TachMaMoi`, dòng 8; [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — `SinhMaSachTuDong`, dòng 59; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `TimChuSoHuu`, dòng 98.
 
@@ -1850,7 +1850,7 @@ Sau mỗi tiền tố, top chứa tối đa 10 đầu tốt nhất trong các đ
 
 **Cách kiểm chứng:** Đề xuất: 10 đầu ít lượt trước 2 đầu nhiều lượt; kiểm cả top và số ứng viên đã xét; thêm ca ứng viên bị loại khi j>=10.
 
-**Kiểm mới 18/10:** [original_top_late](ThamKhao/KIEM_DINH_20261018.md#original_top_late), [original_top_ties](ThamKhao/KIEM_DINH_20261018.md#original_top_ties). Chỉ các assertion/quan sát nêu trong ca.
+**Mức bằng chứng bổ sung:** có kiểm thử liên quan ngày 18/10/2026; chỉ xác nhận phạm vi đã thử, không phải toàn bộ câu/câu phụ. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `InTop10SachDuocMuonNhieuNhat`, dòng 172; [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — `SoSanhDauSach`, dòng 9.
 
@@ -1871,7 +1871,7 @@ Một đầu có ISBN hợp lệ không bảo đảm mọi mã ghép sau này h�
 
 **Cách kiểm chứng:** Dựng hai fixture 509/510 byte với #9, gọi thêm, so bool/output/count và kiểm toàn vẹn trước–sau; không tạo tải lớn.
 
-**Kiểm mới 18/10:** [original_code509](ThamKhao/KIEM_DINH_20261018.md#original_code509), [original_code510](ThamKhao/KIEM_DINH_20261018.md#original_code510). Chỉ các assertion/quan sát nêu trong ca.
+**Mức bằng chứng bổ sung:** có kiểm thử liên quan ngày 18/10/2026; chỉ xác nhận phạm vi đã thử, không phải toàn bộ câu/câu phụ. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — `SinhMaSachTuDong`, dòng 59; [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — `ThemCuonSach`, dòng 74; [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — `HopLeVanBan`, dòng 42.
 
@@ -1892,7 +1892,7 @@ Một đầu có ISBN hợp lệ không bảo đảm mọi mã ghép sau này h�
 
 **Cách kiểm chứng:** Fixture đầu 2025 và mượn 2020 trên máy 2026; kiểm API và KiemTraToanVen. Không thay đồng hồ hệ thống.
 
-**Kiểm mới 18/10:** [original_publication_date](ThamKhao/KIEM_DINH_20261018.md#original_publication_date). Chỉ các assertion/quan sát nêu trong ca.
+**Mức bằng chứng bổ sung:** có kiểm thử liên quan ngày 18/10/2026; chỉ xác nhận phạm vi đã thử, không phải toàn bộ câu/câu phụ. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — `HopLeDauSach`, dòng 27; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `MuonSach`, dòng 114; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `KiemTraNgayGiaoDich`, dòng 17; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `KiemTraNoiBo`, dòng 102.
 
@@ -2032,7 +2032,7 @@ Cần chọn commit từng cuốn như đường gọi hiện tại hay nguyên 
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: So khớp mã và dữ liệu khi lô bị lỗi ở giữa, đo riêng số lần duyệt đuôi/cấp mã.
 
-**Kiểm mới 18/10:** [original_partial_batch](ThamKhao/KIEM_DINH_20261018.md#original_partial_batch). Chỉ các assertion/quan sát nêu trong ca.
+**Mức bằng chứng bổ sung:** có kiểm thử liên quan ngày 18/10/2026; chỉ xác nhận phạm vi đã thử, không phải toàn bộ câu/câu phụ. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — `ThemCuonSach`, dòng 74; [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — `SinhMaSachTuDong`, dòng 59.
 
@@ -2243,7 +2243,7 @@ Khi A bị khóa, A bị chặn trước bước tìm cuốn, không thay đổi
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Chạy hai kịch bản từ cùng dữ liệu ban đầu; sau mỗi yêu cầu kiểm trạng thái cuốn, số lượt từng người và chủ của lượt đang mở.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [sequential_same_copy](ThamKhao/KIEM_CHUNG_RUNTIME.md#sequential_same_copy).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `MuonSach`, dòng 114.
 
@@ -2312,7 +2312,7 @@ Xin mượn Y#1 sau trả vẫn bị chặn do thẻ khóa. Phân biệt quyền
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Hai phép thử ngày phải bắt đầu từ bản sao riêng. Kiểm đúng hiệu ngày lịch, không dùng phép trừ số ngày trong tháng.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [seven_eight_15](ThamKhao/KIEM_CHUNG_RUNTIME.md#seven_eight_15), [seven_eight_16](ThamKhao/KIEM_CHUNG_RUNTIME.md#seven_eight_16), [leap_seven](ThamKhao/KIEM_CHUNG_RUNTIME.md#leap_seven), [leap_eight](ThamKhao/KIEM_CHUNG_RUNTIME.md#leap_eight).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — `QuaHan7Ngay`, dòng 124; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `MuonSach`, dòng 114; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `KetThucMuon`, dòng 54.
 
@@ -2335,7 +2335,7 @@ Tìm theo mã phải kèm trạng thái đang mượn và đúng độc giả. L
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Lưu dấu nhận diện từng nút trước chuỗi; kiểm đúng một nút cũ đổi và đúng một nút mới thuộc B được thêm.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [return_then_other_borrow_old_return](ThamKhao/KIEM_CHUNG_RUNTIME.md#return_then_other_borrow_old_return).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — `TimMuonDangMuonTheoMa`, dòng 14; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `KetThucMuon`, dòng 54.
 
@@ -2358,7 +2358,7 @@ Dùng ngày trả làm ngày báo mất, chuyển cuốn sang thanh lý và chư
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Kiểm cả hai lượt riêng, Z#1 không đổi, thẻ còn khóa sau khi trả hết; không xóa lịch sử mất để ép mở thẻ.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [lost_then_return_other](ThamKhao/KIEM_CHUNG_RUNTIME.md#lost_then_return_other).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `DanhDauMatSach`, dòng 142; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `KetThucMuon`, dòng 54; [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — `HieuChinhDocGia`, dòng 73.
 
@@ -2404,7 +2404,7 @@ Mã lớn nhất còn trong BST và số độc giả không thể thay thế m�
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Kiểm metadata file sau xóa và sau nhập thất bại; bảo đảm đầu ra mã của lần thành công được dùng, không đọc biến mã cũ sau thất bại.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [delete_keep_highwater](ThamKhao/KIEM_CHUNG_RUNTIME.md#delete_keep_highwater).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — `ThemDocGia`, dòng 64; [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — `XoaDocGia`, dòng 85; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `Ghi`, dòng 273.
 
@@ -2475,7 +2475,7 @@ Khi chỉ hai chỗ bị giữ xuyên ngày, các lượt mượn–trả cùng 
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Tạo ba file bản sao với các mã cuốn khác nhau, cuốn đều trạng thái 0; kiểm lỗi giới hạn lịch sử thay vì lỗi liên kết khác.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [four_overlap](ThamKhao/KIEM_CHUNG_RUNTIME.md#four_overlap), [four_same_day](ThamKhao/KIEM_CHUNG_RUNTIME.md#four_same_day).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `KiemTraNoiBo`, dòng 102; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `MocMuon`, dòng 91.
 
@@ -2841,7 +2841,7 @@ Cần chốt quy tắc bảo tồn dấu vết, khả năng mượn lại, xử 
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Vẽ trạng thái hiện tại và các invariant bị từng đề xuất phá; thực nghiệm trên bản sao, giữ nguyên dữ liệu thật.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [lost_no_reopen](ThamKhao/KIEM_CHUNG_RUNTIME.md#lost_no_reopen).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `KetThucMuon`, dòng 54; [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — `HieuChinhDocGia`, dòng 73; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `KiemTraNoiBo`, dòng 102.
 
@@ -2864,7 +2864,7 @@ Một kết quả tạm gồm count /hasOverdue/ max giúp tránh vòng lặp l�
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Dùng ca đủ 3+quá hạn, chỉ quá hạn, max ở cuối và lịch sử trả xen kẽ; so thông báo và dữ liệu trước/sau refactor.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [locked_full_overdue_precedence](ThamKhao/KIEM_CHUNG_RUNTIME.md#locked_full_overdue_precedence), [full_before_overdue](ThamKhao/KIEM_CHUNG_RUNTIME.md#full_before_overdue).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `MuonSach`, dòng 114; [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — `DemSoSachDangMuon`, dòng 5; [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — `CoSachQuaHan7Ngay`, dòng 9.
 
@@ -2975,7 +2975,7 @@ Vòng tăng ngày có thể đúng nếu xử lý đầy đủ lịch nhưng m�
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Tính tay qua 28/02 và 01/03 của 1900/2000, qua 31/12; so số bước theo khoảng năm mà không cần đo thời gian máy.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [leap_seven](ThamKhao/KIEM_CHUNG_RUNTIME.md#leap_seven), [leap_eight](ThamKhao/KIEM_CHUNG_RUNTIME.md#leap_eight).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — `SoThuTuNgay`, dòng 112; [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — `NamNhuan`, dòng 87; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `InDocGiaQuaHan`, dòng 148.
 
@@ -3462,7 +3462,7 @@ Trong ca này cuốn X vẫn rảnh và chưa cấp/nối phiếu mới; không 
 
 **Cách kiểm chứng:** Truy call graph trước; kiểm vòng của A bằng timeout riêng và kiểm vòng của B bằng harness có tháo vòng khi dọn. Timeout chỉ xác nhận lời gọi không kết thúc trong thời hạn, lý do vòng vô hạn dựa mã nguồn.
 
-**Kiểm mới 18/10:** [original_foreign_cycle](ThamKhao/KIEM_DINH_20261018.md#original_foreign_cycle), [commit_before_tail_foreign_cycle](ThamKhao/KIEM_DINH_20261018.md#commit_before_tail_foreign_cycle), [original_own_cycle](ThamKhao/KIEM_DINH_20261018.md#original_own_cycle), [commit_before_tail_own_cycle](ThamKhao/KIEM_DINH_20261018.md#commit_before_tail_own_cycle). Chỉ các assertion/quan sát nêu trong ca.
+**Mức bằng chứng bổ sung:** có kiểm thử liên quan ngày 18/10/2026; chỉ xác nhận phạm vi đã thử, không phải toàn bộ câu/câu phụ. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `MuonSach`, dòng 114; [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — `DemSoSachDangMuon`, dòng 5; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `KiemTraDongThoiGian`, dòng 25.
 
@@ -3611,7 +3611,7 @@ Bản hiện reset khi đổi mã thẻ; nghĩa vụ của cùng người phải
 
 **Cách kiểm chứng:** Truy sự kiện 01:+3,05:+1,06:-1,10:-3; kiểm bản gốc và bản sao chỉ đổi điều kiện reset, gồm một khoảng hợp lệ qua ngày. Không suy PASS của ca từ chối là thuật toán đúng.
 
-**Kiểm mới 18/10:** [original_sweep_valid](ThamKhao/KIEM_DINH_20261018.md#original_sweep_valid), [original_sweep_four](ThamKhao/KIEM_DINH_20261018.md#original_sweep_four), [reset_by_day_sweep_valid](ThamKhao/KIEM_DINH_20261018.md#reset_by_day_sweep_valid), [reset_by_day_sweep_four](ThamKhao/KIEM_DINH_20261018.md#reset_by_day_sweep_four). Chỉ các assertion/quan sát nêu trong ca.
+**Mức bằng chứng bổ sung:** có kiểm thử liên quan ngày 18/10/2026; chỉ xác nhận phạm vi đã thử, không phải toàn bộ câu/câu phụ. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `MocMuon`, dòng 91; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `KiemTraNoiBo`, dòng 102.
 
@@ -4138,7 +4138,7 @@ KiemTraNoiBo truyền khoảng mở (lo,hi) theo tổ tiên: gốc(0,INT_MAX+1),
 
 **Cách kiểm chứng:** Dựng cây debug không chu trình, gọi tìm/inorder/validator rồi hủy bình thường; đổi 50→30→40 để kiểm cả ca nhận và từ chối.
 
-**Kiểm mới 18/10:** [original_bst_bounds](ThamKhao/KIEM_DINH_20261018.md#original_bst_bounds). Chỉ các assertion/quan sát nêu trong ca.
+**Mức bằng chứng bổ sung:** có kiểm thử liên quan ngày 18/10/2026; chỉ xác nhận phạm vi đã thử, không phải toàn bộ câu/câu phụ. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — `TimDocGia`, dòng 8, 13; [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — `LayDanhSachDocGia`, dòng 18; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `KiemTraNoiBo`, dòng 102.
 
@@ -4502,7 +4502,7 @@ SoSanhChuoi không đối chiếu từ điển tiếng Việt đầy đủ; dữ
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: So dãy mã ở ba lần in; bổ sung tên có dấu để phân biệt quy tắc hiện tại với kỳ vọng ngôn ngữ tự nhiên.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [reader_ties_and_readonly](ThamKhao/KIEM_CHUNG_RUNTIME.md#reader_ties_and_readonly).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — `TenHoTruoc`, dòng 44; [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — `InDocGiaTheoTenHo`, dòng 119; [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — `SoSanhChuoi`, dòng 27.
 
@@ -4797,7 +4797,7 @@ Script kiểm thử cần quan sát thông báo lưu và đọc/kiểm file đí
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Tạo input cố ý cắt giữa B trên file tạm, so file trước sau; thêm một kịch bản đầy đủ có lưu để đối chiếu.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [eof_unsaved](ThamKhao/KIEM_CHUNG_RUNTIME.md#eof_unsaved).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — `ManHinhDocGia`, dòng 138; [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — `NhapDong`, dòng 403; [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — `ChayUngDung`, dòng 507.
 
@@ -4891,7 +4891,7 @@ Phân biệt thành công nạp với toàn thao tác UI: trường hợp hiếm
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Trên hai cặp file tạm, kiểm từng nhánh bằng nội dung/hash A và B; báo cáo chạy v2 chỉ kiểm nhánh sai từ khóa, không tự xác nhận nhánh mới.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [load_success_switches_destination](ThamKhao/KIEM_CHUNG_RUNTIME.md#load_success_switches_destination).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — `ChayUngDung`, dòng 507; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `DocFile`, dòng 349; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `LuuFile`, dòng 353.
 
@@ -4916,7 +4916,7 @@ Nếu file --data tồn tại nhưng DocFile thất bại, ChayUngDung báo lỗ
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Dùng hai đường dẫn tạm kiểm tồn tại trước sau, đối chiếu RAM /file khi chưa lưu và sau F5.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [startup_invalid_no_overwrite](ThamKhao/KIEM_CHUNG_RUNTIME.md#startup_invalid_no_overwrite).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — `ChayUngDung`, dòng 507; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `DocFile`, dòng 349.
 
@@ -5008,7 +5008,7 @@ Kiểm số lượng, tần suất mỗi mã trước/sau và quan hệ từng m
 
 **Cách kiểm chứng:** Đề xuất: dùng ba tên đảo và hai hồ sơ trùng tên; chèn lỗi gán trên bản sao rồi kiểm permutation lẫn thứ tự.
 
-**Kiểm mới 18/10:** [original_sort_permutation](ThamKhao/KIEM_DINH_20261018.md#original_sort_permutation). Chỉ các assertion/quan sát nêu trong ca.
+**Mức bằng chứng bổ sung:** có kiểm thử liên quan ngày 18/10/2026; chỉ xác nhận phạm vi đã thử, không phải toàn bộ câu/câu phụ. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — `InDocGiaTheoTenHo`, dòng 119.
 
@@ -6578,7 +6578,7 @@ Nhánh choice=0 chỉ return sau khi LuuFile thành công; khi lưu thất bại
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Truy vết một mã thẻ/cuốn xuyên module, phân biệt 'mượn thành công' với 'đã lưu bền vào file'.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [save_locked_keeps_ram_file](ThamKhao/KIEM_CHUNG_RUNTIME.md#save_locked_keeps_ram_file).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — `ChayUngDung`, dòng 507; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `ManHinhMuonTra`, dòng 206; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `MuonSach`, dòng 114; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `LuuFile`, dòng 353.
 
@@ -6722,7 +6722,7 @@ A chỉ thay sau kiểm toàn vẹn và HoanDoiThuVien. Thiếu dòng hoặc tr�
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: So ảnh chụp A trước/sau hai file lỗi; dùng công cụ phát hiện bộ nhớ nếu kiểm rò, không kết luận chỉ từ việc RAM còn đúng.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [load_failure_keeps_ram](ThamKhao/KIEM_CHUNG_RUNTIME.md#load_failure_keeps_ram).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `DocNoiBo`, dòng 222; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `ThuVien::~ThuVien`, dòng 334; [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — `HuyCayDocGia`, dòng 103.
 
@@ -6768,7 +6768,7 @@ Không tự chọn người đang giữ thật bằng cách sửa một cờ; d�
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Dùng hai file lỗi chỉ khác quan hệ X; kiểm báo lỗi và ảnh chụp RAM trước/sau, rồi kiểm file hợp lệ có một lượt mở.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [startup_invalid_no_overwrite](ThamKhao/KIEM_CHUNG_RUNTIME.md#startup_invalid_no_overwrite).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `KiemTraNoiBo`, dòng 102; [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — `MuonSach`, dòng 114.
 
@@ -6814,7 +6814,7 @@ Không có cam kết chịu mọi mất điện hoặc khóa nhiều tiến trì
 
 **Cách kiểm chứng:** Đề xuất kiểm chứng: Đối chiếu byte file đích và dữ liệu RAM khi cố ý làm bước thay thất bại; tách lỗi đã thực thi với lỗi mới chỉ phân tích.
 
-**Ca liên quan đã chạy 17/10 (không tái chạy đợt này):** [save_locked_keeps_ram_file](ThamKhao/KIEM_CHUNG_RUNTIME.md#save_locked_keeps_ram_file).
+**Mức bằng chứng lịch sử:** có kiểm thử liên quan ngày 17/10/2026; không chạy lại trong lần rút gọn tài liệu. Hồ sơ chi tiết được lưu riêng.
 
 **Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `LuuNoiBo`, dòng 290; [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — `LuuFile`, dòng 353.
 

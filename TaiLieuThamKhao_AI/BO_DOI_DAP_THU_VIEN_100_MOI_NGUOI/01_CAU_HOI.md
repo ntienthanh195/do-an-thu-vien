@@ -4,9 +4,9 @@
 
 Giải nén toàn bộ ZIP, mở thư mục bằng VS Code rồi mở file này và nhấn **Ctrl+Shift+V**. Dòng `<a id=...>` chỉ là mốc liên kết, không phải nội dung cần học. Bấm liên kết mã để đến câu; mở đáp án sau khi tự dự đoán.
 
-**Đi nhanh:** [20 câu ôn trước](#on-truoc) · [Thái — 100](#thai) · [Thành — 100](#thanh) · [Tấn — 100](#tan) · [Chung — 25](#chung) · [Đáp án](02_DAP_AN.md) · [Bản đồ độ phủ và kiểm tra](ThamKhao/BAO_CAO_KIEM_TRA.md).
+**Đi nhanh:** [20 câu ôn trước](#on-truoc) · [Thái — 100](#thai) · [Thành — 100](#thanh) · [Tấn — 100](#tan) · [Chung — 25](#chung) · [Đáp án](02_DAP_AN.md) · [Hướng dẫn đọc](README.md).
 
-Bộ này bám đúng chín file của **bản tham khảo AI terminal/console** trong `THAM_KHAO_THU_VIEN_AI_20261016/MaNguon`, chốt nguồn ngày 17/10/2026; nội dung rà lại ngày 18/10/2026. Không coi đây là code GitHub mới nhất hoặc bằng chứng nhóm tự viết. [Nguồn và SHA-256](ThamKhao/phien_ban_nguon.json), [nguyên văn đề 3](ThamKhao/NGUYEN_VAN_DE_3_THU_VIEN.txt), [yêu cầu và giả định G01–G12](ThamKhao/01_YEU_CAU_VA_GIA_DINH.md).
+Bộ này bám đúng chín file của **bản tham khảo AI terminal/console** trong `THAM_KHAO_THU_VIEN_AI_20261016/MaNguon`, chốt nguồn ngày 17/10/2026; nội dung rà lại ngày 18/10/2026. Không coi đây là code GitHub mới nhất hoặc bằng chứng nhóm tự viết. [nguyên văn đề 3](ThamKhao/NGUYEN_VAN_DE_3_THU_VIEN.txt), [yêu cầu và giả định G01–G12](ThamKhao/01_YEU_CAU_VA_GIA_DINH.md).
 
 **Cách dùng:** một người hỏi câu chính, người được hỏi dự đoán và chỉ code, rồi dùng câu phụ để đổi điều kiện. Đáp án là căn cứ phản biện, không phải lời nói cần học thuộc. P1/P2/P3 chỉ là thứ tự ôn theo tác động và phụ thuộc; không phải xác suất thầy hỏi hoặc cam kết điểm.
 
@@ -20,7 +20,7 @@ Bộ này bám đúng chín file của **bản tham khảo AI terminal/console**
 
 Cuốn:0 sẵn sàng/1 đang mượn/2 thanh lý; lượt:0 mở/1 đã trả/2 mất; thẻ:0 khóa/1 hoạt động. G01–G12 là giả định triển khai cần xác nhận, đặc biệt top theo đầu, đồng hạng, max quá hạn, ánh xạ mất, xóa người có lịch sử và quy tắc cấp mã.
 
-**Bản chỉnh nội dung 18/10/2026:** đã sửa truy vết, phản ví dụ và gộp ba cặp trùng. JSON là nguồn biên soạn chuẩn; [báo cáo thay đổi và giới hạn kiểm chứng](ThamKhao/BAO_CAO_KIEM_TRA.md). Các ID gộp được dẫn tới câu giữ lại, không tính thêm câu.
+**Bản chỉnh nội dung 18/10/2026:** đã sửa truy vết, phản ví dụ và gộp ba cặp trùng. Bản gửi nhóm chỉ giữ nội dung học và code đi kèm; hồ sơ biên soạn/kiểm thử đầy đủ được lưu riêng. Các ID gộp được dẫn tới câu giữ lại, không tính thêm câu.
 
 
 <a id="on-truoc"></a>

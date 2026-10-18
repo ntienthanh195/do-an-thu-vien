@@ -48,18 +48,9 @@ Trên GitHub, chọn **Preview** nếu đang thấy ký hiệu Markdown. Màn h�
 
 Giải nén toàn bộ. Mở `01_CAU_HOI.md` bằng VS Code và nhấn **Ctrl+Shift+V**; `02_DAP_AN.md` là file đáp án. Giữ thư mục `ThamKhao` đi cùng để các liên kết code vẫn mở được.
 
-<details>
-<summary><strong>Tra cứu code, giả định và kiểm chứng — chỉ mở khi cần</strong></summary>
+## Khi cần tra cứu
 
-- [9 file code tham khảo](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/)
-- [Yêu cầu và giả định G01–G12](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/01_YEU_CAU_VA_GIA_DINH.md)
-- [Báo cáo kiểm tra và giới hạn](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/BAO_CAO_KIEM_TRA.md)
-- [SHA-256 của ZIP](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI.zip.sha256)
+- [9 file code mẫu](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/)
+- [Yêu cầu và giả định cần hỏi thầy](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/01_YEU_CAU_VA_GIA_DINH.md)
 
-Các file JSON, manifest và script trong `ThamKhao` phục vụ biên soạn/kiểm định; không cần đọc lần lượt để ôn vấn đáp.
-
-Nguồn đi kèm là bản tham khảo AI chốt ngày 17/10/2026, tài liệu biên tập ngày 18/10/2026. Code đồ án nhóm đang làm ở `MaNguon/` tại gốc repo. Không ghép nguồn tham khảo vào project build của nhóm; khi code nhóm đổi, đối chiếu lại đáp án.
-
-G01–G12 vẫn cần giảng viên xác nhận. Bộ này không phải đề thi chính thức hoặc bằng chứng thành viên đã tự viết/hiểu code. Bằng chứng kiểm thử và giới hạn được ghi trong báo cáo; chưa kiểm toàn bộ TUI, tải triệu hay truy cập đồng thời.
-
-</details>
+Bản gửi nhóm đã bỏ log, script kiểm thử và file JSON biên soạn. Code mẫu và nội dung 325 câu giữ nguyên; các liên kết bằng chứng được thay bằng ghi chú phạm vi. Mở README trong ZIP để xem cách dùng và giới hạn. Đây là code tham khảo AI, không phải code nhóm đang viết ở MaNguon tại gốc repo.
