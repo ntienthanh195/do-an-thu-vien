@@ -18,7 +18,7 @@ Chưa biết bắt đầu từ đâu: **[20 câu ôn trước](BO_DOI_DAP_THU_VI
 <details>
 <summary>Thông tin phiên bản và kiểm chứng (khi cần tra cứu)</summary>
 
-Đồng bộ ngày 21/10/2026 với snapshot C++11 `c6c48b3`. Tên file trong câu hỏi mở code đi kèm; liên kết hàm/số dòng mở đúng snapshot trên GitHub và cần Internet.
+Đồng bộ ngày 21/10/2026 với snapshot C++11 `b449646`. Tên file trong câu hỏi mở code đi kèm; liên kết hàm/số dòng mở đúng snapshot trên GitHub và cần Internet.
 
 [Phạm vi đồng bộ 325 câu](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/DONG_BO_VAN_DAP_CPP11.md) · [Kiểm chứng demo](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/KIEM_CHUNG_CPP11.md) · [Nguyên văn đề 3](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/NGUYEN_VAN_DE_3_THU_VIEN.txt)
 
