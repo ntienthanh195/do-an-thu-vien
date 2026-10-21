@@ -19,3 +19,9 @@ Tổng 785 kiểm tra tự động đã qua. Log và harness được giữ ở 
 GCC 4.9.2 đi kèm Dev-C++ trên máy không khởi động được, báo Illegal System DLL Relocation ngay khi --version; chưa kiểm chứng build bằng compiler này. Đã loại phụ thuộc wchar_t-fstream và bổ sung cờ VT mà SDK cũ thiếu, nhưng điều đó không thay một lần build thực tế bằng compiler cũ.
 
 Đây là kiểm chứng kỹ thuật của bản AI; không phải bằng chứng nhóm tự viết, hiểu hay hoàn thành môn.
+
+## Kiểm lại toàn bộ ngày 21/10/2026
+
+Snapshot phát hành hiện tại: `b44964652043d8f4790a23952d4e3a8694ce1cdf`. Đã biên dịch lại với C++11; chạy mới 679 assertion nghiệp vụ, 43 Win32 và 33 lớp hỗ trợ. Phát hiện --check "" mở nhầm menu; đã thêm cổng từ chối --data/--check rỗng trước mọi thao tác tệp. Sau sửa, 30 kiểm tra CLI a–j và 26 assertion hồi quy đối số đều đạt (tổng 811, không cộng lặp các lần chạy cùng bộ). Mã nghiệp vụ/giao diện không đổi trong bản vá ba dòng này.
+
+Rà soát đủ nội dung và mốc nguồn của 325 câu; chỉ TN238 cần bổ sung hành vi mới. Build và ZIP chứa cùng nguồn/file chạy đã kiểm. Không tăng số câu hoặc thêm tài liệu học mới. Giới hạn kiểm chứng ở trên vẫn áp dụng.
