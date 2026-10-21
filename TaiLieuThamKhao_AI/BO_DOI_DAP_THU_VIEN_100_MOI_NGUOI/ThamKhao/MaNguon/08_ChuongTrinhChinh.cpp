@@ -496,6 +496,9 @@ int ChayUngDung(int argc,char** argv) {
         if(arg=="--plain") {plain=true;continue;}
         if((arg=="--data" || arg=="--date" || arg=="--check") && i+1<argc) {
             string val=argv[++i];
+            if((arg=="--data" || arg=="--check") && val.empty()) {
+                std::cerr<<"Duong dan "<<arg<<" khong duoc rong.\n";return 2;
+            }
             if(arg=="--data") path=val;
             else if(arg=="--check") check=val;
             else if(!DocNgay(val,ngay) || !NgayHopLe(ngay) || KhoangCachNgay(ngay,HomNay())<0) {
