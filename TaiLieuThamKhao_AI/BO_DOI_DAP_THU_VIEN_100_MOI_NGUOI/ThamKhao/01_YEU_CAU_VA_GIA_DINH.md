@@ -103,6 +103,6 @@ Thuật toán tìm/chèn/xóa, BST, DSLK, sắp xếp, thống kê và định d
 
 ## 6. Cách dùng để học
 
-Đây vẫn là code AI tham khảo. Xem code rồi tự viết lại là luyện có hỗ trợ; không tự chuyển thành bằng chứng tự chủ. Bộ câu hỏi cũ có thể giúp hiểu nghiệp vụ, nhưng các câu về filesystem, unique_ptr, shell32 và helper C++17 phải đối chiếu lại bản C++11.
+Đây vẫn là code AI tham khảo. Xem code rồi tự viết lại là luyện có hỗ trợ; không tự chuyển thành bằng chứng tự chủ. Bộ 325 câu trong repo đã đồng bộ với snapshot demo C++11 c6c48b3 ngày 21/10/2026. Nếu dùng gói câu hỏi cũ tải trước đợt đồng bộ, cần tải lại để tránh các mô tả API và số dòng của phiên bản trước.
 
 Không cập nhật nhật ký học hoặc điểm tự chủ từ việc chuyển đổi/build/kiểm thử kỹ thuật.
