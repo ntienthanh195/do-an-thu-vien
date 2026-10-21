@@ -223,6 +223,7 @@ void ManHinhMuonTra(ThuVien& tv,const NgayThang& ngay,bool tra) {
             bool ok=tra ? (action==1 ? TraSach(tv,maThe,ma,ngay,loi) : DanhDauMatSach(tv,maThe,ma,ngay,loi))
                         : MuonSach(tv,maThe,ma,ngay,loi);
             if(!ok) {ThongBao("LOI: "+loi);continue;}
+            LuuSauThayDoi(tv);
             ThongBao("Giao dich thanh cong, ngay "+ChuoiNgay(ngay)+".");return;
         }
         return;
@@ -243,5 +244,6 @@ void ManHinhMuonTra(ThuVien& tv,const NgayThang& ngay,bool tra) {
     ma=ChuanHoaChuoi(ma);
     bool ok=tra ? (action==1 ? TraSach(tv,maThe,ma,ngay,loi) : DanhDauMatSach(tv,maThe,ma,ngay,loi))
                 : MuonSach(tv,maThe,ma,ngay,loi);
+    if(ok) LuuSauThayDoi(tv);
     ThongBao(ok ? "Giao dich thanh cong, ngay "+ChuoiNgay(ngay)+"." : loi);
 }

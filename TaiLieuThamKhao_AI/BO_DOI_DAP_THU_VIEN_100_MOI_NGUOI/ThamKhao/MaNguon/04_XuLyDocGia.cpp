@@ -148,7 +148,7 @@ void ManHinhDocGia(ThuVien& tv) {
                 break;
             }
         }
-        if(chon==3) {ThongBao(XoaDocGia(tv,ma,loi)?"OK: da xoa doc gia.":"LOI: "+loi);return;}
+        if(chon==3) {bool ok=XoaDocGia(tv,ma,loi);if(ok) LuuSauThayDoi(tv);ThongBao(ok?"OK: da xoa doc gia.":"LOI: "+loi);return;}
         const char* fields[]={"Ho", "Ten", u8"Phai (Nam/Nữ)", "Trang thai the (0 khoa, 1 hoat dong)"};
         string values[4];values[2]="Nam";values[3]="1";
         if(current) {
@@ -160,15 +160,17 @@ void ManHinhDocGia(ThuVien& tv) {
             bool ok=chon==1 ? ThemDocGia(tv,values[0],values[1],values[2],ma,loi)
                            : HieuChinhDocGia(tv,ma,values[0],values[1],values[2],tt,loi);
             if(!ok) {ThongBao("LOI: "+loi);continue;}
+            LuuSauThayDoi(tv);
             ThongBao("OK: da luu doc gia, ma the "+std::to_string(ma));return;
         }
         return;
     }
     if(chon==2 || chon==3) if(!NhapSo("Ma the",ma,1,SO_NGUYEN_LON_NHAT)) return;
-    if(chon==3) {ThongBao(XoaDocGia(tv,ma,loi)?"OK: da xoa doc gia.":"LOI: "+loi);return;}
+    if(chon==3) {bool ok=XoaDocGia(tv,ma,loi);if(ok) LuuSauThayDoi(tv);ThongBao(ok?"OK: da xoa doc gia.":"LOI: "+loi);return;}
     if(!NhapDong("Ho",ho)||!NhapDong("Ten",ten)||!NhapDong(u8"Phai (Nam/Nữ)",phai)) return;
     bool ok=false;
     if(chon==1) ok=ThemDocGia(tv,ho,ten,phai,ma,loi);
     else {if(!NhapSo("Trang thai the (0 khoa, 1 hoat dong)",tt,0,1)) return;ok=HieuChinhDocGia(tv,ma,ho,ten,phai,tt,loi);}
+    if(ok) LuuSauThayDoi(tv);
     ThongBao(ok?"OK: ma the "+std::to_string(ma):"LOI: "+loi);
 }
