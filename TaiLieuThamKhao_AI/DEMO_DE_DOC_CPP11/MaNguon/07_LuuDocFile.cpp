@@ -606,7 +606,6 @@ bool LuuNoiBo(const ThuVien &tv, const string &path, string &loi)
         loi = "File tam khong doc lai duoc: " + loi;
         return false;
     }
-#ifdef _WIN32
     if (!MoveFileExW(temp.c_str(), dest.c_str(),
                      MOVEFILE_REPLACE_EXISTING | MOVEFILE_WRITE_THROUGH))
     {
@@ -614,7 +613,6 @@ bool LuuNoiBo(const ThuVien &tv, const string &path, string &loi)
             "Thay the file that bai (Windows " + to_string(GetLastError()) + "); file cu duoc giu.";
         return false;
     }
-#endif
     loi.clear();
     return true;
 }

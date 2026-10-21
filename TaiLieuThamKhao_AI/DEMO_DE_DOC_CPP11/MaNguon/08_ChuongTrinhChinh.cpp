@@ -79,7 +79,6 @@ inline bool NapPhien(ThuVien &tv, string &path, const string &next, KhoaTepPhien
     return true;
 }
 
-#ifdef _WIN32
 // Chi trang thai trinh bay: khong so huu hay thay bon cau truc nghiep vu.
 const ThuVien *duLieuUI = nullptr;
 const string *duongDanUI = nullptr;
@@ -262,7 +261,7 @@ struct PhienGiaoDien
         }
         hadMode = GetConsoleMode(out, &oldMode) != 0;
         xuatRGB = hadMode && SetConsoleMode(out, oldMode | ENABLE_PROCESSED_OUTPUT |
-                                                     ENABLE_VIRTUAL_TERMINAL_PROCESSING) != 0;
+                                                     CHE_DO_MAU_CONSOLE) != 0;
         if (xuatRGB)
             GhiConsole(L"\x1b[?1049h\x1b[?7l\x1b[2J\x1b[H");
     }
@@ -925,7 +924,6 @@ bool BieuMau(const string &title, const char *const *labels, string *values, int
         }
     }
 }
-#endif
 } // namespace
 bool DangDungGiaoDienHeThong()
 {
@@ -933,10 +931,8 @@ bool DangDungGiaoDienHeThong()
 }
 bool NhapBieuMau(const string &title, const char *const *labels, string *values, int count)
 {
-#ifdef _WIN32
     if (giaoDienPhim)
         return BieuMau(title, labels, values, count);
-#endif
     (void)title;
     for (int i = 0; i < count; ++i)
         if (!NhapDong(labels[i], values[i]))
@@ -945,7 +941,6 @@ bool NhapBieuMau(const string &title, const char *const *labels, string *values,
 }
 bool NhapDong(const string &prompt, string &s)
 {
-#ifdef _WIN32
     if (giaoDienPhim)
     {
         const char *labels[] = {prompt.c_str()};
@@ -955,7 +950,6 @@ bool NhapDong(const string &prompt, string &s)
             s = value;
         return ok && s != "/huy";
     }
-#endif
     cout << prompt << " (/huy de quay lai): " << flush;
     if (!getline(cin, s))
         return false;
@@ -979,7 +973,6 @@ bool NhapSo(const string &prompt, int &n, int lo, int hi)
 }
 int ChonMenu(const string &title, const char *const *labels, int count)
 {
-#ifdef _WIN32
     if (giaoDienPhim)
     {
         if (count == 13 && duLieuUI)
@@ -1035,7 +1028,6 @@ int ChonMenu(const string &title, const char *const *labels, int count)
             }
         }
     }
-#endif
     cout << '\n' << title << '\n';
     for (int i = 0; i < count; ++i)
         cout << i + 1 << ". " << labels[i] << '\n';
@@ -1045,13 +1037,11 @@ int ChonMenu(const string &title, const char *const *labels, int count)
 }
 void ThongBao(const string &s)
 {
-#ifdef _WIN32
     if (giaoDienPhim)
     {
         XemChiTiet(SangUTF16(s), L"Thông báo");
         return;
     }
-#endif
     cout << s << '\n' << flush;
 }
 void HienThiPhanTrang(const string &text)
@@ -1061,7 +1051,6 @@ void HienThiPhanTrang(const string &text)
         cout << text << flush;
         return;
     }
-#ifdef _WIN32
     wstring all = SangUTF16(text);
     size_t total = 1;
     for (wchar_t c : all)
@@ -1144,7 +1133,6 @@ void HienThiPhanTrang(const string &text)
             XemChiTiet(all.substr(starts[selected], starts[selected + 1] - starts[selected]),
                        L"Chi tiết dòng " + to_wstring(selected + 1));
     }
-#endif
 }
 
 void LuuSauThayDoi(const ThuVien &tv)
@@ -1159,12 +1147,10 @@ void LuuSauThayDoi(const ThuVien &tv)
     chuaLuu = false;
 }
 
-#ifndef THUVIEN_TEST
 namespace
 {
 struct ConsoleScope
 {
-#ifdef _WIN32
     UINT oldIn = GetConsoleCP(), oldOut = GetConsoleOutputCP();
     DWORD oldMode = 0;
     CONSOLE_CURSOR_INFO oldCursor{};
@@ -1185,7 +1171,6 @@ struct ConsoleScope
         SetConsoleOutputCP(oldOut);
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
     }
-#endif
 };
 void HuongDan()
 {
@@ -1238,17 +1223,11 @@ int ChayUngDung(int argc, char **argv)
             return 2;
         }
     }
-#ifdef _WIN32
     DWORD inputMode = 0, outputMode = 0;
     giaoDienPhim = !plain && GetConsoleMode(GetStdHandle(STD_INPUT_HANDLE), &inputMode) &&
                    GetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), &outputMode);
-#else
-    (void)plain;
-    giaoDienPhim = false; // giao dien nhap so portable
-#endif
     ThuVien tv;
     string loi;
-#ifdef _WIN32
     duLieuUI = &tv;
     duongDanUI = &path;
     ngayUI = ngay;
@@ -1260,7 +1239,6 @@ int ChayUngDung(int argc, char **argv)
                        (mode | ENABLE_EXTENDED_FLAGS | ENABLE_MOUSE_INPUT | ENABLE_WINDOW_INPUT) &
                            ~(ENABLE_QUICK_EDIT_MODE | ENABLE_LINE_INPUT | ENABLE_ECHO_INPUT));
     }
-#endif
     if (!check.empty())
     {
         if (!DocFile(tv, check, loi))
@@ -1300,9 +1278,7 @@ int ChayUngDung(int argc, char **argv)
     }
     cout << "BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: "
          << ChuoiNgay(ngay) << "\nDu lieu: " << path << '\n';
-#ifdef _WIN32
     PhienGiaoDien phienGiaoDien(giaoDienPhim);
-#endif
     const char *labels[] = {"a - Them / xoa / sua doc gia",
                             "b - Liet ke doc gia",
                             "c - Nhap dau sach / them cuon",
@@ -1426,12 +1402,11 @@ int ChayUngDung(int argc, char **argv)
     }
 }
 } // namespace
-int main(int argc, char **argv)
+int KhoiDongUngDung()
 {
     ConsoleScope console;
     try
     {
-#ifdef _WIN32
         // argv hep cua CRT co the la ANSI. Doc lenh UTF-16 de duong dan co dau dung.
         const wstring command = GetCommandLineW();
         ConTroTam<string[]> utf8(new string[command.size() + 1]);
@@ -1439,12 +1414,7 @@ int main(int argc, char **argv)
         ConTroTam<char *[]> ptrs(new char *[n]);
         for (int i = 0; i < n; ++i)
             ptrs[i] = &utf8[i][0];
-        (void)argc;
-        (void)argv;
         return ChayUngDung(n, ptrs.get());
-#else
-        return ChayUngDung(argc, argv);
-#endif
     }
     catch (const LoiThuVien &e)
     {
@@ -1457,4 +1427,3 @@ int main(int argc, char **argv)
         return 1;
     }
 }
-#endif

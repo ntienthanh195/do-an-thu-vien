@@ -4,7 +4,7 @@ Name=ThuVien
 Type=1
 Ver=2
 IsCpp=1
-UnitCount=10
+UnitCount=11
 Compiler=
 CppCompiler=-std=c++11 -O2 -Wall -Wextra -Wpedantic -finput-charset=UTF-8 -fexec-charset=UTF-8
 Linker= -static -static-libgcc -static-libstdc++
@@ -126,6 +126,16 @@ CompileCpp=1
 Folder=MaNguon
 Compile=0
 Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit11]
+FileName=MaNguon\09_Main.cpp
+CompileCpp=1
+Folder=MaNguon
+Compile=1
+Link=1
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=

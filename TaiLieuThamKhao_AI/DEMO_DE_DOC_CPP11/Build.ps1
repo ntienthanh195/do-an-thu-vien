@@ -15,12 +15,13 @@ try {
         'MaNguon/01_HamTienIch.cpp', 'MaNguon/02_XuLyDauSach.cpp',
         'MaNguon/03_XuLyCuonSach.cpp', 'MaNguon/04_XuLyDocGia.cpp',
         'MaNguon/05_XuLyMuonTra.cpp', 'MaNguon/06_NghiepVuTongHop.cpp',
-        'MaNguon/07_LuuDocFile.cpp', 'MaNguon/08_ChuongTrinhChinh.cpp'
+        'MaNguon/07_LuuDocFile.cpp', 'MaNguon/08_ChuongTrinhChinh.cpp',
+        'MaNguon/09_Main.cpp'
     )
     $flags = @('-std=c++11', '-O2', '-Wall', '-Wextra', '-Wpedantic', '-Wconversion', '-Wshadow', '-Werror', '-static', '-static-libgcc', '-static-libstdc++')
     & $Compiler @flags @sources  -o build/ThuVien.exe
     if ($LASTEXITCODE -ne 0) { throw "Build that bai: exit $LASTEXITCODE" }
-    Write-Output 'BUILD OK: build/ThuVien.exe (8 cpp + 2 header, 1 main)'
+    Write-Output 'BUILD OK: build/ThuVien.exe (9 cpp + 2 header, 1 main)'
 } finally {
     Pop-Location
     $env:PATH = $oldPath

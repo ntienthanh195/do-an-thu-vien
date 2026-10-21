@@ -14,6 +14,8 @@
 
 Các file 01–06 dùng con trỏ thường, `new/delete`, mảng tạm và hàm có tên; không còn `ConTroTam`, template, lambda hoặc tiền tố `std::`. Mỗi khối được xuống dòng để dễ đặt breakpoint và truy vết. Các mảng tạm được `delete[]` cả khi in/kiểm tra phát sinh lỗi; `try/catch` còn lại phục vụ việc dọn bộ nhớ, không thay thuật toán. Giữ cách sắp xếp hiệu quả hiện có, không đổi tất cả sang hai vòng lặp chỉ để ít cú pháp hơn.
 
+Mã nguồn chỉ còn chỉ thị `#include`: đã bỏ `#ifndef`, `#ifdef`, `#else`, `#endif`, `#define`, `#error` và `#pragma once`. Hằng cấu hình dùng `const`. File `09_Main.cpp` chứa `main()` ngắn; phần khởi động và giao diện vẫn ở file 08. Bản này dành cho Windows. Mỗi file `.cpp` chỉ include khai báo chung một lần; không include các file `.cpp` vào nhau. Build cả chín file `.cpp` như Build.ps1 hoặc project Dev-C++ đã cấu hình.
+
 ## Phần kỹ thuật vẫn giữ
 
 `HoTroHeThong.h` gom các lớp đệm, Unicode/đường dẫn Windows và hỗ trợ giao diện trước đây nằm ngay đầu khai báo chung. `07_LuuDocFile.cpp` vẫn kiểm dữ liệu trước khi thay kho; `08_ChuongTrinhChinh.cpp` vẫn điều khiển giao diện. Các phần này còn cú pháp nâng cao, gồm lớp/template trong hỗ trợ và sắp xếp nội bộ của bộ đọc. Đây **không phải** bản đã loại bỏ mọi class/template khỏi toàn chương trình. Tách chúng giúp phần CTDL nhóm cần đọc không bị lẫn với kỹ thuật console; không tuyên bố chỉ thêm `using namespace std` là đã đơn giản hóa toàn bộ hệ thống.
