@@ -1,6 +1,10 @@
-# Bắt đầu ôn ở đây
+# Demo Thư viện C++11 và tài liệu ôn
 
-**Chọn phần bên dưới để đọc ngay. Không cần mở các thư mục kỹ thuật.**
+**[Tải demo C++11 để chạy ngay](DEMO_THU_VIEN_CPP11.zip)** · [Mở mã nguồn hiện hành](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/) · [Hướng dẫn chạy/build](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/README.md)
+
+Giải nén toàn bộ gói demo rồi nhấp đúp **ChayDemo.bat**. Giao diện console giữ màu, sidebar, biểu mẫu, chuột, phím tắt và phân trang. Mã nguồn dùng C++11 và bốn header: iostream, string, fstream, windows.h. Gói demo có file .exe đã build.
+
+**Bộ 325 câu bên dưới vẫn đối chiếu snapshot C++17 cũ.** Liên kết code trong câu hỏi/đáp án được ghim về phiên bản lịch sử; cần Internet để mở. Không dùng các mô tả filesystem/unique_ptr/shell32 để suy ra code C++11 mới. [Xem phạm vi kiểm chứng bản mới](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/KIEM_CHUNG_CPP11.md).
 
 ## Chọn phần muốn ôn
 
@@ -46,11 +50,11 @@ Trên GitHub, chọn **Preview** nếu đang thấy ký hiệu Markdown. Màn h�
 
 **[Tải bộ ZIP đầy đủ](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI.zip)** — mở liên kết rồi chọn **Download raw file**.
 
-Giải nén toàn bộ. Mở `01_CAU_HOI.md` bằng VS Code và nhấn **Ctrl+Shift+V**; `02_DAP_AN.md` là file đáp án. Giữ thư mục `ThamKhao` đi cùng để các liên kết code vẫn mở được.
+Giải nén toàn bộ. Mở `01_CAU_HOI.md` bằng VS Code và nhấn **Ctrl+Shift+V**; `02_DAP_AN.md` là file đáp án. Gói đầy đủ kèm demo C++11 trong ThamKhao; mở ThamKhao/ChayDemo.bat để chạy. Các liên kết code của bộ vấn đáp mở snapshot cũ trên GitHub.
 
 ## Khi cần tra cứu
 
 - [9 file code mẫu](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/)
 - [Yêu cầu và giả định cần hỏi thầy](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/01_YEU_CAU_VA_GIA_DINH.md)
 
-Bản gửi nhóm đã bỏ log, script kiểm thử và file JSON biên soạn. Code mẫu và nội dung 325 câu giữ nguyên; các liên kết bằng chứng được thay bằng ghi chú phạm vi. Mở README trong ZIP để xem cách dùng và giới hạn. Đây là code tham khảo AI, không phải code nhóm đang viết ở MaNguon tại gốc repo.
+Bản gửi nhóm đã bỏ log, script kiểm thử và file JSON biên soạn. Code mẫu đã được thay bằng bản C++11 ngày 21/10/2026; nội dung 325 câu giữ nguyên, các liên kết code ghim về snapshot khi biên soạn. Mở README trong ZIP để xem cách dùng và giới hạn. Đây là code tham khảo AI, không phải code nhóm đang viết ở MaNguon tại gốc repo.

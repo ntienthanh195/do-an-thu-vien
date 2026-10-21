@@ -1,21 +1,4 @@
 #include "00_KhaiBaoChung.h"
-#include <iostream>
-#include <sstream>
-#include <filesystem>
-#include <climits>
-#include <cstdio>
-#include <exception>
-#include <memory>
-#ifdef _WIN32
-#ifndef NOMINMAX
-#define NOMINMAX
-#endif
-#include <windows.h>
-#include <shellapi.h>
-#include <io.h>
-#else
-#include <unistd.h>
-#endif
 
 namespace {
 bool giaoDienPhim=false;
@@ -41,7 +24,7 @@ const wchar_t* moTa[]={L"Theo dõi thư viện và mở nhanh các nghiệp vụ
 string TuUTF16(const std::wstring& s) {
     if(s.empty()) return "";
     int n=WideCharToMultiByte(CP_UTF8,WC_ERR_INVALID_CHARS,s.data(),static_cast<int>(s.size()),nullptr,0,nullptr,nullptr);
-    if(!n) throw std::runtime_error("Ky tu UTF-16 khong hop le");
+    if(!n) throw LoiThuVien("Ky tu UTF-16 khong hop le");
     string r(static_cast<std::size_t>(n),'\0');
     WideCharToMultiByte(CP_UTF8,WC_ERR_INVALID_CHARS,s.data(),static_cast<int>(s.size()),&r[0],n,nullptr,nullptr);
     return r;
@@ -73,7 +56,7 @@ void GhiConsole(const std::wstring& s) {
     while(offset<s.size()) {
         DWORD written=0;
         if(!WriteConsoleW(GetStdHandle(STD_OUTPUT_HANDLE),s.data()+offset,static_cast<DWORD>(s.size()-offset),&written,nullptr)||!written)
-            throw std::runtime_error("Khong ve duoc console");
+            throw LoiThuVien("Khong ve duoc console");
         offset+=written;
     }
 }
@@ -128,7 +111,7 @@ Phim DocPhimConsole() {
     if(conLai) {--conLai;return phimLap;}
     while(true) {
         INPUT_RECORD r{};DWORD n=0;
-        if(!ReadConsoleInputW(GetStdHandle(STD_INPUT_HANDLE),&r,1,&n)) throw std::runtime_error("Khong doc duoc console");
+        if(!ReadConsoleInputW(GetStdHandle(STD_INPUT_HANDLE),&r,1,&n)) throw LoiThuVien("Khong doc duoc console");
         Phim p;
         if(r.EventType==WINDOW_BUFFER_SIZE_EVENT) {p.resize=true;return p;}
         if(r.EventType==KEY_EVENT && r.Event.KeyEvent.bKeyDown) {
@@ -150,7 +133,7 @@ Phim DocPhimConsole() {
     }
 }
 struct KhungUI {
-    int w=80,h=24;SMALL_RECT rect{};std::unique_ptr<CHAR_INFO[]> cells;
+    int w=80,h=24;SMALL_RECT rect{};ConTroTam<CHAR_INFO[]> cells;
     KhungUI() {
         CONSOLE_SCREEN_BUFFER_INFO s{};
         if(GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE),&s)) {rect=s.srWindow;w=rect.Right-rect.Left+1;h=rect.Bottom-rect.Top+1;}
@@ -332,7 +315,7 @@ std::size_t TienKyTu(const std::wstring& s,std::size_t p) {
     return p+1;
 }
 bool BieuMau(const string& title,const char* const* labels,string* values,int count) {
-    if(count<1||count>12) throw std::runtime_error("Bieu mau chi ho tro 1..12 o");
+    if(count<1||count>12) throw LoiThuVien("Bieu mau chi ho tro 1..12 o");
     std::wstring fields[12];std::size_t cursors[12]{};
     for(int i=0;i<count;++i) {fields[i]=SangUTF16(values[i]);cursors[i]=fields[i].size();}
     int active=0,first=0;
@@ -451,7 +434,7 @@ void HienThiPhanTrang(const string& text) {
     if(!giaoDienPhim) {std::cout<<text<<std::flush;return;}
 #ifdef _WIN32
     std::wstring all=SangUTF16(text);std::size_t total=1;for(wchar_t c:all) if(c==L'\n') ++total;
-    std::unique_ptr<std::size_t[]> starts(new std::size_t[total+1]);std::size_t n=1;starts[0]=0;
+    ConTroTam<std::size_t[]> starts(new std::size_t[total+1]);std::size_t n=1;starts[0]=0;
     for(std::size_t i=0;i<all.size();++i) if(all[i]==L'\n'&&i+1<all.size()) starts[n++]=i+1;
     starts[n]=all.size();std::size_t selected=0,page=0;
     while(true) {
@@ -521,7 +504,9 @@ int ChayUngDung(int argc,char** argv) {
         } else {HuongDan();return 2;}
     }
 #ifdef _WIN32
-    giaoDienPhim=!plain && _isatty(_fileno(stdin)) && _isatty(_fileno(stdout));
+    DWORD inputMode=0,outputMode=0;
+    giaoDienPhim=!plain && GetConsoleMode(GetStdHandle(STD_INPUT_HANDLE),&inputMode) &&
+        GetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE),&outputMode);
 #else
     (void)plain;giaoDienPhim=false; // giao dien nhap so portable
 #endif
@@ -535,11 +520,10 @@ int ChayUngDung(int argc,char** argv) {
         int copies=0;for(int i=0;i<tv.dsDauSach.soLuong;++i) copies+=DemCuonSach(tv.dsDauSach.ds[i]->dms);
         std::cout<<"HOP LE | dau sach="<<tv.dsDauSach.soLuong<<" | cuon="<<copies<<" | doc gia="<<DemDocGia(tv.cayDocGia)<<" | moc ma="<<tv.maTheLonNhatDaCap<<'\n';return 0;
     }
-    if(std::filesystem::exists(std::filesystem::u8path(path))) {
+    if(FileTonTai(path)) {
         if(!DocFile(tv,path,loi)) {std::cerr<<"Khong nap/khong ghi de file loi: "<<loi<<'\n';return 2;}
     } else {
-        std::filesystem::path parent=std::filesystem::u8path(path).parent_path();
-        if(!parent.empty()) std::filesystem::create_directories(parent);
+        TaoThuMuc(ThuMucCha(DuongDanDayDu(path)));
         std::cout<<"Tao phien rong; file se duoc tao khi luu.\n";
     }
     std::cout<<"BAN THAM KHAO AI - khong phai bang chung nhom tu lam.\nNgay giao dich: "<<ChuoiNgay(ngay)<<"\nDu lieu: "<<path<<'\n';
@@ -553,7 +537,7 @@ int ChayUngDung(int argc,char** argv) {
         int choice=ChonMenu("THU VIEN | "+ChuoiNgay(ngay)+"\nDu lieu: "+path,labels,13);
         if(!std::cin) {std::cerr<<"EOF: thoat, thay doi chua luu se khong duoc ghi.\n";return 0;}
         try {
-            std::ostringstream out;
+            LuongChuoi out;
             if(choice==0 || choice==12) {
                 if(LuuFile(tv,path,loi)) {ThongBao("OK: da luu "+path);if(choice==0) return 0;}
                 else ThongBao("LOI LUU (van giu du lieu trong RAM): "+loi);
@@ -566,7 +550,7 @@ int ChayUngDung(int argc,char** argv) {
             else if(choice==4) {InDauSachTheoTheLoai(tv,out);HienThiPhanTrang(out.str());}
             else if(choice==5) ManHinhTimSach(tv);
             else if(choice==6 || choice==7) ManHinhMuonTra(tv,ngay,choice==7);
-            else if(choice==8) {int ma;if(NhapSo("Ma the",ma,1,INT_MAX)) {LietKeSachDangMuon(tv,ma,out);HienThiPhanTrang(out.str());}}
+            else if(choice==8) {int ma;if(NhapSo("Ma the",ma,1,SO_NGUYEN_LON_NHAT)) {LietKeSachDangMuon(tv,ma,out);HienThiPhanTrang(out.str());}}
             else if(choice==9) {InDocGiaQuaHan(tv,ngay,out);HienThiPhanTrang(out.str());}
             else if(choice==10) {InTop10SachDuocMuonNhieuNhat(tv,out);HienThiPhanTrang(out.str());}
             else if(choice==11) {
@@ -578,7 +562,8 @@ int ChayUngDung(int argc,char** argv) {
             } else if(choice==13) {
                 string confirm;if(NhapDong("Nhap THOAT de bo cac thay doi chua luu",confirm) && confirm=="THOAT") return 0;
             }
-        } catch(const std::exception& e) {ThongBao(string("Khong hoan tat thao tac: ")+e.what());}
+        } catch(const LoiThuVien& e) {ThongBao(string("Khong hoan tat thao tac: ")+e.what());}
+        catch(...) {ThongBao("Khong hoan tat thao tac: khong du bo nho / loi luong.");}
     }
 }
 }
@@ -587,17 +572,17 @@ int main(int argc,char** argv) {
     try {
 #ifdef _WIN32
         // argv hep cua CRT co the la ANSI. Doc lenh UTF-16 de duong dan co dau dung.
-        int n=0;LPWSTR* wide=CommandLineToArgvW(GetCommandLineW(),&n);
-        if(!wide) throw std::runtime_error("Khong doc duoc command line");
-        struct GiaiPhongArgs {LPWSTR* p;~GiaiPhongArgs(){LocalFree(p);}} args{wide};
-        std::unique_ptr<string[]> utf8(new string[n]);
-        std::unique_ptr<char*[]> ptrs(new char*[n]);
-        for(int i=0;i<n;++i) {utf8[i]=TuUTF16(wide[i]);ptrs[i]=utf8[i].data();}
+        const std::wstring command=GetCommandLineW();
+        ConTroTam<string[]> utf8(new string[command.size()+1]);
+        int n=DocDoiSoWindows(command,utf8.get());
+        ConTroTam<char*[]> ptrs(new char*[n]);
+        for(int i=0;i<n;++i) ptrs[i]=&utf8[i][0];
         (void)argc;(void)argv;return ChayUngDung(n,ptrs.get());
 #else
         return ChayUngDung(argc,argv);
 #endif
     }
-    catch(const std::exception& e) {std::cerr<<"LOI: "<<e.what()<<'\n';return 1;}
+    catch(const LoiThuVien& e) {std::cerr<<"LOI: "<<e.what()<<'\n';return 1;}
+    catch(...) {std::cerr<<"LOI: khong du bo nho / loi luong.\n";return 1;}
 }
 #endif
