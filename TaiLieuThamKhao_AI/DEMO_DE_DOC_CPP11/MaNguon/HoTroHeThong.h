@@ -1,4 +1,3 @@
-#pragma once
 // Phan ky thuat giu giao dien va doc/ghi hien tai. Khong phai cau truc CTDL.
 // Nhom doc cac file 00-06 truoc; khong can sua phan nay khi them nghiep vu.
 

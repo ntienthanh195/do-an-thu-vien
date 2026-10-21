@@ -1,21 +1,13 @@
-#pragma once
 // Khai bao du lieu va ham cua do an. Doc file nay truoc.
 #include <iostream>
 #include <string>
 #include <fstream>
-#ifndef NOMINMAX
-#define NOMINMAX
-#endif
 #include <windows.h>
-#ifndef ENABLE_VIRTUAL_TERMINAL_PROCESSING
-// Gia tri Win32; SDK MinGW cu chua dat ten cho co nay.
-#define ENABLE_VIRTUAL_TERMINAL_PROCESSING 0x0004
-#endif
-#ifndef _WIN32
-#error Ban giao dien nay danh cho Windows.
-#endif
 
 using namespace std;
+
+// Chuong trinh nay danh cho Windows.
+const DWORD CHE_DO_MAU_CONSOLE = 0x0004;
 
 const int SO_NGUYEN_LON_NHAT = 2147483647;
 
@@ -194,3 +186,6 @@ void LuuSauThayDoi(const ThuVien &tv);
 
 // Chi tiet ve console, Unicode va tep Windows nam rieng o file ho tro.
 #include "HoTroHeThong.h"
+
+// Diem bat dau duoc main goi; tach rieng de kiem thu cac module.
+int KhoiDongUngDung();
