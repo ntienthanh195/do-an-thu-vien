@@ -1,29 +1,27 @@
-# Demo C++11 và 325 câu vấn đáp đồng bộ
+# Bắt đầu ôn Thư viện
 
-**Chạy demo mới:** mở [ThamKhao/README.md](ThamKhao/README.md), hoặc nhấp đúp ThamKhao/ChayDemo.bat trong gói ZIP.
+**325 câu đã đồng bộ với demo C++11.** Chọn phần của mình, tự trả lời rồi mở đáp án; sau đó hỏi chéo các phần còn lại.
 
-> **Đồng bộ C++11 ngày 21/10/2026:** cả 325 câu đối chiếu mã nguồn demo tại commit `c6c48b3`. Liên kết tên file mở mã đi kèm; liên kết tên hàm/số dòng mở đúng snapshot C++11 trên GitHub. [Phạm vi đồng bộ và kiểm chứng](ThamKhao/DONG_BO_VAN_DAP_CPP11.md).
+- **[Thái — 100 câu](01_CAU_HOI.md#thai)** · [Đáp án](02_DAP_AN.md#thai) — sách, tìm kiếm, thống kê.
+- **[Thành — 100 câu](01_CAU_HOI.md#thanh)** · [Đáp án](02_DAP_AN.md#thanh) — độc giả, mượn–trả.
+- **[Tấn — 100 câu](01_CAU_HOI.md#tan)** · [Đáp án](02_DAP_AN.md#tan) — liệt kê, giao diện.
+- **[Cả nhóm — 25 câu](01_CAU_HOI.md#chung)** · [Đáp án](02_DAP_AN.md#chung) — ghép hệ thống, lưu file, xử lý lỗi.
 
+Chưa biết bắt đầu từ đâu: **[20 câu ôn trước](01_CAU_HOI.md#on-truoc)** (đã nằm trong 325 câu). Tìm câu bằng **Ctrl+F** với mã hoặc từ khóa.
 
+Trong gói đã giải nén: mở `01_CAU_HOI.md` để ôn, `02_DAP_AN.md` để xem đáp án; chạy `ThamKhao/ChayDemo.bat` để xem demo. Với VS Code, nhấn **Ctrl+Shift+V** để đọc Markdown.
 
-- **[Thái — 100 câu](01_CAU_HOI.md#thai)** · [Đáp án](02_DAP_AN.md#thai)
-- **[Thành — 100 câu](01_CAU_HOI.md#thanh)** · [Đáp án](02_DAP_AN.md#thanh)
-- **[Tấn — 100 câu](01_CAU_HOI.md#tan)** · [Đáp án](02_DAP_AN.md#tan)
-- **[Cả nhóm — 25 câu](01_CAU_HOI.md#chung)** · [Đáp án](02_DAP_AN.md#chung)
-- **[20 câu ôn trước](01_CAU_HOI.md#on-truoc)** — chọn từ bộ 325, không cộng thêm.
+[Mã nguồn C++11](ThamKhao/MaNguon/) · [Cách chạy/build](ThamKhao/README.md) · [Yêu cầu cần hỏi thầy](ThamKhao/01_YEU_CAU_VA_GIA_DINH.md)
 
-Tự dự đoán, chỉ vào code rồi mới xem đáp án. Mọi người cần hỏi chéo cả ba phần. Tìm câu bằng Ctrl+F với mã hoặc từ khóa. Đọc trên GitHub bằng Preview; trong VS Code nhấn Ctrl+Shift+V.
+Đây là bản tham khảo AI; mã nhóm tự viết nằm riêng ở `MaNguon` tại gốc repo.
 
-## Thư mục này có gì?
+<details>
+<summary>Thông tin phiên bản và kiểm chứng (khi cần tra cứu)</summary>
 
-- `01_CAU_HOI.md`: toàn bộ câu hỏi và câu phụ.
-- `02_DAP_AN.md`: đáp án giải thích, liên kết tới đúng câu và code.
-- [ThamKhao/MaNguon](ThamKhao/MaNguon/): 9 file C++11 hiện hành, giữ giao diện console.
-- [Yêu cầu và giả định](ThamKhao/01_YEU_CAU_VA_GIA_DINH.md): các quy tắc cần đối chiếu giảng viên.
-- [Nguyên văn đề 3](ThamKhao/NGUYEN_VAN_DE_3_THU_VIEN.txt).
+Đồng bộ ngày 21/10/2026 với snapshot C++11 `c6c48b3`. Tên file trong câu hỏi mở code đi kèm; liên kết hàm/số dòng mở đúng snapshot trên GitHub và cần Internet.
 
-## Phạm vi
+[Phạm vi đồng bộ 325 câu](ThamKhao/DONG_BO_VAN_DAP_CPP11.md) · [Kiểm chứng demo](ThamKhao/KIEM_CHUNG_CPP11.md) · [Nguyên văn đề 3](ThamKhao/NGUYEN_VAN_DE_3_THU_VIEN.txt)
 
-Code đi kèm là bản tham khảo AI chuyển sang C++11 ngày 21/10/2026. Nội dung 325 câu đã đồng bộ với snapshot C++11 `c6c48b3` ngày 21/10/2026: 35 câu chỉnh nội dung, toàn bộ nguồn đối chiếu cập nhật số dòng. Tên file mở mã cục bộ; tên hàm/số dòng mở snapshot cố định trên GitHub. Code này tách khỏi mã nguồn nhóm đang viết. Khi code nhóm thay đổi, phải đối chiếu lại đáp án; G01–G12 cần giảng viên xác nhận.
+Đã kiểm đồng bộ tài liệu, liên kết và ZIP; chưa chạy riêng toàn bộ 325 tình huống/câu phụ. Các kết quả kiểm thử ứng dụng có phạm vi riêng trong báo cáo.
 
-Bản gửi nhóm đã bỏ log, script và dữ liệu biên soạn. Hồ sơ đầy đủ vẫn được giữ riêng; không xem việc lược bỏ tệp là kiểm chứng mới. Các kiểm thử 17–18/10 thuộc phiên bản trước, không được tính là tái chạy 325 câu trên C++11. Đợt đồng bộ này kiểm nội dung theo diff, liên kết, bản xuất và gói ZIP; không sửa hay chạy lại toàn bộ ứng dụng. Chưa QA toàn bộ TUI, concurrency hoặc tải triệu. Lần thay thế C++11 có phạm vi kiểm chứng riêng tại [KIEM_CHUNG_CPP11.md](ThamKhao/KIEM_CHUNG_CPP11.md).
+</details>
