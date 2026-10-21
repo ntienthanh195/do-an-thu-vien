@@ -8,7 +8,9 @@
 2. Nhấp đúp **ChayDemo.bat**. Bản đóng gói có sẵn build/ThuVien.exe.
 3. Mỗi lần chạy tạo một bản dữ liệu demo mới trong DuLieu/runtime; không ghi đè dữ liệu mẫu hoặc phiên cũ.
 
-Giao diện vẫn có sidebar, màu, các nút, biểu mẫu, chuột, phím điều hướng và phân trang như bản AI cũ. Mở cửa sổ tối thiểu 80 cột × 24 dòng. Tab chuyển ô, Ctrl+Enter xác nhận, Esc hủy biểu mẫu; ở trang chính Esc/0 lưu và thoát, F5 lưu. Mục “Thoát không lưu” vẫn yêu cầu xác nhận.
+Giao diện vẫn có sidebar, màu, các nút, biểu mẫu, chuột, phím điều hướng và phân trang như bản AI cũ. Mở cửa sổ tối thiểu 80 cột × 24 dòng. Tab chuyển ô, Ctrl+Enter xác nhận, Esc hủy biểu mẫu; ở trang chính Esc/0 lưu và thoát, F5 lưu. Mỗi thao tác thêm/sửa/xóa, mượn/trả/báo mất thành công được tự lưu trước thông báo thành công. Mục “Thoát phiên” vẫn yêu cầu xác nhận và không hoàn tác dữ liệu đã tự lưu. Nếu báo CHƯA LƯU, giữ cửa sổ mở, xử lý lỗi ghi và nhấn F5; chương trình chặn sửa/nạp tiếp cho đến khi lưu được.
+
+Chỉ một phiên của bản này được mở cùng đường dẫn dữ liệu để sửa. File phụ `.thuvien.lock` được hệ điều hành dọn khi đóng phiên, kể cả dừng tiến trình; không xóa file khóa khi đang chạy. Hai kho khác đường dẫn vẫn mở độc lập; `--check` chỉ đọc. Công cụ ngoài/bản cũ bỏ qua khóa hoặc hard link tên khác không được cơ chế này bảo vệ. Tự lưu không bảo đảm chống mất điện hoặc dừng ngay giữa cập nhật RAM và ghi file.
 
 Demo dùng ngày mô phỏng 16/10/2026 như bản cũ để tái lập dữ liệu. Chạy trực tiếp chương trình không truyền --date sẽ lấy ngày máy bằng GetLocalTime.
 
@@ -59,6 +61,6 @@ Lưu theo định dạng v1 cũ. DuLieuMau.txt có 3 đầu sách, 6 cuốn và 
 
 --plain chỉ là chế độ nhập số dự phòng/kiểm thử. Launcher mặc định vẫn dùng giao diện console tương tác.
 
-Kết quả đã kiểm chứng: 679 assertion nghiệp vụ, 30 kiểm tra CLI, 43 assertion giao diện Win32 và 33 assertion lớp hỗ trợ — tổng 785. Đây là kiểm tra tự động; chưa xác nhận chuột vật lý/IME trên mọi máy. Xem [phạm vi kiểm chứng](KIEM_CHUNG_CPP11.md).
+Kết quả đã kiểm chứng: 679 assertion nghiệp vụ, 30 kiểm tra CLI, 43 assertion giao diện Win32, 33 assertion lớp hỗ trợ, 26 assertion đối số và 29 assertion phiên thật — tổng 840. Thêm harness tiêm lỗi cấp phát sau nạp: bản sửa đạt, bản mutation bị bắt lỗi. Đây là kiểm tra tự động; chưa xác nhận chuột vật lý/IME trên mọi máy. Xem [phạm vi kiểm chứng](KIEM_CHUNG_CPP11.md).
 
 Để chạy ngay, tải [gói demo C++11](../../DEMO_THU_VIEN_CPP11.zip), giải nén rồi mở ChayDemo.bat. Gói ZIP có sẵn file thực thi; khi clone repo, chạy Build.ps1 trước hoặc để launcher tự build.
