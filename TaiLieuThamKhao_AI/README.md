@@ -1,5 +1,7 @@
 # Bắt đầu ôn Thư viện
 
+**Muốn đọc code dễ hơn:** [bản code dễ đọc, giữ giao diện console](DEMO_DE_DOC_CPP11/README.md) · [tải ZIP có file chạy](DEMO_DE_DOC_CPP11.zip). Bản bổ sung dùng `using namespace std`, hàm và con trỏ thường ở phần nghiệp vụ; phần hỗ trợ console tách riêng. Bộ 325 câu bên dưới vẫn dẫn bản demo gốc, chưa đổi số dòng/đáp án helper theo bản bổ sung.
+
 **325 câu đã đồng bộ với demo C++11.** Chọn phần của mình, tự trả lời rồi mở đáp án; sau đó hỏi chéo các phần còn lại.
 
 - **[Thái — 100 câu](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/01_CAU_HOI.md#thai)** · [Đáp án](BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/02_DAP_AN.md#thai) — sách, tìm kiếm, thống kê.
