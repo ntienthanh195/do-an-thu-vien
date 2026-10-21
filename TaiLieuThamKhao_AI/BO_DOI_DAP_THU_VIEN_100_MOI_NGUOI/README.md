@@ -1,8 +1,8 @@
-# Demo C++11 và bộ câu hỏi đối chiếu C++17
+# Demo C++11 và 325 câu vấn đáp đồng bộ
 
 **Chạy demo mới:** mở [ThamKhao/README.md](ThamKhao/README.md), hoặc nhấp đúp ThamKhao/ChayDemo.bat trong gói ZIP.
 
-> **Lưu ý phiên bản:** bộ 325 câu/đáp án này được soạn trên snapshot AI C++17 trước chuyển đổi. Các liên kết code bên dưới được ghim về snapshot đó để giữ đúng số dòng và API được giải thích (cần Internet để mở). [Demo hiện hành đã chuyển sang C++11](ThamKhao/README.md), giữ giao diện và nghiệp vụ; các câu về filesystem/unique_ptr/shell32 không mô tả lớp hỗ trợ mới. Chưa tái kiểm định toàn bộ 325 đáp án cho bản C++11.
+> **Đồng bộ C++11 ngày 21/10/2026:** cả 325 câu đối chiếu mã nguồn demo tại commit `c6c48b3`. Liên kết tên file mở mã đi kèm; liên kết tên hàm/số dòng mở đúng snapshot C++11 trên GitHub. [Phạm vi đồng bộ và kiểm chứng](ThamKhao/DONG_BO_VAN_DAP_CPP11.md).
 
 
 
@@ -24,6 +24,6 @@ Tự dự đoán, chỉ vào code rồi mới xem đáp án. Mọi người cầ
 
 ## Phạm vi
 
-Code đi kèm là bản tham khảo AI chuyển sang C++11 ngày 21/10/2026. Nội dung câu hỏi biên tập ngày 18/10/2026 vẫn đối chiếu snapshot C++17 qua các liên kết lịch sử. Code này tách khỏi mã nguồn nhóm đang viết. Khi code nhóm thay đổi, phải đối chiếu lại đáp án; G01–G12 cần giảng viên xác nhận.
+Code đi kèm là bản tham khảo AI chuyển sang C++11 ngày 21/10/2026. Nội dung 325 câu đã đồng bộ với snapshot C++11 `c6c48b3` ngày 21/10/2026: 35 câu chỉnh nội dung, toàn bộ nguồn đối chiếu cập nhật số dòng. Tên file mở mã cục bộ; tên hàm/số dòng mở snapshot cố định trên GitHub. Code này tách khỏi mã nguồn nhóm đang viết. Khi code nhóm thay đổi, phải đối chiếu lại đáp án; G01–G12 cần giảng viên xác nhận.
 
-Bản gửi nhóm đã bỏ log, script và dữ liệu biên soạn. Hồ sơ đầy đủ vẫn được giữ riêng; không xem việc lược bỏ tệp là kiểm chứng mới. Trước đó có 25 ca CLI lịch sử và một đợt gồm 16 lượt assertion, 2 timeout chủ đích; không chứng nhận toàn bộ 325 câu. Chưa QA toàn bộ TUI, concurrency hoặc tải triệu. Lần thay thế C++11 có phạm vi kiểm chứng riêng tại [KIEM_CHUNG_CPP11.md](ThamKhao/KIEM_CHUNG_CPP11.md).
+Bản gửi nhóm đã bỏ log, script và dữ liệu biên soạn. Hồ sơ đầy đủ vẫn được giữ riêng; không xem việc lược bỏ tệp là kiểm chứng mới. Các kiểm thử 17–18/10 thuộc phiên bản trước, không được tính là tái chạy 325 câu trên C++11. Đợt đồng bộ này kiểm nội dung theo diff, liên kết, bản xuất và gói ZIP; không sửa hay chạy lại toàn bộ ứng dụng. Chưa QA toàn bộ TUI, concurrency hoặc tải triệu. Lần thay thế C++11 có phạm vi kiểm chứng riêng tại [KIEM_CHUNG_CPP11.md](ThamKhao/KIEM_CHUNG_CPP11.md).
