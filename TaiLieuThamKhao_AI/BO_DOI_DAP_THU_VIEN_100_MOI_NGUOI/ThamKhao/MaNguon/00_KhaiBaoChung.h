@@ -386,3 +386,6 @@ bool NhapSo(const string& prompt, int& n, int lo, int hi);
 int ChonMenu(const string& title, const char* const* labels, int count);
 void ThongBao(const string& s);
 void HienThiPhanTrang(const string& text);
+
+// Chi cac man hinh goi sau commit; API nghiep vu khong tu ghi file.
+void LuuSauThayDoi(const ThuVien& tv);

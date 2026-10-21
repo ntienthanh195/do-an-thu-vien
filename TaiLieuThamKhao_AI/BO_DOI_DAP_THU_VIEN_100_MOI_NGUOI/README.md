@@ -18,7 +18,7 @@ Trong gói đã giải nén: mở `01_CAU_HOI.md` để ôn, `02_DAP_AN.md` đ�
 <details>
 <summary>Thông tin phiên bản và kiểm chứng (khi cần tra cứu)</summary>
 
-Đồng bộ ngày 21/10/2026 với snapshot C++11 `b449646`. Tên file trong câu hỏi mở code đi kèm; liên kết hàm/số dòng mở đúng snapshot trên GitHub và cần Internet.
+Đồng bộ ngày 21/10/2026 với snapshot C++11 `1c4510c`. Tên file trong câu hỏi mở code đi kèm; liên kết hàm/số dòng mở đúng snapshot trên GitHub và cần Internet.
 
 [Phạm vi đồng bộ 325 câu](ThamKhao/DONG_BO_VAN_DAP_CPP11.md) · [Kiểm chứng demo](ThamKhao/KIEM_CHUNG_CPP11.md) · [Nguyên văn đề 3](ThamKhao/NGUYEN_VAN_DE_3_THU_VIEN.txt)
 

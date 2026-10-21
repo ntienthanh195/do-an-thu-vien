@@ -85,7 +85,7 @@ Bộ đọc còn kiểm giới hạn ba cuốn trong lịch sử bằng quét s�
 
 **G10 — Dữ liệu nhập.** Các trường văn bản bắt buộc không rỗng, UTF-8 hợp lệ và tối đa 512 byte; không chứa `|`, CR/LF và ký tự điều khiển làm hỏng định dạng. ISBN là mã văn bản, giữ số 0 đầu; không chứa `#` vì ký tự này dùng phân tách mã cuốn mới. Không kiểm checksum ISBN-10/13 vì mẫu nhóm dùng mã giả lập và đề chưa đòi. Số trang dương; năm xuất bản từ 1 đến năm hiện tại. Phái dùng đúng `Nam` hoặc `Nữ`. Trường 512 byte không có nghĩa 512 ký tự tiếng Việt.
 
-**G11 — Lưu trữ.** Giữ định dạng v1 đã đề xuất: metadata, đầu sách/cuốn, độc giả/lịch sử; UTF-8; phân trường `|`; không dump struct và không lưu địa chỉ. Đọc vào bộ tạm, kiểm tra liên kết rồi thay dữ liệu. Ghi qua file tạm trước khi thay bản đích. Đây là chương trình một người dùng theo thứ tự, không có giao dịch đa tiến trình hoặc cam kết chịu mọi sự cố mất điện.
+**G11 — Lưu trữ.** Giữ định dạng v1 đã đề xuất: metadata, đầu sách/cuốn, độc giả/lịch sử; UTF-8; phân trường `|`; không dump struct và không lưu địa chỉ. Đọc vào bộ tạm, kiểm tra liên kết rồi thay dữ liệu. Ghi qua file tạm trước khi thay bản đích. Đây là chương trình một người dùng theo thứ tự. Menu tự lưu sau thao tác thành công; lỗi lưu giữ RAM, chặn sửa/nạp tiếp và cho thử lại F5. Khóa file phụ giữ suốt phiên để chặn hai ứng dụng cùng bản mở cùng đường dẫn sửa; không có giao dịch đa tiến trình hoặc cam kết chịu mọi sự cố mất điện. API nghiệp vụ gọi trực tiếp chỉ đổi RAM; cơ chế lưu/khóa thuộc lớp điều phối ứng dụng.
 
 **Bổ sung kiểm định mã sau rà soát 16/10:** ISBN và mã cuốn trong danh mục/lịch sử phải bằng kết quả `ChuanHoaChuoi` của chính mã đó: không dư dấu cách đầu/cuối hoặc nhiều dấu cách liên tiếp. Một dấu cách ở giữa vẫn hợp lệ. Bộ đọc **từ chối** mã không chuẩn, không tự đổi mã vì có thể làm trùng hoặc lệch tham chiếu. Điều này giữ mã nạp từ file truy cập được qua menu vốn chuẩn hóa đầu vào; không áp thêm quy tắc này cho tên, tác giả hoặc vị trí.
 
@@ -103,6 +103,6 @@ Thuật toán tìm/chèn/xóa, BST, DSLK, sắp xếp, thống kê và định d
 
 ## 6. Cách dùng để học
 
-Đây vẫn là code AI tham khảo. Xem code rồi tự viết lại là luyện có hỗ trợ; không tự chuyển thành bằng chứng tự chủ. Bộ 325 câu trong repo đã đồng bộ với snapshot demo C++11 c6c48b3 ngày 21/10/2026. Nếu dùng gói câu hỏi cũ tải trước đợt đồng bộ, cần tải lại để tránh các mô tả API và số dòng của phiên bản trước.
+Đây vẫn là code AI tham khảo. Xem code rồi tự viết lại là luyện có hỗ trợ; không tự chuyển thành bằng chứng tự chủ. Bộ 325 câu trong repo đã đồng bộ với snapshot demo C++11 1c4510c ngày 21/10/2026. Nếu dùng gói câu hỏi cũ tải trước đợt đồng bộ, cần tải lại để tránh các mô tả API và số dòng của phiên bản trước.
 
 Không cập nhật nhật ký học hoặc điểm tự chủ từ việc chuyển đổi/build/kiểm thử kỹ thuật.

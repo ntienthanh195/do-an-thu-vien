@@ -2,6 +2,50 @@
 
 namespace {
 bool giaoDienPhim=false;
+const ThuVien* thuVienTuLuu=nullptr;
+const string* tepTuLuu=nullptr;
+bool chuaLuu=false;
+struct KhoaTepPhien {
+    HANDLE handle=INVALID_HANDLE_VALUE;
+    string tep;
+    KhoaTepPhien()=default;
+    KhoaTepPhien(const KhoaTepPhien&)=delete;
+    KhoaTepPhien& operator=(const KhoaTepPhien&)=delete;
+    ~KhoaTepPhien() {if(handle!=INVALID_HANDLE_VALUE) CloseHandle(handle);}
+    bool CungTep(const string& path) const {
+        const std::wstring a=DuongDanUTF16(tep),b=DuongDanUTF16(path);
+        return CompareStringOrdinal(a.c_str(),-1,b.c_str(),-1,TRUE)==CSTR_EQUAL;
+    }
+    bool Mo(const string& path,string& loi) {
+        string ten=path;
+        const std::wstring lock=DuongDanUTF16(path+".thuvien.lock");
+        HANDLE h=CreateFileW(lock.c_str(),GENERIC_READ|GENERIC_WRITE,0,nullptr,OPEN_ALWAYS,
+            FILE_ATTRIBUTE_NORMAL|FILE_FLAG_DELETE_ON_CLOSE,nullptr);
+        if(h==INVALID_HANDLE_VALUE) {
+            loi="Khong mo duoc khoa phien: file dang duoc mo o phien khac hoac thu muc khong cho ghi.";return false;
+        }
+        tep.swap(ten);handle=h;return true;
+    }
+    void HoanDoi(KhoaTepPhien& other) noexcept {
+        tep.swap(other.tep);HANDLE h=handle;handle=other.handle;other.handle=h;
+    }
+};
+struct PhienTuLuu {
+    PhienTuLuu(const ThuVien& tv,const string& path) {thuVienTuLuu=&tv;tepTuLuu=&path;chuaLuu=false;}
+    ~PhienTuLuu() {thuVienTuLuu=nullptr;tepTuLuu=nullptr;chuaLuu=false;}
+};
+inline bool NapPhien(ThuVien& tv,string& path,const string& next,KhoaTepPhien& khoa,string& loi) {
+    string moi=DuongDanUTF8(DuongDanDayDu(next)); // Moi cap phat/path/lock phai xong truoc DocFile.
+    const bool cung=khoa.CungTep(moi);
+    KhoaTepPhien khoaMoi;
+    if(!cung && !khoaMoi.Mo(moi,loi)) return false;
+    if(!DocFile(tv,moi,loi)) return false;
+    path.swap(moi); // C++11 string cung allocator: swap khong cap phat.
+    if(!cung) khoa.HoanDoi(khoaMoi);
+    chuaLuu=false;
+    return true;
+}
+
 #ifdef _WIN32
 // Chi trang thai trinh bay: khong so huu hay thay bon cau truc nghiep vu.
 const ThuVien* duLieuUI=nullptr;
@@ -19,8 +63,8 @@ constexpr COLORREF bangMauUI[]={
     RGB(229,155,149),RGB(176,164,201),RGB(225,231,239),RGB(242,245,249)
 };
 bool xuatRGB=false;
-const wchar_t* dieuHuong[]={L"Tổng quan",L"Quản lý độc giả",L"Danh sách độc giả",L"Kho sách",L"Theo thể loại",L"Tìm kiếm sách",L"Mượn sách",L"Trả / báo mất",L"Sách đang mượn",L"Độc giả quá hạn",L"Top 10 đầu sách",L"Mở dữ liệu",L"Lưu dữ liệu",L"Thoát không lưu"};
-const wchar_t* moTa[]={L"Theo dõi thư viện và mở nhanh các nghiệp vụ.",L"Thêm, hiệu chỉnh, khóa hoặc xóa thẻ độc giả.",L"Xem theo mã thẻ hoặc theo tên và họ.",L"Quản lý đầu sách và từng bản sách vật lý.",L"Duyệt đầu sách được nhóm theo thể loại.",L"Tìm theo tên và xem trạng thái từng cuốn.",L"Kiểm tra thẻ, hạn mức và tình trạng cuốn sách.",L"Nhận trả sách hoặc ghi nhận một cuốn bị mất.",L"Tra các cuốn độc giả hiện đang giữ.",L"Xem độc giả đang giữ sách vượt hạn 7 ngày.",L"Thống kê số lượt mượn theo từng đầu sách.",L"Mở file khác sau khi xác nhận thay dữ liệu.",L"Ghi dữ liệu hiện hành vào file của phiên này.",L"Đóng phiên và bỏ các thay đổi chưa lưu."};
+const wchar_t* dieuHuong[]={L"Tổng quan",L"Quản lý độc giả",L"Danh sách độc giả",L"Kho sách",L"Theo thể loại",L"Tìm kiếm sách",L"Mượn sách",L"Trả / báo mất",L"Sách đang mượn",L"Độc giả quá hạn",L"Top 10 đầu sách",L"Mở dữ liệu",L"Lưu dữ liệu",L"Thoát phiên"};
+const wchar_t* moTa[]={L"Theo dõi thư viện và mở nhanh các nghiệp vụ.",L"Thêm, hiệu chỉnh, khóa hoặc xóa thẻ độc giả.",L"Xem theo mã thẻ hoặc theo tên và họ.",L"Quản lý đầu sách và từng bản sách vật lý.",L"Duyệt đầu sách được nhóm theo thể loại.",L"Tìm theo tên và xem trạng thái từng cuốn.",L"Kiểm tra thẻ, hạn mức và tình trạng cuốn sách.",L"Nhận trả sách hoặc ghi nhận một cuốn bị mất.",L"Tra các cuốn độc giả hiện đang giữ.",L"Xem độc giả đang giữ sách vượt hạn 7 ngày.",L"Thống kê số lượt mượn theo từng đầu sách.",L"Mở file khác sau khi xác nhận thay dữ liệu.",L"Ghi dữ liệu hiện hành vào file của phiên này.",L"Thoát; dữ liệu đã tự lưu vẫn được giữ. Lỗi lưu cần xử lý trước."};
 string TuUTF16(const std::wstring& s) {
     if(s.empty()) return "";
     int n=WideCharToMultiByte(CP_UTF8,WC_ERR_INVALID_CHARS,s.data(),static_cast<int>(s.size()),nullptr,0,nullptr,nullptr);
@@ -468,6 +512,15 @@ void HienThiPhanTrang(const string& text) {
 #endif
 }
 
+void LuuSauThayDoi(const ThuVien& tv) {
+    if(thuVienTuLuu!=&tv || !tepTuLuu) return;
+    chuaLuu=true;
+    string loi;
+    if(!LuuFile(tv,*tepTuLuu,loi))
+        throw LoiThuVien("Da cap nhat RAM nhung CHUA LUU: "+loi+". Hay bam Luu (F5); khong dong cua so.");
+    chuaLuu=false;
+}
+
 #ifndef THUVIEN_TEST
 namespace {
 struct ConsoleScope {
@@ -485,7 +538,7 @@ void HuongDan() {
              <<"ThuVien.exe --check duong-dan\n"
              <<"--date dung ngay mo phong qua khu cho demo, khong cho ngay tuong lai.\n"
              <<"TUI: Tab/Enter chuyen o, Ctrl+Enter xac nhan, Esc huy. /huy huy khi xac nhan form.\n"
-             <<"--plain: /huy huy nhap. 0 luu va thoat. EOF thoat KHONG tu luu.\n";
+             <<"--plain: /huy huy nhap. 0 luu va thoat. Tu luu sau thao tac thanh cong; EOF khong thu luu lai neu truoc do luu loi.\n";
 }
 int ChayUngDung(int argc,char** argv) {
     string path="DuLieu/runtime/ThuVien.txt",check;
@@ -523,6 +576,11 @@ int ChayUngDung(int argc,char** argv) {
         int copies=0;for(int i=0;i<tv.dsDauSach.soLuong;++i) copies+=DemCuonSach(tv.dsDauSach.ds[i]->dms);
         std::cout<<"HOP LE | dau sach="<<tv.dsDauSach.soLuong<<" | cuon="<<copies<<" | doc gia="<<DemDocGia(tv.cayDocGia)<<" | moc ma="<<tv.maTheLonNhatDaCap<<'\n';return 0;
     }
+    path=DuongDanUTF8(DuongDanDayDu(path));
+    TaoThuMuc(ThuMucCha(DuongDanUTF16(path)));
+    KhoaTepPhien khoa;
+    if(!khoa.Mo(path,loi)) {std::cerr<<loi<<'\n';return 2;}
+    PhienTuLuu tuLuu(tv,path);
     if(FileTonTai(path)) {
         if(!DocFile(tv,path,loi)) {std::cerr<<"Khong nap/khong ghi de file loi: "<<loi<<'\n';return 2;}
     } else {
@@ -535,14 +593,17 @@ int ChayUngDung(int argc,char** argv) {
 #endif
     const char* labels[]={"a - Them / xoa / sua doc gia", "b - Liet ke doc gia", "c - Nhap dau sach / them cuon",
         "d - Dau sach theo the loai", "e - Tim theo ten sach", "f - Muon sach", "g - Tra / bao mat sach",
-        "h - Sach doc gia dang muon", "i - Doc gia qua han", "j - Top 10 dau sach", "Nap file khac", "Luu du lieu", "Thoat KHONG luu"};
+        "h - Sach doc gia dang muon", "i - Doc gia qua han", "j - Top 10 dau sach", "Nap file khac", "Luu du lieu", "Thoat (khong thu luu lai)"};
     while(true) {
         int choice=ChonMenu("THU VIEN | "+ChuoiNgay(ngay)+"\nDu lieu: "+path,labels,13);
-        if(!std::cin) {std::cerr<<"EOF: thoat, thay doi chua luu se khong duoc ghi.\n";return 0;}
+        if(!std::cin) {std::cerr<<"EOF: thoat; thao tac da tu luu van con. Neu da bao loi luu, RAM chua ghi se mat.\n";return 0;}
         try {
+            if(chuaLuu && (choice==1 || choice==3 || choice==6 || choice==7 || choice==11)) {
+                ThongBao("CHUA LUU: hay bam Luu (F5) thanh cong truoc khi sua tiep hoac nap file khac.");continue;
+            }
             LuongChuoi out;
             if(choice==0 || choice==12) {
-                if(LuuFile(tv,path,loi)) {ThongBao("OK: da luu "+path);if(choice==0) return 0;}
+                if(LuuFile(tv,path,loi)) {chuaLuu=false;ThongBao("OK: da luu "+path);if(choice==0) return 0;}
                 else ThongBao("LOI LUU (van giu du lieu trong RAM): "+loi);
             } else if(choice==1) ManHinhDocGia(tv);
             else if(choice==2) {
@@ -559,11 +620,11 @@ int ChayUngDung(int argc,char** argv) {
             else if(choice==11) {
                 string next,confirm;
                 if(NhapDong("Duong dan file UTF-8",next) && NhapDong("Nhap NAP de thay du lieu RAM (hay luu truoc neu can)",confirm) && confirm=="NAP") {
-                    if(DocFile(tv,next,loi)) {path=next;ThongBao("OK: da nap du lieu.");}
+                    if(NapPhien(tv,path,next,khoa,loi)) {ThongBao("OK: da nap du lieu.");}
                     else ThongBao("LOI: "+loi+"; du lieu RAM cu duoc giu nguyen.");
                 }
             } else if(choice==13) {
-                string confirm;if(NhapDong("Nhap THOAT de bo cac thay doi chua luu",confirm) && confirm=="THOAT") return 0;
+                string confirm;if(NhapDong("Nhap THOAT de thoat; du lieu da tu luu van giu, RAM chua luu (neu co loi) se mat",confirm) && confirm=="THOAT") return 0;
             }
         } catch(const LoiThuVien& e) {ThongBao(string("Khong hoan tat thao tac: ")+e.what());}
         catch(...) {ThongBao("Khong hoan tat thao tac: khong du bo nho / loi luong.");}

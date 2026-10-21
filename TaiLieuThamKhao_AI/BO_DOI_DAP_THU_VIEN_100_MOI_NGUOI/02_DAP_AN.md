@@ -1,6 +1,6 @@
 # Đáp án — 325 câu đối đáp Thư viện
 
-> **Đồng bộ C++11 ngày 21/10/2026:** cả 325 câu đối chiếu mã nguồn demo tại commit `b449646`. Liên kết tên file mở mã đi kèm; liên kết tên hàm/số dòng mở đúng snapshot C++11 trên GitHub. [Phạm vi đồng bộ và kiểm chứng](ThamKhao/DONG_BO_VAN_DAP_CPP11.md).
+> **Đồng bộ C++11 ngày 21/10/2026:** cả 325 câu đối chiếu mã nguồn demo tại commit `1c4510c`. Liên kết tên file mở mã đi kèm; liên kết tên hàm/số dòng mở đúng snapshot C++11 trên GitHub. [Phạm vi đồng bộ và kiểm chứng](ThamKhao/DONG_BO_VAN_DAP_CPP11.md).
 
 **Thái 100 · Thành 100 · Tấn 100 · Cả nhóm 25.** [Câu hỏi](01_CAU_HOI.md) · [Hướng dẫn đọc](README.md).
 
@@ -33,7 +33,7 @@ Một trạng thái chung không biểu diễn ba bản vật lý khác nhau và
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DauSach, dòng 274](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L274); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DauSach, dòng 274](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L274); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
 
 <a id="TH02"></a>
 ### TH02 — Chèn giữa khi đang giữ con trỏ cuốn
@@ -56,7 +56,7 @@ Tìm vị trí O(log D) phép so sánh; kiểm ISBN và dịch con trỏ khiến
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60).
 
 <a id="TH05"></a>
 ### TH05 — Mã có lỗ sau khi mở lại file
@@ -79,7 +79,7 @@ Hàm quét toàn bộ danh mục, kể cả ngoài A, để tránh trùng khi b�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [SinhMaSachTuDong, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L56).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [SinhMaSachTuDong, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L56).
 
 <a id="TH06"></a>
 ### TH06 — Tên tăng không có nghĩa ISBN tăng
@@ -102,7 +102,7 @@ Yêu cầu tìm nhanh nhất cần được hỏi trong giới hạn cấu trúc
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoISBN, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L50).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoISBN, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L50).
 
 <a id="TH13"></a>
 ### TH13 — Đếm chuỗi thành công và thất bại
@@ -125,7 +125,7 @@ G01 đếm mọi lượt thành công, kể cả đã mất; đây là cách hi�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
 
 <a id="TH14"></a>
 ### TH14 — Ranh giới thứ mười có ba đầu cùng tên
@@ -152,7 +152,7 @@ Theo đầu hay cuốn và cách xử lý đồng hạng là giả định G01/G
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DauSachXepTruoc, dòng 103](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L103).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DauSachXepTruoc, dòng 103](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L103).
 
 <a id="TH37"></a>
 ### TH37 — Kho gần đầy, lỗi nào được báo và lúc nào dữ liệu đổi?
@@ -175,7 +175,7 @@ Muốn gom lỗi phải có pha kiểm riêng, không dùng việc tiếp tục 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39).
 
 <a id="TH41"></a>
 ### TH41 — Gộp ISBN nhìn giống nhau có thể đổi lịch sử của ai?
@@ -198,7 +198,7 @@ Nếu thầy yêu cầu quy tắc mới, cần phát hiện va chạm, quy đị
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoISBN, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L50); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TachMaMoi, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L5); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TimChuSoHuu, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L94).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoISBN, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L50); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TachMaMoi, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L5); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TimChuSoHuu, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L94).
 
 <a id="TH46"></a>
 ### TH46 — Tem sách in thêm số 0: sửa dữ liệu hay sửa đầu vào?
@@ -221,7 +221,7 @@ Nếu hỗ trợ tem cũ cần quy tắc ánh xạ được xác nhận, kiểm 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TachMaMoi, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L5); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [MaSinhDungDauSach, dòng 43](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L43); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TachMaMoi, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L5); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [MaSinhDungDauSach, dòng 43](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L43); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
 
 <a id="TH61"></a>
 ### TH61 — Trả một phần làm người đứng đầu bảng chuyển vị trí thế nào?
@@ -246,7 +246,7 @@ Báo cáo gom max và đếm số cuốn, còn quyền mượn dùng điều ki�
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [CoSachQuaHan7Ngay, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L8); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [CoSachQuaHan7Ngay, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L8); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
 
 <a id="TH15"></a>
 ### TH15 — Hủy khi mới thêm một phần danh mục
@@ -273,7 +273,7 @@ Yêu cầu nguyên khối cần chuẩn bị và kiểm cả cụm trước khi 
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ManHinhNhapDauSach, dòng 124](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L124); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ManHinhNhapDauSach, dòng 124](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L124); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71).
 
 <a id="TH16"></a>
 ### TH16 — Mã chuẩn bị đặt nhầm đầu sách
@@ -296,7 +296,7 @@ Chống trùng không sửa dữ liệu sai chủ; bộ nhớ vẫn lỗi cho t�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [SinhMaSachTuDong, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L56); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [MaSinhDungDauSach, dòng 43](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L43).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [SinhMaSachTuDong, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L56); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [MaSinhDungDauSach, dòng 43](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L43).
 
 <a id="TH19"></a>
 ### TH19 — Đảo comparator khi vun đống
@@ -321,7 +321,7 @@ Dựng từ i=1 đưa (30,6) lên trên (10,7); dựng i=0 cho mảng [(30,6),(1
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [VunDong, dòng 75](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L75); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [SapXepHeap, dòng 84](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L84); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [VunDong, dòng 75](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L75); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [SapXepHeap, dòng 84](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L84); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
 
 <a id="TH20"></a>
 ### TH20 — Chỉ mục tạm với mã cũ và mã mới
@@ -344,7 +344,7 @@ Thứ tự dựng chỉ mục phải khớp phép so trong tìm kiếm; đổi s
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TimChuSoHuu, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L94).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TimChuSoHuu, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L94).
 
 <a id="TH21"></a>
 ### TH21 — Có lịch sử nhưng mã cuốn biến mất
@@ -371,7 +371,7 @@ Không đổi nhánh owner<0 thành owner=0 để tiếp tục: đó là tự g�
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TH22"></a>
 ### TH22 — Vì sao một vòng lịch sử không phải O(H)
@@ -396,7 +396,7 @@ Quy mô nhỏ có thể chưa đáng chi phí dựng chỉ mục, nhưng không 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13).
 
 <a id="TH27"></a>
 ### TH27 — Đổi tên khi cuốn đã có lịch sử
@@ -421,7 +421,7 @@ Chuẩn bị và kiểm tên mới trước; xác định vị trí mới trên 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
 
 <a id="TH28"></a>
 ### TH28 — Báo cáo hôm qua sau khi trả hôm nay
@@ -444,7 +444,7 @@ Muốn báo cáo tại một thời điểm quá khứ cần hợp đồng khác
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
 
 <a id="TH38"></a>
 ### TH38 — Tìm chỗ chèn đúng khi tên hòa và ở cuối mảng
@@ -467,7 +467,7 @@ Bỏ ISBN khỏi comparator chèn có thể đảo các tên hòa, trái compara
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [SoSanhDauSach, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L5); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [SachTruoc, dòng 19](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L19).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [SoSanhDauSach, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L5); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [SachTruoc, dòng 19](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L19).
 
 <a id="TH39"></a>
 ### TH39 — Dịch mảng sai chiều làm mất con trỏ
@@ -488,7 +488,7 @@ Mất quyền truy cập E gây rò rỉ; nhiều ô sở hữu một đối tư
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [HuyDanhSachDauSach, dòng 116](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L116).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [HuyDanhSachDauSach, dòng 116](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L116).
 
 <a id="TH40"></a>
 ### TH40 — Nhập danh mục từ công cụ khác: ai sở hữu các cuốn?
@@ -511,7 +511,7 @@ Nhập nguyên cụm là thay đổi API: chọn clone sâu hoặc chuyển quy�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DauSach, dòng 274](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L274).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DauSach, dòng 274](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L274).
 
 <a id="TH43"></a>
 ### TH43 — Tái dùng số của sách thanh lý có thật sự tiết kiệm?
@@ -534,7 +534,7 @@ Lượt cũ vẫn thuộc đầu A nên top giữ được số lượt dù thê
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [SinhMaSachTuDong, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L56); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [SinhMaSachTuDong, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L56); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TH48"></a>
 ### TH48 — Mã xem trước đã hiện nhưng đầu sách chưa được tạo
@@ -557,7 +557,7 @@ Giao diện xem trước cần nhãn dự kiến và kiểm lại khi thêm; kh�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [SinhMaSachTuDong, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L56); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [SinhMaSachTuDong, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L56); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60).
 
 <a id="TH53"></a>
 ### TH53 — Tìm chuỗi con có dùng được khoảng nhị phân của tên?
@@ -580,7 +580,7 @@ Tên chính xác hoặc tiền tố theo cùng khóa chuẩn hóa có thể tìm
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27).
 
 <a id="TH54"></a>
 ### TH54 — Một kết quả tìm kiếm đại diện đầu sách hay bản vật lý?
@@ -603,7 +603,7 @@ Không dùng số dòng văn bản hoặc số lần khớp ký tự làm tổng
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
 
 <a id="TH55"></a>
 ### TH55 — Dán tên từ tài liệu: tìm thấy không có nghĩa dữ liệu được nhận
@@ -626,7 +626,7 @@ Bỏ kiểm gốc thay đổi chính sách chấp nhận dữ liệu, có thể 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeVanBan, dòng 38](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L38); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeVanBan, dòng 38](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L38); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60).
 
 <a id="TH57"></a>
 ### TH57 — Sửa một cận tìm kiếm làm mất cả nhóm tài liệu
@@ -649,7 +649,7 @@ Tối ưu phải giữ tập vị trí ứng viên hoặc chứng minh bước n
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27).
 
 <a id="TH62"></a>
 ### TH62 — Đồng mức quá hạn nhưng số cuốn khác: công bằng theo quy tắc nào?
@@ -674,7 +674,7 @@ Khi đổi sang tổng, chỉ cộng ngày vượt bảy dương của lượt �
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [CoSachQuaHan7Ngay, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L8).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [CoSachQuaHan7Ngay, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L8).
 
 <a id="TH63"></a>
 ### TH63 — Ẩn thẻ khóa có che nghĩa vụ trả sách còn lại?
@@ -697,7 +697,7 @@ Muốn dùng chung helper nên tách tập đầy đủ và điều kiện lọc
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20).
 
 <a id="TH72"></a>
 ### TH72 — Dọn độc giả cũ có thể làm thống kê giảm mà kho không đổi
@@ -720,7 +720,7 @@ Có thể khóa thẻ để ngừng cho mượn, giữ hồ sơ và lịch sử.
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
 
 <a id="TH74"></a>
 ### TH74 — Đổi kiểu so ISBN chỉ ở top phá hợp đồng hòa thế nào?
@@ -745,7 +745,7 @@ Với bộ khóa lượt–tên– ISBN hiện tại và ISBN duy nhất, thứ 
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DauSachXepTruoc, dòng 103](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L103); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [SoSanhDauSach, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L5); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [HopLeDauSach, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L23).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DauSachXepTruoc, dòng 103](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L103); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [SoSanhDauSach, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L5); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [HopLeDauSach, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L23).
 
 <a id="TH93"></a>
 ### TH93 — Nạp file đầu sách lộn thứ tự
@@ -768,7 +768,7 @@ KiemTraToanVen trên RAM lộn thứ tự thì từ chối; nó kiểm chứ kh�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543).
 
 <a id="TH97"></a>
 ### TH97 — Tìm thấy tên nhưng cả hai người đều chưa chắc mượn được
@@ -791,7 +791,7 @@ Kết quả danh mục trả lời tồn tại/trạng thái, nghiệp vụ ki�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
 
 <a id="TH202"></a>
 ### TH202 — Hai sách khác nội dung nhưng cùng tên
@@ -812,7 +812,7 @@ Kiểm trùng dùng TimDauSachTheoISBN. Bộ so phá hòa bằng ISBN nên mản
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80).
 
 <a id="TH203"></a>
 ### TH203 — Chèn đầu mới khi mã sách đang được tra theo chỉ số phụ
@@ -833,7 +833,7 @@ Cả hai vẫn phải thêm mục phụ đúng thứ tự và giữ đồng bộ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoISBN, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L50); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoISBN, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L50); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60).
 
 <a id="TH204"></a>
 ### TH204 — So sánh sau khi đã chuẩn bị có thể vẫn cấp phát
@@ -854,7 +854,7 @@ SoSanhChuoi tạo hai string khóa, có thể cấp phát. TimViTriChenTheoTen h
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoSanhChuoi, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L23); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ConTroTam, dòng 29](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L29), [ConTroTam, dòng 42](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L42).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoSanhChuoi, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L23); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ConTroTam, dòng 29](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L29), [ConTroTam, dòng 42](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L42).
 
 <a id="TH205"></a>
 ### TH205 — Chuẩn hóa từ khóa một lần hay một lần mỗi đầu
@@ -875,7 +875,7 @@ Tách helper so các khóa đã chuẩn hóa giúp tránh O(DM) công việc l�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27).
 
 <a id="TH206"></a>
 ### TH206 — In lại báo cáo khi stream đã báo lỗi
@@ -896,7 +896,7 @@ Với ostream mặc định không bật exceptions, stream có thể giữ lỗ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70).
 
 <a id="TH207"></a>
 ### TH207 — Tìm tên trên kho lớn với rất ít kết quả
@@ -917,7 +917,7 @@ Hàm quét D tên rồi InMotDauSach duyệt toàn dms của từng đầu khớ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70).
 
 <a id="TH208"></a>
 ### TH208 — Danh mục không được sắp theo mã nhưng tìm trong đầu vẫn đúng
@@ -938,7 +938,7 @@ Loader giữ thứ tự cuốn từ file. Dừng theo lớn/nhỏ chỉ đúng k
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachTrongDauSach, dòng 18](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L18), [TimCuonSachTrongDauSach, dòng 22](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L22); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachTrongDauSach, dòng 18](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L18), [TimCuonSachTrongDauSach, dòng 22](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L22); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
 
 <a id="TH209"></a>
 ### TH209 — Số cuốn trong dòng đầu sách lệch một đơn vị
@@ -961,7 +961,7 @@ Số đếm điều khiển ranh giới bản ghi. Tự đoán lại sẽ khiế
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [BoDoc, dòng 51](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L51).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [BoDoc, dòng 51](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L51).
 
 <a id="TH210"></a>
 ### TH210 — Bỏ một cuốn không có lịch sử khi ghi vẫn đọc lại được
@@ -982,7 +982,7 @@ Số đếm điều khiển ranh giới bản ghi. Tự đoán lại sẽ khiế
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuNoiBo, dòng 278](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L278).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuNoiBo, dòng 278](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L278).
 
 <a id="TH211"></a>
 ### TH211 — Bỏ một lượt cũ: top giảm nhưng kiểm liên kết vẫn xanh
@@ -1003,7 +1003,7 @@ Cần đối chiếu với bản nguồn/backup hoặc nhật ký được thi�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TH212"></a>
 ### TH212 — Top của hai nửa kho có ghép được không
@@ -1024,7 +1024,7 @@ Một đầu bị loại khỏi top 10 nửa mình đã có ít nhất 10 đầu
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DauSachXepTruoc, dòng 103](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L103).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DauSachXepTruoc, dòng 103](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L103).
 
 <a id="TH213"></a>
 ### TH213 — Tìm hai từ độc lập khác tìm cả cụm
@@ -1045,7 +1045,7 @@ Phải chốt query là cụm hay các token. Tách token rồi chuẩn hóa/ki�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80).
 
 <a id="TH214"></a>
 ### TH214 — Một đầu cực nhiều cuốn và nhiều đầu ít cuốn
@@ -1066,7 +1066,7 @@ Tìm ISBN vẫn quét tối đa D, sau đó tìm trong riêng dms. Phân bố tr
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48).
 
 <a id="TH215"></a>
 ### TH215 — Mã chuẩn không làm lịch sử cũ tự đổi mã
@@ -1087,7 +1087,7 @@ Bản hiện không có đổi mã. Thiết kế khả thi dùng bộ tạm, án
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TH216"></a>
 ### TH216 — Dòng quá hạn của người trước lọt sang người sau
@@ -1108,7 +1108,7 @@ Trong code đúng, mỗi độc giả nhận DongQuaHan mới với hai số b�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
 
 <a id="TH217"></a>
 ### TH217 — Báo cáo ngày tương lai và giao dịch ngày tương lai
@@ -1129,7 +1129,7 @@ Kết quả báo cáo trực tiếp là phép tính trên các lượt hiện đ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraNgayGiaoDich, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L13); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraNgayGiaoDich, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L13); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543).
 
 <a id="TH218"></a>
 ### TH218 — Tên khóa so sánh dài chung một tiền tố
@@ -1150,7 +1150,7 @@ Khi lượt hòa, SoSanhChuoi chuẩn hóa và tạo khóa cho cả hai tên; so
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DauSachXepTruoc, dòng 103](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L103); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoSanhChuoi, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L23).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DauSachXepTruoc, dòng 103](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L103); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoSanhChuoi, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L23).
 
 <a id="TH219"></a>
 ### TH219 — Tên có nhiều khoảng trắng qua hai đường nhập
@@ -1171,7 +1171,7 @@ Cả hai tạo cùng khóa so nên có thể cùng khớp và phá hòa theo ISB
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [KhoaSoSanh, dòng 18](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L18).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [KhoaSoSanh, dòng 18](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L18).
 
 <a id="TH220"></a>
 ### TH220 — Output mã bị alias với ISBN nguồn
@@ -1192,7 +1192,7 @@ Hàm dùng d đã tìm được nên vẫn có thể nối cuốn, nhưng ISBN c
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71).
 
 <a id="TH221"></a>
 ### TH221 — Hai đầu cùng sở hữu một đuôi danh sách
@@ -1213,7 +1213,7 @@ Hai danh mục đều tưởng sở hữu S001 nên hủy lần hai có thể d�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [HuyDanhMucCuonSach, dòng 96](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L96); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [HuyDanhMucCuonSach, dòng 96](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L96); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TH222"></a>
 ### TH222 — Top có tổng lượt đúng nhưng gán sai chủ đầu
@@ -1234,7 +1234,7 @@ TimChuSoHuu tìm đúng mã nhưng trả sai dauSach nên tổng toàn kho vẫn
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ChiMucCuon, dòng 92](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L92); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ChiMucCuon, dòng 92](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L92); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
 
 <a id="TH223"></a>
 ### TH223 — Con trỏ cuốn bị xóa trong lúc xây chỉ mục tạm
@@ -1255,7 +1255,7 @@ Nạp có thể hủy toàn bộ cuốn cũ; khóa chỉ khi in là quá muộn.
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HoanDoiThuVien, dòng 324](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L324).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HoanDoiThuVien, dòng 324](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L324).
 
 <a id="TH224"></a>
 ### TH224 — Một triệu lượt mượn không đồng nghĩa một triệu độc giả
@@ -1278,7 +1278,7 @@ Sau giả định nâng giới hạn, phải tính chỉ mục cuốn, view đ�
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MAX_BAN_GHI, dòng 265](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L265); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MAX_BAN_GHI, dòng 265](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L265); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
 
 <a id="TH225"></a>
 ### TH225 — Ngày sai làm thống kê ngừng trước tiêu đề
@@ -1299,7 +1299,7 @@ SoThuTuNgay ném LoiThuVien; mảng tạm được dọn khi unwinding và dữ 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoThuTuNgay, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L110); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LoiThuVien, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L20).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoThuTuNgay, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L110); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LoiThuVien, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L20).
 
 <a id="TH226"></a>
 ### TH226 — Hai lần nhập cùng ISBN sau timeout ở lớp điều phối
@@ -1322,7 +1322,7 @@ Vị trí kệ không là định danh yêu cầu hay cuốn. Hai API có ý ngh
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71).
 
 <a id="TH227"></a>
 ### TH227 — Các danh mục có sắp riêng đủ để bỏ sort index top không
@@ -1343,7 +1343,7 @@ A#10 đứng trước A#2 theo so chuỗi, nhưng được thêm sau; legacy là
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
 
 <a id="TH228"></a>
 ### TH228 — Giảm MAX_DAU_SACH khi kho cũ đang vượt ngưỡng mới
@@ -1364,7 +1364,7 @@ Cắt đầu còn có thể bỏ cuốn được lịch sử tham chiếu và l�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MAX_DAU_SACH, dòng 263](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L263); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MAX_DAU_SACH, dòng 263](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L263); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60).
 
 <a id="TH229"></a>
 ### TH229 — Hủy phần sách trước lịch sử có luôn dereference mã cuốn
@@ -1385,7 +1385,7 @@ Thứ tự hiện rõ ràng nhưng không nên bịa phụ thuộc con trỏ kh�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HuyThuVien, dòng 321](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L321); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [HuyDanhSachDauSach, dòng 116](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L116); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [HuyDanhSachMuonTra, dòng 17](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L17).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HuyThuVien, dòng 321](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L321); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [HuyDanhSachDauSach, dòng 116](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L116); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [HuyDanhSachMuonTra, dòng 17](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L17).
 
 <a id="TH230"></a>
 ### TH230 — Mã rỗng trong kết quả của một API tự viết
@@ -1406,7 +1406,7 @@ ThemCuonSach hiện chuẩn bị các chuỗi trước nối. Nối sớm đưa 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [CuonSach, dòng 273](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L273); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ConTroTam, dòng 29](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L29), [ConTroTam, dòng 42](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L42).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [CuonSach, dòng 273](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L273); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ConTroTam, dòng 29](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L29), [ConTroTam, dòng 42](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L42).
 
 <a id="TH231"></a>
 ### TH231 — Ghi danh mục phải duyệt hai lượt hay lưu sẵn số cuốn
@@ -1427,7 +1427,7 @@ File cần count trước danh sách nên không đơn giản in rồi mới bi�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [DemCuonSach, dòng 99](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L99).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [DemCuonSach, dòng 99](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L99).
 
 <a id="TH232"></a>
 ### TH232 — Nhập hai danh mục riêng bằng NAP có phải hợp nhất
@@ -1448,7 +1448,7 @@ Nhập bổ sung cần quy tắc trùng ISBN, trùng mã cuốn, mã thẻ và l
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HoanDoiThuVien, dòng 324](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L324).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HoanDoiThuVien, dòng 324](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L324).
 
 <a id="TH233"></a>
 ### TH233 — Thống kê mức luân chuyển khác số lượt tuyệt đối
@@ -1469,7 +1469,7 @@ Tỉ lệ theo số cuốn hiện tại cho A=1, B=10 nhưng là chỉ số mớ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [DemCuonSach, dòng 99](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L99).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [DemCuonSach, dòng 99](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L99).
 
 <a id="TH235"></a>
 ### TH235 — Kiểm số cuốn dùng >= và ngân sách trước thêm
@@ -1490,7 +1490,7 @@ Tỉ lệ theo số cuốn hiện tại cho A=1, B=10 nhưng là chỉ số mớ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
 
 <a id="TH236"></a>
 ### TH236 — Gộp báo cáo quá hạn từ hai nhóm độc giả
@@ -1511,7 +1511,7 @@ Max và count có phép kết hợp khác nhau. Đoạn không có lượt quá 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DongQuaHan, dòng 91](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L91); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DongQuaHan, dòng 91](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L91); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
 
 <a id="TH237"></a>
 ### TH237 — Dùng bucket số lượt thay bảng top mười ô
@@ -1532,7 +1532,7 @@ Số lượt phân bucket chưa giải quyết tên–ISBN trong bucket ngưỡn
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MAX_BAN_GHI, dòng 265](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L265).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MAX_BAN_GHI, dòng 265](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L265).
 
 <a id="TH238"></a>
 ### TH238 — Hậu tố mã số không phải chỉ số truy cập mảng
@@ -1553,7 +1553,7 @@ Hiện tra theo chuỗi trong danh sách, số node phụ thuộc Cᵢ. Chỉ m�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TachMaMoi, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L5); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachTrongDauSach, dòng 18](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L18), [TimCuonSachTrongDauSach, dòng 22](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L22).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TachMaMoi, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L5); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachTrongDauSach, dòng 18](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L18), [TimCuonSachTrongDauSach, dòng 22](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L22).
 
 <a id="TH239"></a>
 ### TH239 — Gửi báo cáo cho người đọc không có quyền sửa
@@ -1574,7 +1574,7 @@ Dịch vụ mới cần kiểm quyền ở ranh giới yêu cầu trước gọi
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
 
 <a id="TH240"></a>
 ### TH240 — Heap mười phần tử và bảng chèn mười ô
@@ -1595,7 +1595,7 @@ Heap cho O(D log 10) so chọn và O(10 log 10) chốt; chèn hiện tại O(10D
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DauSachXepTruoc, dòng 103](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L103).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DauSachXepTruoc, dòng 103](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L103).
 
 <a id="TH241"></a>
 ### TH241 — Mượn trả cùng ngày tạo hai node giống hệt trên giấy
@@ -1618,7 +1618,7 @@ V1 không có thời điểm giờ hay ID giao dịch để phân biệt hai ý 
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
 
 <a id="TH242"></a>
 ### TH242 — Giới hạn byte của vị trí kệ ảnh hưởng kích thước báo cáo
@@ -1639,7 +1639,7 @@ Cần tính các chuỗi mã/vị trí trong dữ liệu và dung lượng Luong
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeVanBan, dòng 38](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L38); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeVanBan, dòng 38](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L38); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70).
 
 <a id="TH243"></a>
 ### TH243 — Khóa báo cáo gộp theo tên làm mất hai ISBN
@@ -1660,7 +1660,7 @@ Các cuốn cùng ISBN có chung chủ nên cộng đúng vào dem[owner]. Tên 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TimChuSoHuu, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L94).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TimChuSoHuu, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L94).
 
 <a id="TH244"></a>
 ### TH244 — Nhị phân thấy mã nhưng không thấy đủ mọi bản ghi trùng
@@ -1681,7 +1681,7 @@ KiemTraNoiBo kiểm mã cuốn trùng, còn top giả định nguồn đã hợp
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TimChuSoHuu, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L94); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TimChuSoHuu, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L94); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TH245"></a>
 ### TH245 — Ưu tiên quá hạn theo cuốn thay vì theo người
@@ -1702,7 +1702,7 @@ Báo cáo theo cuốn cần gom từng lượt mở quá hạn kèm mã thẻ/m�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DongQuaHan, dòng 91](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L91); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DongQuaHan, dòng 91](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L91); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
 
 <a id="TH246"></a>
 ### TH246 — Chỉ mục cuốn dựng lại mỗi lần có lợi trong phiên ít đọc
@@ -1723,7 +1723,7 @@ Phiên ít đọc có thể không đáng giữ bộ nhớ/đồng bộ. Phiên 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71).
 
 <a id="TH247"></a>
 ### TH247 — Hiện “đã thanh lý” có biết lý do là mất không
@@ -1746,7 +1746,7 @@ Lượt mất có thể giúp nhận biết X trong mô hình G05; Y trạng th�
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DanhDauMatSach, dòng 138](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L138); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DanhDauMatSach, dòng 138](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L138); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TH248"></a>
 ### TH248 — Vị trí kệ mới phải đổi số liệu nào
@@ -1767,7 +1767,7 @@ Nếu là kệ cất mặc định, có thể đổi mà không đổi mã/lư�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [CuonSach, dòng 273](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L273); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [CuonSach, dòng 273](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L273); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
 
 <a id="TH249"></a>
 ### TH249 — Đếm lượt top dùng int trong miền đã chặn
@@ -1788,7 +1788,7 @@ Nâng quy mô phải xét cả bộ đếm tổng, chỉ số, kích thước c�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MAX_BAN_GHI, dòng 265](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L265); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MAX_BAN_GHI, dòng 265](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L265); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
 
 <a id="TH250"></a>
 ### TH250 — Trình tự chuẩn hóa mã và xuất lỗi chứa mã
@@ -1809,7 +1809,7 @@ UI chuẩn hóa trước tra nên mã không chuẩn có thể không truy cập
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48).
 
 <a id="TH251"></a>
 ### TH251 — Chỉ tìm sách có sẵn là truy vấn mới
@@ -1830,7 +1830,7 @@ Phải chốt in mọi cuốn của B hay chỉ cuốn rảnh; hai lựa chọn 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InMotDauSach, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L10).
 
 <a id="TH252"></a>
 ### TH252 — Một đầu có cuốn legacy và chuẩn cùng hậu tố nhìn giống
@@ -1853,7 +1853,7 @@ Legacy được tra bằng toàn chuỗi, không suy ISBN/hậu tố số. Bộ 
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TachMaMoi, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L5); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [SinhMaSachTuDong, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L56); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TimChuSoHuu, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L94).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TachMaMoi, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L5); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [SinhMaSachTuDong, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L56); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TimChuSoHuu, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L94).
 
 <a id="TH253"></a>
 ### TH253 — Dừng ngay sau đủ mười đầu có lượt
@@ -1876,7 +1876,7 @@ Sau mỗi tiền tố, top chứa tối đa 10 đầu tốt nhất trong các đ
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [SoSanhDauSach, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L5).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [SoSanhDauSach, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L5).
 
 <a id="TH301"></a>
 ### TH301 — ISBN hợp lệ nhưng mã cuốn kế tiếp vượt 512 byte
@@ -1899,7 +1899,7 @@ Một đầu có ISBN hợp lệ không bảo đảm mọi mã ghép sau này h�
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [SinhMaSachTuDong, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L56); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeVanBan, dòng 38](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L38).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [SinhMaSachTuDong, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L56); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeVanBan, dòng 38](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L38).
 
 <a id="TH302"></a>
 ### TH302 — Năm xuất bản và ngày mượn được kiểm độc lập
@@ -1922,7 +1922,7 @@ Một đầu có ISBN hợp lệ không bảo đảm mọi mã ghép sau này h�
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [HopLeDauSach, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L23); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraNgayGiaoDich, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L13); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [HopLeDauSach, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L23); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraNgayGiaoDich, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L13); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TH29"></a>
 ### TH29 — Thống kê số độc giả khác nhau
@@ -1947,7 +1947,7 @@ Một phương án: dựng chỉ mục cuốn→chỉ số đầu như top; mả
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
 
 <a id="TH31"></a>
 ### TH31 — UTF-8 đúng chưa phải so tiếng Việt đầy đủ
@@ -1972,7 +1972,7 @@ Nếu đổi quy tắc tìm/so sánh, phải chốt phạm vi Unicode và kiểm
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [KhoaSoSanh, dòng 18](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L18); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [GhepDauHienThi, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L39).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [KhoaSoSanh, dòng 18](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L18); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [GhepDauHienThi, dòng 83](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L83).
 
 <a id="TH34"></a>
 ### TH34 — Tham số owner còn giữ kết quả lần trước
@@ -1995,7 +1995,7 @@ Wrapper nhận ThuVien thực sự mutable rồi dùng bản const để tra; kh
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48).
 
 <a id="TH35"></a>
 ### TH35 — Lỗi trước khi gắn nút vào danh sách
@@ -2020,7 +2020,7 @@ ConTroTam<T> tự cài chỉ giữ một chủ sở hữu, cấm copy và dùng 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ConTroTam, dòng 29](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L29), [ConTroTam, dòng 42](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L42).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ConTroTam, dòng 29](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L29), [ConTroTam, dòng 42](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L42).
 
 <a id="TH51"></a>
 ### TH51 — Danh sách cuốn có chu trình
@@ -2041,7 +2041,7 @@ Kiểm toàn vẹn có cận số bản ghi để phát hiện một số vòng,
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [DemCuonSach, dòng 99](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L99); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [HuyDanhMucCuonSach, dòng 96](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L96); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [DemCuonSach, dòng 99](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L99); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [HuyDanhMucCuonSach, dòng 96](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L96); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TH52"></a>
 ### TH52 — Tối ưu nhập lô: tail, tổng cuốn, max mã và phạm vi commit
@@ -2066,7 +2066,7 @@ Cần chọn commit từng cuốn như đường gọi hiện tại hay nguyên 
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [SinhMaSachTuDong, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L56).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [SinhMaSachTuDong, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L56).
 
 <a id="TH58"></a>
 ### TH58 — Dữ liệu lặp làm tìm chuỗi con chậm
@@ -2087,7 +2087,7 @@ Chuẩn hóa không loại việc so lặp. Một thuật toán chuỗi khác l�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27).
 
 <a id="TH79"></a>
 ### TH79 — Top tháng: lọc ngày mượn hay ngày trả sẽ kể câu chuyện khác
@@ -2110,7 +2110,7 @@ Báo cáo cuối kỳ về trạng thái cần tái dựng khoảng giữ, khôn
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoThuTuNgay, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L110).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoThuTuNgay, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L110).
 
 <a id="TH80"></a>
 ### TH80 — Top cuốn và top đầu không thể dùng chung khóa đếm
@@ -2133,7 +2133,7 @@ Có thể dùng chỉ mục cuốn tạm đang có và bộ đếm theo C, chọ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ChiMucCuon, dòng 92](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L92); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TimChuSoHuu, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L94); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ChiMucCuon, dòng 92](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L92); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TimChuSoHuu, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L94); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
 
 <a id="TH81"></a>
 ### TH81 — Muốn giữ cache top giữa các giao dịch
@@ -2158,7 +2158,7 @@ Cache lâu dài phải có quy tắc làm mới cho chèn, giao dịch, đổi k
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocFile, dòng 336](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L336); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocFile, dòng 336](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L336); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ThemDauSach, dòng 60](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L60).
 
 <a id="TH90"></a>
 ### TH90 — Lấy đúng k người quá hạn thay vì tất cả
@@ -2181,7 +2181,7 @@ Giữ top 5 có thể giảm khâu chọn xuống O(5R) và mảng xếp hạng 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [SapXepHeap, dòng 84](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L84).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [SapXepHeap, dòng 84](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L84).
 
 <a id="TH94"></a>
 ### TH94 — Đối soát kho theo ba trạng thái không được lấy phép trừ thiếu
@@ -2204,7 +2204,7 @@ Báo cáo chỉ đọc có thể ghi cảnh báo; KiemTraToanVen kiểm tương 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [DemCuonSach, dòng 99](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L99); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [TongQuan, dòng 246](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L246).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [DemCuonSach, dòng 99](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L99); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [TongQuan, dòng 290](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L290).
 
 <a id="TH99"></a>
 ### TH99 — Tối ưu tìm kiếm nhưng expected dùng chính hàm đang sửa
@@ -2227,7 +2227,7 @@ Quy định DSA cần tuân trong mã đồ án; công cụ kiểm thử bên ng
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoTen, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L80).
 
 <a id="TH100"></a>
 ### TH100 — Đề nghị xóa lịch sử trả cũ để nhẹ file
@@ -2250,7 +2250,7 @@ Hiện không có chức năng purge; phải chốt chính sách lưu giữ và 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 
 <a id="thanh"></a>
@@ -2267,9 +2267,9 @@ Hiện không có chức năng purge; phải chốt chính sách lưu giữ và 
 
 Khi A bị khóa, A bị chặn trước bước tìm cuốn, không thay đổi dữ liệu. B sau đó mượn thành công; chỉ B có lượt mới.
 
-Đây là xử lý tuần tự trong một tiến trình. Đề không có đặt trước/hàng chờ; không tự thêm. Hai chương trình cùng mở file là bài toán khác, chưa được bảo đảm.
+Đây là xử lý tuần tự trong một tiến trình; không có đặt trước/hàng chờ. Phiên ứng dụng hiện giữ khóa file phụ để chặn phiên khác của bản này cùng mở một đường dẫn dữ liệu để sửa. Khóa không biến API nghiệp vụ thành dịch vụ đa luồng.
 
-**Đáp câu phụ 1:** Không; commit RAM và lưu file là hai mốc. Mở lại có thể thấy snapshot cũ, cần đối soát thực tế.
+**Đáp câu phụ 1:** Có nếu tự lưu đã thành công: màn hình gọi LuuSauThayDoi trước thông báo thành công. Nếu tự lưu lỗi, chương trình báo RAM chưa lưu và chặn sửa/nạp tiếp tới khi F5 thành công; đóng cưỡng bức trong lúc đó vẫn có thể mất thay đổi. Gọi trực tiếp MuonSach trong harness chỉ cập nhật RAM.
 
 **Sai lầm dễ mắc:** Xử lý tuần tự đúng trong RAM tự bảo đảm bền vững trên đĩa.
 
@@ -2279,7 +2279,7 @@ Khi A bị khóa, A bị chặn trước bước tìm cuốn, không thay đổi
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
 
 <a id="TV02"></a>
 ### TV02 — Đang giữ một cuốn, mượn thêm hai cuốn có được không?
@@ -2302,7 +2302,7 @@ Nếu X#1 mượn từ 01/10, A đang quá hạn tại 16/10 nên cả hai yêu 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4).
 
 <a id="TV03"></a>
 ### TV03 — Đã giữ ba cuốn: đổi thứ tự thao tác có đổi kết quả?
@@ -2325,7 +2325,7 @@ Chương trình không lưu yêu cầu mượn thất bại để tự chạy l�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TraSach, dòng 135](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L135).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TraSach, dòng 135](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L135).
 
 <a id="TV04"></a>
 ### TV04 — Quá hạn, khóa thẻ và quyền trả sách tương tác thế nào?
@@ -2350,7 +2350,7 @@ Xin mượn Y#1 sau trả vẫn bị chặn do thẻ khóa. Phân biệt quyền
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [QuaHan7Ngay, dòng 121](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L121); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [QuaHan7Ngay, dòng 121](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L121); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
 
 <a id="TV05"></a>
 ### TV05 — Trả, bấm trả lại rồi người khác mượn lại cùng ngày
@@ -2375,7 +2375,7 @@ Tìm theo mã phải kèm trạng thái đang mượn và đúng độc giả. L
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [TimMuonDangMuonTheoMa, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L13); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [TimMuonDangMuonTheoMa, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L13); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
 
 <a id="TV06"></a>
 ### TV06 — Báo mất có kết thúc mọi khoản mượn không?
@@ -2400,7 +2400,7 @@ Dùng ngày trả làm ngày báo mất, chuyển cuốn sang thanh lý và chư
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DanhDauMatSach, dòng 138](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L138); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DanhDauMatSach, dòng 138](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L138); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68).
 
 <a id="TV07"></a>
 ### TV07 — Nút kế tiếp có lịch sử riêng: xóa gốc thế nào?
@@ -2423,7 +2423,7 @@ Chỉ chép maThe sẽ gán định danh 50 cho hồ sơ khác, làm mất liên
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80).
 
 <a id="TV08"></a>
 ### TV08 — Xóa mã lớn nhất rồi lưu lại có được cấp lại mã?
@@ -2448,7 +2448,7 @@ Mã lớn nhất còn trong BST và số độc giả không thể thay thế m�
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261).
 
 <a id="TV09"></a>
 ### TV09 — Thiếu bộ nhớ ở giữa thao tác mượn
@@ -2471,7 +2471,7 @@ Code chỉ nối lượt vào tail sau mọi kiểm tra/cấp phát; ngay sau đ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ConTroTam, dòng 29](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L29), [ConTroTam, dòng 42](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L42).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ConTroTam, dòng 29](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L29), [ConTroTam, dòng 42](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L42).
 
 <a id="TV10"></a>
 ### TV10 — Cuốn rảnh nhưng ngày giao dịch vẫn bị chặn
@@ -2494,7 +2494,7 @@ Helper quét max trên các lượt thuộc độc giả HOẶC có cùng mã cu
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
 
 <a id="TV11"></a>
 ### TV11 — Hiện không giữ cuốn nào nhưng lịch sử vẫn vô lý
@@ -2521,7 +2521,7 @@ Khi chỉ hai chỗ bị giữ xuyên ngày, các lượt mượn–trả cùng 
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [MocMuon, dòng 79](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L79).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [MocMuon, dòng 79](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L79).
 
 <a id="TV12"></a>
 ### TV12 — Cây cân bằng có làm ThemDocGia thành O(log R)?
@@ -2548,7 +2548,7 @@ Từ rỗng, N lần thêm phải đếm 0+1+…+(N−1)=N(N−1)/2 node, nên O
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [DemDocGia, dòng 28](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L28); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ChenDocGiaCoMa, dòng 46](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L46).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [DemDocGia, dòng 28](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L28); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ChenDocGiaCoMa, dòng 46](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L46).
 
 <a id="TV29"></a>
 ### TV29 — Hai người trùng họ tên, sửa nhầm hồ sơ sẽ tác động ai?
@@ -2571,7 +2571,7 @@ Hiện chưa có chức năng chuyển lượt mượn. Một mở rộng phải
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
 
 <a id="TV13"></a>
 ### TV13 — Một trường đúng không đủ để cho mượn hoặc trả
@@ -2594,7 +2594,7 @@ Các hàm báo lỗi và giữ nguyên dữ liệu, không tự suy bên nào đ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21).
 
 <a id="TV14"></a>
 ### TV14 — Đổi tên hoặc khóa thẻ có cần chuyển nút BST?
@@ -2617,7 +2617,7 @@ Bộ kiểm truyền khoảng khóa hợp lệ xuống cây, phát hiện vi ph�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TimDocGia, dòng 3](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L3), [TimDocGia, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L8); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TimDocGia, dòng 3](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L3), [TimDocGia, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L8); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV17"></a>
 ### TV17 — 100.000 nút lệch có làm tràn call stack?
@@ -2640,7 +2640,7 @@ Cuối cùng root=nullptr, toàn bộ node lịch sử được giải phóng. K
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HuyCayDocGia, dòng 98](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L98); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [HuyDanhSachMuonTra, dòng 17](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L17).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HuyCayDocGia, dòng 98](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L98); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [HuyDanhSachMuonTra, dòng 17](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L17).
 
 <a id="TV19"></a>
 ### TV19 — File hợp lệ có chứng minh từng lần mượn đúng quyền?
@@ -2663,7 +2663,7 @@ V1 chỉ lưu trạng thái thẻ hiện tại, không có lịch sử khóa/m�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
 
 <a id="TV20"></a>
 ### TV20 — Trả và mượn lại cùng ngày khác với lịch sử chồng lấn
@@ -2686,7 +2686,7 @@ Bộ kiểm sắp view theo cuốn, ngày bắt đầu/kết thúc rồi xét c�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV21"></a>
 ### TV21 — Giới hạn lịch sử đạt đúng M vẫn trả được
@@ -2707,7 +2707,7 @@ MuonSach còn kiểm tong>=M để chặn tạo node mới; KetThucMuon chỉ d�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
 
 <a id="TV22"></a>
 ### TV22 — Sửa thông tin đồng thời mở thẻ có thể đổi nửa chừng?
@@ -2730,7 +2730,7 @@ Chuỗi mới được chuẩn bị trước commit; lỗi cấp phát trước 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68).
 
 <a id="TV30"></a>
 ### TV30 — Cấp mã trước hay sau khi dữ liệu đã được chấp nhận?
@@ -2753,7 +2753,7 @@ Trì hoãn cập nhật mốc tránh phải rollback qua nhiều nhánh. Tăng r
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ChenDocGiaCoMa, dòng 46](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L46); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ConTroTam, dòng 29](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L29), [ConTroTam, dòng 42](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L42).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ChenDocGiaCoMa, dòng 46](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L46); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ConTroTam, dòng 29](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L29), [ConTroTam, dòng 42](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L42).
 
 <a id="TV32"></a>
 ### TV32 — Mở khóa thẻ có đồng nghĩa được mượn ngay?
@@ -2776,7 +2776,7 @@ HieuChinhDocGia kiểm khả năng đặt trạng thái thẻ, MuonSach còn h�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
 
 <a id="TV35"></a>
 ### TV35 — Successor chính là con phải
@@ -2797,7 +2797,7 @@ Sau đó succ->right=old->right không trỏ chính succ. Đổi thứ tự nố
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80).
 
 <a id="TV37"></a>
 ### TV37 — Một hàm xóa xử lý gốc lẫn con mà không trả gốc mới
@@ -2820,7 +2820,7 @@ Gán biến node cục bộ không tự thay ô sở hữu của caller. Cách c
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TimDocGia, dòng 3](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L3), [TimDocGia, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L8).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TimDocGia, dòng 3](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L3), [TimDocGia, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L8).
 
 <a id="TV39"></a>
 ### TV39 — Xóa hết hồ sơ bằng hàm hủy không phải nghiệp vụ
@@ -2841,7 +2841,7 @@ HuyCayDocGia chỉ nhận cây nên không đổi kho sách hay metadata của T
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HuyCayDocGia, dòng 98](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L98); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HuyThuVien, dòng 321](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L321).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HuyCayDocGia, dòng 98](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L98); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HuyThuVien, dòng 321](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L321).
 
 <a id="TV46"></a>
 ### TV46 — Yêu cầu gửi lại có phải cùng giao dịch hay một lượt mới?
@@ -2864,7 +2864,7 @@ Muốn hỗ trợ retry từ mạng phải chốt request ID/phạm vi/lưu kế
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [TimMuonDangMuonTheoMa, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L13).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [TimMuonDangMuonTheoMa, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L13).
 
 <a id="TV48"></a>
 ### TV48 — Tìm lại cuốn đã báo mất: khôi phục cần quy tắc gì?
@@ -2889,7 +2889,7 @@ Cần chốt quy tắc bảo tồn dấu vết, khả năng mượn lại, xử 
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV51"></a>
 ### TV51 — Gộp các lần quét lịch sử có làm đổi lỗi đầu tiên?
@@ -2914,7 +2914,7 @@ Một kết quả tạm gồm count /hasOverdue/ max giúp tránh vòng lặp l�
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [CoSachQuaHan7Ngay, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L8).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [CoSachQuaHan7Ngay, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L8).
 
 <a id="TV57"></a>
 ### TV57 — Kho vật lý đầy nhưng lịch sử còn chỗ: giao dịch cần tài nguyên nào?
@@ -2937,7 +2937,7 @@ C và H là hai giới hạn độc lập trong bản này. Gộp chúng thay ch
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
 
 <a id="TV62"></a>
 ### TV62 — Một lỗi lịch sử của người khác có chặn giao dịch không
@@ -2958,7 +2958,7 @@ KiemTraNoiBo kiểm mọi lịch sử nên lưu sẽ từ chối. Kiểm giao d�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV66"></a>
 ### TV66 — Ngày trả được ghi trước trạng thái không có cửa sổ UI chen vào
@@ -2979,7 +2979,7 @@ KiemTraNoiBo kiểm mọi lịch sử nên lưu sẽ từ chối. Kiểm giao d�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543).
 
 <a id="TV71"></a>
 ### TV71 — Parser nhận ngày nhưng cả bản ghi vẫn phải bị loại
@@ -3002,7 +3002,7 @@ KiemTraNoiBo từ chối hai phiếu mâu thuẫn trước swap RAM. Việc pars
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [DocNgay, dòng 91](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L91); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraNgayGiaoDich, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L13).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [DocNgay, dòng 91](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L91); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraNgayGiaoDich, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L13).
 
 <a id="TV73"></a>
 ### TV73 — Vì sao tính ngày bằng số thứ tự thay vì vòng lặp từng ngày?
@@ -3027,7 +3027,7 @@ Vòng tăng ngày có thể đúng nếu xử lý đầy đủ lịch nhưng m�
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoThuTuNgay, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L110); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [NamNhuan, dòng 83](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L83); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoThuTuNgay, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L110); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [NamNhuan, dòng 83](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L83); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
 
 <a id="TV74"></a>
 ### TV74 — Dùng abs cho khoảng cách ngày có che giao dịch ghi lùi?
@@ -3050,7 +3050,7 @@ Nếu một báo cáo muốn độ dài không hướng phải là yêu cầu ri
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [KhoangCachNgay, dòng 116](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L116); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraNgayGiaoDich, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L13); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [KhoangCachNgay, dòng 116](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L116); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraNgayGiaoDich, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L13); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21).
 
 <a id="TV85"></a>
 ### TV85 — Lưu–nạp: so cái gì để biết lịch sử vẫn thuộc đúng người?
@@ -3073,7 +3073,7 @@ Cần đối chiếu bản ghi lịch sử theo từng độc giả và trạng 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DungBST, dòng 85](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L85); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DungBST, dòng 85](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L85); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13).
 
 <a id="TV88"></a>
 ### TV88 — Lượt mất cũ bị mở thẻ bằng cách sửa RAM
@@ -3094,7 +3094,7 @@ HieuChinhDocGia chặn mở thẻ có lượt mất; loader/validator yêu cầu
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV94"></a>
 ### TV94 — Nhập một giao dịch nguyên khối nhiều cuốn
@@ -3115,7 +3115,7 @@ Thiết kế lô phải kiểm tập mã không trùng, hạn mức sau cả lô
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
 
 <a id="TV99"></a>
 ### TV99 — Ẩn hồ sơ đã ngừng dùng không xóa nghĩa vụ
@@ -3136,7 +3136,7 @@ Có thể có bộ lọc hiển thị thẻ khóa với nhãn rõ nhưng không 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261).
 
 <a id="TV201"></a>
 ### TV201 — Xóa một khoảng mã khi đang duyệt view
@@ -3157,7 +3157,7 @@ View con trỏ có lifetime phụ thuộc node; bản sao mã không bị delete
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13).
 
 <a id="TV202"></a>
 ### TV202 — Thẻ SO_NGUYEN_LON_NHAT vẫn hợp lệ khi đọc
@@ -3178,7 +3178,7 @@ Cận trên mở cần lớn hơn khóa int lớn nhất; tính SO_NGUYEN_LON_NH
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59).
 
 <a id="TV203"></a>
 ### TV203 — Dựng BST cân bằng không được nối nhánh cũ còn sót
@@ -3199,7 +3199,7 @@ Hàm hiện đặt left/right bằng kết quả đệ quy cho mọi node. Bỏ 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DungBST, dòng 85](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L85); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DungBST, dòng 85](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L85); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
 
 <a id="TV205"></a>
 ### TV205 — Nhập lô hồ sơ mới khác nạp thay thư viện
@@ -3220,7 +3220,7 @@ Bulk thêm phải cấp mã từ mốc hiện tại, giữ toàn bộ người/k
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DungBST, dòng 85](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L85).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DungBST, dòng 85](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L85).
 
 <a id="TV206"></a>
 ### TV206 — Người bị xóa có thể còn được hiển thị trong view
@@ -3241,7 +3241,7 @@ Hiệu chỉnh tên giữ node sống nhưng thứ tự view đã sắp có th�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
 
 <a id="TV209"></a>
 ### TV209 — Có phiếu mở nhưng ngày trả không rỗng trong RAM
@@ -3262,7 +3262,7 @@ KiemTraNoiBo có kiểm rõ lượt mở phải ngayTra=0/0/0 và sẽ từ ch�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV212"></a>
 ### TV212 — Tham số sửa tên alias với trường trong node
@@ -3283,7 +3283,7 @@ Nếu gán trực tiếp ho trước rồi mới đọc tham chiếu ten đang a
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68).
 
 <a id="TV214"></a>
 ### TV214 — Hai thẻ khóa không cho biết ai đã khóa
@@ -3304,7 +3304,7 @@ Thiết kế mở rộng cần danh tính người vận hành đáng tin, thẻ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DanhDauMatSach, dòng 138](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L138); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DanhDauMatSach, dòng 138](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L138); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261).
 
 <a id="TV215"></a>
 ### TV215 — Chuyển phiếu mở giữa hai độc giả không chỉ là nối danh sách
@@ -3325,7 +3325,7 @@ Bản hiện không có chuyển phiếu. Điều chỉnh cần quy tắc có x�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocGia, dòng 283](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L283); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocGia, dòng 283](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L283); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV216"></a>
 ### TV216 — Không thể chỉ khóa cuốn khi mở dịch vụ mượn
@@ -3338,6 +3338,8 @@ Bản hiện không có chuyển phiếu. Điều chỉnh cần quy tắc có x�
 
 Giao dịch cần phối hợp trạng thái độc giả/lịch sử và cuốn, kiểm lại trong cùng miền đồng bộ. Nếu dùng khóa, phải có thứ tự lấy khóa nhất quán để tránh chờ vòng; nếu dùng DB, cần ràng buộc/giao dịch tương ứng. Code console hiện tuần tự, chưa có các cơ chế đó.
 
+Bản console hiện có khóa toàn phiên theo file ở lớp điều phối; nó ngăn hai phiên hợp tác cùng sửa một đích, không cung cấp khóa độc giả/cuốn cho dịch vụ đa luồng giả định trong câu.
+
 **Đáp câu phụ 1:** Không; mutex nội bộ không phối hợp hai tiến trình độc lập, và file snapshot còn có nguy cơ mất cập nhật.
 
 **Sai lầm dễ mắc:** Khóa tài nguyên vật lý được coi là bảo vệ mọi bất biến nghiệp vụ.
@@ -3346,7 +3348,7 @@ Giao dịch cần phối hợp trạng thái độc giả/lịch sử và cuốn
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4).
 
 <a id="TV217"></a>
 ### TV217 — Trả và báo mất cùng một phiếu trong dịch vụ
@@ -3367,7 +3369,7 @@ Phải kiểm phiếu còn mở và cập nhật phiếu, cuốn, trạng thái 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
 
 <a id="TV218"></a>
 ### TV218 — Khóa có thứ tự để tránh hai yêu cầu chờ nhau
@@ -3388,7 +3390,7 @@ Cần thứ tự khóa chung cho mọi API, hoặc cơ chế giao dịch có ph�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
 
 <a id="TV219"></a>
 ### TV219 — Một triệu hồ sơ và giới hạn stack duyệt
@@ -3409,7 +3411,7 @@ Sau nâng giới hạn, cần tính mảng stack cấp theo MAX_DOC_GIA, nodes/v
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MAX_DOC_GIA, dòng 264](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L264); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MAX_DOC_GIA, dòng 264](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L264); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
 
 <a id="TV221"></a>
 ### TV221 — Sentinel ngày có chuỗi chuẩn riêng
@@ -3430,7 +3432,7 @@ DocNgay cho ngoại lệ ngày không hợp lệ dựa chuỗi chính xác s=="0
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [DocNgay, dòng 91](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L91); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuoiNgay, dòng 102](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L102); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [DocNgay, dòng 91](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L91); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuoiNgay, dòng 102](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L102); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261).
 
 <a id="TV222"></a>
 ### TV222 — Thêm lịch sử vào đầu để bỏ quét tail
@@ -3451,7 +3453,7 @@ DocNgay cho ngoại lệ ngày không hợp lệ dựa chuỗi chính xác s=="0
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261).
 
 <a id="TV224"></a>
 ### TV224 — Mốc đã cấp không phải số người còn hoạt động
@@ -3472,7 +3474,7 @@ Xóa làm số node giảm nhưng không giảm mốc; khóa chỉ đổi trạn
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [DemDocGia, dòng 28](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L28).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [DemDocGia, dòng 28](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L28).
 
 <a id="TV225"></a>
 ### TV225 — Họ tên hợp lệ nhưng phái sai ở khoảng trắng
@@ -3493,7 +3495,7 @@ Họ/tên là văn bản mô tả, phái là miền giá trị đóng. Nếu mu�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HopLeDocGia, dòng 30](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L30); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HopLeDocGia, dòng 30](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L30); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68).
 
 <a id="TV226"></a>
 ### TV226 — Chu trình lịch sử chặn đường chạy trước điểm commit giả lập
@@ -3516,7 +3518,7 @@ Trong ca này cuốn X vẫn rảnh và chưa cấp/nối phiếu mới; không 
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21).
 
 <a id="TV227"></a>
 ### TV227 — ThuVien không copy nhưng DocGia vẫn copy được
@@ -3537,7 +3539,7 @@ Hai hồ sơ sau copy có thể cùng trỏ một danh sách, gây đổi dữ l
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ThuVien, dòng 289](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L289); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocGia, dòng 283](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L283); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ChenDocGiaCoMa, dòng 46](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L46).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ThuVien, dòng 289](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L289); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocGia, dòng 283](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L283); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ChenDocGiaCoMa, dòng 46](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L46).
 
 <a id="TV228"></a>
 ### TV228 — Qua nửa đêm: ngày lịch khác thời lượng tính bằng giờ
@@ -3558,7 +3560,7 @@ Công thức ngày dân sự không chịu thay đổi độ dài ngày do DST, 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [KhoangCachNgay, dòng 116](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L116); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HomNay, dòng 117](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L117); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraNgayGiaoDich, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L13).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [KhoangCachNgay, dòng 116](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L116); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HomNay, dòng 117](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L117); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraNgayGiaoDich, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L13).
 
 <a id="TV229"></a>
 ### TV229 — Ngày máy lùi làm file cũ bị xem là tương lai
@@ -3579,7 +3581,7 @@ Công thức ngày dân sự không chịu thay đổi độ dài ngày do DST, 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HomNay, dòng 117](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L117); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HomNay, dòng 117](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L117); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543).
 
 <a id="TV230"></a>
 ### TV230 — Hủy trước parse và parse sai không cùng dấu hiệu
@@ -3600,7 +3602,7 @@ Hủy thay đổi trạng thái điều khiển, sai số giữ cùng trạng th
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ManHinhDocGia, dòng 133](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L133); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapSo, dòng 395](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L395); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [DocSoNguyen, dòng 61](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L61).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ManHinhDocGia, dòng 133](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L133); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapSo, dòng 439](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L439); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [DocSoNguyen, dòng 61](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L61).
 
 <a id="TV231"></a>
 ### TV231 — Đệ quy lúc dựng cây khác đệ quy trên cây nhập tăng
@@ -3621,7 +3623,7 @@ Hủy thay đổi trạng thái điều khiển, sai số giữ cùng trạng th
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DungBST, dòng 85](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L85); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HuyCayDocGia, dòng 98](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L98).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DungBST, dòng 85](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L85); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HuyCayDocGia, dòng 98](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L98).
 
 <a id="TV232"></a>
 ### TV232 — Kiểm khoảng mượn kề nhau có bỏ sót khoảng xa
@@ -3642,7 +3644,7 @@ Tính bắc cầu của thứ tự ngày bảo đảm lượt 1 kết thúc trư
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV233"></a>
 ### TV233 — Reset số đang giữ mỗi ngày làm mất sách qua đêm
@@ -3667,7 +3669,7 @@ Bản hiện reset khi đổi mã thẻ; nghĩa vụ của cùng người phải
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [MocMuon, dòng 79](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L79); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [MocMuon, dòng 79](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L79); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV234"></a>
 ### TV234 — Sắp sự kiện theo ngày trước mã thẻ
@@ -3688,7 +3690,7 @@ Bản hiện gom toàn bộ sự kiện mỗi người liên tiếp, cho phép m
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [MocMuon, dòng 79](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L79); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [MocMuon, dòng 79](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L79); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV235"></a>
 ### TV235 — Dữ liệu lịch sử tương lai dù --date là quá khứ
@@ -3709,7 +3711,7 @@ Khi trả ngày 10, kiểm timeline thấy ngày mượn 16 là mốc liên quan
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV236"></a>
 ### TV236 — Khoảng trắng trong số của file khác menu
@@ -3730,7 +3732,7 @@ Menu dung sai phục vụ nhập tay; file v1 hiện yêu cầu số thuần. M�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [DocSoNguyen, dòng 61](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L61); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [BoDoc, dòng 51](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L51); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapSo, dòng 395](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L395).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [DocSoNguyen, dòng 61](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L61); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [BoDoc, dòng 51](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L51); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapSo, dòng 439](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L439).
 
 <a id="TV237"></a>
 ### TV237 — Dòng cuối không newline và dòng rỗng dư
@@ -3751,7 +3753,7 @@ BoDoc.Dong phân biệt đã đọc ít nhất một ký tự với file kết t
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [BoDoc, dòng 51](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L51); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [BoDoc, dòng 51](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L51); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
 
 <a id="TV238"></a>
 ### TV238 — BOM chỉ được bỏ ở đầu file
@@ -3772,7 +3774,7 @@ UTF-8 đúng cú pháp không có nghĩa mọi code point được phép trong d
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [BoDoc, dòng 51](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L51); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeVanBan, dòng 38](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L38).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [BoDoc, dòng 51](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L51); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeVanBan, dòng 38](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L38).
 
 <a id="TV239"></a>
 ### TV239 — Giới hạn dòng và giới hạn trường bảo vệ hai thứ khác
@@ -3793,7 +3795,7 @@ Cận dòng giới hạn bộ nhớ trước khi parse/validate field; nếu ch�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [BoDoc, dòng 51](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L51); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeVanBan, dòng 38](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L38).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [BoDoc, dòng 51](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L51); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeVanBan, dòng 38](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L38).
 
 <a id="TV240"></a>
 ### TV240 — Count lịch sử của từng người không phải quota riêng 200.000
@@ -3814,7 +3816,7 @@ Ngân sách lịch sử là tổng thư viện, khác hạn mức đang giữ c�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
 
 <a id="TV241"></a>
 ### TV241 — Đếm lịch sử toàn thư viện trong validator với bộ nhớ theo cấu hình
@@ -3837,7 +3839,7 @@ Ngoài các buffer theo trần còn dau[nd] (D con trỏ), active[nc] (C bộ đ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Luot, dòng 78](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L78); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [MocMuon, dòng 79](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L79).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Luot, dòng 78](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L78); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [MocMuon, dòng 79](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L79).
 
 <a id="TV242"></a>
 ### TV242 — Kiểm RAM tùy ý không phải bộ cứu mọi con trỏ
@@ -3858,7 +3860,7 @@ Validator kiểm cấu trúc/giá trị trong miền đối tượng có thể t
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraToanVen, dòng 331](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L331); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraToanVen, dòng 331](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L331); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV243"></a>
 ### TV243 — Gộp hai người bằng cách nối lịch sử
@@ -3879,7 +3881,7 @@ Cần quy tắc xử lý danh tính, nghĩa vụ, mốc mã và audit; API xóa 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocGia, dòng 283](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L283); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocGia, dòng 283](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L283); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80).
 
 <a id="TV246"></a>
 ### TV246 — Sửa ngày trả trong file có thể phá hai phía
@@ -3900,7 +3902,7 @@ Sửa thời gian một lượt còn kéo dài số cuốn A giữ trong sweep �
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21).
 
 <a id="TV247"></a>
 ### TV247 — Đổi mọi ngày cùng một độ lệch có giữ toàn vẹn không
@@ -3921,28 +3923,28 @@ Không cộng trực tiếp trường ngay vì cuối tháng/năm. Sentinel khô
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoThuTuNgay, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L110); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoThuTuNgay, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L110); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21).
 
 <a id="TV248"></a>
-### TV248 — Mượn chưa lưu rồi thoát: mở lại có thể cho người khác mượn
+### TV248 — Tự lưu thành công và lỗi lưu trước khi đóng phiên
 
 **Thành · P2 · Hiện tại**. [Đọc lại câu hỏi](01_CAU_HOI.md#TV248).
 
-**Trả lời ngắn:** Không có log bền riêng nên bản mở lại chỉ biết file cũ; có thể cho B mượn theo dữ liệu đó dù vật lý không còn sách.
+**Trả lời ngắn:** Tự lưu thành công ghi lượt A và trạng thái X trước thông báo giao dịch thành công; mở lại sẽ chặn B vì X đang mượn. Nếu tự lưu lỗi, RAM có lượt A nhưng file cũ còn X rảnh; đóng tiến trình khi chưa lưu lại vẫn có nguy cơ mất sự kiện và cho B mượn theo snapshot cũ.
 
 **Giải thích và bảo vệ cách làm:**
 
-Phân biệt trạng thái chương trình và thực tế quầy. Cần kiểm kệ/phiếu nguồn, khôi phục dữ liệu đúng theo quy trình; muốn giảm cửa sổ mất sự kiện cần thiết kế lưu sau giao dịch hoặc nhật ký bền có xử lý lỗi, hiện chưa có.
+LuuSauThayDoi đặt chuaLuu trước khi ghi; lỗi giữ cờ và RAM, báo rõ chưa lưu. Menu chặn các mục sửa và NAP, vẫn cho xem và thử F5. Chỉ F5 thành công mới xóa cờ; thoát có xác nhận không hoàn tác dữ liệu đã tự lưu. Không có cam kết chống mất điện ở giữa commit RAM và ghi đĩa; cần đối soát thực tế khi đã báo lỗi lưu.
 
-**Đáp câu phụ 1:** Không; phải gắn lưu bền với commit thành công và định nghĩa kết quả nếu lưu thất bại. Tần suất lưu không thay hợp đồng độ bền.
+**Đáp câu phụ 1:** Không. API nghiệp vụ giữ hợp đồng RAM; các màn hình gọi LuuSauThayDoi khi API trả thành công trong phiên ứng dụng đã bật tự lưu. Caller khác phải quản lưu riêng.
 
 **Sai lầm dễ mắc:** Trạng thái file hợp lệ được coi là luôn khớp sách ngoài đời.
 
-**Cách kiểm chứng:** Đề xuất: hai tiến trình nối tiếp trên fixture, lần đầu thoát không lưu; kiểm file không có lượt A. Không dùng dữ liệu nhóm.
+**Cách kiểm chứng:** Chạy tiến trình thật, thêm người và chờ dữ liệu tự lưu rồi dừng tiến trình, mở lại kiểm nội dung; dùng file chỉ đọc gây lỗi lưu, kiểm bản cũ giữ nguyên, chặn sửa/nạp và F5 phục hồi. Không dùng dữ liệu nhóm.
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [LuuSauThayDoi, dòng 515](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L515).
 
 <a id="TV249"></a>
 ### TV249 — Đổi hạn mức 3 thành tham số cấu hình
@@ -3963,7 +3965,7 @@ Cần thống nhất tham số/ràng buộc tại API, kiểm toàn vẹn và nh
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV250"></a>
 ### TV250 — Giảm hạn mức không thể sửa bằng xóa phiếu
@@ -3984,7 +3986,7 @@ Validator lịch sử cần biết phiên bản/quãng hiệu lực chính sách
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50).
 
 <a id="TV251"></a>
 ### TV251 — Tìm thẻ lặp trong một thao tác UI có đáng loại
@@ -4005,7 +4007,7 @@ Bản hiện các bước chạy tuần tự nên pointer còn sống trong màn
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
 
 <a id="TV252"></a>
 ### TV252 — Nạp lại thay đổi hình cây nhưng không là cân bằng liên tục
@@ -4018,6 +4020,8 @@ Bản hiện các bước chạy tuần tự nên pointer còn sống trong màn
 
 Mọi con trỏ/view cũ bị vô hiệu. Chi phí theo toàn thư viện D/C/R/H và I/O có thể lớn hơn lợi ích một lần tìm; cũng không được nạp file cũ nếu lưu trước đó thất bại. Đây không phải AVL tự cân bằng.
 
+Menu hiện tự lưu sau thêm nhưng không tự nạp để cân bằng cây; nạp khi còn cờ lỗi tự lưu bị chặn. Phân tích lưu–nạp mỗi lần là đề xuất thuật toán riêng, không mô tả thêm tự động hiện tại.
+
 **Đáp câu phụ 1:** Có thể mất các thay đổi chưa lưu. Phải kiểm đúng kết quả lưu và cân nhắc cách tái cân bằng trong RAM được phép, không dùng I/O mù.
 
 **Sai lầm dễ mắc:** Cải thiện h được đo mà bỏ mọi chi phí/lỗi của đường lưu–nạp.
@@ -4026,7 +4030,7 @@ Mọi con trỏ/view cũ bị vô hiệu. Chi phí theo toàn thư viện D/C/R/
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DungBST, dòng 85](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L85); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DungBST, dòng 85](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L85); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59).
 
 <a id="TV253"></a>
 ### TV253 — Ghi hồ sơ theo tên cần giữ lịch sử đi cùng mã
@@ -4047,7 +4051,7 @@ Phải xuất hồ sơ và danh sách lịch sử từ cùng node được chọ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
 
 <a id="TV254"></a>
 ### TV254 — Định dạng không có số phiên bản: phát hiện nhầm schema
@@ -4068,7 +4072,7 @@ Phải xuất hồ sơ và danh sách lịch sử từ cùng node được chọ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [BoDoc, dòng 51](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L51).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [BoDoc, dòng 51](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L51).
 
 <a id="TV255"></a>
 ### TV255 — Hồ sơ mới mang trạng thái hoạt động ở đâu
@@ -4089,7 +4093,7 @@ Việc HopLeDocGia được gọi với THE_HOAT_DONG để kiểm đầu vào k
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocGia, dòng 283](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L283); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ManHinhDocGia, dòng 133](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L133).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocGia, dòng 283](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L283); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ManHinhDocGia, dòng 133](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L133).
 
 <a id="TV257"></a>
 ### TV257 — Trùng mã ở xa nhau trong file được phát hiện sau bước nào
@@ -4110,7 +4114,7 @@ Tính duy nhất cần xét toàn tập. Dựng cây chứa khóa trùng phá b�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DungBST, dòng 85](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L85).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DungBST, dòng 85](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L85).
 
 <a id="TV258"></a>
 ### TV258 — Hai file cùng mã người nhưng lịch sử xung đột khi hợp nhất
@@ -4131,7 +4135,7 @@ Phải xác minh danh tính nào là cùng đối tượng thật, ánh xạ ri�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ChenDocGiaCoMa, dòng 46](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L46); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocGia, dòng 283](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L283).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ChenDocGiaCoMa, dòng 46](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L46); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocGia, dòng 283](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L283).
 
 <a id="TV259"></a>
 ### TV259 — Chọn predecessor thay successor khi xóa hai con
@@ -4152,7 +4156,7 @@ Phải xác minh danh tính nào là cùng đối tượng thật, ánh xạ ri�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80).
 
 <a id="TV260"></a>
 ### TV260 — Xóa một phần lịch sử để sửa số đang giữ
@@ -4173,7 +4177,7 @@ Trả phải kết thúc phiếu và đổi cuốn, giữ lịch sử để top/
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV301"></a>
 ### TV301 — Đúng với cha nhưng sai khoảng khóa của tổ tiên
@@ -4196,7 +4200,7 @@ KiemTraNoiBo truyền khoảng mở (lo,hi) theo tổ tiên: gốc(0,SO_NGUYEN_L
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TimDocGia, dòng 3](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L3), [TimDocGia, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L8); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TimDocGia, dòng 3](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L3), [TimDocGia, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L8); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV23"></a>
 ### TV23 — Độc giả chỉ giữ một cuốn nhưng mượn vẫn chậm
@@ -4219,7 +4223,7 @@ Cận gộp gồm O(h+chi phí tìm cuốn+R+H+H_A), chưa tính chuỗi; với 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4).
 
 <a id="TV24"></a>
 ### TV24 — Gọi helper chèn trực tiếp có bỏ qua mốc mã?
@@ -4242,7 +4246,7 @@ Luồng cấp mã chuẩn là ThemDocGia: kiểm điều kiện, chọn mốc+1,
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ChenDocGiaCoMa, dòng 46](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L46); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ChenDocGiaCoMa, dòng 46](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L46); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV27"></a>
 ### TV27 — Xem lịch sử mới nhất trước nhưng giữ danh sách gốc
@@ -4267,7 +4271,7 @@ Cụ thể, gom (con trỏ lượt, vị trí gốc, số thứ tự ngày) vào
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MuonTra, dòng 279](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L279).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MuonTra, dòng 279](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L279).
 
 <a id="TV67"></a>
 ### TV67 — Gia hạn bảy ngày bằng sửa ngày mượn
@@ -4288,7 +4292,7 @@ Bản hiện tại không có gia hạn. Cần hỏi đặc tả và quyền b�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MuonTra, dòng 279](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L279); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MuonTra, dòng 279](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L279); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV68"></a>
 ### TV68 — Hoàn tác lần trả gần nhất
@@ -4309,7 +4313,7 @@ Không có undo hiện tại. Mở rộng cần kiểm chuỗi phụ thuộc và
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV75"></a>
 ### TV75 — Không quá hạn hay dữ liệu không tính được?
@@ -4332,7 +4336,7 @@ Nếu cần báo đủ nguyên nhân, thiết kế kết quả valid/overdue ho�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [CoSachQuaHan7Ngay, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L8); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [QuaHan7Ngay, dòng 121](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L121); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [CoSachQuaHan7Ngay, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L8); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [QuaHan7Ngay, dòng 121](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L121); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144).
 
 <a id="TV76"></a>
 ### TV76 — Phiên mở qua nửa đêm
@@ -4353,7 +4357,7 @@ HomNay trong kiểm không tương lai được gọi lại, nhưng không tự 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraNgayGiaoDich, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L13).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraNgayGiaoDich, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L13).
 
 <a id="TV89"></a>
 ### TV89 — Ghi file bằng sizeof(DocGia)
@@ -4374,7 +4378,7 @@ Phải tuần tự hóa từng trường và node rồi dựng lại liên kết
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocGia, dòng 283](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L283); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocGia, dòng 283](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L283); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
 
 <a id="TV93"></a>
 ### TV93 — Một màn hình cần nhiều số liệu độc giả: quét hay lưu bộ đếm?
@@ -4397,7 +4401,7 @@ Cache lâu dài phải cập nhật mọi thao tác kể cả chỉ qua ngày l�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [CoSachQuaHan7Ngay, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L8); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [TongQuan, dòng 246](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L246).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [CoSachQuaHan7Ngay, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L8); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [TongQuan, dòng 290](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L290).
 
 <a id="TV96"></a>
 ### TV96 — Dừng sau khi thấy ba lượt mở có còn đúng với mọi caller?
@@ -4420,7 +4424,7 @@ Có thể tách predicate hoặc tham số giới hạn với tên/hợp đồng
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV98"></a>
 ### TV98 — Nhập lịch sử cũ thay cho giao dịch hiện tại
@@ -4441,7 +4445,7 @@ Nhập lịch sử cần kiểm chồng cuốn, hạn mức từng thời điể
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TV100"></a>
 ### TV100 — Một ca ở quầy có bốn yêu cầu liên tiếp và hai lần thất bại
@@ -4456,6 +4460,8 @@ Xin W bị khóa chặn, W vẫn rảnh; trả Y được. Cuối ca A giữ 0 c
 
 Mỗi lời gọi là thao tác riêng, thất bại của một bước không hoàn tác thành công trước đó. Thông báo phải theo từng bước và lưu file là bước khác.
 
+Nếu thực hiện qua menu, mỗi API thành công còn được tự lưu trước khi nhận thao tác kế tiếp. Bảng trạng thái nghiệp vụ trên vẫn đúng; lỗi tự lưu thì dừng chuỗi sửa tới khi F5 thành công. Gọi các API trực tiếp trong harness không tự lưu.
+
 **Đáp câu phụ 1:** Không; cần kết quả từng lời gọi và phiếu/cuốn liên quan. Nhiều chuỗi khác nhau có cùng số cuối.
 
 **Sai lầm dễ mắc:** Hậu trạng thái tổng hợp duy nhất đủ mô tả mọi giao dịch trong ca.
@@ -4464,7 +4470,7 @@ Mỗi lời gọi là thao tác riêng, thất bại của một bước không 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KetThucMuon, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L50); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68).
 
 
 <a id="tan"></a>
@@ -4491,7 +4497,7 @@ Nếu đổi cả bản ghi giữa vị trí cây, mã có thể nằm sai nhán
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TimDocGia, dòng 3](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L3), [TimDocGia, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L8).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TimDocGia, dòng 3](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L3), [TimDocGia, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L8).
 
 <a id="TN02"></a>
 ### TN02 — In theo thể loại rồi thêm đầu sách
@@ -4514,7 +4520,7 @@ Lower bound chỉ đúng khi mảng đã tăng theo cùng bộ so tên–ISBN; s
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39).
 
 <a id="TN03"></a>
 ### TN03 — Có tám lượt lịch sử nhưng chỉ giữ hai cuốn
@@ -4537,7 +4543,7 @@ Một mã cuốn có nhiều lần mượn; trạng thái lượt mới quyết 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4).
 
 <a id="TN05"></a>
 ### TN05 — Tên bằng nhau, heap sort có đảo kết quả ngẫu nhiên?
@@ -4562,7 +4568,7 @@ SoSanhChuoi không đối chiếu từ điển tiếng Việt đầy đủ; dữ
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoSanhChuoi, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L23).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoSanhChuoi, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L23).
 
 <a id="TN201"></a>
 ### TN201 — Một nút được đưa vào view đúng một lần
@@ -4583,7 +4589,7 @@ Stack giữ các tổ tiên còn chờ xuất sau nhánh trái. Sau xuất 20, �
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13).
 
 <a id="TN09"></a>
 ### TN09 — Bản xuất có dòng quá dài nhưng xem chi tiết không phải sửa dữ liệu
@@ -4604,7 +4610,7 @@ HienThiPhanTrang lấy lát dòng đầy đủ rồi DongBang chỉ trình bày 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [DongBang, dòng 213](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L213); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [XemChiTiet, dòng 225](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L225); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [DongBang, dòng 257](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L257); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [XemChiTiet, dòng 269](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L269); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477).
 
 <a id="TN19"></a>
 ### TN19 — In mã tăng bằng duyệt trực tiếp hay phải tạo view?
@@ -4627,7 +4633,7 @@ Nếu tiếp tục ghi LuongChuoi thì vẫn giữ toàn báo cáo; tối ưu c�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70).
 
 <a id="TN21"></a>
 ### TN21 — Kết quả mới chỉ ghi một phần khi mảng view thiếu chỗ
@@ -4652,7 +4658,7 @@ out=nullptr là chế độ chỉ đếm: kiểm capacity chỉ áp khi out khá
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
 
 <a id="TN29"></a>
 ### TN29 — Một thể loại bị in thành nhiều nhóm dù sort đúng
@@ -4675,7 +4681,7 @@ Chuẩn hóa hiện tại không case-fold tiếng Việt đầy đủ; không m
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoSanhChuoi, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L23).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoSanhChuoi, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L23).
 
 <a id="TN30"></a>
 ### TN30 — Vì sao phải sắp view thể loại khi kho đã sắp tên?
@@ -4698,7 +4704,7 @@ View hiện tại sort thể loại–tên– ISBN bằng insertion sort O(D²),
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39).
 
 <a id="TN38"></a>
 ### TN38 — Gộp hai cuốn cùng tên trên bảng rồi trả một cuốn
@@ -4721,7 +4727,7 @@ Sau trả một, số đang giữ giảm 1, top không tăng hay giảm; lịch 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TraSach, dòng 135](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L135); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TraSach, dòng 135](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L135); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InTop10SachDuocMuonNhieuNhat, dòng 168](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L168).
 
 <a id="TN43"></a>
 ### TN43 — Xem sách đang giữ rồi hủy: giao dịch bắt đầu từ lúc nào?
@@ -4744,7 +4750,7 @@ Preview chỉ giúp UI, không thay kiểm tại lời gọi chính; nếu mở 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [BieuMau, dòng 317](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L317); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [BieuMau, dòng 361](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L361); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
 
 <a id="TN48"></a>
 ### TN48 — Đầu ra báo cáo có được dùng làm đầu vào loader
@@ -4765,7 +4771,7 @@ Thiếu metadata và dữ liệu không hiển thị; đổi một nhãn không 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [Ghi, dòng 261](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L261); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210).
 
 <a id="TN49"></a>
 ### TN49 — Một phím mang nhiều ý nghĩa: lỗi nếu xử lý toàn cục
@@ -4788,7 +4794,7 @@ Dữ liệu form cục bộ chưa commit trước xác nhận; giao dịch đã 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [DocPhimConsole, dòng 107](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L107); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [BieuMau, dòng 317](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L317); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChonMenu, dòng 402](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L402); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [DocPhimConsole, dòng 151](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L151); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [BieuMau, dòng 361](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L361); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChonMenu, dòng 446](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L446); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543).
 
 <a id="TN53"></a>
 ### TN53 — Xóa nội dung trên form rồi hủy có xóa hồ sơ thật không?
@@ -4811,20 +4817,18 @@ Bind trực tiếp sẽ sửa dữ liệu trước quyết định và cần rol
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [BieuMau, dòng 317](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L317); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ManHinhDocGia, dòng 133](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L133); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [BieuMau, dòng 361](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L361); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ManHinhDocGia, dòng 133](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L133); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68).
 
 <a id="TN54"></a>
 ### TN54 — Ba mốc 'xác nhận', 'đã thêm', 'đã lưu' có cùng nghĩa không?
 
 **Tấn · P2 · Hiện tại**. [Đọc lại câu hỏi](01_CAU_HOI.md#TN54).
 
-**Trả lời ngắn:** Form true chỉ là người dùng xác nhận trường nhập; số trang abc vẫn bị parse chặn, chưa thêm đầu.
+**Trả lời ngắn:** Form true chỉ nhận đầu vào; abc vẫn bị parse chặn. ThemDauSach thành công tạo dữ liệu RAM. Màn hình sau đó gọi LuuSauThayDoi trước thông báo thêm thành công; khi tự lưu đạt, dữ liệu đã có trên đĩa.
 
 **Giải thích và bảo vệ cách làm:**
 
-Sau sửa 100 và ThemDauSach thành công, đầu có trong RAM; chưa chắc nằm trên đĩa. Đóng tiến trình trước lưu có thể mất thay đổi đó.
-
-Thông báo nên phân biệt nhận biểu mẫu, cập nhật RAM và LuuFile thành công. Không lấy một bool ở tầng nhập làm bằng chứng tất cả tầng đã hoàn tất.
+Nếu tự lưu thất bại thì RAM đã đổi, file chưa nhận bản mới; chương trình báo chưa lưu, chặn sửa/nạp tiếp và cho thử F5. Đóng cửa sổ trong trạng thái lỗi này vẫn có thể mất thay đổi. Không lấy riêng bool của biểu mẫu hoặc API RAM làm bằng chứng đã lưu.
 
 **Đáp câu phụ 1:** Không; đã thêm RAM nhưng chưa lưu đĩa. Thông báo gộp có thể dẫn người dùng thêm lặp.
 
@@ -4834,32 +4838,30 @@ Thông báo nên phân biệt nhận biểu mẫu, cập nhật RAM và LuuFile 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [BieuMau, dòng 317](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L317); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ManHinhNhapDauSach, dòng 124](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L124); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [BieuMau, dòng 361](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L361); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ManHinhNhapDauSach, dòng 124](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L124); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [LuuSauThayDoi, dòng 515](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L515).
 
 <a id="TN56"></a>
 ### TN56 — Chạy kịch bản nhập liệu bị hết stdin giữa hồ sơ
 
 **Tấn · P2 · Hiện tại**. [Đọc lại câu hỏi](01_CAU_HOI.md#TN56).
 
-**Trả lời ngắn:** Chuỗi nhập dừng trước ThemDocGia cho B, nên không tạo B hay tiêu thụ mã. A đã commit vẫn chỉ ở RAM nếu chưa lưu.
+**Trả lời ngắn:** EOF trước khi nhập đủ hồ sơ B không gọi ThemDocGia nên không tạo B hay tiêu thụ mã. A đã hoàn tất qua menu sẽ được tự lưu trước khi hỏi tiếp; nếu tự lưu thành công, EOF không làm mất A.
 
 **Giải thích và bảo vệ cách làm:**
 
-Vòng chính gặp cin lỗi sẽ thoát không tự lưu, trả 0 trong đường hiện tại; exit code 0 không tự chứng minh mọi lệnh dự kiến đã được xử lý/lưu.
-
-Script kiểm thử cần quan sát thông báo lưu và đọc/kiểm file đích, đối chiếu dữ liệu mong đợi; không chỉ nhìn process exitcode.
+EOF không tự thử lưu lại phần RAM đã báo lỗi tự lưu. Mã thoát bình thường không xác nhận mọi lệnh dự kiến đã chạy; script cần đọc file, kiểm A có/B không có và kiểm cảnh báo lưu.
 
 **Đáp câu phụ 1:** Không; EOF chỉ không tự ghi thêm. Snapshot đã lưu vẫn tồn tại.
 
 **Sai lầm dễ mắc:** Thoát không tự lưu nghĩa mất cả những dữ liệu đã lưu trước đó.
 
-**Cách kiểm chứng:** Đề xuất kiểm chứng: Tạo input cố ý cắt giữa B trên file tạm, so file trước sau; thêm một kịch bản đầy đủ có lưu để đối chiếu.
+**Cách kiểm chứng:** Chạy CLI trên file thử, gửi thêm A đủ trường và B thiếu trường, đối chiếu file sau EOF; tách ca tự lưu lỗi khỏi ca lưu thành công.
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ManHinhDocGia, dòng 133](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L133); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapDong, dòng 386](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L386); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ManHinhDocGia, dòng 133](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L133); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapDong, dòng 430](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L430); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [LuuSauThayDoi, dòng 515](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L515).
 
 <a id="TN57"></a>
 ### TN57 — Tên vừa ô nhập nhưng vượt giới hạn lưu theo byte
@@ -4882,7 +4884,7 @@ Cắt chỉ bản vẽ không làm chuỗi gốc ngắn; cắt dữ liệu tùy 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [BieuMau, dòng 317](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L317); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [TuUTF16, dòng 24](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L24); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeVanBan, dòng 38](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L38).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [BieuMau, dòng 361](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L361); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [TuUTF16, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L68); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeVanBan, dòng 38](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L38).
 
 <a id="TN64"></a>
 ### TN64 — Thêm nút trả trên bảng h: dòng được chọn phải mang dữ liệu gì?
@@ -4905,7 +4907,7 @@ Cần ánh xạ dòng dữ liệu→mã thẻ, mã cuốn riêng và vô hiệu 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TraSach, dòng 135](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L135).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [TraSach, dòng 135](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L135).
 
 <a id="TN67"></a>
 ### TN67 — Đổi kích thước ở trang cuối: giữ bản ghi hay giữ số trang?
@@ -4928,24 +4930,20 @@ Giữ số trang cứng có thể nhảy đến nhóm dòng khác khi step đổ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477).
 
 <a id="TN73"></a>
 ### TN73 — Xác nhận NAP bị hủy: đường dẫn mới có được giữ làm đích lưu?
 
 **Tấn · P2 · Hiện tại**. [Đọc lại câu hỏi](01_CAU_HOI.md#TN73).
 
-**Trả lời ngắn:** Sai từ khóa hoặc hủy chưa gọi DocFile, RAM/path vẫn của A; F5 lưu vào A. next chỉ là đường dẫn ứng viên, không được đổi đích lưu trước khi chấp nhận phiên mới.
+**Trả lời ngắn:** Sai từ khóa hoặc hủy giữ RAM/path/khóa A; F5 ghi A. Xác nhận đúng gọi NapPhien: chuẩn bị path B và lấy khóa B trước khi DocFile nạp. Thành công mới swap path/khóa; dữ liệu A đã tự lưu vẫn còn trên đĩa, việc nạp không ghi lại A.
 
 **Giải thích và bảo vệ cách làm:**
 
-NAP đúng và DocFile thành công thay RAM bằng B rồi đặt path=B. Không có bước tự lưu các thay đổi A trước đó, nên phải lưu A nếu muốn giữ; file A trên đĩa không bị viết bởi việc nạp B.
+B hỏng hoặc khóa B không lấy được thì phiên A giữ nguyên. Nếu còn chuaLuu do tự lưu lỗi, menu chặn NAP trước khi hỏi đường dẫn; cần F5 thành công trước. TN82 mô tả cách chuyển context không cấp phát sau commit.
 
-Gán path quá sớm khiến hủy nạp vẫn có thể ghi RAM của A lên B chưa được nạp. Nếu chính DocFile thất bại trước swap, phiên A vẫn giữ nguyên.
-
-Phân biệt thành công nạp với toàn thao tác UI: trường hợp hiếm gán path ném ngoại lệ sau khi RAM đã swap được xét tại TN82; không hứa mọi lỗi đều rollback cả hai.
-
-**Đáp câu phụ 1:** DocFile lỗi trước swap giữ RAM/path A, nên F5 lưu cả giao dịch chưa ghi của A vào A; B không bị ghi. So nội dung/hash hai file và dữ liệu A vừa thêm, không chỉ kiểm một chữ lỗi.
+**Đáp câu phụ 1:** NAP bị chặn, nên chưa đọc B hoặc đổi đường dẫn. F5 thử ghi dữ liệu RAM của A vào A. Khi ghi thành công mới được nạp B; B không bị ảnh hưởng bởi F5 này.
 
 **Sai lầm dễ mắc:** Nhập đường dẫn mới là đã chuyển đích lưu.
 
@@ -4955,7 +4953,7 @@ Phân biệt thành công nạp với toàn thao tác UI: trường hợp hiếm
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocFile, dòng 336](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L336); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocFile, dòng 336](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L336); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NapPhien, dòng 37](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L37).
 
 <a id="TN75"></a>
 ### TN75 — Gõ sai đường dẫn lúc mở ứng dụng và lúc NAP khác nhau
@@ -4972,6 +4970,8 @@ Cần xem đường dẫn tuyệt đối, thư mục làm việc và thông báo
 
 Nếu file --data tồn tại nhưng DocFile thất bại, ChayUngDung báo lỗi và trả mã 2 trước menu, không cho ghi đè bằng dữ liệu rỗng. Cần phân biệt đường dẫn mới, file không mở được và file đang có nhưng không hợp lệ.
 
+Trong phiên hiện tại, đường dẫn được chuyển thành tuyệt đối và lấy khóa file trước khi đọc. File mới được tạo khi tự lưu sau thao tác đầu thành công hoặc khi chọn Lưu; chỉ mở rồi thoát chưa tạo snapshot dữ liệu. Lỗi tự lưu đang chờ xử lý sẽ chặn NAP.
+
 **Đáp câu phụ 1:** Chưa; xác minh đích tuyệt đối/cwd trước, tránh tạo thêm kho thứ hai và nhầm nguồn.
 
 **Sai lầm dễ mắc:** Thấy kho rỗng là bằng chứng loader đã xóa file cũ.
@@ -4982,7 +4982,7 @@ Nếu file --data tồn tại nhưng DocFile thất bại, ChayUngDung báo lỗ
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocFile, dòng 336](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L336).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocFile, dòng 336](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L336).
 
 <a id="TN79"></a>
 ### TN79 — Cùng exe, mỗi thành viên thấy một thư viện khác
@@ -4999,6 +4999,8 @@ Không ghi lại/xóa file để'chữa' trước khi tìm đúng đích. Sau b�
 
 Khoảng trắng không được quote có thể tách thành nhiều đối số; bản này gặp đối số dư không nhận biết thì in hướng dẫn và trả 2 trước khi nạp. main lấy GetCommandLineW, DocDoiSoWindows tự tách quote/backslash và DuongDanUTF8 đổi từng đối số sang UTF-8; chúng không tự đoán ghép lại đường dẫn người dùng muốn.
 
+Sau khi giải đường dẫn từ cwd, path trong phiên được giữ ở dạng tuyệt đối. Hai phiên của bản này cùng đích bị khóa file phụ chặn; hai cwd dẫn tới hai file khác nhau vẫn là hai kho độc lập.
+
 **Đáp câu phụ 1:** Không; đích phụ thuộc cwd, không nhất thiết thư mục chứa exe. Launcher phải chốt một cách rõ ràng.
 
 **Sai lầm dễ mắc:** Đường dẫn tương đối luôn tính từ chỗ đặt exe.
@@ -5007,7 +5009,7 @@ Khoảng trắng không được quote có thể tách thành nhiều đối s�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuNoiBo, dòng 278](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L278); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocDoiSoWindows, dòng 139](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L139).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuNoiBo, dòng 278](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L278); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocDoiSoWindows, dòng 139](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L139).
 
 <a id="TN84"></a>
 ### TN84 — Ghi log console làm đổi đường UI nhưng không được đổi nghiệp vụ
@@ -5030,7 +5032,7 @@ CLI test chứng minh luồng dòng và phần nghiệp vụ nó thực đi qua,
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapBieuMau, dòng 380](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L380).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapBieuMau, dòng 424](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L424).
 
 <a id="TN88"></a>
 ### TN88 — Parse sai nhưng thao tác nhầm độc giả của lần trước
@@ -5053,7 +5055,7 @@ Tách biến đầu vào tạm và kết quả parse, nêu đúng người trư�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [DocSoNguyen, dòng 61](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L61); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ManHinhDocGia, dòng 133](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L133); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [DocSoNguyen, dòng 61](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L61); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ManHinhDocGia, dòng 133](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L133); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80).
 
 <a id="TN202"></a>
 ### TN202 — Mảng đã tăng nhưng bị mất một người
@@ -5076,7 +5078,7 @@ Kiểm số lượng, tần suất mỗi mã trước/sau và quan hệ từng m
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
 
 <a id="TN203"></a>
 ### TN203 — Vì sao dựng heap từ nửa sau trở về đầu
@@ -5097,7 +5099,7 @@ Khi vun root 2 rồi 1, các cây con đã là heap; root 0 dựa vào điều �
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
 
 <a id="TN204"></a>
 ### TN204 — Duyệt Morris có thật sự là báo cáo chỉ đọc
@@ -5118,7 +5120,7 @@ Morris có thể dùng O(1) bộ nhớ phụ nếu hoàn tất và phục hồi 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106).
 
 <a id="TN205"></a>
 ### TN205 — Bảng mã giảm dần không cần sắp lại
@@ -5139,7 +5141,7 @@ Duyệt ngược O(R), stack hoạt động O(h); đảo view O(R) sau khi dựn
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106).
 
 <a id="TN206"></a>
 ### TN206 — Lọc một khoảng mã có cần xem cả cây
@@ -5160,7 +5162,7 @@ Bất biến BST cho phép cắt nhánh ngoài khoảng. Duyệt có cắt nhán
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TimDocGia, dòng 3](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L3), [TimDocGia, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L8); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TimDocGia, dòng 3](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L3), [TimDocGia, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L8); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13).
 
 <a id="TN207"></a>
 ### TN207 — Nhảy tới người thứ k không phải tìm mã k
@@ -5181,7 +5183,7 @@ Có thể duyệt inorder đếm tới k với O(h+k), hoặc bổ sung kích th
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TimDocGia, dòng 3](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L3), [TimDocGia, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L8); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [NutDocGia, dòng 287](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L287).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TimDocGia, dòng 3](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L3), [TimDocGia, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L8); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [NutDocGia, dòng 287](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L287).
 
 <a id="TN208"></a>
 ### TN208 — Chọn mười tên đầu khi R lớn
@@ -5202,7 +5204,7 @@ Sau duyệt phải sắp 10 phần tử để xuất tăng. Chi phí O(R log 10+
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39).
 
 <a id="TN209"></a>
 ### TN209 — Tìm tiền tố trên view tên đã sắp
@@ -5223,7 +5225,7 @@ Có thể lower_bound theo khóa tên chuẩn hóa rồi quét đến khi hết 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [KhoaSoSanh, dòng 18](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L18); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [KhoaSoSanh, dòng 18](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L18); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27).
 
 <a id="TN210"></a>
 ### TN210 — Độ sâu duyệt cây và độ sâu sort không cùng cận
@@ -5244,7 +5246,7 @@ Merge cần buffer O(R) con trỏ để trộn và có thể giữ tính ổn đ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DungBST, dòng 85](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L85).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DungBST, dòng 85](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L85).
 
 <a id="TN211"></a>
 ### TN211 — Sao chép dữ liệu để sắp thay vì sao chép con trỏ
@@ -5265,7 +5267,7 @@ Tốn thêm bộ nhớ/cấp phát chuỗi O(RL) so với O(R) con trỏ. Nếu 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocGia, dòng 283](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L283).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocGia, dòng 283](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L283).
 
 <a id="TN212"></a>
 ### TN212 — Sắp tên bằng so bản ghi đã định dạng
@@ -5286,7 +5288,7 @@ Padding có thể sửa một sai khác số và chữ nhưng vẫn dùng nhầm
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InMotDocGia, dòng 36](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L36).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InMotDocGia, dòng 36](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L36).
 
 <a id="TN213"></a>
 ### TN213 — Bỏ điều kiện count vì tin caller luôn đúng
@@ -5307,7 +5309,7 @@ Liên kết vòng có thể làm push liên tục tới cận rồi ném lỗi h
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [DemDocGia, dòng 28](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L28).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [DemDocGia, dòng 28](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L28).
 
 <a id="TN214"></a>
 ### TN214 — Chèn đầu sách đã tăng có làm view thể loại luôn rẻ
@@ -5328,7 +5330,7 @@ Kho A gần đúng thứ tự báo cáo nên ít dịch, gần O(D) so; kho B c�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94).
 
 <a id="TN215"></a>
 ### TN215 — Bảo toàn thứ tự đầu vào khi bỏ khóa mã khỏi yêu cầu
@@ -5349,7 +5351,7 @@ Phải chốt tập đầu vào và ordinal lựa chọn, rồi dùng khóa tên
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39).
 
 <a id="TN216"></a>
 ### TN216 — Chỉ xem một thể loại mà vẫn sắp toàn kho
@@ -5370,7 +5372,7 @@ Chi phí O(D) phép kiểm khóa cộng chi phí chuỗi/đầu ra, không cần
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoSanhChuoi, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L23).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoSanhChuoi, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L23).
 
 <a id="TN217"></a>
 ### TN217 — Gộp hai danh sách thể loại đã sắp
@@ -5391,7 +5393,7 @@ Hai view phải thuộc cùng snapshot nguồn và có tập ISBN rời nhau the
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoISBN, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L50).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimDauSachTheoISBN, dòng 50](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L50).
 
 <a id="TN218"></a>
 ### TN218 — Tên nhóm đầu trang không phải nhóm mới
@@ -5412,7 +5414,7 @@ Hiện d sinh text trước, phân trang không hiểu nhóm. Thiết kế mới
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477).
 
 <a id="TN219"></a>
 ### TN219 — Liệt kê h khi độc giả còn nhưng không giữ sách
@@ -5433,7 +5435,7 @@ LietKeSachDangMuon kiểm người trước rồi mới quét lịch sử và th
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TimDocGia, dòng 3](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L3), [TimDocGia, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L8).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TimDocGia, dòng 3](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L3), [TimDocGia, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L8).
 
 <a id="TN220"></a>
 ### TN220 — Có đủ ba mã nhưng chọn đúng lượt bằng cặp nào
@@ -5454,7 +5456,7 @@ Nếu thêm thao tác trên lượt đóng, cần danh tính lượt hoặc ordi
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MuonTra, dòng 279](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L279); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [TimMuonDangMuonTheoMa, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L13).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MuonTra, dòng 279](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L279); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [TimMuonDangMuonTheoMa, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L13).
 
 <a id="TN221"></a>
 ### TN221 — Khi h gặp lỗi ở lượt mở thứ hai
@@ -5475,7 +5477,7 @@ Hàm hiển thị dựa vào dữ liệu đã được nghiệp vụ/loader bả
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuoiNgay, dòng 102](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L102); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuoiNgay, dòng 102](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L102); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70).
 
 <a id="TN222"></a>
 ### TN222 — Một người có ba cuốn mới nhưng danh mục rất lớn
@@ -5496,7 +5498,7 @@ Tổng O(h+H_A+3D+sum C_i) bỏ qua chuỗi, với 3 là cận lượt mở hợ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48).
 
 <a id="TN223"></a>
 ### TN223 — Duyệt theo tầng có bảo đảm mã tăng không
@@ -5517,7 +5519,7 @@ Hàng đợi cần theo bề rộng tối đa, có thể O(R) ở cây cân bằ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106).
 
 <a id="TN224"></a>
 ### TN224 — Màn hình báo cáo dùng tổng giữ sách để chia nhóm độc giả
@@ -5538,7 +5540,7 @@ Hàng đợi cần theo bề rộng tối đa, có thể O(R) ở cây cân bằ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [DemSoSachDangMuon, dòng 4](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L4); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13).
 
 <a id="TN225"></a>
 ### TN225 — Bản ghi đã trả không được tái xuất chỉ vì tên khớp
@@ -5559,7 +5561,7 @@ Lọc trạng thái trước để không nối tên cho lượt đóng. Cùng m
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27).
 
 <a id="TN226"></a>
 ### TN226 — Báo cáo quá hạn và h cùng phiên nhưng ngày khác
@@ -5580,7 +5582,7 @@ ChayUngDung truyền ngày phiên cho i; h không nhận ngày đối chiếu. K
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [InDocGiaQuaHan, dòng 144](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L144); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543).
 
 <a id="TN227"></a>
 ### TN227 — Nhập dữ liệu batch qua stdin có transaction toàn file không
@@ -5593,6 +5595,8 @@ ChayUngDung truyền ngày phiên cho i; h không nhận ngày đối chiếu. K
 
 Các lệnh trước đã commit RAM độc lập. Kịch bản cần đồng bộ ngữ pháp prompt/lệnh, kiểm thông báo lưu và dữ liệu đích, không cho rằng một dòng input luôn là một giao dịch cố định bất kể retry. Đây là CLI tương tác, không phải định dạng import có schema.
 
+Trong menu hiện tại, mỗi thao tác thành công được tự lưu riêng trước khi hỏi tiếp; vẫn không có rollback toàn stdin. Nếu tự lưu lỗi thì các mục sửa và NAP bị chặn, chờ F5 ghi lại RAM.
+
 **Đáp câu phụ 1:** Không; cần chế độ batch/hợp đồng lỗi riêng, giữ parser từ chối đúng. Đổi abc thành 0 có thể kích hoạt lưu–thoát ngoài ý định.
 
 **Sai lầm dễ mắc:** Tệp stdin là một gói giao dịch nguyên tử hoặc mọi dòng luôn khớp prompt dự tính.
@@ -5601,7 +5605,7 @@ Các lệnh trước đã commit RAM độc lập. Kịch bản cần đồng b�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapSo, dòng 395](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L395); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ManHinhNhapDauSach, dòng 124](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L124).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapSo, dòng 439](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L439); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [ManHinhNhapDauSach, dòng 124](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L124).
 
 <a id="TN228"></a>
 ### TN228 — Thông báo thất bại nhưng stream không ném
@@ -5624,7 +5628,7 @@ LuongChuoi dùng để dựng báo cáo có bật exceptions riêng; điều đ�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ThongBao, dòng 427](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L427); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ThongBao, dòng 471](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L471); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70).
 
 <a id="TN229"></a>
 ### TN229 — Một báo cáo lỗi không được nối vào báo cáo lần trước
@@ -5645,7 +5649,7 @@ Menu dựng LuongChuoi mới cho mỗi thao tác. Lớp này chỉ có str() tr�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [BoDemChuoi, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L56).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [BoDemChuoi, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L56).
 
 <a id="TN230"></a>
 ### TN230 — Báo cáo đang xem có cho phép sửa nguồn đồng thời không
@@ -5658,7 +5662,7 @@ Menu dựng LuongChuoi mới cho mỗi thao tác. Lớp này chỉ có str() tr�
 
 Sự kiện phím trong HienThiPhanTrang được xử lý tại màn hình đó, không tự dispatch các lựa chọn menu chính. Thêm nền/live view cần mô hình đồng bộ dữ liệu, vòng đời và thông báo thay đổi; không dùng lập luận race giữa hai màn hình để mô tả lỗi hiện tại.
 
-**Đáp câu phụ 1:** Không; không có watcher hay tự nạp. A chỉ biết thay đổi khi chủ động đọc lại, với các rủi ro phiên cũ.
+**Đáp câu phụ 1:** Không; phiên thứ hai bị khóa cùng đích chặn. Hai file độc lập không chia sẻ dữ liệu. Không có watcher hoặc live view; chương trình ngoài không tuân khóa vẫn có thể sửa file và không làm text đang xem tự cập nhật.
 
 **Sai lầm dễ mắc:** Có giao diện tương tác thì mặc nhiên có nhiều luồng cập nhật dữ liệu.
 
@@ -5666,7 +5670,7 @@ Sự kiện phím trong HienThiPhanTrang được xử lý tại màn hình đó
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543).
 
 <a id="TN231"></a>
 ### TN231 — Một báo cáo chạy nền trả kết quả sau khi đã NAP
@@ -5687,7 +5691,7 @@ Gắn generation/version phiên vào yêu cầu và kết quả, chỉ hiển th
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HoanDoiThuVien, dòng 324](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L324).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HoanDoiThuVien, dòng 324](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L324).
 
 <a id="TN232"></a>
 ### TN232 — Trang theo offset khi có người chen vào trước
@@ -5708,7 +5712,7 @@ Snapshot giữ tập/thứ tự cho toàn phiên đọc, tốn bộ nhớ hoặc
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477).
 
 <a id="TN233"></a>
 ### TN233 — Bộ chỉ mục starts phải giữ dòng cuối không có newline
@@ -5729,7 +5733,7 @@ Code chỉ thêm đầu dòng sau LF nếu còn ký tự phía sau, rồi thêm 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477).
 
 <a id="TN234"></a>
 ### TN234 — Tính trang từ con trỏ dòng mà không nhân tràn
@@ -5750,7 +5754,7 @@ Chọn kiểu đủ chứa size, kiểm chuyển về int, dùng phép tính tr�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477).
 
 <a id="TN236"></a>
 ### TN236 — Ngày phiên hợp lệ lúc mở nhưng đồng hồ đổi trước giao dịch
@@ -5771,7 +5775,7 @@ Ngày phiên là giá trị lưu từ đầu, còn kiểm tương lai đọc đ�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraNgayGiaoDich, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L13).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraNgayGiaoDich, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L13).
 
 <a id="TN237"></a>
 ### TN237 — Mẫu form tối đa 12 trường nhưng caller muốn 13
@@ -5792,7 +5796,7 @@ Caller phải dùng count được hỗ trợ và mảng labels/values đủ kí
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [BieuMau, dòng 317](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L317); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapBieuMau, dòng 380](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L380); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LoiThuVien, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L20).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [BieuMau, dòng 361](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L361); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapBieuMau, dòng 424](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L424); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LoiThuVien, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L20).
 
 <a id="TN238"></a>
 ### TN238 — Hai đích --data và --check trong cùng lệnh
@@ -5815,7 +5819,7 @@ Các biến path và check được parse riêng; check không rỗng chi phối
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543).
 
 <a id="TN239"></a>
 ### TN239 — --check xanh nhưng người đọc vẫn không được mượn
@@ -5836,7 +5840,7 @@ Loader kiểm trạng thái thẻ thuộc miền 0/1 và các quan hệ; MuonSac
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
 
 <a id="TN240"></a>
 ### TN240 — Thư mục mới có nhưng file chưa có sau hủy phiên
@@ -5849,6 +5853,8 @@ Loader kiểm trạng thái thẻ thuộc miền 0/1 và các quan hệ; MuonSac
 
 File chỉ được ghi qua LuuFile. Thoát không lưu không hoàn tác thư mục đã tạo; tác dụng phụ trên hệ thống tệp và dữ liệu thư viện là hai phạm vi. Test phải quan sát đúng file, nội dung và lời gọi lưu, không dùng sự tồn tại thư mục làm chứng cứ commit.
 
+Phiên còn tạo file phụ .thuvien.lock để giữ khóa; đó không phải snapshot dữ liệu và được đóng/xóa khi kết thúc. Chỉ tạo thư mục/khóa rồi hủy phiên không tạo hồ sơ mới.
+
 **Đáp câu phụ 1:** Chưa đi vào menu/lưu; lỗi ra catch ngoài. Có thể có phần đường dẫn đã tạo, không đồng nghĩa có snapshot dữ liệu.
 
 **Sai lầm dễ mắc:** Không có file dữ liệu thì chương trình chưa hề tạo tác dụng phụ trên hệ thống tệp nào.
@@ -5857,7 +5863,7 @@ File chỉ được ghi qua LuuFile. Thoát không lưu không hoàn tác thư m
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [TaoThuMuc, dòng 119](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L119).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [TaoThuMuc, dòng 119](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L119).
 
 <a id="TN241"></a>
 ### TN241 — Con trỏ ngữ cảnh UI được gán cho một phiên cục bộ
@@ -5878,7 +5884,7 @@ Mô hình chạy hiện tại kết thúc chương trình sau một ChayUngDung 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [TongQuan, dòng 246](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L246).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [TongQuan, dòng 290](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L290).
 
 <a id="TN242"></a>
 ### TN242 — Báo lỗi lại cần cấp phát và ghi màn hình
@@ -5891,7 +5897,7 @@ Mô hình chạy hiện tại kết thúc chương trình sau một ChayUngDung 
 
 Đường báo lỗi cũng có cấp phát/I/O. Vì thế không hứa mọi lỗi thao tác đều giữ ứng dụng mở; cần phương án thông báo tối thiểu ít phụ thuộc tài nguyên khi thiết kế lại. Trạng thái RAM có thể đã đổi hoặc chưa, tùy vị trí lỗi ban đầu.
 
-**Đáp câu phụ 1:** Không; không có autosave ở catch ngoài. Phân biệt giao dịch đang lỗi với dữ liệu cũ còn trong RAM.
+**Đáp câu phụ 1:** Các giao dịch đã tự lưu thành công vẫn ở đĩa. Catch ngoài không cứu hoặc tự lưu lại phần RAM còn lỗi ghi; lỗi trong handler vẫn có thể kết thúc tiến trình. Tự lưu không làm mọi đường ngoại lệ trở thành an toàn tuyệt đối.
 
 **Sai lầm dễ mắc:** Đã có catch trong vòng lặp thì mọi lỗi phát sinh trong cả handler đều được phục hồi.
 
@@ -5899,7 +5905,7 @@ Mô hình chạy hiện tại kết thúc chương trình sau một ChayUngDung 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ThongBao, dòng 427](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L427); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [main, dòng 573](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L573).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ThongBao, dòng 471](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L471); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [main, dòng 634](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L634).
 
 <a id="TN243"></a>
 ### TN243 — Mượn bị từ chối nhưng tiến trình vẫn trả 0
@@ -5920,7 +5926,7 @@ Ca từ chối mong đúng thông báo, số lượt và cuốn không đổi; c
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543).
 
 <a id="TN244"></a>
 ### TN244 — Xuất CSV từ bảng ký tự phân cột
@@ -5941,7 +5947,7 @@ Nên xuất từ các trường dữ liệu, bao/nhân đôi nháy khi cần, t�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InMotDocGia, dòng 36](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L36); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [DongBang, dòng 213](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L213); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeVanBan, dòng 38](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L38).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InMotDocGia, dòng 36](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L36); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [DongBang, dòng 257](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L257); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeVanBan, dòng 38](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L38).
 
 <a id="TN245"></a>
 ### TN245 — Thêm lựa chọn menu làm lệch nghiệp vụ
@@ -5962,7 +5968,7 @@ Cần đối chiếu nhãn plain, nhãn/đường tắt TUI, giá trị ChonMenu
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChonMenu, dòng 402](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L402); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [TrangChinh, dòng 253](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L253).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChonMenu, dòng 446](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L446); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [TrangChinh, dòng 297](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L297).
 
 <a id="TN246"></a>
 ### TN246 — Một triệu độc giả: không thể chỉ tăng số dòng màn hình
@@ -5983,7 +5989,7 @@ Sau khi giả sử sửa giới hạn và duyệt an toàn, vẫn có node/chu�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MAX_DOC_GIA, dòng 264](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L264); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MAX_DOC_GIA, dòng 264](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L264); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477).
 
 <a id="TN247"></a>
 ### TN247 — So hai bản báo cáo sau sửa code bằng tiêu chí nào
@@ -6004,7 +6010,7 @@ Báo cáo b so dãy mã với trường tương ứng; d so nhóm thể loại v
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20).
 
 <a id="TN248"></a>
 ### TN248 — Cho phép sửa tiếp sau khi lưu báo dữ liệu không toàn vẹn
@@ -6017,6 +6023,8 @@ Báo cáo b so dãy mã với trường tương ứng; d so nhóm thể loại v
 
 Ghi lỗi cụ thể, phiên bản, danh tính liên quan và đường tái hiện trên bản sao; so snapshot hợp lệ gần nhất. Một số báo cáo có thể hiển thị liên kết lỗi hoặc ném, không chứng nhận trạng thái an toàn để tiếp tục. Bản hiện giữ RAM để không mất ngay dữ liệu, chưa có chế độ repair.
 
+Nếu lỗi đến từ LuuSauThayDoi, cờ chuaLuu làm menu chặn sửa và NAP; vẫn cho xem và thử Lưu. Đây là hàng rào ngừng sửa tiếp, không phải cơ chế sửa RAM hỏng.
+
 **Đáp câu phụ 1:** Không; chỉ phục hồi snapshot file, những thay đổi chưa ghi có thể mất và cần đối soát riêng.
 
 **Sai lầm dễ mắc:** Còn hiện menu thì mọi thao tác tiếp theo đều là cách chữa dữ liệu an toàn.
@@ -6025,7 +6033,7 @@ Ghi lỗi cụ thể, phiên bản, danh tính liên quan và đường tái hi�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TN249"></a>
 ### TN249 — Định dạng số của stream có thể làm lệch dữ liệu thử
@@ -6046,7 +6054,7 @@ Caller menu tạo LuongChuoi mới nên mặc định thập phân, nhưng API o
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InMotDocGia, dòng 36](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L36); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InMotDocGia, dòng 36](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L36); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70).
 
 <a id="TN250"></a>
 ### TN250 — In theo mã rồi mới sắp view dùng chung
@@ -6067,7 +6075,7 @@ Tiết kiệm một lần đếm/duyệt/cấp view trong cùng snapshot, không
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
 
 <a id="TN251"></a>
 ### TN251 — Dòng form đã trả một phần khi bước sau bị hủy
@@ -6088,7 +6096,7 @@ values phải là vùng tạm của caller, không bind trực tiếp vào node.
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapBieuMau, dòng 380](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L380); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapDong, dòng 386](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L386).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapBieuMau, dòng 424](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L424); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapDong, dòng 430](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L430).
 
 <a id="TN253"></a>
 ### TN253 — Một thay đổi chỉ đọc có thể vẫn rất tốn cấp phát
@@ -6109,7 +6117,7 @@ Báo cáo không đổi dữ liệu nhưng vẫn cấp phát. Cần phân biệt
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [BoDemChuoi, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L56).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [BoDemChuoi, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L56).
 
 <a id="TN254"></a>
 ### TN254 — Sắp báo cáo báo lỗi thì có được hiển thị view đang dở
@@ -6130,7 +6138,7 @@ So sánh ném trước swap kế tiếp, các lần swap trước chỉ hoán v�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoSanhChuoi, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L23).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoSanhChuoi, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L23).
 
 <a id="TN255"></a>
 ### TN255 — Tối ưu so tên bằng địa chỉ string
@@ -6151,7 +6159,7 @@ Sau nạp/cấp phát mới địa chỉ có thể khác dù dữ liệu y hệt
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoSanhChuoi, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L23).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoSanhChuoi, dòng 23](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L23).
 
 <a id="TN256"></a>
 ### TN256 — Chọn tên từ từng trang rồi ghép có thành toàn cục
@@ -6172,7 +6180,7 @@ Cần merge các run theo cùng comparator hoặc thiết kế chọn trang từ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477).
 
 <a id="TN257"></a>
 ### TN257 — Đổi giới hạn trang có làm kết quả lọc khác nhau
@@ -6193,7 +6201,7 @@ Cần merge các run theo cùng comparator hoặc thiết kế chọn trang từ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20).
 
 <a id="TN258"></a>
 ### TN258 — Hiển thị trạng thái bằng điều kiện chân trị che miền sai
@@ -6214,7 +6222,7 @@ Cần merge các run theo cùng comparator hoặc thiết kế chọn trang từ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InMotDocGia, dòng 36](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L36); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeTrangThaiThe, dòng 125](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L125); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InMotDocGia, dòng 36](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L36); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [HopLeTrangThaiThe, dòng 125](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L125); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90).
 
 <a id="TN259"></a>
 ### TN259 — Phép tìm đầu sách trong báo cáo nên mượn hay sở hữu dữ liệu
@@ -6235,7 +6243,7 @@ Trong h hiện tại, tên được ghi ngay vào stream khi nguồn còn sống
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20).
 
 <a id="TN260"></a>
 ### TN260 — Nhập form theo mảng trường làm lệch dữ liệu có kiểu giống nhau
@@ -6256,7 +6264,7 @@ Trong h hiện tại, tên được ghi ngay vào stream khi nguồn còn sống
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapBieuMau, dòng 380](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L380); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ManHinhDocGia, dòng 133](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L133); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapBieuMau, dòng 424](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L424); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ManHinhDocGia, dòng 133](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L133); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HieuChinhDocGia, dòng 68](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L68).
 
 <a id="TN261"></a>
 ### TN261 — Hủy trả sách sau khi đã chọn loại báo mất
@@ -6277,7 +6285,7 @@ Lần sau đọc lựa chọn mới và gọi TraSach choY; báo mất chỉ com
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DanhDauMatSach, dòng 138](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L138); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapBieuMau, dòng 380](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L380).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DanhDauMatSach, dòng 138](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L138); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NhapBieuMau, dòng 424](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L424).
 
 <a id="TN262"></a>
 ### TN262 — Danh sách độc giả là danh sách hiện tại, không phải người từng tồn tại
@@ -6298,7 +6306,7 @@ b duyệt node hiện tồn tại. XoaDocGia cho xóa người không lịch s�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ThuVien, dòng 289](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L289).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [XoaDocGia, dòng 80](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L80); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoMa, dòng 106](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L106); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ThuVien, dòng 289](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L289).
 
 <a id="TN263"></a>
 ### TN263 — Đặt giới hạn kết quả báo cáo mà không giấu việc cắt
@@ -6319,7 +6327,7 @@ Cắt 1000 node inorder trước sort tên là 1000 mã nhỏ được sắp tê
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477).
 
 <a id="TN264"></a>
 ### TN264 — Khi mỗi bước đều tuyến tính nhưng lặp ở trong vòng
@@ -6340,7 +6348,7 @@ n lấy một lần đủ trong mô hình tuần tự nguồn không đổi. N�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [DemDocGia, dòng 28](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L28); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [DemDocGia, dòng 28](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L28); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13).
 
 <a id="TN265"></a>
 ### TN265 — Một bản báo cáo thất bại có được đánh dấu đã kiểm dữ liệu
@@ -6361,7 +6369,7 @@ Không có exception của một báo cáo chỉ chứng minh đường đó kh�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraToanVen, dòng 331](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L331); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraToanVen, dòng 331](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L331); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
 
 <a id="TN266"></a>
 ### TN266 — Bằng chứng read-only bằng hash file có đủ không
@@ -6382,7 +6390,7 @@ Không có exception của một báo cáo chỉ chứng minh đường đó kh�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543).
 
 <a id="TN267"></a>
 ### TN267 — Mã hóa chuỗi ngày dùng để sort có làm lệch năm
@@ -6403,7 +6411,7 @@ ISO với năm/tháng/ngày đủ độ rộng và ngày đã hợp lệ có th�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuoiNgay, dòng 102](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L102); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoThuTuNgay, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L110); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuoiNgay, dòng 102](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L102); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [SoThuTuNgay, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L110); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20).
 
 <a id="TN24"></a>
 ### TN24 — Vùng heap thu nhỏ khác với độ dài mảng đã cấp
@@ -6426,7 +6434,7 @@ Lỗi này có thể không gây crash hay báo vượt bộ nhớ; cần kiểm
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
 
 <a id="TN27"></a>
 ### TN27 — Tìm người theo họ tên trên bảng đã sắp tên
@@ -6449,7 +6457,7 @@ Chi phí phụ thuộc số người/độ dài chuỗi; không đổi khóa BST
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27).
 
 <a id="TN28"></a>
 ### TN28 — Danh sách thẻ khóa: lọc trước hay sắp trước?
@@ -6472,7 +6480,7 @@ Giữ comparator tên–họ–mã; test k=0, k=R và khóa do mất/thủ công
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39).
 
 <a id="TN33"></a>
 ### TN33 — Đổi thuật toán báo cáo thể loại khi gần 10.000 đầu
@@ -6495,7 +6503,7 @@ Cần đo tạo view /khóa/ sort /xuất riêng; không tuyên bố toàn màn 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [KhoaSoSanh, dòng 18](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L18); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [SapXepHeap, dòng 84](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L84).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [KhoaSoSanh, dòng 18](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L18); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [SapXepHeap, dòng 84](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L84).
 
 <a id="TN36"></a>
 ### TN36 — Tổng theo thể loại không được lấy từ số dòng UI
@@ -6518,7 +6526,7 @@ Phân trang là trình bày, không chia lại phạm vi thống kê; tổng ph�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [DemCuonSach, dòng 99](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L99); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433).
+**Nguồn đối chiếu:** [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [InDauSachTheoTheLoai, dòng 94](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L94); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [DemCuonSach, dòng 99](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L99); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477).
 
 <a id="TN46"></a>
 ### TN46 — Đổi tên sách có làm 'phiếu cũ' đổi chữ không?
@@ -6541,7 +6549,7 @@ Bản hiện chưa có đổi tên hay phiếu snapshot. Muốn lưu tên tại 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MuonTra, dòng 279](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L279); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MuonTra, dòng 279](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L279); [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48).
 
 <a id="TN71"></a>
 ### TN71 — Phân trang không phải đọc lười
@@ -6564,49 +6572,51 @@ Muốn đọc theo trang cần giao diện cung cấp bản ghi/trang, định n
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 433](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L433); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [BoDemChuoi, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L56).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [HienThiPhanTrang, dòng 477](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L477); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LuongChuoi, dòng 70](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L70); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [BoDemChuoi, dòng 56](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L56).
 
 <a id="TN82"></a>
-### TN82 — RAM nạp xong nhưng gán path ném ngoại lệ
+### TN82 — Nạp file: chuyển RAM, đường dẫn và khóa phiên cùng nhau
 
-**Tấn · P3 · Chẩn đoán trên bản sao**. [Đọc lại câu hỏi](01_CAU_HOI.md#TN82).
+**Tấn · P3 · Hiện tại**. [Đọc lại câu hỏi](01_CAU_HOI.md#TN82).
 
-**Trả lời ngắn:** Không có rollback UI cho trường hợp đó: DocFile đã đổi RAM, còn path có thể vẫn cũ khi phép gán ném lỗi.
+**Trả lời ngắn:** NapPhien chuẩn bị đường dẫn tuyệt đối moi và lấy khóa B trước khi nạp. DocFile thất bại thì RAM/path/khóa A vẫn giữ; khóa B tạm được dọn. Nạp lại chính file A dùng lại khóa đang giữ.
 
 **Giải thích và bảo vệ cách làm:**
 
-Đây là giới hạn ngoại lệ ở lớp điều phối, khác bảo đảm DocFile khi chính nó thất bại. Không nói mọi lỗi nạp đều giữ cả phiên cũ nếu lỗi xảy ra sau commit.
+Sau DocFile thành công, path.swap(moi) và KhoaTepPhien::HoanDoi chuyển đường dẫn/handle mà không cấp phát với string dùng allocator mặc định C++11. Khóa A cũ được đóng sau chuyển; B được giữ khóa suốt phiên. Không còn phép gán chuỗi cần cấp phát sau commit như bản trước.
 
-**Đáp câu phụ 1:** Giảm điểm cấp phát sau commit; cần thiết kế chuyển cả context bằng các thao tác không ném và kiểm các thành phần khác. Đây là đề xuất sửa trên bản sao.
+Thông báo UI sau NapPhien vẫn có thể lỗi, nhưng không làm RAM B đi với path A. Không suy cơ chế này chống mọi crash hoặc mất điện.
 
-**Sai lầm dễ mắc:** Bảo đảm mạnh của một hàm tự bao trùm mọi thao tác caller sau nó.
+**Đáp câu phụ 1:** Không; chuỗi có thể cần cấp phát khi đích dài hơn capacity. Ca tiêm lỗi ngay sau DocFile phân biệt phép gán có thể ném với chuyển quyền sở hữu không cấp phát.
 
-**Cách kiểm chứng:** Đề xuất kiểm chứng: Truy vết ranh giới commit; muốn thử cần fault injection có kiểm soát, chưa coi là ca đã chạy.
+**Sai lầm dễ mắc:** Sửa mỗi path mà quên chuẩn bị và chuyển khóa của phiên, hoặc nhầm thông báo lỗi sau commit với rollback.
+
+**Cách kiểm chứng:** Harness cấm mọi operator new ngay sau DocFile thành công: bản swap hoàn thành với RAM/path/khóa B; bản mutation thay swap bằng phép gán bị bắt lỗi. Kiểm tiến trình thật cho NAP sang file bị khóa, nạp lại cùng file và chuyển khóa/đích tự lưu.
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocFile, dòng 336](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L336).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocFile, dòng 336](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L336); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NapPhien, dòng 37](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L37); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [KhoaTepPhien, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L8).
 
 <a id="TN94"></a>
-### TN94 — Cảnh báo có thay đổi chưa lưu
+### TN94 — Cờ chưa lưu sau khi tự lưu gặp lỗi
 
-**Tấn · P3 · Mở rộng giả định**. [Đọc lại câu hỏi](01_CAU_HOI.md#TN94).
+**Tấn · P3 · Hiện tại**. [Đọc lại câu hỏi](01_CAU_HOI.md#TN94).
 
-**Trả lời ngắn:** Mở form rồi hủy không đổi dữ liệu nên không nên báo bẩn vì riêng việc mở. F5 có thể lưu thất bại, không được xóa cờ sớm.
+**Trả lời ngắn:** Mượn/sửa và NAP bị chặn khi chuaLuu còn true; báo cáo chỉ đọc và Lưu vẫn được dùng. F5 chỉ xóa cờ khi LuuFile thành công. Nếu tự lưu lỗi, RAM vẫn chứa thao tác đã commit, nên không được tự gọi lại nghiệp vụ để thử lưu.
 
 **Giải thích và bảo vệ cách làm:**
 
-Cờ phải đổi theo giao dịch thành công/lưu hoặc nạp thành công; báo cáo chỉ đọc không làm bẩn. Đây là trạng thái UI hỗ trợ, cần quản lý nhất quán.
+Mở hoặc hủy form không gọi LuuSauThayDoi vì chưa có commit. Cờ này theo dõi lần ghi thất bại/chưa hoàn tất trong phiên, không phải phép so ngữ nghĩa toàn kho với file và không phải tính năng undo.
 
-**Đáp câu phụ 1:** Cờ có thay đổi từ lần lưu là bảo thủ và có thể vẫn true dù dữ liệu trở lại như cũ. Nếu đặc tả muốn đúng chênh lệch snapshot thì phải so dữ liệu/version có cơ chế hoàn tác tương ứng, trả thêm chi phí. Hai định nghĩa dirty khác nhau cần được chốt.
+**Đáp câu phụ 1:** Dữ liệu đã tự lưu trước đó vẫn ở đĩa; phần RAM chưa ghi có thể mất khi xác nhận thoát hoặc đóng cưỡng bức. Thông báo thoát nêu rõ điều đó; thoát không phải hoàn tác những lần tự lưu trước.
 
 **Sai lầm dễ mắc:** Nhấn nút hoặc xem được báo cáo là đã ghi dữ liệu.
 
-**Cách kiểm chứng:** Đề xuất kiểm chứng: Test hủy, nhập sai, thêm thành công, lưu lỗi, lưu được và nạp file mới.
+**Cách kiểm chứng:** Fixture file chỉ đọc: tự lưu lỗi, các mục sửa/NAP bị chặn; gỡ quyền chỉ đọc, F5 ghi đúng một hồ sơ và xóa trạng thái chặn.
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [BieuMau, dòng 317](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L317); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [BieuMau, dòng 361](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L361); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [LuuSauThayDoi, dòng 515](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L515).
 
 <a id="TN95"></a>
 ### TN95 — Đọc phím lỗi nằm ngoài try của thao tác
@@ -6619,6 +6629,8 @@ Cờ phải đổi theo giao dịch thành công/lưu hoặc nạp thành công;
 
 Không có tự lưu trong đường lỗi đó, nên thay đổi chưa ghi có thể mất. RAII dọn bộ nhớ/console không đồng nghĩa lưu dữ liệu nghiệp vụ.
 
+Những thao tác đã tự lưu thành công trước đó vẫn được giữ; giới hạn mất dữ liệu ở đây là phần RAM chưa ghi sau lỗi hoặc dừng giữa commit và ghi.
+
 **Đáp câu phụ 1:** Chưa; có thể tạo vòng báo lỗi hoặc lỗi tiếp trong ThongBao. Phải chốt khả năng tái tạo input, chuyển chế độ hoặc thoát có thông tin; vị trí catch chỉ đổi nơi bắt, không sửa tài nguyên hay tự lưu RAM.
 
 **Sai lầm dễ mắc:** Dọn tài nguyên thành công là đã bảo toàn mọi thay đổi nghiệp vụ.
@@ -6627,22 +6639,20 @@ Không có tự lưu trong đường lỗi đó, nên thay đổi chưa ghi có 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [DocPhimConsole, dòng 107](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L107); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [main, dòng 573](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L573).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [DocPhimConsole, dòng 151](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L151); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [main, dòng 634](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L634).
 
 <a id="TN100"></a>
 ### TN100 — Thầy hỏi phần mượn dù mình phụ trách menu
 
 **Tấn · P3 · Hiện tại**. [Đọc lại câu hỏi](01_CAU_HOI.md#TN100).
 
-**Trả lời ngắn:** Luồng đi ChayUngDung→ManHinhMuonTra→MuonSach, có thay lịch sử và trạng thái cuốn trong RAM; LuuFile là bước khác.
+**Trả lời ngắn:** Luồng ChayUngDung→ManHinhMuonTra→MuonSach cập nhật phiếu/cuốn trong RAM, rồi LuuSauThayDoi gọi LuuFile trước thông báo thành công. Lưu lỗi không hoàn tác mượn; cờ chuaLuu giữ true, file cũ còn nguyên và thông báo yêu cầu F5.
 
 **Giải thích và bảo vệ cách làm:**
 
-Lưu thất bại không tự hoàn tác mượn đã thành công trong RAM, nhưng đĩa chưa phản ánh giao dịch mới. Cần giải thích cả quyền mượn, commit RAM, lưu đĩa và lựa chọn tiếp của người dùng.
+Choice 0 chỉ thoát sau khi lưu thành công. Lưu tiếp vẫn lỗi thì về menu, có thể xem b/h nhưng các mục sửa và NAP bị chặn. F5 thành công mới cho sửa tiếp. Đóng cưỡng bức hoặc xác nhận thoát khi chưa ghi được vẫn có thể mất phần RAM này.
 
-Nhánh choice=0 chỉ return sau khi LuuFile thành công; khi lưu thất bại vẫn quay vòng menu và còn xem được dữ liệu RAM. Đóng cửa sổ hoặc xác nhận thoát không lưu sau đó có thể bỏ các thay đổi chưa ghi.
-
-**Đáp câu phụ 1:** Không nếu chưa có lần lưu thành công; đó là bỏ thay đổi RAM. File cũ không tự nhận lượt mới.
+**Đáp câu phụ 1:** Không. Mục thoát không thử ghi lại, không hoàn tác các snapshot đã tự lưu; chỉ phần RAM chưa ghi do lỗi mới có thể mất.
 
 **Sai lầm dễ mắc:** Mượn thành công trước đó luôn xuất hiện sau lần khởi động kế.
 
@@ -6652,7 +6662,7 @@ Nhánh choice=0 chỉ return sau khi LuuFile thành công; khi lưu thất bại
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [LuuSauThayDoi, dòng 515](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L515).
 
 
 <a id="chung"></a>
@@ -6679,7 +6689,7 @@ Muốn bản thử độc lập phải dựng bản dữ liệu sâu có sở h�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ThuVien, dòng 289](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L289); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HuyThuVien, dòng 321](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L321).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ThuVien, dòng 289](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L289); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HuyThuVien, dòng 321](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L321).
 
 <a id="GH01"></a>
 ### GH01 — Ghép ba module: ai được quyền thay trạng thái cuốn?
@@ -6704,7 +6714,7 @@ Hợp đồng giữa module phải nêu tác dụng phụ, sở hữu con trỏ 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202).
 
 <a id="CH02"></a>
 ### CH02 — Con trỏ cũ sau khi nạp file
@@ -6727,30 +6737,30 @@ Nạp thất bại trước hoán đổi giữ bộ dữ liệu cũ, nên p vẫ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HoanDoiThuVien, dòng 324](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L324).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HoanDoiThuVien, dòng 324](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L324).
 
 <a id="GH02"></a>
-### GH02 — File thay an toàn có ngăn hai người mượn trùng?
+### GH02 — Khóa phiên ngăn hai exe cùng sửa một file
 
-**Cả nhóm · P1 · Mở rộng giả định**. [Đọc lại câu hỏi](01_CAU_HOI.md#GH02).
+**Cả nhóm · P1 · Hiện tại**. [Đọc lại câu hỏi](01_CAU_HOI.md#GH02).
 
-**Trả lời ngắn:** Có thể cả hai thành công vì mỗi tiến trình kiểm RAM riêng; lần lưu sau ghi ảnh chụp của Q và làm mất cập nhật của P.
+**Trả lời ngắn:** KhoaTepPhien mở file phụ cùng đường dẫn dữ liệu với share mode 0 và giữ HANDLE suốt phiên. Q không lấy được khóa A nên thoát trước khi nạp/sửa A; Q vẫn có thể mở B độc lập. P không chuyển sang B đang bị khóa: RAM/path/khóa A giữ nguyên.
 
 **Giải thích và bảo vệ cách làm:**
 
-Thư mục tạm riêng tránh va tên và bước thay tránh ghi dở trực tiếp; chúng không cung cấp khóa nghiệp vụ hay kiểm phiên bản.
+Khi thoát hoặc tiến trình bị dừng, Windows đóng HANDLE; file khóa đặt DELETE_ON_CLOSE được dọn. Khi chuyển phiên thành công, khóa B được lấy trước khi nạp, rồi đổi path/khóa không cấp phát; khóa A cũ được đóng.
 
-Bản hiện tại chỉ hỗ trợ một phiên sửa theo thứ tự. Nếu cần đa tiến trình phải xác định chính sách phối hợp mới và kiểm riêng.
+Đây là khóa phối hợp giữa các phiên ứng dụng cùng sử dụng đường dẫn/file khóa, không phải cơ chế đồng bộ dữ liệu đa người dùng. Công cụ ngoài hoặc bản cũ không tuân khóa, hard link đặt tên khác, và can thiệp trực tiếp vào file không được bảo vệ. File tạm chỉ phục vụ ghi/thay snapshot, không tự ngăn phiên dùng RAM cũ. --check vẫn là đường chỉ đọc.
 
-**Đáp câu phụ 1:** Không; cần cơ chế phối hợp có phạm vi xuyên tiến trình và kiểm version cùng quyền sở hữu ghi. Khóa phải phủ đọc trạng thái mới–kiểm–ghi hoặc giao dịch thích hợp.
+**Đáp câu phụ 1:** Không; khóa do lớp điều phối phiên giữ. Công cụ gọi trực tiếp API hoặc bỏ qua file khóa có thể gây xung đột. Muốn hỗ trợ hệ thống nhiều writer không hợp tác cần thiết kế khác, không gọi đây là database transaction.
 
 **Sai lầm dễ mắc:** Khóa trong bộ nhớ một tiến trình bảo vệ được mọi chương trình dùng cùng file.
 
-**Cách kiểm chứng:** Đề xuất kiểm chứng: Chạy hai phiên với bản sao cùng file; nạp trước, lưu P rồi Q, mở lại và đối chiếu. Đây là kịch bản đề xuất, chưa tự coi đã chạy.
+**Cách kiểm chứng:** Chạy tiến trình thật giữ A, kiểm phiên thứ hai cùng đích bị từ chối, B độc lập vẫn mở; NAP sang B đang khóa giữ A; dừng tiến trình rồi mở lại, chuyển NAP thành công và xác nhận khóa/đích tự lưu mới.
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuNoiBo, dòng 278](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L278); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuNoiBo, dòng 278](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L278); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [KhoaTepPhien, dòng 8](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L8); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [NapPhien, dòng 37](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L37).
 
 <a id="CH03"></a>
 ### CH03 — Hàm chỉ xem vẫn sửa được sách?
@@ -6773,7 +6783,7 @@ Dùng con trỏ const khi đọc và giữ hợp đồng không sửa; cần rev
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DanhSachDauSach, dòng 278](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L278); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39).
+**Nguồn đối chiếu:** [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DanhSachDauSach, dòng 278](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L278); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [TimViTriChenTheoTen, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L39).
 
 <a id="GH03"></a>
 ### GH03 — File đứt giữa lịch sử độc giả thứ hai
@@ -6800,7 +6810,7 @@ BoDoc nay dùng TepDoc: BoDemDocTep đọc qua ReadFile, giữ cờ lỗi riêng
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [ThuVien::~ThuVien, dòng 320](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L320); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HuyCayDocGia, dòng 98](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L98); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ConTroTam, dòng 29](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L29), [ConTroTam, dòng 42](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L42); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [TepDoc, dòng 203](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L203); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [BoDemDocTep, dòng 176](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L176).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [ThuVien::~ThuVien, dòng 320](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L320); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HuyCayDocGia, dòng 98](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L98); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ConTroTam, dòng 29](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L29), [ConTroTam, dòng 42](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L42); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [TepDoc, dòng 203](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L203); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [BoDemDocTep, dòng 176](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L176).
 
 <a id="CH04"></a>
 ### CH04 — Con trỏ kép ở danh sách rỗng
@@ -6823,7 +6833,7 @@ Trường hợp rỗng và không rỗng dùng cùng cơ chế; đổi sang mộ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71).
 
 <a id="GH04"></a>
 ### GH04 — Từng module nhìn đúng nhưng ghép lại mâu thuẫn
@@ -6848,7 +6858,7 @@ Không tự chọn người đang giữ thật bằng cách sửa một cờ; d�
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110).
 
 <a id="CH05"></a>
 ### CH05 — Ngoại lệ sau commit có nghĩa giao dịch đã thất bại không?
@@ -6863,6 +6873,8 @@ Gọi lại ngay cùng cuốn bị trạng thái đang mượn chặn, nhưng kh
 
 Lưu file là bước khác; commit RAM không chứng minh bền vững trên đĩa. Bảo đảm mạnh trước commit của MuonSach không bao trùm mọi xử lý sau hàm.
 
+Menu hiện gọi LuuSauThayDoi sau commit RAM và trước thông báo thành công. Lỗi ghi sẽ báo chưa lưu và chặn sửa/nạp tiếp; lỗi khi tạo thông báo sau tự lưu thành công không làm mất snapshot đã ghi. Phân biệt rõ điểm lỗi ở cả ba pha.
+
 **Đáp câu phụ 1:** Không; phải xác nhận LuuFile thành công riêng. Kiểm RAM chỉ giải đáp commit nghiệp vụ.
 
 **Sai lầm dễ mắc:** Phục hồi thông báo thành công đồng nghĩa phục hồi độ bền trên đĩa.
@@ -6871,7 +6883,7 @@ Lưu file là bước khác; commit RAM không chứng minh bền vững trên �
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ThongBao, dòng 427](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L427); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ManHinhMuonTra, dòng 202](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L202); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ThongBao, dòng 471](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L471); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [LuuSauThayDoi, dòng 515](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L515).
 
 <a id="GH05"></a>
 ### GH05 — Thất bại sau khi đã ghi file tạm
@@ -6886,6 +6898,8 @@ Bản này dành cho Windows. LuuNoiBo dùng DuongDanDayDu/ThuMucCha, giữ ch�
 
 Các cờ flush/write-through không chứng minh chịu mọi mất điện hoặc khóa nhiều tiến trình. DonTam thử DeleteFileW/RemoveDirectoryW khi hết phạm vi và bỏ qua lỗi dọn. Cần tách phân tích cơ chế với những ca lỗi thực sự đã chạy.
 
+Bản hiện có KhoaTepPhien riêng ở lớp điều phối, giữ khóa phụ suốt phiên để chặn hai ứng dụng cùng bản mở cùng đích sửa. Đó là lớp bảo vệ khác với flush/thay tệp; LuuFile trực tiếp không tự lấy khóa phiên.
+
 **Đáp câu phụ 1:** Không; tính hợp lệ không tương đương bằng dữ liệu nguồn. Cần kiểm round-trip ngữ nghĩa nếu muốn phát hiện mất nội dung.
 
 **Sai lầm dễ mắc:** Kiểm file mới hợp lệ là đã chứng minh sao lưu không mất dữ liệu.
@@ -6896,7 +6910,7 @@ Các cờ flush/write-through không chứng minh chịu mọi mất điện ho�
 
 **Bằng chứng lịch sử:** có ca liên quan trên bản trước ngày 17–18/10/2026; không tính là tái chạy câu này trên C++11. Hồ sơ chi tiết giữ riêng.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuNoiBo, dòng 278](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L278); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [TepGhi, dòng 251](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L251); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [BoDemGhiTep, dòng 211](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L211).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuNoiBo, dòng 278](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L278); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [TepGhi, dòng 251](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L251); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [BoDemGhiTep, dòng 211](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L211).
 
 <a id="CH07"></a>
 ### CH07 — Quên hoặc dùng sai release
@@ -6919,7 +6933,7 @@ Chuẩn bị thành công rồi nối bằng release để luôn có đúng mộ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ConTroTam, dòng 29](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L29), [ConTroTam, dòng 42](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L42).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [ConTroTam, dòng 29](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L29), [ConTroTam, dòng 42](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L42).
 
 <a id="CH08"></a>
 ### CH08 — Xóa bảng kết quả làm hỏng thư viện
@@ -6942,7 +6956,7 @@ HuyCayDocGia hủy danh sách lịch sử của mỗi node rồi hủy node; ph�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HuyCayDocGia, dòng 98](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L98).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [HuyCayDocGia, dòng 98](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L98).
 
 <a id="GH08"></a>
 ### GH08 — Dữ liệu ngày không đủ để khẳng định thứ tự thật
@@ -6965,7 +6979,7 @@ Loader sắp theo ngày, thời điểm kết thúc và khóa phụ; v1 không l
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [KiemTraNoiBo, dòng 90](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L90); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [KiemTraDongThoiGian, dòng 21](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L21).
 
 <a id="CH09"></a>
 ### CH09 — Kiểm tràn sau khi đã tràn
@@ -6988,7 +7002,7 @@ Số âm, khoảng trắng nội dung, ký tự dư không hợp lệ cho parser
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [DocSoNguyen, dòng 61](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L61).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [DocSoNguyen, dòng 61](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L61).
 
 <a id="GH09"></a>
 ### GH09 — Chạy riêng file main rồi gặp lỗi linker
@@ -7013,7 +7027,7 @@ Build.ps1 dùng -std=c++11 và các cờ cảnh báo; GCC/MinGW 16.2 đã build/
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [main, dòng 573](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L573); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuNoiBo, dòng 278](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L278); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MuonSach, dòng 367](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L367); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocDoiSoWindows, dòng 139](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L139).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [main, dòng 634](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L634); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuNoiBo, dòng 278](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L278); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [MuonSach, dòng 367](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L367); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [DocDoiSoWindows, dòng 139](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L139).
 
 <a id="CH10"></a>
 ### CH10 — Chuẩn hóa giúp dữ liệu sai đi qua
@@ -7036,7 +7050,7 @@ Hàm tiện ích có thể phục vụ nhiều ngữ cảnh; hợp đồng của
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuanHoaChuoi, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L10); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuanHoaChuoi, dòng 10](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L10); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59).
 
 <a id="CH11"></a>
 ### CH11 — Bool, output và exception: hợp đồng có thể bị hiểu sai khi ghép
@@ -7059,7 +7073,7 @@ Thông báo lỗi cũng có thể cấp phát; bảo đảm exception tuyệt đ
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [ThemCuonSach, dòng 71](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L71); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543).
 
 <a id="CH12"></a>
 ### CH12 — Comparator có chu trình: sort có thể sửa giúp không?
@@ -7082,7 +7096,7 @@ Comparator phụ thuộc số lần gọi hoặc sửa dữ liệu làm kết qu
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [SoSanhDauSach, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L5); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DauSachXepTruoc, dòng 103](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L103); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [SapXepHeap, dòng 84](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L84).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [02_XuLyDauSach.cpp](ThamKhao/MaNguon/02_XuLyDauSach.cpp) — [SoSanhDauSach, dòng 5](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/02_XuLyDauSach.cpp#L5); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [DauSachXepTruoc, dòng 103](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L103); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [SapXepHeap, dòng 84](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L84).
 
 <a id="GH12"></a>
 ### GH12 — Nạp đúng các node nhưng quên metadata: lỗi nằm ngoài BST
@@ -7105,7 +7119,7 @@ HoanDoiThuVien đổi mốc cùng root /mảng/số lượng. Test chỉ tập n
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HoanDoiThuVien, dòng 324](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L324); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59).
+**Nguồn đối chiếu:** [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocNoiBo, dòng 210](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L210); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HoanDoiThuVien, dòng 324](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L324); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [ThemDocGia, dòng 59](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L59).
 
 <a id="GH13"></a>
 ### GH13 — Đổi b sang họ–tên–mã trên bản sao
@@ -7130,7 +7144,7 @@ Chỉ sửa trên bản sao khi yêu cầu thay quy tắc sắp. Nếu chỉ đ�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490).
+**Nguồn đối chiếu:** [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [TenHoTruoc, dòng 39](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L39); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543).
 
 <a id="CH14"></a>
 ### CH14 — Đổi chỉ số sang size_t để hết warning có an toàn không?
@@ -7153,7 +7167,7 @@ Vòng heap hiện dùng i>0 rồi gọi i−1, tránh cần đi qua−1. ChuaChu
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [SapXepHeap, dòng 84](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L84); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
+**Nguồn đối chiếu:** [01_HamTienIch.cpp](ThamKhao/MaNguon/01_HamTienIch.cpp) — [ChuaChuoi, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/01_HamTienIch.cpp#L27); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [SapXepHeap, dòng 84](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L84); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [InDocGiaTheoTenHo, dòng 114](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L114).
 
 <a id="GH14"></a>
 ### GH14 — Báo cáo đang giữ của mọi người: nối dữ liệu theo đường nào?
@@ -7178,7 +7192,7 @@ Gọi h cho từng người có chi phí cấu trúc O(Rh+H+A(D+C)) trong cận 
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ChiMucCuon, dòng 92](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L92).
+**Nguồn đối chiếu:** [05_XuLyMuonTra.cpp](ThamKhao/MaNguon/05_XuLyMuonTra.cpp) — [LietKeSachDangMuon, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/05_XuLyMuonTra.cpp#L20); [04_XuLyDocGia.cpp](ThamKhao/MaNguon/04_XuLyDocGia.cpp) — [LayDanhSachDocGia, dòng 13](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/04_XuLyDocGia.cpp#L13); [03_XuLyCuonSach.cpp](ThamKhao/MaNguon/03_XuLyCuonSach.cpp) — [TimCuonSachToanCuc, dòng 27](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L27), [TimCuonSachToanCuc, dòng 48](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/03_XuLyCuonSach.cpp#L48); [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [ChiMucCuon, dòng 92](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L92).
 
 <a id="CH15"></a>
 ### CH15 — Mọi exception đều thiếu bộ nhớ?
@@ -7201,7 +7215,7 @@ Phân loại lỗi không thay bảo đảm trước/sau commit. Tạo chuỗi t
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LoiThuVien, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L20).
+**Nguồn đối chiếu:** [06_NghiepVuTongHop.cpp](ThamKhao/MaNguon/06_NghiepVuTongHop.cpp) — [MuonSach, dòng 110](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/06_NghiepVuTongHop.cpp#L110); [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [00_KhaiBaoChung.h](ThamKhao/MaNguon/00_KhaiBaoChung.h) — [LoiThuVien, dòng 20](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/00_KhaiBaoChung.h#L20).
 
 <a id="GH15"></a>
 ### GH15 — Xem số liệu file trước khi thay RAM
@@ -7218,6 +7232,8 @@ Không giữ con trỏ từ bộ tạm đã hủy hoặc từ dữ liệu cũ sa
 
 Chỉ sửa bản sao để luyện thay đổi yêu cầu; không tự áp luồng mới vào bản nộp.
 
+Bản mở rộng phải giữ cơ chế khóa hiện có: lấy/giữ khóa đích trước nạp/preview, giữ khóa A khi hủy hoặc lỗi, và chuyển khóa cùng RAM/path khi xác nhận. Không giữ khóa của một phiên đã hết đời sống.
+
 **Đáp câu phụ 1:** Phải chốt hợp đồng: commit đúng snapshot đã preview, hoặc đọc lại và yêu cầu xác nhận phiên mới. Không lặng đổi nội dung giữa preview và xác nhận.
 
 **Sai lầm dễ mắc:** Preview một file bảo đảm đường dẫn đó không bao giờ đổi nội dung.
@@ -7226,7 +7242,7 @@ Chỉ sửa bản sao để luyện thay đổi yêu cầu; không tự áp lu�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocFile, dòng 336](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L336); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HoanDoiThuVien, dòng 324](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L324).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [DocFile, dòng 336](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L336); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [HoanDoiThuVien, dòng 324](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L324).
 
 <a id="GH16"></a>
 ### GH16 — Lưu thành file khác nhưng chỉ đổi phiên khi thành công
@@ -7243,6 +7259,8 @@ Nhập Unicode và khoảng trắng được xử lý như đường dẫn hiệ
 
 Chỉ sửa bản sao để luyện thay đổi yêu cầu; không tự áp chức năng mới vào bản nộp.
 
+Bản mở rộng còn phải lấy khóa đích trước ghi để không đè phiên khác; thành công chuyển path và khóa bằng thao tác không cấp phát. Nếu hủy/lỗi phải giữ khóa phiên cũ và dọn khóa tạm. Tự lưu những thao tác sau cần dùng đích mới đã được chấp nhận.
+
 **Đáp câu phụ 1:** Chưa; cần chuẩn bị đường dẫn trước và commit context không cấp phát hoặc xử lý trạng thái rõ. Tệp mới thành công chưa đủ chuyển phiên nguyên khối.
 
 **Sai lầm dễ mắc:** LuuFile true tự bảo đảm mọi metadata UI sau nó cũng cập nhật.
@@ -7251,7 +7269,7 @@ Chỉ sửa bản sao để luyện thay đổi yêu cầu; không tự áp ch�
 
 **Mức bằng chứng C++11:** đối chiếu mã nguồn và thay đổi phiên bản; chưa chạy riêng toàn tình huống/câu phụ.
 
-**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 490](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L490); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/b44964652043d8f4790a23952d4e3a8694ce1cdf/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341).
+**Nguồn đối chiếu:** [08_ChuongTrinhChinh.cpp](ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp) — [ChayUngDung, dòng 543](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/08_ChuongTrinhChinh.cpp#L543); [07_LuuDocFile.cpp](ThamKhao/MaNguon/07_LuuDocFile.cpp) — [LuuFile, dòng 341](https://github.com/ntienthanh195/do-an-thu-vien/blob/1c4510c99e3ad6131b044f45f8c3ac192d1e9c1a/TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/ThamKhao/MaNguon/07_LuuDocFile.cpp#L341).
 
 
 ## Mốc ID đã gộp

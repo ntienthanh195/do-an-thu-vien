@@ -135,6 +135,7 @@ void ManHinhNhapDauSach(ThuVien& tv) {
                 if(!DocSoNguyen(values[2],d.soTrang,1,2147483647)) {ThongBao("So trang phai la so nguyen duong.");continue;}
                 if(!DocSoNguyen(values[4],d.namXuatBan,1,HomNay().nam)) {ThongBao("Nam xuat ban phai tu 1 den nam hien tai.");continue;}
                 if(!ThemDauSach(tv,d,loi)) {ThongBao("LOI: "+loi);continue;}
+                LuuSauThayDoi(tv);
                 ThongBao("Da them dau sach "+ChuanHoaChuoi(d.ISBN)+". Chon Them cuon de nhap cac ban sach.");return;
             }
         } else {
@@ -142,6 +143,7 @@ void ManHinhNhapDauSach(ThuVien& tv) {
             while(NhapBieuMau("THEM CUON SACH",fields,values,2)) {
                 string ma;
                 if(!ThemCuonSach(tv,values[0],values[1],ma,loi)) {ThongBao("LOI: "+loi);continue;}
+                LuuSauThayDoi(tv);
                 ThongBao("Da cap ma cuon: "+ma);return;
             }
         }
@@ -153,6 +155,7 @@ void ManHinhNhapDauSach(ThuVien& tv) {
            !NhapSo("So trang: ",d.soTrang,1,2147483647) || !NhapDong("Tac gia: ",d.tacGia) ||
            !NhapSo("Nam xuat ban: ",d.namXuatBan,1,HomNay().nam) || !NhapDong("The loai: ",d.theLoai)) return;
         if(!ThemDauSach(tv,d,loi)) { ThongBao(loi); return; }
+        LuuSauThayDoi(tv);
         isbn=ChuanHoaChuoi(d.ISBN);
         ThongBao("Da them dau sach. Nhap so cuon muon them; 0 de ket thuc.");
     } else {
@@ -168,6 +171,7 @@ void ManHinhNhapDauSach(ThuVien& tv) {
             ThongBao("Da dung nhap. Dau sach va nhung cuon da them duoc giu lai."); return;
         }
         if(!ThemCuonSach(tv,isbn,viTri,ma,loi)) { ThongBao(loi); return; }
+        LuuSauThayDoi(tv);
         ThongBao("Da cap ma cuon: "+ma);
     }
 }
