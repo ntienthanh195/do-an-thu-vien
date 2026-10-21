@@ -1,12 +1,8 @@
 #include "00_KhaiBaoChung.h"
-#include <memory>
-#include <ostream>
-#include <sstream>
-#include <exception>
 
 namespace {
 // Cac mang trong file nay la view/bo dem tam, khong thay bon cau truc nghiep vu.
-using ViewDocGia=std::unique_ptr<const NutDocGia*[]>;
+using ViewDocGia=ConTroTam<const NutDocGia*[]>;
 int TaoViewDocGia(const ThuVien& tv,ViewDocGia& view) {
     int n=DemDocGia(tv.cayDocGia);
     if(n<0 || n>MAX_DOC_GIA) return -1;
@@ -70,7 +66,7 @@ bool KetThucMuon(ThuVien& tv,int maThe,const string& maSach,const NgayThang& nga
         cuon->trangThai=mat ? SACH_THANH_LY : SACH_CHO_MUON;
         if(mat) node->thongTin.trangThaiThe=THE_BI_KHOA;
         loi.clear(); return true;
-    } catch(const std::exception&) { loi="Khong du bo nho kiem tra giao dich; du lieu khong doi."; return false; }
+    } catch(...) { loi="Khong du bo nho kiem tra giao dich; du lieu khong doi."; return false; }
 }
 
 // Heap sort tu cai: comparator(a,b)=true neu a phai nam TRUOC b trong ket qua.
@@ -127,14 +123,14 @@ bool MuonSach(ThuVien& tv,int maThe,const string& maSach,const NgayThang& ngay,s
         if(!KiemTraDongThoiGian(tv,dg,maSach,ngay,dangMuon,tong,loi)) return false;
         if(dangMuon!=0) { loi="Cuon sach da co phieu dang muon; trang thai du lieu khong khop."; return false; }
         if(tong>=MAX_BAN_GHI) { loi="Da dat gioi han so ban ghi lich su."; return false; }
-        std::unique_ptr<MuonTra> moi(new MuonTra);
+        ConTroTam<MuonTra> moi(new MuonTra);
         moi->maSach=maSach; moi->ngayMuon=ngay;
         MuonTra** tail=&dg.dsMuonTra;
         while(*tail) tail=&(*tail)->next;
         // Moi thong tin da hop le va node da cap phat. Hai thay doi commit lien nhau.
         *tail=moi.release(); cuon->trangThai=SACH_DANG_MUON;
         loi.clear(); return true;
-    } catch(const std::exception&) { loi="Khong du bo nho de muon sach; du lieu khong doi."; return false; }
+    } catch(...) { loi="Khong du bo nho de muon sach; du lieu khong doi."; return false; }
 }
 bool TraSach(ThuVien& tv,int maThe,const string& maSach,const NgayThang& ngay,string& loi) {
     return KetThucMuon(tv,maThe,maSach,ngay,false,loi);
@@ -149,7 +145,7 @@ void InDocGiaQuaHan(const ThuVien& tv,const NgayThang& ngay,std::ostream& out) {
     if(!NgayHopLe(ngay)) { out<<"Ngay thong ke khong hop le.\n"; return; }
     ViewDocGia view; int n=TaoViewDocGia(tv,view);
     if(n<0) { out<<"Khong tao duoc danh sach doc gia.\n"; return; }
-    std::unique_ptr<DongQuaHan[]> rows(new DongQuaHan[n]); int k=0;
+    ConTroTam<DongQuaHan[]> rows(new DongQuaHan[n]); int k=0;
     for(int i=0;i<n;++i) {
         DongQuaHan row; row.dg=&view[i]->thongTin;
         for(const MuonTra* p=row.dg->dsMuonTra;p;p=p->next) if(p->trangThai==MUON_DANG_MUON) {
@@ -172,8 +168,8 @@ void InDocGiaQuaHan(const ThuVien& tv,const NgayThang& ngay,std::ostream& out) {
 void InTop10SachDuocMuonNhieuNhat(const ThuVien& tv,std::ostream& out) {
     int d=tv.dsDauSach.soLuong,c=0;
     for(int i=0;i<d;++i) c+=DemCuonSach(tv.dsDauSach.ds[i]->dms);
-    std::unique_ptr<ChiMucCuon[]> index(new ChiMucCuon[c]);
-    std::unique_ptr<int[]> dem(new int[d]{});
+    ConTroTam<ChiMucCuon[]> index(new ChiMucCuon[c]);
+    ConTroTam<int[]> dem(new int[d]{});
     int pos=0;
     for(int i=0;i<d;++i) for(const CuonSach* p=tv.dsDauSach.ds[i]->dms;p;p=p->next) {
         index[pos].cuon=p; index[pos].dauSach=i; ++pos;
@@ -213,7 +209,7 @@ void ManHinhMuonTra(ThuVien& tv,const NgayThang& ngay,bool tra) {
             break;
         }
         // Hien sach dang giu TRUOC khi nhap cuon, giu dung luong chuc nang f.
-        std::ostringstream out;LietKeSachDangMuon(tv,maThe,out);HienThiPhanTrang(out.str());
+        LuongChuoi out;LietKeSachDangMuon(tv,maThe,out);HienThiPhanTrang(out.str());
         int action=1;
         if(tra) {
             const char* actions[]={"Tra sach", "Bao mat sach (khoa the, rut cuon khoi kho)"};
@@ -234,7 +230,7 @@ void ManHinhMuonTra(ThuVien& tv,const NgayThang& ngay,bool tra) {
     int maThe;
     if(!NhapSo("Ma the doc gia: ",maThe,1,2147483647)) return;
     if(!TimDocGia(tv.cayDocGia,maThe)) { ThongBao("Khong tim thay doc gia."); return; }
-    std::ostringstream out;
+    LuongChuoi out;
     LietKeSachDangMuon(tv,maThe,out); HienThiPhanTrang(out.str());
     int action=1;
     if(tra) {

@@ -1,5 +1,4 @@
 #include "00_KhaiBaoChung.h"
-#include <ostream>
 
 int DemLichSu(const MuonTra* p) { int n=0; for (;p;p=p->next) ++n; return n; }
 int DemSoSachDangMuon(const DocGia& d) {

@@ -1,9 +1,4 @@
 #include "00_KhaiBaoChung.h"
-#include <memory>
-#include <ostream>
-#include <sstream>
-#include <climits>
-#include <stdexcept>
 
 const NutDocGia* TimDocGia(const CayDocGia& tree,int ma) {
     const NutDocGia* p=tree.root;
@@ -16,15 +11,15 @@ NutDocGia* TimDocGia(CayDocGia& tree,int ma) {
     return p;
 }
 int LayDanhSachDocGia(const CayDocGia& tree,const NutDocGia** out,int capacity) {
-    std::unique_ptr<const NutDocGia*[]> stack(new const NutDocGia*[MAX_DOC_GIA]);
+    ConTroTam<const NutDocGia*[]> stack(new const NutDocGia*[MAX_DOC_GIA]);
     int top=0,n=0; const NutDocGia* p=tree.root;
     while(p || top) {
         while(p) {
-            if(top>=MAX_DOC_GIA) throw std::runtime_error("Cay vuot gioi han tai nguyen");
+            if(top>=MAX_DOC_GIA) throw LoiThuVien("Cay vuot gioi han tai nguyen");
             stack[top++]=p; p=p->left;
         }
         p=stack[--top];
-        if(n>=MAX_DOC_GIA || (out && n>=capacity)) throw std::runtime_error("Mang ket qua khong du cho");
+        if(n>=MAX_DOC_GIA || (out && n>=capacity)) throw LoiThuVien("Mang ket qua khong du cho");
         if(out) out[n]=p;
         ++n; p=p->right;
     }
@@ -58,13 +53,13 @@ bool ChenDocGiaCoMa(CayDocGia& tree,const DocGia& d,string& loi) {
         if((*link)->thongTin.maThe==d.maThe) {loi="Trung ma the.";return false;}
         link=d.maThe<(*link)->thongTin.maThe?&(*link)->left:&(*link)->right;
     }
-    std::unique_ptr<NutDocGia> p(new NutDocGia);
+    ConTroTam<NutDocGia> p(new NutDocGia);
     p->thongTin=d; *link=p.release(); return true;
 }
 bool ThemDocGia(ThuVien& tv,const string& ho,const string& ten,const string& phai,int& ma,string& loi) {
     loi.clear();
     if(!HopLeDocGia(ho,ten,phai,THE_HOAT_DONG,loi)) return false;
-    if(tv.maTheLonNhatDaCap==INT_MAX) {loi="Da het mien ma the int; khong quay vong.";return false;}
+    if(tv.maTheLonNhatDaCap==SO_NGUYEN_LON_NHAT) {loi="Da het mien ma the int; khong quay vong.";return false;}
     if(DemDocGia(tv.cayDocGia)>=MAX_DOC_GIA) {loi="Dat gioi han doc gia cua ban tham khao.";return false;}
     DocGia d; d.maThe=tv.maTheLonNhatDaCap+1; d.ho=ChuanHoaChuoi(ho);d.ten=ChuanHoaChuoi(ten);d.phai=phai;
     if(!ChenDocGiaCoMa(tv.cayDocGia,d,loi)) return false;
@@ -110,7 +105,7 @@ void HuyCayDocGia(CayDocGia& tree) {
 }
 void InDocGiaTheoMa(const ThuVien& tv,std::ostream& out) {
     int n=DemDocGia(tv.cayDocGia);
-    std::unique_ptr<const NutDocGia*[]> rows(new const NutDocGia*[n]);
+    ConTroTam<const NutDocGia*[]> rows(new const NutDocGia*[n]);
     LayDanhSachDocGia(tv.cayDocGia,rows.get(),n);
     out<<"MA THE | HO | TEN | PHAI | THE\n";
     for(int i=0;i<n;++i) InMotDocGia(rows[i]->thongTin,out);
@@ -118,7 +113,7 @@ void InDocGiaTheoMa(const ThuVien& tv,std::ostream& out) {
 }
 void InDocGiaTheoTenHo(const ThuVien& tv,std::ostream& out) {
     int n=DemDocGia(tv.cayDocGia);
-    std::unique_ptr<const NutDocGia*[]> rows(new const NutDocGia*[n]);
+    ConTroTam<const NutDocGia*[]> rows(new const NutDocGia*[n]);
     LayDanhSachDocGia(tv.cayDocGia,rows.get(),n);
     // Heap sort tu cai tren view: O(R log R), khong doi khoa BST.
     auto haNut=[&](int root,int size) {
@@ -147,7 +142,7 @@ void ManHinhDocGia(ThuVien& tv) {
             const char* fields[]={"Ma the doc gia"};string values[1];
             while(true) {
                 if(!NhapBieuMau(chon==2?"CHON DOC GIA CAN SUA":"CHON DOC GIA CAN XOA",fields,values,1)) return;
-                if(!DocSoNguyen(values[0],ma,1,INT_MAX)) {ThongBao("Ma the phai la so nguyen duong trong mien int.");continue;}
+                if(!DocSoNguyen(values[0],ma,1,SO_NGUYEN_LON_NHAT)) {ThongBao("Ma the phai la so nguyen duong trong mien int.");continue;}
                 current=TimDocGia(tv.cayDocGia,ma);
                 if(!current) {ThongBao("Khong tim thay doc gia. Kiem tra lai ma the.");continue;}
                 break;
@@ -169,7 +164,7 @@ void ManHinhDocGia(ThuVien& tv) {
         }
         return;
     }
-    if(chon==2 || chon==3) if(!NhapSo("Ma the",ma,1,INT_MAX)) return;
+    if(chon==2 || chon==3) if(!NhapSo("Ma the",ma,1,SO_NGUYEN_LON_NHAT)) return;
     if(chon==3) {ThongBao(XoaDocGia(tv,ma,loi)?"OK: da xoa doc gia.":"LOI: "+loi);return;}
     if(!NhapDong("Ho",ho)||!NhapDong("Ten",ten)||!NhapDong(u8"Phai (Nam/Nữ)",phai)) return;
     bool ok=false;

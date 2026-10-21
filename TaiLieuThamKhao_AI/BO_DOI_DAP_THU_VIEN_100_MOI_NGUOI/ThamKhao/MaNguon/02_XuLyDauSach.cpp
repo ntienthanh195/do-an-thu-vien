@@ -1,8 +1,4 @@
 #include "00_KhaiBaoChung.h"
-#include <memory>
-#include <ostream>
-#include <sstream>
-#include <exception>
 
 namespace {
 // Khoa phu ISBN lam ket qua on dinh khi hai dau sach cung ten.
@@ -67,7 +63,7 @@ bool ThemDauSach(ThuVien& tv,const DauSach& d,string& loi) {
         if(d.dms) { loi="ThemDauSach chi nhan thong tin dau sach; them tung cuon bang ThemCuonSach."; return false; }
         // Chan ky tu dieu khien o du lieu GOC; chuan hoa khong duoc che dau loi nhap.
         if(!HopLeDauSach(d,loi)) return false;
-        std::unique_ptr<DauSach> moi(new DauSach);
+        ConTroTam<DauSach> moi(new DauSach);
         moi->ISBN=ChuanHoaChuoi(d.ISBN); moi->tenSach=ChuanHoaChuoi(d.tenSach);
         moi->tacGia=ChuanHoaChuoi(d.tacGia); moi->theLoai=ChuanHoaChuoi(d.theLoai);
         moi->soTrang=d.soTrang; moi->namXuatBan=d.namXuatBan;
@@ -78,7 +74,7 @@ bool ThemDauSach(ThuVien& tv,const DauSach& d,string& loi) {
         for(int i=tv.dsDauSach.soLuong;i>pos;--i) tv.dsDauSach.ds[i]=tv.dsDauSach.ds[i-1];
         tv.dsDauSach.ds[pos]=moi.release(); ++tv.dsDauSach.soLuong;
         loi.clear(); return true;
-    } catch(const std::exception&) { loi="Khong du bo nho de them dau sach; du lieu khong doi."; return false; }
+    } catch(...) { loi="Khong du bo nho de them dau sach; du lieu khong doi."; return false; }
 }
 
 void TimDauSachTheoTen(const ThuVien& tv,const string& ten,std::ostream& out) {
@@ -100,7 +96,7 @@ void InDauSachTheoTheLoai(const ThuVien& tv,std::ostream& out) {
     if(!n) { out<<"Danh sach dau sach rong.\n"; return; }
     // View muon con tro, khong so huu DauSach. Sap xen O(D^2), bo nho O(D).
     // Mang goc van tang theo ten sau khi ham ket thuc.
-    std::unique_ptr<const DauSach*[]> view(new const DauSach*[n]);
+    ConTroTam<const DauSach*[]> view(new const DauSach*[n]);
     for(int i=0;i<n;++i) {
         const DauSach* key=tv.dsDauSach.ds[i]; int j=i;
         while(j>0) {
@@ -179,5 +175,5 @@ void ManHinhNhapDauSach(ThuVien& tv) {
 void ManHinhTimSach(const ThuVien& tv) {
     string ten;
     if(!NhapDong("Ten/phan ten sach can tim: ",ten)) return;
-    std::ostringstream out; TimDauSachTheoTen(tv,ten,out); HienThiPhanTrang(out.str());
+    LuongChuoi out; TimDauSachTheoTen(tv,ten,out); HienThiPhanTrang(out.str());
 }

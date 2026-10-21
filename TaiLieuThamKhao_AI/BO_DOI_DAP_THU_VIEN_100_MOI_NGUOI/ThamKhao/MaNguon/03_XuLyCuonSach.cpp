@@ -1,7 +1,4 @@
 #include "00_KhaiBaoChung.h"
-#include <memory>
-#include <limits>
-#include <exception>
 
 namespace {
 // Khong dung find/rfind: tu xac dinh dau # cuoi cung de tach ma.
@@ -14,7 +11,7 @@ bool TachMaMoi(const string& ma,string& isbn,int& so) {
     // Ma tu sinh la so duong o dang chuan, khong dau +, khong so 0 dau.
     if(suffix[0]=='0') return false;
     for(char c:suffix) if(c<'0'||c>'9') return false;
-    return DocSoNguyen(suffix,so,1,std::numeric_limits<int>::max());
+    return DocSoNguyen(suffix,so,1,SO_NGUYEN_LON_NHAT);
 }
 }
 
@@ -64,7 +61,7 @@ bool SinhMaSachTuDong(const ThuVien& tv,const DauSach& d,string& ma,string& loi)
         string isbn; int so=0;
         if(TachMaMoi(p->maSach,isbn,so) && isbn==d.ISBN && so>maxSo) maxSo=so;
     }
-    if(maxSo==std::numeric_limits<int>::max()) { loi="Da het mien so thu tu ma cuon."; return false; }
+    if(maxSo==SO_NGUYEN_LON_NHAT) { loi="Da het mien so thu tu ma cuon."; return false; }
     string ketQua=d.ISBN+"#"+std::to_string(maxSo+1);
     // ISBN hop le co the da du 512 byte: ma cuon them #N van phai luu/doc duoc.
     if(!HopLeVanBan(ketQua)) { loi="Ma cuon sinh ra vuot gioi han 512 byte; ISBN qua dai."; return false; }
@@ -86,14 +83,14 @@ bool ThemCuonSach(ThuVien& tv,const string& isbn,const string& viTri,string& ma,
             if(++tong>=MAX_BAN_GHI) { loi="Da dat gioi han so cuon cua ban tham khao."; return false; }
         string maMoi;
         if(!SinhMaSachTuDong(tv,*d,maMoi,loi)) return false;
-        std::unique_ptr<CuonSach> moi(new CuonSach);
+        ConTroTam<CuonSach> moi(new CuonSach);
         moi->maSach=maMoi; moi->viTri=pos;
         // Gan gia tri output truoc khi commit de loi cap phat string khong tao nua giao dich.
         ma=maMoi;
         CuonSach** tail=&d->dms;
         while(*tail) tail=&(*tail)->next;
         *tail=moi.release(); loi.clear(); return true;
-    } catch(const std::exception&) { loi="Khong du bo nho de them cuon; du lieu khong doi."; return false; }
+    } catch(...) { loi="Khong du bo nho de them cuon; du lieu khong doi."; return false; }
 }
 
 void HuyDanhMucCuonSach(CuonSach*& head) {

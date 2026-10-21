@@ -1,16 +1,4 @@
 #include "00_KhaiBaoChung.h"
-#include <fstream>
-#include <memory>
-#include <climits>
-#include <filesystem>
-#include <chrono>
-#include <system_error>
-#ifdef _WIN32
-#ifndef NOMINMAX
-#define NOMINMAX
-#endif
-#include <windows.h>
-#endif
 
 namespace {
 // Cac mang nay chi la view tam de kiem tra, khong thay bon cau truc luu tru.
@@ -58,11 +46,11 @@ bool MaSinhDungDauSach(const string& ma,const string& isbn) {
     if(hash==string::npos) return true;
     if(hash==0 || hash+1==ma.size() || ma[hash+1]=='0') return false;
     int so=0;
-    return ma.substr(0,hash)==isbn && DocSoNguyen(ma.substr(hash+1),so,1,INT_MAX);
+    return ma.substr(0,hash)==isbn && DocSoNguyen(ma.substr(hash+1),so,1,SO_NGUYEN_LON_NHAT);
 }
 struct BoDoc {
-    std::ifstream in; int dong=0; string& loi;
-    BoDoc(const string& path,string& err):in(std::filesystem::u8path(path),std::ios::binary),loi(err) {}
+    TepDoc in; int dong=0; string& loi;
+    BoDoc(const string& path,string& err):in(path),loi(err) {}
     bool Sai(const string& why) { loi="Dong "+std::to_string(dong)+": "+why; return false; }
     bool Dong(string& s) {
         s.clear(); ++dong; char ch=0; bool any=false;
@@ -104,8 +92,8 @@ bool KiemTraNoiBo(const ThuVien& tv,string& loi) {
     if(tv.maTheLonNhatDaCap<0) return sai("Moc ma the am.");
     const int nd=tv.dsDauSach.soLuong;
     if(nd<0 || nd>MAX_DAU_SACH) return sai("So dau sach vuot gioi han.");
-    std::unique_ptr<const DauSach*[]> dau(new const DauSach*[nd]);
-    std::unique_ptr<const CuonSach*[]> cuon(new const CuonSach*[MAX_BAN_GHI]);
+    ConTroTam<const DauSach*[]> dau(new const DauSach*[nd]);
+    ConTroTam<const CuonSach*[]> cuon(new const CuonSach*[MAX_BAN_GHI]);
     int nc=0;
     for(int i=0;i<nd;++i) {
         const DauSach* d=tv.dsDauSach.ds[i];
@@ -132,11 +120,11 @@ bool KiemTraNoiBo(const ThuVien& tv,string& loi) {
     for(int i=1;i<nd;++i) if(dau[i-1]->ISBN==dau[i]->ISBN) return sai("Trung ISBN: "+dau[i]->ISBN);
     SapXepHeap(cuon.get(),nc,[](const CuonSach* a,const CuonSach* b){return a->maSach<b->maSach;});
     for(int i=1;i<nc;++i) if(cuon[i-1]->maSach==cuon[i]->maSach) return sai("Trung ma cuon: "+cuon[i]->maSach);
-    std::unique_ptr<Khung[]> stack(new Khung[MAX_DOC_GIA]);
-    std::unique_ptr<Luot[]> lich(new Luot[MAX_BAN_GHI]);
-    std::unique_ptr<int[]> active(new int[nc]{});
+    ConTroTam<Khung[]> stack(new Khung[MAX_DOC_GIA]);
+    ConTroTam<Luot[]> lich(new Luot[MAX_BAN_GHI]);
+    ConTroTam<int[]> active(new int[nc]{});
     int top=0,ng=0,nh=0;
-    if(tv.cayDocGia.root) stack[top++]={tv.cayDocGia.root,0,static_cast<long long>(INT_MAX)+1};
+    if(tv.cayDocGia.root) stack[top++]={tv.cayDocGia.root,0,static_cast<long long>(SO_NGUYEN_LON_NHAT)+1};
     const NgayThang now=HomNay();
     while(top) {
         Khung f=stack[--top]; const DocGia& g=f.p->thongTin;
@@ -179,8 +167,8 @@ bool KiemTraNoiBo(const ThuVien& tv,string& loi) {
         if(a.sach!=b.sach) return a.sach<b.sach;
         const int am=SoThuTuNgay(a.p->ngayMuon),bm=SoThuTuNgay(b.p->ngayMuon);
         if(am!=bm) return am<bm;
-        const int ae=a.p->trangThai==MUON_DANG_MUON?INT_MAX:SoThuTuNgay(a.p->ngayTra);
-        const int be=b.p->trangThai==MUON_DANG_MUON?INT_MAX:SoThuTuNgay(b.p->ngayTra);
+        const int ae=a.p->trangThai==MUON_DANG_MUON?SO_NGUYEN_LON_NHAT:SoThuTuNgay(a.p->ngayTra);
+        const int be=b.p->trangThai==MUON_DANG_MUON?SO_NGUYEN_LON_NHAT:SoThuTuNgay(b.p->ngayTra);
         if(ae!=be) return ae<be;
         if(a.p->trangThai!=b.p->trangThai) return a.p->trangThai<b.p->trangThai;
         return a.maThe<b.maThe;
@@ -193,7 +181,7 @@ bool KiemTraNoiBo(const ThuVien& tv,string& loi) {
     // V1 chi co NGAY, khong co gio: chon thu tu hop le co the xay ra trong ngay.
     // Tra luot tu ngay truoc -> cac luot muon-tra trong ngay -> luot giu qua ngay.
     // Moi luot cung ngay van can mot cho trong, nhung co the thuc hien lan luot.
-    std::unique_ptr<MocMuon[]> moc(new MocMuon[static_cast<std::size_t>(nh)*2]);
+    ConTroTam<MocMuon[]> moc(new MocMuon[static_cast<std::size_t>(nh)*2]);
     int nm=0;
     for(int i=0;i<nh;++i) {
         const MuonTra& h=*lich[i].p;int start=SoThuTuNgay(h.ngayMuon),ma=lich[i].maThe;
@@ -222,39 +210,39 @@ bool KiemTraNoiBo(const ThuVien& tv,string& loi) {
 bool DocNoiBo(ThuVien& tv,const string& path,string& loi) {
     BoDoc r(path,loi); if(!r.in) { loi="Khong mo duoc file: "+path; return false; }
     ThuVien tmp; int nd=0,nc=0,nh=0;
-    if(!r.So(tmp.maTheLonNhatDaCap,0,INT_MAX)||!r.So(nd,0,MAX_DAU_SACH)) return false;
+    if(!r.So(tmp.maTheLonNhatDaCap,0,SO_NGUYEN_LON_NHAT)||!r.So(nd,0,MAX_DAU_SACH)) return false;
     for(int i=0;i<nd;++i) {
         string a[7]; if(!r.Truong(a,7)) return false;
-        std::unique_ptr<DauSach> d(new DauSach); int count=0;
+        ConTroTam<DauSach> d(new DauSach); int count=0;
         d->ISBN=a[0]; d->tenSach=a[1]; d->tacGia=a[3]; d->theLoai=a[5];
-        if(!DocSoNguyen(a[2],d->soTrang,1,INT_MAX)||!DocSoNguyen(a[4],d->namXuatBan,1,9999)
+        if(!DocSoNguyen(a[2],d->soTrang,1,SO_NGUYEN_LON_NHAT)||!DocSoNguyen(a[4],d->namXuatBan,1,9999)
            ||!DocSoNguyen(a[6],count,0,MAX_BAN_GHI-nc)) return r.Sai("so trang/nam/so cuon sai.");
         tmp.dsDauSach.ds[tmp.dsDauSach.soLuong++]=d.release();
         CuonSach** tail=&tmp.dsDauSach.ds[i]->dms;
         for(int j=0;j<count;++j) {
             string c[3]; if(!r.Truong(c,3)) return false;
-            std::unique_ptr<CuonSach> p(new CuonSach); p->maSach=c[0]; p->viTri=c[2];
+            ConTroTam<CuonSach> p(new CuonSach); p->maSach=c[0]; p->viTri=c[2];
             if(!DocSoNguyen(c[1],p->trangThai,0,2)) return r.Sai("trang thai cuon sai.");
             *tail=p.release(); tail=&(*tail)->next; ++nc;
         }
     }
     SapXepHeap(tmp.dsDauSach.ds,nd,SachTruoc);
     int ng=0; if(!r.So(ng,0,MAX_DOC_GIA)) return false;
-    std::unique_ptr<NutDocGia*[]> nodes(new NutDocGia*[ng]);
+    ConTroTam<NutDocGia*[]> nodes(new NutDocGia*[ng]);
     NutDocGia* truoc=nullptr;
     for(int i=0;i<ng;++i) {
         string a[6]; if(!r.Truong(a,6)) return false;
         DocGia g; int count=0; g.ho=a[1];g.ten=a[2];g.phai=a[3];
-        if(!DocSoNguyen(a[0],g.maThe,1,INT_MAX)||!DocSoNguyen(a[4],g.trangThaiThe,0,1)
+        if(!DocSoNguyen(a[0],g.maThe,1,SO_NGUYEN_LON_NHAT)||!DocSoNguyen(a[4],g.trangThaiThe,0,1)
            ||!DocSoNguyen(a[5],count,0,MAX_BAN_GHI-nh)) return r.Sai("ma the/trang thai/so lich su sai.");
         // Noi tam thanh nhanh phai de ThuVien so huu ngay ca khi doc loi.
-        std::unique_ptr<NutDocGia> owned(new NutDocGia);owned->thongTin=g;
+        ConTroTam<NutDocGia> owned(new NutDocGia);owned->thongTin=g;
         NutDocGia* node=owned.release();nodes[i]=node;
         if(truoc) truoc->right=node;else tmp.cayDocGia.root=node;
         truoc=node;MuonTra** tail=&node->thongTin.dsMuonTra;
         for(int j=0;j<count;++j) {
             string h[4]; if(!r.Truong(h,4)) return false;
-            std::unique_ptr<MuonTra> p(new MuonTra); p->maSach=h[0];
+            ConTroTam<MuonTra> p(new MuonTra); p->maSach=h[0];
             if(!DocNgay(h[1],p->ngayMuon)||!DocNgay(h[2],p->ngayTra)||!DocSoNguyen(h[3],p->trangThai,0,2))
                 return r.Sai("ngay/trang thai lich su sai.");
             *tail=p.release();tail=&(*tail)->next;++nh;
@@ -278,7 +266,7 @@ void Ghi(std::ostream& out,const ThuVien& tv) {
         for(const CuonSach* c=d.dms;c;c=c->next) out<<c->maSach<<'|'<<c->trangThai<<'|'<<c->viTri<<'\n';
     }
     const int n=DemDocGia(tv.cayDocGia); out<<n<<'\n';
-    std::unique_ptr<const NutDocGia*[]> ds(new const NutDocGia*[n]);
+    ConTroTam<const NutDocGia*[]> ds(new const NutDocGia*[n]);
     LayDanhSachDocGia(tv.cayDocGia,ds.get(),n);
     for(int i=0;i<n;++i) {
         const DocGia& g=ds[i]->thongTin;
@@ -289,27 +277,28 @@ void Ghi(std::ostream& out,const ThuVien& tv) {
 }
 bool LuuNoiBo(const ThuVien& tv,const string& path,string& loi) {
     if(!KiemTraNoiBo(tv,loi)) { loi="Khong luu du lieu sai: "+loi;return false; }
-    const std::filesystem::path dest=std::filesystem::u8path(path);
-    if(dest.empty()||dest.filename().empty()) { loi="Duong dan file rong.";return false; }
-    // Tao thu muc tam rieng cung thu muc dich: create_directory la thao tac giu cho.
-    // Khong trung file tam cua lan chay khac, cung volume de rename/replace.
-    std::filesystem::path dir;
-    const auto stamp=std::chrono::high_resolution_clock::now().time_since_epoch().count();
+    const std::wstring dest=DuongDanDayDu(path);
+    if(dest.empty() || dest.back()==L'\\' || dest.back()==L'/') {loi="Duong dan file rong.";return false;}
+    const std::wstring parent=ThuMucCha(dest);
+    std::wstring dir;
     bool made=false;
     for(int i=0;i<100;++i) {
-        dir=dest.parent_path()/std::filesystem::u8path(".thu-vien-save-"+std::to_string(stamp)+"-"+std::to_string(i));
-        std::error_code ec;
-        if(std::filesystem::create_directory(dir,ec)) { made=true;break; }
-        if(ec && ec!=std::errc::file_exists) { loi="Khong tao duoc file tam: "+ec.message();return false; }
+        dir=parent+L".thu-vien-save-"+std::to_wstring(GetCurrentProcessId())+L"-"+
+            std::to_wstring(GetTickCount())+L"-"+std::to_wstring(i);
+        if(CreateDirectoryW(dir.c_str(),nullptr)) {made=true;break;}
+        DWORD err=GetLastError();
+        if(err!=ERROR_ALREADY_EXISTS) {loi="Khong tao duoc thu muc tam (Windows "+std::to_string(err)+").";return false;}
     }
-    if(!made) { loi="Khong giu duoc ten file tam.";return false; }
-    const auto temp=dir/"data.txt";
+    if(!made) {loi="Khong giu duoc ten file tam.";return false;}
     struct DonTam {
-        std::filesystem::path file,dir;
-        ~DonTam(){std::error_code ec;std::filesystem::remove(file,ec);std::filesystem::remove(dir,ec);}
-    } cleanup{temp,dir};
+        std::wstring file,dir;
+        explicit DonTam(const std::wstring& d):dir(d) {}
+        ~DonTam(){if(!file.empty()) DeleteFileW(file.c_str());RemoveDirectoryW(dir.c_str());}
+    } cleanup(dir);
+    cleanup.file=dir+L"/data.txt";
+    const std::wstring& temp=cleanup.file;
     {
-        std::ofstream out(temp,std::ios::binary|std::ios::trunc);
+        TepGhi out(temp);
         if(!out) { loi="Khong mo duoc file tam de ghi.";return false; }
         Ghi(out,tv);out.flush();
         if(!out) { loi="Ghi/flush file tam that bai; file cu duoc giu.";return false; }
@@ -318,14 +307,11 @@ bool LuuNoiBo(const ThuVien& tv,const string& path,string& loi) {
     }
     // Doc lai file vua ghi de bat loi serialization truoc khi thay the ban cu.
     ThuVien check;
-    if(!DocNoiBo(check,temp.u8string(),loi)) { loi="File tam khong doc lai duoc: "+loi;return false; }
+    if(!DocNoiBo(check,DuongDanUTF8(temp),loi)) { loi="File tam khong doc lai duoc: "+loi;return false; }
 #ifdef _WIN32
     if(!MoveFileExW(temp.c_str(),dest.c_str(),MOVEFILE_REPLACE_EXISTING|MOVEFILE_WRITE_THROUGH)) {
         loi="Thay the file that bai (Windows "+std::to_string(GetLastError())+"); file cu duoc giu.";return false;
     }
-#else
-    std::error_code ec; std::filesystem::rename(temp,dest,ec);
-    if(ec) { loi="Thay the file that bai: "+ec.message()+"; file cu duoc giu.";return false; }
 #endif
     loi.clear();return true;
 }
@@ -344,13 +330,16 @@ void HoanDoiThuVien(ThuVien& a,ThuVien& b) {
 }
 bool KiemTraToanVen(const ThuVien& tv,string& loi) {
     try { return KiemTraNoiBo(tv,loi); }
-    catch(const std::exception& e) { loi=string("Kiem tra that bai: ")+e.what();return false; }
+    catch(const LoiThuVien& e) { loi=string("Kiem tra that bai: ")+e.what();return false; }
+    catch(...) {loi="Kiem tra that bai: khong du bo nho / loi luong.";return false;}
 }
 bool DocFile(ThuVien& tv,const string& path,string& loi) {
     try { return DocNoiBo(tv,path,loi); }
-    catch(const std::exception& e) { loi=string("Doc file that bai; giu du lieu cu: ")+e.what();return false; }
+    catch(const LoiThuVien& e) { loi=string("Doc file that bai; giu du lieu cu: ")+e.what();return false; }
+    catch(...) {loi="Doc file that bai; giu du lieu cu: khong du bo nho / loi luong.";return false;}
 }
 bool LuuFile(const ThuVien& tv,const string& path,string& loi) {
     try { return LuuNoiBo(tv,path,loi); }
-    catch(const std::exception& e) { loi=string("Luu file that bai: ")+e.what();return false; }
+    catch(const LoiThuVien& e) { loi=string("Luu file that bai: ")+e.what();return false; }
+    catch(...) {loi="Luu file that bai: khong du bo nho / loi luong.";return false;}
 }

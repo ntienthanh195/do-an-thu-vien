@@ -1,8 +1,4 @@
 #include "00_KhaiBaoChung.h"
-#include <ctime>
-#include <iomanip>
-#include <sstream>
-#include <stdexcept>
 
 namespace {
 bool KhoangTrang(unsigned char c) { return c==' ' || c=='\t' || c=='\r' || c=='\n'; }
@@ -105,21 +101,22 @@ bool DocNgay(const string& s,NgayThang& d) {
 }
 string ChuoiNgay(const NgayThang& d) {
     if (NgayRong(d)) return "0/0/0";
-    std::ostringstream out;
-    out<<std::setfill('0')<<std::setw(2)<<d.ngay<<'/'<<std::setw(2)<<d.thang<<'/'<<std::setw(4)<<d.nam;
-    return out.str();
+    string ngay=std::to_string(d.ngay),thang=std::to_string(d.thang),nam=std::to_string(d.nam);
+    while(ngay.size()<2) ngay="0"+ngay;
+    while(thang.size()<2) thang="0"+thang;
+    while(nam.size()<4) nam="0"+nam;
+    return ngay+"/"+thang+"/"+nam;
 }
 int SoThuTuNgay(const NgayThang& d) {
-    if (!NgayHopLe(d)) throw std::invalid_argument("Khong tinh ngay khong hop le / 0/0/0");
+    if (!NgayHopLe(d)) throw LoiThuVien("Khong tinh ngay khong hop le / 0/0/0");
     static const int truocThang[]={0,31,59,90,120,151,181,212,243,273,304,334};
     int y=d.nam-1;
     return 365*y+y/4-y/100+y/400+truocThang[d.thang-1]+d.ngay+(d.thang>2 && NamNhuan(d.nam)?1:0);
 }
 int KhoangCachNgay(const NgayThang& a,const NgayThang& b) { return SoThuTuNgay(b)-SoThuTuNgay(a); }
 NgayThang HomNay() {
-    std::time_t t=std::time(nullptr); std::tm* p=std::localtime(&t);
-    if (!p) throw std::runtime_error("Khong doc duoc dong ho he thong");
-    return NgayThang{p->tm_mday,p->tm_mon+1,p->tm_year+1900};
+    SYSTEMTIME now;GetLocalTime(&now);
+    return NgayThang(now.wDay,now.wMonth,now.wYear);
 }
 bool QuaHan7Ngay(const NgayThang& a,const NgayThang& b) {
     return NgayHopLe(a) && NgayHopLe(b) && KhoangCachNgay(a,b)>7;

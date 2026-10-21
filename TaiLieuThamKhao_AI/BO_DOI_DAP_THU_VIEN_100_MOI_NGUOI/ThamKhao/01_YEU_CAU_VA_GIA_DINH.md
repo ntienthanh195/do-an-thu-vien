@@ -91,30 +91,18 @@ Bộ đọc còn kiểm giới hạn ba cuốn trong lịch sử bằng quét s�
 
 **G12 — Chỉ thực hiện các thao tác được công bố.** Đề bắt buộc thêm/xóa/sửa đối với thẻ; không tự suy thành yêu cầu CRUD đầy đủ cho đầu sách/cuốn. Bản tham khảo có nhập đầu sách và thêm cuốn; không cung cấp xóa đầu sách đang bị lịch sử tham chiếu hoặc đổi mã đã phát sinh lịch sử.
 
-## 5. Hàm thư viện và phần tự cài
+## 5. Lớp hỗ trợ của bản chuyển đổi C++11
 
-Không dùng `vector`, `map`, `list`, các container STL thay cấu trúc đề; không dùng `std::sort`, `std::find`, `std::count` hoặc `string::find` để thực hiện các bài toán tìm/sắp/đếm phải tự cài.
+Bản này chuyển từ snapshot AI đã phát hành tại commit aec28f8489b15d332f210af1c991eef666476d9a. Các mục 1–4 phía trên giữ nguồn gốc và giả định nghiệp vụ, không xác nhận giảng viên đã duyệt.
 
-Cho phép `std::string` làm kiểu văn bản; `std::unique_ptr` để giữ quyền sở hữu tạm, không thay danh sách/cây/mảng của đề; stream/file/ngày/hệ điều hành phục vụ nhập xuất. Giả định này cần xác nhận nếu lớp có quy định cấm rộng hơn.
+Chỉ include iostream, string, fstream, windows.h. Không dùng container STL hoặc hàm tìm/sắp/đếm thay thuật toán tự cài. Các hàm std::to_string, std::to_wstring và thao tác chuỗi thuộc string, có từ C++11.
 
-Kiểm kê thư viện được sử dụng trong bản triển khai:
+ConTroTam tự quản lý con trỏ tạm; BoDemChuoi/LuongChuoi tự gom đầu ra cho phân trang. Stream dùng iostream; TepDoc/TepGhi dùng Win32 để giữ đường dẫn Unicode mà không phụ thuộc overload mở file wchar_t của MinGW mới. Win32 cũng lấy ngày, quản lý thư mục/file tạm, thay file đích và phục vụ giao diện. Không dùng shellapi.h hoặc liên kết shell32.
 
-- `<string>`: `std::string`, `std::wstring`, phép gán/nối/so sánh/truy cập ký tự, `size`, `empty`, `substr`, `compare`, `clear`, `insert`, `erase`, `back`, `pop_back`, `swap`, `data`, `c_str`, `std::to_string`, `std::to_wstring`. Cắt chuỗi hoặc so chuỗi chỉ là thao tác văn bản; thuật toán tìm chuỗi con vẫn tự viết. `insert`/`erase` trong ô nhập chỉnh văn bản, không thay thuật toán chèn/xóa cấu trúc DSA.
-- `<iosfwd>`, `<iostream>`, `<ostream>`, `<fstream>`, `<sstream>`: `cin/cout/cerr`, stream đọc/ghi chuỗi và file, `std::getline`, `get`, `peek`, `bad`, `fail`, `flush`, `close`, `str`, các toán tử nhập/xuất và `std::char_traits<char>::eof`.
-- `<iomanip>`: `std::setw`, `std::setfill` để định dạng ngày. `<ctime>`: `std::time`, `std::localtime` lấy ngày hiện tại; thuật toán tính ngày nhuận và khoảng cách ngày tự cài.
-- `<memory>`: `std::unique_ptr`, `get`, `release`, `reset` và destructor để quản lý node/mảng tạm khi thoát sớm. Bốn cấu trúc nghiệp vụ vẫn dùng con trỏ và thuật toán tự cài.
-- `<limits>`, `<climits>`: `std::numeric_limits<int>::max`, `INT_MAX` để kiểm tràn. `<exception>`, `<stdexcept>`: `std::exception::what`, `std::runtime_error`, `std::invalid_argument` để báo lỗi.
-- `<filesystem>`: `u8path`, `path`, `exists`, `create_directory`, `create_directories`, `remove`, `rename`; các phép ghép đường dẫn, `parent_path`, `filename`, `empty`, `u8string`, `c_str`. `<chrono>`: `high_resolution_clock::now`, `time_since_epoch`, `count` để đặt tên vùng ghi tạm. Đây là `duration::count` đo thời gian, không phải thuật toán `std::count` đếm tập dữ liệu.
-- `<system_error>`: `std::error_code`, `std::errc::file_exists`, `message` để báo lỗi file. `<cstdio>` cung cấp các luồng chuẩn cho kiểm terminal.
-- Trên Windows, `<windows.h>`, `<shellapi.h>`, `<io.h>`: `MoveFileExW`, `GetLastError`; `GetStdHandle`, `GetConsoleScreenBufferInfo`, `SetConsoleTextAttribute`, `GetConsoleCursorInfo`, `SetConsoleCursorInfo`, `SetConsoleCursorPosition`, `WriteConsoleOutputW`; `GetConsoleMode`, `SetConsoleMode`, `ReadConsoleInputW`, `WideCharToMultiByte`, `MultiByteToWideChar`; `GetConsoleCP`, `GetConsoleOutputCP`, `SetConsoleCP`, `SetConsoleOutputCP`; `GetCommandLineW`, `CommandLineToArgvW`, `LocalFree`; `_isatty`, `_fileno`. Đây là file/console/đối số chạy, không thay thuật toán DSA. Build Windows liên kết `shell32` để dùng `CommandLineToArgvW`. Nhánh ngoài Windows dùng giao diện dòng số; `<unistd.h>` là include tương thích nền tảng.
-- Lớp giao diện màu hiện tại dùng thêm `WriteConsoleW`, `GetConsoleScreenBufferInfoEx`, `SetConsoleScreenBufferInfoEx`, `SetConsoleWindowInfo`, `GetCurrentConsoleFontEx`, `SetCurrentConsoleFontEx`, `GetEnvironmentVariableW` và `FoldStringW(MAP_PRECOMPOSED)`. Chúng phục vụ màu, font, tọa độ và ghép dấu trên bản hiển thị; không thay thuật toán tìm/sắp xếp và không sửa byte dữ liệu nghiệp vụ. Bảng màu dùng macro `RGB`, `GetRValue`, `GetGValue`, `GetBValue`.
+Thuật toán tìm/chèn/xóa, BST, DSLK, sắp xếp, thống kê và định dạng v1 được giữ. Xem [README](README.md) để biết chi tiết chuyển đổi và compiler đã kiểm tra.
 
-Không dùng `system("cls")` hoặc thực thi lệnh shell từ dữ liệu nhập. Danh sách `#include` và lời gọi trong chín file là căn cứ đối chiếu khi thay phiên bản.
+## 6. Cách dùng để học
 
-Tự cài chuẩn hóa và tìm chuỗi con; tìm đầu sách/ISBN/cuốn; chèn mảng có thứ tự; tìm/chèn/xóa BST; duyệt danh sách; đếm lịch sử; sắp các bảng kết quả; tính ngày; thống kê top và quá hạn. Không nói một phép sắp nhanh hơn nếu chưa tính cả khâu tạo dữ liệu kết quả.
+Đây vẫn là code AI tham khảo. Xem code rồi tự viết lại là luyện có hỗ trợ; không tự chuyển thành bằng chứng tự chủ. Bộ câu hỏi cũ có thể giúp hiểu nghiệp vụ, nhưng các câu về filesystem, unique_ptr, shell32 và helper C++17 phải đối chiếu lại bản C++11.
 
-## 6. Cách dùng tài liệu để học
-
-Đọc yêu cầu và giả định trong file này, rồi trả lời [câu hỏi](../01_CAU_HOI.md) trước khi mở [đáp án](../02_DAP_AN.md). Đáp án mô tả bản AI và giả định của nó, không phải đáp án thầy đã duyệt.
-
-Che code rồi viết lại là luyện có hỗ trợ vì đã xem giải pháp. Để tự kiểm chứng, tự thiết kế thêm dữ liệu, giải thích một ca chưa xem và sửa một yêu cầu có thay đổi ý nghĩa. Không cập nhật nhật ký học hoặc điểm tự chủ chỉ vì tài liệu/bản build này tồn tại.
+Không cập nhật nhật ký học hoặc điểm tự chủ từ việc chuyển đổi/build/kiểm thử kỹ thuật.

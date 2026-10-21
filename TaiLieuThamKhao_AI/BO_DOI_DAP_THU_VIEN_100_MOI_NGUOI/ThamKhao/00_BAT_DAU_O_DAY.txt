@@ -1,0 +1,11 @@
+DEMO THU VIEN C++11 - GIU GIAO DIEN CONSOLE
+
+1. Giai nen TOAN BO thu muc.
+2. Nhan dup ChayDemo.bat de mo giao dien nhu ban AI cu.
+3. Ma nguon: MaNguon/ (1 header + 8 file .cpp).
+4. Mo ThuVien.dev neu muon xem/build bang Dev-C++.
+5. Chi 4 header thu vien: iostream, string, fstream, windows.h.
+
+Da kem build/ThuVien.exe. Khong can Python de chay ung dung.
+README.md co huong dan build, pham vi chuyen doi va gioi han compiler.
+Du lieu moi cua moi lan demo duoc giu rieng trong DuLieu/runtime.
