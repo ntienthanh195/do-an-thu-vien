@@ -2,6 +2,13 @@
 
 Đồ án nhóm đề số 3: quản lý sách, độc giả và mượn–trả bằng C++, với giao diện console tương tác và dữ liệu đọc/ghi file.
 
+## Tài liệu ôn tập của nhóm
+
+- **[Bộ 86 câu hỏi lý thuyết CTDL](TaiLieuThamKhao_AI/BO_86_CAU_HOI_LY_THUYET_CTDL/README.md)** — lựa chọn cấu trúc dữ liệu, bất biến, phản ví dụ và phân tích giải thuật; Chương I, III–VI, không gồm Chương II. Có 86 đáp án và 27 phần hỏi tiếp. [Tải ZIP bộ 86](TaiLieuThamKhao_AI/BO_86_CAU_HOI_LY_THUYET_CTDL.zip).
+- **[Bộ 325 câu tình huống đồ án Thư viện](TaiLieuThamKhao_AI/BO_DOI_DAP_THU_VIEN_100_MOI_NGUOI/README.md)** — nghiệp vụ, truy vết và bảo vệ code tham khảo, chia theo phần của Thái, Thành, Tấn và phần chung.
+
+Hai bộ bổ sung cho nhau: **86 câu để ôn lý thuyết CTDL**, **325 câu để luyện tình huống trên đồ án/code tham khảo**. Đây là tài liệu ôn do AI biên soạn; mã nhóm tự viết nằm ở `MaNguon/`.
+
 ## Thành viên và nhiệm vụ
 
 - **Thành:** a, f, g; độc giả, mượn–trả, ngày tháng, đọc/ghi độc giả và lịch sử; điều phối tích hợp.
