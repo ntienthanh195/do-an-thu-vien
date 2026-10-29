@@ -27,8 +27,7 @@ string ChuanHoaChuoi(const string &s)
         }
         else
         {
-            if (gap)
-                r += ' ';
+            if (gap) r += ' ';
             r += static_cast<char>(c);
             gap = false;
         }
