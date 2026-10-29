@@ -1,7 +1,7 @@
 /*c.Nhập thông tin đầu sách và đánh mã sách tự động 
 sao cho tìm thông tin sách theo mã sách nhanh nhất.*/
 #include "00_KhaiBaoChung.h"
-
+// Giai đoạn 1 — Nhánh thêm đầu sách
 bool HopLeVanBan_THAI(const string &s)
 {   
     string t = ChuanHoaChuoi(s);
@@ -28,10 +28,11 @@ bool HopLeTenSach_THAI(const string &s){
     }
     return CoKyTuHopLe;
 }
-// Giai đoạn 1 — Nhánh thêm đầu sách
+
 bool HopLeDauSach(const DauSach &d, string &loi){
-    // KIEM TRA ISBN
-    if(d.ISBN.size() != 10 && d.ISBN.size() != 13){
+    // KIEM TRA ISBN 
+    // quy uoc isbn ca thu vien la isbn-13
+    if(d.ISBN.size() != 13){
         loi = "ISBN khong hop le!\n";
         return false;
     }
@@ -69,3 +70,24 @@ bool HopLeDauSach(const DauSach &d, string &loi){
 
     return true;
 }
+
+string ChuanHoaISBN(const string &isbn){
+    string res = "";
+    int doDai = (int)isbn.size();
+    for(int i = 0; i < doDai; ++i){
+        if(isbn[i] >= '0' && isbn[i] <= '9'){
+            res += isbn[i];
+        }
+    }
+    return res;
+}
+
+const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn){
+    string isbn_chuanhoa = ChuanHoaISBN(isbn);
+    if(isbn_chuanhoa.size() == 0) return nullptr;
+    for(int i = 0; i < ds.soLuong; ++i){
+        if(ds.ds[i] != nullptr && ds.ds[i]->ISBN == isbn_chuanhoa) return ds.ds[i];
+    }
+    return nullptr;
+}
+// cach 2 nhanh hon : nhung phai biet co duoc luu mang khoa isbn o file khaibaochung.h ko
