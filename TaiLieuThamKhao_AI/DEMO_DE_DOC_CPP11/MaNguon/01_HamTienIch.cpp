@@ -45,7 +45,7 @@ string KhoaSoSanh(const string &s)
 int SoSanhChuoi(const string &a, const string &b)
 {
     const string x = KhoaSoSanh(a), y = KhoaSoSanh(b);
-    return x < y ? -1 : (x > y ? 1 : 0);
+    return x < y ? -1 : (x > y ? 1 : 0); // a < b : -1, a > b : 1, a == b : 0
 }
 bool ChuaChuoi(const string &s, const string &part)
 {

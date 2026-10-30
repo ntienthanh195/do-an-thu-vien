@@ -92,8 +92,6 @@ string KhoaSoSanh(const string &s); // ha ASCII; giu nguyen byte UTF-8 co dau
 int SoSanhChuoi(const string &a, const string &b);
 bool ChuaChuoi(const string &s, const string &part);
 bool HopLeVanBan(const string &s);
-bool HopLeVanBan_THAI(const string &s);
-bool HopLeTenSach_THAI(const string &s);
 bool DocSoNguyen(const string &s, int &value, int lo = 0, int hi = 2147483647);
 bool TachTruong(const string &line, string *out, int count);
 bool NamNhuan(int year);
@@ -113,6 +111,7 @@ bool HopLeTrangThaiMuonTra(int x);
 // 02: mang con tro dau sach. Ket qua tim kiem la con tro muon, khong delete.
 bool HopLeDauSach(const DauSach &d, string &loi);
 int TimViTriChenTheoTen(const DanhSachDauSach &ds, const DauSach &d);
+string ChuanHoaISBN(const string &isbn);
 DauSach *TimDauSachTheoISBN(DanhSachDauSach &ds, const string &isbn);
 const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn);
 bool ThemDauSach(ThuVien &tv, const DauSach &d, string &loi);
