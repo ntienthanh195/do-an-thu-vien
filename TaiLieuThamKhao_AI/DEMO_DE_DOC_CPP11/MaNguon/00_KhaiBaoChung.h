@@ -111,6 +111,7 @@ bool HopLeTrangThaiMuonTra(int x);
 // 02: mang con tro dau sach. Ket qua tim kiem la con tro muon, khong delete.
 bool HopLeDauSach(const DauSach &d, string &loi);
 int TimViTriChenTheoTen(const DanhSachDauSach &ds, const DauSach &d);
+string ChuanHoaISBN(const string &isbn);
 DauSach *TimDauSachTheoISBN(DanhSachDauSach &ds, const string &isbn);
 const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn);
 bool ThemDauSach(ThuVien &tv, const DauSach &d, string &loi);
