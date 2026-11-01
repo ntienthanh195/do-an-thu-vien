@@ -37,7 +37,7 @@ struct CuonSach
     string viTri;
     CuonSach *next = nullptr;
 };
-// quy uoc : ISBN = chuoi ky tu 13 chu so
+// quy uoc : ISBN-13 = chuoi ky tu 13 chu so
 struct DauSach
 {
     string ISBN, tenSach; 
@@ -89,6 +89,7 @@ struct ThuVien
 };
 
 // 01: chuoi, ngay, nhap chuan; khong tinh thong ke nghiep vu o day.
+bool KhoangTrang(unsigned char c);
 bool LaChuoiRong(const string &s);
 string ChuanHoaChuoi(const string &s);
 string KhoaSoSanh(const string &s); // ha ASCII; giu nguyen byte UTF-8 co dau
@@ -115,7 +116,6 @@ bool HopLeTrangThaiMuonTra(int x);
 bool HopLeDauSach(const DauSach &d, string &loi);
 bool HopLeCuonSach(const CuonSach &s, string &loi);
 int TimViTriChenTheoTen(const DanhSachDauSach &ds, const DauSach &d);
-string ChuanHoaISBN(const string &isbn);
 DauSach *TimDauSachTheoISBN(DanhSachDauSach &ds, const string &isbn);
 const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn);
 bool ThemDauSach(ThuVien &tv, const DauSach &d, string &loi);

@@ -1,15 +1,11 @@
 #include "00_KhaiBaoChung.h"
 
-namespace
-{
-bool KhoangTrang(unsigned char c)
-{
+bool KhoangTrang(unsigned char c){
     return c == ' ' || c == '\t' || c == '\r' || c == '\n';
 }
-} // namespace
 bool LaChuoiRong(const string &s){
     for(const char c : s){
-        if(c  != ' ' && c  != '\n' && c  != '\t' && c  != '\r') return false;
+        if(!KhoangTrang(c)) return false;
     }
     return true;
 }
@@ -17,7 +13,7 @@ string ChuanHoaChuoi(const string &s){
     string kq = "";
     bool gap = false; // gap ky tu khac khoang trang
     for(const char c : s){
-        if(c  != ' ' && c  != '\n' && c  != '\t' && c  != '\r'){
+        if(!KhoangTrang(c)){
             if(gap == false){
                 gap = true;
             }

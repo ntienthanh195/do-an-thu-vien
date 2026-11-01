@@ -1,7 +1,8 @@
 /*c.Nhập thông tin đầu sách và đánh mã sách tự động sao cho tìm thông tin sách theo mã sách nhanh nhất.*/
 // Step 1 – Xử lý chuỗi
 // Hàm: LaChuoiRong, ChuanHoaChuoi, SoSanhChuoi
-
+// Step 2 – Kiểm tra dữ liệu
+// Hàm: HopLeVanBan, ChuanHoaISBN, HopLeDauSach
 
 
 
@@ -111,15 +112,6 @@ bool HopLeDauSach(const DauSach &d, string &loi){
 }
 
 // TimDauSachTheoISBN
-string ChuanHoaISBN(const string &isbn){
-    string res = "";
-    for(char c : isbn){
-        if(c >= '0' && c <= '9'){
-            res += c;
-        }
-    }
-    return res;
-}
 const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn){
     string isbn_chuanhoa = ChuanHoaISBN(isbn);
     if(isbn_chuanhoa.size() == 0) return nullptr;

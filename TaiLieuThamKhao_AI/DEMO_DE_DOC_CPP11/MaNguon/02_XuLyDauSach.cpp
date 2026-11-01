@@ -1,7 +1,5 @@
 #include "00_KhaiBaoChung.h"
 
-namespace
-{
 // Khoa phu ISBN lam ket qua on dinh khi hai dau sach cung ten.
 int SoSanhDauSach(const DauSach &a, const DauSach &b)
 {
@@ -26,7 +24,16 @@ void InMotDauSach(const DauSach &d, ostream &out, bool chiTiet)
         out << "  " << p->maSach << " | " << tt << " | Vi tri: " << p->viTri << '\n';
     }
 }
-} // namespace
+string ChuanHoaISBN(const string &isbn){
+    string res = "";
+    for(char c : isbn){
+        // ISBN0-13 thuong co dang vi du : 978-3-16-148410-0 hoac 978 3 16 148410 0
+        if( c != '-' && !KhoangTrang(c)){
+            res += c;
+        }
+    }
+    return res;
+}
 
 bool HopLeDauSach(const DauSach &d, string &loi)
 {
