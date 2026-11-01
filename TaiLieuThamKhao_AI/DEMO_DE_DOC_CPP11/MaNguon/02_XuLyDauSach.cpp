@@ -77,6 +77,16 @@ bool HopLeDauSach(const DauSach &d, string &loi){
     return true;
 }
 
+const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn){
+    string isbn_chuanhoa = ChuanHoaISBN(isbn);
+    if(isbn_chuanhoa.size() == 0) return nullptr;
+    for(int i = 0; i < ds.soLuong; ++i){
+        if(ds.ds[i] != nullptr && ds.ds[i]->ISBN == isbn_chuanhoa) return ds.ds[i];
+    }
+    return nullptr;
+}
+
+
 int TimViTriChenTheoTen(const DanhSachDauSach &ds, const DauSach &d)
 {
     // Lower bound tu cai. O(log D) so sanh; chen van phai don O(D) con tro.

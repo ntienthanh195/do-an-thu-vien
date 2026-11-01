@@ -57,14 +57,6 @@
 
 
 // TimDauSachTheoISBN
-const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn){
-    string isbn_chuanhoa = ChuanHoaISBN(isbn);
-    if(isbn_chuanhoa.size() == 0) return nullptr;
-    for(int i = 0; i < ds.soLuong; ++i){
-        if(ds.ds[i] != nullptr && ds.ds[i]->ISBN == isbn_chuanhoa) return ds.ds[i];
-    }
-    return nullptr;
-}
 // cach 2 nhanh hon : nhung phai biet co duoc luu mang khoa isbn o file khaibaochung.h khong
 
 // TimViTriChenTheoTen
