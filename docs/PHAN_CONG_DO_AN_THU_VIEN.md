@@ -1,5 +1,7 @@
 # Phân công đồ án nhóm Thư viện
 
+> Cập nhật 01/11/2026: giữ nguyên 9 file trong `MaNguon/` để nhóm tiếp tục công việc hiện tại. Bộ file theo chức năng được đặt riêng tại [`MaNguonUpdate/`](../MaNguonUpdate/), chưa thay thế bộ cũ. Xem [phương án mới và đối chiếu file cũ → mới](PHAN_CONG_MANGUONUPDATE.md); chỉ chuyển khi cả nhóm thống nhất.
+
 > Cập nhật 27/09/2026 — phân công triển khai đã thống nhất với Thành. Phần A dưới đây là nhiệm vụ hiện hành; phần B giữ nguyên hồ sơ phân công khai báo ngày 15/09 để tra cứu. Đây là kế hoạch công việc, chưa phải xác nhận chức năng đã hoàn thành.
 
 ## PHẦN A — PHÂN CÔNG TRIỂN KHAI HIỆN HÀNH

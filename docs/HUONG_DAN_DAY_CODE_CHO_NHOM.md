@@ -1,5 +1,7 @@
 # Hướng dẫn đặt file và đẩy code — dành cho Thành, Thái, Tấn
 
+> Cập nhật 01/11/2026: giữ nguyên 9 file trong `MaNguon/` để nhóm tiếp tục công việc hiện tại. Bộ file theo chức năng được đặt riêng tại [`MaNguonUpdate/`](../MaNguonUpdate/), chưa thay thế bộ cũ. Xem [phương án mới và đối chiếu file cũ → mới](PHAN_CONG_MANGUONUPDATE.md); chỉ chuyển khi cả nhóm thống nhất.
+
 Repo chung: https://github.com/ntienthanh195/do-an-thu-vien
 
 Hướng dẫn này dùng GitHub Desktop để thao tác bằng nút bấm. Code vẫn viết bằng IDE/editor của mỗi người. Không cần học lệnh Git để bắt đầu.
@@ -20,7 +22,7 @@ Hướng dẫn này dùng GitHub Desktop để thao tác bằng nút bấm. Code
 
 Mỗi người tự làm màn hình chức năng mình phụ trách. Báo nhau trước khi cùng sửa một file; làm trên nhánh riêng, gửi PR để review rồi mới ghép main. Ví dụ Tấn sửa phần liệt kê trong `MaNguon/05_XuLyMuonTra.cpp` trên nhánh `tan/liet-ke-dang-muon`; sau khi ghép, đường dẫn file không đổi. Không tạo ba bản chương trình theo tên người hoặc thêm hậu tố `final`, `v2`, `moi_nhat`; Git giữ lịch sử.
 
-Header mới hiện trống để giữ chỗ. Bản khai báo cũ trong `src/CODE-ĐỒ-ÁN-THƯ-VIỆN-DSA.cpp` và bản Thái gửi PR #5 được giữ nguyên. Nhóm cần đưa bản khai báo đã duyệt vào header chung trước khi dùng để biên dịch; không duy trì nhiều bản struct sửa song song. Bộ file trống chưa phải chương trình chạy được.
+Header và file tiện ích hiện đã có nội dung; các file chức năng cũ còn lại vẫn trống ở mốc đối chiếu. Bản khai báo cũ trong `src/CODE-ĐỒ-ÁN-THƯ-VIỆN-DSA.cpp` và bản Thái gửi PR #5 được giữ nguyên. Nhóm dùng header chung hiện có và thống nhất các thay đổi trước khi biên dịch; không duy trì nhiều bản struct sửa song song. Bộ file trống chưa phải chương trình chạy được.
 
 Các thư mục còn lại:
 
