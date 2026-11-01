@@ -1,110 +1,65 @@
-# Phân công code theo file trong MaNguon/
+# Phân công code theo chức năng trong MaNguon/
 
-Cập nhật 02/10/2026 từ phân công của Thái, sau trao đổi với Thành. Chức năng a–j giữ theo [phân công chung](PHAN_CONG_DO_AN_THU_VIEN.md); hạn thực hiện theo [lịch nhóm](NHOM_CONG_VIEC_VA_MOC_PR.md). Đây là nhiệm vụ, chưa xác nhận code đã viết hoặc kiểm thử.
+Cập nhật 01/11/2026 theo yêu cầu của Thành: mỗi chức năng a–j có một file riêng, dùng chung cấu trúc và dữ liệu của chương trình. Phân công Thành–Thái–Tấn giữ theo [hồ sơ phân công](PHAN_CONG_DO_AN_THU_VIEN.md). Các file chức năng và hỗ trợ mới chỉ giữ chỗ; việc sắp xếp file không xác nhận đã cài đặt, biên dịch hoặc kiểm thử chức năng.
 
-Các file đã tạo sẵn để mỗi người tự cài. Tên hàm dưới đây là đề xuất của Thái để trao đổi giao tiếp, chưa phải toàn bộ hàm đã tồn tại hay đặc tả đầu vào/đầu ra đã chốt. Muốn đổi tên/cách gọi dùng chung phải thống nhất trước. Đọc thêm [phân công dữ liệu](PHAN_CONG_DU_LIEU.md).
+## Thành — a, f, g
 
-## Việc đầu tiên — hoàn thiện và đưa khai báo chung lên trước
+- [QuanLyDocGia.cpp](../MaNguon/QuanLyDocGia.cpp): **a**, thêm/xóa/hiệu chỉnh thẻ, cấp mã; các thao tác tìm/chèn/xóa BST độc giả dùng chung đặt tại đây.
+- [MuonSach.cpp](../MaNguon/MuonSach.cpp): **f**, điều kiện và nghiệp vụ mượn; phối hợp lịch sử mượn với trạng thái cuốn sách. Dùng lại phần liệt kê sách đang mượn của Tấn.
+- [TraSach.cpp](../MaNguon/TraSach.cpp): **g**, nghiệp vụ trả và cập nhật nhất quán lịch sử cùng cuốn sách. Các giả định chưa chốt với thầy vẫn cần được làm rõ.
 
-1. **Thành và Thái ưu tiên hoàn thiện các kiểu dữ liệu, struct và hằng trạng thái theo phần được giao bên dưới**, đối chiếu đủ trường và đúng bốn cấu trúc của đề. Tấn cùng đọc để hiểu cách truy cập dữ liệu cho phần liệt kê/menu. Dùng bản khai báo nhóm và bản Thái đã gửi PR #5 làm cơ sở review, không bắt viết lại từ đầu.
-2. **Ai chuẩn bị xong phần khai báo thì push nhánh riêng và gửi PR cho hai thành viên còn lại xem ngay**, không đợi viết xong hàm nghiệp vụ, đọc/ghi file hoặc giao diện. Phần còn nháp/thiếu phải ghi rõ; push chưa đồng nghĩa đã duyệt.
-3. **Thành điều phối ghép bản đã thống nhất vào `MaNguon/00_KhaiBaoChung.h` qua PR vào main.** Khi tiếp tục PR #5, cần thống nhất đích file theo đường dẫn mới này. Cả nhóm kiểm tra header dùng chung biên dịch được trong môi trường đã thống nhất và tránh lỗi nạp lặp; kiểm tra đó chỉ xác nhận phần khai báo, chưa chứng minh chức năng chạy đúng. Sau khi ghép, cả ba cập nhật main và dùng cùng bản, không sửa nhiều bản struct song song.
-4. **Sau khi chốt kiểu dữ liệu chung, Thành và Thái chốt định dạng file rồi chuẩn bị bộ mẫu nhỏ cùng phần đọc tối thiểu**, tiếp đến bộ dài để thử chức năng. Đây là bước đầu của mốc nền chung đến 04/10/2026, không thay lịch đã thống nhất.
+Thành tự làm màn hình a, f, g; phụ trách ngày tháng dùng chung, lịch sử mượn–trả và điều phối nạp/lưu/thoát.
 
-Mốc khai báo đầu tiên tập trung vào kiểu dữ liệu và hằng chung; không phải chờ thiết kế hết prototype của toàn bộ chương trình mới được bàn giao. Các khai báo hàm bổ sung dần khi người viết và bên gọi thống nhất giao tiếp. Trong lúc chờ review, mỗi người vẫn có thể đọc đề, phác màn hình và làm phần độc lập.
+## Thái — c, e, i, j
 
-## 00_KhaiBaoChung.h
+- [NhapSach.cpp](../MaNguon/NhapSach.cpp): **c**, nhập đầu sách, phối hợp cấp mã/thêm cuốn. Thao tác nền trên mảng con trỏ đầu sách và tra cứu ISBN dùng chung đặt tại đây; giữ thứ tự theo tên.
+- [TimSach.cpp](../MaNguon/TimSach.cpp): **e**, tìm theo tên và hiển thị đủ thông tin đầu sách, mã cuốn, trạng thái theo đề.
+- [DocGiaQuaHan.cpp](../MaNguon/DocGiaQuaHan.cpp): **i**, tự lập và sắp kết quả quá hạn; dùng cách tính ngày chung do Thành phụ trách.
+- [Top10Sach.cpp](../MaNguon/Top10Sach.cpp): **j**, tự tính thống kê từ dữ liệu mượn–trả. Cách đếm theo đầu sách/cuốn và xử lý đồng hạng phải theo quy tắc nhóm đã xác nhận với thầy.
 
-- Chủ sở hữu chính: Thành (điều phối)
-- Người góp: Cả ba người
-- Nội dung cụ thể:
-  - Hằng số
-  - Structs do Thái phụ trách: NgayThang, CuonSach, DauSach, DanhSachDauSach
-  - Structs do Thành phụ trách: MuonTra, DocGia, NutDocGia, CayDocGia, ThuVien
-  - Toàn bộ khai báo prototype hàm
-- Ghi chú phối hợp:
-  - Mỗi người tự viết prototype cho các hàm do mình cài đặt, sau đó Thành ghép lại thành một bản duy nhất.
-  - Mọi thay đổi về struct hoặc hằng số phải thống nhất cả nhóm trước.
-  - File này chỉ chứa khai báo, không chứa thân hàm (ngoại trừ hàm constructor inline ngắn).
+Thái tự làm màn hình c, e, i, j; phụ trách thao tác cuốn sách và đọc/ghi đầu sách, cuốn sách.
 
-## 01_HamTienIch.cpp
+## Tấn — b, d, h và menu
 
-- Chủ sở hữu chính: Chia theo miền
-- Người góp: —
-- Nội dung cụ thể:
-  - Thành: Nhóm xử lý ngày tháng từ NamNhuan → QuaHan7Ngay: kiểm tra ngày hợp lệ và tính thời gian phục vụ mượn–trả/quá hạn. Đồng thời phụ trách HopLePhai, HopLeTrangThaiThe, HopLeTrangThaiMuonTra.
-  - Thái: Nhóm xử lý chuỗi LaChuoiRong, ChuanHoaChuoi và HopLeTrangThaiSach.
-- Ghi chú phối hợp:
-  - Tuân thủ quy tắc ngày 27/09: Thái dùng phần tính ngày của Thành cho chức năng (i), tuyệt đối không tự viết một cách tính khác.
-  - Thành và Thái thống nhất cách hàm tiện ích trả kết quả/báo dữ liệu không hợp lệ và tách trách nhiệm xử lý với hiển thị. Không mặc định cout hoặc throw là lỗi; chỉ kết luận lỗi trên bản code cụ thể đã đọc.
+- [InDanhSachDocGia.cpp](../MaNguon/InDanhSachDocGia.cpp): **b**, in theo mã hoặc tên+họ; tự làm phần duyệt, chuẩn bị thứ tự và hiển thị.
+- [InDauSachTheoTheLoai.cpp](../MaNguon/InDauSachTheoTheLoai.cpp): **d**, nhóm thể loại, tên tăng trong mỗi nhóm; giữ nguyên thứ tự lưu bắt buộc của dữ liệu gốc.
+- [SachDangMuon.cpp](../MaNguon/SachDangMuon.cpp): **h**, liệt kê mã/tên sách đang mượn của độc giả; dùng tra cứu độc giả và sách đã thống nhất.
+- [Menu.cpp](../MaNguon/Menu.cpp): menu và điều hướng tới các màn hình; phối hợp Thành khi ghép luồng chạy.
 
-## 02_XuLyDauSach.cpp
+Tấn tự làm màn hình b, d, h; giữ thứ tự triển khai h → b theo mã → b theo tên+họ → d. Các chức năng xem không sửa dữ liệu nghiệp vụ.
 
-- Chủ sở hữu chính: Thái
-- Người góp: Tấn
-- Nội dung cụ thể:
-  - Thái: Cài đặt HopLeDauSach, TrungISBN, TimViTriChenTheoTen, ThemDauSach, TimDauSachTheoISBN, TimDauSachTheoTen, InDanhSachDauSach, HuyDanhSachDauSach và màn hình (c), (e).
-  - Tấn: Cài đặt InDauSachTheoTheLoai và màn hình (d) (tự thực hiện nhóm thể loại, sắp xếp thứ tự, phân trang — không nhận dữ liệu đã qua xử lý sẵn).
-- Ghi chú phối hợp:
-  - Tấn gọi dữ liệu thông qua các hàm truy cập của Thái bằng tham chiếu const, không được sửa đổi thứ tự lưu trữ bắt buộc.
+## Phần dùng chung
 
-## 03_XuLyCuonSach.cpp
+- [00_KhaiBaoChung.h](../MaNguon/00_KhaiBaoChung.h): bộ struct/hằng chung hiện có, Thành điều phối. Các khai báo hàm được người viết đề xuất và bổ sung sau khi thống nhất cách gọi; không chép struct sang từng file chức năng.
+- [01_HamTienIch.cpp](../MaNguon/01_HamTienIch.cpp): giữ nguyên code tiện ích hiện có. Thành phụ trách ngày tháng và kiểm tra độc giả/lịch sử; Thái phụ trách chuỗi và kiểm tra sách. Mỗi hàm có một người chịu trách nhiệm, trao đổi trước khi cùng sửa.
+- [CuonSach.cpp](../MaNguon/CuonSach.cpp): Thái phụ trách danh sách cuốn, mã cuốn và tra cứu cuốn dùng chung cho c, f, g, h.
+- [LichSuMuonTra.cpp](../MaNguon/LichSuMuonTra.cpp): Thành phụ trách thao tác nền trên danh sách lịch sử; không chứa chức năng h của Tấn. Mượn/trả chịu trách nhiệm phối hợp cập nhật toàn nghiệp vụ.
+- [LuuDocFile.cpp](../MaNguon/LuuDocFile.cpp): Thành đọc/ghi độc giả và lịch sử, điều phối nạp/lưu chung; Thái đọc/ghi đầu sách và cuốn sách. Chốt ranh giới phần việc trước khi cùng sửa. Tấn hỗ trợ mẫu và thử dữ liệu, không bị chuyển sang phụ trách bộ đọc/ghi. Backup tự động vẫn là tùy chọn làm sau.
+- [GiaoDien.cpp](../MaNguon/GiaoDien.cpp): hỗ trợ nhập, phím, bảng, phân trang và thông báo dùng chung. Cả ba chia người phụ trách từng phần; màn hình riêng vẫn thuộc file chức năng tương ứng.
+- [main.cpp](../MaNguon/main.cpp): Thành điều phối điểm chạy duy nhất, tạo dữ liệu chung, nạp dữ liệu, nối menu và lưu/thoát. Hiện là file trống, chưa có hàm main.
 
-- Chủ sở hữu chính: Thái
-- Người góp: —
-- Nội dung cụ thể:
-  - Các hàm: HopLeCuonSach, TrungMaSachTrongDauSach, TrungMaSachToanCuc, ThemCuonSach, TimCuonSachTrongDauSach, TimCuonSachToanCuc, SinhMaSachTuDong, HuyDanhMucCuonSach.
-  - Hàm hỗ trợ: LayTenDauSachTheoMaCuon (phục vụ chức năng (h) và (f) — có mục đích rõ ràng, không thêm nghiệp vụ).
-- Ghi chú phối hợp:
-  - Thái bàn giao cơ chế tra cứu cho Thành (cho chức năng f/g) và Tấn (cho chức năng h) sớm để hai người ghép phần phụ thuộc; Thành và Tấn vẫn có thể làm phần độc lập trong lúc chờ.
+Tổng cộng **17 file .cpp và 1 header**: 10 file chức năng a–j, 7 file hỗ trợ/điều phối. Trong lần sắp xếp này, header và file tiện ích được giữ nguyên từng byte; các file .cpp còn lại đều trống.
 
-## 04_XuLyDocGia.cpp
+## Quy ước kết nối
 
-- Chủ sở hữu chính: Thành
-- Người góp: Tấn
-- Nội dung cụ thể:
-  - Thành: TrungMaThe, SinhMaTheTiepTheo, ThemDocGia, TimDocGia, HieuChinhDocGia, XoaDocGia (chỉ cài đặt xóa sau khi làm rõ điều kiện liên quan đến lịch sử), HuyCayDocGia, DuyetInorder và màn hình (a).
-  - Tấn: InDocGiaTheoMa, InDocGiaTheoTenHo và màn hình (b) (gồm 2 lựa chọn; dùng danh sách tạm, không làm xáo trộn BST theo mã).
-- Ghi chú phối hợp:
-  - Tấn không sửa đổi dữ liệu nghiệp vụ trong các chức năng chỉ có thao tác xem.
+1. Mỗi file chức năng chứa xử lý và màn hình riêng, nhưng tách trách nhiệm của hàm nhập/hiển thị với hàm xử lý nghiệp vụ.
+2. Một hàm dùng chung có một nơi cài đặt. Thống nhất đầu vào, đầu ra, cách báo thất bại và dữ liệu được phép thay đổi trước khi gọi chéo; không sao chép hàm tìm kiếm/ngày tháng sang nhiều file.
+3. Toàn chương trình dùng cùng dữ liệu Thư viện và giữ đúng bốn cấu trúc theo đề. Chia file không cấp quyền đổi cấu trúc hoặc mở rộng nghiệp vụ.
+4. Khai báo cách gọi qua header; biên dịch và liên kết các file .cpp, không ghép bằng cách include các file .cpp. Nếu bổ sung header cho từng phần sau này, tránh khai báo trùng và thống nhất với nhóm.
+5. Mỗi người tự thiết kế, tự viết và tự thử phần mình. File giữ chỗ không phải bộ khung hàm để điền hoặc bằng chứng hoàn thành.
 
-## 05_XuLyMuonTra.cpp
+## Chuyển công việc đang dở từ cách chia cũ
 
-- Chủ sở hữu chính: Thành
-- Người góp: Tấn
-- Nội dung cụ thể:
-  - Thành: ThemMuonTra, TimMuonDangMuonTheoMa, DemSoSachDangMuon, CoSachQuaHan7Ngay, TraSach (ở mức bản ghi), DanhDauMatSach, HuyDanhSachMuonTra.
-  - Tấn: LietKeSachDangMuon và màn hình (h).
-- Ghi chú phối hợp:
-  - Màn hình (f) của Thành sẽ gọi lại hàm LietKeSachDangMuon của Tấn — không viết hai bản liệt kê song song.
+- `02_XuLyDauSach.cpp`: phần c/thao tác đầu sách sang `NhapSach.cpp`; e sang `TimSach.cpp`; d sang `InDauSachTheoTheLoai.cpp`.
+- `03_XuLyCuonSach.cpp` → `CuonSach.cpp`.
+- `04_XuLyDocGia.cpp`: a/thao tác BST sang `QuanLyDocGia.cpp`; b sang `InDanhSachDocGia.cpp`.
+- `05_XuLyMuonTra.cpp`: thao tác lịch sử sang `LichSuMuonTra.cpp`; h sang `SachDangMuon.cpp`.
+- `06_NghiepVuTongHop.cpp`: f sang `MuonSach.cpp`; g sang `TraSach.cpp`; i sang `DocGiaQuaHan.cpp`; j sang `Top10Sach.cpp`.
+- `07_LuuDocFile.cpp` → `LuuDocFile.cpp`.
+- `08_ChuongTrinhChinh.cpp`: menu sang `Menu.cpp`, khởi động/nạp/lưu/thoát sang `main.cpp`, hỗ trợ giao diện chung sang `GiaoDien.cpp`.
 
-## 06_NghiepVuTongHop.cpp
+Trước khi đổi nhánh, commit công việc đang dở trên nhánh riêng. Lấy main mới sau khi PR sắp xếp được ghép, rồi chuyển đúng phần đang viết theo danh sách trên. Không chép cả file cũ đè lên file đã có code của người khác. Khi gặp xung đột xóa/sửa, giữ phần code đang làm và phối hợp chuyển sang đích mới; không chọn bỏ thay đổi để hết cảnh báo.
 
-- Chủ sở hữu chính: Thành + Thái
-- Người góp: —
-- Nội dung cụ thể:
-  - Thành: MuonSach, TraSach ở mức ThuVien (chịu trách nhiệm bảo đảm tính nhất quán toàn nghiệp vụ) và màn hình (f), (g).
-  - Thái: InDocGiaQuaHan (i), InTop10SachDuocMuonNhieuNhat (j) và màn hình (i), (j).
-- Ghi chú phối hợp:
-  - Chức năng (i) và (j) chỉ được đọc dữ liệu nghiệp vụ. Các quy tắc về top-10/quá hạn nếu chưa chốt thì giữ câu hỏi mở trong file TaiLieu/CauHoiHoiThay.md.
+Repo nhóm chưa có cấu hình build chung ở gốc. Khi tạo project IDE/build, thêm các file .cpp thực sự tham gia chương trình và chỉ một main; bản thử riêng đặt ngoài bản ghép. Cấu hình build của các bản tham khảo trong TaiLieuThamKhao_AI không phải cấu hình của MaNguon nhóm.
 
-## 07_LuuDocFile.cpp
-
-- Chủ sở hữu chính: Thái + Thành
-- Người góp: Tấn (dữ liệu mẫu)
-- Nội dung cụ thể:
-  - Thái: Ghi/đọc đầu sách + cuốn sách (dựng lại liên kết danh mục sách).
-  - Thành: Ghi/đọc độc giả + lịch sử (bảo đảm giữ quy tắc cấp mã thẻ qua các lần chạy), LuuFile/DocFile ở mức ThuVien.
-  - Backup (sao lưu dữ liệu): tùy chọn làm sau khi đọc/ghi cơ bản và kiểm thử lưu–mở lại đã ổn; không phải nhiệm vụ bắt buộc hiện tại của Thành. Nếu triển khai, cả nhóm thống nhất phạm vi dữ liệu, thời điểm sao lưu và người phụ trách trước.
-  - Tấn: Không phụ trách cài hàm ghi/đọc file; hỗ trợ chuẩn bị mẫu, đối chiếu định dạng và chạy thử theo phân công dữ liệu.
-- Ghi chú phối hợp:
-  - Nghiêm cấm ghi địa chỉ con trỏ hoặc dump nhị phân struct chứa string hoặc con trỏ.
-
-## 08_ChuongTrinhChinh.cpp
-
-- Chủ sở hữu chính: Tấn (menu) + Thành (luồng chính)
-- Người góp: —
-- Nội dung cụ thể:
-  - Tấn: Tự làm menu chính, điều hướng theo quy ước nhóm và helper hiển thị cơ bản (tiêu đề, đường kẻ, thông báo, căn cột); thử bảng/phân trang ở màn hình mình phụ trách trước khi đưa thành phần phù hợp ra dùng chung.
-  - Thành và Thái: Cùng Tấn chốt cách dùng helper; chia người phụ trách cụ thể cho phần xử lý phím ↑/↓, Enter, Esc và bảng/phân trang dùng chung khi vượt phần cơ bản. Hỗ trợ giải thích, review và tự cài phần được chia; không mặc định giao toàn bộ console chung cho Tấn. Mỗi người vẫn tự làm màn hình chức năng của mình.
-  - Thành: Hàm main() tạo một đối tượng ThuVien duy nhất, nạp dữ liệu đầu chương trình, xử lý lưu/thoát, kết nối menu với các hàm chức năng.
+Các bản mẫu AI, ZIP, dữ liệu, tài liệu ôn tập và bản khai báo lịch sử trong src được giữ nguyên. Xem thêm [hướng dẫn GitHub Desktop](HUONG_DAN_DAY_CODE_CHO_NHOM.md) và [phân công dữ liệu](PHAN_CONG_DU_LIEU.md).

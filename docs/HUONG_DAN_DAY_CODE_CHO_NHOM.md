@@ -6,21 +6,16 @@ Hướng dẫn này dùng GitHub Desktop để thao tác bằng nút bấm. Code
 
 ## 1. Code đặt ở đâu?
 
-**Theo cách chia nhóm đã chốt, code mới đặt trong `MaNguon/`.** Các file đã tạo sẵn để Thành, Thái và Tấn mở đúng file rồi tự viết; không có thân hàm hoặc mẫu lời giải. Quy ước vị trí này thay các ví dụ `src/` và `DuLieu/` trong hướng dẫn cũ; lịch làm việc và phân công chức năng a–j không đổi.
+**Cập nhật 01/11/2026: code nhóm đặt trong `MaNguon/`, chia theo chức năng a–j.**
 
-- `00_KhaiBaoChung.h`: khai báo chung, Thành điều phối; cả ba thống nhất thay đổi.
-- `01_HamTienIch.cpp`: Thành làm ngày tháng/kiểm tra dữ liệu phần mình; Thái làm tiện ích chuỗi/trạng thái sách.
-- `02_XuLyDauSach.cpp`: Thái quản lý/tìm đầu sách; Tấn liệt kê theo thể loại.
-- `03_XuLyCuonSach.cpp`: Thái quản lý/tra cứu cuốn sách.
-- `04_XuLyDocGia.cpp`: Thành quản lý độc giả; Tấn làm hai cách xem độc giả.
-- `05_XuLyMuonTra.cpp`: Thành xử lý danh sách lịch sử; Tấn liệt kê sách đang mượn.
-- `06_NghiepVuTongHop.cpp`: Thành làm nghiệp vụ mượn/trả; Thái làm thống kê quá hạn/top 10.
-- `07_LuuDocFile.cpp`: Thành đọc/ghi độc giả và lịch sử, phối hợp lưu/nạp chung; Thái đọc/ghi sách. Backup tự động là tùy chọn làm sau.
-- `08_ChuongTrinhChinh.cpp`: Tấn làm menu; Thành nối luồng chính, nạp/lưu/thoát. Helper giao diện dùng chung được cả ba chia việc cụ thể, không giao hết cho Tấn.
+- **Thành:** `QuanLyDocGia.cpp` (a), `MuonSach.cpp` (f), `TraSach.cpp` (g).
+- **Thái:** `NhapSach.cpp` (c), `TimSach.cpp` (e), `DocGiaQuaHan.cpp` (i), `Top10Sach.cpp` (j).
+- **Tấn:** `InDanhSachDocGia.cpp` (b), `InDauSachTheoTheLoai.cpp` (d), `SachDangMuon.cpp` (h), `Menu.cpp`.
+- **Dùng chung:** `00_KhaiBaoChung.h`, `01_HamTienIch.cpp`, `CuonSach.cpp`, `LichSuMuonTra.cpp`, `LuuDocFile.cpp`, `GiaoDien.cpp`, `main.cpp`. Trách nhiệm cụ thể ở [phân công theo file](PHAN_CONG_THEO_FILE.md).
 
-Mỗi người tự làm màn hình chức năng mình phụ trách. Báo nhau trước khi cùng sửa một file; làm trên nhánh riêng, gửi PR để review rồi mới ghép main. Ví dụ Tấn sửa phần liệt kê trong `MaNguon/05_XuLyMuonTra.cpp` trên nhánh `tan/liet-ke-dang-muon`; sau khi ghép, đường dẫn file không đổi. Không tạo ba bản chương trình theo tên người hoặc thêm hậu tố `final`, `v2`, `moi_nhat`; Git giữ lịch sử.
+Mỗi người tự làm xử lý và màn hình chức năng mình phụ trách, dùng chung hàm tra cứu/ngày tháng và cùng một bộ dữ liệu. Báo nhau trước khi sửa phần chung. Ví dụ Tấn viết mục h trong `MaNguon/SachDangMuon.cpp` trên nhánh `tan/liet-ke-dang-muon`; không tạo thêm bản chương trình riêng theo tên người hoặc hậu tố final/v2.
 
-Header mới hiện trống để giữ chỗ. Bản khai báo cũ trong `src/CODE-ĐỒ-ÁN-THƯ-VIỆN-DSA.cpp` và bản Thái gửi PR #5 được giữ nguyên. Nhóm cần đưa bản khai báo đã duyệt vào header chung trước khi dùng để biên dịch; không duy trì nhiều bản struct sửa song song. Bộ file trống chưa phải chương trình chạy được.
+Header và file tiện ích đã có nội dung, được giữ nguyên khi sắp xếp; các file chức năng/hỗ trợ còn lại hiện trống. Đây chưa phải chương trình hoàn chỉnh để chạy. Bản khai báo trong `src/` giữ để tra cứu, không sửa song song với header chung. Nhánh đang làm theo tên file cũ cần theo mục **Chuyển công việc đang dở** trong phân công theo file.
 
 Các thư mục còn lại:
 
@@ -35,7 +30,7 @@ File `.exe`, `.o`, `.obj` và thư mục build không đưa lên làm mã nguồ
 
 ## 2. Chuẩn bị lần đầu
 
-1. Gửi username GitHub cho Thành để được mời vào repo và chấp nhận lời mời. Repo riêng tư nên có link thôi chưa đủ quyền truy cập.
+1. Gửi username GitHub cho Thành để được mời vào repo và chấp nhận lời mời. Repo hiện công khai để đọc; quyền đẩy code vẫn cần được cấp cho tài khoản thành viên.
 2. Cài [GitHub Desktop từ trang chính thức](https://desktop.github.com/) và đăng nhập đúng tài khoản được mời.
 3. Trong Desktop chọn **File → Clone repository**, mở phần **URL**, nhập link repo chung ở đầu tài liệu.
 4. Chọn thư mục trên máy để lưu rồi bấm **Clone**. Ghi nhớ vị trí thư mục `do-an-thu-vien` vừa được tạo.
@@ -60,7 +55,7 @@ Mỗi chức năng/mốc nhỏ dùng một nhánh. Nếu đang sửa tiếp cùn
 
 ## 4. Nếu đã code xong ở thư mục khác
 
-Sau khi clone, cập nhật `main` và tạo nhánh như trên, sao chép có chọn lọc phần file của mình vào đúng `src` trong repo.
+Sau khi clone, cập nhật `main` và tạo nhánh như trên, sao chép có chọn lọc phần file của mình vào đúng file chức năng trong `MaNguon/` của repo.
 
 - Đọc bản chung hiện tại trước khi thay file để không làm mất phần bạn khác vừa sửa.
 - Không chép cả thư mục project cũ đè lên repo, không mang theo `.git`, file chạy hay cấu hình máy cá nhân.
@@ -70,7 +65,7 @@ Sau khi clone, cập nhật `main` và tạo nhánh như trên, sao chép có ch
 ## 5. Code xong: commit và push
 
 1. Lưu file trong editor, biên dịch/chạy thử phạm vi có thể kiểm tra.
-2. Quay lại Desktop, mở **Changes**. Phải nhìn thấy đường dẫn dự kiến như `MaNguon/05_XuLyMuonTra.cpp` hoặc `MaNguon/02_XuLyDauSach.cpp`.
+2. Quay lại Desktop, mở **Changes**. Phải nhìn thấy đường dẫn dự kiến như `MaNguon/SachDangMuon.cpp` hoặc `MaNguon/NhapSach.cpp`.
 3. Bấm từng file để xem các dòng thêm/xóa. Chỉ chọn những file thuộc nhiệm vụ; nếu có file lạ, cả project hoặc thay đổi của người khác, kiểm tra lại trước khi commit.
 4. Nhập **Summary** cụ thể, ví dụ `Thêm liệt kê sách độc giả đang mượn`. Ghi mô tả bổ sung nếu cần.
 5. Kiểm tra nút **Commit to ...** đang ghi đúng nhánh nhiệm vụ, rồi commit.
@@ -122,7 +117,7 @@ Nếu đang làm dở một nhánh khác và cần thay đổi mới của đồ
 
 ## 9. Ví dụ bàn giao của Tấn
 
-Tấn nhận mục h → lấy `main` mới nhất → tạo `tan/liet-ke-dang-muon` → tự viết phần phụ trách ở `MaNguon/05_XuLyMuonTra.cpp` theo cách gọi đã thống nhất → thử dữ liệu và ghi kết quả → commit → Publish branch/Push origin → PR vào `main` → sửa theo review → Thành điều phối ghép → cả nhóm Pull bản mới.
+Tấn nhận mục h → lấy `main` mới nhất → tạo `tan/liet-ke-dang-muon` → tự viết phần phụ trách ở `MaNguon/SachDangMuon.cpp` theo cách gọi đã thống nhất → thử dữ liệu và ghi kết quả → commit → Publish branch/Push origin → PR vào `main` → sửa theo review → Thành điều phối ghép → cả nhóm Pull bản mới.
 
 Thái làm tương tự với nhánh và file phần sách/thống kê của mình. Không gửi một file `Thai_final.cpp` hoặc `Tan_final.cpp` lên thư mục gốc rồi chờ người khác tự tìm cách ghép.
 

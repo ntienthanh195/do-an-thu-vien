@@ -80,6 +80,8 @@ Mỗi người chịu trách nhiệm nhập liệu, thông báo, quay lại và 
 
 ### 5. Quy ước chung để ghép code thuận tiện
 
+**Cập nhật 01/11/2026:** chia file theo từng chức năng a–j, phần dùng chung có trách nhiệm riêng. Dùng [phân công theo file hiện hành](PHAN_CONG_THEO_FILE.md); phân công chức năng của ba người không đổi. Cách chia ngày 02/10 bên dưới được giữ làm lịch sử, không dùng để chọn đường dẫn viết code mới.
+
 **Cập nhật 02/10/2026:** Thành yêu cầu tạo sẵn file trống theo sơ đồ Thái. Cách đặt file mới theo hướng dẫn hiện hành; không cung cấp hàm mẫu và không ghi nhận hoàn thành chức năng từ việc tạo file. Phân công a–j và lịch triển khai giữ nguyên.
 
 **Lựa chọn học tập ngày 27/09/2026:** mỗi người đọc đề và tự thiết kế, tự tạo file, tự đặt tên hàm và viết code. AI chỉ nêu hướng đi, yêu cầu và tiêu chí; không cung cấp sẵn bộ hàm/biến để điền. Các tên file đề xuất dưới đây chỉ minh họa cách tổ chức, không bắt buộc tạo trước. Người viết tự đề xuất giao tiếp giữa các phần, cả nhóm thống nhất trước khi triển khai riêng. Bộ khung AI vừa đề xuất đã được rút khỏi bản làm việc; bản khai báo do nhóm viết vẫn được giữ. Việc rút khung không xóa lịch sử đã được xem/hỗ trợ và không tạo kết quả học tập mới.
@@ -101,7 +103,7 @@ Mỗi người chịu trách nhiệm nhập liệu, thông báo, quay lại và 
 - `GiaoDien.h/.cpp`: ví dụ file hỗ trợ chung nếu nhóm thấy cần; cả ba tự chia trách nhiệm từng phần, không mặc định thuộc Thái.
 - `main.cpp`: một điểm chạy duy nhất, Thành điều phối. Chương trình thử riêng của từng người giữ ngoài bản ghép.
 
-Danh sách tên file phía trên là phương án cũ. Theo cập nhật 02/10, sử dụng các file đã tạo sẵn trong `MaNguon/`; xem [hướng dẫn vị trí file hiện hành](HUONG_DAN_DAY_CODE_CHO_NHOM.md). `.h` công bố cách gọi; `.cpp` chứa cài đặt. Chia file không thay đổi bốn cấu trúc dữ liệu theo đề.
+Danh sách tên file phía trên là phương án cũ. Theo cập nhật 01/11, sử dụng các file theo chức năng đã tạo sẵn trong `MaNguon/`; xem [hướng dẫn vị trí file hiện hành](HUONG_DAN_DAY_CODE_CHO_NHOM.md). `.h` công bố cách gọi; `.cpp` chứa cài đặt. Chia file không thay đổi bốn cấu trúc dữ liệu theo đề.
 
 **Giao diện console:**
 
