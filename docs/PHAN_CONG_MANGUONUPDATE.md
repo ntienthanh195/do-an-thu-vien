@@ -2,7 +2,7 @@
 
 > `MaNguon/` vẫn là nơi làm việc hiện tại, giữ nguyên 9 file cũ. `MaNguonUpdate/` nằm bên cạnh để nhóm xem phương án chia chức năng, chưa thay thế MaNguon. Đã chuyển phần code sách của Thái vào bộ mới theo yêu cầu của Thành; bộ cũ vẫn nguyên vẹn, không tự đồng bộ hai nơi.
 
-Phương án tham khảo ngày 01/11/2026: mỗi chức năng a–j có một file riêng, dùng chung cấu trúc và dữ liệu của chương trình. Phân công Thành–Thái–Tấn giữ theo [hồ sơ phân công](PHAN_CONG_DO_AN_THU_VIEN.md). Bộ mới đã có tiện ích, phần thêm đầu sách và kiểm tra cuốn sách; các file chức năng khác còn giữ chỗ; việc sắp xếp file không xác nhận đã cài đặt, biên dịch hoặc kiểm thử chức năng.
+Phương án tham khảo ngày 01/11/2026: mỗi chức năng a–j có một file riêng, dùng chung cấu trúc và dữ liệu của chương trình. Phân công Thành–Thái–Tấn giữ theo [hồ sơ phân công](PHAN_CONG_DO_AN_THU_VIEN.md). Bộ mới đã có tiện ích, phần thêm đầu sách, kiểm tra cuốn sách và 15 hàm Thành cung cấp về độc giả/lịch sử/ngày tháng; các file chức năng khác còn giữ chỗ; việc sắp xếp file không xác nhận đã cài đặt, biên dịch hoặc kiểm thử chức năng.
 
 ## Thành — a, f, g
 
@@ -40,7 +40,7 @@ Tấn tự làm màn hình b, d, h; giữ thứ tự triển khai h → b theo m
 - [GiaoDien.cpp](../MaNguonUpdate/GiaoDien.cpp): hỗ trợ nhập, phím, bảng, phân trang và thông báo dùng chung. Cả ba chia người phụ trách từng phần; màn hình riêng vẫn thuộc file chức năng tương ứng.
 - [main.cpp](../MaNguonUpdate/main.cpp): Thành điều phối điểm chạy duy nhất, tạo dữ liệu chung, nạp dữ liệu, nối menu và lưu/thoát. Hiện là file trống, chưa có hàm main.
 
-Tổng cộng **17 file .cpp và 1 header**: 10 file chức năng a–j, 7 file hỗ trợ/điều phối. Header đã bổ sung khai báo; tiện ích, NhapSach.cpp và CuonSach.cpp đã nhận phần code của Thái; 14 file .cpp còn lại vẫn trống. Xem [danh sách hàm và giới hạn đã biết](../MaNguonUpdate/README.md#phần-code-thái-đã-chuyển-sang). Không tự đồng bộ khi bản nguồn đổi.
+Tổng cộng **17 file .cpp và 1 header**: 10 file chức năng a–j, 7 file hỗ trợ/điều phối. Header đã bổ sung khai báo; tiện ích, NhapSach.cpp và CuonSach.cpp đã nhận phần code của Thái; QuanLyDocGia.cpp và LichSuMuonTra.cpp đã nhận code Thành; tiện ích có thêm 5 hàm ngày tháng của Thành; 12 file .cpp còn lại vẫn trống. Xem [danh sách hàm và giới hạn đã biết](../MaNguonUpdate/README.md#phần-code-thái-đã-chuyển-sang). Không tự đồng bộ khi bản nguồn đổi.
 
 ## Quy ước kết nối
 
@@ -67,3 +67,8 @@ Hiện tại nhóm tiếp tục làm việc trong `MaNguon/` theo tên file cũ.
 Repo nhóm chưa có cấu hình build chung ở gốc. Khi tạo project IDE/build, thêm các file .cpp thực sự tham gia chương trình và chỉ một main; bản thử riêng đặt ngoài bản ghép. Cấu hình build của các bản tham khảo trong TaiLieuThamKhao_AI không phải cấu hình của MaNguon nhóm.
 
 Các bản mẫu AI, ZIP, dữ liệu, tài liệu ôn tập và bản khai báo lịch sử trong src được giữ nguyên. Xem thêm [hướng dẫn GitHub Desktop](HUONG_DAN_DAY_CODE_CHO_NHOM.md) và [phân công dữ liệu](PHAN_CONG_DU_LIEU.md).
+
+
+## Nhận biết phần code đã nhận
+
+Các hàm có nhãn `[THANH]` hoặc `[THAI]` theo người cung cấp/phụ trách. Xem [danh sách 15 hàm Thành](../MaNguonUpdate/README.md#phần-code-thành-đã-chuyển-sang-ngày-01112026) và [bản thử gốc](THANH_BAN_THU_DOC_GIA_20261101.cpp.txt). Đây là ghi nhận nguồn bàn giao, không thay phân công và không xác nhận chức năng đã hoàn chỉnh. Main thử tách chuỗi được lưu riêng, không đưa vào chương trình chính.

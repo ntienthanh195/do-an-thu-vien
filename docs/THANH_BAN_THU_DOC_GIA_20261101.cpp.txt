@@ -1,0 +1,498 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+using namespace std;
+
+const int MUON_DANG_MUON = 0;
+const int THE_HOAT_DONG = 1;
+
+struct NgayThang
+{
+    int ngay = 0;
+    int thang = 0;
+    int nam = 0;
+};
+
+struct MuonTra
+{
+    string maSach;
+    NgayThang ngayMuon;
+    NgayThang ngayTra;
+    int trangThai = MUON_DANG_MUON;
+    MuonTra* next = nullptr;
+};
+
+struct DocGia
+{
+    int maThe = 0;
+    string ho;
+    string ten;
+    string phai;
+    int trangThaiThe = THE_HOAT_DONG;
+
+    MuonTra* dsMuonTra = nullptr;
+};
+
+struct NutDocGia
+{
+    DocGia thongTin;
+    NutDocGia* left = nullptr;
+    NutDocGia* right = nullptr;
+};
+
+struct CayDocGia
+{
+    NutDocGia* root = nullptr;
+};
+
+NutDocGia* tim_cay(CayDocGia &caydocgia, int x)
+{
+    NutDocGia* p = caydocgia.root;
+
+    while (p != nullptr)
+    {
+        if (x < p->thongTin.maThe)
+            p = p->left;
+        else if (x > p->thongTin.maThe)
+            p = p->right;
+        else if (x == p->thongTin.maThe)
+            return p;
+    }
+
+    return nullptr;
+}
+
+void them_cay(CayDocGia &caydocgia, const DocGia &docGiaMoi)
+{
+    NutDocGia* cha = nullptr;
+    NutDocGia* p = caydocgia.root;
+
+    while (p != nullptr)
+    {
+        cha = p;
+
+        if (docGiaMoi.maThe < p->thongTin.maThe)
+            p = p->left;
+        else if (docGiaMoi.maThe > p->thongTin.maThe)
+            p = p->right;
+        else if (docGiaMoi.maThe == p->thongTin.maThe)
+        {
+            cout << "Da co san";
+            return;
+        }
+    }
+
+    p = new NutDocGia;
+    p->thongTin = docGiaMoi;
+
+    if (cha == nullptr)
+        caydocgia.root = p;
+    else if (docGiaMoi.maThe < cha->thongTin.maThe)
+        cha->left = p;
+    else
+        cha->right = p;
+}
+
+void them_lich_su(NutDocGia &q, MuonTra muontra)
+{
+	MuonTra* muontraa=new MuonTra;
+	*muontraa= muontra;
+	 muontraa->next = nullptr;  
+	MuonTra* p=q.thongTin.dsMuonTra;
+	while(p!=nullptr && p->next!=nullptr)
+	{
+		p=p->next;
+	
+	}
+	if(p==nullptr)
+	{
+		p=muontraa;
+		q.thongTin.dsMuonTra=p;
+	}
+	else 
+	{
+		p->next=muontraa;
+	}
+}
+
+int Dem_so_sach_dang_muon(NutDocGia &q)
+{
+	int sachdangmuon=0;
+	MuonTra* p=q.thongTin.dsMuonTra;
+	while(p!=nullptr)
+	{
+		if(p->trangThai==0)
+		sachdangmuon++;
+		p=p->next;
+	}
+	return sachdangmuon;
+}
+
+MuonTra* TimMuonDangMuonTheoMa(NutDocGia &q,string maSach)
+{
+	
+	MuonTra* p=q.thongTin.dsMuonTra;
+	while(p!=nullptr)
+	{
+		if(p->maSach==maSach&&p->trangThai==0)
+		{
+			return p;
+		}
+		p=p->next;	
+	}
+	return nullptr;
+	
+}
+
+bool NamNhuan(int nam)
+{
+    return nam % 400 == 0 ||
+           (nam % 4 == 0 && nam % 100 != 0);
+}
+
+
+int SoNgayTrongThang(int thang, int nam)
+{
+    if (thang < 1 || thang > 12 || nam <= 0)
+        return 0;
+
+    switch (thang)
+    {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            return 31;
+
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            return 30;
+
+        case 2:
+            if (NamNhuan(nam))
+                return 29;
+            return 28;
+    }
+
+    return 0;
+}
+
+bool NgayHopLe(const NgayThang &ngay)
+{
+    int soNgay = SoNgayTrongThang(ngay.thang, ngay.nam);
+
+    return soNgay > 0 &&
+           ngay.ngay >= 1 &&
+           ngay.ngay <= soNgay;
+}
+
+long long Doirangay(NgayThang sngay)
+{
+	long long soNgay=0;
+	for(int i=1;i<sngay.nam;i++)
+	{
+		if(NamNhuan(i))
+		{
+			soNgay+= 366;
+		}
+		else
+		{
+			soNgay+= 365;
+		}
+	}
+	
+
+	for(int i=1;i<sngay.thang;i++)
+	{
+		soNgay+=SoNgayTrongThang(i,sngay.nam);
+	}
+	soNgay = soNgay + sngay.ngay-1;
+	return soNgay;
+}
+
+long long KhoangCachNgay(NgayThang ngayt1, NgayThang ngayt2)
+{
+    long long i=Doirangay(ngayt1);
+	long long j=Doirangay(ngayt2);
+	return j-i;
+}
+
+
+bool CoSachQuaHan7Ngay(const NutDocGia &docgia, NgayThang ngayktra)
+{
+	MuonTra* q = docgia.thongTin.dsMuonTra;
+	while(q!=nullptr)
+	{
+		if(q->trangThai == 0 )
+		{
+			long long k=KhoangCachNgay(q->ngayMuon,ngayktra);
+			if(k>=7) return true; 
+		}
+		q=q->next;
+	}
+	return false;
+}
+
+
+bool CapNhatLuotTra(const NutDocGia &docgia,string masach, NgayThang ngaytrasach )
+{
+	MuonTra* q = docgia.thongTin.dsMuonTra;
+	while(q!=nullptr && (q->maSach!=masach || q->trangThai!=0 ))
+	{	
+		q=q->next;
+	}
+	if(q==nullptr)
+	{
+		return false;
+	}
+	q->ngayTra=ngaytrasach;
+	q->trangThai=1;
+	return true;
+}
+
+void HuyDanhSachMuonTra(NutDocGia &docgia)
+{
+    MuonTra* q = docgia.thongTin.dsMuonTra;
+
+    while (q != nullptr)
+    {
+        MuonTra* p = q;
+        q = q->next;
+        delete p;
+    }
+
+    docgia.thongTin.dsMuonTra = nullptr;
+}
+
+
+
+
+void Huydocgia(NutDocGia* &nutdocgia)
+{
+    if (nutdocgia != nullptr)
+    {
+        
+        Huydocgia(nutdocgia->left);
+        Huydocgia(nutdocgia->right);
+
+        
+        HuyDanhSachMuonTra(*nutdocgia);
+
+        
+        delete nutdocgia;
+        nutdocgia = nullptr;
+    }
+}
+
+
+void HuyCayDocGia(CayDocGia &caydocgia)
+{
+    Huydocgia(caydocgia.root);
+}
+
+
+int main()
+{
+    // 1. Tach thong tin doc gia
+    string dong = "12|Nguy?n Van|An|Nam|1|4";
+    stringstream tach(dong);
+
+    string maTheChuoi, ho, ten, phai;
+    string trangthaithe, sobanghilichsu;
+
+    int machuoi = 0;
+    int trangthai = 0;
+    int sobanghi = 0;
+
+    getline(tach, maTheChuoi, '|');
+    stringstream doc(maTheChuoi);
+    doc >> machuoi;
+
+    getline(tach, ho, '|');
+    getline(tach, ten, '|');
+    getline(tach, phai, '|');
+
+    getline(tach, trangthaithe, '|');
+    stringstream docso(trangthaithe);
+    docso >> trangthai;
+
+    getline(tach, sobanghilichsu, '|');
+    stringstream docSo(sobanghilichsu);
+    docSo >> sobanghi;
+
+    // 2. Tao thong tin doc gia va them vao cay
+    DocGia p;
+    p.maThe = machuoi;
+    p.ho = ho;
+    p.ten = ten;
+    p.phai = phai;
+    p.trangThaiThe = trangthai;
+
+    CayDocGia cay;
+    them_cay(cay, p);
+
+    // 3. Tach mot dong lich su
+    string dong1 = "S001|01/09/2026|05/09/2026|1";
+    stringstream tachLichSu(dong1);
+
+    string maSach, ngayMuonChuoi, ngayTraChuoi;
+    string trangThaiMuonChuoi;
+
+    getline(tachLichSu, maSach, '|');
+    getline(tachLichSu, ngayMuonChuoi, '|');
+    getline(tachLichSu, ngayTraChuoi, '|');
+    getline(tachLichSu, trangThaiMuonChuoi, '|');
+
+    // 4. Tach va chuyen ngay muon thanh so
+    string ngayMuonText, thangMuonText, namMuonText;
+    stringstream ngaymuon(ngayMuonChuoi);
+
+    getline(ngaymuon, ngayMuonText, '/');
+    getline(ngaymuon, thangMuonText, '/');
+    getline(ngaymuon, namMuonText, '/');
+
+    int ngay = 0, thang = 0, nam = 0;
+
+    stringstream docNgayMuon(ngayMuonText);
+    stringstream docThangMuon(thangMuonText);
+    stringstream docNamMuon(namMuonText);
+
+    docNgayMuon >> ngay;
+    docThangMuon >> thang;
+    docNamMuon >> nam;
+
+    // 5. Tach va chuyen ngay tra thanh so
+    string ngayTraText, thangTraText, namTraText;
+    stringstream ngaytra(ngayTraChuoi);
+
+    getline(ngaytra, ngayTraText, '/');
+    getline(ngaytra, thangTraText, '/');
+    getline(ngaytra, namTraText, '/');
+
+    int ngay1 = 0, thang1 = 0, nam1 = 0;
+
+    stringstream docNgayTra(ngayTraText);
+    stringstream docThangTra(thangTraText);
+    stringstream docNamTra(namTraText);
+
+    docNgayTra >> ngay1;
+    docThangTra >> thang1;
+    docNamTra >> nam1;
+
+    // 6. Gom thong tin vao mot luot muon
+    MuonTra luotmuon;
+    luotmuon.maSach = maSach;
+
+    luotmuon.ngayMuon.ngay = ngay;
+    luotmuon.ngayMuon.thang = thang;
+    luotmuon.ngayMuon.nam = nam;
+
+    luotmuon.ngayTra.ngay = ngay1;
+    luotmuon.ngayTra.thang = thang1;
+    luotmuon.ngayTra.nam = nam1;
+
+    stringstream docTrangThaiMuon(trangThaiMuonChuoi);
+    docTrangThaiMuon >> luotmuon.trangThai;
+
+    
+    NutDocGia* docgia = tim_cay(cay, machuoi);
+
+    if (docgia == nullptr)
+    {
+        cout << "Khong tim thay doc gia";
+        return 1;
+    }
+
+   
+    MuonTra* muontra = new MuonTra;
+    *muontra = luotmuon;
+    muontra->next = nullptr;
+
+    docgia->thongTin.dsMuonTra = muontra;
+    
+    
+    // Doc du lieu luot muon thu hai
+string dong2 = "S005|10/09/2026|14/09/2026|1";
+stringstream tachLichSu2(dong2);
+
+string maSach2, ngayMuonChuoi2, ngayTraChuoi2;
+string trangThaiMuonChuoi2;
+
+getline(tachLichSu2, maSach2, '|');
+getline(tachLichSu2, ngayMuonChuoi2, '|');
+getline(tachLichSu2, ngayTraChuoi2, '|');
+getline(tachLichSu2, trangThaiMuonChuoi2, '|');
+
+// Tach ngay muon
+string ngayMuonText2, thangMuonText2, namMuonText2;
+stringstream ngaymuon2(ngayMuonChuoi2);
+
+getline(ngaymuon2, ngayMuonText2, '/');
+getline(ngaymuon2, thangMuonText2, '/');
+getline(ngaymuon2, namMuonText2, '/');
+
+// Tach ngay tra
+string ngayTraText2, thangTraText2, namTraText2;
+stringstream ngaytra2(ngayTraChuoi2);
+
+getline(ngaytra2, ngayTraText2, '/');
+getline(ngaytra2, thangTraText2, '/');
+getline(ngaytra2, namTraText2, '/');
+
+// Chuyen ngay muon thanh so
+int ngayMuon2 = 0, thangMuon2 = 0, namMuon2 = 0;
+
+stringstream docNgayMuon2(ngayMuonText2);
+stringstream docThangMuon2(thangMuonText2);
+stringstream docNamMuon2(namMuonText2);
+
+docNgayMuon2 >> ngayMuon2;
+docThangMuon2 >> thangMuon2;
+docNamMuon2 >> namMuon2;
+
+// Chuyen ngay tra thanh so
+int ngayTra2 = 0, thangTra2 = 0, namTra2 = 0;
+
+stringstream docNgayTra2(ngayTraText2);
+stringstream docThangTra2(thangTraText2);
+stringstream docNamTra2(namTraText2);
+
+docNgayTra2 >> ngayTra2;
+docThangTra2 >> thangTra2;
+docNamTra2 >> namTra2;
+
+// Chuyen trang thai thanh so
+int trangThaiMuon2 = 0;
+stringstream docTrangThaiMuon2(trangThaiMuonChuoi2);
+docTrangThaiMuon2 >> trangThaiMuon2;
+
+// Gom thong tin vao luot muon thu hai
+MuonTra luotmuon2;
+luotmuon2.maSach = maSach2;
+
+luotmuon2.ngayMuon.ngay = ngayMuon2;
+luotmuon2.ngayMuon.thang = thangMuon2;
+luotmuon2.ngayMuon.nam = namMuon2;
+
+luotmuon2.ngayTra.ngay = ngayTra2;
+luotmuon2.ngayTra.thang = thangTra2;
+luotmuon2.ngayTra.nam = namTra2;
+
+luotmuon2.trangThai = trangThaiMuon2;
+
+
+    MuonTra* muontra2 = new MuonTra;
+    *muontra2 =luotmuon2;
+    docgia->thongTin.dsMuonTra->next=muontra2;
+    
+
+
+    return 0;
+}
+
+
