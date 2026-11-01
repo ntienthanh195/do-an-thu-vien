@@ -89,12 +89,17 @@ bool ChuaChuoi(const string &s, const string &part)
 // }
 bool HopLeVanBan(const string &s)
 {   
-    string t = ChuanHoaChuoi(s);
-    if(t.empty()) return false;
-    for(const char& c : t){
-        if((c < 'a' || c > 'z') && (c < 'A' || c > 'Z')){
-            if(c != ' ') return false;
-        }
+    const size_t MAX_VAN_BAN = 100;
+    if(s.size() > MAX_VAN_BAN){
+        return false;
+    }
+    if(LaChuoiRong(s)) return false;
+    for(const unsigned char c : s){
+        if (c == '|')  return false;   // delimiter file
+        else if (c == '\\') return false;   // escape char
+        else if (c < 32)    return false;   // control char (tab, newline...)
+        else if (c == 127)  return false;   // DEL
+        else if (c >= 128)  return false;   // khong phai ASCII in duoc
     }
     return true;
 }
