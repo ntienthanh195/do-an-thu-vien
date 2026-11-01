@@ -5,7 +5,7 @@
 - **[MaNguon/](MaNguon/)**: giữ nguyên 9 file cũ (1 header và 8 file .cpp). Nhóm tiếp tục làm việc tại đây theo phân công hiện hành.
 - **[MaNguonUpdate/](MaNguonUpdate/)**: phương án chia theo chức năng a–j, gồm 17 file .cpp và 1 header, kèm README. Đặt bên cạnh để Thành, Thái và Tấn đọc trước; chưa thay thế bộ cũ và chưa yêu cầu chuyển công việc đang dở.
 
-Xem [tên file, người phụ trách và đối chiếu cũ → mới](docs/PHAN_CONG_MANGUONUPDATE.md). Bộ mới đã nhận phần code thêm đầu sách/kiểm tra cuốn sách và tiện ích của Thái; 14 file .cpp còn trống. Xem [các hàm đã chuyển và giới hạn](MaNguonUpdate/README.md#phần-code-thái-đã-chuyển-sang). Hai bộ không tự đồng bộ. Chỉ chuyển khi nhóm thống nhất, không biên dịch gộp hai thư mục hoặc sửa cùng một chức năng ở cả hai nơi.
+Xem [tên file, người phụ trách và đối chiếu cũ → mới](docs/PHAN_CONG_MANGUONUPDATE.md). Bộ mới đã nhận code sách/tiện ích của Thái và 15 hàm độc giả/lịch sử/ngày tháng Thành cung cấp; 12 file .cpp còn trống. Code có nhãn `[THANH]` / `[THAI]` để nhận biết nguồn; [README bộ mới](MaNguonUpdate/README.md) liệt kê hàm, bản thử gốc và giới hạn kiểm thử. Hai bộ không tự đồng bộ. Chỉ chuyển khi nhóm thống nhất, không biên dịch gộp hai thư mục hoặc sửa cùng một chức năng ở cả hai nơi.
 
 Đồ án nhóm đề số 3: quản lý sách, độc giả và mượn–trả bằng C++, với giao diện console tương tác và dữ liệu đọc/ghi file.
 
