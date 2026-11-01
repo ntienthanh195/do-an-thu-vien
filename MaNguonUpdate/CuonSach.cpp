@@ -1,6 +1,6 @@
 #include "00_KhaiBaoChung.h"
 
-// Chuyen tu ban Thai da day o commit 5c03ecf; giu logic hien co.
+// [THAI] Phan code Thai cung cap o commit 5c03ecf; giu logic hien co.
 bool HopLeCuonSach(const CuonSach &s, string &loi){
     // KIEM TRA MA SACH 
     string ch_maSach = ChuanHoaChuoiSach(s.maSach);

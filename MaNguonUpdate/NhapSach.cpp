@@ -1,6 +1,6 @@
 #include "00_KhaiBaoChung.h"
 
-// Chuyen tu ban Thai da day o commit 5c03ecf; giu logic hien co.
+// [THAI] Phan code Thai cung cap o commit 5c03ecf; giu logic hien co.
 bool HopLeTenSach(const string &s){
     if(s.empty() || s.size() > 150) return false;
     if(LaChuoiRong(s)) return false;

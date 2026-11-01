@@ -158,3 +158,20 @@ const DauSach* TimDauSachTheoISBN(const DanhSachDauSach& ds, const string& isbn)
 int TimViTriChenTheoTen(const DanhSachDauSach& ds, const DauSach& d);
 bool ThemDauSach(ThuVien& tv, const DauSach& d, string& loi);
 bool HopLeCuonSach(const CuonSach& s, string& loi);
+
+// [THANH] Khai bao 15 ham tu ban Thanh gui ngay 01/11/2026.
+NutDocGia* tim_cay(CayDocGia &caydocgia, int x);
+void them_cay(CayDocGia &caydocgia, const DocGia &docGiaMoi);
+void Huydocgia(NutDocGia* &nutdocgia);
+void HuyCayDocGia(CayDocGia &caydocgia);
+void them_lich_su(NutDocGia &q, MuonTra muontra);
+int Dem_so_sach_dang_muon(NutDocGia &q);
+MuonTra* TimMuonDangMuonTheoMa(NutDocGia &q,string maSach);
+bool CoSachQuaHan7Ngay(const NutDocGia &docgia, NgayThang ngayktra);
+bool CapNhatLuotTra(const NutDocGia &docgia,string masach, NgayThang ngaytrasach );
+void HuyDanhSachMuonTra(NutDocGia &docgia);
+bool NamNhuan(int nam);
+int SoNgayTrongThang(int thang, int nam);
+bool NgayHopLe(const NgayThang &ngay);
+long long Doirangay(NgayThang sngay);
+long long KhoangCachNgay(NgayThang ngayt1, NgayThang ngayt2);

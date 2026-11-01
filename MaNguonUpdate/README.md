@@ -8,7 +8,7 @@
 
 [Phân công đầy đủ, phần dùng chung và cách chuyển từ tên file cũ](../docs/PHAN_CONG_MANGUONUPDATE.md) · [Hướng dẫn commit/push/PR](../docs/HUONG_DAN_DAY_CODE_CHO_NHOM.md).
 
-Header, tiện ích, `NhapSach.cpp` và `CuonSach.cpp` đã có nội dung; 14 file .cpp còn lại vẫn trống. Chưa có chương trình hoàn chỉnh để chạy. Không sao chép các hàm dùng chung sang nhiều file; giữ một bộ struct và dữ liệu thống nhất. Màn hình riêng thuộc file chức năng tương ứng, hỗ trợ giao diện chung thuộc GiaoDien.cpp.
+Header và 5 file .cpp đã có nội dung: tiện ích, `NhapSach.cpp`, `CuonSach.cpp`, `QuanLyDocGia.cpp`, `LichSuMuonTra.cpp`; 12 file .cpp còn lại vẫn trống. Chưa có chương trình hoàn chỉnh để chạy. Không sao chép các hàm dùng chung sang nhiều file; giữ một bộ struct và dữ liệu thống nhất. Màn hình riêng thuộc file chức năng tương ứng, hỗ trợ giao diện chung thuộc GiaoDien.cpp.
 
 
 ## Phần code Thái đã chuyển sang
@@ -29,3 +29,20 @@ Nguồn đối chiếu: commit `5c03ecf4137faf10ac8b17a0710b5fbda34ca542`, hai f
 Ngày 01/11/2026: đã biên dịch và liên kết riêng ba file tiện ích/đầu sách/cuốn sách với bộ chạy thử tạm ngoài mã sản phẩm bằng GCC C++11 (`-Wall -Wextra -pedantic`). Các ca đã chạy đạt: giữ hành vi hai hàm chuẩn hóa, thêm vào danh sách rỗng, chèn giữ thứ tự tên, chặn ISBN trùng, tìm thấy/không thấy ISBN, từ chối số trang không hợp lệ, cuốn hợp lệ và trạng thái không hợp lệ. Đây là kiểm tra tích hợp phần chuyển, chưa phải kiểm thử toàn chương trình hoặc đủ nghiệp vụ.
 
 Đã tái hiện lỗi có sẵn: mã `9781234567890#x` và vị trí `1-xx-yy` vẫn được `HopLeCuonSach` chấp nhận. Giữ nguyên để Thái kiểm tra/sửa riêng; không coi các ca này là đạt yêu cầu. Compiler còn báo hai cảnh báo so sánh int với size_type ở các vòng lặp trong hàm này.
+
+
+## Phần code Thành đã chuyển sang ngày 01/11/2026
+
+Chuyển đúng 15 hàm ngoài main từ bản Thành cung cấp, giữ nguyên thân hàm và tên hàm. Dùng struct/hằng đã có trong header chung; bổ sung khai báo để các file liên kết được.
+
+- `QuanLyDocGia.cpp` (4 hàm): `tim_cay`, `them_cay`, `Huydocgia`, `HuyCayDocGia`.
+- `LichSuMuonTra.cpp` (6 hàm): `them_lich_su`, `Dem_so_sach_dang_muon`, `TimMuonDangMuonTheoMa`, `CoSachQuaHan7Ngay`, `CapNhatLuotTra`, `HuyDanhSachMuonTra`.
+- `01_HamTienIch.cpp` (5 hàm): `NamNhuan`, `SoNgayTrongThang`, `NgayHopLe`, `Doirangay`, `KhoangCachNgay`.
+
+Nhãn `[THANH]` và `[THAI]` trong code chỉ rõ phần mỗi người cung cấp/phụ trách. Trong tiện ích chung, từng hàm có nhãn riêng; header là khai báo chung. Nhãn không phải xác nhận mức tự làm độc lập: hai hàm hủy cây có ghi nguồn mẫu AI hỗ trợ theo bản bàn giao. Codex chỉ chuyển vị trí, thêm include/khai báo và ghi chú trong lần sắp xếp này.
+
+[Bản thử đầy đủ của Thành, giữ nguyên cả main](../docs/THANH_BAN_THU_DOC_GIA_20261101.cpp.txt) được lưu dạng `.cpp.txt` để đối chiếu, không đưa vào build chung. Main này chỉ thử tách chuỗi, chưa phải bộ đọc file hoàn chỉnh; chưa gọi hủy cây trước khi thoát. `MaNguonUpdate/main.cpp` vẫn trống. Khi tự chạy bản thử, cần sao chép sang file .cpp riêng và không liên kết thêm các bản định nghĩa trùng trong bộ mới.
+
+`CapNhatLuotTra` chỉ cập nhật bản ghi lịch sử, chưa phải nghiệp vụ trả sách đầy đủ. `CoSachQuaHan7Ngay` giữ điều kiện `>= 7` đúng bản gửi; cần chốt mốc với đề/thầy. Việc kiểm tra ngày đầu vào/ngày trả trước ngày mượn chưa được bổ sung trong lần chuyển. `them_cay` sao chép con trỏ lịch sử như bản gốc; không dùng chung một danh sách lịch sử cho hai độc giả rồi hủy cả hai. Các hàm mượn/trả hoàn chỉnh, hiệu chỉnh độc giả và đọc/ghi file vẫn chưa được cài đặt ở bộ mới.
+
+Kiểm tra lần chuyển Thành: đối chiếu tự động cả 15 thân hàm với bản gửi (không đổi logic), giữ bản thử gốc nguyên byte. Biên dịch và liên kết cả 5 file .cpp đã có code bằng GCC C++11 (`-Wall -Wextra -pedantic`), chạy bộ thử tạm ngoài repo: tìm/chèn BST và mã trùng; lịch sử rỗng, trả rồi mượn lại cùng mã; tìm/đếm lượt đang mượn; trả mã không có và trả lặp; ngày nhuận/giao năm; mốc 6/7 ngày theo hành vi hiện tại; hủy lịch sử/cây rỗng và cây có nhiều nút. Các ca này đạt; vẫn còn hai cảnh báo cũ trong CuonSach.cpp. Đây là bằng chứng liên kết và các ca đã chạy, không xác nhận chương trình hoàn chỉnh hay mọi quy tắc nghiệp vụ đúng.
