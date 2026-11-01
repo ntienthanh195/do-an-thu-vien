@@ -1,5 +1,7 @@
 # Phân công code theo file trong MaNguon/
 
+> Cập nhật 01/11/2026: giữ nguyên 9 file trong `MaNguon/` để nhóm tiếp tục công việc hiện tại. Bộ file theo chức năng được đặt riêng tại [`MaNguonUpdate/`](../MaNguonUpdate/), chưa thay thế bộ cũ. Xem [phương án mới và đối chiếu file cũ → mới](PHAN_CONG_MANGUONUPDATE.md); chỉ chuyển khi cả nhóm thống nhất.
+
 Cập nhật 02/10/2026 từ phân công của Thái, sau trao đổi với Thành. Chức năng a–j giữ theo [phân công chung](PHAN_CONG_DO_AN_THU_VIEN.md); hạn thực hiện theo [lịch nhóm](NHOM_CONG_VIEC_VA_MOC_PR.md). Đây là nhiệm vụ, chưa xác nhận code đã viết hoặc kiểm thử.
 
 Các file đã tạo sẵn để mỗi người tự cài. Tên hàm dưới đây là đề xuất của Thái để trao đổi giao tiếp, chưa phải toàn bộ hàm đã tồn tại hay đặc tả đầu vào/đầu ra đã chốt. Muốn đổi tên/cách gọi dùng chung phải thống nhất trước. Đọc thêm [phân công dữ liệu](PHAN_CONG_DU_LIEU.md).
