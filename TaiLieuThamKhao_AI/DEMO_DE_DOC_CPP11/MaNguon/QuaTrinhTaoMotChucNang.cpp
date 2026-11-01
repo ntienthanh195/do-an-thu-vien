@@ -1,20 +1,58 @@
-/*c.Nhập thông tin đầu sách và đánh mã sách tự động 
-sao cho tìm thông tin sách theo mã sách nhanh nhất.*/
+/*c.Nhập thông tin đầu sách và đánh mã sách tự động sao cho tìm thông tin sách theo mã sách nhanh nhất.*/
+// Step 1 – Xử lý chuỗi
+// Hàm: LaChuoiRong, ChuanHoaChuoi, SoSanhChuoi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #include "00_KhaiBaoChung.h"
 // Giai đoạn 1 — Nhánh thêm đầu sách
 
 // HopLeDauSach
-bool HopLeVanBan(const string &s)
-{   
-    string t = ChuanHoaChuoi(s);
-    if(t.empty()) return false;
-    for(const char& c : t){
-        if((c < 'a' || c > 'z') && (c < 'A' || c > 'Z')){
-            if(c != ' ') return false;
-        }
-    }
-    return true;
-}
 bool HopLeTenSach(const string &s){
     if(s.empty() || s.size() > 150) return false;
     if(LaChuoiRong(s)) return false;
@@ -32,13 +70,14 @@ bool HopLeTenSach(const string &s){
 bool HopLeDauSach(const DauSach &d, string &loi){
     // KIEM TRA ISBN 
     // quy uoc isbn ca thu vien la isbn-13
-    if((int)d.ISBN.size() != 13){
-        loi = "ISBN khong hop le!\n";
+    string ch_ISBN = ChuanHoaChuoi(d.ISBN);
+    if((int)ch_ISBN.size() != 13){
+        loi = "ISBN phai co dung 13 ky tu so!\n";
         return false;
     }
-    for(const char& c : d.ISBN){
+    for(char c : ch_ISBN){
         if(c < '0' || c > '9'){
-            loi = "ISBN khong hop le!\n";
+            loi = "ISBN chi duoc chua so!\n";
             return false;
         }
     }
@@ -49,12 +88,12 @@ bool HopLeDauSach(const DauSach &d, string &loi){
     }
     // KIEM TRA SO TRANG 
     if(d.soTrang <= 0){
-        loi = "So trang khong hop le!\n";
+        loi = "So trang phai lon hon 0!\n";
         return false;
     }
     // NAM XUAT BAN 
     if(d.namXuatBan <= 0 || d.namXuatBan > 2026){
-        loi = "Nam xuat ban khong hop le!\n";
+        loi = "Nam xuat ban phai tu 1 den nam hien tai!\n";
         return false;
     }
     // THE LOAI 
@@ -137,6 +176,47 @@ bool ThemDauSach(ThuVien &tv, const DauSach &d, string &loi){
     // co can chuan hoa dau / chu hoa / thuong cho ten sach , tac gia, the loai
     tv.dsDauSach.ds[vitriChen] = new DauSach(d);
     ++tv.dsDauSach.soLuong;
+    loi.clear();
+    return true;
+}
+
+// // HopLeCuonSach
+bool HopLeCuonSach(const CuonSach &s, string &loi){
+    // KIEM TRA MA SACH 
+    string ch_maSach = ChuanHoaChuoi(s.maSach);
+    if((int)s.maSach.size() < 15 || s.maSach[13] != '#'){
+        loi = "Ma sach phai dung dinh dang ISBN#N!\n";
+        return false;
+    }
+    for(int i = 0; s.maSach[i] != '#'; ++i){
+        if(s.maSach[i] < '0' || s.maSach[i] > '9'){
+            loi = "Ma sach phai dung dinh dang ISBN#N!\n";
+            return false;
+        }
+    }
+    for(int i = 14; i < s.maSach.size(); ++i){
+        if(s.maSach[i] < '0' && s.maSach[i] > '9'){
+            loi = "Ma sach phai dung dinh dang ISBN#N!\n";
+            return false;
+        }
+    }
+    // KIEM TRA TRANG THAI
+    if(s.trangThai != SACH_CHO_MUON && s.trangThai != SACH_DANG_MUON && s.trangThai != SACH_THANH_LY){
+        loi = "Tran thai sach khong hop le!\n";
+        return false;
+    }
+    // KIEM TRA VI TRI 
+    string ch_viTri = ChuanHoaChuoi(s.viTri);
+    if(s.viTri.size() != 7){
+        loi = "Do dai vi tri sach phai co dung 7 ky tu theo dinh dang Khu-Ke-Tang ( vi du : A-01-01 )!\n";
+        return false;
+    }
+    for(int i = 0; i < s.viTri.size(); ++i){
+        if(i == 0 && ((s.viTri[i] < 'A' && s.viTri[i] > 'Z') && (s.viTri[i] < 'a' && s.viTri[i] > 'z'))){
+            loi = "Dinh dang vi tri sach Khu-Ke-Tang, trong do Khu [A...Z], Ke [01...99], Tang [01...99] \n";
+            return false;
+        }
+    }
     loi.clear();
     return true;
 }

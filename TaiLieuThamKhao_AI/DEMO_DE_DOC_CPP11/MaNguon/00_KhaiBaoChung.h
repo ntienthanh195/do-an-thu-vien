@@ -1,4 +1,3 @@
-// Khai bao du lieu va ham cua do an. Doc file nay truoc.
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -28,6 +27,9 @@ struct NgayThang
         nam = y;
     }
 };
+// maSach = ISBN#N ( trong do N la so nguyen duong tang dan khong tai su dung, # là delimiter )
+// viTri = Khu-Ke-Tang ( trong do Khu trong khoang (A...Z), ke (01...99), tang (01...99) 
+// vi du : A-03-02
 struct CuonSach
 {
     string maSach;
@@ -35,9 +37,10 @@ struct CuonSach
     string viTri;
     CuonSach *next = nullptr;
 };
+// quy uoc : ISBN = chuoi ky tu 13 chu so
 struct DauSach
 {
-    string ISBN, tenSach;
+    string ISBN, tenSach; 
     int soTrang = 0;
     string tacGia;
     int namXuatBan = 0;
@@ -110,6 +113,7 @@ bool HopLeTrangThaiMuonTra(int x);
 
 // 02: mang con tro dau sach. Ket qua tim kiem la con tro muon, khong delete.
 bool HopLeDauSach(const DauSach &d, string &loi);
+bool HopLeCuonSach(const CuonSach &s, string &loi);
 int TimViTriChenTheoTen(const DanhSachDauSach &ds, const DauSach &d);
 string ChuanHoaISBN(const string &isbn);
 DauSach *TimDauSachTheoISBN(DanhSachDauSach &ds, const string &isbn);
