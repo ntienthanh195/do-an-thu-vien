@@ -1,6 +1,8 @@
 # Hướng đi tự làm cho Thành, Thái và Tấn
 
-**Cập nhật 01/11/2026:** file trong `MaNguon/` chia theo chức năng a–j; xem [phân công và vị trí hiện hành](PHAN_CONG_THEO_FILE.md). Các mốc tự học/tự làm bên dưới giữ nguyên; việc tạo file không phải hoàn thành chức năng.
+> Cập nhật 01/11/2026: giữ nguyên 9 file trong `MaNguon/` để nhóm tiếp tục công việc hiện tại. Bộ file theo chức năng được đặt riêng tại [`MaNguonUpdate/`](../MaNguonUpdate/), chưa thay thế bộ cũ. Xem [phương án mới và đối chiếu file cũ → mới](PHAN_CONG_MANGUONUPDATE.md); chỉ chuyển khi cả nhóm thống nhất.
+
+**Cập nhật 02/10/2026:** nhóm đã chốt cách chia và tạo sẵn file trống; xem [vị trí file hiện hành](HUONG_DAN_DAY_CODE_CHO_NHOM.md). Lựa chọn tự tạo file ngày 27/09 bên dưới là lịch sử; quyền tự thiết kế và tự viết code vẫn giữ.
 
 ## Cách dùng tài liệu
 
