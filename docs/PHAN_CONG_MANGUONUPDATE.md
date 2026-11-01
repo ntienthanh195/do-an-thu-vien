@@ -1,8 +1,8 @@
 # Phân công code theo chức năng trong MaNguonUpdate/
 
-> `MaNguon/` vẫn là nơi làm việc hiện tại, giữ nguyên 9 file cũ. `MaNguonUpdate/` nằm bên cạnh để nhóm xem phương án chia chức năng, chưa thay thế MaNguon. Hai file có code trong bản mới là bản sao tại mốc chuẩn bị; không duy trì sửa cả hai nơi.
+> `MaNguon/` vẫn là nơi làm việc hiện tại, giữ nguyên 9 file cũ. `MaNguonUpdate/` nằm bên cạnh để nhóm xem phương án chia chức năng, chưa thay thế MaNguon. Đã chuyển phần code sách của Thái vào bộ mới theo yêu cầu của Thành; bộ cũ vẫn nguyên vẹn, không tự đồng bộ hai nơi.
 
-Phương án tham khảo ngày 01/11/2026: mỗi chức năng a–j có một file riêng, dùng chung cấu trúc và dữ liệu của chương trình. Phân công Thành–Thái–Tấn giữ theo [hồ sơ phân công](PHAN_CONG_DO_AN_THU_VIEN.md). Các file chức năng và hỗ trợ mới chỉ giữ chỗ; việc sắp xếp file không xác nhận đã cài đặt, biên dịch hoặc kiểm thử chức năng.
+Phương án tham khảo ngày 01/11/2026: mỗi chức năng a–j có một file riêng, dùng chung cấu trúc và dữ liệu của chương trình. Phân công Thành–Thái–Tấn giữ theo [hồ sơ phân công](PHAN_CONG_DO_AN_THU_VIEN.md). Bộ mới đã có tiện ích, phần thêm đầu sách và kiểm tra cuốn sách; các file chức năng khác còn giữ chỗ; việc sắp xếp file không xác nhận đã cài đặt, biên dịch hoặc kiểm thử chức năng.
 
 ## Thành — a, f, g
 
@@ -33,14 +33,14 @@ Tấn tự làm màn hình b, d, h; giữ thứ tự triển khai h → b theo m
 ## Phần dùng chung
 
 - [00_KhaiBaoChung.h](../MaNguonUpdate/00_KhaiBaoChung.h): bộ struct/hằng chung hiện có, Thành điều phối. Các khai báo hàm được người viết đề xuất và bổ sung sau khi thống nhất cách gọi; không chép struct sang từng file chức năng.
-- [01_HamTienIch.cpp](../MaNguonUpdate/01_HamTienIch.cpp): giữ nguyên code tiện ích hiện có. Thành phụ trách ngày tháng và kiểm tra độc giả/lịch sử; Thái phụ trách chuỗi và kiểm tra sách. Mỗi hàm có một người chịu trách nhiệm, trao đổi trước khi cùng sửa.
+- [01_HamTienIch.cpp](../MaNguonUpdate/01_HamTienIch.cpp): giữ các tiện ích nhóm đã có, bổ sung tiện ích sách được trích từ bản Thái; hàm chuẩn hóa sách mang tên riêng để giữ hành vi. Thành phụ trách ngày tháng và kiểm tra độc giả/lịch sử; Thái phụ trách chuỗi và kiểm tra sách. Mỗi hàm có một người chịu trách nhiệm, trao đổi trước khi cùng sửa.
 - [CuonSach.cpp](../MaNguonUpdate/CuonSach.cpp): Thái phụ trách danh sách cuốn, mã cuốn và tra cứu cuốn dùng chung cho c, f, g, h.
 - [LichSuMuonTra.cpp](../MaNguonUpdate/LichSuMuonTra.cpp): Thành phụ trách thao tác nền trên danh sách lịch sử; không chứa chức năng h của Tấn. Mượn/trả chịu trách nhiệm phối hợp cập nhật toàn nghiệp vụ.
 - [LuuDocFile.cpp](../MaNguonUpdate/LuuDocFile.cpp): Thành đọc/ghi độc giả và lịch sử, điều phối nạp/lưu chung; Thái đọc/ghi đầu sách và cuốn sách. Chốt ranh giới phần việc trước khi cùng sửa. Tấn hỗ trợ mẫu và thử dữ liệu, không bị chuyển sang phụ trách bộ đọc/ghi. Backup tự động vẫn là tùy chọn làm sau.
 - [GiaoDien.cpp](../MaNguonUpdate/GiaoDien.cpp): hỗ trợ nhập, phím, bảng, phân trang và thông báo dùng chung. Cả ba chia người phụ trách từng phần; màn hình riêng vẫn thuộc file chức năng tương ứng.
 - [main.cpp](../MaNguonUpdate/main.cpp): Thành điều phối điểm chạy duy nhất, tạo dữ liệu chung, nạp dữ liệu, nối menu và lưu/thoát. Hiện là file trống, chưa có hàm main.
 
-Tổng cộng **17 file .cpp và 1 header**: 10 file chức năng a–j, 7 file hỗ trợ/điều phối. Header và file tiện ích là bản sao đối chiếu từ MaNguon tại mốc chuẩn bị, chưa tự đồng bộ khi MaNguon đổi; các file .cpp còn lại đều trống.
+Tổng cộng **17 file .cpp và 1 header**: 10 file chức năng a–j, 7 file hỗ trợ/điều phối. Header đã bổ sung khai báo; tiện ích, NhapSach.cpp và CuonSach.cpp đã nhận phần code của Thái; 14 file .cpp còn lại vẫn trống. Xem [danh sách hàm và giới hạn đã biết](../MaNguonUpdate/README.md#phần-code-thái-đã-chuyển-sang). Không tự đồng bộ khi bản nguồn đổi.
 
 ## Quy ước kết nối
 
@@ -62,7 +62,7 @@ Tổng cộng **17 file .cpp và 1 header**: 10 file chức năng a–j, 7 file 
 - `07_LuuDocFile.cpp` → `LuuDocFile.cpp`.
 - `08_ChuongTrinhChinh.cpp`: menu sang `Menu.cpp`, khởi động/nạp/lưu/thoát sang `main.cpp`, hỗ trợ giao diện chung sang `GiaoDien.cpp`.
 
-Hiện tại nhóm tiếp tục làm việc trong `MaNguon/` theo tên file cũ. Không chuyển code đang dở chỉ vì thư mục mới xuất hiện. Khi cả ba thống nhất chuyển, commit công việc đang dở trên nhánh riêng, đối chiếu bản mới nhất trong MaNguon rồi chuyển từng phần và kiểm thử. Không chép đè code của người khác. Chỉ chọn một bộ nguồn để biên dịch; không gom cả MaNguon và MaNguonUpdate vào cùng project.
+Hiện tại nhóm tiếp tục làm việc trong `MaNguon/` theo tên file cũ. Phần code sách của Thái đã được trích sang theo yêu cầu của Thành; các phần khác không tự chuyển chỉ vì thư mục mới xuất hiện. Khi cả ba thống nhất chuyển, commit công việc đang dở trên nhánh riêng, đối chiếu bản mới nhất trong MaNguon rồi chuyển từng phần và kiểm thử. Không chép đè code của người khác. Chỉ chọn một bộ nguồn để biên dịch; không gom cả MaNguon và MaNguonUpdate vào cùng project.
 
 Repo nhóm chưa có cấu hình build chung ở gốc. Khi tạo project IDE/build, thêm các file .cpp thực sự tham gia chương trình và chỉ một main; bản thử riêng đặt ngoài bản ghép. Cấu hình build của các bản tham khảo trong TaiLieuThamKhao_AI không phải cấu hình của MaNguon nhóm.
 
