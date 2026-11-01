@@ -135,3 +135,26 @@ struct ThuVien
     DanhSachDauSach dsDauSach;
     CayDocGia cayDocGia;
 };
+
+
+// Khai bao cac ham da co noi dung trong MaNguonUpdate.
+bool LaChuoiRong(const string& s);
+bool LaNamHopLe(int nam);
+string ChuanHoaChuoi(string s);
+bool HopLePhai(const string& phai);
+bool HopLeTrangThaiSach(int trangThai);
+bool HopLeTrangThaiMuonTra(int trangThai);
+bool HopLeTrangThaiThe(int trangThai);
+
+// ChuanHoaChuoiSach gop khoang trang va giu hoa/thuong theo ban Thai.
+string ChuanHoaChuoiSach(const string& s);
+int SoSanhChuoi(const string& a, const string& b);
+bool HopLeVanBan(const string& s);
+string ChuanHoaISBN(const string& isbn);
+
+bool HopLeTenSach(const string& s);
+bool HopLeDauSach(const DauSach& d, string& loi);
+const DauSach* TimDauSachTheoISBN(const DanhSachDauSach& ds, const string& isbn);
+int TimViTriChenTheoTen(const DanhSachDauSach& ds, const DauSach& d);
+bool ThemDauSach(ThuVien& tv, const DauSach& d, string& loi);
+bool HopLeCuonSach(const CuonSach& s, string& loi);
