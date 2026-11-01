@@ -9,7 +9,7 @@ using namespace std;
 const DWORD CHE_DO_MAU_CONSOLE = 0x0004;
 
 const int SO_NGUYEN_LON_NHAT = 2147483647;
-
+const int NAM_HIEN_TAI = 2026;
 // Ban tham khao AI. Bon cau truc va ten truong giu theo header cua nhom.
 const int MAX_DAU_SACH = 10000;
 const int MAX_DOC_GIA = 100000; // gioi han tai nguyen cua ban tham khao

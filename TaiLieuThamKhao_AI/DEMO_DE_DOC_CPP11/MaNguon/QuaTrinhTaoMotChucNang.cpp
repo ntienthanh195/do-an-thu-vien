@@ -54,62 +54,7 @@
 // Giai đoạn 1 — Nhánh thêm đầu sách
 
 // HopLeDauSach
-bool HopLeTenSach(const string &s){
-    if(s.empty() || s.size() > 150) return false;
-    if(LaChuoiRong(s)) return false;
-    bool CoKyTuHopLe = false;
-    for(char c : s){
-        if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9')){
-            CoKyTuHopLe = true;
-        }      
-        else if(c == ' ' || c == ':' || c == '-' || c == ',' || c == '.' || 
-                c == '(' || c == ')' || c == '\'' || c == '"'){}
-        else return false;
-    }
-    return CoKyTuHopLe;
-}
-bool HopLeDauSach(const DauSach &d, string &loi){
-    // KIEM TRA ISBN 
-    // quy uoc isbn ca thu vien la isbn-13
-    string ch_ISBN = ChuanHoaChuoi(d.ISBN);
-    if((int)ch_ISBN.size() != 13){
-        loi = "ISBN phai co dung 13 ky tu so!\n";
-        return false;
-    }
-    for(char c : ch_ISBN){
-        if(c < '0' || c > '9'){
-            loi = "ISBN chi duoc chua so!\n";
-            return false;
-        }
-    }
-    // KIEM TRA TAC GIA
-    if(!HopLeVanBan(d.tacGia)){
-        loi = "Tac gia khong hop le!\n";
-        return false;
-    }
-    // KIEM TRA SO TRANG 
-    if(d.soTrang <= 0){
-        loi = "So trang phai lon hon 0!\n";
-        return false;
-    }
-    // NAM XUAT BAN 
-    if(d.namXuatBan <= 0 || d.namXuatBan > 2026){
-        loi = "Nam xuat ban phai tu 1 den nam hien tai!\n";
-        return false;
-    }
-    // THE LOAI 
-    if(!HopLeVanBan(d.theLoai)){
-        loi = "The loai khong hop le!\n";
-        return false;
-    }
-    // KIEM TRA TEN SACH    
-    if(!HopLeTenSach(d.tenSach)){
-        loi = "Ten sach khong hop le!\n";
-        return false;
-    }
-    loi.clear();
-    return true;
-}
+
 
 // TimDauSachTheoISBN
 const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn){

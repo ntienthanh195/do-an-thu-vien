@@ -35,31 +35,42 @@ string ChuanHoaISBN(const string &isbn){
     return res;
 }
 
-bool HopLeDauSach(const DauSach &d, string &loi)
-{
-    if (!HopLeVanBan(d.ISBN) || !HopLeVanBan(d.tenSach) || !HopLeVanBan(d.tacGia) ||
-        !HopLeVanBan(d.theLoai))
-    {
-        loi = "ISBN, ten sach, tac gia va the loai phai la van ban khong rong, khong ky tu dieu "
-              "khien/|.";
+bool HopLeDauSach(const DauSach &d, string &loi){
+    // KIEM TRA ISBN 
+    string ch_ISBN = ChuanHoaISBN(d.ISBN);
+    if(static_cast<int>(ch_ISBN.size()) != 13){
+        loi = "ISBN chi bao gom 13 so!\n";
         return false;
     }
-    // ISBN la ma dinh danh nhom; khong ap checksum ISBN-10/13 khi de chua yeu cau.
-    // Dau # danh rieng cho ma cuon ISBN#so; khong duoc nam trong ISBN.
-    for (char ch : d.ISBN)
-        if (ch == '#')
-        {
-            loi = "ISBN khong duoc chua # (phan tach ma cuon).";
+    for(char c : ch_ISBN){
+        if(c < '0' || c > '9'){
+            loi = "ISBN chi bao gom 13 so!\n";
             return false;
         }
-    if (d.soTrang <= 0)
-    {
-        loi = "So trang phai lon hon 0.";
+    }
+    // KIEM TRA SO TRANG 
+    if(d.soTrang < 1){
+        loi = "So trang phai lon hon 0!\n";
         return false;
     }
-    if (d.namXuatBan < 1 || d.namXuatBan > HomNay().nam)
-    {
-        loi = "Nam xuat ban phai tu 1 den nam hien tai.";
+    // NAM XUAT BAN 
+    if(d.namXuatBan <1 || d.namXuatBan > NAM_HIEN_TAI){
+        loi = "Nam xuat ban phai la so duong va khong vuot qua nam hien tai!\n";
+        return false;
+    }
+    // THE LOAI 
+    if(!HopLeVanBan(d.theLoai)){
+        loi = "The loai khong hop le!\n";
+        return false;
+    }
+    // KIEM TRA TAC GIA
+    if(!HopLeVanBan(d.tacGia)){
+        loi = "Ten tac gia khong hop le!\n";
+        return false;
+    }
+    // KIEM TRA TEN SACH    
+    if(!HopLeVanBan(d.tenSach)){
+        loi = "Ten sach khong hop le!\n";
         return false;
     }
     loi.clear();
