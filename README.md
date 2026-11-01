@@ -1,5 +1,12 @@
 # Đồ án CTDL — Quản lý Thư viện
 
+## Hai thư mục để nhóm đối chiếu
+
+- **[MaNguon/](MaNguon/)**: giữ nguyên 9 file cũ (1 header và 8 file .cpp). Nhóm tiếp tục làm việc tại đây theo phân công hiện hành.
+- **[MaNguonUpdate/](MaNguonUpdate/)**: phương án chia theo chức năng a–j, gồm 17 file .cpp và 1 header, kèm README. Đặt bên cạnh để Thành, Thái và Tấn đọc trước; chưa thay thế bộ cũ và chưa yêu cầu chuyển công việc đang dở.
+
+Xem [tên file, người phụ trách và đối chiếu cũ → mới](docs/PHAN_CONG_MANGUONUPDATE.md). Bộ mới vẫn chủ yếu là file trống; header và tiện ích là bản sao tại mốc chuẩn bị, không tự đồng bộ. Chỉ chuyển khi nhóm thống nhất, không biên dịch gộp hai thư mục hoặc sửa cùng một chức năng ở cả hai nơi.
+
 Đồ án nhóm đề số 3: quản lý sách, độc giả và mượn–trả bằng C++, với giao diện console tương tác và dữ liệu đọc/ghi file.
 
 ## Tài liệu ôn tập của nhóm
@@ -26,24 +33,21 @@ Chi tiết ở [phân công nhóm](docs/PHAN_CONG_DO_AN_THU_VIEN.md), phần A. 
 - Độc giả: cây nhị phân tìm kiếm.
 - Mượn–trả: danh sách liên kết đơn gắn với từng độc giả.
 
-## Mã nguồn nhóm — chia theo chức năng
+## Trạng thái ban đầu
 
-Cập nhật 01/11/2026: mở [MaNguon](MaNguon/) để viết code theo chức năng a–j.
+`src/CODE-ĐỒ-ÁN-THƯ-VIỆN-DSA.cpp` là bản khai báo nhóm ngày 25/09/2026 được sao chép nguyên văn. Chưa có `main`, giao diện, chức năng a–j hoặc phần đọc/ghi dữ liệu; chưa phải chương trình hoàn chỉnh để chạy. Việc tạo repo không tạo thêm bằng chứng kiểm thử hoặc tiến độ triển khai.
 
-- **Thành:** `QuanLyDocGia.cpp` (a), `MuonSach.cpp` (f), `TraSach.cpp` (g).
-- **Thái:** `NhapSach.cpp` (c), `TimSach.cpp` (e), `DocGiaQuaHan.cpp` (i), `Top10Sach.cpp` (j).
-- **Tấn:** `InDanhSachDocGia.cpp` (b), `InDauSachTheoTheLoai.cpp` (d), `SachDangMuon.cpp` (h), `Menu.cpp`.
-- **Phần chung:** khai báo, tiện ích, thao tác cuốn sách/lịch sử, đọc–ghi file, giao diện chung và `main.cpp`; xem [trách nhiệm từng file và cách chuyển code đang dở](docs/PHAN_CONG_THEO_FILE.md).
-
-Có 17 file .cpp và 1 header. Header `00_KhaiBaoChung.h` và `01_HamTienIch.cpp` đã có code và được giữ nguyên trong lần sắp xếp; 16 file .cpp còn lại đang trống. Chưa có chương trình hoàn chỉnh hay cấu hình build chung để chạy. Tạo/đổi vị trí file không xác nhận hoàn thành chức năng hoặc kiểm thử. Dữ liệu mẫu đã có trong `DuLieu/`; chưa suy ra bộ đọc đã chạy đúng từ việc có file mẫu.
-
-`src/CODE-ĐỒ-ÁN-THƯ-VIỆN-DSA.cpp` là khai báo lịch sử ngày 25/09/2026. Mã tham khảo AI và các gói ZIP nằm riêng trong `TaiLieuThamKhao_AI/`, không phải code nhóm đã tự triển khai.
+Chưa chốt cấu hình build và định dạng dữ liệu. Nhóm sẽ bổ sung hướng dẫn chạy khi có bản thực thi đầu tiên.
 
 ## Cách làm việc
 
-**Cả ba đọc trước khi viết:** [Phân công theo chức năng](docs/PHAN_CONG_THEO_FILE.md), [hướng dẫn đặt file và đẩy code](docs/HUONG_DAN_DAY_CODE_CHO_NHOM.md) và [phân công dữ liệu](docs/PHAN_CONG_DU_LIEU.md).
+**Làm trước:** Thành và Thái hoàn thiện phần kiểu dữ liệu/struct/hằng chung, ai xong phần nào thì push nhánh và gửi PR để nhóm review sớm; Thành điều phối ghép bản thống nhất vào `MaNguon/00_KhaiBaoChung.h`. Sau đó chốt định dạng file và làm dữ liệu mẫu cùng phần đọc tối thiểu. Không đợi xong nghiệp vụ/giao diện hoặc mọi prototype mới bàn giao khai báo. Chi tiết ở mục đầu [phân công code theo file](docs/PHAN_CONG_THEO_FILE.md).
 
-Mỗi người tự viết xử lý và màn hình phần mình, thống nhất cách gọi trước khi dùng phần của bạn khác. Khai báo dùng chung ở `MaNguon/00_KhaiBaoChung.h`; một hàm chỉ có một nơi cài đặt. Dùng nhánh riêng và PR để review; nhánh đang làm theo tên file cũ cần chuyển đúng phần theo hướng dẫn, không ghi đè code của người khác.
+**Cả ba đọc trước khi viết:** [Phân công code theo từng file](docs/PHAN_CONG_THEO_FILE.md) và [Phân công dữ liệu, kiểm thử, tài liệu](docs/PHAN_CONG_DU_LIEU.md). Đây là bản phân công của Thái đã chỉnh lại phần tiện ích, helper giao diện, backup và cấu trúc lịch sử mượn–trả.
+
+**File đã tạo sẵn theo cách chia nhóm chốt ngày 02/10/2026:** mở `MaNguon/` để viết code, `DuLieu/` để soạn dữ liệu, `TestKey/` để ghi kịch bản thử và `TaiLieu/` để ghi sơ đồ/câu hỏi. Các file mới hiện trống, chưa có hàm, dữ liệu hợp lệ hay chương trình chạy. Thành, Thái và Tấn sửa file tương ứng trên nhánh riêng rồi gửi PR; xem phân công vị trí trong [hướng dẫn đặt file](docs/HUONG_DAN_DAY_CODE_CHO_NHOM.md).
+
+`MaNguon/00_KhaiBaoChung.h` hiện chỉ giữ chỗ. Bản khai báo nhóm trong `src/` và bản Thái gửi ở PR #5 được giữ nguyên; khi nhóm chốt khai báo, đưa bản đã duyệt vào header chung và thống nhất cách dùng, không duy trì nhiều bản struct để sửa song song. File dữ liệu rỗng mới tạo không được coi là đã đúng định dạng; nhóm vẫn cần chốt định dạng và chuẩn bị mẫu.
 
 **Chia việc để gửi PR sớm:** xem [Nhóm công việc và mốc PR của cả ba thành viên](docs/NHOM_CONG_VIEC_VA_MOC_PR.md). Mỗi nhóm việc có phạm vi, phụ thuộc và điều kiện bàn giao; không đợi code xong toàn bộ mới push.
 
