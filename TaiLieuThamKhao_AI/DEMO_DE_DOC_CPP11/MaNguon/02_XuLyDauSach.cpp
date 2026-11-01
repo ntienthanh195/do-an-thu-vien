@@ -34,7 +34,6 @@ string ChuanHoaISBN(const string &isbn){
     }
     return res;
 }
-
 bool HopLeDauSach(const DauSach &d, string &loi){
     // KIEM TRA ISBN 
     string ch_ISBN = ChuanHoaISBN(d.ISBN);
@@ -76,7 +75,6 @@ bool HopLeDauSach(const DauSach &d, string &loi){
     loi.clear();
     return true;
 }
-
 const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn){
     string isbn_chuanhoa = ChuanHoaISBN(isbn);
     if(isbn_chuanhoa.size() == 0) return nullptr;
@@ -85,87 +83,57 @@ const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn)
     }
     return nullptr;
 }
-
-
-int TimViTriChenTheoTen(const DanhSachDauSach &ds, const DauSach &d)
-{
-    // Lower bound tu cai. O(log D) so sanh; chen van phai don O(D) con tro.
-    int left = 0, right = ds.soLuong;
-    while (left < right)
-    {
-        int mid = left + (right - left) / 2;
-        if (SoSanhDauSach(*ds.ds[mid], d) < 0)
-            left = mid + 1;
+// TRUONG HOP TRUNG ISBN SE KIEM TRA TRUOC TRONG ThemDauSach ROI MOI GOI TimViTriChenTheoTen
+int TimViTriChenTheoTen(const DanhSachDauSach& ds, const DauSach& d) {
+    int l = 0;
+    int r = ds.soLuong;                     
+    while (l < r) {
+        int m = (l + r) / 2;
+        // loi thu vien
+        if (ds.ds[m] == nullptr) return -1;
+        if (SoSanhChuoi(ds.ds[m]->tenSach, d.tenSach) < 0)
+            l = m + 1;                      // ds[m] < d  -> chen SAU m
         else
-            right = mid;
+            r = m;                          // ds[m] >= d -> chen TAI hoac TRUOC m
     }
-    return left;
+    return l;                               
 }
-
-const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn)
-{
-    // Mang sap theo TEN, khong duoc tim nhi phan theo ISBN.
-    for (int i = 0; i < ds.soLuong; ++i)
-        if (ds.ds[i]->ISBN == isbn)
-            return ds.ds[i];
-    return nullptr;
-}
-DauSach *TimDauSachTheoISBN(DanhSachDauSach &ds, const string &isbn)
-{
-    for (int i = 0; i < ds.soLuong; ++i)
-        if (ds.ds[i]->ISBN == isbn)
-            return ds.ds[i];
-    return nullptr;
-}
-
-bool ThemDauSach(ThuVien &tv, const DauSach &d, string &loi)
-{
-    try
-    {
-        if (tv.dsDauSach.soLuong >= MAX_DAU_SACH)
-        {
-            loi = "Mang dau sach da day.";
-            return false;
-        }
-        if (d.dms)
-        {
-            loi = "ThemDauSach chi nhan thong tin dau sach; them tung cuon bang ThemCuonSach.";
-            return false;
-        }
-        // Chan ky tu dieu khien o du lieu GOC; chuan hoa khong duoc che dau loi nhap.
-        if (!HopLeDauSach(d, loi))
-            return false;
-        DauSach thongTin;
-        // Chuan bi tren bien tam, chua them vao mang.
-        thongTin.ISBN = ChuanHoaChuoi(d.ISBN);
-        thongTin.tenSach = ChuanHoaChuoi(d.tenSach);
-        thongTin.tacGia = ChuanHoaChuoi(d.tacGia);
-        thongTin.theLoai = ChuanHoaChuoi(d.theLoai);
-        thongTin.soTrang = d.soTrang;
-        thongTin.namXuatBan = d.namXuatBan;
-        if (!HopLeDauSach(thongTin, loi))
-            return false;
-        if (TimDauSachTheoISBN(tv.dsDauSach, thongTin.ISBN))
-        {
-            loi = "ISBN da ton tai.";
-            return false;
-        }
-        int pos = TimViTriChenTheoTen(tv.dsDauSach, thongTin);
-        // Tao ban sao xong moi chen con tro vao mang.
-        DauSach *p = new DauSach(thongTin);
-        for (int i = tv.dsDauSach.soLuong; i > pos; --i)
-            tv.dsDauSach.ds[i] = tv.dsDauSach.ds[i - 1];
-        tv.dsDauSach.ds[pos] = p;
-        ++tv.dsDauSach.soLuong;
-        loi.clear();
-        return true;
-    }
-    catch (...)
-    {
-        loi = "Khong du bo nho de them dau sach; du lieu khong doi.";
+bool ThemDauSach(ThuVien &tv, const DauSach &d, string &loi){
+    // that bai
+    // KIEM TRA SO LUONG DAU SACH
+    if(tv.dsDauSach.soLuong >= MAX_DAU_SACH){
+        loi = "Danh sach dau sach da day!\n";
         return false;
     }
+    // KIEM TRA CON TRO DMS CUA DAU SACH MOI 
+    else if (d.dms != nullptr) {
+    loi = "Dau sach moi khong duoc co san danh muc cuon!\n";
+    return false;
+    }
+    // KIEM TRA CAC LOI HOP LE DAU SACH 
+    else if(!HopLeDauSach(d, loi)) return false;
+    // KIEM TRA TRUNG ISBN
+    else if(TimDauSachTheoISBN(tv.dsDauSach, d.ISBN) != nullptr){
+        loi = "ISBN da ton tai, khong the them trung!\n";
+        return false;
+    }
+    int vitriChen = TimViTriChenTheoTen(tv.dsDauSach, d);
+    // KIEM TRA CON TRO NULL O TRONG DANH SACH DAU SACH
+    if(vitriChen == -1){
+        loi = "Danh sach dau sach bi hong!\n";
+        return false;
+    }
+    // thanh cong 
+    for(int i = tv.dsDauSach.soLuong; i > vitriChen; --i){
+        tv.dsDauSach.ds[i] = tv.dsDauSach.ds[i-1];
+    }
+    // chuẩn hóa ISBN, TEN SACH, TAC GIA, THE LOAI O HAM ManHinhNhapDauSach
+    tv.dsDauSach.ds[vitriChen] = new DauSach(d);
+    ++tv.dsDauSach.soLuong;
+    loi.clear();
+    return true;
 }
+
 
 void TimDauSachTheoTen(const ThuVien &tv, const string &ten, ostream &out)
 {
@@ -184,6 +152,7 @@ void TimDauSachTheoTen(const ThuVien &tv, const string &ten, ostream &out)
         }
     out << "Tim thay " << n << " dau sach.\n";
 }
+
 void InDanhSachDauSach(const ThuVien &tv, ostream &out)
 {
     if (tv.dsDauSach.soLuong == 0)

@@ -1,7 +1,5 @@
 #include "00_KhaiBaoChung.h"
 
-namespace
-{
 // Khong dung find/rfind: tu xac dinh dau # cuoi cung de tach ma.
 bool TachMaMoi(const string &ma, string &isbn, int &so)
 {
@@ -21,8 +19,6 @@ bool TachMaMoi(const string &ma, string &isbn, int &so)
             return false;
     return DocSoNguyen(suffix, so, 1, SO_NGUYEN_LON_NHAT);
 }
-} // namespace
-
 CuonSach *TimCuonSachTrongDauSach(DauSach &d, const string &ma)
 {
     for (CuonSach *p = d.dms; p; p = p->next)
