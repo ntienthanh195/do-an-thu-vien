@@ -27,7 +27,6 @@ CuonSach *TimCuonSachTrongDauSach(DauSach &d, const string &ma)
     return nullptr;
 }
 const CuonSach *TimCuonSachTrongDauSach(const DauSach &d, const string &ma){
-    // chuan hoa ma theo isbn
     if(LaChuoiRong(ma)) return nullptr;
     const CuonSach *p = d.dms;
     while(p != nullptr){
@@ -36,41 +35,33 @@ const CuonSach *TimCuonSachTrongDauSach(const DauSach &d, const string &ma){
     }
     return nullptr;
 }
-const CuonSach *TimCuonSachToanCuc(const ThuVien &tv, const string &ma, const DauSach **owner)
-{
-    if (owner)
-        *owner = nullptr;
-    string isbn;
-    int so = 0;
-    if (TachMaMoi(ma, isbn, so))
-    {
-        const DauSach *d = TimDauSachTheoISBN(tv.dsDauSach, isbn);
-        if (d)
-        {
-            const CuonSach *p = TimCuonSachTrongDauSach(*d, ma);
-            if (p)
-            {
-                if (owner)
-                    *owner = d;
-                return p;
+const CuonSach *TimCuonSachToanCuc(const ThuVien &tv, const string &ma, const DauSach **owner){
+    if(LaChuoiRong(ma)) return nullptr;
+    // 1. Tach 13 so dau tien lam ISBN
+    string ISBN_trong_Ma = "";
+    for(const char c : ma){
+        if(ISBN_trong_Ma.size() < 13){
+            if(c >= '0' && c <= '9'){
+                ISBN_trong_Ma += c;
+            }
+            else if(!KhoangTrang(c)){ // Neu gap ky tu la (gach ngang, #...)
+                return nullptr;       // -> Sai quy uoc
             }
         }
-        // Ma ISBN#N co y nghia chu so huu. Khong tra nham sang dau sach khac.
-        return nullptr;
     }
-    // Co # nhung khong dung dang ma moi thi khong coi la ma legacy.
-    for (char ch : ma)
-        if (ch == '#')
-            return nullptr;
-    // Ho tro ma cu nhom da co (S001...). Khong suy ISBN tu tien to ma cu.
-    for (int i = 0; i < tv.dsDauSach.soLuong; ++i)
-    {
-        const CuonSach *p = TimCuonSachTrongDauSach(*tv.dsDauSach.ds[i], ma);
-        if (p)
-        {
-            if (owner)
+    if(ISBN_trong_Ma.size() < 13) return nullptr;
+    // 2. Tim dau sach theo ISBN
+    const string ch_ma = ChuanHoaChuoi(ma);
+    for(int i = 0; i < tv.dsDauSach.soLuong; ++i){
+        if(tv.dsDauSach.ds[i] == nullptr) continue; // Chong crash
+        
+        if(tv.dsDauSach.ds[i]->ISBN == ISBN_trong_Ma){
+            // can biet ca dau sach chua cuon sach
+            if(owner != nullptr){
                 *owner = tv.dsDauSach.ds[i];
-            return p;
+            }
+            
+            return TimCuonSachTrongDauSach(*(tv.dsDauSach.ds[i]), ch_ma);
         }
     }
     return nullptr;
@@ -114,7 +105,6 @@ bool SinhMaSachTuDong(const ThuVien &tv, const DauSach &d, string &ma, string &l
     loi.clear();
     return true;
 }
-
 bool ThemCuonSach(ThuVien &tv, const string &isbn, const string &viTri, string &ma, string &loi)
 {
     try
