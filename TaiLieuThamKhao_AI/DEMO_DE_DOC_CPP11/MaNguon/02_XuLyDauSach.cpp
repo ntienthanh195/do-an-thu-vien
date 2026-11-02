@@ -133,26 +133,61 @@ bool ThemDauSach(ThuVien &tv, const DauSach &d, string &loi){
     loi.clear();
     return true;
 }
+void TimDauSachTheoTen(const ThuVien &tv, const string &ten, ostream &out){
+    if(LaChuoiRong(ten)) return;
+    string ch_ten = ChuanHoaChuoi(ten);
 
+    for (int i = 0; i < 60; ++i) out << '=';
+    out << "\n TIM KIEM SACH THEO TEN\n";
+    for (int i = 0; i < 60; ++i) out << '=';
+    out << "\n Tu khoa: " << ch_ten << "\n\n";
 
-void TimDauSachTheoTen(const ThuVien &tv, const string &ten, ostream &out)
-{
-    string khoa = ChuanHoaChuoi(ten);
-    if (LaChuoiRong(khoa))
-    {
-        out << "Tu khoa tim kiem khong duoc rong.\n";
-        return;
-    }
-    int n = 0;
-    for (int i = 0; i < tv.dsDauSach.soLuong; ++i)
-        if (ChuaChuoi(tv.dsDauSach.ds[i]->tenSach, khoa))
-        {
-            InMotDauSach(*tv.dsDauSach.ds[i], out, true);
-            ++n;
+    bool timThay = false; // Chi dung de check co ket qua hay khong
+
+    for(int i = 0; i < tv.dsDauSach.soLuong; ++i){
+        const DauSach *d = tv.dsDauSach.ds[i];
+        if(d != nullptr && ChuaChuoi(d->tenSach, ch_ten)){
+            timThay = true;
+            
+            out << " [" << (i + 1) << "] Ten sach    : " << d->tenSach << '\n';
+            out << "     Tac gia     : " << d->tacGia << '\n';
+            out << "     The loai    : " << d->theLoai << '\n';
+            out << "     Nam xuat ban: " << d->namXuatBan << '\n';
+            out << "     ISBN        : " << d->ISBN << '\n';
+
+            if(d->dms == nullptr){
+                out << "     Cac cuon    : (chua co cuon nao)\n";
+            }
+            else{
+                const CuonSach *p = d->dms;
+                while(p != nullptr){
+                    out << "       - " << p->maSach << "  |  ";
+                    if(p->trangThai == SACH_CHO_MUON){
+                        out << "Cho muon duoc\n";
+                    }
+                    else if(p->trangThai == SACH_DANG_MUON){
+                        out << "Da co nguoi muon\n";
+                    }
+                    else if(p->trangThai == SACH_THANH_LY){
+                        out << "Da thanh ly\n";
+                    }
+                    else{
+                        out << "Trang thai khong xac dinh\n";
+                    }
+                    p = p->next;
+                }
+            }
+            out << '\n';
         }
-    out << "Tim thay " << n << " dau sach.\n";
-}
+    }
 
+    if(!timThay){
+        out << " Khong tim thay dau sach nao khop voi tu khoa: " << ch_ten << '\n';
+    }
+    
+    for (int i = 0; i < 60; ++i) out << '=';
+    out << '\n';
+}
 void InDanhSachDauSach(const ThuVien &tv, ostream &out)
 {
     if (tv.dsDauSach.soLuong == 0)

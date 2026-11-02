@@ -2,15 +2,15 @@
 // Step 1 – Xử lý chuỗi
 // Hàm: LaChuoiRong, ChuanHoaChuoi, SoSanhChuoi
 // Step 2 – Kiểm tra dữ liệu
-// Hàm: HopLeVanBan, ChuanHoaISBN, HopLeDauSach
+// Hàm: HopLeVanBan, ChuanHoaISBN, HopLeDauSach, ChuaChuoi , void TimDauSachTheoTen
 
 
 
 
 
 
-
-
+/*e. Tìm thông tin sách dựa vào tên sách : in ra các thông tin mã ISBN, tên sách, tác giả, năm xuất bản, thể loại, các mã sách , trạng thái mã sách trong thư viện.*/
+// SoSanhChuoi -> TimDauSachTheoTen
 
 
 
