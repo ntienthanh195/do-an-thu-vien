@@ -26,14 +26,16 @@ CuonSach *TimCuonSachTrongDauSach(DauSach &d, const string &ma)
             return p;
     return nullptr;
 }
-const CuonSach *TimCuonSachTrongDauSach(const DauSach &d, const string &ma)
-{
-    for (const CuonSach *p = d.dms; p; p = p->next)
-        if (p->maSach == ma)
-            return p;
+const CuonSach *TimCuonSachTrongDauSach(const DauSach &d, const string &ma){
+    // chuan hoa ma theo isbn
+    if(LaChuoiRong(ma)) return nullptr;
+    const CuonSach *p = d.dms;
+    while(p != nullptr){
+        if(p->maSach == ma) return p;
+        p = p->next;
+    }
     return nullptr;
 }
-
 const CuonSach *TimCuonSachToanCuc(const ThuVien &tv, const string &ma, const DauSach **owner)
 {
     if (owner)
