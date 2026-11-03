@@ -364,7 +364,9 @@ void ManHinhNhapDauSach(ThuVien &tv)
         ThongBao("Da cap ma cuon: " + ma);
     }
 }
-
+void ManHinhNhapDauSach(ThuVien &tv){
+    
+}
 void ManHinhTimSach(const ThuVien &tv)
 {
     string ten;

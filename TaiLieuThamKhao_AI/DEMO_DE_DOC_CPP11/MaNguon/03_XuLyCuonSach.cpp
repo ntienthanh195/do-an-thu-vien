@@ -76,33 +76,70 @@ CuonSach *TimCuonSachToanCuc(ThuVien &tv, const string &ma, DauSach **owner)
     return const_cast<CuonSach *>(p);
 }
 
-bool SinhMaSachTuDong(const ThuVien &tv, const DauSach &d, string &ma, string &loi)
-{
-    // Lay max, KHONG lay so nut+1: ma cu/file nhap co the co khoang trong.
-    // Quet toan cuc de tranh trung ngay ca khi ma o sai chu so huu trong bo nho.
-    int maxSo = 0;
-    for (int i = 0; i < tv.dsDauSach.soLuong; ++i)
-        for (const CuonSach *p = tv.dsDauSach.ds[i]->dms; p; p = p->next)
-        {
-            string isbn;
-            int so = 0;
-            if (TachMaMoi(p->maSach, isbn, so) && isbn == d.ISBN && so > maxSo)
-                maxSo = so;
+bool SinhMaSachTuDong(const ThuVien &tv, const DauSach &d, string &ma, string &loi){
+    ma = "";
+    if(!HopLeDauSach(d, loi)) return false;
+    const CuonSach *p = d.dms;
+    // 1. Neu chua co cuon nao
+    if(p == nullptr){
+        ma = d.ISBN + "#1";
+        return true;
+    }
+    // 2. Sach thanh ly/mat chi doi trang thai, khong xoa node.
+    // => Node cuoi DSLK luon la cuon moi nhat (co ma N lon nhat).
+    while(p->next != nullptr){
+        p = p->next;
+    }
+    // 3. Tim dau '#' trong ma sach cu
+    int viTriThang = -1;
+    for(int i = 0; i < (int)p->maSach.size(); ++i){
+        if(p->maSach[i] == '#'){
+            viTriThang = i;
+            break;
         }
-    if (maxSo == SO_NGUYEN_LON_NHAT)
-    {
-        loi = "Da het mien so thu tu ma cuon.";
+    }
+    if(viTriThang == -1){
+        loi = "Loi: Ma sach cu thieu ky tu '#'.\n";
         return false;
     }
-    string ketQua = d.ISBN + "#" + to_string(maxSo + 1);
-    // ISBN hop le co the da du 512 byte: ma cuon them #N van phai luu/doc duoc.
-    if (!HopLeVanBan(ketQua))
-    {
-        loi = "Ma cuon sinh ra vuot gioi han 512 byte; ISBN qua dai.";
+    // 4. Trich xuat chuoi so N va kiem tra tinh hop le
+    string so_cu = "";
+    for(int i = viTriThang + 1; i < (int)p->maSach.size(); ++i){
+        char c = p->maSach[i];
+        if(c >= '0' && c <= '9'){
+            so_cu += c;
+        }else{
+            loi = "Loi: Ma sach cu chua ky tu khong hop le sau '#'.\n";
+            return false;
+        }
+    }
+    if(so_cu.empty()){
+        loi = "Loi: Ma sach cu thieu phan so N.\n";
         return false;
     }
-    ma = ketQua;
-    loi.clear();
+    // 5. Cong 1 vao chuoi so (thuat toan cong co nho)
+    string so_moi = "";
+    int co_nho = 1; // Ban dau cong 1
+    for(int i = (int)so_cu.size() - 1; i >= 0; --i){
+        int giatri = (so_cu[i] - '0') + co_nho;
+        if(giatri >= 10){
+            giatri -= 10;
+            co_nho = 1;
+        }
+        else{
+            co_nho = 0;
+        }
+        so_moi += (char)(giatri + '0');
+    }
+    if(co_nho == 1){
+        so_moi += '1'; // Truong hop 9 + 1 = 10
+    }
+
+    // 6. Ghep ma sach moi (nho dao nguoc chuoi so_moi)
+    ma = d.ISBN + "#";
+    for(int i = (int)so_moi.size() - 1; i >= 0; --i){
+        ma += so_moi[i];
+    }
     return true;
 }
 bool ThemCuonSach(ThuVien &tv, const string &isbn, const string &viTri, string &ma, string &loi)
