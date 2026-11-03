@@ -292,7 +292,7 @@ static bool NhapChuoiUI(int x, int y, string &out, bool laISBN) {
         }
     }
 }
-
+// ham ho tro ManHinhNhapDauSach : gotoxy, setColor, NhapChuoiUI
 void ManHinhNhapDauSach(ThuVien &tv) {
     while (true) {
         system("cls"); // Xoa man hinh cho sach
