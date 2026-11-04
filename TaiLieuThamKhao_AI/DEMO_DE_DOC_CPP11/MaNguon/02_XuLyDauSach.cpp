@@ -134,7 +134,10 @@ bool ThemDauSach(ThuVien &tv, const DauSach &d, string &loi){
     return true;
 }
 void TimDauSachTheoTen(const ThuVien &tv, const string &ten, ostream &out){
-    if(LaChuoiRong(ten)) return;
+    if(LaChuoiRong(ten)){
+        out << "Tu khoa tim kiem khong duoc rong.\n";
+        return;
+    }
     string ch_ten = ChuanHoaChuoi(ten);
 
     for (int i = 0; i < 60; ++i) out << '=';
@@ -188,6 +191,7 @@ void TimDauSachTheoTen(const ThuVien &tv, const string &ten, ostream &out){
     for (int i = 0; i < 60; ++i) out << '=';
     out << '\n';
 }
+
 void InDanhSachDauSach(const ThuVien &tv, ostream &out)
 {
     if (tv.dsDauSach.soLuong == 0)
