@@ -175,3 +175,7 @@ int SoNgayTrongThang(int thang, int nam);
 bool NgayHopLe(const NgayThang &ngay);
 long long Doirangay(NgayThang sngay);
 long long KhoangCachNgay(NgayThang ngayt1, NgayThang ngayt2);
+
+// [THANH] Quan ly the doc gia.
+bool HieuChinhDocGia(CayDocGia &caydocgia, int mathe, string Ho, string Ten, string Phai, int trangthaiThe);
+int SinhMaTheTiepTheo(int &maTheDaCap);

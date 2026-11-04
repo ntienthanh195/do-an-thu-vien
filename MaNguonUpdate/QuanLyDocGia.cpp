@@ -78,3 +78,29 @@ void HuyCayDocGia(CayDocGia &caydocgia)
 {
     Huydocgia(caydocgia.root);
 }
+
+// [THANH] Hieu chinh thong tin the va cap ma the tiep theo.
+bool HieuChinhDocGia(CayDocGia &caydocgia, int mathe,
+                    string Ho, string Ten, string Phai,
+                    int trangthaiThe)
+{
+    NutDocGia* p = tim_cay(caydocgia, mathe);
+
+    if (p == nullptr)
+    {
+        return false;
+    }
+
+    p->thongTin.ho = Ho;
+    p->thongTin.ten = Ten;
+    p->thongTin.phai = Phai;
+    p->thongTin.trangThaiThe = trangthaiThe;
+
+    return true;
+}
+
+int SinhMaTheTiepTheo(int &maTheDaCap)
+{
+    maTheDaCap = maTheDaCap + 1;
+    return maTheDaCap;
+}
