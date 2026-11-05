@@ -26,6 +26,7 @@ CuonSach *TimCuonSachTrongDauSach(DauSach &d, const string &ma)
             return p;
     return nullptr;
 }
+// da sua
 const CuonSach *TimCuonSachTrongDauSach(const DauSach &d, const string &ma){
     if(LaChuoiRong(ma)) return nullptr;
     const CuonSach *p = d.dms;
@@ -35,6 +36,7 @@ const CuonSach *TimCuonSachTrongDauSach(const DauSach &d, const string &ma){
     }
     return nullptr;
 }
+// da sua
 const CuonSach *TimCuonSachToanCuc(const ThuVien &tv, const string &ma, const DauSach **owner){
     if(LaChuoiRong(ma)) return nullptr;
     // 1. Tach 13 so dau tien lam ISBN
@@ -75,7 +77,7 @@ CuonSach *TimCuonSachToanCuc(ThuVien &tv, const string &ma, DauSach **owner)
         *owner = const_cast<DauSach *>(d);
     return const_cast<CuonSach *>(p);
 }
-
+// da sua
 bool SinhMaSachTuDong(const ThuVien &tv, const DauSach &d, string &ma, string &loi){
     ma = "";
     if(!HopLeDauSach(d, loi)) return false;

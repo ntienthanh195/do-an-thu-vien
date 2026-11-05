@@ -24,6 +24,7 @@ void InMotDauSach(const DauSach &d, ostream &out, bool chiTiet)
         out << "  " << p->maSach << " | " << tt << " | Vi tri: " << p->viTri << '\n';
     }
 }
+// da sua 
 string ChuanHoaISBN(const string &isbn){
     string res = "";
     for(char c : isbn){
@@ -34,6 +35,7 @@ string ChuanHoaISBN(const string &isbn){
     }
     return res;
 }
+// da sua
 bool HopLeDauSach(const DauSach &d, string &loi){
     // KIEM TRA ISBN 
     string ch_ISBN = ChuanHoaISBN(d.ISBN);
@@ -75,6 +77,7 @@ bool HopLeDauSach(const DauSach &d, string &loi){
     loi.clear();
     return true;
 }
+// da sua
 const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn){
     string isbn_chuanhoa = ChuanHoaISBN(isbn);
     if(isbn_chuanhoa.size() == 0) return nullptr;
@@ -83,6 +86,7 @@ const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn)
     }
     return nullptr;
 }
+// da sua
 // TRUONG HOP TRUNG ISBN SE KIEM TRA TRUOC TRONG ThemDauSach ROI MOI GOI TimViTriChenTheoTen
 int TimViTriChenTheoTen(const DanhSachDauSach& ds, const DauSach& d) {
     int l = 0;
@@ -98,6 +102,7 @@ int TimViTriChenTheoTen(const DanhSachDauSach& ds, const DauSach& d) {
     }
     return l;                               
 }
+// da sua
 bool ThemDauSach(ThuVien &tv, const DauSach &d, string &loi){
     // that bai
     // KIEM TRA SO LUONG DAU SACH
@@ -133,6 +138,7 @@ bool ThemDauSach(ThuVien &tv, const DauSach &d, string &loi){
     loi.clear();
     return true;
 }
+// da sua
 void TimDauSachTheoTen(const ThuVien &tv, const string &ten, ostream &out){
     if(LaChuoiRong(ten)){
         out << "Tu khoa tim kiem khong duoc rong.\n";
@@ -257,7 +263,7 @@ void HuyDanhSachDauSach(DanhSachDauSach &ds)
     }
     ds.soLuong = 0;
 }
-
+// da sua
 // Cac ham helper giao dien
 static void gotoxy(int x, int y) {
     COORD coord;

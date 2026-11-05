@@ -4,7 +4,6 @@ namespace{
     int TimSoNgayQuaHanLonNhat(const MuonTra *head, const NgayThang &now) {
     int maxQuaHan = 0; // Neu khong co qua han, tra ve 0
     const MuonTra *p = head;
-
     while (p != nullptr) {
         // Chi xet cac sach dang muon
         if (p->trangThai == MUON_DANG_MUON) {
@@ -22,7 +21,7 @@ namespace{
     }
     return maxQuaHan;
     }
-    
+
 }
 int DemLichSu(const MuonTra *p)
 {
