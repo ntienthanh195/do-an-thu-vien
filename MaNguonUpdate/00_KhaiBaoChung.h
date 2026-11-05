@@ -117,6 +117,7 @@ struct NutDocGia
     DocGia thongTin;                       // thông tin độc giả
     NutDocGia* left = nullptr;             // cây con trái
     NutDocGia* right = nullptr;            // cây con phải
+    int height = 1; // [THANH] Chieu cao cua nut la trong cay AVL.
 };
 
 /*CÂY ĐỘC GIẢ*/
@@ -179,3 +180,4 @@ long long KhoangCachNgay(NgayThang ngayt1, NgayThang ngayt2);
 // [THANH] Quan ly the doc gia.
 bool HieuChinhDocGia(CayDocGia &caydocgia, int mathe, string Ho, string Ten, string Phai, int trangthaiThe);
 int SinhMaTheTiepTheo(int &maTheDaCap);
+void XoaDocGia(CayDocGia &caydocgia, int mathe);
