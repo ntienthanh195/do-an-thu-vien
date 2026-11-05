@@ -14,7 +14,7 @@ bool XuLyKetThucLuotMuon(ThuVien &tv, int maThe, const string &maCuon, const Nga
         loi = "Khong tim thay doc gia.";
         return false;
     }
-    CuonSach *cuon = TimCuonSachToanCuc(tv, maCuon);
+    CuonSach *cuon = TimCuonSachToanCuc(tv, maCuon, nullptr);
     if (cuon == nullptr)
     {
         loi = "Khong tim thay cuon sach.";

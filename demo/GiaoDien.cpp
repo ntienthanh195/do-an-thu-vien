@@ -7,7 +7,7 @@ wstring DuongDanUTF16(const string &s)
     {
         return L"";
     }
-    if (s.size() > static_cast<size_t>(SO_NGUYEN_LON_NHAT))
+    if (s.size() > static_cast<size_t>(INT_MAX))
     {
         throw LoiThuVien("Duong dan qua dai");
     }
@@ -224,10 +224,6 @@ int DocDoiSoWindows(const wstring &command, string *out)
 
 namespace
 {
-bool giaoDienPhim = false;
-const ThuVien *thuVienTuLuu = nullptr;
-const string *tepTuLuu = nullptr;
-bool chuaLuu = false;
 struct KhoaTepPhien
 {
     HANDLE handle = INVALID_HANDLE_VALUE;
@@ -271,22 +267,7 @@ struct KhoaTepPhien
         other.handle = h;
     }
 };
-struct PhienTuLuu
-{
-    PhienTuLuu(const ThuVien &tv, const string &path)
-    {
-        thuVienTuLuu = &tv;
-        tepTuLuu = &path;
-        chuaLuu = false;
-    }
-    ~PhienTuLuu()
-    {
-        thuVienTuLuu = nullptr;
-        tepTuLuu = nullptr;
-        chuaLuu = false;
-    }
-};
-inline bool NapPhien(ThuVien &tv, string &path, const string &next, KhoaTepPhien &khoa, string &loi)
+inline bool NapPhien(GiaoDien &gd, ThuVien &tv, string &path, const string &next, KhoaTepPhien &khoa, string &loi)
 {
     string moi =
         DuongDanUTF8(DuongDanDayDu(next)); // Moi cap phat/path/lock phai xong truoc DocFile.
@@ -311,44 +292,10 @@ inline bool NapPhien(ThuVien &tv, string &path, const string &next, KhoaTepPhien
     {
         khoa.HoanDoi(khoaMoi);
     }
-    chuaLuu = false;
+    gd.chuaLuu = false;
     return true;
 }
 
-// Chi trang thai trinh bay: khong so huu hay thay bon cau truc nghiep vu.
-const ThuVien *duLieuUI = nullptr;
-const string *duongDanUI = nullptr;
-NgayThang ngayUI;
-int mucUI = 0;
-string tieuDeUI = "Tong quan";
-const WORD NEN = 0x0E, MO = 0x07, NHAN = 0x0A, THANH = 0x1E, CHON = 0x3E, O_NHAP = 0x5E;
-const WORD VIEN = 0x02, NUT_CHINH = 0x60, O_DANG_NHAP = 0x4E;
-// Bang mau chi thuoc phien ung dung, khong sua profile Windows Terminal.
-const COLORREF bangMauUI[] = {
-    RGB(17, 21, 28),    RGB(25, 31, 40),    RGB(52, 64, 80),    RGB(37, 63, 59),
-    RGB(33, 48, 44),    RGB(29, 37, 48),    RGB(139, 207, 176), RGB(168, 178, 192),
-    RGB(104, 119, 139), RGB(232, 196, 135), RGB(128, 201, 169), RGB(196, 205, 217),
-    RGB(229, 155, 149), RGB(176, 164, 201), RGB(225, 231, 239), RGB(242, 245, 249)};
-bool xuatRGB = false;
-const wchar_t *dieuHuong[] = {L"Tổng quan",       L"Quản lý độc giả", L"Danh sách độc giả",
-                              L"Kho sách",        L"Theo thể loại",   L"Tìm kiếm sách",
-                              L"Mượn sách",       L"Trả / báo mất",   L"Sách đang mượn",
-                              L"Độc giả quá hạn", L"Top 10 đầu sách", L"Mở dữ liệu",
-                              L"Lưu dữ liệu",     L"Thoát phiên"};
-const wchar_t *moTa[] = {L"Theo dõi thư viện và mở nhanh các nghiệp vụ.",
-                         L"Thêm, hiệu chỉnh, khóa hoặc xóa thẻ độc giả.",
-                         L"Xem theo mã thẻ hoặc theo tên và họ.",
-                         L"Quản lý đầu sách và từng bản sách vật lý.",
-                         L"Duyệt đầu sách được nhóm theo thể loại.",
-                         L"Tìm theo tên và xem trạng thái từng cuốn.",
-                         L"Kiểm tra thẻ, hạn mức và tình trạng cuốn sách.",
-                         L"Nhận trả sách hoặc ghi nhận một cuốn bị mất.",
-                         L"Tra các cuốn độc giả hiện đang giữ.",
-                         L"Xem độc giả đã giữ sách từ 7 ngày trở lên.",
-                         L"Thống kê số lượt mượn theo từng đầu sách.",
-                         L"Mở file khác sau khi xác nhận thay dữ liệu.",
-                         L"Ghi dữ liệu hiện hành vào file của phiên này.",
-                         L"Thoát; dữ liệu đã tự lưu vẫn được giữ. Lỗi lưu cần xử lý trước."};
 string TuUTF16(const wstring &s)
 {
     if (s.empty())
@@ -474,21 +421,22 @@ void GhiConsole(const wstring &s)
         offset += written;
     }
 }
-wstring LenhMau(WORD attr)
+wstring LenhMau(const MauGiaoDien &mau, WORD attr)
 {
-    COLORREF fg = bangMauUI[attr & 15], bg = bangMauUI[(attr >> 4) & 15];
+    COLORREF fg = mau.bangMauUI[attr & 15], bg = mau.bangMauUI[(attr >> 4) & 15];
     return L"\x1b[38;2;" + ChuoiSoRong(GetRValue(fg)) + L";" + ChuoiSoRong(GetGValue(fg)) + L";" +
            ChuoiSoRong(GetBValue(fg)) + L"m\x1b[48;2;" + ChuoiSoRong(GetRValue(bg)) + L";" +
            ChuoiSoRong(GetGValue(bg)) + L";" + ChuoiSoRong(GetBValue(bg)) + L"m";
 }
 struct PhienGiaoDien
 {
+    GiaoDien &gd;
     HANDLE out = GetStdHandle(STD_OUTPUT_HANDLE);
     DWORD oldMode = 0;
     bool active = false, hadMode = false, hadPalette = false, fontChanged = false;
     CONSOLE_SCREEN_BUFFER_INFOEX oldPalette{};
     CONSOLE_FONT_INFOEX oldFont{};
-    explicit PhienGiaoDien(bool enabled, bool adjustFont = true)
+    PhienGiaoDien(GiaoDien &giaoDien, bool enabled, bool adjustFont) : gd(giaoDien)
     {
         if (!enabled)
         {
@@ -503,7 +451,7 @@ struct PhienGiaoDien
             CONSOLE_SCREEN_BUFFER_INFOEX theme = oldPalette;
             for (int i = 0; i < 16; ++i)
             {
-                theme.ColorTable[i] = bangMauUI[i];
+                theme.ColorTable[i] = gd.mau.bangMauUI[i];
             }
             SetConsoleScreenBufferInfoEx(out, &theme);
             SetConsoleWindowInfo(out, TRUE, &oldPalette.srWindow);
@@ -524,9 +472,9 @@ struct PhienGiaoDien
             fontChanged = SetCurrentConsoleFontEx(out, FALSE, &font) != 0;
         }
         hadMode = GetConsoleMode(out, &oldMode) != 0;
-        xuatRGB = hadMode &&
-                  SetConsoleMode(out, oldMode | ENABLE_PROCESSED_OUTPUT | CHE_DO_MAU_CONSOLE) != 0;
-        if (xuatRGB)
+        gd.xuatRGB = hadMode &&
+                  SetConsoleMode(out, oldMode | ENABLE_PROCESSED_OUTPUT | gd.mau.cheDoMauConsole) != 0;
+        if (gd.xuatRGB)
         {
             GhiConsole(L"\x1b[?1049h\x1b[?7l\x1b[2J\x1b[H");
         }
@@ -537,7 +485,7 @@ struct PhienGiaoDien
         {
             return;
         }
-        if (xuatRGB)
+        if (gd.xuatRGB)
         {
             try
             {
@@ -547,7 +495,7 @@ struct PhienGiaoDien
             {
             }
         }
-        xuatRGB = false;
+        gd.xuatRGB = false;
         if (fontChanged)
         {
             SetCurrentConsoleFontEx(out, FALSE, &oldFont);
@@ -573,22 +521,12 @@ struct PhienGiaoDien
         }
     }
 };
-struct Phim
+Phim DocPhimConsole(GiaoDien &gd)
 {
-    WORD ma = 0;
-    wchar_t chu = 0;
-    bool shift = false, ctrl = false, click = false, resize = false;
-    int x = 0, y = 0;
-};
-Phim DocPhimConsole()
-{
-    static DWORD nutTruoc = 0;
-    static Phim phimLap;
-    static WORD conLai = 0;
-    if (conLai)
+    if (gd.conLai)
     {
-        --conLai;
-        return phimLap;
+        --gd.conLai;
+        return gd.phimLap;
     }
     while (true)
     {
@@ -611,16 +549,16 @@ Phim DocPhimConsole()
             p.chu = k.uChar.UnicodeChar;
             p.shift = (k.dwControlKeyState & SHIFT_PRESSED) != 0;
             p.ctrl = (k.dwControlKeyState & (LEFT_CTRL_PRESSED | RIGHT_CTRL_PRESSED)) != 0;
-            phimLap = p;
-            conLai = k.wRepeatCount > 1 ? static_cast<WORD>(k.wRepeatCount - 1) : 0;
+            gd.phimLap = p;
+            gd.conLai = k.wRepeatCount > 1 ? static_cast<WORD>(k.wRepeatCount - 1) : 0;
             return p;
         }
         if (r.EventType == MOUSE_EVENT)
         {
             const MOUSE_EVENT_RECORD &m = r.Event.MouseEvent;
             bool down = (m.dwButtonState & FROM_LEFT_1ST_BUTTON_PRESSED) != 0 &&
-                        (nutTruoc & FROM_LEFT_1ST_BUTTON_PRESSED) == 0;
-            nutTruoc = m.dwButtonState;
+                        (gd.nutTruoc & FROM_LEFT_1ST_BUTTON_PRESSED) == 0;
+            gd.nutTruoc = m.dwButtonState;
             if (down && m.dwEventFlags == 0)
             {
                 CONSOLE_SCREEN_BUFFER_INFO s{};
@@ -635,6 +573,7 @@ Phim DocPhimConsole()
 }
 struct KhungUI
 {
+    const GiaoDien &gd;
     int w = 80, h = 24;
     SMALL_RECT rect{};
     CHAR_INFO *cells = nullptr;
@@ -645,7 +584,7 @@ struct KhungUI
     {
         delete[] cells;
     }
-    KhungUI()
+    explicit KhungUI(const GiaoDien &giaoDien) : gd(giaoDien)
     {
         CONSOLE_SCREEN_BUFFER_INFO s{};
         if (GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &s))
@@ -659,7 +598,7 @@ struct KhungUI
             rect = {0, 0, 79, 23};
         }
         cells = new CHAR_INFO[static_cast<size_t>(w) * static_cast<size_t>(h)];
-        fill(0, 0, w, h, NEN);
+        fill(0, 0, w, h, gd.mau.NEN);
     }
     void put(int x, int y, wchar_t c, WORD a)
     {
@@ -682,7 +621,7 @@ struct KhungUI
             }
         }
     }
-    void text(int x, int y, const wstring &s, int width, WORD a = NEN)
+    void text(int x, int y, const wstring &s, int width, WORD a)
     {
         if (width < 1)
         {
@@ -706,7 +645,7 @@ struct KhungUI
             put(x + i, y, cut && i == width - 1 ? L'…' : c, a);
         }
     }
-    void box(int x, int y, int width, int height, const wstring &title = L"", WORD a = VIEN)
+    void box(int x, int y, int width, int height, const wstring &title, WORD a)
     {
         if (width < 2 || height < 2)
         {
@@ -728,12 +667,12 @@ struct KhungUI
         put(x + width - 1, y + height - 1, L'┘', a);
         if (!title.empty())
         {
-            text(x + 2, y, L" " + title + L" ", width - 4, MO);
+            text(x + 2, y, L" " + title + L" ", width - 4, gd.mau.MO);
         }
     }
-    void button(int x, int y, int width, const wstring &s, bool active = false)
+    void button(int x, int y, int width, const wstring &s, bool active)
     {
-        WORD color = active ? NUT_CHINH : O_NHAP;
+        WORD color = active ? gd.mau.NUT_CHINH : gd.mau.O_NHAP;
         fill(x, y, width, 1, color);
         text(x + 2, y, s, width - 4, color);
     }
@@ -741,9 +680,9 @@ struct KhungUI
     {
         return w < 80 || h < 24;
     }
-    void show(int cx = -1, int cy = -1)
+    void show(int cx, int cy)
     {
-        if (xuatRGB)
+        if (gd.xuatRGB)
         {
             // Dinh vi tung dong, tat wrap: hang cuoi/cot cuoi khong day khung len.
             wstring output = L"\x1b[?25l\x1b[?7l";
@@ -757,7 +696,7 @@ struct KhungUI
                                                   static_cast<size_t>(x)];
                     if (cell.Attributes != last)
                     {
-                        output += LenhMau(cell.Attributes);
+                        output += LenhMau(gd.mau, cell.Attributes);
                         last = cell.Attributes;
                     }
                     output += cell.Char.UnicodeChar;
@@ -788,42 +727,42 @@ struct KhungUI
         }
     }
 };
-void NenUngDung(KhungUI &f, const wstring &title, const wstring &help)
+void NenUngDung(GiaoDien &gd, KhungUI &f, const wstring &title, const wstring &help)
 {
-    f.fill(0, 0, 23, f.h - 2, THANH);
+    f.fill(0, 0, 23, f.h - 2, gd.mau.THANH);
     f.text(3, 1, L"THƯ VIỆN", 18, 0x1A);
-    f.text(26, 1, title, f.w - 45, NEN);
-    f.text(f.w - 15, 1, SangUTF16(ChuoiNgay(ngayUI)), 12, MO);
+    f.text(26, 1, title, f.w - 45, gd.mau.NEN);
+    f.text(f.w - 15, 1, SangUTF16(ChuoiNgay(gd.ngay)), 12, gd.mau.MO);
     for (int x = 26; x < f.w - 3; ++x)
     {
-        f.put(x, 2, L'─', VIEN);
+        f.put(x, 2, L'─', gd.mau.VIEN);
     }
     f.text(3, 3, L"KHÔNG GIAN LÀM VIỆC", 19, 0x17);
     for (int i = 0; i < 14 && i + 4 < f.h - 3; ++i)
     {
-        WORD a = i == mucUI ? CHON : THANH;
+        WORD a = i == gd.mucUI ? gd.mau.CHON : gd.mau.THANH;
         f.fill(1, i + 4, 21, 1, a);
-        f.text(3, i + 4, dieuHuong[i], 18, a);
-        if (i == mucUI)
+        f.text(3, i + 4, gd.dieuHuong[i], 18, a);
+        if (i == gd.mucUI)
         {
             f.put(1, i + 4, L'│', 0x3A);
         }
     }
-    f.fill(0, f.h - 2, f.w, 2, NEN);
-    f.text(2, f.h - 2, help, f.w - 4, MO);
-    f.text(2, f.h - 1, L"File: " + (duongDanUI ? SangUTF16(*duongDanUI) : L""), f.w - 4, 0x08);
+    f.fill(0, f.h - 2, f.w, 2, gd.mau.NEN);
+    f.text(2, f.h - 2, help, f.w - 4, gd.mau.MO);
+    f.text(2, f.h - 1, L"File: " + SangUTF16(gd.duongDan), f.w - 4, 0x08);
     if (f.small())
     {
-        f.fill(0, 3, f.w, f.h - 5, NEN);
-        f.text(1, 4, L"Phóng lớn terminal lên ít nhất 80 cột × 24 dòng.", f.w - 2, NHAN);
-        f.text(1, 6, L"Dữ liệu nhập vẫn được giữ. Esc: quay lại.", f.w - 2, NEN);
+        f.fill(0, 3, f.w, f.h - 5, gd.mau.NEN);
+        f.text(1, 4, L"Phóng lớn terminal lên ít nhất 80 cột × 24 dòng.", f.w - 2, gd.mau.NHAN);
+        f.text(1, 6, L"Dữ liệu nhập vẫn được giữ. Esc: quay lại.", f.w - 2, gd.mau.NEN);
     }
 }
 int XNoiDung()
 {
     return 26;
 }
-void DongBang(KhungUI &f, int x, int y, int width, const wstring &line, WORD color)
+void DongBang(GiaoDien &gd, KhungUI &f, int x, int y, int width, const wstring &line, WORD color)
 {
     // Cac dong nhom/ngu canh giu nguyen. Dong co | chia o; Enter xem du noi dung.
     int n = 1;
@@ -859,22 +798,22 @@ void DongBang(KhungUI &f, int x, int y, int width, const wstring &line, WORD col
         f.text(pos, y, fields[i], cw - 1, color);
         if (i < n - 1)
         {
-            f.put(pos + cw - 1, y, L'│', MO);
+            f.put(pos + cw - 1, y, L'│', gd.mau.MO);
         }
         pos += cw;
     }
 }
-void XemChiTiet(const wstring &text, const wstring &title)
+void XemChiTiet(GiaoDien &gd, const wstring &text, const wstring &title)
 {
     size_t start = 0;
     while (true)
     {
-        KhungUI f;
-        NenUngDung(f, title, L"↑/↓: cuộn   Esc / Enter: đóng");
+        KhungUI f(gd);
+        NenUngDung(gd, f, title, L"↑/↓: cuộn   Esc / Enter: đóng");
         if (!f.small())
         {
             int x = XNoiDung(), width = f.w - x - 3, rows = f.h - 9;
-            f.box(x, 4, width, rows + 2, L"Nội dung đầy đủ");
+            f.box(x, 4, width, rows + 2, L"Nội dung đầy đủ", gd.mau.VIEN);
             int inner = width - 4;
             if (start > text.size())
             {
@@ -887,11 +826,11 @@ void XemChiTiet(const wstring &text, const wstring &title)
                 {
                     break;
                 }
-                f.text(x + 2, 5 + i, CatChuoi(text, p, static_cast<size_t>(inner)), inner);
+                f.text(x + 2, 5 + i, CatChuoi(text, p, static_cast<size_t>(inner)), inner, gd.mau.NEN);
             }
         }
-        f.show();
-        Phim p = DocPhimConsole();
+        f.show(-1, -1);
+        Phim p = DocPhimConsole(gd);
         if (p.ma == VK_ESCAPE || p.ma == VK_RETURN)
         {
             return;
@@ -915,18 +854,14 @@ struct SoLieu
 {
     int dau = 0, cuon = 0, san = 0, doc = 0, muon = 0;
 };
-SoLieu TongQuan()
+SoLieu TongQuan(GiaoDien &gd)
 {
     SoLieu s;
-    if (!duLieuUI)
-    {
-        return s;
-    }
-    s.dau = duLieuUI->dsDauSach.soLuong;
-    s.doc = DemDocGia(duLieuUI->cayDocGia);
+    s.dau = gd.thuVien.dsDauSach.soLuong;
+    s.doc = DemDocGia(gd.thuVien.cayDocGia);
     for (int i = 0; i < s.dau; ++i)
     {
-        for (const CuonSach *p = duLieuUI->dsDauSach.ds[i]->dms; p; p = p->next)
+        for (const CuonSach *p = gd.thuVien.dsDauSach.ds[i]->dms; p; p = p->next)
         {
             ++s.cuon;
             if (p->trangThai == SACH_CHO_MUON)
@@ -941,31 +876,31 @@ SoLieu TongQuan()
     }
     return s;
 }
-int TrangChinh()
+int TrangChinh(GiaoDien &gd)
 {
-    SoLieu s = TongQuan();
+    SoLieu s = TongQuan(gd);
     int focus = 0;
     while (true)
     {
-        KhungUI f;
-        NenUngDung(f, dieuHuong[mucUI],
+        KhungUI f(gd);
+        NenUngDung(gd, f, gd.dieuHuong[gd.mucUI],
                    L"↑/↓: chọn mục   Enter: mở   F1: tổng quan   F5: lưu   Esc/0: lưu và thoát");
         int x = XNoiDung(), width = f.w - x - 3;
         if (!f.small())
         {
-            f.text(x, 4, mucUI ? moTa[mucUI] : L"Chào bạn, thư viện hôm nay có gì?", width, NHAN);
+            f.text(x, 4, gd.mucUI ? gd.moTa[gd.mucUI] : L"Chào bạn, thư viện hôm nay có gì?", width, gd.mau.NHAN);
             const wchar_t *names[] = {L"Đầu sách", L"Cuốn sách", L"Độc giả", L"Đang giữ"};
             int nums[] = {s.dau, s.cuon, s.doc, s.muon};
             int tile = width / 4;
             for (int i = 0; i < 4; ++i)
             {
                 int left = x + i * tile;
-                f.fill(left, 6, tile - 2, 4, THANH);
+                f.fill(left, 6, tile - 2, 4, gd.mau.THANH);
                 f.text(left + 2, 7, ChuoiSoRong(nums[i]), tile - 5, 0x1A);
                 f.text(left + 1, 8, names[i], tile - 3, 0x17);
             }
-            f.text(x, 11, mucUI ? L"THAO TÁC" : L"TRUY CẬP NHANH", width, MO);
-            if (!mucUI)
+            f.text(x, 11, gd.mucUI ? L"THAO TÁC" : L"TRUY CẬP NHANH", width, gd.mau.MO);
+            if (!gd.mucUI)
             {
                 int bw = (width - 4) / 3;
                 f.button(x, 13, bw, L"Mượn sách", focus == 0);
@@ -974,21 +909,21 @@ int TrangChinh()
             }
             else
             {
-                f.button(x, 13, width < 34 ? width : 34, L"Mở " + wstring(dieuHuong[mucUI]), true);
+                f.button(x, 13, width < 34 ? width : 34, L"Mở " + wstring(gd.dieuHuong[gd.mucUI]), true);
             }
-            f.box(x, 16, width, f.h - 19, L"Danh mục đầu sách");
+            f.box(x, 16, width, f.h - 19, L"Danh mục đầu sách", gd.mau.VIEN);
             int room = f.h - 22;
             if (room > 0)
             {
-                f.fill(x + 1, 17, width - 2, 1, THANH);
+                f.fill(x + 1, 17, width - 2, 1, gd.mau.THANH);
                 f.text(x + 2, 17, L"ISBN", 17, 0x17);
                 f.text(x + 20, 17, L"Tên sách", width - 31, 0x17);
                 f.text(x + width - 9, 17, L"Cuốn", 6, 0x17);
-                for (int i = 0; duLieuUI && i < s.dau && i < room - 1; ++i)
+                for (int i = 0; i < s.dau && i < room - 1; ++i)
                 {
-                    const DauSach *d = duLieuUI->dsDauSach.ds[i];
+                    const DauSach *d = gd.thuVien.dsDauSach.ds[i];
                     int y = 18 + i;
-                    WORD row = i % 2 ? THANH : NEN;
+                    WORD row = i % 2 ? gd.mau.THANH : gd.mau.NEN;
                     f.fill(x + 1, y, width - 2, 1, row);
                     f.text(x + 2, y, SangUTF16(d->ISBN), 17, static_cast<WORD>((row & 0xF0) | 7));
                     f.text(x + 20, y, SangUTF16(d->tenSach), width - 31, row);
@@ -997,12 +932,12 @@ int TrangChinh()
                 }
                 if (s.dau == 0)
                 {
-                    f.text(x + 2, 18, L"Chưa có đầu sách. Mở Kho sách để thêm.", width - 4, MO);
+                    f.text(x + 2, 18, L"Chưa có đầu sách. Mở Kho sách để thêm.", width - 4, gd.mau.MO);
                 }
             }
         }
-        f.show();
-        Phim p = DocPhimConsole();
+        f.show(-1, -1);
+        Phim p = DocPhimConsole(gd);
         if (p.ma == VK_ESCAPE || p.chu == L'0')
         {
             return 0;
@@ -1013,7 +948,7 @@ int TrangChinh()
         }
         if (p.ma == VK_F1)
         {
-            mucUI = 0;
+            gd.mucUI = 0;
             continue;
         }
         if (f.small())
@@ -1022,11 +957,11 @@ int TrangChinh()
         }
         if (p.ma == VK_UP)
         {
-            mucUI = (mucUI + 13) % 14;
+            gd.mucUI = (gd.mucUI + 13) % 14;
         }
         if (p.ma == VK_DOWN)
         {
-            mucUI = (mucUI + 1) % 14;
+            gd.mucUI = (gd.mucUI + 1) % 14;
         }
         if (p.ma == VK_TAB || p.ma == VK_RIGHT)
         {
@@ -1040,16 +975,16 @@ int TrangChinh()
         {
             if (p.x < 23 && p.y >= 4 && p.y < 18)
             {
-                mucUI = p.y - 4;
+                gd.mucUI = p.y - 4;
                 continue;
             }
             if (p.y == 13 && p.x >= x && p.x < x + width)
             {
-                if (mucUI)
+                if (gd.mucUI)
                 {
                     if (p.x < x + (width < 34 ? width : 34))
                     {
-                        return mucUI;
+                        return gd.mucUI;
                     }
                 }
                 else
@@ -1060,26 +995,26 @@ int TrangChinh()
                     {
                         focus = index;
                         const int quick[] = {6, 7, 5};
-                        mucUI = quick[focus];
-                        return mucUI;
+                        gd.mucUI = quick[focus];
+                        return gd.mucUI;
                     }
                 }
             }
         }
         if (p.ma == VK_RETURN)
         {
-            if (mucUI)
+            if (gd.mucUI)
             {
-                return mucUI;
+                return gd.mucUI;
             }
             const int quick[] = {6, 7, 5};
-            mucUI = quick[focus];
-            return mucUI;
+            gd.mucUI = quick[focus];
+            return gd.mucUI;
         }
         if (p.chu >= L'1' && p.chu <= L'9')
         {
-            mucUI = static_cast<int>(p.chu - L'0');
-            return mucUI;
+            gd.mucUI = static_cast<int>(p.chu - L'0');
+            return gd.mucUI;
         }
     }
 }
@@ -1109,7 +1044,7 @@ size_t TienKyTu(const wstring &s, size_t p)
     }
     return p + 1;
 }
-bool BieuMau(const string &title, const char *const *labels, string *values, int count)
+bool BieuMau(GiaoDien &gd, const string &title, const char *const *labels, string *values, int count)
 {
     if (count < 1 || count > 12)
     {
@@ -1125,8 +1060,8 @@ bool BieuMau(const string &title, const char *const *labels, string *values, int
     int active = 0, first = 0;
     while (true)
     {
-        KhungUI f;
-        NenUngDung(f, NhanHienThi(title),
+        KhungUI f(gd);
+        NenUngDung(gd, f, NhanHienThi(title),
                    L"Tab: đổi ô   Enter: tiếp   Ctrl+Enter: xác nhận   Esc: hủy");
         int x = XNoiDung(), width = f.w - x - 3, capacity = (f.h - 11) / 3;
         if (capacity < 1)
@@ -1156,12 +1091,12 @@ bool BieuMau(const string &title, const char *const *labels, string *values, int
         int cx = -1, cy = -1;
         if (!f.small())
         {
-            f.text(x, 4, L"Nhập thông tin và chọn Xác nhận để lưu.", width, MO);
+            f.text(x, 4, L"Nhập thông tin và chọn Xác nhận để lưu.", width, gd.mau.MO);
             for (int i = first; i < count && i < first + capacity; ++i)
             {
                 int y = 6 + (i - first) * 3;
-                f.text(x, y, NhanHienThi(labels[i]), width, active == i ? NHAN : MO);
-                WORD fieldColor = active == i ? O_DANG_NHAP : O_NHAP;
+                f.text(x, y, NhanHienThi(labels[i]), width, active == i ? gd.mau.NHAN : gd.mau.MO);
+                WORD fieldColor = active == i ? gd.mau.O_DANG_NHAP : gd.mau.O_NHAP;
                 f.fill(x, y + 1, width, 1, fieldColor);
                 f.put(x, y + 1, L'│',
                       static_cast<WORD>((fieldColor & 0xF0) | (active == i ? 10 : 8)));
@@ -1172,7 +1107,7 @@ bool BieuMau(const string &title, const char *const *labels, string *values, int
                 {
                     --start;
                 }
-                f.text(x + 2, y + 1, CatChuoi(fields[i], start), width - 4, fieldColor);
+                f.text(x + 2, y + 1, CatChuoi(fields[i], start, string::npos), width - 4, fieldColor);
                 if (active == i)
                 {
                     cx = x + 2 +
@@ -1190,10 +1125,10 @@ bool BieuMau(const string &title, const char *const *labels, string *values, int
             f.text(x, buttonY + 2,
                    L"Ô " + ChuoiSoRong(active < count ? active + 1 : count) + L" / " +
                        ChuoiSoRong(count) + L"  ·  Chưa xác nhận",
-                   width, MO);
+                   width, gd.mau.MO);
         }
         f.show(cx, cy);
-        Phim p = DocPhimConsole();
+        Phim p = DocPhimConsole(gd);
         if (p.ma == VK_ESCAPE)
         {
             return false;
@@ -1311,50 +1246,50 @@ bool BieuMau(const string &title, const char *const *labels, string *values, int
         if (p.ma == VK_BACK && cursor)
         {
             size_t prev = LuiKyTu(val, cursor);
-            val = CatChuoi(val, 0, prev) + CatChuoi(val, cursor);
+            val = CatChuoi(val, 0, prev) + CatChuoi(val, cursor, string::npos);
             cursor = prev;
             continue;
         }
         if (p.ma == VK_DELETE && cursor < val.size())
         {
-            val = CatChuoi(val, 0, cursor) + CatChuoi(val, TienKyTu(val, cursor));
+            val = CatChuoi(val, 0, cursor) + CatChuoi(val, TienKyTu(val, cursor), string::npos);
             continue;
         }
         if (p.chu >= 32 && !p.ctrl && val.size() < 4096)
         {
-            val = CatChuoi(val, 0, cursor) + p.chu + CatChuoi(val, cursor);
+            val = CatChuoi(val, 0, cursor) + p.chu + CatChuoi(val, cursor, string::npos);
             ++cursor;
         }
     }
 }
 } // namespace
-bool DangDungGiaoDienHeThong()
+bool DangDungGiaoDienHeThong(GiaoDien &gd)
 {
-    return giaoDienPhim;
+    return gd.giaoDienPhim;
 }
-bool NhapBieuMau(const string &title, const char *const *labels, string *values, int count)
+bool NhapBieuMau(GiaoDien &gd, const string &title, const char *const *labels, string *values, int count)
 {
-    if (giaoDienPhim)
+    if (gd.giaoDienPhim)
     {
-        return BieuMau(title, labels, values, count);
+        return BieuMau(gd, title, labels, values, count);
     }
     (void)title;
     for (int i = 0; i < count; ++i)
     {
-        if (!NhapDong(labels[i], values[i]))
+        if (!NhapDong(gd, labels[i], values[i]))
         {
             return false;
         }
     }
     return true;
 }
-bool NhapDong(const string &prompt, string &s)
+bool NhapDong(GiaoDien &gd, const string &prompt, string &s)
 {
-    if (giaoDienPhim)
+    if (gd.giaoDienPhim)
     {
         const char *labels[] = {prompt.c_str()};
         string value;
-        bool ok = BieuMau(tieuDeUI, labels, &value, 1);
+        bool ok = BieuMau(gd, gd.tieuDeUI, labels, &value, 1);
         if (ok)
         {
             s = value;
@@ -1372,18 +1307,18 @@ bool NhapDong(const string &prompt, string &s)
     }
     return s != "/huy" && s != string(1, '\x1b');
 }
-bool NhapSo(const string &prompt, int &n, int lo, int hi)
+bool NhapSo(GiaoDien &gd, const string &prompt, int &n, int lo, int hi)
 {
     string s;
-    while (NhapDong(prompt, s))
+    while (NhapDong(gd, prompt, s))
     {
         if (DocSoNguyen(ChuanHoaChuoiSach(s), n, lo, hi))
         {
             return true;
         }
-        if (giaoDienPhim)
+        if (gd.giaoDienPhim)
         {
-            ThongBao("LOI: nhap so nguyen trong [" + ChuoiSo(lo) + ", " + ChuoiSo(hi) + "].");
+            ThongBao(gd, "LOI: nhap so nguyen trong [" + ChuoiSo(lo) + ", " + ChuoiSo(hi) + "].");
         }
         else
         {
@@ -1392,35 +1327,35 @@ bool NhapSo(const string &prompt, int &n, int lo, int hi)
     }
     return false;
 }
-int ChonMenu(const string &title, const char *const *labels, int count)
+int ChonMenu(GiaoDien &gd, const string &title, const char *const *labels, int count)
 {
-    if (giaoDienPhim)
+    if (gd.giaoDienPhim)
     {
-        if (count == 13 && duLieuUI)
+        if (count == 13)
         {
-            int r = TrangChinh();
-            tieuDeUI = TuUTF16(dieuHuong[mucUI]);
+            int r = TrangChinh(gd);
+            gd.tieuDeUI = TuUTF16(gd.dieuHuong[gd.mucUI]);
             return r;
         }
         int selected = 0;
-        tieuDeUI = title;
+        gd.tieuDeUI = title;
         while (true)
         {
-            KhungUI f;
-            NenUngDung(f, NhanHienThi(title),
+            KhungUI f(gd);
+            NenUngDung(gd, f, NhanHienThi(title),
                        L"↑/↓: chọn thao tác   Enter / nhấp chuột: mở   Esc/0: quay lại");
             int x = XNoiDung(), width = f.w - x - 3;
             if (!f.small())
             {
-                f.text(x, 5, L"Bạn muốn thực hiện thao tác nào?", width, NHAN);
+                f.text(x, 5, L"Bạn muốn thực hiện thao tác nào?", width, gd.mau.NHAN);
                 for (int i = 0; i < count; ++i)
                 {
                     f.button(x, 8 + i * 3, width, NhanHienThi(labels[i]), i == selected);
-                    f.text(x + 2, 9 + i * 3, L"Enter để mở", width - 4, MO);
+                    f.text(x + 2, 9 + i * 3, L"Enter để mở", width - 4, gd.mau.MO);
                 }
             }
-            f.show();
-            Phim p = DocPhimConsole();
+            f.show(-1, -1);
+            Phim p = DocPhimConsole(gd);
             if (p.ma == VK_ESCAPE || p.chu == L'0')
             {
                 return 0;
@@ -1439,20 +1374,20 @@ int ChonMenu(const string &title, const char *const *labels, int count)
             }
             if (p.ma == VK_RETURN)
             {
-                tieuDeUI = labels[selected];
+                gd.tieuDeUI = labels[selected];
                 return selected + 1;
             }
             if (p.chu >= L'1' && p.chu <= L'9' && p.chu - L'1' < count)
             {
                 int r = static_cast<int>(p.chu - L'0');
-                tieuDeUI = labels[r - 1];
+                gd.tieuDeUI = labels[r - 1];
                 return r;
             }
             if (p.click && p.x >= x && p.x < x + width && p.y >= 8 && (p.y - 8) % 3 == 0 &&
                 (p.y - 8) / 3 < count)
             {
                 selected = (p.y - 8) / 3;
-                tieuDeUI = labels[selected];
+                gd.tieuDeUI = labels[selected];
                 return selected + 1;
             }
         }
@@ -1464,20 +1399,20 @@ int ChonMenu(const string &title, const char *const *labels, int count)
     }
     cout << "0. Quay lai / luu va thoat\n";
     int choice = 0;
-    return NhapSo("Chon", choice, 0, count) ? choice : 0;
+    return NhapSo(gd, "Chon", choice, 0, count) ? choice : 0;
 }
-void ThongBao(const string &s)
+void ThongBao(GiaoDien &gd, const string &s)
 {
-    if (giaoDienPhim)
+    if (gd.giaoDienPhim)
     {
-        XemChiTiet(SangUTF16(s), L"Thông báo");
+        XemChiTiet(gd, SangUTF16(s), L"Thông báo");
         return;
     }
     cout << s << '\n' << flush;
 }
-void HienThiPhanTrangVoiMangTam(const string &text, size_t *&starts)
+void HienThiPhanTrangVoiMangTam(GiaoDien &gd, const string &text, size_t *&starts)
 {
-    if (!giaoDienPhim)
+    if (!gd.giaoDienPhim)
     {
         cout << text << flush;
         return;
@@ -1505,8 +1440,8 @@ void HienThiPhanTrangVoiMangTam(const string &text, size_t *&starts)
     size_t selected = 0, page = 0;
     while (true)
     {
-        KhungUI f;
-        NenUngDung(f, SangUTF16(tieuDeUI),
+        KhungUI f(gd);
+        NenUngDung(gd, f, SangUTF16(gd.tieuDeUI),
                    L"↑/↓: chọn dòng   PgUp/PgDn: đổi trang   Enter: xem đầy đủ   Esc: quay lại");
         int x = XNoiDung(), width = f.w - x - 3, rows = f.h - 11;
         if (rows < 1)
@@ -1517,8 +1452,8 @@ void HienThiPhanTrangVoiMangTam(const string &text, size_t *&starts)
         page = selected / step;
         if (!f.small())
         {
-            f.text(x, 4, L"KẾT QUẢ   ·   " + ChuoiSoRong(n) + L" dòng", width, NHAN);
-            f.box(x, 6, width, rows + 2);
+            f.text(x, 4, L"KẾT QUẢ   ·   " + ChuoiSoRong(n) + L" dòng", width, gd.mau.NHAN);
+            f.box(x, 6, width, rows + 2, L"", gd.mau.VIEN);
             for (int i = 0; i < rows; ++i)
             {
                 size_t index = page * step + static_cast<size_t>(i);
@@ -1526,23 +1461,23 @@ void HienThiPhanTrangVoiMangTam(const string &text, size_t *&starts)
                 {
                     break;
                 }
-                WORD color = index == selected ? CHON : (index % 2 ? THANH : NEN);
+                WORD color = index == selected ? gd.mau.CHON : (index % 2 ? gd.mau.THANH : gd.mau.NEN);
                 f.fill(x + 1, 7 + i, width - 2, 1, color);
                 wstring line = CatChuoi(all, starts[index], starts[index + 1] - starts[index]);
                 while (!line.empty() && (line.back() == L'\n' || line.back() == L'\r'))
                 {
                     line.pop_back();
                 }
-                DongBang(f, x + 2, 7 + i, width - 4, line, color);
+                DongBang(gd, f, x + 2, 7 + i, width - 4, line, color);
             }
-            f.button(x, f.h - 3, 12, L"‹ Trước");
+            f.button(x, f.h - 3, 12, L"‹ Trước", false);
             f.text(x + 14, f.h - 3,
                    L"Trang " + ChuoiSoRong(page + 1) + L" / " + ChuoiSoRong((n + step - 1) / step),
-                   width - 29, MO);
-            f.button(x + width - 13, f.h - 3, 13, L"Sau ›");
+                   width - 29, gd.mau.MO);
+            f.button(x + width - 13, f.h - 3, 13, L"Sau ›", false);
         }
-        f.show();
-        Phim p = DocPhimConsole();
+        f.show(-1, -1);
+        Phim p = DocPhimConsole(gd);
         if (p.ma == VK_ESCAPE)
         {
             return;
@@ -1594,17 +1529,17 @@ void HienThiPhanTrangVoiMangTam(const string &text, size_t *&starts)
         }
         if (p.ma == VK_RETURN)
         {
-            XemChiTiet(CatChuoi(all, starts[selected], starts[selected + 1] - starts[selected]),
+            XemChiTiet(gd, CatChuoi(all, starts[selected], starts[selected + 1] - starts[selected]),
                        L"Chi tiết dòng " + ChuoiSoRong(selected + 1));
         }
     }
 }
-void HienThiPhanTrang(const string &text)
+void HienThiPhanTrang(GiaoDien &gd, const string &text)
 {
     size_t *starts = nullptr;
     try
     {
-        HienThiPhanTrangVoiMangTam(text, starts);
+        HienThiPhanTrangVoiMangTam(gd, text, starts);
         delete[] starts;
     }
     catch (...)
@@ -1614,20 +1549,16 @@ void HienThiPhanTrang(const string &text)
     }
 }
 
-void LuuSauThayDoi(const ThuVien &tv)
+void LuuSauThayDoi(GiaoDien &gd, const ThuVien &tv)
 {
-    if (thuVienTuLuu != &tv || !tepTuLuu)
-    {
-        return;
-    }
-    chuaLuu = true;
+    gd.chuaLuu = true;
     string loi;
-    if (!LuuFile(tv, *tepTuLuu, loi))
+    if (!LuuFile(tv, gd.duongDan, loi))
     {
         throw LoiThuVien("Da cap nhat RAM nhung CHUA LUU: " + loi +
                          ". Hay bam Luu (F5); khong dong cua so.");
     }
-    chuaLuu = false;
+    gd.chuaLuu = false;
 }
 
 namespace
@@ -1668,10 +1599,11 @@ void HuongDan()
          << "--plain: /huy huy nhap. 0 luu va thoat. Tu luu sau thao tac thanh cong; EOF khong thu "
             "luu lai neu truoc do luu loi.\n";
 }
-int ChayUngDung(int argc, char **argv)
+int ChayUngDung(GiaoDien &gd, ThuVien &tv, int argc, char **argv)
 {
-    string path = "DuLieu/runtime/ThuVien.txt", check;
-    NgayThang ngay = HomNay();
+    string &path = gd.duongDan;
+    string check;
+    NgayThang &ngay = gd.ngay;
     bool plain = false;
     bool dungDuLieuMacDinh = true;
     for (int i = 1; i < argc; ++i)
@@ -1717,14 +1649,10 @@ int ChayUngDung(int argc, char **argv)
         }
     }
     DWORD inputMode = 0, outputMode = 0;
-    giaoDienPhim = !plain && GetConsoleMode(GetStdHandle(STD_INPUT_HANDLE), &inputMode) &&
+    gd.giaoDienPhim = !plain && GetConsoleMode(GetStdHandle(STD_INPUT_HANDLE), &inputMode) &&
                    GetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), &outputMode);
-    ThuVien tv;
     string loi;
-    duLieuUI = &tv;
-    duongDanUI = &path;
-    ngayUI = ngay;
-    if (giaoDienPhim)
+    if (gd.giaoDienPhim)
     {
         DWORD mode = 0;
         GetConsoleMode(GetStdHandle(STD_INPUT_HANDLE), &mode);
@@ -1757,7 +1685,6 @@ int ChayUngDung(int argc, char **argv)
         cerr << loi << '\n';
         return 2;
     }
-    PhienTuLuu tuLuu(tv, path);
     if (FileTonTai(path))
     {
         if (!DocFile(tv, path, loi))
@@ -1779,12 +1706,12 @@ int ChayUngDung(int argc, char **argv)
         TaoThuMuc(ThuMucCha(DuongDanDayDu(path)));
         cout << "Tao phien rong; file se duoc tao khi luu.\n";
     }
-    cout << "THU VIEN - BAN DEMO CUA NHOM\nNgay giao dich: "
+    cout << "THU gd.mau.VIEN - BAN DEMO CUA NHOM\nNgay giao dich: "
          << ChuoiNgay(ngay) << "\nDu lieu: " << path << '\n';
-    PhienGiaoDien phienGiaoDien(giaoDienPhim);
+    PhienGiaoDien phienGiaoDien(gd, gd.giaoDienPhim, true);
     while (true)
     {
-        int choice = ChonChucNang(ngay, path);
+        int choice = ChonChucNang(gd, ngay, path);
         if (!cin)
         {
             cerr << "EOF: thoat; thao tac da tu luu van con. Neu da bao loi luu, RAM chua ghi se "
@@ -1793,10 +1720,10 @@ int ChayUngDung(int argc, char **argv)
         }
         try
         {
-            if (chuaLuu &&
+            if (gd.chuaLuu &&
                 (choice == 1 || choice == 3 || choice == 6 || choice == 7 || choice == 11))
             {
-                ThongBao(
+                ThongBao(gd,
                     "CHUA LUU: hay bam Luu (F5) thanh cong truoc khi sua tiep hoac nap file khac.");
                 continue;
             }
@@ -1804,8 +1731,8 @@ int ChayUngDung(int argc, char **argv)
             {
                 if (LuuFile(tv, path, loi))
                 {
-                    chuaLuu = false;
-                    ThongBao("OK: da luu " + path);
+                    gd.chuaLuu = false;
+                    ThongBao(gd, "OK: da luu " + path);
                     if (choice == 0)
                     {
                         return 0;
@@ -1813,34 +1740,34 @@ int ChayUngDung(int argc, char **argv)
                 }
                 else
                 {
-                    ThongBao("LOI LUU (van giu du lieu trong RAM): " + loi);
+                    ThongBao(gd, "LOI LUU (van giu du lieu trong RAM): " + loi);
                 }
             }
             else if (choice >= 1 && choice <= 10)
             {
-                ChayChucNang(choice, tv, ngay);
+                ChayChucNang(gd, choice, tv, ngay);
             }
             else if (choice == 11)
             {
                 string next, confirm;
-                if (NhapDong("Duong dan file UTF-8", next) &&
-                    NhapDong("Nhap NAP de thay du lieu RAM (hay luu truoc neu can)", confirm) &&
+                if (NhapDong(gd, "Duong dan file UTF-8", next) &&
+                    NhapDong(gd, "Nhap NAP de thay du lieu RAM (hay luu truoc neu can)", confirm) &&
                     confirm == "NAP")
                 {
-                    if (NapPhien(tv, path, next, khoa, loi))
+                    if (NapPhien(gd, tv, path, next, khoa, loi))
                     {
-                        ThongBao("OK: da nap du lieu.");
+                        ThongBao(gd, "OK: da nap du lieu.");
                     }
                     else
                     {
-                        ThongBao("LOI: " + loi + "; du lieu RAM cu duoc giu nguyen.");
+                        ThongBao(gd, "LOI: " + loi + "; du lieu RAM cu duoc giu nguyen.");
                     }
                 }
             }
             else if (choice == 13)
             {
                 string confirm;
-                if (NhapDong("Nhap THOAT de thoat; du lieu da tu luu van giu, RAM chua luu (neu co "
+                if (NhapDong(gd, "Nhap THOAT de thoat; du lieu da tu luu van giu, RAM chua luu (neu co "
                              "loi) se mat",
                              confirm) &&
                     confirm == "THOAT")
@@ -1851,16 +1778,16 @@ int ChayUngDung(int argc, char **argv)
         }
         catch (const LoiThuVien &e)
         {
-            ThongBao(string("Khong hoan tat thao tac: ") + e.what());
+            ThongBao(gd, string("Khong hoan tat thao tac: ") + e.what());
         }
         catch (...)
         {
-            ThongBao("Khong hoan tat thao tac: khong du bo nho / loi luong.");
+            ThongBao(gd, "Khong hoan tat thao tac: khong du bo nho / loi luong.");
         }
     }
 }
 } // namespace
-int KhoiDongUngDung()
+int KhoiDongUngDung(GiaoDien &gd, ThuVien &tv)
 {
     ConsoleScope console;
     string *utf8 = nullptr;
@@ -1876,7 +1803,7 @@ int KhoiDongUngDung()
         {
             ptrs[i] = &utf8[i][0];
         }
-        int ketQua = ChayUngDung(n, ptrs);
+        int ketQua = ChayUngDung(gd, tv, n, ptrs);
         delete[] ptrs;
         delete[] utf8;
         return ketQua;

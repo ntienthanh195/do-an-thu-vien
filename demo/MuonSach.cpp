@@ -120,7 +120,7 @@ bool MuonSach(ThuVien &tv, int maThe, const string &maCuon, const NgayThang &nga
         loi = "Doc gia dang co sach qua han.";
         return false;
     }
-    CuonSach *cuon = TimCuonSachToanCuc(tv, maCuon);
+    CuonSach *cuon = TimCuonSachToanCuc(tv, maCuon, nullptr);
     if (cuon == nullptr)
     {
         loi = "Khong tim thay cuon sach.";
@@ -149,28 +149,28 @@ bool MuonSach(ThuVien &tv, int maThe, const string &maCuon, const NgayThang &nga
     loi.clear();
     return true;
 }
-void ManHinhMuonTra(ThuVien &tv, const NgayThang &ngay, bool tra)
+void ManHinhMuonTra(GiaoDien &gd, ThuVien &tv, const NgayThang &ngay, bool tra)
 {
-    if (DangDungGiaoDienHeThong())
+    if (DangDungGiaoDienHeThong(gd))
     {
         const char *readerFields[] = {"Ma the doc gia"};
         string readerValues[1];
         int maThe = 0;
         while (true)
         {
-            if (!NhapBieuMau(tra ? "TRA SACH - CHON DOC GIA" : "MUON SACH - CHON DOC GIA",
+            if (!NhapBieuMau(gd, tra ? "TRA SACH - CHON DOC GIA" : "MUON SACH - CHON DOC GIA",
                              readerFields, readerValues, 1))
             {
                 return;
             }
             if (!DocSoNguyen(readerValues[0], maThe, 1, 2147483647))
             {
-                ThongBao("Ma the phai la so nguyen duong trong mien int.");
+                ThongBao(gd, "Ma the phai la so nguyen duong trong mien int.");
                 continue;
             }
             if (!TimDocGia(tv.cayDocGia, maThe))
             {
-                ThongBao("Khong tim thay doc gia. Kiem tra lai ma the.");
+                ThongBao(gd, "Khong tim thay doc gia. Kiem tra lai ma the.");
                 continue;
             }
             break;
@@ -179,12 +179,12 @@ void ManHinhMuonTra(ThuVien &tv, const NgayThang &ngay, bool tra)
         ostringstream out;
         out.exceptions(ios::badbit | ios::failbit);
         LietKeSachDangMuon(tv, maThe, out);
-        HienThiPhanTrang(out.str());
+        HienThiPhanTrang(gd, out.str());
         int action = 1;
         if (tra)
         {
             const char *actions[] = {"Tra sach", "Bao mat sach (khoa the, rut cuon khoi kho)"};
-            action = ChonMenu("TRA / BAO MAT - THE " + ChuoiSo(maThe), actions, 2);
+            action = ChonMenu(gd, "TRA / BAO MAT - THE " + ChuoiSo(maThe), actions, 2);
             if (action < 1)
             {
                 return;
@@ -206,7 +206,7 @@ void ManHinhMuonTra(ThuVien &tv, const NgayThang &ngay, bool tra)
             title = "BAO MAT SACH";
         }
         title = title + " - THE " + ChuoiSo(maThe);
-        while (NhapBieuMau(title, copyFields, copyValues, 1))
+        while (NhapBieuMau(gd, title, copyFields, copyValues, 1))
         {
             string ma = ChuanHoaChuoiSach(copyValues[0]);
             bool ok;
@@ -224,41 +224,41 @@ void ManHinhMuonTra(ThuVien &tv, const NgayThang &ngay, bool tra)
             }
             if (!ok)
             {
-                ThongBao("LOI: " + loi);
+                ThongBao(gd, "LOI: " + loi);
                 continue;
             }
-            LuuSauThayDoi(tv);
-            ThongBao("Giao dich thanh cong, ngay " + ChuoiNgay(ngay) + ".");
+            LuuSauThayDoi(gd, tv);
+            ThongBao(gd, "Giao dich thanh cong, ngay " + ChuoiNgay(ngay) + ".");
             return;
         }
         return;
     }
     int maThe;
-    if (!NhapSo("Ma the doc gia: ", maThe, 1, 2147483647))
+    if (!NhapSo(gd, "Ma the doc gia: ", maThe, 1, 2147483647))
     {
         return;
     }
     if (!TimDocGia(tv.cayDocGia, maThe))
     {
-        ThongBao("Khong tim thay doc gia.");
+        ThongBao(gd, "Khong tim thay doc gia.");
         return;
     }
     ostringstream out;
     out.exceptions(ios::badbit | ios::failbit);
     LietKeSachDangMuon(tv, maThe, out);
-    HienThiPhanTrang(out.str());
+    HienThiPhanTrang(gd, out.str());
     int action = 1;
     if (tra)
     {
         const char *labels[] = {"Tra sach", "Bao mat sach (khoa the, rut cuon khoi kho)"};
-        action = ChonMenu("TRA / BAO MAT", labels, 2);
+        action = ChonMenu(gd, "TRA / BAO MAT", labels, 2);
         if (action < 1)
         {
             return;
         }
     }
     string ma, loi;
-    if (!NhapDong("Ma cuon sach: ", ma))
+    if (!NhapDong(gd, "Ma cuon sach: ", ma))
     {
         return;
     }
@@ -278,7 +278,7 @@ void ManHinhMuonTra(ThuVien &tv, const NgayThang &ngay, bool tra)
     }
     if (ok)
     {
-        LuuSauThayDoi(tv);
+        LuuSauThayDoi(gd, tv);
     }
-    ThongBao(ok ? "Giao dich thanh cong, ngay " + ChuoiNgay(ngay) + "." : loi);
+    ThongBao(gd, ok ? "Giao dich thanh cong, ngay " + ChuoiNgay(ngay) + "." : loi);
 }

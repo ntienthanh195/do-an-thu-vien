@@ -62,15 +62,15 @@ void InDanhSachDauSach(const ThuVien &tv, ostream &out)
         InThongTinDauSach(*tv.dsDauSach.ds[i], out, false);
     }
 }
-void ManHinhTimSach(const ThuVien &tv)
+void ManHinhTimSach(GiaoDien &gd, const ThuVien &tv)
 {
     string ten;
-    if (!NhapDong("Ten/phan ten sach can tim: ", ten))
+    if (!NhapDong(gd, "Ten/phan ten sach can tim: ", ten))
     {
         return;
     }
     ostringstream out;
     out.exceptions(ios::badbit | ios::failbit);
     TimDauSachTheoTen(tv, ten, out);
-    HienThiPhanTrang(out.str());
+    HienThiPhanTrang(gd, out.str());
 }

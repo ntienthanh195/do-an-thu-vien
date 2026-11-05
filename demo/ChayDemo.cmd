@@ -2,7 +2,7 @@
 setlocal
 pushd "%~dp0.." || exit /b 1
 if not exist build mkdir build
-g++ -std=c++11 -O2 -Wall -Wextra -Wpedantic demotrinhthay/*.cpp -o build/ThuVien.exe
+g++ -std=c++11 -O2 -Wall -Wextra -Wpedantic demo/*.cpp -o build/ThuVien.exe
 if errorlevel 1 goto loi
 build\ThuVien.exe
 if errorlevel 1 goto loi

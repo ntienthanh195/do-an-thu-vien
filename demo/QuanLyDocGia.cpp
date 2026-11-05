@@ -135,9 +135,7 @@ static NutDocGia* ThemDocGiaAVL(NutDocGia* root, const DocGia &docgiamoi)
 {
     if (root == nullptr)
     {
-        NutDocGia* p = new NutDocGia;
-        p->thongTin = docgiamoi;
-        return p;
+        return new NutDocGia(docgiamoi);
     }
 
     if (docgiamoi.maThe < root->thongTin.maThe)
@@ -323,14 +321,14 @@ static NutDocGia* XoaNutAVL(NutDocGia* root, int mathe)
     {
         NutDocGia* p = root;
 
-        // Nút lá
+        // Nut la
         if (p->left == nullptr && p->right == nullptr)
         {
             delete p;
             return nullptr;
         }
 
-        // Chỉ có con trái
+        // Chi co con trai
         if (p->right == nullptr)
         {
             NutDocGia* con = p->left;
@@ -338,7 +336,7 @@ static NutDocGia* XoaNutAVL(NutDocGia* root, int mathe)
             return con;
         }
 
-        // Chỉ có con phải
+        // Chi co con phai
         if (p->left == nullptr)
         {
             NutDocGia* con = p->right;
@@ -346,7 +344,7 @@ static NutDocGia* XoaNutAVL(NutDocGia* root, int mathe)
             return con;
         }
 
-        // Có đủ hai con
+        // Co du hai con
         NutDocGia* nutThayThe = nullptr;
         NutDocGia* nhanhPhaiConLai =
             TachNutNhoNhat(p->right, nutThayThe);
@@ -553,7 +551,7 @@ bool ThemDocGia(ThuVien &tv, const string &ho, const string &ten, const string &
     {
         return false;
     }
-    if (tv.maTheLonNhatDaCap == SO_NGUYEN_LON_NHAT)
+    if (tv.maTheLonNhatDaCap == INT_MAX)
     {
         loi = "Het mien ma the.";
         return false;
@@ -620,17 +618,17 @@ bool XoaDocGia(ThuVien &tv, int ma, string &loi)
     loi.clear();
     return true;
 }
-void ManHinhDocGia(ThuVien &tv)
+void ManHinhDocGia(GiaoDien &gd, ThuVien &tv)
 {
     const char *labels[] = {"Them doc gia", "Sua / khoa / mo the", "Xoa doc gia chua co lich su"};
-    int chon = ChonMenu("a - QUAN LY DOC GIA", labels, 3);
-    int ma = 0, tt = 1;
+    int chon = ChonMenu(gd, "a - QUAN LY DOC GIA", labels, 3);
+    int ma = 0, tt = THE_HOAT_DONG;
     string ho, ten, phai, loi;
     if (chon == 0)
     {
         return;
     }
-    if (DangDungGiaoDienHeThong())
+    if (DangDungGiaoDienHeThong(gd))
     {
         if (chon < 1)
         {
@@ -643,20 +641,20 @@ void ManHinhDocGia(ThuVien &tv)
             string values[1];
             while (true)
             {
-                if (!NhapBieuMau(chon == 2 ? "CHON DOC GIA CAN SUA" : "CHON DOC GIA CAN XOA",
+                if (!NhapBieuMau(gd, chon == 2 ? "CHON DOC GIA CAN SUA" : "CHON DOC GIA CAN XOA",
                                  fields, values, 1))
                 {
                     return;
                 }
-                if (!DocSoNguyen(values[0], ma, 1, SO_NGUYEN_LON_NHAT))
+                if (!DocSoNguyen(values[0], ma, 1, INT_MAX))
                 {
-                    ThongBao("Ma the phai la so nguyen duong trong mien int.");
+                    ThongBao(gd, "Ma the phai la so nguyen duong trong mien int.");
                     continue;
                 }
                 current = TimDocGia(tv.cayDocGia, ma);
                 if (!current)
                 {
-                    ThongBao("Khong tim thay doc gia. Kiem tra lai ma the.");
+                    ThongBao(gd, "Khong tim thay doc gia. Kiem tra lai ma the.");
                     continue;
                 }
                 break;
@@ -667,16 +665,16 @@ void ManHinhDocGia(ThuVien &tv)
             bool ok = XoaDocGia(tv, ma, loi);
             if (ok)
             {
-                LuuSauThayDoi(tv);
+                LuuSauThayDoi(gd, tv);
             }
-            ThongBao(ok ? "OK: da xoa doc gia." : "LOI: " + loi);
+            ThongBao(gd, ok ? "OK: da xoa doc gia." : "LOI: " + loi);
             return;
         }
         const char *fields[] = {"Ho", "Ten", u8"Phai (Nam/Nữ)",
                                 "Trang thai the (0 khoa, 1 hoat dong)"};
         string values[4];
         values[2] = "Nam";
-        values[3] = "1";
+        values[3] = ChuoiSo(THE_HOAT_DONG);
         if (current)
         {
             const DocGia &d = current->thongTin;
@@ -685,30 +683,30 @@ void ManHinhDocGia(ThuVien &tv)
             values[2] = d.phai;
             values[3] = ChuoiSo(d.trangThaiThe);
         }
-        while (NhapBieuMau(chon == 1 ? "THEM DOC GIA" : "HIEU CHINH DOC GIA - THE " + ChuoiSo(ma),
+        while (NhapBieuMau(gd, chon == 1 ? "THEM DOC GIA" : "HIEU CHINH DOC GIA - THE " + ChuoiSo(ma),
                            fields, values, chon == 1 ? 3 : 4))
         {
-            if (chon == 2 && !DocSoNguyen(values[3], tt, 0, 1))
+            if (chon == 2 && !DocSoNguyen(values[3], tt, THE_BI_KHOA, THE_HOAT_DONG))
             {
-                ThongBao("Trang thai the chi nhan 0 (khoa) hoac 1 (hoat dong).");
+                ThongBao(gd, "Trang thai the chi nhan 0 (khoa) hoac 1 (hoat dong).");
                 continue;
             }
             bool ok = chon == 1 ? ThemDocGia(tv, values[0], values[1], values[2], ma, loi)
                                 : HieuChinhDocGia(tv, ma, values[0], values[1], values[2], tt, loi);
             if (!ok)
             {
-                ThongBao("LOI: " + loi);
+                ThongBao(gd, "LOI: " + loi);
                 continue;
             }
-            LuuSauThayDoi(tv);
-            ThongBao("OK: da luu doc gia, ma the " + ChuoiSo(ma));
+            LuuSauThayDoi(gd, tv);
+            ThongBao(gd, "OK: da luu doc gia, ma the " + ChuoiSo(ma));
             return;
         }
         return;
     }
     if (chon == 2 || chon == 3)
     {
-        if (!NhapSo("Ma the", ma, 1, SO_NGUYEN_LON_NHAT))
+        if (!NhapSo(gd, "Ma the", ma, 1, INT_MAX))
         {
             return;
         }
@@ -718,12 +716,12 @@ void ManHinhDocGia(ThuVien &tv)
         bool ok = XoaDocGia(tv, ma, loi);
         if (ok)
         {
-            LuuSauThayDoi(tv);
+            LuuSauThayDoi(gd, tv);
         }
-        ThongBao(ok ? "OK: da xoa doc gia." : "LOI: " + loi);
+        ThongBao(gd, ok ? "OK: da xoa doc gia." : "LOI: " + loi);
         return;
     }
-    if (!NhapDong("Ho", ho) || !NhapDong("Ten", ten) || !NhapDong(u8"Phai (Nam/Nữ)", phai))
+    if (!NhapDong(gd, "Ho", ho) || !NhapDong(gd, "Ten", ten) || !NhapDong(gd, u8"Phai (Nam/Nữ)", phai))
     {
         return;
     }
@@ -734,7 +732,7 @@ void ManHinhDocGia(ThuVien &tv)
     }
     else
     {
-        if (!NhapSo("Trang thai the (0 khoa, 1 hoat dong)", tt, 0, 1))
+        if (!NhapSo(gd, "Trang thai the (0 khoa, 1 hoat dong)", tt, THE_BI_KHOA, THE_HOAT_DONG))
         {
             return;
         }
@@ -742,7 +740,7 @@ void ManHinhDocGia(ThuVien &tv)
     }
     if (ok)
     {
-        LuuSauThayDoi(tv);
+        LuuSauThayDoi(gd, tv);
     }
-    ThongBao(ok ? "OK: ma the " + ChuoiSo(ma) : "LOI: " + loi);
+    ThongBao(gd, ok ? "OK: ma the " + ChuoiSo(ma) : "LOI: " + loi);
 }

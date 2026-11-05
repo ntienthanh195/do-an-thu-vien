@@ -5,8 +5,7 @@
 // [THANH] Phan code Thanh cung cap/phu trach.
 void them_lich_su(NutDocGia &q, MuonTra muontra)
 {
-	MuonTra* muontraa=new MuonTra;
-	*muontraa= muontra;
+	MuonTra* muontraa = new MuonTra(muontra);
 	 muontraa->next = nullptr;  
 	MuonTra* p=q.thongTin.dsMuonTra;
 	while(p!=nullptr && p->next!=nullptr)
@@ -32,7 +31,7 @@ int Dem_so_sach_dang_muon(NutDocGia &q)
 	MuonTra* p=q.thongTin.dsMuonTra;
 	while(p!=nullptr)
 	{
-		if(p->trangThai==0)
+		if(p->trangThai==MUON_DANG_MUON)
 		sachdangmuon++;
 		p=p->next;
 	}
@@ -46,7 +45,7 @@ MuonTra* TimMuonDangMuonTheoMa(NutDocGia &q,string maSach)
 	MuonTra* p=q.thongTin.dsMuonTra;
 	while(p!=nullptr)
 	{
-		if(p->maSach==maSach&&p->trangThai==0)
+		if(p->maSach==maSach&&p->trangThai==MUON_DANG_MUON)
 		{
 			return p;
 		}
@@ -63,7 +62,7 @@ bool CoSachQuaHan7Ngay(const NutDocGia &docgia, NgayThang ngayktra)
 	MuonTra* q = docgia.thongTin.dsMuonTra;
 	while(q!=nullptr)
 	{
-		if(q->trangThai == 0 )
+		if(q->trangThai == MUON_DANG_MUON )
 		{
 			if (SoNgayQuaHan(q->ngayMuon, ngayktra) > 0) return true;
 		}
@@ -77,7 +76,7 @@ bool CoSachQuaHan7Ngay(const NutDocGia &docgia, NgayThang ngayktra)
 bool CapNhatLuotTra(const NutDocGia &docgia,string masach, NgayThang ngaytrasach )
 {
 	MuonTra* q = docgia.thongTin.dsMuonTra;
-	while(q!=nullptr && (q->maSach!=masach || q->trangThai!=0 ))
+	while(q!=nullptr && (q->maSach!=masach || q->trangThai!=MUON_DANG_MUON ))
 	{	
 		q=q->next;
 	}
@@ -86,7 +85,7 @@ bool CapNhatLuotTra(const NutDocGia &docgia,string masach, NgayThang ngaytrasach
 		return false;
 	}
 	q->ngayTra=ngaytrasach;
-	q->trangThai=1;
+	q->trangThai = MUON_DA_TRA;
 	return true;
 }
 

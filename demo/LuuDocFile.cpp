@@ -45,7 +45,7 @@ bool DocDongFile(ifstream &file, string &dong, int &soDong, string &loi)
     if (soDong == 1 && dong.size() >= 3 && dong[0] == char(0xEF) && dong[1] == char(0xBB) &&
         dong[2] == char(0xBF))
     {
-        dong = CatChuoi(dong, 3);
+        dong = CatChuoi(dong, 3, string::npos);
     }
     if (!dong.empty() && MultiByteToWideChar(CP_UTF8, MB_ERR_INVALID_CHARS, dong.data(),
                                              int(dong.size()), nullptr, 0) == 0)
@@ -92,7 +92,7 @@ struct LuotKiemTra
     int maThe = 0;
     int ngayMuon = 0;
     int ngayKetThuc = 0;
-    int trangThai = 0;
+    int trangThai; // Gan tu luot muon truoc khi sap xep.
 };
 struct MocKiemTra
 {
@@ -607,7 +607,7 @@ bool MaCuonDungChuSoHuu(const string &ma, const string &isbn)
     }
     int so = 0;
     return CatChuoi(ma, 0, dauThang) == isbn &&
-           DocSoNguyen(CatChuoi(ma, dauThang + 1), so, 1, SO_NGUYEN_LON_NHAT);
+           DocSoNguyen(CatChuoi(ma, dauThang + 1, string::npos), so, 1, INT_MAX);
 }
 bool KiemTraCacDanhSach(const ThuVien &tv, MangKiemTra &tam, string &loi)
 {
@@ -732,7 +732,7 @@ bool KiemTraCacDanhSach(const ThuVien &tv, MangKiemTra &tam, string &loi)
             {
                 return BaoLoiFile(loi, "Ngay muon trong tuong lai.");
             }
-            int ketThuc = SO_NGUYEN_LON_NHAT;
+            int ketThuc = INT_MAX;
             if (p->trangThai == MUON_DANG_MUON)
             {
                 if (!NgayRong(p->ngayTra))
@@ -779,7 +779,7 @@ bool KiemTraCacDanhSach(const ThuVien &tv, MangKiemTra &tam, string &loi)
                 tam.moc[soMoc].loai = 1;
             }
             soMoc++;
-            if (ketThuc != SO_NGUYEN_LON_NHAT && ketThuc != batDau)
+            if (ketThuc != INT_MAX && ketThuc != batDau)
             {
                 tam.moc[soMoc].maThe = docGia.maThe;
                 tam.moc[soMoc].ngay = ketThuc;
@@ -888,7 +888,7 @@ bool DocSachTuFile(ifstream &file, ThuVien &tam, int &soDong, string &loi)
         sach.tacGia = truong[3];
         sach.theLoai = truong[5];
         int soCuon = 0;
-        if (!DocSoNguyen(truong[2], sach.soTrang, 1, SO_NGUYEN_LON_NHAT) ||
+        if (!DocSoNguyen(truong[2], sach.soTrang, 1, INT_MAX) ||
             !DocSoNguyen(truong[4], sach.namXuatBan, 1, 9999) ||
             !DocSoNguyen(truong[6], soCuon, 0, MAX_BAN_GHI - tongCuon))
         {
@@ -908,7 +908,7 @@ bool DocSachTuFile(ifstream &file, ThuVien &tam, int &soDong, string &loi)
             CuonSach duLieu;
             duLieu.maSach = cuon[0];
             duLieu.viTri = cuon[2];
-            if (!DocSoNguyen(cuon[1], duLieu.trangThai, 0, 2))
+            if (!DocSoNguyen(cuon[1], duLieu.trangThai, SACH_CHO_MUON, SACH_THANH_LY))
             {
                 return BaoLoiFile(loi, "Trang thai cuon sai.");
             }
@@ -953,19 +953,18 @@ bool DocDocGiaTuFile(ifstream &file, ThuVien &tam, NutDocGia **ds, int soDocGia,
         {
             return false;
         }
-        NutDocGia duLieu;
-        DocGia &docGia = duLieu.thongTin;
+        DocGia docGia;
         docGia.ho = truong[1];
         docGia.ten = truong[2];
         docGia.phai = truong[3];
         int soLuot = 0;
-        if (!DocSoNguyen(truong[0], docGia.maThe, 1, SO_NGUYEN_LON_NHAT) ||
-            !DocSoNguyen(truong[4], docGia.trangThaiThe, 0, 1) ||
+        if (!DocSoNguyen(truong[0], docGia.maThe, 1, INT_MAX) ||
+            !DocSoNguyen(truong[4], docGia.trangThaiThe, THE_BI_KHOA, THE_HOAT_DONG) ||
             !DocSoNguyen(truong[5], soLuot, 0, MAX_BAN_GHI - tongLuot))
         {
             return BaoLoiFile(loi, "So lieu doc gia sai.");
         }
-        NutDocGia *p = new NutDocGia(duLieu);
+        NutDocGia *p = new NutDocGia(docGia);
         ds[i] = p;
         ++choGhep.daDoc;
         MuonTra *cuoi = nullptr;
@@ -979,7 +978,7 @@ bool DocDocGiaTuFile(ifstream &file, ThuVien &tam, NutDocGia **ds, int soDocGia,
             MuonTra lichSu;
             lichSu.maSach = luot[0];
             if (!DocNgay(luot[1], lichSu.ngayMuon) || !DocNgay(luot[2], lichSu.ngayTra) ||
-                !DocSoNguyen(luot[3], lichSu.trangThai, 0, 2))
+                !DocSoNguyen(luot[3], lichSu.trangThai, MUON_DANG_MUON, MUON_LAM_MAT))
             {
                 return BaoLoiFile(loi, "Ngay/trang thai luot muon sai.");
             }
@@ -1020,7 +1019,7 @@ bool DocFile(ThuVien &tv, const string &path, string &loi)
         }
         ThuVien tam;
         int soDong = 0, soDocGia = 0;
-        if (!DocSoFile(file, tam.maTheLonNhatDaCap, SO_NGUYEN_LON_NHAT, soDong, loi))
+        if (!DocSoFile(file, tam.maTheLonNhatDaCap, INT_MAX, soDong, loi))
         {
             return false;
         }

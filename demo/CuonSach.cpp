@@ -15,7 +15,7 @@ bool HopLeCuonSach(const CuonSach &s, string &loi){
             return false;
         }
     int thuTu;
-    if (!DocSoNguyen(CatChuoi(s.maSach, 14), thuTu, 1) || !HopLeTrangThaiSach(s.trangThai))
+    if (!DocSoNguyen(CatChuoi(s.maSach, 14, string::npos), thuTu, 1, INT_MAX) || !HopLeTrangThaiSach(s.trangThai))
     {
         loi = "So thu tu hoac trang thai cuon sai.";
         return false;
@@ -53,7 +53,7 @@ bool TachMaCuonTuSinh(const string &ma, string &isbn, int &soThuTu)
         return false;
     }
     isbn = CatChuoi(ma, 0, viTri);
-    return DocSoNguyen(CatChuoi(ma, viTri + 1), soThuTu, 1, SO_NGUYEN_LON_NHAT);
+    return DocSoNguyen(CatChuoi(ma, viTri + 1, string::npos), soThuTu, 1, INT_MAX);
 }
 bool MaCoDauThang(const string &ma)
 {
@@ -171,7 +171,7 @@ bool SinhMaSachTuDong(const ThuVien &tv, const DauSach &sach, string &ma, string
             p = p->next;
         }
     }
-    if (lonNhat == SO_NGUYEN_LON_NHAT)
+    if (lonNhat == INT_MAX)
     {
         loi = "Het mien ma cuon.";
         return false;

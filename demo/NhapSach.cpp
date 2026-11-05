@@ -148,16 +148,16 @@ void HuyDanhSachDauSach(DanhSachDauSach &ds)
     }
     ds.soLuong = 0;
 }
-void ManHinhNhapDauSach(ThuVien &tv)
+void ManHinhNhapDauSach(GiaoDien &gd, ThuVien &tv)
 {
     const char *labels[] = {"Them dau sach moi", "Them cuon cho dau sach da co"};
-    int choice = ChonMenu("NHAP SACH", labels, 2);
+    int choice = ChonMenu(gd, "NHAP SACH", labels, 2);
     if (choice < 1)
     {
         return;
     }
     string isbn, loi;
-    if (DangDungGiaoDienHeThong())
+    if (DangDungGiaoDienHeThong(gd))
     {
         if (choice == 1)
         {
@@ -165,7 +165,7 @@ void ManHinhNhapDauSach(ThuVien &tv)
                                     "Tac gia", "Nam xuat ban", "The loai"};
             string values[6];
             values[4] = ChuoiSo(HomNay().nam);
-            while (NhapBieuMau("THEM DAU SACH", fields, values, 6))
+            while (NhapBieuMau(gd, "THEM DAU SACH", fields, values, 6))
             {
                 DauSach d;
                 d.ISBN = values[0];
@@ -174,21 +174,21 @@ void ManHinhNhapDauSach(ThuVien &tv)
                 d.theLoai = values[5];
                 if (!DocSoNguyen(values[2], d.soTrang, 1, 2147483647))
                 {
-                    ThongBao("So trang phai la so nguyen duong.");
+                    ThongBao(gd, "So trang phai la so nguyen duong.");
                     continue;
                 }
                 if (!DocSoNguyen(values[4], d.namXuatBan, 1, HomNay().nam))
                 {
-                    ThongBao("Nam xuat ban phai tu 1 den nam hien tai.");
+                    ThongBao(gd, "Nam xuat ban phai tu 1 den nam hien tai.");
                     continue;
                 }
                 if (!ThemDauSach(tv, d, loi))
                 {
-                    ThongBao("LOI: " + loi);
+                    ThongBao(gd, "LOI: " + loi);
                     continue;
                 }
-                LuuSauThayDoi(tv);
-                ThongBao("Da them dau sach " + ChuanHoaChuoiSach(d.ISBN) +
+                LuuSauThayDoi(gd, tv);
+                ThongBao(gd, "Da them dau sach " + ChuanHoaChuoiSach(d.ISBN) +
                          ". Chon Them cuon de nhap cac ban sach.");
                 return;
             }
@@ -197,16 +197,16 @@ void ManHinhNhapDauSach(ThuVien &tv)
         {
             const char *fields[] = {"ISBN dau sach", "Vi tri cuon sach"};
             string values[2];
-            while (NhapBieuMau("THEM CUON SACH", fields, values, 2))
+            while (NhapBieuMau(gd, "THEM CUON SACH", fields, values, 2))
             {
                 string ma;
                 if (!ThemCuonSach(tv, values[0], values[1], ma, loi))
                 {
-                    ThongBao("LOI: " + loi);
+                    ThongBao(gd, "LOI: " + loi);
                     continue;
                 }
-                LuuSauThayDoi(tv);
-                ThongBao("Da cap ma cuon: " + ma);
+                LuuSauThayDoi(gd, tv);
+                ThongBao(gd, "Da cap ma cuon: " + ma);
                 return;
             }
         }
@@ -215,54 +215,54 @@ void ManHinhNhapDauSach(ThuVien &tv)
     if (choice == 1)
     {
         DauSach d;
-        if (!NhapDong("ISBN: ", d.ISBN) || !NhapDong("Ten sach: ", d.tenSach) ||
-            !NhapSo("So trang: ", d.soTrang, 1, 2147483647) || !NhapDong("Tac gia: ", d.tacGia) ||
-            !NhapSo("Nam xuat ban: ", d.namXuatBan, 1, HomNay().nam) ||
-            !NhapDong("The loai: ", d.theLoai))
+        if (!NhapDong(gd, "ISBN: ", d.ISBN) || !NhapDong(gd, "Ten sach: ", d.tenSach) ||
+            !NhapSo(gd, "So trang: ", d.soTrang, 1, 2147483647) || !NhapDong(gd, "Tac gia: ", d.tacGia) ||
+            !NhapSo(gd, "Nam xuat ban: ", d.namXuatBan, 1, HomNay().nam) ||
+            !NhapDong(gd, "The loai: ", d.theLoai))
         {
             return;
         }
         if (!ThemDauSach(tv, d, loi))
         {
-            ThongBao(loi);
+            ThongBao(gd, loi);
             return;
         }
-        LuuSauThayDoi(tv);
+        LuuSauThayDoi(gd, tv);
         isbn = ChuanHoaChuoiSach(d.ISBN);
-        ThongBao("Da them dau sach. Nhap so cuon muon them; 0 de ket thuc.");
+        ThongBao(gd, "Da them dau sach. Nhap so cuon muon them; 0 de ket thuc.");
     }
     else
     {
-        if (!NhapDong("ISBN dau sach: ", isbn))
+        if (!NhapDong(gd, "ISBN dau sach: ", isbn))
         {
             return;
         }
         isbn = ChuanHoaChuoiSach(isbn);
         if (!TimDauSachTheoISBN(tv.dsDauSach, isbn))
         {
-            ThongBao("Khong tim thay ISBN.");
+            ThongBao(gd, "Khong tim thay ISBN.");
             return;
         }
     }
     int n;
-    if (!NhapSo("So cuon can them: ", n, 0, MAX_BAN_GHI))
+    if (!NhapSo(gd, "So cuon can them: ", n, 0, MAX_BAN_GHI))
     {
         return;
     }
     for (int i = 0; i < n; ++i)
     {
         string viTri, ma;
-        if (!NhapDong("Vi tri cuon " + ChuoiSo(i + 1) + ": ", viTri))
+        if (!NhapDong(gd, "Vi tri cuon " + ChuoiSo(i + 1) + ": ", viTri))
         {
-            ThongBao("Da dung nhap. Dau sach va nhung cuon da them duoc giu lai.");
+            ThongBao(gd, "Da dung nhap. Dau sach va nhung cuon da them duoc giu lai.");
             return;
         }
         if (!ThemCuonSach(tv, isbn, viTri, ma, loi))
         {
-            ThongBao(loi);
+            ThongBao(gd, loi);
             return;
         }
-        LuuSauThayDoi(tv);
-        ThongBao("Da cap ma cuon: " + ma);
+        LuuSauThayDoi(gd, tv);
+        ThongBao(gd, "Da cap ma cuon: " + ma);
     }
 }

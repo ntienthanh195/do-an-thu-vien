@@ -1,7 +1,7 @@
 #include "00_KhaiBaoChung.h"
 
 // [DEMO - CODEX] Phan bo sung cho ban trinh thay.
-int ChonChucNang(const NgayThang &ngay, const string &path)
+int ChonChucNang(GiaoDien &gd, const NgayThang &ngay, const string &path)
 {
     const char *labels[] = {"a - Them / xoa / sua doc gia",
                             "b - Liet ke doc gia",
@@ -16,21 +16,21 @@ int ChonChucNang(const NgayThang &ngay, const string &path)
                             "Nap file khac",
                             "Luu du lieu",
                             "Thoat (khong thu luu lai)"};
-    return ChonMenu("THU VIEN | " + ChuoiNgay(ngay) + "\nDu lieu: " + path, labels, 13);
+    return ChonMenu(gd, "THU VIEN | " + ChuoiNgay(ngay) + "\nDu lieu: " + path, labels, 13);
 }
 
-void ChayChucNang(int choice, ThuVien &tv, const NgayThang &ngay)
+void ChayChucNang(GiaoDien &gd, int choice, ThuVien &tv, const NgayThang &ngay)
 {
     ostringstream out;
     out.exceptions(ios::badbit | ios::failbit);
     if (choice == 1)
     {
-        ManHinhDocGia(tv);
+        ManHinhDocGia(gd, tv);
     }
     else if (choice == 2)
     {
         const char *views[] = {"Theo ma the", "Theo ten + ho"};
-        int v = ChonMenu("b - DOC GIA", views, 2);
+        int v = ChonMenu(gd, "b - DOC GIA", views, 2);
         if (v == 1)
         {
             InDocGiaTheoMa(tv, out);
@@ -41,43 +41,43 @@ void ChayChucNang(int choice, ThuVien &tv, const NgayThang &ngay)
         }
         if (v)
         {
-            HienThiPhanTrang(out.str());
+            HienThiPhanTrang(gd, out.str());
         }
     }
     else if (choice == 3)
     {
-        ManHinhNhapDauSach(tv);
+        ManHinhNhapDauSach(gd, tv);
     }
     else if (choice == 4)
     {
         InDauSachTheoTheLoai(tv, out);
-        HienThiPhanTrang(out.str());
+        HienThiPhanTrang(gd, out.str());
     }
     else if (choice == 5)
     {
-        ManHinhTimSach(tv);
+        ManHinhTimSach(gd, tv);
     }
     else if (choice == 6 || choice == 7)
     {
-        ManHinhMuonTra(tv, ngay, choice == 7);
+        ManHinhMuonTra(gd, tv, ngay, choice == 7);
     }
     else if (choice == 8)
     {
         int ma;
-        if (NhapSo("Ma the", ma, 1, SO_NGUYEN_LON_NHAT))
+        if (NhapSo(gd, "Ma the", ma, 1, INT_MAX))
         {
             LietKeSachDangMuon(tv, ma, out);
-            HienThiPhanTrang(out.str());
+            HienThiPhanTrang(gd, out.str());
         }
     }
     else if (choice == 9)
     {
         InDocGiaQuaHan(tv, ngay, out);
-        HienThiPhanTrang(out.str());
+        HienThiPhanTrang(gd, out.str());
     }
     else if (choice == 10)
     {
         InTop10SachDuocMuonNhieuNhat(tv, out);
-        HienThiPhanTrang(out.str());
+        HienThiPhanTrang(gd, out.str());
     }
 }
