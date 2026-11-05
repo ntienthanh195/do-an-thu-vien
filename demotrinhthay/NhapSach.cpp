@@ -1,15 +1,16 @@
 #include "00_KhaiBaoChung.h"
 
-// [THAI] Phan code Thai cung cap o commit 5c03ecf; giu logic hien co.
+// [THAI] Phan code Thai cung cap o commit 5c03ecf; cac dieu chinh demo co nhan ben duoi.
 bool HopLeTenSach(const string &s){
-    if(s.empty() || s.size() > 150) return false;
+    // [DEMO - CODEX] Ho tro ten tieng Viet va C++ trong du lieu mau.
+    if(!KiemTraVanBanHeThong(s) || s.size() > 150) return false;
     if(LaChuoiRong(s)) return false;
     bool CoKyTuHopLe = false;
     for(char c : s){
-        if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9')){
+        if(static_cast<unsigned char>(c) >= 128 || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9')){
             CoKyTuHopLe = true;
         }      
-        else if(c == ' ' || c == ':' || c == '-' || c == ',' || c == '.' || 
+        else if(c == '+' || c == ' ' || c == ':' || c == '-' || c == ',' || c == '.' ||
                 c == '(' || c == ')' || c == '\'' || c == '"'){}
         else return false;
     }
@@ -41,7 +42,7 @@ bool HopLeDauSach(const DauSach &d, string &loi){
         return false;
     }
     // NAM XUAT BAN 
-    if(d.namXuatBan <= 0 || d.namXuatBan > 2026){
+    if(!LaNamHopLe(d.namXuatBan)){
         loi = "Nam xuat ban phai tu 1 den nam hien tai!\n";
         return false;
     }
@@ -59,8 +60,9 @@ bool HopLeDauSach(const DauSach &d, string &loi){
     return true;
 }
 
+// [DEMO - CODEX] Dieu chinh tu ham cua Thai de ghep voi du lieu demo.
 const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn){
-    string isbn_chuanhoa = ChuanHoaISBN(isbn);
+    string isbn_chuanhoa = ChuanHoaChuoiSach(isbn);
     if(isbn_chuanhoa.size() == 0) return nullptr;
     for(int i = 0; i < ds.soLuong; ++i){
         if(ds.ds[i] != nullptr && ds.ds[i]->ISBN == isbn_chuanhoa) return ds.ds[i];
@@ -68,6 +70,7 @@ const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn)
     return nullptr;
 }
 
+// [DEMO - CODEX] Dieu chinh tu ham cua Thai de ghep voi du lieu demo.
 int TimViTriChenTheoTen(const DanhSachDauSach& ds, const DauSach& d) {
     int l = 0;
     int r = ds.soLuong;                     
@@ -75,7 +78,8 @@ int TimViTriChenTheoTen(const DanhSachDauSach& ds, const DauSach& d) {
         int m = (l + r) / 2;
         // loi thu vien
         if (ds.ds[m] == nullptr) return -1;
-        if (SoSanhChuoi(ds.ds[m]->tenSach, d.tenSach) < 0)
+        int ten = SoSanhChuoi(ds.ds[m]->tenSach, d.tenSach);
+        if (ten < 0 || (ten == 0 && ds.ds[m]->ISBN < ChuanHoaChuoiSach(d.ISBN)))
             l = m + 1;                      // ds[m] < d  -> chen SAU m
         else
             r = m;                          // ds[m] >= d -> chen TAI hoac TRUOC m
@@ -83,6 +87,7 @@ int TimViTriChenTheoTen(const DanhSachDauSach& ds, const DauSach& d) {
     return l;                               
 }
 
+// [DEMO - CODEX] Dieu chinh tu ham cua Thai de ghep voi du lieu demo.
 bool ThemDauSach(ThuVien &tv, const DauSach &d, string &loi){
     // that bai
     if(tv.dsDauSach.soLuong >= MAX_DAU_SACH){
@@ -104,12 +109,160 @@ bool ThemDauSach(ThuVien &tv, const DauSach &d, string &loi){
         return false;
     }
     // thanh cong (chen dau sach vao vi tri thu i)
+    DauSach duLieu = d;
+    duLieu.ISBN = ChuanHoaChuoiSach(d.ISBN);
+    DauSach *moi = new DauSach(duLieu);
     for(int i = tv.dsDauSach.soLuong; i > vitriChen; --i){
         tv.dsDauSach.ds[i] = tv.dsDauSach.ds[i-1];
     }
-    // co can chuan hoa dau / chu hoa / thuong cho ten sach , tac gia, the loai
-    tv.dsDauSach.ds[vitriChen] = new DauSach(d);
+    // [DEMO - CODEX] ISBN duoc chuan hoa truoc khi chen.
+    tv.dsDauSach.ds[vitriChen] = moi;
     ++tv.dsDauSach.soLuong;
     loi.clear();
     return true;
+}
+
+// [DEMO - CODEX] Phan bo sung cho ban trinh thay.
+DauSach *TimDauSachTheoISBN(DanhSachDauSach &ds, const string &isbn)
+{
+    string chuan = ChuanHoaChuoiSach(isbn);
+    for (int i = 0; i < ds.soLuong; i++)
+    {
+        if (ds.ds[i]->ISBN == chuan)
+        {
+            return ds.ds[i];
+        }
+    }
+    return nullptr;
+}
+void HuyDanhSachDauSach(DanhSachDauSach &ds)
+{
+    for (int i = 0; i < ds.soLuong; i++)
+    {
+        if (ds.ds[i] != nullptr)
+        {
+            HuyDanhMucCuonSach(ds.ds[i]->dms);
+        }
+        delete ds.ds[i];
+        ds.ds[i] = nullptr;
+    }
+    ds.soLuong = 0;
+}
+void ManHinhNhapDauSach(ThuVien &tv)
+{
+    const char *labels[] = {"Them dau sach moi", "Them cuon cho dau sach da co"};
+    int choice = ChonMenu("NHAP SACH", labels, 2);
+    if (choice < 1)
+    {
+        return;
+    }
+    string isbn, loi;
+    if (DangDungGiaoDienHeThong())
+    {
+        if (choice == 1)
+        {
+            const char *fields[] = {"ISBN",    "Ten sach",     "So trang",
+                                    "Tac gia", "Nam xuat ban", "The loai"};
+            string values[6];
+            values[4] = ChuoiSo(HomNay().nam);
+            while (NhapBieuMau("THEM DAU SACH", fields, values, 6))
+            {
+                DauSach d;
+                d.ISBN = values[0];
+                d.tenSach = values[1];
+                d.tacGia = values[3];
+                d.theLoai = values[5];
+                if (!DocSoNguyen(values[2], d.soTrang, 1, 2147483647))
+                {
+                    ThongBao("So trang phai la so nguyen duong.");
+                    continue;
+                }
+                if (!DocSoNguyen(values[4], d.namXuatBan, 1, HomNay().nam))
+                {
+                    ThongBao("Nam xuat ban phai tu 1 den nam hien tai.");
+                    continue;
+                }
+                if (!ThemDauSach(tv, d, loi))
+                {
+                    ThongBao("LOI: " + loi);
+                    continue;
+                }
+                LuuSauThayDoi(tv);
+                ThongBao("Da them dau sach " + ChuanHoaChuoiSach(d.ISBN) +
+                         ". Chon Them cuon de nhap cac ban sach.");
+                return;
+            }
+        }
+        else
+        {
+            const char *fields[] = {"ISBN dau sach", "Vi tri cuon sach"};
+            string values[2];
+            while (NhapBieuMau("THEM CUON SACH", fields, values, 2))
+            {
+                string ma;
+                if (!ThemCuonSach(tv, values[0], values[1], ma, loi))
+                {
+                    ThongBao("LOI: " + loi);
+                    continue;
+                }
+                LuuSauThayDoi(tv);
+                ThongBao("Da cap ma cuon: " + ma);
+                return;
+            }
+        }
+        return;
+    }
+    if (choice == 1)
+    {
+        DauSach d;
+        if (!NhapDong("ISBN: ", d.ISBN) || !NhapDong("Ten sach: ", d.tenSach) ||
+            !NhapSo("So trang: ", d.soTrang, 1, 2147483647) || !NhapDong("Tac gia: ", d.tacGia) ||
+            !NhapSo("Nam xuat ban: ", d.namXuatBan, 1, HomNay().nam) ||
+            !NhapDong("The loai: ", d.theLoai))
+        {
+            return;
+        }
+        if (!ThemDauSach(tv, d, loi))
+        {
+            ThongBao(loi);
+            return;
+        }
+        LuuSauThayDoi(tv);
+        isbn = ChuanHoaChuoiSach(d.ISBN);
+        ThongBao("Da them dau sach. Nhap so cuon muon them; 0 de ket thuc.");
+    }
+    else
+    {
+        if (!NhapDong("ISBN dau sach: ", isbn))
+        {
+            return;
+        }
+        isbn = ChuanHoaChuoiSach(isbn);
+        if (!TimDauSachTheoISBN(tv.dsDauSach, isbn))
+        {
+            ThongBao("Khong tim thay ISBN.");
+            return;
+        }
+    }
+    int n;
+    if (!NhapSo("So cuon can them: ", n, 0, MAX_BAN_GHI))
+    {
+        return;
+    }
+    for (int i = 0; i < n; ++i)
+    {
+        string viTri, ma;
+        if (!NhapDong("Vi tri cuon " + ChuoiSo(i + 1) + ": ", viTri))
+        {
+            ThongBao("Da dung nhap. Dau sach va nhung cuon da them duoc giu lai.");
+            return;
+        }
+        if (!ThemCuonSach(tv, isbn, viTri, ma, loi))
+        {
+            ThongBao(loi);
+            return;
+        }
+        LuuSauThayDoi(tv);
+        ThongBao("Da cap ma cuon: " + ma);
+    }
 }
