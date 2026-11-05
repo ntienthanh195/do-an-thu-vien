@@ -152,13 +152,18 @@ bool NgayRong(const NgayThang &d)
 {
     return d.ngay == 0 && d.thang == 0 && d.nam == 0;
 }
-bool NgayHopLe(const NgayThang &d)
-{
-    static const int ngayThang[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    if (d.nam < 1 || d.nam > 9999 || d.thang < 1 || d.thang > 12)
-        return false;
-    int max = ngayThang[d.thang - 1] + (d.thang == 2 && NamNhuan(d.nam) ? 1 : 0);
-    return d.ngay >= 1 && d.ngay <= max;
+bool NgayHopLe(const NgayThang &d) {
+    if (d.nam <= 0) return false;
+    if (d.thang < 1 || d.thang > 12) return false;
+    if (d.ngay < 1) return false;
+    // Nam khong nhuan
+    int daysInMonth[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    // Nam nhuan thang 2 co 29 ngay
+    if (NamNhuan(d.nam)) {
+        daysInMonth[2] = 29;
+    }
+    if (d.ngay > daysInMonth[d.thang]) return false;
+    return true;
 }
 bool DocNgay(const string &s, NgayThang &d)
 {
