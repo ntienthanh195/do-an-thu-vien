@@ -1,5 +1,29 @@
 #include "00_KhaiBaoChung.h"
+namespace{
+    // them phuc vu chuc nang i
+    int TimSoNgayQuaHanLonNhat(const MuonTra *head, const NgayThang &now) {
+    int maxQuaHan = 0; // Neu khong co qua han, tra ve 0
+    const MuonTra *p = head;
 
+    while (p != nullptr) {
+        // Chi xet cac sach dang muon
+        if (p->trangThai == MUON_DANG_MUON) {
+            int khoangCach = KhoangCachNgay(p->ngayMuon, now);
+            
+            // Qua han khi khoang cach > 7 ngay
+            if (khoangCach > 7) {
+                int soNgayQuaHan = khoangCach - 7;
+                if (soNgayQuaHan > maxQuaHan) {
+                    maxQuaHan = soNgayQuaHan;
+                }
+            }
+        }
+        p = p->next;
+    }
+    return maxQuaHan;
+    }
+    
+}
 int DemLichSu(const MuonTra *p)
 {
     int n = 0;

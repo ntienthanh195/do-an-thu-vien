@@ -1,14 +1,16 @@
 #include "00_KhaiBaoChung.h"
-
+// da sua 
 bool KhoangTrang(unsigned char c){
     return c == ' ' || c == '\t' || c == '\r' || c == '\n';
 }
+// da sua 
 bool LaChuoiRong(const string &s){
     for(const char c : s){
         if(!KhoangTrang(c)) return false;
     }
     return true;
 }
+// da sua 
 string ChuanHoaChuoi(const string &s){
     string kq = "";
     bool gap = false; // gap ky tu khac khoang trang
@@ -33,19 +35,7 @@ string ChuanHoaChuoi(const string &s){
     }
     return kq;
 }
-// string KhoaSoSanh(const string &s)
-// {
-//     string r = ChuanHoaChuoi(s);
-//     for (char &c : r)
-//         if (c >= 'A' && c <= 'Z')
-//             c = static_cast<char>(c - 'A' + 'a');
-//     return r;
-// }
-// int SoSanhChuoi(const string &a, const string &b)
-// {
-//     const string x = KhoaSoSanh(a), y = KhoaSoSanh(b);
-//     return x < y ? -1 : (x > y ? 1 : 0); // a < b : -1, a > b : 1, a == b : 0
-// }
+// da sua 
 int SoSanhChuoi(const string &a, const string &b){
     // a < b : -1, a > b : 1; a = b : 0
     string x = ChuanHoaChuoi(a);
@@ -62,6 +52,7 @@ int SoSanhChuoi(const string &a, const string &b){
     }
     return x.size() < y.size() ? -1 : (x.size() > y.size() ? 1 : 0);
 }
+// da sua
 bool ChuaChuoi(const string &s, const string &part){
     if(part.size() == 0) return true;
     if(s.size() < part.size()) return false;
@@ -82,10 +73,7 @@ bool ChuaChuoi(const string &s, const string &part){
     }
     return false;
 }
-// bool HopLeVanBan(const string &s)
-// {
-//     return KiemTraVanBanHeThong(s);
-// }
+// da sua
 bool HopLeVanBan(const string &s)
 {   
     const size_t MAX_VAN_BAN = 100;
@@ -102,6 +90,7 @@ bool HopLeVanBan(const string &s)
     }
     return true;
 }
+// da sua
 bool DocSoNguyen(const string &s, int &value, int lo, int hi)
 {
     if (s.empty() || lo < 0 || hi < lo)
@@ -144,6 +133,7 @@ bool TachTruong(const string &line, string *out, int count)
     out[k] = value;
     return true;
 }
+// da sua
 bool NamNhuan(int y)
 {
     return y % 400 == 0 || (y % 4 == 0 && y % 100 != 0);
@@ -152,6 +142,7 @@ bool NgayRong(const NgayThang &d)
 {
     return d.ngay == 0 && d.thang == 0 && d.nam == 0;
 }
+// da sua
 bool NgayHopLe(const NgayThang &d) {
     if (d.nam <= 0) return false;
     if (d.thang < 1 || d.thang > 12) return false;
@@ -203,15 +194,29 @@ string ChuoiNgay(const NgayThang &d)
         nam = "0" + nam;
     return ngay + "/" + thang + "/" + nam;
 }
+// da sua 
 int SoThuTuNgay(const NgayThang &d)
 {
-    if (!NgayHopLe(d))
-        throw LoiThuVien("Khong tinh ngay khong hop le / 0/0/0");
-    static const int truocThang[] = {0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334};
-    int y = d.nam - 1;
-    return 365 * y + y / 4 - y / 100 + y / 400 + truocThang[d.thang - 1] + d.ngay +
-           (d.thang > 2 && NamNhuan(d.nam) ? 1 : 0);
+    int daysInMonth[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    if (NamNhuan(d.nam)) {
+        daysInMonth[2] = 29;
+    }
+
+    // Tinh tong so ngay cua cac nam truoc do
+    int n = d.nam - 1;
+    int totalDays = n * 365 + n / 4 - n / 100 + n / 400;
+
+    // Tinh tong so ngay cua cac thang truoc do trong nam hien tai
+    for (int i = 1; i < d.thang; ++i) {
+        totalDays += daysInMonth[i];
+    }
+
+    // Cong them ngay hien tai
+    totalDays += d.ngay;
+
+    return totalDays;
 }
+// da sua
 int KhoangCachNgay(const NgayThang &a, const NgayThang &b)
 {
     return SoThuTuNgay(b) - SoThuTuNgay(a);
@@ -222,9 +227,13 @@ NgayThang HomNay()
     GetLocalTime(&now);
     return NgayThang(now.wDay, now.wMonth, now.wYear);
 }
-bool QuaHan7Ngay(const NgayThang &a, const NgayThang &b)
-{
-    return NgayHopLe(a) && NgayHopLe(b) && KhoangCachNgay(a, b) > 7;
+// da sua
+bool QuaHan7Ngay(const NgayThang &ngayMuon, const NgayThang &now) {
+    // Neu ngay hien tai nho hon ngay muon (du lieu loi), coi nhu chua qua han
+    if (KhoangCachNgay(ngayMuon, now) < 0) return false;
+    
+    // Qua han khi khoang cach > 7 ngay
+    return KhoangCachNgay(ngayMuon, now) > 7;
 }
 bool HopLePhai(const string &s)
 {
