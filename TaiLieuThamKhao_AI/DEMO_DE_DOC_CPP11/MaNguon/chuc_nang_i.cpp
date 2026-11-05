@@ -1,6 +1,5 @@
 #include "00_KhaiBaoChung.h"
 
-namespace {
 // Helper: Kiem tra nam nhuan
 static bool LaNamNhuan(int nam) {
     return (nam % 400 == 0) || (nam % 4 == 0 && nam % 100 != 0);
@@ -15,7 +14,6 @@ static int SoNgayTrongThang(int thang, int nam) {
         return LaNamNhuan(nam) ? 29 : 28;
     }
     return 31;
-}
 }
 
 // Kiem tra tinh hop le cua mot ngay thang
