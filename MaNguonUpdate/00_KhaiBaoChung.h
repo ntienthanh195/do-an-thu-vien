@@ -1,10 +1,11 @@
 #pragma once
 
+#include <iosfwd>
 #include <string>
 using namespace std;
 
 /*HẰNG SỐ*/
-// Năm hiện tại 
+// Năm hiện tại
 const int NAM_HIEN_TAI = 2026;
 // Số đầu sách tối đa. Đề chưa quy định, đây là đề xuất của nhóm.
 const int MAX_DAU_SACH = 10000;
@@ -181,3 +182,15 @@ long long KhoangCachNgay(NgayThang ngayt1, NgayThang ngayt2);
 bool HieuChinhDocGia(CayDocGia &caydocgia, int mathe, string Ho, string Ten, string Phai, int trangthaiThe);
 int SinhMaTheTiepTheo(int &maTheDaCap);
 void XoaDocGia(CayDocGia &caydocgia, int mathe);
+
+// [THAI] Cac ham tu chuc nang c, e va phan ho tro j (be7fa70).
+bool KhoangTrang(unsigned char c);
+void ManHinhNhapDauSach(ThuVien &tv);
+const CuonSach *TimCuonSachTrongDauSach(const DauSach &d, const string &ma);
+const CuonSach *TimCuonSachToanCuc(const ThuVien &tv, const string &ma, const DauSach **owner);
+bool SinhMaSachTuDong(const ThuVien &tv, const DauSach &d, string &ma, string &loi);
+bool ChuaChuoi(const string &s, const string &part);
+void TimDauSachTheoTen(const ThuVien &tv, const string &ten, ostream &out);
+int DemCuonSach(const CuonSach *head);
+int DemDocGia(const CayDocGia &tree);
+int LayDanhSachDocGia(const CayDocGia &tree, const NutDocGia **out, int capacity);

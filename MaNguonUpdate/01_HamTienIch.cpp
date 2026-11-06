@@ -1,25 +1,19 @@
 #include "00_KhaiBaoChung.h"
 #include <cctype>
 
-// [THAI] Tien ich da co trong bo MaNguon cua nhom (commit 5c03ecf).
-// [THAI] Phan code Thai cung cap; dung chung cho nhom.
-bool LaChuoiRong(const string& s){
-    bool laKhoangTrang[256] = { false };
-        laKhoangTrang[9]  = true; // '\t' : Tab ngang
-        laKhoangTrang[10] = true; // '\n' : Xuống dòng (Line feed)
-        laKhoangTrang[11] = true; // '\v' : Tab dọc
-        laKhoangTrang[12] = true; // '\f' : Sang trang (Form feed)
-        laKhoangTrang[13] = true; // '\r' : Về đầu dòng (Carriage return)
-        laKhoangTrang[32] = true; // ' '  : Dấu cách (Space)
-    for(size_t i = 0; i < s.size(); ++i){
-        if(!laKhoangTrang[static_cast<unsigned char>(s[i])]){
-            return false;
-        }
+// [THAI] Chuyen tu be7fa70, chuc nang c/e.
+bool KhoangTrang(unsigned char c){
+    return c == ' ' || c == '\t' || c == '\r' || c == '\n';
+}
+
+bool LaChuoiRong(const string &s){
+    for(const char c : s){
+        if(!KhoangTrang(c)) return false;
     }
     return true;
 }
 
-// cần trao đổi thêm lại với thầy năm hợp lệ của cuốn sách bắt đầu và kết thúc 
+// cần trao đổi thêm lại với thầy năm hợp lệ của cuốn sách bắt đầu và kết thúc
 // [THAI] Phan code Thai cung cap; dung chung cho nhom.
 bool LaNamHopLe(int nam){
     return nam >= 1 && nam <= NAM_HIEN_TAI;
@@ -60,13 +54,12 @@ bool HopLeTrangThaiThe(int trangThai){
     return trangThai == THE_HOAT_DONG || trangThai == THE_BI_KHOA;
 }
 
-// Tien ich sach tu ban Thai; ten rieng giu nguyen hanh vi cua ChuanHoaChuoi cu.
-// [THAI] Phan code Thai cung cap; dung chung cho nhom.
+// [THAI] Chuyen tu be7fa70, chuc nang c/e.
 string ChuanHoaChuoiSach(const string &s){
     string kq = "";
     bool gap = false; // gap ky tu khac khoang trang
     for(const char c : s){
-        if(c  != ' ' && c  != '\n' && c  != '\t' && c  != '\r'){
+        if(!KhoangTrang(c)){
             if(gap == false){
                 gap = true;
             }
@@ -87,7 +80,6 @@ string ChuanHoaChuoiSach(const string &s){
     return kq;
 }
 
-// [THAI] Phan code Thai cung cap; dung chung cho nhom.
 int SoSanhChuoi(const string &a, const string &b){
     // a < b : -1, a > b : 1; a = b : 0
     string x = ChuanHoaChuoiSach(a);
@@ -105,24 +97,28 @@ int SoSanhChuoi(const string &a, const string &b){
     return x.size() < y.size() ? -1 : (x.size() > y.size() ? 1 : 0);
 }
 
-// [THAI] Phan code Thai cung cap; dung chung cho nhom.
 bool HopLeVanBan(const string &s)
-{   
-    string t = ChuanHoaChuoiSach(s);
-    if(t.empty()) return false;
-    for(const char& c : t){
-        if((c < 'a' || c > 'z') && (c < 'A' || c > 'Z')){
-            if(c != ' ') return false;
-        }
+{
+    const size_t MAX_VAN_BAN = 100;
+    if(s.size() > MAX_VAN_BAN){
+        return false;
+    }
+    if(LaChuoiRong(s)) return false;
+    for(const unsigned char c : s){
+        if (c == '|')  return false;   // delimiter file
+        else if (c == '\\') return false;   // escape char
+        else if (c < 32)    return false;   // control char (tab, newline...)
+        else if (c == 127)  return false;   // DEL
+        else if (c >= 128)  return false;   // khong phai ASCII in duoc
     }
     return true;
 }
 
-// [THAI] Phan code Thai cung cap; dung chung cho nhom.
 string ChuanHoaISBN(const string &isbn){
     string res = "";
     for(char c : isbn){
-        if(c >= '0' && c <= '9'){
+        // ISBN0-13 thuong co dang vi du : 978-3-16-148410-0 hoac 978 3 16 148410 0
+        if( c != '-' && !KhoangTrang(c)){
             res += c;
         }
     }
@@ -195,7 +191,7 @@ long long Doirangay(NgayThang sngay)
 			soNgay+= 365;
 		}
 	}
-	
+
 
 	for(int i=1;i<sngay.thang;i++)
 	{

@@ -2,6 +2,8 @@
 
 **MaNguon vẫn giữ nguyên 9 file cũ và là nơi làm việc hiện tại.** Thư mục này đặt bên cạnh để đối chiếu, chưa thay thế bộ cũ. Chỉ chuyển sau khi cả nhóm thống nhất; không biên dịch gộp hai thư mục. Bộ này đã nhận phần code sách Thái đẩy ở commit `5c03ecf`, theo yêu cầu chuyển code của Thành. Không tự đồng bộ với MaNguon hoặc thư mục gốc của Thái.
 
+**Cập nhật 06/11/2026.** Đã ghép phần Thái gửi trong `chuc_nang_c.cpp`, `chuc_nang_e.cpp`, `chuc_nang_j.cpp` tại commit `be7fa70`. Mục c có nghiệp vụ đầu sách ở `NhapSach.cpp`, tra cuốn/sinh mã ở `CuonSach.cpp` và màn hình nhập Windows ở `GiaoDien.cpp`. Mục e nằm ở `TimSach.cpp`. Mục j có hàm đếm cuốn ở `CuonSach.cpp` và các hàm duyệt/thu thập độc giả ở `Top10Sach.cpp`; bản gửi chưa có hàm xếp hạng lượt mượn. Các tiện ích chung đặt ở `01_HamTienIch.cpp`; dùng một bản `SoSanhChuoi` của c/e và giữ tên `ChuanHoaChuoiSach` cho phần sách để phân biệt với hàm chuẩn hóa của độc giả. Mô tả theo commit cũ bên dưới là lịch sử bàn giao.
+
 - **Thành:** [a — Quản lý độc giả](QuanLyDocGia.cpp), [f — Mượn sách](MuonSach.cpp), [g — Trả sách](TraSach.cpp).
 - **Thái:** [c — Nhập sách](NhapSach.cpp), [e — Tìm sách](TimSach.cpp), [i — Độc giả quá hạn](DocGiaQuaHan.cpp), [j — Top 10](Top10Sach.cpp).
 - **Tấn:** [b — In độc giả](InDanhSachDocGia.cpp), [d — In đầu sách theo thể loại](InDauSachTheoTheLoai.cpp), [h — Sách đang mượn](SachDangMuon.cpp), [Menu](Menu.cpp).
