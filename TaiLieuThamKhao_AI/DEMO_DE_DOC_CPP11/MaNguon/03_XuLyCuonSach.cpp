@@ -68,6 +68,7 @@ const CuonSach *TimCuonSachToanCuc(const ThuVien &tv, const string &ma, const Da
     }
     return nullptr;
 }
+
 CuonSach *TimCuonSachToanCuc(ThuVien &tv, const string &ma, DauSach **owner)
 {
     // const_cast an toan o wrapper nay: doi tuong dau vao thuc su la ThuVien mutable.
@@ -144,6 +145,7 @@ bool SinhMaSachTuDong(const ThuVien &tv, const DauSach &d, string &ma, string &l
     }
     return true;
 }
+
 bool ThemCuonSach(ThuVien &tv, const string &isbn, const string &viTri, string &ma, string &loi)
 {
     try
