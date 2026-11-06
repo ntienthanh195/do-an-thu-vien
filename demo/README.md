@@ -1,12 +1,18 @@
 # Demo đồ án Thư viện
 
-Trên Windows, cài MinGW-w64 có lệnh `g++` trong PATH, rồi nhấp đúp **ChayDemo.cmd**. Lần đầu chương trình đọc 3 đầu sách, 6 cuốn và 3 độc giả từ [demo/DuLieu/DuLieuMau.txt](DuLieu/DuLieuMau.txt). Khi thao tác thành công, bản demo lưu vào `DuLieu/runtime/ThuVien.txt`. Lần mở sau sẽ tiếp tục từ đó.
+Trên Windows, cài MinGW-w64 có lệnh `g++` trong PATH, rồi nhấp đúp **ChayDemo.cmd**. Lần đầu chương trình đọc 20 đầu sách, 60 cuốn và 20 độc giả từ [demo/DuLieu/DuLieuMau.txt](DuLieu/DuLieuMau.txt). Khi thao tác thành công, bản demo lưu vào `DuLieu/runtime/ThuVien.txt`. Lần mở sau sẽ tiếp tục từ đó.
 
 Để xem cả 18 file trong Dev-C++ 5.11, tải toàn bộ repo, mở [demo.dev](../demo.dev) ở thư mục gốc rồi nhấn **F11**. Project dùng GCC trong `C:/msys64/ucrt64/bin`. Nếu máy cài MinGW-w64 ở nơi khác, chỉnh `CXXDIR` trong [demo.mk](../demo.mk) đến thư mục chứa `g++.exe`.
 
 ## Dữ liệu để trình thầy
 
-Thư mục `demo/DuLieu` đi kèm mã nguồn, chứa bản sao dữ liệu mẫu của nhóm: 3 đầu sách, 6 cuốn, 3 độc giả và 5 lượt mượn (3 đã trả, 2 đang mượn). Có 1 thẻ bị khóa để minh họa kiểm tra điều kiện mượn. Hai lượt đang mượn có ngày 03/10/2026 và 04/10/2026; kết quả quá hạn phụ thuộc ngày chạy chương trình.
+Thư mục `demo/DuLieu` chứa dữ liệu giả lập để trình bày, đã mở rộng bằng Codex từ mẫu ban đầu của nhóm. Toàn bộ nội dung `DuLieuMau.txt` dùng chữ không dấu (ASCII) để xem trong Dev-C++ 5.11: **20 đầu sách, 60 cuốn, 20 độc giả và 50 lượt mượn** (38 đã trả, 10 đang mượn, 2 báo mất). Có 7 thể loại, 3 thẻ bị khóa và 1 độc giả đang giữ đủ 3 cuốn. Các tên và tác giả chỉ là dữ liệu minh họa.
+
+Trong cây project Dev-C++, bấm `DuLieuMau.txt` cạnh 18 file mã nguồn để xem dữ liệu. Dòng đầu là mốc mã thẻ đã cấp (40), dòng thứ hai là số đầu sách. Mỗi đầu sách ghi `ISBN|ten|soTrang|tacGia|namXuatBan|theLoai|soCuon`, tiếp theo là các dòng `maCuon|trangThai|viTri`. Sau toàn bộ sách là số độc giả; mỗi độc giả ghi `maThe|ho|ten|phai|trangThaiThe|soLuot`, tiếp theo là các dòng `maCuon|ngayMuon|ngayTra|trangThaiMuon`.
+
+Mã trạng thái cuốn: 0 còn cho mượn, 1 đang mượn, 2 thanh lý. Trạng thái thẻ: 0 khóa, 1 hoạt động. Trạng thái lượt mượn: 0 đang mượn, 1 đã trả, 2 báo mất; `0/0/0` là ngày trả chưa có. Đây là ba nhóm mã riêng biệt.
+
+Ngày mẫu cố định đến 05/11/2026; kết quả quá hạn phụ thuộc ngày chạy. Khi trình ngày 07/11/2026, thẻ 7 và 12 quá hạn; thẻ 21 đang giữ 3 cuốn còn trong hạn; thẻ 18, 27, 28 bị khóa. Cuốn `S002` còn trên kệ để thử mượn. Mốc mã 40 khiến thẻ thêm tiếp theo là 41.
 
 Tệp mẫu được giữ riêng; các thay đổi khi demo lưu vào `DuLieu/runtime/ThuVien.txt` ở thư mục gốc repo. Nếu đã chạy trước đó, chương trình tiếp tục phiên đã lưu thay vì nạp lại mẫu. Để trình bày lại từ mẫu, đóng chương trình, sao lưu rồi đổi tên tệp phiên này trước khi chạy lại.
 

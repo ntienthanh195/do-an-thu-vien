@@ -4,7 +4,7 @@ Name=demo
 Type=1
 Ver=2
 IsCpp=1
-UnitCount=18
+UnitCount=19
 ExeOutput=
 ObjectOutput=
 OverrideOutput=1
@@ -193,6 +193,16 @@ CompileCpp=1
 Folder=
 Compile=1
 Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit19]
+FileName=demo\DuLieu\DuLieuMau.txt
+CompileCpp=0
+Folder=
+Compile=0
+Link=0
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=

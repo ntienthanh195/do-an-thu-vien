@@ -118,8 +118,6 @@ struct DocGia
 
 struct NutDocGia
 {
-    explicit NutDocGia(const DocGia &docGia) : thongTin(docGia) {}
-
     DocGia thongTin;                       // thong tin doc gia
     NutDocGia* left = nullptr;             // cay con trai
     NutDocGia* right = nullptr;            // cay con phai
@@ -140,7 +138,8 @@ struct ThuVien
 {
     DanhSachDauSach dsDauSach;
     CayDocGia cayDocGia;
-    int maTheLonNhatDaCap = 0; // metadata v1: khong tai su dung ma da xoa
+    int maTheLonNhatDaCap = 0;
+
     // ThuVien so huu cac node: khong sao chep nguyen kho bang phep gan.
     ThuVien() = default;
     ~ThuVien();
