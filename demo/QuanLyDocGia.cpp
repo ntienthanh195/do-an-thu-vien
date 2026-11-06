@@ -135,7 +135,17 @@ static NutDocGia* ThemDocGiaAVL(NutDocGia* root, const DocGia &docgiamoi)
 {
     if (root == nullptr)
     {
-        return new NutDocGia(docgiamoi);
+        NutDocGia* p = new NutDocGia;
+        try
+        {
+            p->thongTin = docgiamoi;
+        }
+        catch (...)
+        {
+            delete p;
+            throw;
+        }
+        return p;
     }
 
     if (docgiamoi.maThe < root->thongTin.maThe)

@@ -81,26 +81,6 @@ bool DocTruongFile(ifstream &file, string *truong, int soTruong, int &soDong, st
     return true;
 }
 
-struct CuonKiemTra
-{
-    const CuonSach *cuon = nullptr;
-    const DauSach *dauSach = nullptr;
-};
-struct LuotKiemTra
-{
-    int viTriCuon = 0;
-    int maThe = 0;
-    int ngayMuon = 0;
-    int ngayKetThuc = 0;
-    int trangThai; // Gan tu luot muon truoc khi sap xep.
-};
-struct MocKiemTra
-{
-    int maThe = 0;
-    int ngay = 0;
-    int loai = 0; // 0: tra tu ngay truoc; 1: muon-tra cung ngay; 2: muon giu sang ngay khac
-};
-
 bool ISBNKiemTraTruoc(const DauSach *a, const DauSach *b)
 {
     return a->ISBN < b->ISBN;
@@ -169,11 +149,11 @@ void SapXepISBNKiemTra(const DauSach **a, int soLuong)
     }
 }
 
-bool MaCuonKiemTraTruoc(CuonKiemTra a, CuonKiemTra b)
+bool MaCuonKiemTraTruoc(const CuonSach *a, const CuonSach *b)
 {
-    return a.cuon->maSach < b.cuon->maSach;
+    return a->maSach < b->maSach;
 }
-void TronMaCuonKiemTra(CuonKiemTra *a, CuonKiemTra *tam, int trai, int giua, int phai)
+void TronMaCuonKiemTra(const CuonSach **a, const CuonSach **tam, int trai, int giua, int phai)
 {
     int i = trai, j = giua + 1, k = trai;
     while (i <= giua && j <= phai)
@@ -207,7 +187,7 @@ void TronMaCuonKiemTra(CuonKiemTra *a, CuonKiemTra *tam, int trai, int giua, int
         a[viTri] = tam[viTri];
     }
 }
-void ChiaMaCuonKiemTra(CuonKiemTra *a, CuonKiemTra *tam, int trai, int phai)
+void ChiaMaCuonKiemTra(const CuonSach **a, const CuonSach **tam, int trai, int phai)
 {
     if (trai >= phai)
     {
@@ -218,13 +198,13 @@ void ChiaMaCuonKiemTra(CuonKiemTra *a, CuonKiemTra *tam, int trai, int phai)
     ChiaMaCuonKiemTra(a, tam, giua + 1, phai);
     TronMaCuonKiemTra(a, tam, trai, giua, phai);
 }
-void SapXepMaCuonKiemTra(CuonKiemTra *a, int soLuong)
+void SapXepMaCuonKiemTra(const CuonSach **a, int soLuong)
 {
     if (soLuong < 2)
     {
         return;
     }
-    CuonKiemTra *tam = new CuonKiemTra[soLuong];
+    const CuonSach **tam = new const CuonSach *[soLuong];
     try
     {
         ChiaMaCuonKiemTra(a, tam, 0, soLuong - 1);
@@ -237,82 +217,90 @@ void SapXepMaCuonKiemTra(CuonKiemTra *a, int soLuong)
     }
 }
 
-bool LuotTheoCuonTruoc(LuotKiemTra a, LuotKiemTra b)
+// [DEMO - CODEX] Sap xep mang vi tri; du lieu nam trong cac mang truyen vao.
+bool LuotTheoCuonTruoc(int a, int b, const int *viTriCuon, const int *ngayMuon, const int *ngayKetThuc,
+    const int *trangThaiLuot, const int *maTheLuot)
 {
-
-    if (a.viTriCuon != b.viTriCuon)
+    if (viTriCuon[a] != viTriCuon[b])
     {
-        return a.viTriCuon < b.viTriCuon;
+        return viTriCuon[a] < viTriCuon[b];
     }
-    if (a.ngayMuon != b.ngayMuon)
+    if (ngayMuon[a] != ngayMuon[b])
     {
-        return a.ngayMuon < b.ngayMuon;
+        return ngayMuon[a] < ngayMuon[b];
     }
-    if (a.ngayKetThuc != b.ngayKetThuc)
+    if (ngayKetThuc[a] != ngayKetThuc[b])
     {
-        return a.ngayKetThuc < b.ngayKetThuc;
+        return ngayKetThuc[a] < ngayKetThuc[b];
     }
-    if (a.trangThai != b.trangThai)
+    if (trangThaiLuot[a] != trangThaiLuot[b])
     {
-        return a.trangThai < b.trangThai;
+        return trangThaiLuot[a] < trangThaiLuot[b];
     }
-    return a.maThe < b.maThe;
+    return maTheLuot[a] < maTheLuot[b];
 }
-void TronLuotTheoCuon(LuotKiemTra *a, LuotKiemTra *tam, int trai, int giua, int phai)
+void TronLuotTheoCuon(int *thuTu, int *tam, int trai, int giua, int phai, const int *viTriCuon,
+    const int *ngayMuon, const int *ngayKetThuc, const int *trangThaiLuot, const int *maTheLuot)
 {
     int i = trai, j = giua + 1, k = trai;
     while (i <= giua && j <= phai)
     {
-        if (LuotTheoCuonTruoc(a[j], a[i]))
+        if (LuotTheoCuonTruoc(thuTu[j], thuTu[i], viTriCuon, ngayMuon, ngayKetThuc, trangThaiLuot, maTheLuot))
         {
-            tam[k] = a[j];
+            tam[k] = thuTu[j];
             j++;
         }
         else
         {
-            tam[k] = a[i];
+            tam[k] = thuTu[i];
             i++;
         }
         k++;
     }
     while (i <= giua)
     {
-        tam[k] = a[i];
+        tam[k] = thuTu[i];
         i++;
         k++;
     }
     while (j <= phai)
     {
-        tam[k] = a[j];
+        tam[k] = thuTu[j];
         j++;
         k++;
     }
     for (int viTri = trai; viTri <= phai; viTri++)
     {
-        a[viTri] = tam[viTri];
+        thuTu[viTri] = tam[viTri];
     }
 }
-void ChiaLuotTheoCuon(LuotKiemTra *a, LuotKiemTra *tam, int trai, int phai)
+void ChiaLuotTheoCuon(int *thuTu, int *tam, int trai, int phai, const int *viTriCuon, const int *ngayMuon,
+    const int *ngayKetThuc, const int *trangThaiLuot, const int *maTheLuot)
 {
     if (trai >= phai)
     {
         return;
     }
     int giua = trai + (phai - trai) / 2;
-    ChiaLuotTheoCuon(a, tam, trai, giua);
-    ChiaLuotTheoCuon(a, tam, giua + 1, phai);
-    TronLuotTheoCuon(a, tam, trai, giua, phai);
+    ChiaLuotTheoCuon(thuTu, tam, trai, giua, viTriCuon, ngayMuon, ngayKetThuc, trangThaiLuot, maTheLuot);
+    ChiaLuotTheoCuon(thuTu, tam, giua + 1, phai, viTriCuon, ngayMuon, ngayKetThuc, trangThaiLuot, maTheLuot);
+    TronLuotTheoCuon(thuTu, tam, trai, giua, phai, viTriCuon, ngayMuon, ngayKetThuc, trangThaiLuot, maTheLuot);
 }
-void SapXepLuotTheoCuon(LuotKiemTra *a, int soLuong)
+void SapXepLuotTheoCuon(int *thuTu, int soLuong, const int *viTriCuon, const int *ngayMuon,
+    const int *ngayKetThuc, const int *trangThaiLuot, const int *maTheLuot)
 {
+    for (int i = 0; i < soLuong; i++)
+    {
+        thuTu[i] = i;
+    }
     if (soLuong < 2)
     {
         return;
     }
-    LuotKiemTra *tam = new LuotKiemTra[soLuong];
+    int *tam = new int[soLuong];
     try
     {
-        ChiaLuotTheoCuon(a, tam, 0, soLuong - 1);
+        ChiaLuotTheoCuon(thuTu, tam, 0, soLuong - 1, viTriCuon, ngayMuon, ngayKetThuc, trangThaiLuot, maTheLuot);
         delete[] tam;
     }
     catch (...)
@@ -322,74 +310,80 @@ void SapXepLuotTheoCuon(LuotKiemTra *a, int soLuong)
     }
 }
 
-bool MocTheoDocGiaTruoc(MocKiemTra a, MocKiemTra b)
+// [DEMO - CODEX] Sap xep mang vi tri; du lieu nam trong cac mang truyen vao.
+bool MocTheoDocGiaTruoc(int a, int b, const int *maTheMoc, const int *ngayMoc, const int *loaiMoc)
 {
-
-    if (a.maThe != b.maThe)
+    if (maTheMoc[a] != maTheMoc[b])
     {
-        return a.maThe < b.maThe;
+        return maTheMoc[a] < maTheMoc[b];
     }
-    if (a.ngay != b.ngay)
+    if (ngayMoc[a] != ngayMoc[b])
     {
-        return a.ngay < b.ngay;
+        return ngayMoc[a] < ngayMoc[b];
     }
-    return a.loai < b.loai;
+    return loaiMoc[a] < loaiMoc[b];
 }
-void TronMocTheoDocGia(MocKiemTra *a, MocKiemTra *tam, int trai, int giua, int phai)
+void TronMocTheoDocGia(int *thuTu, int *tam, int trai, int giua, int phai, const int *maTheMoc,
+    const int *ngayMoc, const int *loaiMoc)
 {
     int i = trai, j = giua + 1, k = trai;
     while (i <= giua && j <= phai)
     {
-        if (MocTheoDocGiaTruoc(a[j], a[i]))
+        if (MocTheoDocGiaTruoc(thuTu[j], thuTu[i], maTheMoc, ngayMoc, loaiMoc))
         {
-            tam[k] = a[j];
+            tam[k] = thuTu[j];
             j++;
         }
         else
         {
-            tam[k] = a[i];
+            tam[k] = thuTu[i];
             i++;
         }
         k++;
     }
     while (i <= giua)
     {
-        tam[k] = a[i];
+        tam[k] = thuTu[i];
         i++;
         k++;
     }
     while (j <= phai)
     {
-        tam[k] = a[j];
+        tam[k] = thuTu[j];
         j++;
         k++;
     }
     for (int viTri = trai; viTri <= phai; viTri++)
     {
-        a[viTri] = tam[viTri];
+        thuTu[viTri] = tam[viTri];
     }
 }
-void ChiaMocTheoDocGia(MocKiemTra *a, MocKiemTra *tam, int trai, int phai)
+void ChiaMocTheoDocGia(int *thuTu, int *tam, int trai, int phai, const int *maTheMoc, const int *ngayMoc,
+    const int *loaiMoc)
 {
     if (trai >= phai)
     {
         return;
     }
     int giua = trai + (phai - trai) / 2;
-    ChiaMocTheoDocGia(a, tam, trai, giua);
-    ChiaMocTheoDocGia(a, tam, giua + 1, phai);
-    TronMocTheoDocGia(a, tam, trai, giua, phai);
+    ChiaMocTheoDocGia(thuTu, tam, trai, giua, maTheMoc, ngayMoc, loaiMoc);
+    ChiaMocTheoDocGia(thuTu, tam, giua + 1, phai, maTheMoc, ngayMoc, loaiMoc);
+    TronMocTheoDocGia(thuTu, tam, trai, giua, phai, maTheMoc, ngayMoc, loaiMoc);
 }
-void SapXepMocTheoDocGia(MocKiemTra *a, int soLuong)
+void SapXepMocTheoDocGia(int *thuTu, int soLuong, const int *maTheMoc, const int *ngayMoc, const int *loaiMoc)
 {
+    for (int i = 0; i < soLuong; i++)
+    {
+        thuTu[i] = i;
+    }
     if (soLuong < 2)
     {
         return;
     }
-    MocKiemTra *tam = new MocKiemTra[soLuong];
+    int *tam = new int[soLuong];
     try
     {
-        ChiaMocTheoDocGia(a, tam, 0, soLuong - 1);
+        ChiaMocTheoDocGia(thuTu, tam, 0, soLuong - 1, maTheMoc, ngayMoc, loaiMoc);
         delete[] tam;
     }
     catch (...)
@@ -541,42 +535,17 @@ void SapXepMaTheFile(NutDocGia **a, int soLuong)
     }
 }
 
-// Bo mang tam chi giu dia chi va so lieu kiem tra, khong so huu cac nut cua thu vien.
-struct MangKiemTra
-{
-    const DauSach **dauSach = nullptr;
-    CuonKiemTra *cuon = nullptr;
-    const NutDocGia **docGia = nullptr;
-    LuotKiemTra *luot = nullptr;
-    MocKiemTra *moc = nullptr;
-    int *soDangMuon = nullptr;
-};
-void HuyMangKiemTra(MangKiemTra &tam)
-{
-    delete[] tam.dauSach;
-    delete[] tam.cuon;
-    delete[] tam.docGia;
-    delete[] tam.luot;
-    delete[] tam.moc;
-    delete[] tam.soDangMuon;
-    tam.dauSach = nullptr;
-    tam.cuon = nullptr;
-    tam.docGia = nullptr;
-    tam.luot = nullptr;
-    tam.moc = nullptr;
-    tam.soDangMuon = nullptr;
-}
-int TimCuonTrongMangKiemTra(const CuonKiemTra *ds, int soCuon, const string &ma)
+int TimCuonTrongMangKiemTra(const CuonSach *const *ds, int soCuon, const string &ma)
 {
     int trai = 0, phai = soCuon - 1;
     while (trai <= phai)
     {
         int giua = trai + (phai - trai) / 2;
-        if (ds[giua].cuon->maSach == ma)
+        if (ds[giua]->maSach == ma)
         {
             return giua;
         }
-        if (ds[giua].cuon->maSach < ma)
+        if (ds[giua]->maSach < ma)
         {
             trai = giua + 1;
         }
@@ -609,15 +578,26 @@ bool MaCuonDungChuSoHuu(const string &ma, const string &isbn)
     return CatChuoi(ma, 0, dauThang) == isbn &&
            DocSoNguyen(CatChuoi(ma, dauThang + 1, string::npos), so, 1, INT_MAX);
 }
-bool KiemTraCacDanhSach(const ThuVien &tv, MangKiemTra &tam, string &loi)
+bool KiemTraCacDanhSach(const ThuVien &tv, const DauSach **dauSach,
+                           const CuonSach **cuonSach,
+                           const NutDocGia **docGiaTrongCay,
+                           int *viTriCuon,
+                           int *ngayMuon,
+                           int *ngayKetThuc,
+                           int *trangThaiLuot,
+                           int *maTheLuot,
+                           int *thuTuLuot,
+                           int *maTheMoc,
+                           int *ngayMoc,
+                           int *loaiMoc,
+                           int *thuTuMoc,
+                           int *soDangMuon, string &loi)
 {
     int soDauSach = tv.dsDauSach.soLuong;
     if (soDauSach < 0 || soDauSach > MAX_DAU_SACH || tv.maTheLonNhatDaCap < 0)
     {
         return BaoLoiFile(loi, "So dau sach/moc ma the khong hop le.");
     }
-    tam.dauSach = new const DauSach *[soDauSach];
-    tam.cuon = new CuonKiemTra[MAX_BAN_GHI];
     int soCuon = 0;
     for (int i = 0; i < soDauSach; i++)
     {
@@ -638,7 +618,7 @@ bool KiemTraCacDanhSach(const ThuVien &tv, MangKiemTra &tam, string &loi)
         {
             return BaoLoiFile(loi, "Mang dau sach chua theo ten.");
         }
-        tam.dauSach[i] = sach;
+        dauSach[i] = sach;
         const CuonSach *p = sach->dms;
         while (p != nullptr)
         {
@@ -659,44 +639,39 @@ bool KiemTraCacDanhSach(const ThuVien &tv, MangKiemTra &tam, string &loi)
             {
                 return BaoLoiFile(loi, "Ma cuon khong thuoc dau sach.");
             }
-            tam.cuon[soCuon].cuon = p;
-            tam.cuon[soCuon].dauSach = sach;
+            cuonSach[soCuon] = p;
             soCuon++;
             p = p->next;
         }
     }
-    SapXepISBNKiemTra(tam.dauSach, soDauSach);
+    SapXepISBNKiemTra(dauSach, soDauSach);
     for (int i = 1; i < soDauSach; i++)
     {
-        if (tam.dauSach[i - 1]->ISBN == tam.dauSach[i]->ISBN)
+        if (dauSach[i - 1]->ISBN == dauSach[i]->ISBN)
         {
             return BaoLoiFile(loi, "Trung ISBN.");
         }
     }
-    SapXepMaCuonKiemTra(tam.cuon, soCuon);
+    SapXepMaCuonKiemTra(cuonSach, soCuon);
     for (int i = 1; i < soCuon; i++)
     {
-        if (tam.cuon[i - 1].cuon->maSach == tam.cuon[i].cuon->maSach)
+        if (cuonSach[i - 1]->maSach == cuonSach[i]->maSach)
         {
             return BaoLoiFile(loi, "Trung ma cuon.");
         }
     }
 
-    tam.docGia = new const NutDocGia *[MAX_DOC_GIA];
-    int soDocGia = LayDanhSachDocGia(tv.cayDocGia, tam.docGia, MAX_DOC_GIA);
-    tam.luot = new LuotKiemTra[MAX_BAN_GHI];
-    tam.moc = new MocKiemTra[MAX_BAN_GHI * 2];
-    tam.soDangMuon = new int[soCuon]{};
+    int soDocGia = LayDanhSachDocGia(tv.cayDocGia, docGiaTrongCay, MAX_DOC_GIA);
     int soLuot = 0, soMoc = 0;
     int homNay = SoThuTuNgay(HomNay());
     for (int i = 0; i < soDocGia; i++)
     {
-        const DocGia &docGia = tam.docGia[i]->thongTin;
+        const DocGia &docGia = docGiaTrongCay[i]->thongTin;
         if (docGia.maThe <= 0 || docGia.maThe > tv.maTheLonNhatDaCap)
         {
             return BaoLoiFile(loi, "Ma the vuot moc da cap.");
         }
-        if (i > 0 && tam.docGia[i - 1]->thongTin.maThe >= docGia.maThe)
+        if (i > 0 && docGiaTrongCay[i - 1]->thongTin.maThe >= docGia.maThe)
         {
             return BaoLoiFile(loi, "BST sai thu tu hoac trung ma the.");
         }
@@ -722,7 +697,7 @@ bool KiemTraCacDanhSach(const ThuVien &tv, MangKiemTra &tam, string &loi)
             {
                 return BaoLoiFile(loi, "Ma cuon trong lich su chua chuan hoa khoang trang");
             }
-            int cuon = TimCuonTrongMangKiemTra(tam.cuon, soCuon, p->maSach);
+            int cuon = TimCuonTrongMangKiemTra(cuonSach, soCuon, p->maSach);
             if (cuon < 0)
             {
                 return BaoLoiFile(loi, "Lich su tham chieu cuon khong ton tai.");
@@ -740,8 +715,8 @@ bool KiemTraCacDanhSach(const ThuVien &tv, MangKiemTra &tam, string &loi)
                     return BaoLoiFile(loi, "Dang muon phai co ngay tra rong.");
                 }
                 dangGiu++;
-                tam.soDangMuon[cuon]++;
-                if (dangGiu > 3 || tam.soDangMuon[cuon] > 1)
+                soDangMuon[cuon]++;
+                if (dangGiu > 3 || soDangMuon[cuon] > 1)
                 {
                     return BaoLoiFile(loi, "Vuot ba cuon hoac trung luot dang muon.");
                 }
@@ -759,31 +734,31 @@ bool KiemTraCacDanhSach(const ThuVien &tv, MangKiemTra &tam, string &loi)
                 }
                 if (p->trangThai == MUON_LAM_MAT &&
                     (docGia.trangThaiThe != THE_BI_KHOA ||
-                     tam.cuon[cuon].cuon->trangThai != SACH_THANH_LY))
+                     cuonSach[cuon]->trangThai != SACH_THANH_LY))
                 {
                     return BaoLoiFile(loi, "Luot mat phai gan the khoa va cuon thanh ly.");
                 }
             }
-            tam.luot[soLuot].viTriCuon = cuon;
-            tam.luot[soLuot].maThe = docGia.maThe;
-            tam.luot[soLuot].ngayMuon = batDau;
-            tam.luot[soLuot].ngayKetThuc = ketThuc;
-            tam.luot[soLuot].trangThai = p->trangThai;
+            viTriCuon[soLuot] = cuon;
+            maTheLuot[soLuot] = docGia.maThe;
+            ngayMuon[soLuot] = batDau;
+            ngayKetThuc[soLuot] = ketThuc;
+            trangThaiLuot[soLuot] = p->trangThai;
             soLuot++;
 
-            tam.moc[soMoc].maThe = docGia.maThe;
-            tam.moc[soMoc].ngay = batDau;
-            tam.moc[soMoc].loai = 2;
+            maTheMoc[soMoc] = docGia.maThe;
+            ngayMoc[soMoc] = batDau;
+            loaiMoc[soMoc] = 2;
             if (batDau == ketThuc)
             {
-                tam.moc[soMoc].loai = 1;
+                loaiMoc[soMoc] = 1;
             }
             soMoc++;
             if (ketThuc != INT_MAX && ketThuc != batDau)
             {
-                tam.moc[soMoc].maThe = docGia.maThe;
-                tam.moc[soMoc].ngay = ketThuc;
-                tam.moc[soMoc].loai = 0;
+                maTheMoc[soMoc] = docGia.maThe;
+                ngayMoc[soMoc] = ketThuc;
+                loaiMoc[soMoc] = 0;
                 soMoc++;
             }
             p = p->next;
@@ -791,37 +766,37 @@ bool KiemTraCacDanhSach(const ThuVien &tv, MangKiemTra &tam, string &loi)
     }
     for (int i = 0; i < soCuon; i++)
     {
-        if ((tam.cuon[i].cuon->trangThai == SACH_DANG_MUON) != (tam.soDangMuon[i] == 1))
+        if ((cuonSach[i]->trangThai == SACH_DANG_MUON) != (soDangMuon[i] == 1))
         {
             return BaoLoiFile(loi, "Trang thai cuon khong khop lich su.");
         }
     }
-    SapXepLuotTheoCuon(tam.luot, soLuot);
+    SapXepLuotTheoCuon(thuTuLuot, soLuot, viTriCuon, ngayMuon, ngayKetThuc, trangThaiLuot, maTheLuot);
     for (int i = 1; i < soLuot; i++)
     {
-        if (tam.luot[i - 1].viTriCuon == tam.luot[i].viTriCuon)
+        if (viTriCuon[thuTuLuot[i - 1]] == viTriCuon[thuTuLuot[i]])
         {
-            if (tam.luot[i - 1].trangThai != MUON_DA_TRA ||
-                tam.luot[i - 1].ngayKetThuc > tam.luot[i].ngayMuon)
+            if (trangThaiLuot[thuTuLuot[i - 1]] != MUON_DA_TRA ||
+                ngayKetThuc[thuTuLuot[i - 1]] > ngayMuon[thuTuLuot[i]])
             {
                 return BaoLoiFile(loi, "Lich su chong lan hoac muon lai sau bao mat.");
             }
         }
     }
-    SapXepMocTheoDocGia(tam.moc, soMoc);
+    SapXepMocTheoDocGia(thuTuMoc, soMoc, maTheMoc, ngayMoc, loaiMoc);
     int maDangXet = 0, soDangGiu = 0;
     for (int i = 0; i < soMoc; i++)
     {
-        if (tam.moc[i].maThe != maDangXet)
+        if (maTheMoc[thuTuMoc[i]] != maDangXet)
         {
-            maDangXet = tam.moc[i].maThe;
+            maDangXet = maTheMoc[thuTuMoc[i]];
             soDangGiu = 0;
         }
-        if (tam.moc[i].loai == 0)
+        if (loaiMoc[thuTuMoc[i]] == 0)
         {
             soDangGiu--;
         }
-        else if (tam.moc[i].loai == 2)
+        else if (loaiMoc[thuTuMoc[i]] == 2)
         {
             soDangGiu++;
         }
@@ -837,21 +812,77 @@ bool KiemTraCacDanhSach(const ThuVien &tv, MangKiemTra &tam, string &loi)
     loi.clear();
     return true;
 }
+// [DEMO - CODEX] Moi mang giu mot loai du lieu kiem tra, cung chi so la cung ban ghi.
 bool KiemTraToanVen(const ThuVien &tv, string &loi)
 {
-    MangKiemTra tam;
+    const DauSach **dauSach = nullptr;
+    const CuonSach **cuonSach = nullptr;
+    const NutDocGia **docGiaTrongCay = nullptr;
+    int *viTriCuon = nullptr;
+    int *ngayMuon = nullptr;
+    int *ngayKetThuc = nullptr;
+    int *trangThaiLuot = nullptr;
+    int *maTheLuot = nullptr;
+    int *thuTuLuot = nullptr;
+    int *maTheMoc = nullptr;
+    int *ngayMoc = nullptr;
+    int *loaiMoc = nullptr;
+    int *thuTuMoc = nullptr;
+    int *soDangMuon = nullptr;
+    bool dung = false;
     try
     {
-        bool dung = KiemTraCacDanhSach(tv, tam, loi);
-        HuyMangKiemTra(tam);
-        return dung;
+        dauSach = new const DauSach *[MAX_DAU_SACH];
+        cuonSach = new const CuonSach *[MAX_BAN_GHI];
+        docGiaTrongCay = new const NutDocGia *[MAX_DOC_GIA];
+        viTriCuon = new int[MAX_BAN_GHI];
+        ngayMuon = new int[MAX_BAN_GHI];
+        ngayKetThuc = new int[MAX_BAN_GHI];
+        trangThaiLuot = new int[MAX_BAN_GHI];
+        maTheLuot = new int[MAX_BAN_GHI];
+        thuTuLuot = new int[MAX_BAN_GHI];
+        maTheMoc = new int[MAX_BAN_GHI * 2];
+        ngayMoc = new int[MAX_BAN_GHI * 2];
+        loaiMoc = new int[MAX_BAN_GHI * 2];
+        thuTuMoc = new int[MAX_BAN_GHI * 2];
+        soDangMuon = new int[MAX_BAN_GHI]{};
+        dung = KiemTraCacDanhSach(tv, dauSach, cuonSach, docGiaTrongCay, viTriCuon, ngayMuon, ngayKetThuc,
+            trangThaiLuot, maTheLuot, thuTuLuot, maTheMoc, ngayMoc, loaiMoc, thuTuMoc, soDangMuon, loi);
     }
     catch (...)
     {
-        HuyMangKiemTra(tam);
+        delete[] dauSach;
+        delete[] cuonSach;
+        delete[] docGiaTrongCay;
+        delete[] viTriCuon;
+        delete[] ngayMuon;
+        delete[] ngayKetThuc;
+        delete[] trangThaiLuot;
+        delete[] maTheLuot;
+        delete[] thuTuLuot;
+        delete[] maTheMoc;
+        delete[] ngayMoc;
+        delete[] loaiMoc;
+        delete[] thuTuMoc;
+        delete[] soDangMuon;
         loi = "Khong du bo nho hoac loi khi kiem tra du lieu.";
         return false;
     }
+    delete[] dauSach;
+    delete[] cuonSach;
+    delete[] docGiaTrongCay;
+    delete[] viTriCuon;
+    delete[] ngayMuon;
+    delete[] ngayKetThuc;
+    delete[] trangThaiLuot;
+    delete[] maTheLuot;
+    delete[] thuTuLuot;
+    delete[] maTheMoc;
+    delete[] ngayMoc;
+    delete[] loaiMoc;
+    delete[] thuTuMoc;
+    delete[] soDangMuon;
+    return dung;
 }
 NutDocGia *DungCayTuMang(NutDocGia **ds, int trai, int phai)
 {
@@ -928,23 +959,9 @@ bool DocSachTuFile(ifstream &file, ThuVien &tam, int &soDong, string &loi)
     SapXepTenSachFile(tam.dsDauSach.ds, tam.dsDauSach.soLuong);
     return true;
 }
-bool DocDocGiaTuFile(ifstream &file, ThuVien &tam, NutDocGia **ds, int soDocGia, int &soDong,
-                     string &loi)
+bool DocCacNutDocGia(ifstream &file, ThuVien &tam, NutDocGia **ds, int soDocGia, int &soDong,
+                     string &loi, int &daDoc)
 {
-    struct NutChoGhep
-    {
-        NutDocGia **ds;
-        int daDoc;
-        ~NutChoGhep()
-        {
-            for (int i = 0; i < daDoc; ++i)
-            {
-                HuyDanhSachMuonTra(*ds[i]);
-                delete ds[i];
-            }
-        }
-    } choGhep = {ds, 0};
-
     int tongLuot = 0;
     for (int i = 0; i < soDocGia; i++)
     {
@@ -964,9 +981,10 @@ bool DocDocGiaTuFile(ifstream &file, ThuVien &tam, NutDocGia **ds, int soDocGia,
         {
             return BaoLoiFile(loi, "So lieu doc gia sai.");
         }
-        NutDocGia *p = new NutDocGia(docGia);
+        NutDocGia *p = new NutDocGia;
         ds[i] = p;
-        ++choGhep.daDoc;
+        ++daDoc;
+        p->thongTin = docGia;
         MuonTra *cuoi = nullptr;
         for (int j = 0; j < soLuot; j++)
         {
@@ -1004,8 +1022,33 @@ bool DocDocGiaTuFile(ifstream &file, ThuVien &tam, NutDocGia **ds, int soDocGia,
         }
     }
     tam.cayDocGia.root = DungCayTuMang(ds, 0, soDocGia - 1);
-    choGhep.daDoc = 0;
+    daDoc = 0;
     return true;
+}
+void HuyCacNutChuaGhep(NutDocGia **ds, int daDoc)
+{
+    for (int i = 0; i < daDoc; i++)
+    {
+        HuyDanhSachMuonTra(*ds[i]);
+        delete ds[i];
+        ds[i] = nullptr;
+    }
+}
+bool DocDocGiaTuFile(ifstream &file, ThuVien &tam, NutDocGia **ds, int soDocGia,
+                     int &soDong, string &loi)
+{
+    int daDoc = 0;
+    try
+    {
+        bool dung = DocCacNutDocGia(file, tam, ds, soDocGia, soDong, loi, daDoc);
+        HuyCacNutChuaGhep(ds, daDoc);
+        return dung;
+    }
+    catch (...)
+    {
+        HuyCacNutChuaGhep(ds, daDoc);
+        throw;
+    }
 }
 bool DocFile(ThuVien &tv, const string &path, string &loi)
 {

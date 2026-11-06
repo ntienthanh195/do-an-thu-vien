@@ -1,71 +1,70 @@
 #include "00_KhaiBaoChung.h"
 
 // [DEMO - CODEX] Phan bo sung cho ban trinh thay.
-struct CuonVaDauSach
+// [DEMO - CODEX] Sap xep mang vi tri; du lieu nam trong cac mang truyen vao.
+bool CuonThongKeTruoc(int a, int b, const CuonSach *const *cuon)
 {
-    const CuonSach *cuon = nullptr;
-    int viTriDauSach = 0;
-};
-
-bool CuonThongKeTruoc(CuonVaDauSach a, CuonVaDauSach b)
-{
-    return a.cuon->maSach < b.cuon->maSach;
+    return cuon[a]->maSach < cuon[b]->maSach;
 }
-void TronCuonThongKe(CuonVaDauSach *a, CuonVaDauSach *tam, int trai, int giua, int phai)
+void TronCuonThongKe(int *thuTu, int *tam, int trai, int giua, int phai, const CuonSach *const *cuon)
 {
     int i = trai, j = giua + 1, k = trai;
     while (i <= giua && j <= phai)
     {
-        if (CuonThongKeTruoc(a[j], a[i]))
+        if (CuonThongKeTruoc(thuTu[j], thuTu[i], cuon))
         {
-            tam[k] = a[j];
+            tam[k] = thuTu[j];
             j++;
         }
         else
         {
-            tam[k] = a[i];
+            tam[k] = thuTu[i];
             i++;
         }
         k++;
     }
     while (i <= giua)
     {
-        tam[k] = a[i];
+        tam[k] = thuTu[i];
         i++;
         k++;
     }
     while (j <= phai)
     {
-        tam[k] = a[j];
+        tam[k] = thuTu[j];
         j++;
         k++;
     }
     for (int viTri = trai; viTri <= phai; viTri++)
     {
-        a[viTri] = tam[viTri];
+        thuTu[viTri] = tam[viTri];
     }
 }
-void ChiaCuonThongKe(CuonVaDauSach *a, CuonVaDauSach *tam, int trai, int phai)
+void ChiaCuonThongKe(int *thuTu, int *tam, int trai, int phai, const CuonSach *const *cuon)
 {
     if (trai >= phai)
     {
         return;
     }
     int giua = trai + (phai - trai) / 2;
-    ChiaCuonThongKe(a, tam, trai, giua);
-    ChiaCuonThongKe(a, tam, giua + 1, phai);
-    TronCuonThongKe(a, tam, trai, giua, phai);
+    ChiaCuonThongKe(thuTu, tam, trai, giua, cuon);
+    ChiaCuonThongKe(thuTu, tam, giua + 1, phai, cuon);
+    TronCuonThongKe(thuTu, tam, trai, giua, phai, cuon);
 }
-void SapXepCuonThongKe(CuonVaDauSach *a, int soLuong)
+void SapXepCuonThongKe(int *thuTu, int soLuong, const CuonSach *const *cuon)
 {
+    for (int i = 0; i < soLuong; i++)
+    {
+        thuTu[i] = i;
+    }
     if (soLuong < 2)
     {
         return;
     }
-    CuonVaDauSach *tam = new CuonVaDauSach[soLuong];
+    int *tam = new int[soLuong];
     try
     {
-        ChiaCuonThongKe(a, tam, 0, soLuong - 1);
+        ChiaCuonThongKe(thuTu, tam, 0, soLuong - 1, cuon);
         delete[] tam;
     }
     catch (...)
@@ -75,17 +74,18 @@ void SapXepCuonThongKe(CuonVaDauSach *a, int soLuong)
     }
 }
 
-int TimDauSachTrongChiMuc(const CuonVaDauSach *ds, int soCuon, const string &ma)
+int TimDauSachTrongChiMuc(const CuonSach *const *cuon, const int *viTriDauSach,
+                              const int *thuTu, int soCuon, const string &ma)
 {
     int trai = 0, phai = soCuon - 1;
     while (trai <= phai)
     {
         int giua = trai + (phai - trai) / 2;
-        if (ds[giua].cuon->maSach == ma)
+        if (cuon[thuTu[giua]]->maSach == ma)
         {
-            return ds[giua].viTriDauSach;
+            return viTriDauSach[thuTu[giua]];
         }
-        if (ds[giua].cuon->maSach < ma)
+        if (cuon[thuTu[giua]]->maSach < ma)
         {
             trai = giua + 1;
         }
@@ -120,32 +120,36 @@ void InTop10SachDuocMuonNhieuNhat(const ThuVien &tv, ostream &out)
     int soDocGia = DemDocGia(tv.cayDocGia);
     int *soLuot = nullptr;
     const NutDocGia **docGia = nullptr;
-    CuonVaDauSach *chiMuc = nullptr;
+    const CuonSach **cuon = nullptr;
+    int *viTriDauSach = nullptr;
+    int *thuTu = nullptr;
     try
     {
         soLuot = new int[soDauSach]{};
         docGia = new const NutDocGia *[soDocGia];
-        chiMuc = new CuonVaDauSach[soCuon];
+        cuon = new const CuonSach *[soCuon];
+        viTriDauSach = new int[soCuon];
+        thuTu = new int[soCuon];
         int viTri = 0;
         for (int i = 0; i < soDauSach; i++)
         {
             const CuonSach *p = tv.dsDauSach.ds[i]->dms;
             while (p != nullptr)
             {
-                chiMuc[viTri].cuon = p;
-                chiMuc[viTri].viTriDauSach = i;
+                cuon[viTri] = p;
+                viTriDauSach[viTri] = i;
                 viTri++;
                 p = p->next;
             }
         }
-        SapXepCuonThongKe(chiMuc, soCuon);
+        SapXepCuonThongKe(thuTu, soCuon, cuon);
         LayDanhSachDocGia(tv.cayDocGia, docGia, soDocGia);
         for (int i = 0; i < soDocGia; i++)
         {
             const MuonTra *p = docGia[i]->thongTin.dsMuonTra;
             while (p != nullptr)
             {
-                int dauSach = TimDauSachTrongChiMuc(chiMuc, soCuon, p->maSach);
+                int dauSach = TimDauSachTrongChiMuc(cuon, viTriDauSach, thuTu, soCuon, p->maSach);
                 if (dauSach < 0)
                 {
                     throw LoiThuVien("Lich su tham chieu cuon khong ton tai.");
@@ -193,13 +197,17 @@ void InTop10SachDuocMuonNhieuNhat(const ThuVien &tv, ostream &out)
         }
         delete[] soLuot;
         delete[] docGia;
-        delete[] chiMuc;
+        delete[] cuon;
+        delete[] viTriDauSach;
+        delete[] thuTu;
     }
     catch (...)
     {
         delete[] soLuot;
         delete[] docGia;
-        delete[] chiMuc;
+        delete[] cuon;
+        delete[] viTriDauSach;
+        delete[] thuTu;
         throw;
     }
 }

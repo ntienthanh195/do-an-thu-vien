@@ -1,77 +1,74 @@
 #include "00_KhaiBaoChung.h"
 
 // [DEMO - CODEX] Phan bo sung cho ban trinh thay.
-struct KetQuaQuaHan
+// [DEMO - CODEX] Sap xep mang vi tri; du lieu nam trong cac mang truyen vao.
+bool QuaHanTruoc(int a, int b, const DocGia *const *docGia, const int *soNgay)
 {
-    const DocGia *docGia = nullptr;
-    int soNgay = 0;
-    int soCuon = 0;
-};
-
-bool KetQuaQuaHanTruoc(KetQuaQuaHan a, KetQuaQuaHan b)
-{
-
-    if (a.soNgay != b.soNgay)
+    if (soNgay[a] != soNgay[b])
     {
-        return a.soNgay > b.soNgay;
+        return soNgay[a] > soNgay[b];
     }
-    return a.docGia->maThe < b.docGia->maThe;
+    return docGia[a]->maThe < docGia[b]->maThe;
 }
-void TronKetQuaQuaHan(KetQuaQuaHan *a, KetQuaQuaHan *tam, int trai, int giua, int phai)
+void TronQuaHan(int *thuTu, int *tam, int trai, int giua, int phai, const DocGia *const *docGia, const int *soNgay)
 {
     int i = trai, j = giua + 1, k = trai;
     while (i <= giua && j <= phai)
     {
-        if (KetQuaQuaHanTruoc(a[j], a[i]))
+        if (QuaHanTruoc(thuTu[j], thuTu[i], docGia, soNgay))
         {
-            tam[k] = a[j];
+            tam[k] = thuTu[j];
             j++;
         }
         else
         {
-            tam[k] = a[i];
+            tam[k] = thuTu[i];
             i++;
         }
         k++;
     }
     while (i <= giua)
     {
-        tam[k] = a[i];
+        tam[k] = thuTu[i];
         i++;
         k++;
     }
     while (j <= phai)
     {
-        tam[k] = a[j];
+        tam[k] = thuTu[j];
         j++;
         k++;
     }
     for (int viTri = trai; viTri <= phai; viTri++)
     {
-        a[viTri] = tam[viTri];
+        thuTu[viTri] = tam[viTri];
     }
 }
-void ChiaKetQuaQuaHan(KetQuaQuaHan *a, KetQuaQuaHan *tam, int trai, int phai)
+void ChiaQuaHan(int *thuTu, int *tam, int trai, int phai, const DocGia *const *docGia, const int *soNgay)
 {
     if (trai >= phai)
     {
         return;
     }
     int giua = trai + (phai - trai) / 2;
-    ChiaKetQuaQuaHan(a, tam, trai, giua);
-    ChiaKetQuaQuaHan(a, tam, giua + 1, phai);
-    TronKetQuaQuaHan(a, tam, trai, giua, phai);
+    ChiaQuaHan(thuTu, tam, trai, giua, docGia, soNgay);
+    ChiaQuaHan(thuTu, tam, giua + 1, phai, docGia, soNgay);
+    TronQuaHan(thuTu, tam, trai, giua, phai, docGia, soNgay);
 }
-void SapXepKetQuaQuaHan(KetQuaQuaHan *a, int soLuong)
+void SapXepQuaHan(int *thuTu, int soLuong, const DocGia *const *docGia, const int *soNgay)
 {
+    for (int i = 0; i < soLuong; i++)
+    {
+        thuTu[i] = i;
+    }
     if (soLuong < 2)
     {
         return;
     }
-    KetQuaQuaHan *tam = new KetQuaQuaHan[soLuong];
+    int *tam = new int[soLuong];
     try
     {
-        ChiaKetQuaQuaHan(a, tam, 0, soLuong - 1);
+        ChiaQuaHan(thuTu, tam, 0, soLuong - 1, docGia, soNgay);
         delete[] tam;
     }
     catch (...)
@@ -90,18 +87,22 @@ void InDocGiaQuaHan(const ThuVien &tv, const NgayThang &ngay, ostream &out)
     }
     int soDocGia = DemDocGia(tv.cayDocGia);
     const NutDocGia **ds = nullptr;
-    KetQuaQuaHan *ketQua = nullptr;
+    const DocGia **docGia = nullptr;
+    int *soNgay = nullptr, *soCuon = nullptr, *thuTu = nullptr;
     try
     {
         ds = new const NutDocGia *[soDocGia];
-        ketQua = new KetQuaQuaHan[soDocGia];
+        docGia = new const DocGia *[soDocGia];
+        soNgay = new int[soDocGia];
+        soCuon = new int[soDocGia];
+        thuTu = new int[soDocGia];
         LayDanhSachDocGia(tv.cayDocGia, ds, soDocGia);
         int soKetQua = 0;
         for (int i = 0; i < soDocGia; i++)
         {
-            KetQuaQuaHan dong;
-            dong.docGia = &ds[i]->thongTin;
-            const MuonTra *p = dong.docGia->dsMuonTra;
+            const DocGia *nguoiDoc = &ds[i]->thongTin;
+            int ngayQuaHan = 0, cuonQuaHan = 0;
+            const MuonTra *p = nguoiDoc->dsMuonTra;
             while (p != nullptr)
             {
                 if (p->trangThai == MUON_DANG_MUON)
@@ -109,41 +110,49 @@ void InDocGiaQuaHan(const ThuVien &tv, const NgayThang &ngay, ostream &out)
                     int quaHan = SoNgayQuaHan(p->ngayMuon, ngay);
                     if (quaHan > 0)
                     {
-                        dong.soCuon++;
-                        if (quaHan > dong.soNgay)
+                        cuonQuaHan++;
+                        if (quaHan > ngayQuaHan)
                         {
-                            dong.soNgay = quaHan;
+                            ngayQuaHan = quaHan;
                         }
                     }
                 }
                 p = p->next;
             }
-            if (dong.soCuon > 0)
+            if (cuonQuaHan > 0)
             {
-                ketQua[soKetQua] = dong;
+                docGia[soKetQua] = nguoiDoc;
+                soNgay[soKetQua] = ngayQuaHan;
+                soCuon[soKetQua] = cuonQuaHan;
                 soKetQua++;
             }
         }
-        SapXepKetQuaQuaHan(ketQua, soKetQua);
+        SapXepQuaHan(thuTu, soKetQua, docGia, soNgay);
         out << "DOC GIA QUA HAN - ngay " << ChuoiNgay(ngay) << '\n';
         out << "Xep theo so ngay qua han (tinh tu moc 7 ngay) lon nhat trong cac cuon dang muon; hoa thi ma the tang.\n";
         for (int i = 0; i < soKetQua; i++)
         {
-            out << ketQua[i].docGia->maThe << " | " << ketQua[i].docGia->ho << ' '
-                << ketQua[i].docGia->ten << " | Qua han: " << ketQua[i].soNgay << " ngay | "
-                << ketQua[i].soCuon << " cuon qua han\n";
+            out << docGia[thuTu[i]]->maThe << " | " << docGia[thuTu[i]]->ho << ' '
+                << docGia[thuTu[i]]->ten << " | Qua han: " << soNgay[thuTu[i]] << " ngay | "
+                << soCuon[thuTu[i]] << " cuon qua han\n";
         }
         if (soKetQua == 0)
         {
             out << "Khong co doc gia qua han.\n";
         }
         delete[] ds;
-        delete[] ketQua;
+        delete[] docGia;
+        delete[] soNgay;
+        delete[] soCuon;
+        delete[] thuTu;
     }
     catch (...)
     {
         delete[] ds;
-        delete[] ketQua;
+        delete[] docGia;
+        delete[] soNgay;
+        delete[] soCuon;
+        delete[] thuTu;
         throw;
     }
 }
