@@ -3,12 +3,14 @@
 bool KhoangTrang(unsigned char c){
     return c == ' ' || c == '\t' || c == '\r' || c == '\n';
 }
+
 bool LaChuoiRong(const string &s){
     for(const char c : s){
         if(!KhoangTrang(c)) return false;
     }
     return true;
 }
+
 string ChuanHoaChuoi(const string &s){
     string kq = "";
     bool gap = false; // gap ky tu khac khoang trang
@@ -33,6 +35,7 @@ string ChuanHoaChuoi(const string &s){
     }
     return kq;
 }
+
 int SoSanhChuoi(const string &a, const string &b){
     // a < b : -1, a > b : 1; a = b : 0
     string x = ChuanHoaChuoi(a);
@@ -49,6 +52,7 @@ int SoSanhChuoi(const string &a, const string &b){
     }
     return x.size() < y.size() ? -1 : (x.size() > y.size() ? 1 : 0);
 }
+
 bool HopLeVanBan(const string &s)
 {   
     const size_t MAX_VAN_BAN = 100;
@@ -65,6 +69,7 @@ bool HopLeVanBan(const string &s)
     }
     return true;
 }
+
 string ChuanHoaISBN(const string &isbn){
     string res = "";
     for(char c : isbn){
@@ -75,6 +80,7 @@ string ChuanHoaISBN(const string &isbn){
     }
     return res;
 }
+
 bool HopLeDauSach(const DauSach &d, string &loi){
     // KIEM TRA ISBN 
     string ch_ISBN = ChuanHoaISBN(d.ISBN);
@@ -116,6 +122,7 @@ bool HopLeDauSach(const DauSach &d, string &loi){
     loi.clear();
     return true;
 }
+
 const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn){
     string isbn_chuanhoa = ChuanHoaISBN(isbn);
     if(isbn_chuanhoa.size() == 0) return nullptr;
@@ -124,6 +131,7 @@ const DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn)
     }
     return nullptr;
 }
+
 int TimViTriChenTheoTen(const DanhSachDauSach& ds, const DauSach& d) {
     int l = 0;
     int r = ds.soLuong;                     
@@ -138,6 +146,7 @@ int TimViTriChenTheoTen(const DanhSachDauSach& ds, const DauSach& d) {
     }
     return l;                               
 }
+
 bool ThemDauSach(ThuVien &tv, const DauSach &d, string &loi){
     // that bai
     // KIEM TRA SO LUONG DAU SACH
@@ -173,6 +182,7 @@ bool ThemDauSach(ThuVien &tv, const DauSach &d, string &loi){
     loi.clear();
     return true;
 }
+
 const CuonSach *TimCuonSachTrongDauSach(const DauSach &d, const string &ma){
     if(LaChuoiRong(ma)) return nullptr;
     const CuonSach *p = d.dms;
@@ -182,6 +192,7 @@ const CuonSach *TimCuonSachTrongDauSach(const DauSach &d, const string &ma){
     }
     return nullptr;
 }
+
 const CuonSach *TimCuonSachToanCuc(const ThuVien &tv, const string &ma, const DauSach **owner){
     if(LaChuoiRong(ma)) return nullptr;
     // 1. Tach 13 so dau tien lam ISBN
@@ -213,6 +224,7 @@ const CuonSach *TimCuonSachToanCuc(const ThuVien &tv, const string &ma, const Da
     }
     return nullptr;
 }
+
 bool SinhMaSachTuDong(const ThuVien &tv, const DauSach &d, string &ma, string &loi){
     ma = "";
     if(!HopLeDauSach(d, loi)) return false;
@@ -279,6 +291,7 @@ bool SinhMaSachTuDong(const ThuVien &tv, const DauSach &d, string &ma, string &l
     }
     return true;
 }
+
 // Cac ham helper giao dien
 static void gotoxy(int x, int y) {
     COORD coord;
@@ -286,9 +299,11 @@ static void gotoxy(int x, int y) {
     coord.Y = y;
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
+
 static void setColor(int color) {
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
+
 // Helper: Nhap chuoi voi giao dien, tu dong bat ESC va Backspace
 static bool NhapChuoiUI(int x, int y, string &out, bool laISBN) {
     out = "";
@@ -317,6 +332,7 @@ static bool NhapChuoiUI(int x, int y, string &out, bool laISBN) {
         }
     }
 }
+
 // ham ho tro ManHinhNhapDauSach : gotoxy, setColor, NhapChuoiUI
 void ManHinhNhapDauSach(ThuVien &tv) {
     while (true) {

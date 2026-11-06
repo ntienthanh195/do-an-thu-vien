@@ -3,12 +3,14 @@
 bool KhoangTrang(unsigned char c){
     return c == ' ' || c == '\t' || c == '\r' || c == '\n';
 }
+
 bool LaChuoiRong(const string &s){
     for(const char c : s){
         if(!KhoangTrang(c)) return false;
     }
     return true;
 }
+
 string ChuanHoaChuoi(const string &s){
     string kq = "";
     bool gap = false; // gap ky tu khac khoang trang
@@ -33,6 +35,7 @@ string ChuanHoaChuoi(const string &s){
     }
     return kq;
 }
+
 int SoSanhChuoi(const string &a, const string &b){
     // a < b : -1, a > b : 1; a = b : 0
     string x = ChuanHoaChuoi(a);
@@ -49,6 +52,7 @@ int SoSanhChuoi(const string &a, const string &b){
     }
     return x.size() < y.size() ? -1 : (x.size() > y.size() ? 1 : 0);
 }
+
 bool ChuaChuoi(const string &s, const string &part){
     if(part.size() == 0) return true;
     if(s.size() < part.size()) return false;
@@ -69,6 +73,7 @@ bool ChuaChuoi(const string &s, const string &part){
     }
     return false;
 }
+
 void TimDauSachTheoTen(const ThuVien &tv, const string &ten, ostream &out){
     if(LaChuoiRong(ten)){
         out << "Tu khoa tim kiem khong duoc rong.\n";
