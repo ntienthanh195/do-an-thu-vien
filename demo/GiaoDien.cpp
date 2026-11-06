@@ -272,7 +272,9 @@ inline bool NapPhien(GiaoDien &gd, ThuVien &tv, string &path, const string &next
     string moi =
         DuongDanUTF8(DuongDanDayDu(next)); // Moi cap phat/path/lock phai xong truoc DocFile.
     if (CompareStringOrdinal(DuongDanUTF16(moi).c_str(), -1,
-                             DuongDanDayDu("DuLieu/DuLieuMau.txt").c_str(), -1, TRUE) == CSTR_EQUAL)
+                             DuongDanDayDu("DuLieu/DuLieuMau.txt").c_str(), -1, TRUE) == CSTR_EQUAL ||
+        CompareStringOrdinal(DuongDanUTF16(moi).c_str(), -1,
+                             DuongDanDayDu("demo/DuLieu/DuLieuMau.txt").c_str(), -1, TRUE) == CSTR_EQUAL)
     {
         loi = "Hay sao chep tep mau sang mot tep lam viec truoc khi nap.";
         return false;
@@ -1693,9 +1695,9 @@ int ChayUngDung(GiaoDien &gd, ThuVien &tv, int argc, char **argv)
             return 2;
         }
     }
-    else if (dungDuLieuMacDinh && FileTonTai("DuLieu/DuLieuMau.txt"))
+    else if (dungDuLieuMacDinh && FileTonTai("demo/DuLieu/DuLieuMau.txt"))
     {
-        if (!DocFile(tv, "DuLieu/DuLieuMau.txt", loi))
+        if (!DocFile(tv, "demo/DuLieu/DuLieuMau.txt", loi))
         {
             cerr << "Khong doc duoc du lieu mau: " << loi << '\n';
             return 2;
