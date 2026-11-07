@@ -638,6 +638,11 @@ void ManHinhDocGia(GiaoDien &gd, ThuVien &tv)
     {
         return;
     }
+    if (chon == 2)
+    {
+        ma = ChonMaTheDocGia(gd, tv.cayDocGia, "CHON DOC GIA CAN SUA");
+        if (ma == 0) return;
+    }
     if (DangDungGiaoDienHeThong(gd))
     {
         if (chon < 1)
@@ -645,13 +650,14 @@ void ManHinhDocGia(GiaoDien &gd, ThuVien &tv)
             return;
         }
         const NutDocGia *current = nullptr;
-        if (chon == 2 || chon == 3)
+        if (chon == 2) current = TimDocGia(tv.cayDocGia, ma);
+        if (chon == 3)
         {
             const char *fields[] = {"Ma the doc gia"};
             string values[1];
             while (true)
             {
-                if (!NhapBieuMau(gd, chon == 2 ? "CHON DOC GIA CAN SUA" : "CHON DOC GIA CAN XOA",
+                if (!NhapBieuMau(gd, "CHON DOC GIA CAN XOA",
                                  fields, values, 1))
                 {
                     return;
@@ -693,9 +699,22 @@ void ManHinhDocGia(GiaoDien &gd, ThuVien &tv)
             values[2] = d.phai;
             values[3] = ChuoiSo(d.trangThaiThe);
         }
-        while (NhapBieuMau(gd, chon == 1 ? "THEM DOC GIA" : "HIEU CHINH DOC GIA - THE " + ChuoiSo(ma),
-                           fields, values, chon == 1 ? 3 : 4))
+        string thongBao;
+        while (true)
         {
+            bool daNhap;
+            if (chon == 1)
+            {
+                daNhap = NhapBieuMauLienTiep(gd, "THEM DOC GIA", fields, values, 3, thongBao);
+            }
+            else
+            {
+                daNhap = NhapBieuMau(gd, "HIEU CHINH DOC GIA - THE " + ChuoiSo(ma), fields, values, 4);
+            }
+            if (!daNhap)
+            {
+                break;
+            }
             if (chon == 2 && !DocSoNguyen(values[3], tt, THE_BI_KHOA, THE_HOAT_DONG))
             {
                 ThongBao(gd, "Trang thai the chi nhan 0 (khoa) hoac 1 (hoat dong).");
@@ -709,12 +728,20 @@ void ManHinhDocGia(GiaoDien &gd, ThuVien &tv)
                 continue;
             }
             LuuSauThayDoi(gd, tv);
+            if (chon == 1)
+            {
+                thongBao = "Da luu the " + ChuoiSo(ma) + " - " + values[0] + " " + values[1];
+                values[0].clear();
+                values[1].clear();
+                values[2] = "Nam";
+                continue;
+            }
             ThongBao(gd, "OK: da luu doc gia, ma the " + ChuoiSo(ma));
             return;
         }
         return;
     }
-    if (chon == 2 || chon == 3)
+    if (chon == 3)
     {
         if (!NhapSo(gd, "Ma the", ma, 1, INT_MAX))
         {

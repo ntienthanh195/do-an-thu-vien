@@ -4,7 +4,7 @@
 int main()
 {
     ThuVien tv;
-    string duongDan = "DuLieu/runtime/ThuVien.txt";
+    string duongDan = "demo/DuLieu/DuLieuMau.txt";
     NgayThang ngay = HomNay();
 
     const MauGiaoDien mau = {0x0E,
