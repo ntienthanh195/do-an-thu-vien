@@ -45,7 +45,7 @@ struct NgayThang
 
 struct CuonSach
 {
-    string maSach;                         // ma cuon sach, duy nhat
+    string maSach;                         // maSach co dang: tenSach#ISBN#N
     int trangThai = SACH_CHO_MUON;        // 0: cho muon, 1: dang muon, 2: thanh ly
     string viTri;                          // vi tri de sach
     CuonSach* next = nullptr;              // con tro toi cuon sach ke tiep
@@ -56,13 +56,12 @@ struct CuonSach
 
 struct DauSach
 {
-    string ISBN;
+    string ISBN;                           // ISBN co dang : ISBN#N
     string tenSach;
     int soTrang = 0;
     string tacGia;
     int namXuatBan = 0;
     string theLoai;
-
     CuonSach* dms = nullptr;               // danh muc cac cuon sach thuoc dau sach nay
 };
 
@@ -75,12 +74,10 @@ struct DanhSachDauSach
 {
     DauSach* ds[MAX_DAU_SACH];          // mang con tro chua cac dau sach
     int soLuong;                           // so dau sach dang co
-
     // Khoi tao danh sach rong
     DanhSachDauSach()
     {
         soLuong = 0;
-
         for (int i = 0; i < MAX_DAU_SACH; ++i)
         {
             ds[i] = nullptr;
@@ -109,7 +106,6 @@ struct DocGia
     string ten;
     string phai;                           // chi nhan "Nam" hoac "Nu"
     int trangThaiThe = THE_HOAT_DONG;     // 0: khoa, 1: hoat dong
-
     MuonTra* dsMuonTra = nullptr;          // danh sach cac lan muon tra cua doc gia
 };
 
@@ -139,7 +135,6 @@ struct ThuVien
     DanhSachDauSach dsDauSach;
     CayDocGia cayDocGia;
     int maTheLonNhatDaCap = 0;
-
     // ThuVien so huu cac node: khong sao chep nguyen kho bang phep gan.
     ThuVien() = default;
     ~ThuVien();
