@@ -1,19 +1,13 @@
 #include <iostream>
 #include <string>
-#include <fstream>
 #include <windows.h>
 #include <conio.h>
-
 using namespace std;
-
-// Chuong trinh nay danh cho Windows.
-const DWORD CHE_DO_MAU_CONSOLE = 0x0004;
 
 const int SO_NGUYEN_LON_NHAT = 2147483647;
 const int NAM_HIEN_TAI = 2026;
-// Ban tham khao AI. Bon cau truc va ten truong giu theo header cua nhom.
 const int MAX_DAU_SACH = 10000;
-const int MAX_DOC_GIA = 100000; // gioi han tai nguyen cua ban tham khao
+const int MAX_DOC_GIA = 100000; 
 const int MAX_BAN_GHI = 200000;
 const int SACH_CHO_MUON = 0, SACH_DANG_MUON = 1, SACH_THANH_LY = 2;
 const int MUON_DANG_MUON = 0, MUON_DA_TRA = 1, MUON_LAM_MAT = 2;
@@ -28,12 +22,11 @@ struct NgayThang
         nam = y;
     }
 };
-// maSach = ISBN#N ( trong do N la so nguyen duong tang dan khong tai su dung, # là delimiter )
 // viTri = Khu-Ke-Tang ( trong do Khu trong khoang (A...Z), ke (01...99), tang (01...99) 
 // vi du : A-03-02
 struct CuonSach
 {
-    string maSach;
+    string maSach;  // maSach = tenSach#ISBN#N
     int trangThai = SACH_CHO_MUON;
     string viTri;
     CuonSach *next = nullptr;
@@ -41,7 +34,7 @@ struct CuonSach
 // quy uoc : ISBN-13 = chuoi ky tu 13 chu so
 struct DauSach
 {
-    string ISBN, tenSach; 
+    string ISBN, tenSach;   // ISBN = ISBN-13 (chuoi ky tu 13 so tu 0-9)
     int soTrang = 0;
     string tacGia;
     int namXuatBan = 0;
@@ -186,12 +179,3 @@ bool NhapSo(const string &prompt, int &n, int lo, int hi);
 int ChonMenu(const string &title, const char *const *labels, int count);
 void ThongBao(const string &s);
 void HienThiPhanTrang(const string &text);
-
-// Chi cac man hinh goi sau commit; API nghiep vu khong tu ghi file.
-void LuuSauThayDoi(const ThuVien &tv);
-
-// Chi tiet ve console, Unicode va tep Windows nam rieng o file ho tro.
-#include "HoTroHeThong.h"
-
-// Diem bat dau duoc main goi; tach rieng de kiem thu cac module.
-int KhoiDongUngDung();
