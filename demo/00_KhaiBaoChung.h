@@ -8,8 +8,8 @@
 #include <windows.h>
 using namespace std;
 
-/*HANG SO*/
-// So dau sach toi da. De chua quy dinh, day la de xuat cua nhom.
+
+// So dau sach toi da
 const int MAX_DAU_SACH = 10000;
 
 // Trang thai cuon sach
@@ -270,6 +270,11 @@ bool XoaDocGia(ThuVien &tv, int ma, string &loi);
 
 void InDocGiaTheoMa(const ThuVien &tv, ostream &out);
 void InDocGiaTheoTenHo(const ThuVien &tv, ostream &out);
+int ChonMaTheDocGia(GiaoDien &gd, const CayDocGia &cay, const string &tieuDe);
+bool KiemTraDocGiaMuon(ThuVien &tv, int maThe, const NgayThang &ngay, string &loi);
+bool ChonCuonDeMuon(GiaoDien &gd, const ThuVien &tv, int maThe,
+                    const string &thongBao, bool choMuon,
+                    const string &lyDoDung, string &maCuon);
 void ManHinhDocGia(GiaoDien &gd, ThuVien &tv);
 
 // 05: lich su + phep doc; nghiep vu cap nhat dong bo nam o 06.
@@ -285,6 +290,8 @@ bool DanhDauMatSach(ThuVien &tv, int maThe, const string &maSach, const NgayThan
 void InDocGiaQuaHan(const ThuVien &tv, const NgayThang &ngay, ostream &out);
 void InTop10SachDuocMuonNhieuNhat(const ThuVien &tv, ostream &out);
 void ManHinhMuonTra(GiaoDien &gd, ThuVien &tv, const NgayThang &ngay, bool tra);
+int ChonCuonDeTra(GiaoDien &gd, const ThuVien &tv, int maThe,
+                  const string &thongBao, string &maCuon);
 
 // 07: dung du lieu tam, xac minh toan ven roi moi hoan doi; save temp + replace.
 bool KiemTraToanVen(const ThuVien &tv, string &loi);
@@ -296,6 +303,8 @@ void HoanDoiThuVien(ThuVien &a, ThuVien &b);
 // 08: helper UI dung chung. /huy hoac Esc de huy nhap; EOF thoat an toan.
 bool DangDungGiaoDienHeThong(GiaoDien &gd);
 bool NhapBieuMau(GiaoDien &gd, const string &title, const char *const *labels, string *values, int count);
+bool NhapBieuMauLienTiep(GiaoDien &gd, const string &title, const char *const *labels,
+                        string *values, int count, const string &thongBao);
 bool NhapDong(GiaoDien &gd, const string &prompt, string &s);
 bool NhapSo(GiaoDien &gd, const string &prompt, int &n, int lo, int hi);
 int ChonMenu(GiaoDien &gd, const string &title, const char *const *labels, int count);

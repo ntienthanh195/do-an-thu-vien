@@ -165,7 +165,8 @@ void ManHinhNhapDauSach(GiaoDien &gd, ThuVien &tv)
                                     "Tac gia", "Nam xuat ban", "The loai"};
             string values[6];
             values[4] = ChuoiSo(HomNay().nam);
-            while (NhapBieuMau(gd, "THEM DAU SACH", fields, values, 6))
+            string thongBao;
+            while (NhapBieuMauLienTiep(gd, "THEM DAU SACH", fields, values, 6, thongBao))
             {
                 DauSach d;
                 d.ISBN = values[0];
@@ -188,16 +189,20 @@ void ManHinhNhapDauSach(GiaoDien &gd, ThuVien &tv)
                     continue;
                 }
                 LuuSauThayDoi(gd, tv);
-                ThongBao(gd, "Da them dau sach " + ChuanHoaChuoiSach(d.ISBN) +
-                         ". Chon Them cuon de nhap cac ban sach.");
-                return;
+                thongBao = "Da luu dau sach " + ChuanHoaChuoiSach(d.ISBN);
+                for (int i = 0; i < 6; ++i)
+                {
+                    values[i].clear();
+                }
+                values[4] = ChuoiSo(HomNay().nam);
             }
         }
         else
         {
             const char *fields[] = {"ISBN dau sach", "Vi tri cuon sach"};
             string values[2];
-            while (NhapBieuMau(gd, "THEM CUON SACH", fields, values, 2))
+            string thongBao;
+            while (NhapBieuMauLienTiep(gd, "THEM CUON SACH", fields, values, 2, thongBao))
             {
                 string ma;
                 if (!ThemCuonSach(tv, values[0], values[1], ma, loi))
@@ -206,8 +211,8 @@ void ManHinhNhapDauSach(GiaoDien &gd, ThuVien &tv)
                     continue;
                 }
                 LuuSauThayDoi(gd, tv);
-                ThongBao(gd, "Da cap ma cuon: " + ma);
-                return;
+                thongBao = "Da luu cuon " + ma;
+                values[1].clear();
             }
         }
         return;
