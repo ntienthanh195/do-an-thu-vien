@@ -1,0 +1,113 @@
+#include "00_KhaiBaoChung.h"
+
+/* ============================================================
+   i. DANH SACH DOC GIA MUON SACH QUA HAN, thoi gian qua han giam dan
+
+   Buoc 1: duyet cay lay dia chi cac nut doc gia ra mang tam.
+   Buoc 2: voi moi luot dang muon da qua han, ghi lai (doc gia, luot muon) vao hai mang
+           tam song song dg[] va luot[].
+   Buoc 3: sap hai mang do giam dan theo so ngay qua han bang sap xep chon (selection sort).
+   Mot doc gia giu 2 cuon qua han se co 2 dong.
+   ============================================================ */
+
+void ManHinhDocGiaQuaHan(const DanhSachDauSach &ds, CayDocGia &cay)
+{
+    NgayThang homNay = HomNay();
+
+    // Buoc 1
+    int soDocGia = DemDocGia(cay);
+    NutDocGia **tatCa = new NutDocGia *[soDocGia + 1];
+    LayDanhSachDocGia(cay, tatCa, soDocGia);
+
+    // dem truoc so luot qua han de cap phat mang vua du
+    int n = 0;
+    for (int i = 0; i < soDocGia; ++i)
+    {
+        for (MuonTra *p = tatCa[i]->thongTin.dsMuonTra; p != nullptr; p = p->next)
+        {
+            if (p->trangThai == MUON_DANG_MUON && SoNgayQuaHan(p->ngayMuon, homNay) > 0)
+                ++n;
+        }
+    }
+
+    // Buoc 2
+    NutDocGia **dg = new NutDocGia *[n + 1];
+    MuonTra **luot = new MuonTra *[n + 1];
+    n = 0;
+    for (int i = 0; i < soDocGia; ++i)
+    {
+        for (MuonTra *p = tatCa[i]->thongTin.dsMuonTra; p != nullptr; p = p->next)
+        {
+            if (p->trangThai == MUON_DANG_MUON && SoNgayQuaHan(p->ngayMuon, homNay) > 0)
+            {
+                dg[n] = tatCa[i];
+                luot[n] = p;
+                ++n;
+            }
+        }
+    }
+
+    // Buoc 3: ngay muon cang som thi qua han cang lau
+    for (int i = 0; i < n - 1; ++i)
+    {
+        int lonNhat = i;
+        for (int j = i + 1; j < n; ++j)
+        {
+            if (SoNgayQuaHan(luot[j]->ngayMuon, homNay) > SoNgayQuaHan(luot[lonNhat]->ngayMuon, homNay))
+                lonNhat = j;
+        }
+        NutDocGia *tamDG = dg[i];
+        dg[i] = dg[lonNhat];
+        dg[lonNhat] = tamDG;
+        MuonTra *tamLuot = luot[i];
+        luot[i] = luot[lonNhat];
+        luot[lonNhat] = tamLuot;
+    }
+
+    VeManHinh("i. DOC GIA MUON SACH QUA HAN", "Trai/Phai: chuyen trang    Esc: quay lai");
+    SetColor(MAU_VANG_SANG, MAU_DEN);
+    InCot(2, 5, "STT", 5);
+    InCot(7, 5, "MA THE", 8);
+    InCot(15, 5, "HO TEN", 28);
+    InCot(43, 5, "MA SACH", 20);
+    InCot(63, 5, "TEN SACH", 30);
+    InCot(93, 5, "NGAY MUON", 13);
+    InCot(106, 5, "QUA HAN", 12);
+    SetColor(MAU_TRANG, MAU_DEN);
+
+    int trang = 0;
+    while (true)
+    {
+        XoaVung(0, 7, RONG_MH, SO_DONG_TRANG);
+        for (int i = trang * SO_DONG_TRANG; i < n && i < (trang + 1) * SO_DONG_TRANG; ++i)
+        {
+            int y = 7 + i - trang * SO_DONG_TRANG;
+            DauSach *dauSach = nullptr;
+            TimCuonSachToanCuc(ds, luot[i]->maSach, dauSach);
+
+            InCot(2, y, SoThanhChuoi(i + 1), 5);
+            InCot(7, y, SoThanhChuoi(dg[i]->thongTin.maThe), 8);
+            InCot(15, y, dg[i]->thongTin.ho + " " + dg[i]->thongTin.ten, 28);
+            InCot(43, y, luot[i]->maSach, 20);
+            if (dauSach != nullptr)
+                InCot(63, y, dauSach->tenSach, 30);
+            InCot(93, y, ChuoiNgay(luot[i]->ngayMuon), 13);
+            SetColor(MAU_DO_SANG, MAU_DEN);
+            InCot(106, y, SoThanhChuoi(SoNgayQuaHan(luot[i]->ngayMuon, homNay)) + " ngay", 12);
+            SetColor(MAU_TRANG, MAU_DEN);
+        }
+        if (n == 0)
+            InTai(2, 7, "Khong co doc gia nao dang giu sach qua han.");
+        InSoTrang(trang, n);
+
+        int phim = DocPhim();
+        while (phim != PHIM_ESC && !XuLyPhimTrang(phim, trang, n))
+            phim = DocPhim();
+        if (phim == PHIM_ESC)
+            break;
+    }
+
+    delete[] tatCa;
+    delete[] dg;
+    delete[] luot;
+}
