@@ -1,16 +1,16 @@
 # Bộ câu hỏi vấn đáp — bám code `BAN_VIET_LAI_GON`
 
-**149 câu**, soạn ngày 15/11/2026 từ code trong `BAN_VIET_LAI_GON/MaNguon`. Bộ này thay cho bộ 325 câu cũ (bộ cũ bám bản demo ngày 21/10, không còn khớp code).
+**167 câu**, soạn ngày 15/11/2026 từ code trong `BAN_VIET_LAI_GON/MaNguon`. Bộ này thay cho bộ 325 câu cũ (bộ cũ bám bản demo ngày 21/10, không còn khớp code).
 
 | Phần | Mã | Số câu | Ai ôn chính |
 |---|---|---|---|
-| A. Khai báo, biến thêm ngoài đề | C | 9 | Cả nhóm |
-| B. Thẻ độc giả, cây AVL (a) | DG | 18 | Thành |
-| C. Mượn, trả, ngày tháng (f, g) | MT | 20 | Thành |
-| D. Đầu sách, cuốn sách, mã sách (c) | DS | 16 | Thái |
-| E. Tìm sách, quá hạn, Top 10 (e, i, j) | TK, QH, TOP | 17 | Thái |
-| F. In độc giả, thể loại, sách đang mượn, giao diện (b, d, h) | IN | 17 | Tấn |
-| G. Lưu và đọc file | FL | 8 | Cả nhóm |
+| A. Khai báo, biến thêm ngoài đề | C | 15 | Cả nhóm |
+| B. Thẻ độc giả, cây AVL (a) | DG | 22 | Thành |
+| C. Mượn, trả, ngày tháng (f, g) | MT | 22 | Thành |
+| D. Đầu sách, cuốn sách, mã sách (c) | DS | 18 | Thái |
+| E. Tìm sách, quá hạn, Top 10 (e, i, j) | TK, QH, TOP | 18 | Thái |
+| F. In độc giả, thể loại, sách đang mượn, giao diện (b, d, h) | IN | 19 | Tấn |
+| G. Lưu và đọc file | FL | 9 | Cả nhóm |
 | H. Tình huống thực tế như làm sản phẩm thật | TT | 35 | Cả nhóm |
 | I. Thầy bắt sửa code tại chỗ | SC | 9 | Cả nhóm |
 
@@ -23,7 +23,12 @@
 
 **Cách dùng:** một người đọc câu hỏi, người kia trả lời và chỉ đúng dòng code, sau đó mới đọc phần "Gợi ý trả lời" ngay dưới câu hỏi. Số dòng theo code ngày 15/11; nếu sửa code thì tìm theo tên hàm. Dữ liệu ví dụ lấy từ `DuLieu/ThuVien.txt` mẫu, giả sử hôm nay là 15/11/2026.
 
-**Lưu ý:** gợi ý trả lời được viết bằng cách đọc code và chạy tay, chưa chạy lại từng tình huống trên máy. Câu nào đánh dấu "giả định của nhóm" thì nên hỏi thầy trước buổi vấn đáp.
+**Mức độ kiểm chứng (rà soát ngày 16/11/2026):**
+
+- Mọi số dòng trong bộ này đã được đối chiếu lại với code hiện tại bằng chương trình.
+- Các gợi ý có kết quả cụ thể đã được chạy lại trên chính code của nhóm: các bước xoay AVL (DG01, DG11, DG12, DG19), cấp mã thẻ (DG10), mốc quá hạn và năm nhuận (MT06, MT19), lách ngày mượn (MT03, MT04), vị trí chèn và thứ tự tên (DS01, DS03, DS13), sinh trùng mã sách (DS07), tìm chuỗi (TK01, TK03, TT22), thứ tự Top 10 và đồng hạng (TOP01, TOP03), thứ tự in theo tên và thể loại (IN03, IN08), danh sách quá hạn (QH01), hình dạng cây sau khi đọc lại file (FL01), và 16 kiểu file sai (FL07, MT17, TT29).
+- Chưa chạy được: các câu về tốc độ với dữ liệu rất lớn (QH02, TT03) là ước lượng; phần giao diện mới chỉ chạy trên lớp giả lập và một lần trên Windows Terminal.
+- Câu nào ghi "giả định của nhóm" thì nên hỏi thầy trước buổi vấn đáp.
 
 ## Đã sửa trong code ngày 15/11/2026
 
@@ -93,7 +98,7 @@ Bản gốc của năm file đã sửa nằm trong `_BanTruocKhiSua_20261115`.
 
 **Hỏi:** Thư viện đổi quy định thành mượn tối đa 5 cuốn. Em sửa mấy chỗ?
 
-**Gợi ý trả lời:** Sửa hằng `MAX_SACH_MUON` là logic đổi theo. Nhưng thông báo lỗi ở MuonSach.cpp dòng 28 ghi cứng "du 3 cuon", phải sửa chuỗi này. Tương tự tên hàm `CoSachQuaHan7Ngay` ghi cứng số 7 dù logic dùng `HAN_MUON`.
+**Gợi ý trả lời:** Sửa hằng `MAX_SACH_MUON` là logic đổi theo. Nhưng thông báo lỗi ở MuonSach.cpp dòng 28 ghi cứng "đủ 3 cuốn", phải sửa chuỗi này. Tương tự tên hàm `CoSachQuaHan7Ngay` ghi cứng số 7 dù logic dùng `HAN_MUON`.
 
 ### C07 · Vì sao thêm
 `MuonSach.cpp` dòng 10–65; `TraSach.cpp` dòng 10–48
@@ -110,11 +115,53 @@ Bản gốc của năm file đã sửa nằm trong `_BanTruocKhiSua_20261115`.
 **Gợi ý trả lời:** `const` chỉ khóa các trường nằm ngay trong nút, tức là khóa con trỏ `dsMuonTra` không cho trỏ sang chỗ khác. Nó không khóa nút `MuonTra` mà con trỏ đó trỏ tới. Nên `const` ở đây gây hiểu nhầm; đúng ra nên bỏ `const` vì hàm có sửa dữ liệu của độc giả.
 
 ### C09 · Vì sao thêm
-`01_HamTienIch.cpp` dòng 262–271; `GiaoDien.cpp` dòng 46–104
+`01_HamTienIch.cpp` dòng 262–271; `GiaoDien.cpp` dòng 47–110
 
 **Hỏi:** Liệt kê các hàm có sẵn em dùng mà không tự viết. Hàm nào bắt buộc, hàm nào tự viết được? Riêng `KhoiTaoManHinh` gọi ba hàm của Windows, mỗi hàm để làm gì?
 
 **Gợi ý trả lời:** Bắt buộc: `time`, `localtime` (lấy ngày máy); `_getch` (đọc phím); `system("mode con")`; `setvbuf` (cho `cout` gom chữ vào vùng đệm); `ifstream`, `ofstream`, `getline`. Trong `KhoiTaoManHinh`: `SetConsoleOutputCP(65001)` chuyển console sang bảng mã UTF-8 để in tiếng Việt có dấu; `GetConsoleMode` và `SetConsoleMode` (cùng `GetStdHandle`) bật chế độ cho console hiểu mã ANSI. `gotoxy` và `SetColor` đều tự viết bằng cách in mã ANSI qua `cout`. Ba hàm này chỉ gọi một lần lúc mở chương trình. Còn lại nhóm tự viết: đổi số sang chuỗi và ngược lại, tách trường, so sánh chuỗi, tìm chuỗi con, các thuật toán sắp xếp, tính ngày, và toàn bộ thanh menu, ô số liệu, khung, ô nhập, bảng.
+
+### C10 · Vì sao thêm
+`00_KhaiBaoChung.h` dòng 37–99; `QuanLyDocGia.cpp` dòng 147–149; `MuonSach.cpp` dòng 57–61
+
+**Hỏi:** Trong các struct em viết sẵn giá trị ngay sau tên trường: `int height = 1`, `left = nullptr`, `trangThai = SACH_CHO_MUON`, ngày `0/0/0`. Sau lệnh `new NutDocGia` các trường của nút mang giá trị gì? Chỉ ba chỗ trong code đang dựa vào các giá trị mặc định đó mà không gán lại.
+
+**Gợi ý trả lời:** Đây là giá trị khởi tạo mặc định của C++11: mỗi lần tạo biến hay `new` một struct, các trường tự nhận giá trị đó. Ba chỗ dựa vào nó: `ThemDocGiaAVL` tạo nút mới chỉ gán `thongTin`, còn `left`, `right` rỗng và `height = 1` là mặc định (nút lá cao 1, cây rỗng cao 0). `MuonSach` tạo lượt mới không gán `ngayTra`, nên nó là `0/0/0`, đúng quy ước "chưa trả" khi ghi file. `ThemCuonSachCoMa` không gán `next`, nên cuốn mới tự là cuối danh sách. Nếu thầy hỏi vì sao phải bật `-std=c++11`: cú pháp này là một lý do.
+
+### C11 · Vì sao thêm
+`QuanLyDocGia.cpp` dòng 35, 89, 143, 240, 300, 322
+
+**Hỏi:** Sáu hàm `XoayTrai`, `XoayPhai`, `ThemDocGiaAVL`, `CanBangLai`, `TachNutNhoNhat`, `XoaNutAVL` có chữ `static` đứng trước và không được khai báo trong file `.h`, còn `them_cay`, `XoaDocGia` thì có. Vì sao em chia như vậy? Nếu màn hình xóa thẻ gọi thẳng `XoaNutAVL` được thì nguy hiểm gì?
+
+**Gợi ý trả lời:** `static` trước một hàm nghĩa là hàm chỉ dùng được trong chính file đó. Sáu hàm kia là các bước bên trong của cây AVL; bên ngoài chỉ được đi qua `them_cay` và `XoaDocGia`, là hai hàm có kiểm tra điều kiện. `XoaNutAVL` xóa nút mà không hủy danh sách mượn trả và không kiểm thẻ có lịch sử hay không; nếu gọi thẳng cho một thẻ đang giữ sách thì lịch sử bị rò bộ nhớ, cuốn sách kẹt ở trạng thái đang mượn và Top 10 giảm. Để `static` thì trình biên dịch chặn luôn khả năng đó.
+
+### C12 · Vì sao thêm
+`00_KhaiBaoChung.h` dòng 223–224, 244–245
+
+**Hỏi:** Nhìn vào khai báo: `MuonSach(DanhSachDauSach &ds, NutDocGia &docgia, const string &maSach, NgayThang ngayMuon, string &loi)`. Năm tham số truyền theo ba kiểu khác nhau. Vì sao mỗi cái một kiểu? `HieuChinhDocGia` lại nhận `string Ho` không có `&`, tốn gì?
+
+**Gợi ý trả lời:** `ds` và `docgia` truyền tham chiếu thường vì hàm sửa chúng (đổi trạng thái cuốn, thêm lượt). `maSach` là `const string &`: chỉ đọc và không chép chuỗi. `ngayMuon` truyền theo trị vì chỉ là ba số nguyên, chép còn rẻ hơn dùng tham chiếu. `loi` là tham chiếu thường vì đây là kết quả trả ra thứ hai, bên cạnh `bool`. `HieuChinhDocGia` nhận `string` theo trị là code gốc của nhóm: mỗi lời gọi chép ba chuỗi, vẫn đúng nhưng tốn hơn `const string &`; với họ tên vài chục ký tự thì không đáng kể.
+
+### C13 · Thuật toán
+`00_KhaiBaoChung.h` dòng 45–103
+
+**Hỏi:** Vẽ sơ đồ bốn cấu trúc của đề và các mũi tên nối chúng. Từ một độc giả, đi đường nào để ra tên cuốn sách người đó đang giữ? Từ một cuốn sách, đi đường nào để biết ai đang giữ nó? Chiều nào có con trỏ, chiều nào không?
+
+**Gợi ý trả lời:** Hai nhánh con trỏ: mảng đầu sách trỏ tới `DauSach`, từ đó `dms` trỏ tới danh sách `CuonSach`; cây trỏ tới `NutDocGia`, từ đó `dsMuonTra` trỏ tới danh sách `MuonTra`. Hai nhánh chỉ nối với nhau bằng một chuỗi: `MuonTra.maSach`. Độc giả ra tên sách: duyệt lịch sử, lấy mã sách, tách ISBN, tìm đầu sách trong mảng (tuyến tính), đọc `tenSach`. Cuốn sách ra người giữ: không có liên kết nào, phải duyệt mọi độc giả và mọi lượt mượn. Vì vậy câu hỏi "theo độc giả" rẻ, câu hỏi "theo sách" đắt; Top 10, kiểm kê, trả sách bằng mã sách đều gặp đúng chỗ này.
+
+### C14 · Thuật toán
+Toàn bộ `MaNguon`
+
+**Hỏi:** Nêu độ phức tạp của từng chức năng a đến j theo R (độc giả), D (đầu sách), c (số cuốn của một đầu sách), H (tổng lượt mượn), H₁ (lượt mượn của một người). Chức năng nào đắt nhất và vì sao?
+
+**Gợi ý trả lời:** a: thêm, xóa, hiệu chỉnh thẻ O(log R). b: theo mã O(R); theo tên O(R log R) trung bình. c: thêm đầu sách O(D); thêm k cuốn O(k·(c + k)). d: sắp xếp chèn, O(D²) xấu nhất, gần O(D) khi thể loại đã gần đúng thứ tự. e: O(D) lần so chuỗi con, cộng phần in. f và g: O(log R + H₁ + D + c). h: O(log R + H₁ + D). i: O(R + H) để gom, cộng O(n²) để sắp n lượt quá hạn. j: O(R + H·D) để đếm, cộng 10·D để chọn. Đắt nhất là j vì mỗi lượt mượn phải tìm lại đầu sách trong mảng không sắp theo ISBN. Lưu ý thêm: mọi thao tác có thay đổi dữ liệu còn cộng một lần ghi lại cả file, O(D + C + R + H).
+
+### C15 · Bẫy
+`QuanLyDocGia.cpp` dòng 525; `LuuDocFile.cpp` dòng 50–71, 140
+
+**Hỏi:** Em nói nhờ AVL nên thêm thẻ chỉ tốn O(log n). Nhưng ngay sau `them_cay`, em gọi `LuuSauThayDoi` ghi lại toàn bộ file, tốn O(n). Vậy AVL còn ý nghĩa gì?
+
+**Gợi ý trả lời:** Với thao tác thêm và xóa thì đúng là phần ghi file lấn át, AVL không làm tổng thời gian nhỏ hơn O(n). AVL có ý nghĩa ở ba chỗ khác. Một: tìm thẻ, việc xảy ra ở đầu mọi giao dịch mượn, trả, xem sách, luôn O(log R). Hai: lúc mở chương trình, R thẻ được chèn lại từng cái; với BST thường và mã tăng dần thì tốn cỡ R²/2 bước, AVL chỉ R·log R; đã thử 100.000 thẻ, cây chỉ cao 17. Ba: BST lệch sâu R tầng thì các hàm đệ quy (duyệt, hủy cây) có thể tràn ngăn xếp. Trả lời thẳng như vậy tốt hơn là cãi rằng thêm thẻ vẫn O(log n).
 
 ---
 
@@ -245,6 +292,34 @@ Bản gốc của năm file đã sửa nằm trong `_BanTruocKhiSua_20261115`.
 **Hỏi:** Vì sao hủy cây theo thứ tự sau (LRN)? Đệ quy sâu tối đa bao nhiêu? Lịch sử mượn được hủy ở đâu?
 
 **Gợi ý trả lời:** Phải hủy hai cây con trước, vì xóa nút cha trước thì mất con trỏ tới các con. Độ sâu đệ quy bằng chiều cao cây, nhờ AVL chỉ khoảng log n. Lịch sử của từng nút được hủy bằng `HuyDanhSachMuonTra` ở dòng 437, ngay trước khi `delete` nút.
+
+### DG19 · Thuật toán
+`QuanLyDocGia.cpp` dòng 261–277
+
+**Hỏi:** Cây gốc 4, con trái 2 (có hai con 1 và 3), con phải 5. Xóa thẻ 5. Tại nút 4 hệ số cân bằng là bao nhiêu? Con trái là nút 2 có hai cháu cao bằng nhau: code xoay đơn hay xoay kép, do điều kiện nào? Vẽ cây kết quả.
+
+**Gợi ý trả lời:** Sau khi xóa 5, tại nút 4 cao trái 2, cao phải 0, hệ số +2. Điều kiện ở dòng 273 là "cháu phải cao HƠN cháu trái" mới xoay trái con trước; ở đây hai cháu bằng nhau nên điều kiện sai, chỉ xoay phải một lần tại 4. Kết quả: gốc 2, con trái 1, con phải 4, và 4 có con trái 3. Quy tắc: xoay kép chỉ cần khi nhánh "trong" cao hơn hẳn; bằng nhau hoặc nhánh "ngoài" cao hơn thì xoay đơn là đủ. Trường hợp hai cháu bằng nhau chỉ xuất hiện khi xóa, không xuất hiện khi thêm.
+
+### DG20 · Bẫy
+`MuonSach.cpp` dòng 124–148; `QuanLyDocGia.cpp` dòng 565–574
+
+**Hỏi:** Màn hình mượn sách giữ con trỏ `docgia` tới một nút của cây suốt lúc người dùng mượn liên tiếp nhiều cuốn. Nếu trong lúc đó cây bị xoay vì có thẻ mới được thêm, con trỏ này còn dùng được không? Trường hợp nào con trỏ tới nút thật sự hỏng, và màn hình xóa thẻ tránh nó thế nào?
+
+**Gợi ý trả lời:** Còn dùng được. Phép xoay chỉ đổi các liên kết `left`, `right` và `height`; nút không bị cấp phát lại hay chép sang chỗ khác, nên mỗi độc giả nằm nguyên một địa chỉ từ lúc `new` đến lúc `delete`. Đã thử: giữ con trỏ tới thẻ 7, thêm ba thẻ làm cây xoay, con trỏ vẫn trỏ đúng thẻ 7. Con trỏ chỉ hỏng khi nút bị xóa. Màn hình xóa thẻ chép `maThe` ra biến riêng trước khi gọi `XoaDocGia` (dòng 565), các thông báo sau đó chỉ dùng biến này, không đụng tới `p` nữa.
+
+### DG21 · Vì sao thêm
+`QuanLyDocGia.cpp` dòng 143–158, 431–441
+
+**Hỏi:** `ThemDocGiaAVL` nhận `NutDocGia* root` và trả về con trỏ, nơi gọi viết `root->left = ThemDocGiaAVL(root->left, ...)`. Còn `Huydocgia` lại nhận `NutDocGia *&` và không trả gì. Hai cách này khác nhau thế nào, vì sao mỗi hàm một cách?
+
+**Gợi ý trả lời:** Cả hai đều nhằm sửa được con trỏ của nút cha. Cách trả về con trỏ: hàm con trả gốc mới của cây con, nút cha tự gán lại; hợp với thêm và xóa AVL vì sau khi xoay, gốc của cây con đổi thành nút khác, và trên đường quay về mỗi tầng còn phải tính lại chiều cao. Cách tham chiếu tới con trỏ: hàm sửa thẳng vào ô con trỏ của cha; hợp với hủy cây vì chỉ cần gán ô đó thành rỗng sau khi `delete`, không có gì để trả về. Gán rỗng như vậy để sau khi hủy, cây ở trạng thái rỗng hợp lệ chứ không trỏ vào vùng nhớ đã trả.
+
+### DG22 · Bẫy
+`QuanLyDocGia.cpp` dòng 541–550, 399–411
+
+**Hỏi:** Ở màn hình hiệu chỉnh có dòng `DocGia dg = p->thongTin;`. Phép gán này chép những gì? `dg` và nút trong cây lúc đó cùng trỏ tới một danh sách mượn trả, có nguy hiểm không? Người dùng sửa họ xong rồi nhấn Esc ở ô tên thì thẻ trong cây đã bị đổi chưa?
+
+**Gợi ý trả lời:** Phép gán chép từng trường: mã thẻ, ba chuỗi, trạng thái, và cả giá trị con trỏ `dsMuonTra` (không chép các lượt mượn). Hai nơi cùng trỏ một danh sách chỉ nguy hiểm nếu một bên đem `delete`; `DocGia` không có hàm hủy tự viết, nên khi `dg` hết phạm vi, danh sách không bị đụng tới. `dg` chỉ là chỗ nháp cho họ, tên, phái. Nhấn Esc thì gặp `continue` trước khi tới `HieuChinhDocGia`, nên thẻ trong cây chưa đổi gì; chỉ khi nhập đủ cả ba ô và chọn trạng thái thì bốn trường mới được ghi vào nút. `HieuChinhDocGia` không ghi `dsMuonTra` nên lịch sử không bao giờ bị thay.
 
 ---
 
@@ -390,6 +465,20 @@ Bản gốc của năm file đã sửa nằm trong `_BanTruocKhiSua_20261115`.
 
 **Gợi ý trả lời:** Cho nhập để ghi bù giao dịch hôm trước (thư viện ghi sổ tay rồi nhập sau). `ngayMuon` khai báo ngoài vòng mượn liên tiếp nên giữ giá trị, đỡ gõ lại khi một người mượn nhiều cuốn cùng ngày; vòng ngoài gán lại `HomNay()` khi đổi độc giả. Rủi ro: thủ thư ghi bù một cuốn ngày cũ rồi quên sửa, cuốn kế tiếp cũng mang ngày cũ. Ngày lùi không còn lách được quá hạn (MT03) nhưng vẫn làm sai lịch sử.
 
+### MT21 · Thuật toán
+`MuonSach.cpp` dòng 10–65, 119–155
+
+**Hỏi:** Thủ thư vào "Mượn sách", gõ mã thẻ 6, gõ mã `9786040000004#1`, Enter hai lần và thấy thông báo thành công. Kể theo thứ tự các hàm được gọi từ lúc gõ mã thẻ tới lúc file được ghi, và mỗi hàm đụng vào cấu trúc dữ liệu nào.
+
+**Gợi ý trả lời:** `NhapMaTheTimDocGia` gọi `tim_cay`: đi trên cây AVL. `InSachDangMuon`: duyệt danh sách mượn trả của thẻ 6, mỗi lượt đang mượn gọi `TimCuonSachToanCuc` để lấy tên sách. `MuonSach`: lấy ngày máy; `Dem_so_sach_dang_muon` và `CoSachQuaHan7Ngay` mỗi hàm duyệt danh sách mượn trả một lượt; `TimCuonSachToanCuc` tách ISBN, tìm tuyến tính trong mảng đầu sách, rồi duyệt danh sách cuốn của đầu sách đó; `them_lich_su` nối một nút vào cuối danh sách mượn trả; cuối cùng đổi trạng thái cuốn thành 1. `LuuSauThayDoi` gọi `LuuFile`: duyệt cả mảng, mọi danh sách cuốn, cả cây theo thứ tự trước và mọi danh sách mượn trả. Một lần mượn đi qua đủ bốn cấu trúc của đề.
+
+### MT22 · Bẫy
+`MuonSach.cpp` dòng 46–63; `Top10Sach.cpp` dòng 73–81
+
+**Hỏi:** Một độc giả mượn một cuốn, trả ngay, rồi mượn lại và trả lại, làm năm lần trong cùng một ngày. Chương trình có chặn không? Lịch sử và Top 10 thay đổi thế nào? Có phân biệt được năm lượt đó với một lỗi ghi trùng không?
+
+**Gợi ý trả lời:** Không chặn: sau mỗi lần trả cuốn sách về trạng thái "cho mượn được" và độc giả không vi phạm điều kiện nào. Lịch sử có năm nút giống hệt nhau (cùng mã sách, cùng ngày mượn, ngày trả, trạng thái), Top 10 của đầu sách đó tăng 5. Dữ liệu chỉ lưu ngày, không lưu giờ hay số thứ tự giao dịch, nên không phân biệt được năm lượt thật với năm dòng trùng. Nếu thầy hỏi cách hạn chế: quy ước mỗi cuốn một người chỉ tính một lượt mỗi ngày trong Top 10, hoặc không cho mượn lại cùng cuốn trong ngày đã trả.
+
 ---
 
 ## D. Đầu sách, cuốn sách, mã sách (Thái)
@@ -469,7 +558,7 @@ Bản gốc của năm file đã sửa nằm trong `_BanTruocKhiSua_20261115`.
 
 **Hỏi:** Thanh lý sách sao chỉ đổi trạng thái mà không xóa nút khỏi danh sách liên kết? Sao không thanh lý được cuốn đang được mượn?
 
-**Gợi ý trả lời:** Lịch sử mượn và Top 10 tham chiếu mã sách; xóa nút thì các màn hình h, i sẽ hiện "khong ro dau sach" và việc sinh mã có thể cấp lại số cũ. Đề cũng đã cho sẵn trạng thái 2 cho việc này. Cuốn đang mượn phải được trả hoặc báo mất trước, nếu không lượt mượn sẽ tham chiếu một cuốn đã thanh lý mà vẫn "đang mượn".
+**Gợi ý trả lời:** Lịch sử mượn và Top 10 tham chiếu mã sách; xóa nút thì các màn hình h, i sẽ hiện "(không rõ đầu sách)" và việc sinh mã có thể cấp lại số cũ. Đề cũng đã cho sẵn trạng thái 2 cho việc này. Cuốn đang mượn phải được trả hoặc báo mất trước, nếu không lượt mượn sẽ tham chiếu một cuốn đã thanh lý mà vẫn "đang mượn".
 
 ### DS12 · Bẫy
 `NhapSach.cpp` dòng 307–310; `MuonSach.cpp` dòng 145
@@ -505,6 +594,20 @@ Bản gốc của năm file đã sửa nằm trong `_BanTruocKhiSua_20261115`.
 **Hỏi:** Khi thoát, chương trình hủy kho sách trước rồi mới hủy cây độc giả. Đổi thứ tự có sao không? Điều gì trong thiết kế khiến hai phần này độc lập?
 
 **Gợi ý trả lời:** Đổi thứ tự không sao. Lượt mượn chỉ giữ mã sách dạng chuỗi, không giữ con trỏ tới cuốn sách, nên hủy lịch sử không cần đụng tới kho sách. Nếu `MuonTra` giữ con trỏ `CuonSach*` thì tra tên nhanh hơn, nhưng không ghi được vào file và phải cẩn thận thứ tự hủy.
+
+### DS17 · Bẫy
+`00_KhaiBaoChung.h` dòng 66–70; `NhapSach.cpp` dòng 122–136
+
+**Hỏi:** Struct `DanhSachDauSach` có mảng 10000 con trỏ, nhưng chỉ `soLuong = 0` được khởi tạo. 10000 ô con trỏ lúc đầu chứa gì? Vì sao chương trình không sập, và điều gì trong code bảo đảm không bao giờ đọc ô chưa dùng?
+
+**Gợi ý trả lời:** Các ô chưa được gán chứa giá trị không xác định, không phải rỗng. Chương trình không bao giờ đọc chúng vì mọi vòng lặp trên mảng đều chạy từ 0 tới `soLuong − 1`: tìm ISBN, tìm vị trí chèn (cận phải là `soLuong`), in, lưu file, hủy. Khi chèn, ô `soLuong` chỉ được ghi vào rồi `soLuong` mới tăng. Vậy bất biến cần giữ là: các ô từ 0 tới `soLuong − 1` luôn hợp lệ, phần còn lại không ai đụng. Gán rỗng cho cả 10000 ô lúc tạo cũng được nhưng không cần.
+
+### DS18 · Bẫy
+`NhapSach.cpp` dòng 79–92; `TimSach.cpp` dòng 74–78
+
+**Hỏi:** Đề bắt mảng đầu sách luôn tăng dần theo tên, và em tốn công chèn đúng chỗ. Nhưng chức năng tìm theo tên của em vẫn duyệt từ đầu tới cuối. Vậy sắp theo tên được lợi gì trong chương trình này? Chức năng nào thật sự dựa vào thứ tự đó?
+
+**Gợi ý trả lời:** Tìm kiểu "tên có chứa từ khóa" không dùng được thứ tự, nên phải duyệt hết. Thứ tự tên được dùng ở ba chỗ. Tìm vị trí chèn bằng nhị phân. Chức năng d: mảng tạm chép từ mảng gốc đã theo tên, sắp xếp chèn ổn định theo thể loại là xong, không phải so tên. Trang Tổng quan và mọi chỗ in danh mục đều ra thứ tự tên mà không phải sắp. Nếu thầy yêu cầu tìm đúng nguyên tên hoặc tên bắt đầu bằng một cụm thì dùng được nhị phân ngay trên mảng này. Trả lời thẳng: thứ tự tên phục vụ việc in và chèn, không phục vụ tìm chuỗi con.
 
 ---
 
@@ -629,6 +732,13 @@ Bản gốc của năm file đã sửa nằm trong `_BanTruocKhiSua_20261115`.
 
 **Gợi ý trả lời:** Sau bước chọn, các ô đầu của `thuTu[]` đã giảm dần theo số lượt. Gặp một ô bằng 0 thì mọi ô sau cũng bằng 0, nên dừng luôn.
 
+### TOP07 · Vì sao thêm
+`InDanhSachDocGia.cpp` dòng 21–42; `InDauSachTheoTheLoai.cpp` dòng 12–25; `DocGiaQuaHan.cpp` dòng 51–65; `Top10Sach.cpp` dòng 87–98
+
+**Hỏi:** Chương trình dùng ba thuật toán sắp xếp khác nhau: Quick Sort cho b, sắp xếp chèn cho d, sắp xếp chọn cho i và j. Vì sao không viết một hàm rồi dùng cho cả bốn chỗ? Mỗi chỗ chọn thuật toán đó dựa vào đặc điểm gì của dữ liệu?
+
+**Gợi ý trả lời:** b: số độc giả có thể rất lớn và không có thứ tự sẵn theo tên, cần thuật toán O(n log n). d: dữ liệu đã có sẵn thứ tự tên và cần giữ thứ tự đó trong từng thể loại, nên cần thuật toán ổn định; sắp xếp chèn ổn định và chạy nhanh khi dữ liệu gần đúng thứ tự. j: chỉ cần 10 phần tử lớn nhất; sắp xếp chọn tự nhiên dừng được sau 10 vòng, tốn 10·D thay vì sắp cả mảng. i: số lượt quá hạn thường nhỏ nên chọn thuật toán đơn giản nhất; đây là chỗ yếu nếu dữ liệu lớn (QH02). Nói thật với thầy: dùng ba thuật toán cũng là để nhóm trình bày được chương Sắp xếp trên chính đồ án, nhưng mỗi lựa chọn đều có lý do từ dữ liệu.
+
 ---
 
 ## F. In danh sách, giao diện (Tấn)
@@ -699,58 +809,72 @@ Bản gốc của năm file đã sửa nằm trong `_BanTruocKhiSua_20261115`.
 ### IN10 · Thuật toán
 `MuonSach.cpp` dòng 82–112; `SachDangMuon.cpp`
 
-**Hỏi:** Lượt mượn chỉ lưu mã sách. Chức năng h lấy tên sách ở đâu, tốn bao nhiêu? Khi nào hiện "(khong ro dau sach)"?
+**Hỏi:** Lượt mượn chỉ lưu mã sách. Chức năng h lấy tên sách ở đâu, tốn bao nhiêu? Khi nào hiện "(không rõ đầu sách)"?
 
-**Gợi ý trả lời:** Với mỗi lượt đang mượn, tách ISBN từ mã rồi tìm đầu sách trong mảng (tuyến tính). Tối đa 3 lượt mở nên tối đa 3 lần tìm, cộng một lượt duyệt cả lịch sử để lọc. Dòng "khong ro dau sach" hiện khi mã sách trong lịch sử không khớp ISBN nào trong kho, chỉ xảy ra khi file bị sửa tay.
+**Gợi ý trả lời:** Với mỗi lượt đang mượn, tách ISBN từ mã rồi tìm đầu sách trong mảng (tuyến tính). Tối đa 3 lượt mở nên tối đa 3 lần tìm, cộng một lượt duyệt cả lịch sử để lọc. Dòng "(không rõ đầu sách)" hiện khi mã sách trong lịch sử không khớp ISBN nào trong kho, chỉ xảy ra khi file bị sửa tay.
 
 ### IN11 · Vì sao thêm
-`GiaoDien.cpp` dòng 98–104; `00_KhaiBaoChung.h` dòng 110–116
+`GiaoDien.cpp` dòng 104–110; `00_KhaiBaoChung.h` dòng 110–116
 
 **Hỏi:** `DocPhim` trả mã phím mũi tên là 256 cộng mã phím, nên các hằng `PHIM_LEN`, `PHIM_PHAI` đều lớn hơn 256. Vì sao em làm vậy thay vì trả thẳng mã phím? Chỉ một màn hình trong chương trình mà nếu không làm vậy sẽ lẫn phím.
 
 **Gợi ý trả lời:** `_getch` trả phím mũi tên thành hai lần đọc: 0 hoặc 224, rồi mã phím. Mã thứ hai trùng với chữ cái thường: mũi tên phải là 77, bằng chữ 'M'; mũi tên lên là 72, bằng 'H'. Cộng 256 đưa phím mũi tên ra ngoài khoảng mã ký tự nên không bao giờ lẫn. Ở màn hình trả sách (TraSach.cpp dòng 97), phím 'M' là báo mất; không cộng 256 thì mũi tên phải cũng thành báo mất.
 
 ### IN12 · Vì sao thêm
-`GiaoDien.cpp` dòng 106–152, 176–238; `00_KhaiBaoChung.h` dòng 132–138
+`GiaoDien.cpp` dòng 113–158, 186–243; `00_KhaiBaoChung.h` dòng 132–138
 
 **Hỏi:** Màn hình chia hai vùng: thanh menu bên trái và vùng nội dung bên phải. Các màn hình chức năng vẫn gọi `InTai(4, 5, ...)` như thể bắt đầu từ cột 0. Vậy ai dời nội dung sang phải, ở dòng nào? Vì sao em làm ở đó mà không sửa tọa độ trong từng màn hình?
 
 **Gợi ý trả lời:** Bốn hàm in nội dung `InTai`, `InCot`, `XoaVung`, `VeKhung` (và vị trí con trỏ trong `NhapChuoi`) cộng thêm `RONG_MENU` vào x trước khi gọi `gotoxy`. Chỉ `VeMenuTrai` gọi `gotoxy` trực tiếp vì nó vẽ ngoài vùng nội dung. Nhờ vậy muốn đổi độ rộng thanh menu chỉ sửa một hằng, và mười màn hình chức năng không cần biết thanh menu tồn tại. Cái giá: vùng nội dung chỉ còn 96 cột trong cửa sổ 120 cột, nên các bảng phải thu hẹp cột và tên dài bị cắt.
 
 ### IN13 · Vì sao thêm
-`Menu.cpp` dòng 95–150; `GiaoDien.cpp` dòng 183–196
+`Menu.cpp` dòng 95–150; `GiaoDien.cpp` dòng 188–200
 
 **Hỏi:** Tên các mục menu nằm trong mảng ở `VeMucMenu`, còn việc gọi chức năng nằm trong `switch (chon)` ở `MenuChinh`. Hai chỗ này liên hệ với nhau bằng gì? Thêm một chức năng mới vào giữa thì phải sửa những đâu?
 
 **Gợi ý trả lời:** Liên hệ bằng số thứ tự: mục thứ i trong mảng ứng với `case i`, và số đầu tiên truyền cho `VeManHinh` ở từng màn hình cũng là số đó (để tô sáng đúng mục khi đang ở trong chức năng). Thêm một mục ở giữa phải sửa bốn nơi: mảng tên, hằng `SO_MUC_MENU`, các `case` phía sau, và tham số `VeManHinh` của các màn hình phía sau. Đây là ràng buộc ngầm của cách làm đơn giản này; gọn hơn là đặt hằng tên cho từng mục.
 
 ### IN14 · Thuật toán
-`Menu.cpp` dòng 104–127; `GiaoDien.cpp` dòng 176–238
+`Menu.cpp` dòng 104–127; `GiaoDien.cpp` dòng 186–243
 
 **Hỏi:** Thanh menu tô sáng mục đang chọn bằng hai màu khác nhau. Khi nào dùng màu nào? Nhấn mũi tên lên khi đang ở mục đầu tiên thì sao, công thức nào làm việc đó? Mỗi lần nhấn phím chương trình vẽ lại những gì, và vì sao em tách `VeMucMenu` khỏi `VeMenuTrai`? Con trỏ nhấp nháy của console hiện ở đâu, ẩn ở đâu?
 
 **Gợi ý trả lời:** Khi người dùng đang di chuyển trên thanh menu (`dangDieuKhien = true`) mục được tô nền và có thêm vạch sáng ở đầu dòng; khi đang làm việc trong vùng nội dung, mục hiện tại chỉ còn tô nền, không có vạch, để biết mình đang ở đâu. Lên từ mục đầu thì vòng xuống mục cuối nhờ `(chon + SO_MUC_MENU - 1) % SO_MUC_MENU`; xuống từ mục cuối về đầu nhờ `(chon + 1) % SO_MUC_MENU`. Mỗi lần nhấn phím chỉ vẽ lại đúng hai dòng bằng `VeMucMenu`: mục vừa rời đi và mục vừa tới. Bản đầu vẽ lại cả thanh menu (30 dòng nền và 12 mục) sau mỗi phím nên màn hình nhấp nháy. `VeMenuTrai` chỉ còn được gọi khi vẽ lại cả màn hình. Con trỏ được ẩn ngay lúc mở chương trình (`HienConTro(false)` trong `KhoiTaoManHinh`) và chỉ hiện trong lúc chờ phím ở ô nhập (`NhapChuoi`); nếu để hiện suốt, mắt sẽ thấy nó nhảy theo từng lệnh `gotoxy`.
 
 ### IN15 · Vì sao thêm
-`GiaoDien.cpp` dòng 26–94
+`GiaoDien.cpp` dòng 27–100
 
 **Hỏi:** `SetColor` của em không gọi `SetConsoleTextAttribute` như cách quen thuộc mà in ra một chuỗi bắt đầu bằng ký tự ESC. Chuỗi đó là gì, vì sao em làm vậy? Vì sao `XoaManHinh` không dùng `system("cls")`, và nó được gọi khi nào?
 
 **Gợi ý trả lời:** `SetConsoleTextAttribute` chỉ chọn được 16 màu có sẵn của console, không có nền xanh đen và màu xanh bạc hà của giao diện. Chuỗi `ESC[38;2;R;G;Bm` là mã màu ANSI: console đọc nó như một lệnh "đổi màu chữ thành (R, G, B)" chứ không in ra; `48;2;...` là màu nền. Mỗi mã màu 0–15 của chương trình tra ra một bộ ba RGB trong `BANG_MAU`. Console chỉ hiểu mã này sau khi `KhoiTaoManHinh` bật chế độ tương ứng. `system("cls")` xóa bằng màu đen mặc định của console, nên em in `ESC[2J` để xóa bằng đúng màu nền đang chọn; hàm này chỉ gọi lúc mở và lúc thoát chương trình. Cái giá: trên Windows quá cũ không hỗ trợ mã ANSI thì màn hình hiện ký tự lạ.
 
 ### IN16 · Thuật toán
-`GiaoDien.cpp` dòng 113–141, `InDuCot`
+`GiaoDien.cpp` dòng 121–148, `InDuCot`
 
 **Hỏi:** Nhãn "Mã thẻ" có 6 ký tự nhưng `size()` của nó là 10. Vì sao? `InDuCot` làm thế nào để các cột của bảng vẫn thẳng hàng khi tiêu đề có dấu? Điều kiện `(s[i] & 0xC0) == 0x80` nghĩa là gì?
 
 **Gợi ý trả lời:** Chuỗi được lưu theo UTF-8: chữ không dấu chiếm 1 byte, chữ có dấu tiếng Việt chiếm 2 hoặc 3 byte, và `size()` đếm byte. Trên màn hình mỗi chữ vẫn chỉ chiếm 1 ô. Nếu căn cột theo `size()` thì cột có dấu bị thiếu khoảng trắng và lệch. `InDuCot` đếm số ô: in byte đầu của một ký tự, rồi in tiếp mọi byte nối tiếp của nó mà không tăng số ô. Byte nối tiếp trong UTF-8 luôn có hai bit cao là `10`, tức là `byte & 0xC0 == 0x80`. Khi cắt chuỗi dài, hàm chỉ cắt ở ranh giới ký tự nên không bao giờ in nửa chữ. Dữ liệu người dùng nhập vẫn là không dấu nên các hàm so sánh, tìm kiếm không bị ảnh hưởng.
 
 ### IN17 · Vì sao thêm
-`GiaoDien.cpp` dòng 46–110, 248–270
+`GiaoDien.cpp` dòng 47–110, 246–265
 
 **Hỏi:** `gotoxy` của em in ra `ESC[dòng;cộtH` chứ không gọi `SetConsoleCursorPosition`, và `KhoiTaoManHinh` có lệnh `setvbuf`. Hai việc này liên quan gì tới chuyện màn hình không nhấp nháy khi chuyển chức năng? Vì sao `DocPhim` lại gọi `cout.flush()`? Vì sao `VeManHinh` không xóa trắng cả màn hình?
 
 **Gợi ý trả lời:** Nhấp nháy xảy ra khi người dùng kịp nhìn thấy màn hình ở trạng thái dở dang: vừa bị xóa trắng, hoặc mới vẽ được một nửa. `setvbuf` cho `cout` gom mọi thứ vào một vùng đệm lớn; cả màn hình mới được vẽ xong trong vùng đệm rồi mới đẩy ra một lần, lúc `DocPhim` gọi `flush` ngay trước khi chờ phím. Muốn vậy thì lệnh đổi vị trí con trỏ cũng phải nằm trong cùng dòng chảy với chữ và màu, nên `gotoxy` in mã ANSI; nếu gọi `SetConsoleCursorPosition` thì phải đẩy vùng đệm ra trước mỗi lần đổi vị trí, tức là lại vẽ từng mẩu. `VeManHinh` không xóa trắng mà vẽ đè: thanh menu vẽ lại y như cũ nên mắt không thấy đổi, vùng nội dung được lấp bằng màu nền rồi vẽ nội dung mới. Cái giá: nếu quên `flush` trước khi chờ phím thì người dùng không thấy gì; vì vậy mọi chỗ chờ phím đều đi qua `DocPhim`.
+
+### IN18 · Vì sao thêm
+`GiaoDien.cpp` dòng 335–369
+
+**Hỏi:** Mọi ô nhập trong chương trình đều đi qua `NhapChuoi`, đọc từng phím bằng `_getch`, không có chỗ nào dùng `cin` hay `getline`. Vì sao? Điều kiện `phim >= 32 && phim <= 126` ở dòng 363 lọc những gì? Người dùng nhấn mũi tên trái, hoặc gõ chữ có dấu trong ô nhập thì sao? Nhấn Esc thì biến `s` của nơi gọi ra sao?
+
+**Gợi ý trả lời:** `cin` chỉ trả dữ liệu sau khi người dùng nhấn Enter, không bắt được Esc, không giới hạn được số ký tự và không chặn được ký tự sai ngay lúc gõ; nó cũng tự in chữ ra và xuống dòng, phá bố cục vẽ bằng `gotoxy`. Tự đọc từng phím thì kiểm soát được hết. Khoảng 32 đến 126 là các ký tự in được của bảng ASCII: chữ không dấu, số, dấu câu. Phím mũi tên có mã từ 256 trở lên (`DocPhim` đã cộng 256) nên bị bỏ qua. Chữ có dấu cũng bị bỏ qua, khớp với quy ước dữ liệu không dấu. Hàm sửa trên bản sao `tam`; chỉ khi nhấn Enter mới gán `s = tam`, nên Esc giữ nguyên `s`.
+
+### IN19 · Bẫy
+`01_HamTienIch.cpp` dòng 159–171; `GiaoDien.cpp` dòng 372–385
+
+**Hỏi:** `ChuoiThanhSo` từ chối chuỗi dài hơn 9 chữ số. Vì sao là 9 mà không phải 10? Hàm có nhận số âm không, ở đâu trong chương trình cần số âm? Người dùng gõ "007" vào ô số trang thì được số nào?
+
+**Gợi ý trả lời:** Số `int` lớn nhất là 2.147.483.647, có 10 chữ số, nhưng không phải số 10 chữ số nào cũng vừa (ví dụ 3.000.000.000 thì tràn). Số 9 chữ số bất kỳ thì chắc chắn vừa, nên chặn ở 9 là khỏi phải viết đoạn kiểm tràn. Hàm chỉ nhận ký tự 0 đến 9 nên không có số âm; chương trình không cần số âm ở đâu cả, và nhờ vậy file có "-1" bị từ chối ngay. "007" cho ra 7 vì hàm nhân 10 rồi cộng dần từng chữ số.
 
 ---
 
@@ -811,6 +935,13 @@ Bản gốc của năm file đã sửa nằm trong `_BanTruocKhiSua_20261115`.
 **Hỏi:** File hỏng ở dòng lịch sử của độc giả thứ hai. Lúc đó đã cấp phát những gì? Ai giải phóng?
 
 **Gợi ý trả lời:** Đã có toàn bộ đầu sách, các cuốn, độc giả thứ nhất cùng lịch sử, và nút độc giả thứ hai. `DocFile` gọi `HuyDanhSachDauSach` và `HuyCayDocGia` (dòng 170–174) để giải phóng hết, đưa về thư viện rỗng, không rò bộ nhớ.
+
+### FL09 · Vì sao thêm
+`main.cpp` dòng 22–30
+
+**Hỏi:** Mọi thao tác đã tự lưu file ngay khi xong. Vậy vì sao khi thoát `main` còn gọi `LuuFile` thêm lần nữa ở dòng 30? Còn bản sao `ThuVien_BanTruoc.txt` thì vì sao được ghi lúc mở chương trình mà không ghi lúc thoát?
+
+**Gợi ý trả lời:** Lần lưu lúc thoát là phòng hờ: nếu một lần tự lưu trước đó thất bại (ổ đĩa bận, thư mục vừa được tạo lại) thì đây là cơ hội ghi lại; ở lần chạy đầu tiên nó cũng tạo ra file dù chưa có thao tác nào. Bản sao được ghi lúc mở vì đó là thời điểm duy nhất chắc chắn dữ liệu hợp lệ: vừa đọc xong và qua được mọi kiểm tra. Nếu ghi bản sao lúc thoát thì người dùng tắt bằng nút X sẽ không bao giờ có bản sao, và dữ liệu bị nhập sai trong phiên cũng bị chép luôn vào bản sao.
 
 ---
 
