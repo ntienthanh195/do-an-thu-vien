@@ -193,340 +193,303 @@ const CuonSach *TimCuonSachTrongDauSach(const DauSach &d, const string &ma){
     return nullptr;
 }
 
-const CuonSach *TimCuonSachToanCuc(const ThuVien &tv, const string &ma, const DauSach **owner){
-    if(LaChuoiRong(ma)) return nullptr;
-    // 1. Tach 13 so dau tien lam ISBN
-    string ISBN_trong_Ma = "";
-    for(const char c : ma){
-        if(ISBN_trong_Ma.size() < 13){
-            if(c >= '0' && c <= '9'){
-                ISBN_trong_Ma += c;
-            }
-            else if(!KhoangTrang(c)){ // Neu gap ky tu la (gach ngang, #...)
-                return nullptr;       // -> Sai quy uoc
-            }
-        }
-    }
-    if(ISBN_trong_Ma.size() < 13) return nullptr;
-    // 2. Tim dau sach theo ISBN
-    const string ch_ma = ChuanHoaChuoi(ma);
-    for(int i = 0; i < tv.dsDauSach.soLuong; ++i){
-        if(tv.dsDauSach.ds[i] == nullptr) continue; // Chong crash
-        
-        if(tv.dsDauSach.ds[i]->ISBN == ISBN_trong_Ma){
-            // can biet ca dau sach chua cuon sach
-            if(owner != nullptr){
-                *owner = tv.dsDauSach.ds[i];
-            }
-            
-            return TimCuonSachTrongDauSach(*(tv.dsDauSach.ds[i]), ch_ma);
-        }
-    }
-    return nullptr;
-}
-
-bool SinhMaSachTuDong(const ThuVien &tv, const DauSach &d, string &ma, string &loi){
-    ma = "";
-    if(!HopLeDauSach(d, loi)) return false;
-    const CuonSach *p = d.dms;
-    // 1. Neu chua co cuon nao
-    if(p == nullptr){
-        ma = d.ISBN + "#1";
-        return true;
-    }
-    // 2. Sach thanh ly/mat chi doi trang thai, khong xoa node.
-    // => Node cuoi DSLK luon la cuon moi nhat (co ma N lon nhat).
-    while(p->next != nullptr){
-        p = p->next;
-    }
-    // 3. Tim dau '#' trong ma sach cu
-    int viTriThang = -1;
-    for(int i = 0; i < (int)p->maSach.size(); ++i){
-        if(p->maSach[i] == '#'){
-            viTriThang = i;
-            break;
-        }
-    }
-    if(viTriThang == -1){
-        loi = "Loi: Ma sach cu thieu ky tu '#'.\n";
+bool SinhMaSachTuDong(const ThuVien &tv, const DauSach &d, string &ma, string &loi) {
+    // Buoc 1: Xac thuc dau sach hop le va da ton tai trong thu vien truoc khi cap ma
+    if (!HopLeDauSach(d, loi)) return false;
+    if (TimDauSachTheoISBN(tv.dsDauSach, d.ISBN) == nullptr) {
+        loi = "Dau sach chua ton tai trong thu vien!";
         return false;
     }
-    // 4. Trich xuat chuoi so N va kiem tra tinh hop le
-    string so_cu = "";
-    for(int i = viTriThang + 1; i < (int)p->maSach.size(); ++i){
-        char c = p->maSach[i];
-        if(c >= '0' && c <= '9'){
-            so_cu += c;
-        }else{
-            loi = "Loi: Ma sach cu chua ky tu khong hop le sau '#'.\n";
+
+    // Buoc 2: Chuan hoa ten sach & ISBN; chan dau '#' trong ten de bao toan dinh dang tenSach#ISBN#N
+    string tenChuan = ChuanHoaChuoi(d.tenSach);
+    for (int i = 0; i < (int)tenChuan.size(); ++i) {
+        if (tenChuan[i] == '#') {
+            loi = "Ten sach khong duoc chua ky tu '#'!";
             return false;
         }
     }
-    if(so_cu.empty()){
-        loi = "Loi: Ma sach cu thieu phan so N.\n";
-        return false;
-    }
-    // 5. Cong 1 vao chuoi so (thuat toan cong co nho)
-    string so_moi = "";
-    int co_nho = 1; // Ban dau cong 1
-    for(int i = (int)so_cu.size() - 1; i >= 0; --i){
-        int giatri = (so_cu[i] - '0') + co_nho;
-        if(giatri >= 10){
-            giatri -= 10;
-            co_nho = 1;
+    string isbnChuan = ChuanHoaISBN(d.ISBN);
+
+    // Buoc 3: Duyet dms tim chi so N lon nhat (khong dung dem node vi node co the bi xoa)
+    int maxN = 0;
+    int demNode = 0;
+    const CuonSach *p = d.dms;
+    while (p != nullptr) {
+        // Chan vong lap vo han neu danh sach lien ket bi hong con tro
+        if (++demNode > MAX_BAN_GHI) {
+            loi = "Danh muc cuon sach bi hong hoac vuot gioi han!";
+            return false;
         }
-        else{
-            co_nho = 0;
+
+        // Quet nguoc tu cuoi chuoi maSach de tim vi tri dau '#' cuoi cung
+        int posHash = -1;
+        for (int i = (int)p->maSach.size() - 1; i >= 0; --i) {
+            if (p->maSach[i] == '#') {
+                posHash = i;
+                break;
+            }
         }
-        so_moi += (char)(giatri + '0');
-    }
-    if(co_nho == 1){
-        so_moi += '1'; // Truong hop 9 + 1 = 10
+
+        // Ep kieu thu cong chuoi chu so sau dau '#' cuoi cung sang so nguyen
+        if (posHash != -1 && posHash + 1 < (int)p->maSach.size()) {
+            int val = 0;
+            bool hopLeSo = true;
+            for (int i = posHash + 1; i < (int)p->maSach.size(); ++i) {
+                char c = p->maSach[i];
+                if (c < '0' || c > '9') {
+                    hopLeSo = false;
+                    break;
+                }
+                int digit = c - '0';
+                // Kiem tra tran so nguyen 32-bit
+                if (val > (SO_NGUYEN_LON_NHAT - digit) / 10) {
+                    hopLeSo = false;
+                    break;
+                }
+                val = val * 10 + digit;
+            }
+            if (hopLeSo && val > maxN) maxN = val;
+        }
+        p = p->next;
     }
 
-    // 6. Ghep ma sach moi (nho dao nguoc chuoi so_moi)
-    ma = d.ISBN + "#";
-    for(int i = (int)so_moi.size() - 1; i >= 0; --i){
-        ma += so_moi[i];
+    // Buoc 4: Sinh chi so N ke tiep va chuyen sang chuoi thu cong (khong dung to_string)
+    if (maxN >= SO_NGUYEN_LON_NHAT) {
+        loi = "Da dat gioi han so luong ma sach toi da!";
+        return false;
     }
+    int nextN = maxN + 1;
+    string chuoiN = "";
+    int temp = nextN;
+    while (temp > 0) {
+        char digitChar = (char)('0' + (temp % 10));
+        chuoiN = digitChar + chuoiN;
+        temp /= 10;
+    }
+
+    // Buoc 5: Ghep chuoi dinh danh hoan chinh va doi chieu chong trung lan cuoi
+    ma = tenChuan + "#" + isbnChuan + "#" + chuoiN;
+    if (TimCuonSachTrongDauSach(d, ma) != nullptr) {
+        loi = "Ma sach sinh ra bi trung lap!";
+        return false;
+    }
+
+    loi.clear();
     return true;
 }
 
-// Cac ham helper giao dien
-static void gotoxy(int x, int y) {
-    COORD coord;
-    coord.X = x;
-    coord.Y = y;
-    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
-}
+const CuonSach *TimCuonSachToanCuc(const ThuVien &tv, const string &ma, const DauSach **owner) {
+    // Buoc 1: Khoi tao an toan con tro owner va kiem tra dieu kien bien dau vao
+    if (owner != nullptr) *owner = nullptr;
+    string maChuan = ChuanHoaChuoi(ma);
+    if (maChuan.empty() || tv.dsDauSach.soLuong <= 0) return nullptr;
 
-static void setColor(int color) {
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
-}
-
-// Helper: Nhap chuoi voi giao dien, tu dong bat ESC va Backspace
-static bool NhapChuoiUI(int x, int y, string &out, bool laISBN) {
-    out = "";
-    gotoxy(x, y);
-    setColor(15); // Mau trang
-    
-    while (true) {
-        int c = _getch();
-        
-        if (c == 27) { // Phim ESC
-            return false;
-        }
-        if (c == 13) { // Phim Enter
-            return true;
-        }
-        if (c == 8) { // Phim Backspace
-            if (out.size() > 0) {
-                out.erase(out.size() - 1); // Xoa ky tu cuoi
-                std::cout << "\b \b";      // Xoa tren man hinh
+    // Buoc 2: Quet nguoc tu cuoi chuoi maSach de tim 2 dau '#' phan tach (tenSach#ISBN#N)
+    int hash2 = -1, hash1 = -1;
+    for (int i = (int)maChuan.size() - 1; i >= 0; --i) {
+        if (maChuan[i] == '#') {
+            if (hash2 == -1) hash2 = i;
+            else {
+                hash1 = i;
+                break;
             }
-        } 
-        else if (c >= 32 && c <= 126) {
-            // Chi cho phep nhap ky tu in duoc (ASCII)
-            out += (char)c;
-            std::cout << (char)c;
         }
     }
+
+    // Chan ma sai dinh dang (khong du 2 dau '#' hoac bi khuyet tenSach / ISBN / N)
+    if (hash1 <= 0 || hash2 <= hash1 + 1 || hash2 + 1 >= (int)maChuan.size()) {
+        return nullptr;
+    }
+
+    // Buoc 3: Tach thu cong tenSach, ISBN (loai bo '-' va khoang trang) va kiem tra phan so N
+    string tenTach = "";
+    for (int i = 0; i < hash1; ++i) tenTach += maChuan[i];
+
+    string isbnTach = "";
+    for (int i = hash1 + 1; i < hash2; ++i) {
+        char c = maChuan[i];
+        if (c != '-' && !KhoangTrang((unsigned char)c)) isbnTach += c;
+    }
+    if ((int)isbnTach.size() != 13) return nullptr;
+
+    for (int i = hash2 + 1; i < (int)maChuan.size(); ++i) {
+        if (maChuan[i] < '0' || maChuan[i] > '9') return nullptr;
+    }
+
+    // Buoc 4: Binary Search tren mang con tro dau sach da sap xep tang dan theo tenSach
+    int l = 0, r = tv.dsDauSach.soLuong - 1, midTimThay = -1;
+    while (l <= r) {
+        int m = l + (r - l) / 2;
+        if (tv.dsDauSach.ds[m] == nullptr) return nullptr;
+        int cmp = SoSanhChuoi(tv.dsDauSach.ds[m]->tenSach, tenTach);
+        if (cmp == 0) {
+            midTimThay = m;
+            break;
+        }
+        if (cmp < 0) l = m + 1;
+        else r = m - 1;
+    }
+    if (midTimThay == -1) return nullptr;
+
+    // Buoc 5: Quet lan can sang trai (gom ca midTimThay) va sang phai trong nhom trung tenSach
+    for (int i = midTimThay; i >= 0; --i) {
+        const DauSach *dsHienTai = tv.dsDauSach.ds[i];
+        if (dsHienTai == nullptr || SoSanhChuoi(dsHienTai->tenSach, tenTach) != 0) break;
+        if (dsHienTai->ISBN == isbnTach) {
+            const CuonSach *cs = TimCuonSachTrongDauSach(*dsHienTai, maChuan);
+            if (cs != nullptr) {
+                if (owner != nullptr) *owner = dsHienTai;
+                return cs;
+            }
+        }
+    }
+    for (int i = midTimThay + 1; i < tv.dsDauSach.soLuong; ++i) {
+        const DauSach *dsHienTai = tv.dsDauSach.ds[i];
+        if (dsHienTai == nullptr || SoSanhChuoi(dsHienTai->tenSach, tenTach) != 0) break;
+        if (dsHienTai->ISBN == isbnTach) {
+            const CuonSach *cs = TimCuonSachTrongDauSach(*dsHienTai, maChuan);
+            if (cs != nullptr) {
+                if (owner != nullptr) *owner = dsHienTai;
+                return cs;
+            }
+        }
+    }
+
+    return nullptr;
 }
 
-// ham ho tro ManHinhNhapDauSach : gotoxy, setColor, NhapChuoiUI
 void ManHinhNhapDauSach(ThuVien &tv) {
+    // Buoc 1: Chan som neu mang con tro dau sach da dat suc chua toi da
+    if (tv.dsDauSach.soLuong >= MAX_DAU_SACH) {
+        ThongBao("Danh sach dau sach da day, khong the them moi!");
+        return;
+    }
+
+    const char *nhanBieuMau[6] = {
+        "ISBN (13 chu so)",
+        "Ten sach",
+        "So trang",
+        "Tac gia",
+        "Nam xuat ban",
+        "The loai"
+    };
+    string giaTri[6];
+    DauSach d;
+    bool laDauSachMoi = true;
+
+    // Buoc 2: Vong lap nhap va xac thuc thong tin dau sach (giu lai giaTri khi sai de sua nhanh)
     while (true) {
-        system("cls"); // Xoa man hinh cho sach
-        setColor(11);  // Mau xanh lam (Cyan)
-        std::cout << "======================================================\n";
-        std::cout << "               THEM DAU SACH MOI                      \n";
-        std::cout << "     (Nhan phim ESC bat ky luc nao de quay lai)       \n";
-        std::cout << "======================================================\n\n";
-        setColor(15); // Mau trang
-
-        string isbn, tenSach, tacGia, theLoai;
-        int soTrang = 0, namXuatBan = 0;
-
-        // --- 1. NHAP ISBN ---
-        while (true) {
-            gotoxy(0, 6); std::cout << "Nhap ISBN (13 chu so):          "; 
-            if (!NhapChuoiUI(23, 6, isbn, true)) return;
-            
-            isbn = ChuanHoaISBN(isbn);
-            gotoxy(0, 7); std::cout << "                                                  "; // Xoa dong loi cu
-            
-            bool hopLe = true;
-            if (isbn.size() != 13) hopLe = false;
-            else {
-                for (int i = 0; i < 13; ++i) {
-                    if (isbn[i] < '0' || isbn[i] > '9') { hopLe = false; break; }
-                }
-            }
-            
-            if (!hopLe) {
-                setColor(12); // Do
-                gotoxy(0, 7); std::cout << "Loi: ISBN phai gom dung 13 chu so (0-9).";
-                continue;
-            }
-            if (TimDauSachTheoISBN(tv.dsDauSach, isbn) != nullptr) {
-                setColor(12);
-                gotoxy(0, 7); std::cout << "Loi: ISBN nay da ton tai. Vui long nhap lai.";
-                continue;
-            }
-            setColor(15);
-            break;
+        if (!NhapBieuMau("NHAP THONG TIN DAU SACH", nhanBieuMau, giaTri, 6)) {
+            return; // Nguoi dung huy thao tac (Esc hoac /huy)
         }
 
-        // --- 2. NHAP TEN SACH ---
-        while (true) {
-            gotoxy(0, 9); std::cout << "Nhap ten sach:                  "; 
-            if (!NhapChuoiUI(16, 9, tenSach, false)) return;
-            
-            tenSach = ChuanHoaChuoi(tenSach);
-            gotoxy(0, 10); std::cout << "                                                  ";
-            
-            if (tenSach.empty()) {
-                setColor(12);
-                gotoxy(0, 10); std::cout << "Loi: Ten sach khong duoc de trong.";
-                continue;
+        // Chuan hoa du lieu chuoi truoc khi kiem tra va luu tru
+        d = DauSach();
+        d.ISBN = ChuanHoaISBN(giaTri[0]);
+        d.tenSach = ChuanHoaChuoi(giaTri[1]);
+        d.tacGia = ChuanHoaChuoi(giaTri[3]);
+        d.theLoai = ChuanHoaChuoi(giaTri[5]);
+
+        // Chan ky tu '#' trong ten sach de tranh pha vo cau truc maSach = tenSach#ISBN#N
+        bool chuaDauThang = false;
+        for (int i = 0; i < (int)d.tenSach.size(); ++i) {
+            if (d.tenSach[i] == '#') {
+                chuaDauThang = true;
+                break;
             }
-            if (!HopLeVanBan(tenSach)) {
-                setColor(12);
-                gotoxy(0, 10); std::cout << "Loi: Ten sach chua ky tu khong hop le (co dau).";
-                continue;
-            }
-            setColor(15);
-            break;
+        }
+        if (chuaDauThang) {
+            ThongBao("Ten sach khong duoc chua ky tu '#'!");
+            continue;
         }
 
-        // --- 3. NHAP SO TRANG (Nhap chuoi de kiem tra thay vi cin >>) ---
-        while (true) {
-            string sTrang;
-            gotoxy(0, 12); std::cout << "Nhap so trang:                  ";
-            if (!NhapChuoiUI(16, 12, sTrang, false)) return;
-            
-            gotoxy(0, 13); std::cout << "                                                  ";
-            if (sTrang.empty()) {
-                setColor(12); gotoxy(0, 13); std::cout << "Loi: So trang khong duoc de trong.";
-                continue;
-            }
-            // Tu viet logic chuyen chuoi sang so
-            bool hopLe = true;
-            for (int i = 0; i < (int)sTrang.size(); ++i) {
-                if (sTrang[i] < '0' || sTrang[i] > '9') { hopLe = false; break; }
-            }
-            if (!hopLe) {
-                setColor(12); gotoxy(0, 13); std::cout << "Loi: So trang phai la chu so.";
-                continue;
-            }
-            soTrang = 0;
-            for (int i = 0; i < (int)sTrang.size(); ++i) {
-                soTrang = soTrang * 10 + (sTrang[i] - '0');
-            }
-            if (soTrang < 1 || soTrang > 100000) {
-                setColor(12); gotoxy(0, 13); std::cout << "Loi: So trang phai tu 1 den 100000.";
-                continue;
-            }
-            setColor(15);
-            break;
+        // Ep kieu thu cong cac truong so nguyen bang helper cua Module 01
+        if (!DocSoNguyen(ChuanHoaChuoi(giaTri[2]), d.soTrang, 1, SO_NGUYEN_LON_NHAT)) {
+            ThongBao("So trang phai la so nguyen lon hon 0!");
+            continue;
         }
-
-        // --- 4. NHAP TAC GIA ---
-        while (true) {
-            gotoxy(0, 15); std::cout << "Nhap ten tac gia:               ";
-            if (!NhapChuoiUI(18, 15, tacGia, false)) return;
-            
-            tacGia = ChuanHoaChuoi(tacGia);
-            gotoxy(0, 16); std::cout << "                                                  ";
-            
-            if (tacGia.empty()) {
-                setColor(12); gotoxy(0, 16); std::cout << "Loi: Tac gia khong duoc de trong.";
-                continue;
-            }
-            if (!HopLeVanBan(tacGia)) {
-                setColor(12); gotoxy(0, 16); std::cout << "Loi: Tac gia chua ky tu khong hop le (co dau).";
-                continue;
-            }
-            setColor(15);
-            break;
+        if (!DocSoNguyen(ChuanHoaChuoi(giaTri[4]), d.namXuatBan, 1, NAM_HIEN_TAI)) {
+            ThongBao("Nam xuat ban khong hop le!");
+            continue;
         }
-
-        // --- 5. NHAP NAM XUAT BAN ---
-        while (true) {
-            string sNam;
-            gotoxy(0, 18); std::cout << "Nhap nam xuat ban:              ";
-            if (!NhapChuoiUI(19, 18, sNam, false)) return;
-            
-            gotoxy(0, 19); std::cout << "                                                  ";
-            if (sNam.empty()) {
-                setColor(12); gotoxy(0, 19); std::cout << "Loi: Nam XB khong duoc de trong.";
-                continue;
-            }
-            bool hopLe = true;
-            for (int i = 0; i < (int)sNam.size(); ++i) {
-                if (sNam[i] < '0' || sNam[i] > '9') { hopLe = false; break; }
-            }
-            if (!hopLe) {
-                setColor(12); gotoxy(0, 19); std::cout << "Loi: Nam XB phai la chu so.";
-                continue;
-            }
-            namXuatBan = 0;
-            for (int i = 0; i < (int)sNam.size(); ++i) {
-                namXuatBan = namXuatBan * 10 + (sNam[i] - '0');
-            }
-            if (namXuatBan < 1 || namXuatBan > 2100) {
-                setColor(12); gotoxy(0, 19); std::cout << "Loi: Nam XB phai tu 1 den 2100.";
-                continue;
-            }
-            setColor(15);
-            break;
-        }
-
-        // --- 6. NHAP THE LOAI ---
-        while (true) {
-            gotoxy(0, 21); std::cout << "Nhap the loai:                  ";
-            if (!NhapChuoiUI(16, 21, theLoai, false)) return;
-            
-            theLoai = ChuanHoaChuoi(theLoai);
-            gotoxy(0, 22); std::cout << "                                                  ";
-            
-            if (theLoai.empty()) {
-                setColor(12); gotoxy(0, 22); std::cout << "Loi: The loai khong duoc de trong.";
-                continue;
-            }
-            if (!HopLeVanBan(theLoai)) {
-                setColor(12); gotoxy(0, 22); std::cout << "Loi: The loai chua ky tu khong hop le (co dau).";
-                continue;
-            }
-            setColor(15);
-            break;
-        }
-
-        // --- THUC HIEN THEM ---
-        DauSach d;
-        d.ISBN = isbn;
-        d.tenSach = tenSach;
-        d.soTrang = soTrang;
-        d.tacGia = tacGia;
-        d.namXuatBan = namXuatBan;
-        d.theLoai = theLoai;
 
         string loi;
-        gotoxy(0, 24);
-        if (ThemDauSach(tv, d, loi)) {
-            setColor(10); // Xanh la
-            std::cout << "=> Them dau sach thanh cong!";
-        } else {
-            setColor(12);
-            std::cout << "=> Them that bai: " << loi;
+        if (!HopLeDauSach(d, loi)) {
+            ThongBao(loi);
+            continue;
         }
 
-        // Hoi nhap tiep
-        setColor(15);
-        gotoxy(0, 26); std::cout << "Nhan phim bat ky de nhap tiep (hoac ESC de thoat)...";
-        int c = _getch();
-        if (c == 27) return; // Thoat neu bam ESC
+        // Xu ly tinh huong trung ISBN: cho phep nhap them ban sao hoac sua lai bieu mau
+        const DauSach *daCo = TimDauSachTheoISBN(tv.dsDauSach, d.ISBN);
+        if (daCo != nullptr) {
+            const char *tuyChon[2] = {
+                "Nhap them ban sao cho dau sach da co",
+                "Quay lai sua thong tin bieu mau"
+            };
+            int chon = ChonMenu("ISBN DA TON TAI: " + daCo->tenSach, tuyChon, 2);
+            if (chon == 0) {
+                laDauSachMoi = false;
+                break;
+            }
+            continue;
+        }
+
+        // Chen dau sach moi vao mang con tro theo dung thu tu tang dan ten sach
+        if (!ThemDauSach(tv, d, loi)) {
+            ThongBao(loi);
+            continue;
+        }
+        break;
     }
-}    
 
+    // Buoc 3: Nhap so luong ban sao vat ly va tu dong sinh maSach = tenSach#ISBN#N
+    int soCuonNhap = 0;
+    if (!NhapSo("Nhap so luong cuon sach nhap kho (0 de bo qua): ", soCuonNhap, 0, 1000)) {
+        if (laDauSachMoi) ThongBao("Da luu dau sach moi (chua nhap ban sao).");
+        return;
+    }
+    if (soCuonNhap == 0) {
+        if (laDauSachMoi) ThongBao("Da luu dau sach moi (0 ban sao).");
+        return;
+    }
 
+    int daThem = 0;
+    string tomTatMa = "";
+    for (int k = 1; k <= soCuonNhap; ++k) {
+        // Tao chuoi nhac nhap thu cong (khong dung to_string)
+        string soThuTu = "";
+        int tmp = k;
+        while (tmp > 0) {
+            soThuTu = (char)('0' + (tmp % 10)) + soThuTu;
+            tmp /= 10;
+        }
+
+        while (true) {
+            string viTri;
+            if (!NhapDong("Vi tri cuon #" + soThuTu + " (VD: A-03-02, /huy de dung): ", viTri)) {
+                k = soCuonNhap + 1; // Thoat ca vong lap ngoai
+                break;
+            }
+            string maMoi, loiCuon;
+            if (ThemCuonSach(tv, d.ISBN, ChuanHoaChuoi(viTri), maMoi, loiCuon)) {
+                ++daThem;
+                if (daThem <= 8) {
+                    if (!tomTatMa.empty()) tomTatMa += " | ";
+                    tomTatMa += maMoi;
+                } else if (daThem == 9) {
+                    tomTatMa += " | ...";
+                }
+                break;
+            }
+            ThongBao(loiCuon);
+        }
+    }
+
+    // Buoc 4: Tong ket ket qua thao tac cho thu thu
+    if (daThem > 0) {
+        ThongBao("Hoan tat! Ma sach da cap: " + tomTatMa);
+    } else if (laDauSachMoi) {
+        ThongBao("Da luu dau sach moi, chua them duoc ban sao nao.");
+    }
+}
