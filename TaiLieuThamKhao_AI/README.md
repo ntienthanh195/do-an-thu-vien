@@ -3,7 +3,7 @@
 ## Bản mới nhất (16/11/2026): dùng bản này để ôn vấn đáp
 
 - **[Code bản viết lại gọn](BAN_VIET_LAI_GON/README.md)**: đủ chức năng a–j, chỉ dùng struct của đề (thêm một trường `height` cho cây AVL), giao diện có thanh menu bên trái và trang Tổng quan. Mã nguồn trong [BAN_VIET_LAI_GON/MaNguon](BAN_VIET_LAI_GON/MaNguon/); chạy `BienDich.bat` để biên dịch.
-- **[Bộ 149 câu hỏi vấn đáp](BAN_VIET_LAI_GON/BO_CAU_HOI_VAN_DAP.md)**: bám đúng code trên, mỗi câu chỉ vào file và dòng, có gợi ý trả lời. Gồm câu "vì sao em làm cách này", chạy tay thuật toán, bẫy khi người dùng thao tác, tình huống thực tế và sửa code tại chỗ.
+- **[Bộ 167 câu hỏi vấn đáp](BAN_VIET_LAI_GON/BO_CAU_HOI_VAN_DAP.md)**: bám đúng code trên, mỗi câu chỉ vào file và dòng, có gợi ý trả lời. Gồm câu "vì sao em làm cách này", chạy tay thuật toán, bẫy khi người dùng thao tác, tình huống thực tế và sửa code tại chỗ.
 
 Hai bộ câu hỏi bên dưới (86 câu lý thuyết và 325 câu tình huống) được soạn cho bản demo cũ ngày 21/10, **không còn khớp code mới**; giữ lại để tra cứu.
 
