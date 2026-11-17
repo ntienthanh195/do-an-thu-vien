@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    j. 10 SACH CO SO LUOT MUON NHIEU NHAT
@@ -10,53 +10,18 @@
            Tinh ca luot dang muon, da tra va lam mat vi deu la mot lan muon.
    Buoc 3: mang tam thuTu[] giu chi so dau sach. Sap xep chon nhung chi chay 10 vong,
            moi vong dua dau sach nhieu luot nhat con lai len dau.
+
+   HAM LAY TU FILE KHAC:
+     1.1_DocGia_CayAVL.cpp: DemDocGia, LayDanhSachDocGia
+     1.2_DauSach_MangConTro.cpp: TimViTriDauSachTheoISBN
+     1.3_DanhMucSach_DSLKDon.cpp: TachISBNTuMaSach
    ============================================================ */
-
-// [THAI] Duyet giua (trai - nut - phai) de dem so nut.
-static void DuyetGiuaDem(const NutDocGia *p, int &dem)
-{
-    if (p == nullptr) return;
-    DuyetGiuaDem(p->left, dem);
-    ++dem;
-    DuyetGiuaDem(p->right, dem);
-}
-
-// [THAI] Duyet giua, ghi con tro nut vao out[] theo thu tu ma the tang dan.
-// Dung khi idx >= capacity de khong ghi vuot mang.
-static void DuyetGiuaThuThap(NutDocGia *p, NutDocGia **out, int capacity, int &idx)
-{
-    if (p == nullptr || idx >= capacity) return;
-    DuyetGiuaThuThap(p->left, out, capacity, idx);
-    if (idx < capacity)
-    {
-        out[idx] = p;
-        ++idx;
-    }
-    DuyetGiuaThuThap(p->right, out, capacity, idx);
-}
-
-// [THAI] Dem toan bo doc gia trong cay. Cay rong tra ve 0.
-int DemDocGia(CayDocGia tree)
-{
-    int dem = 0;
-    DuyetGiuaDem(tree, dem);
-    return dem;
-}
-
-// [THAI] Thu thap con tro cac nut vao out[] theo ma the tang dan.
-// Tra ve so con tro da ghi (toi da la capacity).
-int LayDanhSachDocGia(CayDocGia tree, NutDocGia **out, int capacity)
-{
-    if (out == nullptr || capacity <= 0) return 0;
-    int idx = 0;
-    DuyetGiuaThuThap(tree, out, capacity, idx);
-    return idx;
-}
 
 void ManHinhTop10Sach(const DanhSachDauSach &ds, CayDocGia &cay)
 {
     int n = ds.soLuong;
 
+    // @TT [j] Buoc 1: mang tam luotMuon[] = 0, thuTu[] = chi so dau sach
     // Buoc 1
     int *luotMuon = new int[n + 1];
     int *thuTu = new int[n + 1];
@@ -66,6 +31,7 @@ void ManHinhTop10Sach(const DanhSachDauSach &ds, CayDocGia &cay)
         thuTu[i] = i;
     }
 
+    // @TT [j] Buoc 2: duyet moi doc gia, moi luot muon -> tach ISBN -> tim dau sach -> tang luotMuon
     // Buoc 2
     int soDocGia = DemDocGia(cay);
     NutDocGia **tatCa = new NutDocGia *[soDocGia + 1];
@@ -80,6 +46,7 @@ void ManHinhTop10Sach(const DanhSachDauSach &ds, CayDocGia &cay)
         }
     }
 
+    // @TT [j] Buoc 3: Selection Sort chi chay 10 vong (moi vong dua dau sach nhieu luot nhat len) - O(10*n)
     // Buoc 3
     int soDong = n;
     if (soDong > 10)

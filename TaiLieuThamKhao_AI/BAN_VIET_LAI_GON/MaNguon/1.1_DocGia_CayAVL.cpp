@@ -1,7 +1,9 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
-   a. QUAN LY THE DOC GIA: them / xoa / hieu chinh
+   10. CAU TRUC DU LIEU: CAY DOC GIA (cay nhi phan tim kiem, giu can bang theo AVL)
+   File nay chi chua cac thao tac tren cay. Man hinh them/xoa/hieu chinh nam o a_QuanLyDocGia.cpp.
+
    Danh sach the doc gia la cay nhi phan tim kiem, khoa la ma the.
 
    Ma the do chuong trinh cap tang dan (ma lon nhat + 1). Voi cay nhi phan tim kiem thuong,
@@ -13,6 +15,7 @@
    ============================================================ */
 
 // [THANH] Phan code Thanh cung cap/phu trach.
+// @TT [a,f,g,h] Tim doc gia theo ma the: tim kiem tren cay nhi phan tim kiem bang vong lap - O(log n) vi cay AVL can bang
 NutDocGia* tim_cay(CayDocGia &caydocgia, int x)
 {
     NutDocGia* p = caydocgia;
@@ -32,6 +35,7 @@ NutDocGia* tim_cay(CayDocGia &caydocgia, int x)
 
 // [THANH] Phan code Thanh cung cap/phu trach.
 // Them va xoa tren cay AVL theo ma the.
+// @TT [a] Xoay trai: con phai len lam goc, cap nhat height goc cu roi goc moi - O(1)
 static NutDocGia* XoayTrai(NutDocGia* root)
 {
     NutDocGia* rootMoi = root->right;
@@ -86,6 +90,7 @@ static NutDocGia* XoayTrai(NutDocGia* root)
     return rootMoi;
 }
 
+// @TT [a] Xoay phai: con trai len lam goc, cap nhat height goc cu roi goc moi - O(1)
 static NutDocGia* XoayPhai(NutDocGia* root)
 {
     NutDocGia* rootMoi = root->left;
@@ -140,6 +145,8 @@ static NutDocGia* XoayPhai(NutDocGia* root)
     return rootMoi;
 }
 
+// @TT [a] Them doc gia: chen de quy nhu BST, tren duong quay lui cap nhat height,
+//         he so can bang > 1 / < -1 thi xoay (LL, LR, RR, RL) - O(log n)
 static NutDocGia* ThemDocGiaAVL(NutDocGia* root, const DocGia &docgiamoi)
 {
     if (root == nullptr)
@@ -237,6 +244,8 @@ bool them_cay(CayDocGia &caydocgia, const DocGia &docGiaMoi)
     return true;
 }
 
+// @TT [a] Can bang lai mot nut sau khi xoa: tinh he so can bang, chon xoay don hay xoay kep
+//         theo chieu cao hai cay con cua nut con
 static NutDocGia* CanBangLai(NutDocGia* root)
 {
     if (root == nullptr)
@@ -297,6 +306,7 @@ static NutDocGia* CanBangLai(NutDocGia* root)
     return root;
 }
 
+// @TT [a] Tach nut nho nhat (trai cung) cua cay con phai, dung khi xoa nut co 2 con
 static NutDocGia* TachNutNhoNhat(NutDocGia* root, NutDocGia* &nutNhoNhat)
 {
     if (root == nullptr)
@@ -319,6 +329,8 @@ static NutDocGia* TachNutNhoNhat(NutDocGia* root, NutDocGia* &nutNhoNhat)
     return CanBangLai(root);
 }
 
+// @TT [a] Xoa doc gia: xoa nut BST 3 truong hop (la / 1 con / 2 con -> thay bang nut nho nhat
+//         cua cay con phai), can bang lai tren duong quay lui - O(log n)
 static NutDocGia* XoaNutAVL(NutDocGia* root, int mathe)
 {
     if (root == nullptr)
@@ -376,6 +388,7 @@ static NutDocGia* XoaNutAVL(NutDocGia* root, int mathe)
 
 // [THANH] Chi xoa the chua tung muon sach, de khong mat lich su muon tra
 // (lich su con dung cho thong ke top 10 va kiem tra qua han).
+// @TT [a] Dieu kien xoa the: chi xoa the chua co lich su muon tra
 bool XoaDocGia(CayDocGia &caydocgia, int mathe, string &loi)
 {
     NutDocGia* p = tim_cay(caydocgia, mathe);
@@ -411,6 +424,7 @@ bool HieuChinhDocGia(CayDocGia &caydocgia, int mathe, string Ho, string Ten, str
 }
 
 // Ma the lon nhat dang co = nut ngoai cung ben phai cua cay. Cay rong tra ve 0.
+// @TT [a] Cap ma the moi = ma lon nhat + 1; ma lon nhat la nut phai cung cua cay - O(log n)
 int MaTheLonNhat(CayDocGia caydocgia)
 {
     if (caydocgia == nullptr)
@@ -428,6 +442,7 @@ int SinhMaTheTiepTheo(int &maTheDaCap)
 }
 
 // [THANH] Huy cay theo thu tu sau (LRN): huy hai cay con truoc roi moi huy nut goc.
+// @TT Huy cay doc gia: duyet sau (LRN), huy ca DSLK muon tra cua tung nut
 void Huydocgia(NutDocGia *&nutdocgia)
 {
     if (nutdocgia != nullptr)
@@ -446,152 +461,47 @@ void HuyCayDocGia(CayDocGia &caydocgia)
     Huydocgia(caydocgia);
 }
 
-/* ===================== MAN HINH ===================== */
+/* ===================== DUYET CAY RA MANG TAM (dung cho b, i, j, Tong quan) ===================== */
 
-void InThongTinDocGia(int x, int y, const NutDocGia &docgia)
+// [THAI] Duyet giua (trai - nut - phai) de dem so nut.
+// @TT [b,i,j] Dem so doc gia: duyet giua LNR - O(n)
+static void DuyetGiuaDem(const NutDocGia *p, int &dem)
 {
-    const DocGia &dg = docgia.thongTin;
-    InCot(x, y, "Họ tên    : " + dg.ho + " " + dg.ten, 60);
-    InCot(x, y + 1, "Phái      : " + dg.phai, 60);
-    InTai(x, y + 2, "Trạng thái: "); // hai lenh cout ben duoi in tiep ngay sau con tro
-    if (dg.trangThaiThe == THE_HOAT_DONG)
-    {
-        SetColor(MAU_XANH_LA_SANG, MAU_DEN);
-        cout << "Đang hoạt động";
-    }
-    else
-    {
-        SetColor(MAU_DO_SANG, MAU_DEN);
-        cout << "Bị khóa       ";
-    }
-    SetColor(MAU_TRANG, MAU_DEN);
+    if (p == nullptr) return;
+    DuyetGiuaDem(p->left, dem);
+    ++dem;
+    DuyetGiuaDem(p->right, dem);
 }
 
-// Nhap ma the tai (x, y) cho toi khi tim thay doc gia. Tra ve nullptr neu nhan Esc.
-NutDocGia *NhapMaTheTimDocGia(CayDocGia &caydocgia, int x, int y)
+// [THAI] Duyet giua, ghi con tro nut vao out[] theo thu tu ma the tang dan.
+// Dung khi idx >= capacity de khong ghi vuot mang.
+// @TT [b,i,j] Do con tro cac nut ra mang tam: duyet giua LNR nen mang tang dan theo ma the - O(n)
+static void DuyetGiuaThuThap(NutDocGia *p, NutDocGia **out, int capacity, int &idx)
 {
-    InTai(x, y, "Mã thẻ độc giả :");
-    int maThe = 0;
-    while (true)
+    if (p == nullptr || idx >= capacity) return;
+    DuyetGiuaThuThap(p->left, out, capacity, idx);
+    if (idx < capacity)
     {
-        if (!NhapSo(x + 18, y, 6, maThe))
-            return nullptr;
-        NutDocGia *p = tim_cay(caydocgia, maThe);
-        if (p != nullptr)
-            return p;
-        ThongBao("Không có độc giả mang mã thẻ " + SoThanhChuoi(maThe) + ".", true);
+        out[idx] = p;
+        ++idx;
     }
+    DuyetGiuaThuThap(p->right, out, capacity, idx);
 }
 
-// Nhap ho, ten, phai vao dg. Tra ve false neu nhan Esc.
-static bool NhapHoTenPhai(int y, DocGia &dg)
+// [THAI] Dem toan bo doc gia trong cay. Cay rong tra ve 0.
+int DemDocGia(CayDocGia tree)
 {
-    InTai(4, y, "Họ và tên lót  :");
-    InTai(4, y + 2, "Tên            :");
-    InTai(4, y + 4, "Phái (Nam/Nu)  :");
-    while (true)
-    {
-        if (!NhapChuoi(22, y, 30, false, dg.ho)) return false;
-        if (!NhapChuoi(22, y + 2, 15, false, dg.ten)) return false;
-        if (!NhapChuoi(22, y + 4, 3, false, dg.phai)) return false;
-
-        dg.ho = ChuanHoaTen(dg.ho);
-        dg.ten = ChuanHoaTen(dg.ten);
-        dg.phai = ChuanHoaTen(dg.phai);
-
-        if (!HopLeVanBan(dg.ho) || !HopLeVanBan(dg.ten))
-            ThongBao("Họ và tên không được rỗng, không chứa ký tự '|'.", true);
-        else if (!HopLePhai(dg.phai))
-            ThongBao("Phái chỉ nhận Nam hoặc Nu.", true);
-        else
-            return true;
-    }
+    int dem = 0;
+    DuyetGiuaDem(tree, dem);
+    return dem;
 }
 
-static void ManHinhThemDocGia(DanhSachDauSach &ds, CayDocGia &cay)
+// [THAI] Thu thap con tro cac nut vao out[] theo ma the tang dan.
+// Tra ve so con tro da ghi (toi da la capacity).
+int LayDanhSachDocGia(CayDocGia tree, NutDocGia **out, int capacity)
 {
-    while (true)
-    {
-        VeManHinh(1, "Thêm thẻ độc giả", "Enter: sang ô tiếp theo    Esc: quay lại");
-        DocGia dg;
-        if (!NhapHoTenPhai(5, dg))
-            return;
-
-        // ma moi = ma lon nhat dang co + 1 nen khong trung voi ma nao trong cay
-        int maTheDaCap = MaTheLonNhat(cay);
-        dg.maThe = SinhMaTheTiepTheo(maTheDaCap);
-        dg.trangThaiThe = THE_HOAT_DONG;
-        them_cay(cay, dg);
-        LuuSauThayDoi(ds, cay);
-        ThongBao("Đã thêm độc giả " + dg.ho + " " + dg.ten + ". Mã thẻ được cấp: " +
-                     SoThanhChuoi(dg.maThe), false);
-    }
-}
-
-static void ManHinhHieuChinhDocGia(DanhSachDauSach &ds, CayDocGia &cay)
-{
-    string mucTrangThai[2] = {"Khóa thẻ", "Đang hoạt động"};
-    while (true)
-    {
-        VeManHinh(1, "Hiệu chỉnh thẻ độc giả", "Enter: sang ô tiếp theo    Esc: quay lại");
-        NutDocGia *p = NhapMaTheTimDocGia(cay, 4, 5);
-        if (p == nullptr)
-            return;
-
-        DocGia dg = p->thongTin; // ban sao de sua, chi ghi vao cay khi nhap xong
-        if (!NhapHoTenPhai(7, dg))
-            continue;
-
-        InTai(4, 13, "Trạng thái thẻ :");
-        int chon = ChonMenu(22, 13, 20, mucTrangThai, 2);
-        if (chon == -1)
-            continue;
-
-        HieuChinhDocGia(cay, dg.maThe, dg.ho, dg.ten, dg.phai, chon);
-        LuuSauThayDoi(ds, cay);
-        ThongBao("Đã cập nhật thẻ " + SoThanhChuoi(dg.maThe) + ".", false);
-    }
-}
-
-static void ManHinhXoaDocGia(DanhSachDauSach &ds, CayDocGia &cay)
-{
-    while (true)
-    {
-        VeManHinh(1, "Xóa thẻ độc giả", "Enter: tìm độc giả    Esc: quay lại");
-        NutDocGia *p = NhapMaTheTimDocGia(cay, 4, 5);
-        if (p == nullptr)
-            return;
-
-        int maThe = p->thongTin.maThe;
-        InThongTinDocGia(4, 7, *p);
-        if (!XacNhan("Xóa thẻ độc giả " + SoThanhChuoi(maThe) + "?"))
-            continue;
-
-        string loi;
-        if (XoaDocGia(cay, maThe, loi))
-        {
-            LuuSauThayDoi(ds, cay);
-            ThongBao("Đã xóa thẻ " + SoThanhChuoi(maThe) + ".", false);
-        }
-        else
-            ThongBao(loi, true);
-    }
-}
-
-void ManHinhQuanLyDocGia(DanhSachDauSach &ds, CayDocGia &cay)
-{
-    string muc[3] = {"1. Thêm thẻ độc giả", "2. Hiệu chỉnh thẻ độc giả", "3. Xóa thẻ độc giả"};
-    while (true)
-    {
-        VeManHinh(1, "Quản lý thẻ độc giả", "↑/↓: chọn    Enter: vào    Esc: quay lại");
-        int chon = ChonMenu(4, 5, 34, muc, 3);
-        if (chon == -1)
-            return;
-        if (chon == 0)
-            ManHinhThemDocGia(ds, cay);
-        else if (chon == 1)
-            ManHinhHieuChinhDocGia(ds, cay);
-        else
-            ManHinhXoaDocGia(ds, cay);
-    }
+    if (out == nullptr || capacity <= 0) return 0;
+    int idx = 0;
+    DuyetGiuaThuThap(tree, out, capacity, idx);
+    return idx;
 }

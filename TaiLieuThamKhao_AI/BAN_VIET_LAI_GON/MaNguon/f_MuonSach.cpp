@@ -1,11 +1,20 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    f. MUON SACH
    Nhap ma the, chuong trinh liet ke cac sach doc gia dang muon.
    Khong cho muon khi: the bi khoa, dang giu du 3 cuon, hoac dang giu sach qua han.
+
+   HAM LAY TU FILE KHAC:
+     1.3_DanhMucSach_DSLKDon.cpp: TimCuonSachToanCuc
+     1.4_MuonTra_DSLKDon.cpp: CoSachQuaHan7Ngay, Dem_so_sach_dang_muon, SoNgayQuaHan, them_lich_su
+     a_QuanLyDocGia.cpp: InThongTinDocGia, NhapMaTheTimDocGia
    ============================================================ */
 
+/* ===================== XU LY ===================== */
+
+// @TT [f] Muon sach: kiem tra lan luot ngay muon, the khoa, du 3 cuon, dang giu sach qua han,
+//         ma sach co ton tai, cuon dang muon/thanh ly; dat thi them cuoi DSLK muon tra
 // Thuc hien mot luot muon. Thanh cong thi them nut vao lich su va doi trang thai cuon sach.
 bool MuonSach(DanhSachDauSach &ds, NutDocGia &docgia, const string &maSach, NgayThang ngayMuon,
               string &loi)
@@ -64,6 +73,9 @@ bool MuonSach(DanhSachDauSach &ds, NutDocGia &docgia, const string &maSach, Ngay
     return true;
 }
 
+/* ===================== GIAO DIEN ===================== */
+
+// @TT [f,g,h] Liet ke sach dang muon: duyet DSLK muon tra, chi lay luot co trang thai 0 (dang muon)
 // In bang cac sach doc gia dang muon, bat dau tu dong y. Dong thu dongChon duoc to sang
 // (truyen -1 neu khong can to sang). Tra ve so cuon dang muon.
 int InSachDangMuon(const DanhSachDauSach &ds, NutDocGia &docgia, int x, int y, int dongChon)

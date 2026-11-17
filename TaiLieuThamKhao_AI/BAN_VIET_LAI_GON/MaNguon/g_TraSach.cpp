@@ -1,12 +1,22 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    g. TRA SACH
    Tra sach: luot muon chuyen sang "da tra" va ghi ngay tra, cuon sach chuyen ve "cho muon duoc".
    Bao mat : luot muon chuyen sang "lam mat", cuon sach khong con trong thu vien nen chuyen
              sang "da thanh ly", va the doc gia bi khoa (quy uoc cua nhom, can hoi lai thay).
+
+   HAM LAY TU FILE KHAC:
+     1.3_DanhMucSach_DSLKDon.cpp: TimCuonSachToanCuc
+     1.4_MuonTra_DSLKDon.cpp: CapNhatLuotTra, TimMuonDangMuonTheoMa
+     a_QuanLyDocGia.cpp: InThongTinDocGia, NhapMaTheTimDocGia
+     f_MuonSach.cpp: InSachDangMuon
    ============================================================ */
 
+/* ===================== XU LY ===================== */
+
+// @TT [g] Tra sach / bao mat: tim luot dang muon, kiem tra ngay tra, doi trang thai luot + cuon;
+//         bao mat thi cuon -> thanh ly va khoa the
 bool TraSach(DanhSachDauSach &ds, NutDocGia &docgia, const string &maSach, NgayThang ngayTra,
              bool lamMat, string &loi)
 {
@@ -48,6 +58,8 @@ bool TraSach(DanhSachDauSach &ds, NutDocGia &docgia, const string &maSach, NgayT
 }
 
 // Lay ma sach cua luot dang muon thu "thuTu" (tinh tu 0) trong lich su cua doc gia.
+/* ===================== GIAO DIEN ===================== */
+
 static string MaSachDangMuonThu(NutDocGia &docgia, int thuTu)
 {
     int dem = 0;

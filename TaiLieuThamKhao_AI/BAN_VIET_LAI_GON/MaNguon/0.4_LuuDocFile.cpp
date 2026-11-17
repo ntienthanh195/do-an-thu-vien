@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    DOC / GHI FILE VAN BAN. Moi dong la mot ban ghi, cac truong cach nhau boi dau '|'.
@@ -29,6 +29,7 @@ static int DemLuotMuon(const MuonTra *p)
 }
 
 // Ghi cay doc gia theo thu tu duyet truoc (NLR).
+// @TT Luu file: ghi cay doc gia theo duyet truoc NLR
 static void GhiDocGia(ofstream &f, NutDocGia *p)
 {
     if (p == nullptr)
@@ -114,6 +115,7 @@ static bool DocPhanSach(ifstream &f, DanhSachDauSach &ds)
 }
 
 // Doc phan doc gia va lich su muon tra. Tra ve false neu file sai dinh dang.
+// @TT Doc file: them lai tung doc gia bang them_cay, cay tu can bang AVL nen khong luu height
 static bool DocPhanDocGia(ifstream &f, CayDocGia &cay)
 {
     string dong, truong[6];

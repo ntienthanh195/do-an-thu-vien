@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    i. DANH SACH DOC GIA MUON SACH QUA HAN, thoi gian qua han giam dan
@@ -8,12 +8,18 @@
            tam song song dg[] va luot[].
    Buoc 3: sap hai mang do giam dan theo so ngay qua han bang sap xep chon (selection sort).
    Mot doc gia giu 2 cuon qua han se co 2 dong.
+
+   HAM LAY TU FILE KHAC:
+     1.1_DocGia_CayAVL.cpp: DemDocGia, LayDanhSachDocGia
+     1.3_DanhMucSach_DSLKDon.cpp: TimCuonSachToanCuc
+     1.4_MuonTra_DSLKDon.cpp: SoNgayQuaHan
    ============================================================ */
 
 void ManHinhDocGiaQuaHan(const DanhSachDauSach &ds, CayDocGia &cay)
 {
     NgayThang homNay = HomNay();
 
+    // @TT [i] Buoc 1: duyet LNR do con tro doc gia ra mang tam
     // Buoc 1
     int soDocGia = DemDocGia(cay);
     NutDocGia **tatCa = new NutDocGia *[soDocGia + 1];
@@ -30,6 +36,7 @@ void ManHinhDocGiaQuaHan(const DanhSachDauSach &ds, CayDocGia &cay)
         }
     }
 
+    // @TT [i] Buoc 2: loc luot dang muon da qua han vao 2 mang song song dg[], luot[]
     // Buoc 2
     NutDocGia **dg = new NutDocGia *[n + 1];
     MuonTra **luot = new MuonTra *[n + 1];
@@ -47,6 +54,7 @@ void ManHinhDocGiaQuaHan(const DanhSachDauSach &ds, CayDocGia &cay)
         }
     }
 
+    // @TT [i] Buoc 3: Selection Sort giam dan theo so ngay qua han - O(k^2), k = so luot qua han
     // Buoc 3: ngay muon cang som thi qua han cang lau
     for (int i = 0; i < n - 1; ++i)
     {

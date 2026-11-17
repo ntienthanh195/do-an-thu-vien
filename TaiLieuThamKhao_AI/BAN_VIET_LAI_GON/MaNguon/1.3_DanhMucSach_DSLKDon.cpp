@@ -1,7 +1,7 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
-   DANH MUC SACH: danh sach lien ket don, moi dau sach giu mot danh sach rieng (con tro dms).
+   12. CAU TRUC DU LIEU: DANH MUC SACH (danh sach lien ket don), moi dau sach giu mot danh sach rieng (con tro dms).
 
    Ma sach tu dong co dang ISBN#N (N = 1, 2, 3...). De yeu cau "danh ma sach tu dong sao cho
    tim thong tin sach theo ma sach nhanh nhat": nho ma sach chua san ISBN nen khi tim mot cuon,
@@ -55,6 +55,8 @@ CuonSach *TimCuonSachTrongDauSach(const DauSach &d, const string &ma)
 
 // [THAI] Tim mot cuon theo ma sach trong ca thu vien.
 // dauSach nhan ve dau sach chua cuon do (de lay ten sach).
+// @TT [f,g,h,i] Tim cuon theo ma sach: tach ISBN truoc dau #, tim dau sach, roi chi duyet
+//         DSLK danh muc cua dau sach do (khong duyet danh muc cua moi dau sach)
 CuonSach *TimCuonSachToanCuc(const DanhSachDauSach &ds, const string &ma, DauSach *&dauSach)
 {
     dauSach = TimDauSachTheoISBN(ds, TachISBNTuMaSach(ma));
@@ -65,6 +67,7 @@ CuonSach *TimCuonSachToanCuc(const DanhSachDauSach &ds, const string &ma, DauSac
 
 // [THAI] Ma moi = ISBN#(N + 1), voi N la so thu tu cua cuon cuoi danh muc.
 // Cuon thanh ly/lam mat chi doi trang thai, khong xoa nut, nen nut cuoi luon co N lon nhat.
+// @TT [c] Danh ma sach tu dong ISBN#N: N = so thu tu cuon cuoi danh muc + 1
 string SinhMaSachTuDong(const DauSach &d)
 {
     int soCuoi = 0;
@@ -89,6 +92,7 @@ string SinhMaSachTuDong(const DauSach &d)
 }
 
 // Them mot cuon co san ma vao cuoi danh muc (dung khi doc file).
+// @TT [c] Them cuon vao cuoi DSLK don danh muc sach
 void ThemCuonSachCoMa(DauSach &d, const string &ma, const string &viTri, int trangThai)
 {
     CuonSach *moi = new CuonSach;

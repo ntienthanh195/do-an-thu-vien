@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    d. IN DAU SACH THEO TUNG THE LOAI, trong moi the loai thi ten sach tang dan.
@@ -7,8 +7,14 @@
    sang mot mang tam roi sap mang tam theo the loai bang sap xep chen (insertion sort).
    Sap xep chen la thuat toan on dinh: hai dau sach cung the loai giu nguyen thu tu cu,
    tuc la van tang dan theo ten sach, nen khong can so sanh ten lan nua.
+
+   HAM LAY TU FILE KHAC:
+     1.3_DanhMucSach_DSLKDon.cpp: DemCuonSach
    ============================================================ */
 
+/* ===================== XU LY ===================== */
+
+// @TT [d] Sap mang tam theo the loai: Insertion Sort (on dinh nen cung the loai van tang theo ten) - O(n^2)
 static void SapXepTheoTheLoai(DauSach *a[], int n)
 {
     for (int i = 1; i < n; ++i)
@@ -23,6 +29,8 @@ static void SapXepTheoTheLoai(DauSach *a[], int n)
         a[j + 1] = x;
     }
 }
+
+/* ===================== GIAO DIEN ===================== */
 
 void ManHinhInDauSachTheoTheLoai(const DanhSachDauSach &ds)
 {

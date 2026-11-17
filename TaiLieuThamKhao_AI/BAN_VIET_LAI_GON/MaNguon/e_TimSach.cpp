@@ -1,9 +1,12 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    e. TIM THONG TIN SACH THEO TEN SACH
    In ISBN, ten sach, tac gia, nam xuat ban, the loai, cac ma sach va trang thai tung ma sach.
    Tim theo kieu "ten sach co chua tu khoa", khong phan biet hoa/thuong.
+
+   HAM LAY TU FILE KHAC:
+     1.3_DanhMucSach_DSLKDon.cpp: DemCuonSach
    ============================================================ */
 
 // In thong tin mot dau sach va mot trang cac cuon sach cua no.
@@ -70,6 +73,8 @@ void ManHinhTimSach(const DanhSachDauSach &ds)
             continue;
         }
 
+        // @TT [e] Tim sach theo ten: duyet tuyen tinh ca mang dau sach, ten nao chua tu khoa
+        //         (ChuaChuoi, khong phan biet hoa/thuong) thi luu chi so vao mang tam viTri[] - O(n*m)
         int soKetQua = 0;
         for (int i = 0; i < ds.soLuong; ++i)
         {

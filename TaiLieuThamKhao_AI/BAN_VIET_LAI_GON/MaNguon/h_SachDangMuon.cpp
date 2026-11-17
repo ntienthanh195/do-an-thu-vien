@@ -1,11 +1,16 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    h. LIET KE MA SACH, TEN SACH MA DOC GIA CO SO THE X DANG MUON
    Duyet danh sach muon tra cua doc gia, chi lay cac luot co trang thai "dang muon".
    Ten sach lay tu dau sach chua cuon do (tim qua ISBN nam trong ma sach).
+
+   HAM LAY TU FILE KHAC:
+     a_QuanLyDocGia.cpp: InThongTinDocGia, NhapMaTheTimDocGia
+     f_MuonSach.cpp: InSachDangMuon
    ============================================================ */
 
+// @TT [h] Tim doc gia bang tim_cay (1.1_DocGia_CayAVL.cpp), liet ke bang InSachDangMuon (f_MuonSach.cpp)
 void ManHinhSachDangMuon(const DanhSachDauSach &ds, CayDocGia &cay)
 {
     while (true)
