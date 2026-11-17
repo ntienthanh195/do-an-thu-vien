@@ -5,9 +5,46 @@
    Tra sach: luot muon chuyen sang "da tra" va ghi ngay tra, cuon sach chuyen ve "cho muon duoc".
    Bao mat : luot muon chuyen sang "lam mat", cuon sach khong con trong thu vien nen chuyen
              sang "da thanh ly", va the doc gia bi khoa (quy uoc cua nhom, can hoi lai thay).
+
+   LAY HAM CUA CAU KHAC:
+     a_QuanLyDocGia.cpp: InThongTinDocGia, NhapMaTheTimDocGia
+     c_NhapSach.cpp: TimCuonSachToanCuc
+     f_MuonSach.cpp: InSachDangMuon
    ============================================================ */
 
 /* ===================== XU LY ===================== */
+
+// [THANH] Tim luot dang muon (chua tra) cua mot ma sach.
+// @TT [g] Tim luot dang muon cua mot ma sach: duyet tuyen tinh DSLK muon tra
+MuonTra *TimMuonDangMuonTheoMa(NutDocGia &q, string maSach)
+{
+    MuonTra *p = q.thongTin.dsMuonTra;
+    while (p != nullptr)
+    {
+        if (p->maSach == maSach && p->trangThai == MUON_DANG_MUON)
+            return p;
+        p = p->next;
+    }
+    return nullptr;
+}
+
+// [THANH] Ket thuc mot luot dang muon: ghi ngay tra va trang thai moi
+// (MUON_DA_TRA hoac MUON_LAM_MAT). Chi sua lich su, chua sua trang thai cuon sach.
+// @TT [g] Tra sach: khong xoa nut, chi doi trang thai + ghi ngay tra (giu lich su cho top 10)
+bool CapNhatLuotTra(const NutDocGia &docgia, string masach, NgayThang ngaytrasach, int trangThaiMoi)
+{
+    MuonTra *q = docgia.thongTin.dsMuonTra;
+    while (q != nullptr && (q->maSach != masach || q->trangThai != MUON_DANG_MUON))
+    {
+        q = q->next;
+    }
+    if (q == nullptr)
+        return false;
+
+    q->ngayTra = ngaytrasach;
+    q->trangThai = trangThaiMoi;
+    return true;
+}
 
 // @TT [g] Tra sach / bao mat: tim luot dang muon, kiem tra ngay tra, doi trang thai luot + cuon;
 //         bao mat thi cuon -> thanh ly va khoa the
@@ -51,7 +88,6 @@ bool TraSach(DanhSachDauSach &ds, NutDocGia &docgia, const string &maSach, NgayT
     return true;
 }
 
-// Lay ma sach cua luot dang muon thu "thuTu" (tinh tu 0) trong lich su cua doc gia.
 /* ===================== GIAO DIEN ===================== */
 
 static string MaSachDangMuonThu(NutDocGia &docgia, int thuTu)

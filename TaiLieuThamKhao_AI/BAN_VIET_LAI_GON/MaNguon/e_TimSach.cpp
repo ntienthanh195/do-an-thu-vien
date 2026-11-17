@@ -4,6 +4,9 @@
    e. TIM THONG TIN SACH THEO TEN SACH
    In ISBN, ten sach, tac gia, nam xuat ban, the loai, cac ma sach va trang thai tung ma sach.
    Tim theo kieu "ten sach co chua tu khoa", khong phan biet hoa/thuong.
+
+   LAY HAM CUA CAU KHAC:
+     c_NhapSach.cpp: DemCuonSach
    ============================================================ */
 
 // In thong tin mot dau sach va mot trang cac cuon sach cua no.

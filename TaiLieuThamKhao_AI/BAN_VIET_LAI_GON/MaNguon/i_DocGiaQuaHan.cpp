@@ -8,6 +8,11 @@
            tam song song dg[] va luot[].
    Buoc 3: sap hai mang do giam dan theo so ngay qua han bang sap xep chon (selection sort).
    Mot doc gia giu 2 cuon qua han se co 2 dong.
+
+   LAY HAM CUA CAU KHAC:
+     b_InDanhSachDocGia.cpp: DemDocGia, LayDanhSachDocGia
+     c_NhapSach.cpp: TimCuonSachToanCuc
+     f_MuonSach.cpp: SoNgayQuaHan
    ============================================================ */
 
 void ManHinhDocGiaQuaHan(const DanhSachDauSach &ds, CayDocGia &cay)

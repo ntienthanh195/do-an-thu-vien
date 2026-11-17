@@ -21,11 +21,11 @@
 - **Bẫy:** thao tác hợp lệ của người dùng nhưng code cho kết quả sai hoặc đáng ngờ.
 - **Thực tế:** yêu cầu của thư viện thật mà code chưa có, hỏi sẽ làm thế nào.
 
-**Cách dùng:** một người đọc câu hỏi, người kia trả lời và chỉ đúng dòng code, sau đó mới đọc phần "Gợi ý trả lời" ngay dưới câu hỏi. Tên file và số dòng theo bố cục file mới ngày 17/11 (bảng tra: [`MUC_LUC.md`](MUC_LUC.md)); nếu sửa code thì tìm theo tên hàm hoặc tag `@TT`. Dữ liệu ví dụ lấy từ `DuLieu/ThuVien.txt` mẫu, giả sử hôm nay là 15/11/2026.
+**Cách dùng:** một người đọc câu hỏi, người kia trả lời và chỉ đúng dòng code, sau đó mới đọc phần "Gợi ý trả lời" ngay dưới câu hỏi. Tên file và số dòng theo bố cục file mới ngày 17/11, mỗi câu a–j một file (bảng tra: [`MUC_LUC.md`](MUC_LUC.md)); nếu sửa code thì tìm theo tên hàm hoặc tag `@TT`. Dữ liệu ví dụ lấy từ `DuLieu/ThuVien.txt` mẫu, giả sử hôm nay là 15/11/2026.
 
 **Mức độ kiểm chứng (rà soát ngày 16/11/2026):**
 
-- Mọi số dòng trong bộ này đã được đối chiếu lại với code hiện tại bằng chương trình. Ngày 17/11 đổi sang bố cục file mới (`0x_`, `1x_`, `a_`–`j_`): cả 218 dẫn chiếu được chuyển theo đúng dòng code đã dời và kiểm tra lại bằng chương trình.
+- Mọi số dòng trong bộ này đã được đối chiếu lại với code hiện tại bằng chương trình. Ngày 17/11 đổi sang bố cục mỗi câu một file (`a_`–`j_`): cả 218 dẫn chiếu được chuyển theo đúng dòng code đã dời và kiểm tra lại bằng chương trình.
 - Các gợi ý có kết quả cụ thể đã được chạy lại trên chính code của nhóm: các bước xoay AVL (DG01, DG11, DG12, DG19), cấp mã thẻ (DG10), mốc quá hạn và năm nhuận (MT06, MT19), lách ngày mượn (MT03, MT04), vị trí chèn và thứ tự tên (DS01, DS03, DS13), sinh trùng mã sách (DS07), tìm chuỗi (TK01, TK03, TT22), thứ tự Top 10 và đồng hạng (TOP01, TOP03), thứ tự in theo tên và thể loại (IN03, IN08), danh sách quá hạn (QH01), hình dạng cây sau khi đọc lại file (FL01), và 16 kiểu file sai (FL07, MT17, TT29).
 - Chưa chạy được: các câu về tốc độ với dữ liệu rất lớn (QH02, TT03) là ước lượng; phần giao diện mới chỉ chạy trên lớp giả lập và một lần trên Windows Terminal.
 - Câu nào ghi "giả định của nhóm" thì nên hỏi thầy trước buổi vấn đáp.
@@ -34,10 +34,10 @@
 
 | Lỗi | Sửa ở | Câu |
 |---|---|---|
-| Nhập ngày mượn lùi lại thì lách được kiểm tra quá hạn | `f_MuonSach.cpp` dòng 37 | MT03 |
-| Nhận ngày mượn, ngày trả ở tương lai | `f_MuonSach.cpp` dòng 19–24, `g_TraSach.cpp` dòng 23–28 | MT04 |
+| Nhập ngày mượn lùi lại thì lách được kiểm tra quá hạn | `f_MuonSach.cpp` dòng 129 | MT03 |
+| Nhận ngày mượn, ngày trả ở tương lai | `f_MuonSach.cpp` dòng 111–116, `g_TraSach.cpp` dòng 60–65 | MT04 |
 | File hỏng thì chạy với thư viện rỗng rồi ghi đè mất dữ liệu | `main.cpp` dòng 12–26 | FL03 |
-| Đồng hồ máy lùi năm làm file hợp lệ bị coi là hỏng | `11_DauSach_MangConTro.cpp` dòng 43–50 | FL04 |
+| Đồng hồ máy lùi năm làm file hợp lệ bị coi là hỏng | `c_NhapSach.cpp` dòng 56–63 | FL04 |
 
 Bản gốc của năm file đã sửa nằm trong `_BanTruocKhiSua_20261115`.
 
@@ -87,28 +87,28 @@ Bản gốc của năm file đã sửa nằm trong `_BanTruocKhiSua_20261115`.
 **Gợi ý trả lời:** Chỉ là tên khác của con trỏ tới nút gốc, không phải struct mới. Thêm và xóa có thể đổi gốc sau khi xoay nên phải nhận tham chiếu tới con trỏ gốc. `MaTheLonNhat` chỉ đọc, nhận bản sao con trỏ rồi đi dần sang phải cũng không ảnh hưởng gốc thật.
 
 ### C05 · Vì sao thêm
-`j_Top10Sach.cpp` dòng 21–26
+`j_Top10Sach.cpp` dòng 25–30
 
 **Hỏi:** Sao không thêm trường "số lượt mượn" vào `DauSach` để Top 10 khỏi đếm lại?
 
 **Gợi ý trả lời:** Vì đó là trường ngoài đề. Nhóm dùng mảng tạm `luotMuon[]` cấp phát trong hàm rồi giải phóng. Đánh đổi: mỗi lần xem phải duyệt toàn bộ lịch sử. Nếu thêm trường thì phải tăng khi mượn, dựng lại khi đọc file, và có nguy cơ lệch với lịch sử.
 
 ### C06 · Vì sao thêm
-`00_KhaiBaoChung.h` dòng 12–13; `f_MuonSach.cpp` dòng 32
+`00_KhaiBaoChung.h` dòng 12–13; `f_MuonSach.cpp` dòng 124
 
 **Hỏi:** Thư viện đổi quy định thành mượn tối đa 5 cuốn. Em sửa mấy chỗ?
 
-**Gợi ý trả lời:** Sửa hằng `MAX_SACH_MUON` là logic đổi theo. Nhưng thông báo lỗi ở f_MuonSach.cpp dòng 32 ghi cứng "đủ 3 cuốn", phải sửa chuỗi này. Tương tự tên hàm `CoSachQuaHan7Ngay` ghi cứng số 7 dù logic dùng `HAN_MUON`.
+**Gợi ý trả lời:** Sửa hằng `MAX_SACH_MUON` là logic đổi theo. Nhưng thông báo lỗi ở f_MuonSach.cpp dòng 124 ghi cứng "đủ 3 cuốn", phải sửa chuỗi này. Tương tự tên hàm `CoSachQuaHan7Ngay` ghi cứng số 7 dù logic dùng `HAN_MUON`.
 
 ### C07 · Vì sao thêm
-`f_MuonSach.cpp` dòng 14–69; `g_TraSach.cpp` dòng 14–52
+`f_MuonSach.cpp` dòng 106–161; `g_TraSach.cpp` dòng 51–89
 
 **Hỏi:** `MuonSach` và `TraSach` không in gì ra màn hình, chỉ trả `bool` và ghi lý do vào `string &loi`. Việc in nằm ở `ManHinhMuonSach`. Sao em tách như vậy? Gộp lại thì mất gì?
 
 **Gợi ý trả lời:** Hàm nghiệp vụ chỉ quyết định "được hay không và vì sao", hàm màn hình lo vị trí, màu, phím. Nhờ đó kiểm tra nghiệp vụ nằm một chỗ: đổi giao diện không đụng tới luật mượn, và thầy yêu cầu sửa luật (ví dụ cấm mượn hai cuốn cùng đầu sách) thì chỉ sửa một hàm. Gộp lại thì mỗi màn hình gọi mượn phải lặp lại các điều kiện, sót một chỗ là có lỗ hổng.
 
 ### C08 · Bẫy
-`13_MuonTra_DSLKDon.cpp` dòng 90–103, `CapNhatLuotTra`
+`g_TraSach.cpp` dòng 34–47, `CapNhatLuotTra`
 
 **Hỏi:** Hàm nhận `const NutDocGia &docgia` mà vẫn sửa ngày trả và trạng thái lượt mượn. Sao trình biên dịch không báo lỗi?
 
@@ -122,21 +122,21 @@ Bản gốc của năm file đã sửa nằm trong `_BanTruocKhiSua_20261115`.
 **Gợi ý trả lời:** Bắt buộc: `time`, `localtime` (lấy ngày máy); `_getch` (đọc phím); `system("mode con")`; `setvbuf` (cho `cout` gom chữ vào vùng đệm); `ifstream`, `ofstream`, `getline`. Trong `KhoiTaoManHinh`: `SetConsoleOutputCP(65001)` chuyển console sang bảng mã UTF-8 để in tiếng Việt có dấu; `GetConsoleMode` và `SetConsoleMode` (cùng `GetStdHandle`) bật chế độ cho console hiểu mã ANSI. `gotoxy` và `SetColor` đều tự viết bằng cách in mã ANSI qua `cout`. Ba hàm này chỉ gọi một lần lúc mở chương trình. Còn lại nhóm tự viết: đổi số sang chuỗi và ngược lại, tách trường, so sánh chuỗi, tìm chuỗi con, các thuật toán sắp xếp, tính ngày, và toàn bộ thanh menu, ô số liệu, khung, ô nhập, bảng.
 
 ### C10 · Vì sao thêm
-`00_KhaiBaoChung.h` dòng 37–99; `10_DocGia_CayAVL.cpp` dòng 154–156; `f_MuonSach.cpp` dòng 61–65
+`00_KhaiBaoChung.h` dòng 37–99; `a_QuanLyDocGia.cpp` dòng 162–164; `f_MuonSach.cpp` dòng 153–157
 
 **Hỏi:** Trong các struct em viết sẵn giá trị ngay sau tên trường: `int height = 1`, `left = nullptr`, `trangThai = SACH_CHO_MUON`, ngày `0/0/0`. Sau lệnh `new NutDocGia` các trường của nút mang giá trị gì? Chỉ ba chỗ trong code đang dựa vào các giá trị mặc định đó mà không gán lại.
 
 **Gợi ý trả lời:** Đây là giá trị khởi tạo mặc định của C++11: mỗi lần tạo biến hay `new` một struct, các trường tự nhận giá trị đó. Ba chỗ dựa vào nó: `ThemDocGiaAVL` tạo nút mới chỉ gán `thongTin`, còn `left`, `right` rỗng và `height = 1` là mặc định (nút lá cao 1, cây rỗng cao 0). `MuonSach` tạo lượt mới không gán `ngayTra`, nên nó là `0/0/0`, đúng quy ước "chưa trả" khi ghi file. `ThemCuonSachCoMa` không gán `next`, nên cuốn mới tự là cuối danh sách. Nếu thầy hỏi vì sao phải bật `-std=c++11`: cú pháp này là một lý do.
 
 ### C11 · Vì sao thêm
-`10_DocGia_CayAVL.cpp` dòng 39, 94, 150, 249, 310, 334
+`a_QuanLyDocGia.cpp` dòng 47, 102, 158, 257, 318, 342
 
 **Hỏi:** Sáu hàm `XoayTrai`, `XoayPhai`, `ThemDocGiaAVL`, `CanBangLai`, `TachNutNhoNhat`, `XoaNutAVL` có chữ `static` đứng trước và không được khai báo trong file `.h`, còn `them_cay`, `XoaDocGia` thì có. Vì sao em chia như vậy? Nếu màn hình xóa thẻ gọi thẳng `XoaNutAVL` được thì nguy hiểm gì?
 
 **Gợi ý trả lời:** `static` trước một hàm nghĩa là hàm chỉ dùng được trong chính file đó. Sáu hàm kia là các bước bên trong của cây AVL; bên ngoài chỉ được đi qua `them_cay` và `XoaDocGia`, là hai hàm có kiểm tra điều kiện. `XoaNutAVL` xóa nút mà không hủy danh sách mượn trả và không kiểm thẻ có lịch sử hay không; nếu gọi thẳng cho một thẻ đang giữ sách thì lịch sử bị rò bộ nhớ, cuốn sách kẹt ở trạng thái đang mượn và Top 10 giảm. Để `static` thì trình biên dịch chặn luôn khả năng đó.
 
 ### C12 · Vì sao thêm
-`00_KhaiBaoChung.h` dòng 207–208, 266–267
+`00_KhaiBaoChung.h` dòng 207–208, 257–258
 
 **Hỏi:** Nhìn vào khai báo: `MuonSach(DanhSachDauSach &ds, NutDocGia &docgia, const string &maSach, NgayThang ngayMuon, string &loi)`. Năm tham số truyền theo ba kiểu khác nhau. Vì sao mỗi cái một kiểu? `HieuChinhDocGia` lại nhận `string Ho` không có `&`, tốn gì?
 
@@ -157,7 +157,7 @@ Toàn bộ `MaNguon`
 **Gợi ý trả lời:** a: thêm, xóa, hiệu chỉnh thẻ O(log R). b: theo mã O(R); theo tên O(R log R) trung bình. c: thêm đầu sách O(D); thêm k cuốn O(k·(c + k)). d: sắp xếp chèn, O(D²) xấu nhất, gần O(D) khi thể loại đã gần đúng thứ tự. e: O(D) lần so chuỗi con, cộng phần in. f và g: O(log R + H₁ + D + c). h: O(log R + H₁ + D). i: O(R + H) để gom, cộng O(n²) để sắp n lượt quá hạn. j: O(R + H·D) để đếm, cộng 10·D để chọn. Đắt nhất là j vì mỗi lượt mượn phải tìm lại đầu sách trong mảng không sắp theo ISBN. Lưu ý thêm: mọi thao tác có thay đổi dữ liệu còn cộng một lần ghi lại cả file, O(D + C + R + H).
 
 ### C15 · Bẫy
-`a_QuanLyDocGia.cpp` dòng 85; `04_LuuDocFile.cpp` dòng 51–72, 142
+`a_QuanLyDocGia.cpp` dòng 548; `04_LuuDocFile.cpp` dòng 51–72, 142
 
 **Hỏi:** Em nói nhờ AVL nên thêm thẻ chỉ tốn O(log n). Nhưng ngay sau `them_cay`, em gọi `LuuSauThayDoi` ghi lại toàn bộ file, tốn O(n). Vậy AVL còn ý nghĩa gì?
 
@@ -168,154 +168,154 @@ Toàn bộ `MaNguon`
 ## B. Thẻ độc giả và cây AVL (Thành)
 
 ### DG01 · Thuật toán
-`10_DocGia_CayAVL.cpp` dòng 150–236, `ThemDocGiaAVL`
+`a_QuanLyDocGia.cpp` dòng 158–244, `ThemDocGiaAVL`
 
 **Hỏi:** Thêm lần lượt 7 độc giả mới vào cây rỗng (mã 1 đến 7). Vẽ cây sau mỗi bước, bước nào xoay, xoay tại nút nào? So với BST thường.
 
 **Gợi ý trả lời:** Xoay trái tại nút 1 khi thêm 3, tại nút 3 khi thêm 5, tại nút 2 khi thêm 6, tại nút 5 khi thêm 7. Kết quả là cây đầy đủ: gốc 4, con 2 và 6, lá 1, 3, 5, 7, cao 3. BST thường cho một chuỗi lệch phải cao 7.
 
 ### DG02 · Thuật toán
-`10_DocGia_CayAVL.cpp` dòng 211–232
+`a_QuanLyDocGia.cpp` dòng 219–240
 
 **Hỏi:** Code nhận biết bốn trường hợp mất cân bằng bằng cách so mã thẻ mới với mã của nút con (dòng 206, 218). Vì sao so mã là đủ? Lúc xóa có dùng cách này được không?
 
 **Gợi ý trả lời:** Hệ số lớn hơn 1 nghĩa là nút mới vừa vào cây con trái. Nếu mã mới lớn hơn mã con trái thì nó nằm bên phải của con trái (trái–phải): xoay trái con rồi xoay phải; ngược lại là trái–trái: chỉ xoay phải. Khi xóa không có "mã vừa thêm", nên `CanBangLai` phải so chiều cao hai cháu (dòng 273, 291).
 
 ### DG03 · Thuật toán
-`10_DocGia_CayAVL.cpp` dòng 39–91, 173–192
+`a_QuanLyDocGia.cpp` dòng 47–99, 181–200
 
 **Hỏi:** Trong `XoayTrai` em chỉ tính lại `height` cho đúng hai nút: gốc cũ rồi gốc mới. Vì sao hai nút là đủ, các nút con bên dưới không cần tính lại? Còn nút cha của chỗ vừa xoay thì ai cập nhật, ở dòng nào?
 
 **Gợi ý trả lời:** Phép xoay chỉ đổi con của hai nút đó; ba cây con treo bên dưới giữ nguyên hình dạng nên chiều cao của chúng không đổi. Gốc cũ tính trước vì sau khi xoay nó là con của gốc mới, gốc mới cần chiều cao đã sửa của nó. Nút cha không được sửa trong `XoayTrai`: hàm trả gốc mới về cho lời gọi đệ quy của nút cha trong `ThemDocGiaAVL`, và nút cha tự tính lại chiều cao ở dòng 166–185. Cứ thế ngược lên tới gốc, nên mỗi lần thêm tốn O(log n).
 
 ### DG04 · Thuật toán
-`10_DocGia_CayAVL.cpp` dòng 47–66, 69–88, 173–192 so với 254–266
+`a_QuanLyDocGia.cpp` dòng 55–74, 77–96, 181–200 so với 262–274
 
 **Hỏi:** Đoạn tính `height` gồm năm nhánh if lặp lại nhiều lần, trong khi `CanBangLai` viết gọn hơn. Em rút gọn giúp thầy.
 
 **Gợi ý trả lời:** Cả hai làm cùng một việc: chiều cao bằng lớn hơn giữa cao trái và cao phải, cộng 1, với cây con rỗng coi là 0. Có thể tách một hàm `ChieuCao(p)` trả 0 khi `p` rỗng, rồi mỗi chỗ chỉ còn một dòng. Bản dài là code viết từ đầu của nhóm, giữ nguyên vì đã kiểm đúng.
 
 ### DG05 · Bẫy
-`10_DocGia_CayAVL.cpp` dòng 41–44
+`a_QuanLyDocGia.cpp` dòng 49–52
 
 **Hỏi:** `XoayTrai` đọc `root->right->left`. Có khi nào `root->right` rỗng làm chương trình sập không?
 
 **Gợi ý trả lời:** Không, vì hàm chỉ được gọi trong ba tình huống đều bảo đảm con phải tồn tại: hệ số nhỏ hơn −1 (cây con phải cao ít nhất 2); trường hợp trái–phải lúc thêm (nút mới nằm bên phải con trái); và trong `CanBangLai` khi cháu phải cao hơn cháu trái.
 
 ### DG06 · Thuật toán
-`10_DocGia_CayAVL.cpp` dòng 374–383
+`a_QuanLyDocGia.cpp` dòng 382–391
 
 **Hỏi:** Xóa nút có hai con: em tách nút nhỏ nhất bên phải rồi nối lại con trỏ, chứ không chép `thongTin` sang. Vì sao?
 
 **Gợi ý trả lời:** Gán cả struct `thongTin` sẽ chép luôn con trỏ `dsMuonTra`, làm hai nút cùng trỏ một danh sách lịch sử, rất dễ hủy trùng hoặc mất lịch sử. Nối lại con trỏ thì không chép chuỗi nào, và địa chỉ của nút thay thế không đổi. Chiều cao nút thay thế được tính lại ở `CanBangLai(root)` dòng 374.
 
 ### DG07 · Thuật toán
-`10_DocGia_CayAVL.cpp` dòng 310–330, `TachNutNhoNhat`
+`a_QuanLyDocGia.cpp` dòng 318–338, `TachNutNhoNhat`
 
 **Hỏi:** Vì sao trên đường quay về hàm này cũng gọi `CanBangLai`?
 
 **Gợi ý trả lời:** Rút nút nhỏ nhất làm nhánh đó thấp đi một bậc, các nút tổ tiên của nó trong cây con phải có thể bị lệch. Mỗi tầng đệ quy quay về phải tính lại chiều cao và xoay nếu cần.
 
 ### DG08 · Thuật toán
-`10_DocGia_CayAVL.cpp` dòng 334–387
+`a_QuanLyDocGia.cpp` dòng 342–395
 
 **Hỏi:** Xóa một nút lá thì hàm trả `nullptr` ngay (dòng 343). Vậy cân bằng lại xảy ra ở đâu? Thêm và xóa khác nhau thế nào về số lần xoay?
 
 **Gợi ý trả lời:** Ở lời gọi của nút cha: sau khi gán lại con, nó rơi xuống `return CanBangLai(root)` dòng 374, và cứ thế lên đến gốc. Thêm chỉ cần xoay tại một nút là đủ; xóa có thể phải xoay ở nhiều tầng trên đường về gốc.
 
 ### DG09 · Thuật toán
-`10_DocGia_CayAVL.cpp` dòng 392–409, `XoaDocGia`
+`a_QuanLyDocGia.cpp` dòng 400–417, `XoaDocGia`
 
 **Hỏi:** Hàm tìm nút bằng `tim_cay` rồi `XoaNutAVL` lại tìm lần nữa. Có thừa không?
 
 **Gợi ý trả lời:** Có tìm hai lần, mỗi lần O(log n). Lần đầu để kiểm tra "có tồn tại không, có lịch sử không" trước khi đụng vào cây. Gộp lại được nhưng phải đưa thông báo lỗi ra từ giữa hàm đệ quy, code rối hơn mà lợi không đáng kể.
 
 ### DG10 · Bẫy
-`a_QuanLyDocGia.cpp` dòng 80–82; `10_DocGia_CayAVL.cpp` dòng 428–435
+`a_QuanLyDocGia.cpp` dòng 543–545, 436–443
 
 **Hỏi:** Đang có thẻ 1 đến 8. Thẻ 8 vừa cấp, chưa mượn gì, bị xóa. Thêm độc giả mới thì mã là bao nhiêu? Ngoài đời người cũ vẫn cầm thẻ giấy số 8 thì sao? Xóa thẻ 7 thay vì 8 thì mã mới là mấy?
 
 **Gợi ý trả lời:** Mã mới bằng mã lớn nhất trong cây cộng 1, nên xóa thẻ 8 rồi thêm sẽ cấp lại 8. Đề ghi "không trùng với các mã thẻ độc giả cũ", có thể hiểu là kể cả mã đã xóa. Người cũ cầm thẻ giấy số 8 có thể mượn sách dưới tên người mới. Xóa thẻ 7 thì cấp 9, số 7 bỏ trống. Muốn không bao giờ cấp lại phải lưu "mã lớn nhất đã cấp" thành một giá trị trong file, tức là thêm một biến ngoài đề và phải giải thích.
 
 ### DG11 · Thuật toán
-`10_DocGia_CayAVL.cpp` dòng 310–330, 374–386
+`a_QuanLyDocGia.cpp` dòng 318–338, 382–394
 
 **Hỏi:** Cây có thẻ 1 đến 7 (gốc 4, con 2 và 6, lá 1, 3, 5, 7), chưa ai mượn gì. Xóa thẻ 4. Chạy tay `TachNutNhoNhat` và vẽ cây sau khi xóa. Nút nào lên làm gốc, nút 6 thay đổi gì?
 
 **Gợi ý trả lời:** Nút nhỏ nhất của cây con phải là 5. `TachNutNhoNhat` gỡ 5 ra, con trái của 6 thành rỗng, 6 còn chiều cao 2 và vẫn cân bằng. Nút 5 nhận con trái là 2, con phải là 6 rồi lên làm gốc. Cây mới: gốc 5; bên trái 2 (lá 1, 3); bên phải 6 (chỉ có con phải 7). `CanBangLai` ở dòng 374 tính lại chiều cao gốc là 3, không cần xoay.
 
 ### DG12 · Thuật toán
-`10_DocGia_CayAVL.cpp` dòng 249–307, `CanBangLai`
+`a_QuanLyDocGia.cpp` dòng 257–315, `CanBangLai`
 
 **Hỏi:** Cây gốc 2, con trái 1, con phải 3, và 3 có con phải 4. Xóa thẻ 1 thì xoay gì? Nếu thay vào đó cây là gốc 2, con trái 1, con phải 4, và 4 có con trái 3, thì xóa 1 xoay khác thế nào?
 
 **Gợi ý trả lời:** Trường hợp đầu: tại nút 2, cao trái 0, cao phải 2, hệ số −2. Con phải là 3 có cháu phải cao hơn cháu trái nên chỉ xoay trái tại 2: gốc mới là 3, con 2 và 4. Trường hợp sau: con phải là 4 có cháu trái cao hơn (dòng 291), nên xoay phải tại 4 trước rồi xoay trái tại 2; kết quả cũng là gốc 3, con 2 và 4. Lúc xóa không có "mã vừa thêm" để so nên phải so chiều cao hai cháu.
 
 ### DG13 · Thuật toán
-`10_DocGia_CayAVL.cpp` dòng 239–245 và 167–171
+`a_QuanLyDocGia.cpp` dòng 247–253 và 175–179
 
 **Hỏi:** `them_cay` gọi `tim_cay` kiểm trùng, trong khi `ThemDocGiaAVL` cũng đã có nhánh xử lý trùng mã. Thừa không?
 
 **Gợi ý trả lời:** `ThemDocGiaAVL` trả về con trỏ gốc nên không báo được "bị trùng" cho nơi gọi. `them_cay` cần trả `false` khi trùng (đọc file dùng để phát hiện file có hai thẻ cùng mã), nên phải kiểm trước.
 
 ### DG14 · Vì sao thêm
-`a_QuanLyDocGia.cpp` dòng 93, 106, 110
+`a_QuanLyDocGia.cpp` dòng 556, 569, 573
 
 **Hỏi:** Ở màn hình hiệu chỉnh, em truyền thẳng kết quả `ChonMenu` vào `HieuChinhDocGia` làm trạng thái thẻ, không có `if` nào đổi "mục được chọn" thành `THE_BI_KHOA` hay `THE_HOAT_DONG`. Vì sao làm được vậy? Cách này ràng buộc gì về sau?
 
 **Gợi ý trả lời:** `ChonMenu` trả chỉ số mục: 0 là "Khoa the", 1 là "Dang hoat dong", trùng đúng giá trị hai hằng `THE_BI_KHOA = 0` và `THE_HOAT_DONG = 1` mà đề quy định, nên không cần đổi. Ràng buộc: thứ tự hai chuỗi trong `mucTrangThai` phải luôn khớp giá trị hằng. Đây là chỗ phụ thuộc ngầm, nên nói rõ khi thầy chỉ vào dòng 550.
 
 ### DG15 · Bẫy
-`10_DocGia_CayAVL.cpp` dòng 412–424; `a_QuanLyDocGia.cpp` dòng 91–114
+`a_QuanLyDocGia.cpp` dòng 420–432, 554–577
 
 **Hỏi:** Độc giả Cường (thẻ 1) bị khóa vì làm mất sách. Thủ thư vào hiệu chỉnh, chọn "Dang hoat dong". Chương trình có cho không? Có phân biệt được thẻ khóa do mất sách với thẻ khóa tay không?
 
 **Gợi ý trả lời:** Cho, vì `HieuChinhDocGia` không kiểm điều kiện gì. Dữ liệu cũng không lưu lý do khóa, chỉ suy ra được từ lịch sử có lượt trạng thái 2. Đây là giả định của nhóm: thủ thư tự quyết sau khi độc giả đền sách. Nếu thầy muốn chặn thì phải có thêm quy ước "đã đền", mà đề không có trường nào cho việc đó.
 
 ### DG16 · Bẫy
-`a_QuanLyDocGia.cpp` dòng 101–110
+`a_QuanLyDocGia.cpp` dòng 564–573
 
 **Hỏi:** Đổi tên độc giả có phải sắp lại cây không? Đang ở bảng "in theo tên" thì sao? Có sửa mã thẻ được không?
 
 **Gợi ý trả lời:** Không phải sắp lại, vì khóa của cây là mã thẻ. Bảng theo tên được sắp lại từ mảng tạm mỗi lần mở nên tự đúng. Mã thẻ không sửa được (màn hình không có ô đó); nếu cho sửa thì phải xóa nút rồi thêm lại để giữ đúng thứ tự cây.
 
 ### DG17 · Bẫy
-`10_DocGia_CayAVL.cpp` dòng 401–405
+`a_QuanLyDocGia.cpp` dòng 409–413
 
 **Hỏi:** Một độc giả đã trả hết sách từ lâu, xin hủy thẻ. Chương trình xử lý thế nào và vì sao? Hệ quả lâu dài?
 
 **Gợi ý trả lời:** Không cho xóa vì thẻ đã có lịch sử, chỉ khóa được. Lý do: Top 10 đếm từ lịch sử của độc giả, xóa thẻ thì số lượt mượn của các sách giảm theo. Hệ quả: cây chỉ tăng chứ không giảm, và danh sách in luôn có cả thẻ đã ngừng dùng.
 
 ### DG18 · Thuật toán
-`10_DocGia_CayAVL.cpp` dòng 446–456, `Huydocgia`
+`a_QuanLyDocGia.cpp` dòng 454–464, `Huydocgia`
 
 **Hỏi:** Vì sao hủy cây theo thứ tự sau (LRN)? Đệ quy sâu tối đa bao nhiêu? Lịch sử mượn được hủy ở đâu?
 
 **Gợi ý trả lời:** Phải hủy hai cây con trước, vì xóa nút cha trước thì mất con trỏ tới các con. Độ sâu đệ quy bằng chiều cao cây, nhờ AVL chỉ khoảng log n. Lịch sử của từng nút được hủy bằng `HuyDanhSachMuonTra` ở dòng 437, ngay trước khi `delete` nút.
 
 ### DG19 · Thuật toán
-`10_DocGia_CayAVL.cpp` dòng 270–286
+`a_QuanLyDocGia.cpp` dòng 278–294
 
 **Hỏi:** Cây gốc 4, con trái 2 (có hai con 1 và 3), con phải 5. Xóa thẻ 5. Tại nút 4 hệ số cân bằng là bao nhiêu? Con trái là nút 2 có hai cháu cao bằng nhau: code xoay đơn hay xoay kép, do điều kiện nào? Vẽ cây kết quả.
 
 **Gợi ý trả lời:** Sau khi xóa 5, tại nút 4 cao trái 2, cao phải 0, hệ số +2. Điều kiện ở dòng 273 là "cháu phải cao HƠN cháu trái" mới xoay trái con trước; ở đây hai cháu bằng nhau nên điều kiện sai, chỉ xoay phải một lần tại 4. Kết quả: gốc 2, con trái 1, con phải 4, và 4 có con trái 3. Quy tắc: xoay kép chỉ cần khi nhánh "trong" cao hơn hẳn; bằng nhau hoặc nhánh "ngoài" cao hơn thì xoay đơn là đủ. Trường hợp hai cháu bằng nhau chỉ xuất hiện khi xóa, không xuất hiện khi thêm.
 
 ### DG20 · Bẫy
-`f_MuonSach.cpp` dòng 131–155; `a_QuanLyDocGia.cpp` dòng 125–134
+`f_MuonSach.cpp` dòng 223–247; `a_QuanLyDocGia.cpp` dòng 588–597
 
 **Hỏi:** Màn hình mượn sách giữ con trỏ `docgia` tới một nút của cây suốt lúc người dùng mượn liên tiếp nhiều cuốn. Nếu trong lúc đó cây bị xoay vì có thẻ mới được thêm, con trỏ này còn dùng được không? Trường hợp nào con trỏ tới nút thật sự hỏng, và màn hình xóa thẻ tránh nó thế nào?
 
 **Gợi ý trả lời:** Còn dùng được. Phép xoay chỉ đổi các liên kết `left`, `right` và `height`; nút không bị cấp phát lại hay chép sang chỗ khác, nên mỗi độc giả nằm nguyên một địa chỉ từ lúc `new` đến lúc `delete`. Đã thử: giữ con trỏ tới thẻ 7, thêm ba thẻ làm cây xoay, con trỏ vẫn trỏ đúng thẻ 7. Con trỏ chỉ hỏng khi nút bị xóa. Màn hình xóa thẻ chép `maThe` ra biến riêng trước khi gọi `XoaDocGia` (dòng 565), các thông báo sau đó chỉ dùng biến này, không đụng tới `p` nữa.
 
 ### DG21 · Vì sao thêm
-`10_DocGia_CayAVL.cpp` dòng 150–165, 446–456
+`a_QuanLyDocGia.cpp` dòng 158–173, 454–464
 
 **Hỏi:** `ThemDocGiaAVL` nhận `NutDocGia* root` và trả về con trỏ, nơi gọi viết `root->left = ThemDocGiaAVL(root->left, ...)`. Còn `Huydocgia` lại nhận `NutDocGia *&` và không trả gì. Hai cách này khác nhau thế nào, vì sao mỗi hàm một cách?
 
 **Gợi ý trả lời:** Cả hai đều nhằm sửa được con trỏ của nút cha. Cách trả về con trỏ: hàm con trả gốc mới của cây con, nút cha tự gán lại; hợp với thêm và xóa AVL vì sau khi xoay, gốc của cây con đổi thành nút khác, và trên đường quay về mỗi tầng còn phải tính lại chiều cao. Cách tham chiếu tới con trỏ: hàm sửa thẳng vào ô con trỏ của cha; hợp với hủy cây vì chỉ cần gán ô đó thành rỗng sau khi `delete`, không có gì để trả về. Gán rỗng như vậy để sau khi hủy, cây ở trạng thái rỗng hợp lệ chứ không trỏ vào vùng nhớ đã trả.
 
 ### DG22 · Bẫy
-`a_QuanLyDocGia.cpp` dòng 101–110; `10_DocGia_CayAVL.cpp` dòng 412–424
+`a_QuanLyDocGia.cpp` dòng 564–573, 420–432
 
 **Hỏi:** Ở màn hình hiệu chỉnh có dòng `DocGia dg = p->thongTin;`. Phép gán này chép những gì? `dg` và nút trong cây lúc đó cùng trỏ tới một danh sách mượn trả, có nguy hiểm không? Người dùng sửa họ xong rồi nhấn Esc ở ô tên thì thẻ trong cây đã bị đổi chưa?
 
@@ -326,112 +326,112 @@ Toàn bộ `MaNguon`
 ## C. Mượn, trả, ngày tháng (Thành)
 
 ### MT01 · Thuật toán
-`f_MuonSach.cpp` dòng 19–59
+`f_MuonSach.cpp` dòng 111–151
 
 **Hỏi:** `MuonSach` kiểm theo thứ tự: ngày mượn, thẻ, đủ 3 cuốn, quá hạn, rồi mới tìm cuốn sách. Một độc giả bị khóa thẻ, đang giữ 3 cuốn, lại nhập sai mã sách thì báo lỗi nào? Vì sao em xếp thứ tự như vậy?
 
 **Gợi ý trả lời:** Báo thẻ bị khóa. Ngày mượn kiểm đầu tiên vì đó là dữ liệu nhập, sai thì không cần xét gì thêm. Tiếp theo là các điều kiện về độc giả: không phụ thuộc cuốn nào và rẻ (xem một trường, duyệt lịch sử của một người). Tìm cuốn sách phải duyệt mảng đầu sách nên để sau cùng. Thứ tự này cũng quyết định người dùng thấy thông báo nào khi sai nhiều thứ cùng lúc.
 
 ### MT02 · Bẫy
-`f_MuonSach.cpp` dòng 14–69
+`f_MuonSach.cpp` dòng 106–161
 
 **Hỏi:** Độc giả đang giữ cuốn `9786040000001#1`, xin mượn thêm `9786040000001#2` cùng đầu sách. Có cho không? Nếu thầy bảo phải cấm thì sửa thế nào?
 
 **Gợi ý trả lời:** Code hiện cho mượn, vì đề chỉ giới hạn 3 cuốn và mỗi cuốn có mã riêng. Thư viện thật thường cấm để một người không chiếm hai bản của cùng một sách. Muốn cấm: trước khi thêm lượt, duyệt lịch sử, nếu có lượt đang mượn mà `TachISBNTuMaSach` của nó bằng ISBN của cuốn mới thì từ chối. Đây là giả định cần chốt với thầy.
 
 ### MT03 · Vì sao thêm
-`f_MuonSach.cpp` dòng 19, 37, 87
+`f_MuonSach.cpp` dòng 111, 129, 179
 
 **Hỏi:** Hàm đã nhận tham số `ngayMuon`, vậy mà kiểm quá hạn ở dòng 33 em lại dùng `homNay` lấy từ máy chứ không dùng `ngayMuon`. Vì sao? Lấy Bình (thẻ 2, giữ `9786040000002#1` từ 01/11, hôm nay 15/11) để giải thích nếu dùng `ngayMuon` thì người dùng lách thế nào.
 
 **Gợi ý trả lời:** Ngày mượn do thủ thư gõ nên có thể gõ lùi. Nếu xét quá hạn đến `ngayMuon`, thủ thư gõ 05/11 thì từ 01/11 đến 05/11 mới 4 ngày, Bình được mượn tiếp dù thực tế đã quá hạn 8 ngày. Xét đến ngày máy thì gõ ngày nào kết quả cũng như nhau, và khớp với bảng "sách đang mượn" vốn tô đỏ theo ngày máy (dòng 80). Bản trước 15/11 dùng `ngayMuon` và có đúng lỗ hổng này; đã chạy thử lại: mượn lùi ngày bị từ chối.
 
 ### MT04 · Vì sao thêm
-`f_MuonSach.cpp` dòng 19–24; `g_TraSach.cpp` dòng 23–28
+`f_MuonSach.cpp` dòng 111–116; `g_TraSach.cpp` dòng 60–65
 
 **Hỏi:** Em chặn ngày mượn và ngày trả ở tương lai, nhưng vẫn cho nhập ngày trong quá khứ. Vì sao chặn một chiều? Không chặn tương lai thì cuốn sách gặp chuyện gì?
 
 **Gợi ý trả lời:** Cho nhập ngày quá khứ để thủ thư ghi bù giao dịch của hôm trước. Ngày tương lai thì chắc chắn là gõ nhầm, và hậu quả nặng: mượn ghi ngày 20/12 thì hôm nay độc giả mang trả sẽ bị từ chối vì ngày trả trước ngày mượn, cuốn sách kẹt đến 20/12. Ngày trả ở tương lai cũng làm cuốn sách "đã trả" trước khi về kệ. Cái giá: chương trình tin đồng hồ máy; đồng hồ sai thì các kiểm tra này sai theo.
 
 ### MT05 · Bẫy
-`f_MuonSach.cpp` dòng 50–67
+`f_MuonSach.cpp` dòng 142–159
 
 **Hỏi:** An trả cuốn X ngày 15/11. Ngay sau đó Bình mượn X nhưng nhập ngày mượn 10/11. Có được không? Vì sao chương trình không phát hiện hai người giữ cùng một cuốn trong cùng khoảng ngày?
 
 **Gợi ý trả lời:** Được. Chương trình chỉ xem trạng thái hiện tại của cuốn. Lịch sử nằm theo từng độc giả, cuốn sách không biết ai đã mượn nó, nên muốn kiểm chồng ngày phải duyệt lịch sử của mọi độc giả. Hệ quả: lịch sử có thể vô lý dù từng thao tác đều "hợp lệ".
 
 ### MT06 · Thuật toán
-`13_MuonTra_DSLKDon.cpp` dòng 60–85
+`f_MuonSach.cpp` dòng 61–86
 
 **Hỏi:** Mượn ngày 01/11. Đến ngày 07/11 và ngày 08/11 (theo đồng hồ máy) xin mượn thêm thì sao? Ngày 08 quá hạn mấy ngày? Nếu thầy nói "ngày thứ 8 vẫn còn hạn" thì sửa đâu?
 
 **Gợi ý trả lời:** Ngày 07: khoảng cách 6, được mượn. Ngày 08: khoảng cách 7, bị chặn và tính là quá hạn 1 ngày (công thức k − 7 + 1). Nếu thầy hiểu khác thì đổi `>=` thành `>` ở dòng 64, đồng thời sửa điều kiện và công thức ở dòng 77–79. Phải sửa cả hai chỗ cùng lúc.
 
 ### MT07 · Vì sao thêm
-`13_MuonTra_DSLKDon.cpp` dòng 60–85
+`f_MuonSach.cpp` dòng 61–86
 
 **Hỏi:** Em có hai hàm cùng liên quan quá hạn: `CoSachQuaHan7Ngay` trả có/không, `SoNgayQuaHan` trả số ngày. Vì sao cần cả hai, mỗi hàm dùng ở chức năng nào? Có hai hàm thì phải giữ điều gì cho khớp?
 
 **Gợi ý trả lời:** Hàm thứ nhất dùng cho f: chỉ cần biết có cuốn nào quá hạn để chặn mượn, gặp cuốn đầu tiên là dừng. Hàm thứ hai dùng cho bảng h và danh sách i: cần con số để hiển thị và sắp xếp. Cả hai phải dùng chung một mốc `HAN_MUON` (dòng 64 và dòng 77); nếu hai mốc lệch nhau thì có người bị chặn mượn mà không nằm trong danh sách quá hạn. Hiện hai hàm đang khớp: khoảng cách từ 7 trở lên là quá hạn.
 
 ### MT08 · Thuật toán
-`13_MuonTra_DSLKDon.cpp` dòng 11–26, `them_lich_su`
+`f_MuonSach.cpp` dòng 26–41, `them_lich_su`
 
 **Hỏi:** Thêm vào cuối danh sách phải duyệt hết lịch sử. Sao không thêm vào đầu cho O(1)?
 
 **Gợi ý trả lời:** Thêm cuối giữ lịch sử theo thứ tự thời gian, in và ghi file không cần đảo. Nếu thêm đầu ở cả lúc mượn lẫn lúc đọc file thì mỗi lần lưu rồi mở lại thứ tự bị đảo ngược. Chi phí duyệt không đáng kể vì `MuonSach` vốn đã duyệt lịch sử để đếm và kiểm quá hạn.
 
 ### MT09 · Thuật toán
-`f_MuonSach.cpp` dòng 30, 37, 65
+`f_MuonSach.cpp` dòng 122, 129, 157
 
 **Hỏi:** Một độc giả lâu năm có 5000 lượt đã trả, đang giữ 1 cuốn. Một lần mượn duyệt lịch sử của người này mấy lần? Giới hạn 3 cuốn có giúp gì không?
 
 **Gợi ý trả lời:** Ba lần trong `MuonSach` (đếm đang mượn, kiểm quá hạn, tìm đuôi để nối), cộng thêm các lần vẽ bảng. Mỗi lần 5000 bước, vẫn tức thì. Giới hạn 3 cuốn chỉ giới hạn số lượt đang mở, không giới hạn độ dài lịch sử.
 
 ### MT10 · Thuật toán
-`13_MuonTra_DSLKDon.cpp` dòng 45–55
+`g_TraSach.cpp` dòng 19–29
 
 **Hỏi:** `TimMuonDangMuonTheoMa` so hai điều kiện: đúng mã sách và trạng thái đang mượn. Mã sách là duy nhất, sao còn phải so trạng thái? Lấy lịch sử của An (thẻ 4) trong file mẫu để giải thích.
 
 **Gợi ý trả lời:** Mã sách duy nhất trong kho, nhưng trong lịch sử của một người thì không: cùng một cuốn có thể được mượn nhiều lần. An có hai lượt cùng mã `9786040000001#1`: lượt đã trả ngày 05/09 đứng trước, lượt đang mượn từ 20/10 đứng sau. Hàm duyệt từ đầu danh sách, nên phải có điều kiện trạng thái mới bỏ qua được lượt cũ và dừng đúng ở lượt đang mượn.
 
 ### MT11 · Thuật toán
-`g_TraSach.cpp` dòng 17, 40, 47
+`g_TraSach.cpp` dòng 54, 77, 84
 
 **Hỏi:** `TraSach` đã tìm được con trỏ `luot` ở dòng 13, sao lại gọi `CapNhatLuotTra` để tìm lần nữa?
 
 **Gợi ý trả lời:** Đúng là tìm hai lần. Có thể gán thẳng `luot->ngayTra` và `luot->trangThai`. Nhóm giữ `CapNhatLuotTra` vì đó là hàm đã viết và kiểm từ trước; lần tìm thứ hai chỉ tốn thêm một lượt duyệt lịch sử.
 
 ### MT12 · Bẫy
-`f_MuonSach.cpp` dòng 30–41
+`f_MuonSach.cpp` dòng 122–133
 
 **Hỏi:** Hôm nay 15/11. Độc giả giữ X từ 01/11, Y và Z từ 12/11. Người này trả Y rồi xin mượn W. Được không? Nếu trả X thay vì Y thì sao? Thẻ đang bị khóa có trả sách được không?
 
 **Gợi ý trả lời:** Trả Y xong còn 2 cuốn, qua được điều kiện "đủ 3 cuốn", nhưng X vẫn quá hạn nên vẫn bị chặn ở dòng 33. Trả X thì còn 2 cuốn chưa quá hạn, mượn W được. Hai điều kiện độc lập: giảm số cuốn không làm hết quá hạn. Thẻ khóa vẫn trả được vì `TraSach` không kiểm trạng thái thẻ; khóa là cấm mượn thêm chứ không cấm trả.
 
 ### MT13 · Thuật toán
-`g_TraSach.cpp` dòng 38–44
+`g_TraSach.cpp` dòng 75–81
 
 **Hỏi:** Độc giả giữ X và Y, báo mất X. Những gì thay đổi? Sau đó trả Y được không, mượn Z được không?
 
 **Gợi ý trả lời:** Ba thay đổi: lượt mượn X chuyển trạng thái 2 và ghi ngày báo mất; cuốn X chuyển "đã thanh lý"; thẻ bị khóa. Y vẫn đang mượn và trả được bình thường. Mượn Z bị chặn vì thẻ khóa. Cả ba điều là giả định của nhóm, đề chỉ định nghĩa trạng thái 2.
 
 ### MT14 · Bẫy
-`g_TraSach.cpp` dòng 38–44; `c_NhapSach.cpp` dòng 171–196
+`g_TraSach.cpp` dòng 75–81; `c_NhapSach.cpp` dòng 439–464
 
 **Hỏi:** Hôm sau độc giả tìm lại được cuốn đã báo mất và mang đến. Chương trình xử lý được không?
 
 **Gợi ý trả lời:** Không có chức năng khôi phục: cuốn đã "thanh lý" không quay lại "cho mượn được", lượt mượn vẫn ghi là mất. Cách làm hiện tại: nhập cuốn đó như cuốn mới (mã N+1) và mở khóa thẻ bằng hiệu chỉnh; lịch sử vẫn ghi mất. Muốn đúng phải thêm thao tác đổi cuốn 2 về 0 và lượt 2 về 1.
 
 ### MT15 · Bẫy
-`g_TraSach.cpp` dòng 17–33; `f_MuonSach.cpp` dòng 61–67
+`g_TraSach.cpp` dòng 54–70; `f_MuonSach.cpp` dòng 153–159
 
 **Hỏi:** Người dùng xác nhận báo mất nhưng nhập ngày báo mất trước ngày mượn. Thẻ có bị khóa không? Có khi nào dữ liệu bị đổi nửa chừng?
 
 **Gợi ý trả lời:** Không. `TraSach` kiểm xong mọi điều kiện rồi mới sửa; trường hợp này trả `false` ở dòng 25–29 trước khi đổi bất cứ gì. `MuonSach` cũng vậy: sau các kiểm tra, hai bước "thêm lượt" và "đổi trạng thái cuốn" đi liền nhau, không có đường thoát ở giữa.
 
 ### MT16 · Thuật toán
-`g_TraSach.cpp` dòng 57–72, 126
+`g_TraSach.cpp` dòng 93–108, 162
 
 **Hỏi:** Người dùng chọn cuốn bằng phím mũi tên. Biến `chon` được đổi thành mã sách thế nào? Sau khi trả xong sao phải gán `chon = 0`?
 
@@ -459,21 +459,21 @@ Toàn bộ `MaNguon`
 **Gợi ý trả lời:** 2028 nhuận nên tháng 2 có 29 ngày. Khoảng cách 7 rơi vào 03/03/2028, đó là ngày quá hạn đầu tiên. Năm 2100 chia hết cho 100 nhưng không chia hết cho 400 nên không nhuận; `NamNhuan` (dòng 204) xử lý đúng.
 
 ### MT20 · Vì sao thêm
-`f_MuonSach.cpp` dòng 138–148
+`f_MuonSach.cpp` dòng 230–240
 
 **Hỏi:** Ô ngày mượn hiện sẵn ngày hôm nay và giữ lại ngày vừa nhập cho cuốn tiếp theo của cùng độc giả; đổi sang độc giả khác thì về lại hôm nay. Vì sao em cho nhập ngày mà không lấy thẳng ngày máy? Giữ lại ngày vừa nhập có rủi ro gì?
 
 **Gợi ý trả lời:** Cho nhập để ghi bù giao dịch hôm trước (thư viện ghi sổ tay rồi nhập sau). `ngayMuon` khai báo ngoài vòng mượn liên tiếp nên giữ giá trị, đỡ gõ lại khi một người mượn nhiều cuốn cùng ngày; vòng ngoài gán lại `HomNay()` khi đổi độc giả. Rủi ro: thủ thư ghi bù một cuốn ngày cũ rồi quên sửa, cuốn kế tiếp cũng mang ngày cũ. Ngày lùi không còn lách được quá hạn (MT03) nhưng vẫn làm sai lịch sử.
 
 ### MT21 · Thuật toán
-`f_MuonSach.cpp` dòng 14–69, 126–162
+`f_MuonSach.cpp` dòng 106–161, 218–254
 
 **Hỏi:** Thủ thư vào "Mượn sách", gõ mã thẻ 6, gõ mã `9786040000004#1`, Enter hai lần và thấy thông báo thành công. Kể theo thứ tự các hàm được gọi từ lúc gõ mã thẻ tới lúc file được ghi, và mỗi hàm đụng vào cấu trúc dữ liệu nào.
 
 **Gợi ý trả lời:** `NhapMaTheTimDocGia` gọi `tim_cay`: đi trên cây AVL. `InSachDangMuon`: duyệt danh sách mượn trả của thẻ 6, mỗi lượt đang mượn gọi `TimCuonSachToanCuc` để lấy tên sách. `MuonSach`: lấy ngày máy; `Dem_so_sach_dang_muon` và `CoSachQuaHan7Ngay` mỗi hàm duyệt danh sách mượn trả một lượt; `TimCuonSachToanCuc` tách ISBN, tìm tuyến tính trong mảng đầu sách, rồi duyệt danh sách cuốn của đầu sách đó; `them_lich_su` nối một nút vào cuối danh sách mượn trả; cuối cùng đổi trạng thái cuốn thành 1. `LuuSauThayDoi` gọi `LuuFile`: duyệt cả mảng, mọi danh sách cuốn, cả cây theo thứ tự trước và mọi danh sách mượn trả. Một lần mượn đi qua đủ bốn cấu trúc của đề.
 
 ### MT22 · Bẫy
-`f_MuonSach.cpp` dòng 50–67; `j_Top10Sach.cpp` dòng 34–42
+`f_MuonSach.cpp` dòng 142–159; `j_Top10Sach.cpp` dòng 38–46
 
 **Hỏi:** Một độc giả mượn một cuốn, trả ngay, rồi mượn lại và trả lại, làm năm lần trong cùng một ngày. Chương trình có chặn không? Lịch sử và Top 10 thay đổi thế nào? Có phân biệt được năm lượt đó với một lỗi ghi trùng không?
 
@@ -484,126 +484,126 @@ Toàn bộ `MaNguon`
 ## D. Đầu sách, cuốn sách, mã sách (Thái)
 
 ### DS01 · Thuật toán
-`11_DauSach_MangConTro.cpp` dòng 100–124, `ThemDauSach`
+`c_NhapSach.cpp` dòng 113–137, `ThemDauSach`
 
 **Hỏi:** Kho mẫu có 6 đầu sách theo tên: Cau truc du lieu va giai thuat, Co so du lieu, Giai tich 1, Lap trinh C++, Toan roi rac, Vat ly dai cuong. Thêm "Dai so". Nó vào vị trí nào, dịch mấy phần tử, dịch cái gì? Vì sao đề chọn mảng con trỏ?
 
 **Gợi ý trả lời:** Vào vị trí 2 (sau "Co so du lieu"). Dịch 4 con trỏ ở vị trí 2 đến 5 sang phải một ô. Chỉ dịch con trỏ, mỗi cái vài byte, chứ không chép cả struct có bốn chuỗi. Địa chỉ của từng `DauSach` không đổi, nên con trỏ nào đang giữ một đầu sách vẫn dùng được sau khi chèn.
 
 ### DS02 · Vì sao thêm
-`11_DauSach_MangConTro.cpp` dòng 119–121
+`c_NhapSach.cpp` dòng 132–134
 
 **Hỏi:** Trong `ThemDauSach` em `new DauSach`, chép `d` vào rồi gán `dms = nullptr`. Vì sao không lưu luôn địa chỉ của `d` vào mảng? Vì sao phải ép `dms` về rỗng? Cách này ảnh hưởng gì tới nơi gọi?
 
-**Gợi ý trả lời:** `d` là biến của nơi gọi (biến cục bộ ở màn hình nhập hoặc lúc đọc file), ra khỏi hàm đó là mất, nên kho phải giữ một bản riêng cấp phát động. Gán cả struct sẽ chép luôn con trỏ `dms`; ép về rỗng để đầu sách mới không dùng chung danh mục cuốn với bản gốc. Ảnh hưởng: nơi gọi không có địa chỉ của bản trong kho, muốn thêm cuốn phải gọi `TimDauSachTheoISBN` tìm lại (c_NhapSach.cpp dòng 132, 04_LuuDocFile.cpp dòng 101).
+**Gợi ý trả lời:** `d` là biến của nơi gọi (biến cục bộ ở màn hình nhập hoặc lúc đọc file), ra khỏi hàm đó là mất, nên kho phải giữ một bản riêng cấp phát động. Gán cả struct sẽ chép luôn con trỏ `dms`; ép về rỗng để đầu sách mới không dùng chung danh mục cuốn với bản gốc. Ảnh hưởng: nơi gọi không có địa chỉ của bản trong kho, muốn thêm cuốn phải gọi `TimDauSachTheoISBN` tìm lại (c_NhapSach.cpp dòng 400, 04_LuuDocFile.cpp dòng 101).
 
 ### DS03 · Thuật toán
-`11_DauSach_MangConTro.cpp` dòng 83–96, `TimViTriChenTheoTen`
+`c_NhapSach.cpp` dòng 96–109, `TimViTriChenTheoTen`
 
 **Hỏi:** Chạy tay tìm vị trí chèn cho một sách mới cũng tên "Toan roi rac" (ISBN khác) vào kho 6 đầu sách. Nó đứng trước hay sau bản cũ? Có được trùng tên không? Vì sao `r` bắt đầu bằng `soLuong` chứ không phải `soLuong − 1`?
 
 **Gợi ý trả lời:** l=0, r=6: m=3 nhỏ hơn nên l=4; m=5 không nhỏ hơn nên r=5; m=4 bằng nhau nên r=4. Kết quả 4, tức là chèn **trước** bản cũ. Trùng tên được phép, chỉ ISBN phải duy nhất. `r = soLuong` vì vị trí chèn có thể là ngay sau phần tử cuối; ô đó không bao giờ bị đọc vì `m` luôn nhỏ hơn `r`.
 
 ### DS04 · Thuật toán
-`11_DauSach_MangConTro.cpp` dòng 109, 115–117
+`c_NhapSach.cpp` dòng 122, 128–130
 
 **Hỏi:** Tìm vị trí chèn bằng nhị phân là O(log D). Vậy thêm một đầu sách có phải O(log D) không?
 
 **Gợi ý trả lời:** Không, vẫn O(D) vì hai việc: kiểm trùng ISBN phải tìm tuyến tính (mảng sắp theo tên, không theo ISBN), và dịch mảng. Nhị phân chỉ giảm số lần so sánh chuỗi tên.
 
 ### DS05 · Thuật toán
-`12_DanhMucSach_DSLKDon.cpp` dòng 31–66; `11_DauSach_MangConTro.cpp` dòng 62–70
+`c_NhapSach.cpp` dòng 177–212; `c_NhapSach.cpp` dòng 75–83
 
 **Hỏi:** Đề yêu cầu đánh mã sách sao cho tìm theo mã nhanh nhất. Tìm `9786040000003#2` đi qua những bước nào, tốn bao nhiêu? Bước tìm ISBN vẫn tuyến tính, vậy đã nhanh nhất chưa?
 
 **Gợi ý trả lời:** Ba bước: tách ISBN trước dấu `#`; tìm đầu sách theo ISBN, tuyến tính O(D); duyệt danh mục của riêng đầu sách đó O(c). Nếu mã không chứa ISBN (kiểu S001) thì phải duyệt toàn bộ cuốn của mọi đầu sách, O(C). Muốn nhanh hơn nữa cần một mảng phụ sắp theo ISBN để tìm nhị phân, tức là thêm cấu trúc ngoài đề. Trả lời trung thực: đây là cách nhanh nhất trong phạm vi bốn cấu trúc đề cho.
 
 ### DS06 · Thuật toán
-`12_DanhMucSach_DSLKDon.cpp` dòng 71–92, `SinhMaSachTuDong`
+`c_NhapSach.cpp` dòng 217–238, `SinhMaSachTuDong`
 
 **Hỏi:** Mã mới lấy số của nút cuối cộng 1, không lấy số nút cộng 1. Hai cách hiện có cho kết quả khác nhau không? Khi nào thì khác?
 
-**Gợi ý trả lời:** Hiện giống nhau, vì thanh lý và báo mất chỉ đổi trạng thái, không xóa nút. Dòng thông báo ở c_NhapSach.cpp 166–167 còn dùng số nút làm "mã mới nhất", dựa vào đúng điều đó. Nếu sau này cho xóa nút thì đếm nút sẽ cấp trùng mã cũ, còn lấy số nút cuối vẫn đúng miễn là nút cuối mang số lớn nhất.
+**Gợi ý trả lời:** Hiện giống nhau, vì thanh lý và báo mất chỉ đổi trạng thái, không xóa nút. Dòng thông báo ở c_NhapSach.cpp 434–435 còn dùng số nút làm "mã mới nhất", dựa vào đúng điều đó. Nếu sau này cho xóa nút thì đếm nút sẽ cấp trùng mã cũ, còn lấy số nút cuối vẫn đúng miễn là nút cuối mang số lớn nhất.
 
 ### DS07 · Bẫy
-`12_DanhMucSach_DSLKDon.cpp` dòng 74–89; `04_LuuDocFile.cpp` dòng 102–111
+`c_NhapSach.cpp` dòng 220–235; `04_LuuDocFile.cpp` dòng 102–111
 
 **Hỏi:** File bị sửa tay, danh mục của một đầu sách ghi theo thứ tự `#3`, `#1`, `#2`. Mở chương trình, thêm một cuốn mới. Mã mới là gì?
 
 **Gợi ý trả lời:** Nút cuối là `#2` nên mã mới là `#3`, trùng với cuốn đã có. Đọc file chỉ kiểm phần ISBN trước dấu `#` (dòng 108), không kiểm trùng mã trong danh mục. Sau đó tìm `#3` luôn trả cuốn đầu tiên, cuốn mới không bao giờ mượn được. Sửa: khi sinh mã, duyệt cả danh mục lấy số lớn nhất.
 
 ### DS08 · Thuật toán
-`c_NhapSach.cpp` dòng 35–36; `12_DanhMucSach_DSLKDon.cpp` dòng 96–118
+`c_NhapSach.cpp` dòng 303–304; `c_NhapSach.cpp` dòng 242–264
 
 **Hỏi:** Nhập 500 cuốn cho một đầu sách đang có 500 cuốn. Mỗi cuốn mới phải duyệt danh mục mấy lần? Tổng chi phí? Giảm thế nào mà không thêm trường?
 
 **Gợi ý trả lời:** Hai lần mỗi cuốn: một lần sinh mã (đi tới nút cuối), một lần nối đuôi. Tổng khoảng k·(c + k), ở đây vài trăm nghìn bước, vẫn nhanh. Giảm: giữ con trỏ đuôi và số cuối trong biến tạm của hàm nhập, không cần thêm trường vào struct.
 
 ### DS09 · Bẫy
-`c_NhapSach.cpp` dòng 125–139
+`c_NhapSach.cpp` dòng 393–407
 
 **Hỏi:** Thủ thư nhập xong sáu ô của đầu sách, đến ô "số cuốn" thì nhấn Esc. Đầu sách có được lưu không? So với nhấn Esc ở ô "thể loại".
 
 **Gợi ý trả lời:** Có lưu: `ThemDauSach` đã chạy ở dòng 253, trước khi hỏi số cuốn. Kết quả là đầu sách không có cuốn nào và thông báo ghi rõ điều đó; có thể thêm cuốn sau ở mục 2. Esc ở ô thể loại thì chưa gọi `ThemDauSach` nên không có gì được thêm.
 
 ### DS10 · Bẫy
-`c_NhapSach.cpp` dòng 198–214
+`c_NhapSach.cpp` dòng 466–482
 
 **Hỏi:** Thủ thư gõ nhầm tên sách và đã lưu. Sửa thế nào? Nếu thầy yêu cầu thêm chức năng sửa tên thì có gán thẳng `tenSach` được không?
 
 **Gợi ý trả lời:** Hiện không có sửa hay xóa đầu sách, đề chỉ yêu cầu nhập. Nếu thêm sửa tên thì không được gán thẳng, vì mảng phải luôn tăng theo tên. Phải rút con trỏ khỏi vị trí cũ, dồn mảng, tìm vị trí mới bằng nhị phân rồi chèn lại. ISBN, các cuốn và lịch sử không bị ảnh hưởng vì lịch sử tham chiếu mã sách chứ không tham chiếu tên.
 
 ### DS11 · Vì sao thêm
-`c_NhapSach.cpp` dòng 171–196
+`c_NhapSach.cpp` dòng 439–464
 
 **Hỏi:** Thanh lý sách sao chỉ đổi trạng thái mà không xóa nút khỏi danh sách liên kết? Sao không thanh lý được cuốn đang được mượn?
 
 **Gợi ý trả lời:** Lịch sử mượn và Top 10 tham chiếu mã sách; xóa nút thì các màn hình h, i sẽ hiện "(không rõ đầu sách)" và việc sinh mã có thể cấp lại số cũ. Đề cũng đã cho sẵn trạng thái 2 cho việc này. Cuốn đang mượn phải được trả hoặc báo mất trước, nếu không lượt mượn sẽ tham chiếu một cuốn đã thanh lý mà vẫn "đang mượn".
 
 ### DS12 · Bẫy
-`c_NhapSach.cpp` dòng 179–182; `f_MuonSach.cpp` dòng 152
+`c_NhapSach.cpp` dòng 447–450; `f_MuonSach.cpp` dòng 244
 
 **Hỏi:** Cùng gõ mã sách có một dấu cách thừa ở đầu. Màn hình mượn và màn hình thanh lý xử lý có giống nhau không?
 
 **Gợi ý trả lời:** Không. Mượn có gọi `ChuanHoaChuoiSach` để bỏ khoảng trắng thừa, nên tìm thấy. Thanh lý dùng nguyên chuỗi vừa gõ nên báo không tìm thấy. Đây là điểm không nhất quán, sửa bằng một dòng chuẩn hóa.
 
 ### DS13 · Bẫy
-`01_HamTienIch.cpp` dòng 75–87; `11_DauSach_MangConTro.cpp` dòng 83–96
+`01_HamTienIch.cpp` dòng 75–87; `c_NhapSach.cpp` dòng 96–109
 
 **Hỏi:** Kho có "Toan 9", thủ thư thêm "Toan 10" và "Toan 11". Ba cuốn nằm theo thứ tự nào trong mảng và trên các bảng in? Sách tên "100 bai tap C" đứng ở đâu so với "An toan thong tin"?
 
 **Gợi ý trả lời:** Thứ tự là "Toan 10", "Toan 11", "Toan 9". `SoSanhChuoi` so từng ký tự theo mã ASCII, ký tự '1' nhỏ hơn '9' nên "Toan 10" đứng trước "Toan 9". Chữ số có mã nhỏ hơn chữ cái nên "100 bai tap C" đứng trước mọi tên bắt đầu bằng chữ. Đây vẫn là "tăng dần theo tên" theo nghĩa so chuỗi, nhưng khác thứ tự người dùng mong đợi; muốn đúng kiểu người đọc phải so phần số như số.
 
 ### DS14 · Bẫy
-`11_DauSach_MangConTro.cpp` dòng 15–28; `c_NhapSach.cpp` dòng 59–73
+`c_NhapSach.cpp` dòng 28–41, 327–341
 
 **Hỏi:** Thư viện có sách cũ dùng ISBN 10 số, luận văn không có ISBN, và có ISBN kết thúc bằng chữ X. Nhập được không? Gõ nhầm một chữ số ISBN thì chương trình có biết không?
 
 **Gợi ý trả lời:** Không nhập được: bắt buộc đúng 13 chữ số. Phải tự đặt mã nội bộ 13 số cho các tài liệu đó. Chương trình bỏ dấu gạch và khoảng trắng nhưng không kiểm chữ số kiểm tra của ISBN, nên gõ nhầm một số vẫn được nhận như một ISBN khác.
 
 ### DS15 · Bẫy
-`12_DanhMucSach_DSLKDon.cpp` dòng 13–28; `c_NhapSach.cpp` dòng 13–37
+`c_NhapSach.cpp` dòng 159–174; `c_NhapSach.cpp` dòng 281–305
 
 **Hỏi:** Nhập 20 cuốn một lần thì vị trí của chúng thế nào? Sau này chuyển một cuốn sang kệ khác thì sửa ở đâu?
 
 **Gợi ý trả lời:** Cả 20 cuốn nhận cùng một vị trí vừa nhập. Không có chức năng sửa vị trí. Muốn các cuốn ở kệ khác nhau thì phải nhập thành nhiều lần. Sửa vị trí sau này thì dễ thêm: tìm cuốn theo mã rồi gán lại `viTri`, không ảnh hưởng thứ tự nào.
 
 ### DS16 · Thuật toán
-`11_DauSach_MangConTro.cpp` dòng 127–141; `main.cpp` dòng 31–32
+`c_NhapSach.cpp` dòng 140–154; `main.cpp` dòng 31–32
 
 **Hỏi:** Khi thoát, chương trình hủy kho sách trước rồi mới hủy cây độc giả. Đổi thứ tự có sao không? Điều gì trong thiết kế khiến hai phần này độc lập?
 
 **Gợi ý trả lời:** Đổi thứ tự không sao. Lượt mượn chỉ giữ mã sách dạng chuỗi, không giữ con trỏ tới cuốn sách, nên hủy lịch sử không cần đụng tới kho sách. Nếu `MuonTra` giữ con trỏ `CuonSach*` thì tra tên nhanh hơn, nhưng không ghi được vào file và phải cẩn thận thứ tự hủy.
 
 ### DS17 · Bẫy
-`00_KhaiBaoChung.h` dòng 66–70; `11_DauSach_MangConTro.cpp` dòng 127–141
+`00_KhaiBaoChung.h` dòng 66–70; `c_NhapSach.cpp` dòng 140–154
 
 **Hỏi:** Struct `DanhSachDauSach` có mảng 10000 con trỏ, nhưng chỉ `soLuong = 0` được khởi tạo. 10000 ô con trỏ lúc đầu chứa gì? Vì sao chương trình không sập, và điều gì trong code bảo đảm không bao giờ đọc ô chưa dùng?
 
 **Gợi ý trả lời:** Các ô chưa được gán chứa giá trị không xác định, không phải rỗng. Chương trình không bao giờ đọc chúng vì mọi vòng lặp trên mảng đều chạy từ 0 tới `soLuong − 1`: tìm ISBN, tìm vị trí chèn (cận phải là `soLuong`), in, lưu file, hủy. Khi chèn, ô `soLuong` chỉ được ghi vào rồi `soLuong` mới tăng. Vậy bất biến cần giữ là: các ô từ 0 tới `soLuong − 1` luôn hợp lệ, phần còn lại không ai đụng. Gán rỗng cho cả 10000 ô lúc tạo cũng được nhưng không cần.
 
 ### DS18 · Bẫy
-`11_DauSach_MangConTro.cpp` dòng 83–96; `e_TimSach.cpp` dòng 76–80
+`c_NhapSach.cpp` dòng 96–109; `e_TimSach.cpp` dòng 79–83
 
 **Hỏi:** Đề bắt mảng đầu sách luôn tăng dần theo tên, và em tốn công chèn đúng chỗ. Nhưng chức năng tìm theo tên của em vẫn duyệt từ đầu tới cuối. Vậy sắp theo tên được lợi gì trong chương trình này? Chức năng nào thật sự dựa vào thứ tự đó?
 
@@ -614,7 +614,7 @@ Toàn bộ `MaNguon`
 ## E. Tìm sách, quá hạn, Top 10 (Thái)
 
 ### TK01 · Thuật toán
-`e_TimSach.cpp` dòng 75–80
+`e_TimSach.cpp` dòng 78–83
 
 **Hỏi:** Mảng đầu sách đã sắp theo tên. Sao tìm theo tên lại duyệt tuần tự mà không tìm nhị phân?
 
@@ -632,7 +632,7 @@ Toàn bộ `MaNguon`
 
 **Hỏi:** Trước vòng lặp, `ChuaChuoi` có hai dòng trả kết quả sớm: từ khóa rỗng thì trả `true`, tên ngắn hơn từ khóa thì trả `false`. Vì sao cần hai dòng này trong khi vòng lặp phía dưới cũng tự xử lý được? Cận trên của `i` là gì và vì sao?
 
-**Gợi ý trả lời:** Cận trên là `s.size() − part.size()`, vị trí bắt đầu cuối cùng mà từ khóa còn nằm trọn trong tên. `size()` là số không dấu: nếu tên ngắn hơn từ khóa thì phép trừ không ra số âm mà ra số rất lớn, nên phải chặn trước ở dòng 92. Từ khóa rỗng coi như luôn khớp; màn hình tìm sách đã chặn từ khóa rỗng từ trước (e_TimSach.cpp dòng 67) nên nhánh này chỉ là phòng hờ.
+**Gợi ý trả lời:** Cận trên là `s.size() − part.size()`, vị trí bắt đầu cuối cùng mà từ khóa còn nằm trọn trong tên. `size()` là số không dấu: nếu tên ngắn hơn từ khóa thì phép trừ không ra số âm mà ra số rất lớn, nên phải chặn trước ở dòng 92. Từ khóa rỗng coi như luôn khớp; màn hình tìm sách đã chặn từ khóa rỗng từ trước (e_TimSach.cpp dòng 70) nên nhánh này chỉ là phòng hờ.
 
 ### TK04 · Bẫy
 `01_HamTienIch.cpp` dòng 115–133
@@ -642,98 +642,98 @@ Toàn bộ `MaNguon`
 **Gợi ý trả lời:** Không. `HopLeVanBan` từ chối mọi byte từ 127 trở lên, tức là mọi chữ có dấu. Phái phải gõ "Nu". Lý do: console Windows đọc phím có dấu qua `_getch` rất phức tạp, một chữ có dấu chiếm nhiều byte nên cắt cột và so sánh đều sai. Đây là giới hạn đã biết: toàn bộ dữ liệu nhập không dấu. Nên nói trước với thầy.
 
 ### TK05 · Bẫy
-`e_TimSach.cpp` dòng 29–52, 76–80
+`e_TimSach.cpp` dòng 32–55, 79–83
 
 **Hỏi:** Độc giả tìm "Cau truc", thấy đầu sách hiện ra với ba mã sách. Vậy có mượn được không? Kết quả tìm có lọc bỏ cuốn đã thanh lý hay đầu sách chưa có cuốn nào không?
 
 **Gợi ý trả lời:** Chưa chắc mượn được. Với dữ liệu mẫu, đầu sách này có hai cuốn đang được mượn và một cuốn đã thanh lý, tức là không còn cuốn nào. Tìm kiếm khớp theo tên đầu sách và in mọi cuốn kèm trạng thái, đúng như đề yêu cầu ở mục e; nó không lọc theo khả năng mượn, đầu sách 0 cuốn vẫn hiện. Việc được mượn hay không chỉ `MuonSach` quyết định tại thời điểm mượn.
 
 ### QH01 · Thuật toán
-`i_DocGiaQuaHan.cpp` dòng 13–68
+`i_DocGiaQuaHan.cpp` dòng 18–73
 
 **Hỏi:** Mô tả ba bước của chức năng i. Với dữ liệu mẫu, hôm nay 15/11/2026, danh sách in ra gồm những ai, theo thứ tự nào? Sao dùng hai mảng `dg[]` và `luot[]` chứ không dùng một mảng struct?
 
 **Gợi ý trả lời:** Bước 1 lấy con trỏ các nút ra mảng; bước 2 gom các lượt đang mượn đã quá hạn; bước 3 sắp giảm dần bằng sắp xếp chọn. Kết quả: thẻ 4 (mượn 20/10, quá hạn 20 ngày) rồi thẻ 2 (mượn 01/11, quá hạn 8 ngày). Dùng hai mảng song song để không tạo struct mới ngoài đề; cái giá là mỗi lần đổi chỗ phải đổi cả hai mảng (dòng 59–64), quên một mảng thì tên người lệch với sách.
 
 ### QH02 · Bẫy
-`i_DocGiaQuaHan.cpp` dòng 54–61; `01_HamTienIch.cpp` dòng 238–254
+`i_DocGiaQuaHan.cpp` dòng 59–66; `01_HamTienIch.cpp` dòng 238–254
 
 **Hỏi:** Giả sử có 1000 lượt quá hạn. Vòng sắp xếp gọi `SoNgayQuaHan` bao nhiêu lần, mỗi lần tốn gì? Cải thiện thế nào?
 
 **Gợi ý trả lời:** Sắp xếp chọn so khoảng n²/2 = 500 nghìn lần, mỗi lần gọi `SoNgayQuaHan` hai lần, mỗi lần đó đổi hai ngày ra số, mỗi phép đổi lặp khoảng 2000 vòng. Tổng cỡ vài tỉ bước, chạy mất vài giây. Cải thiện: tính sẵn số ngày quá hạn vào một mảng tạm trước khi sắp, hoặc so thẳng ngày mượn (mượn sớm hơn là quá hạn lâu hơn).
 
 ### QH03 · Bẫy
-`i_DocGiaQuaHan.cpp` dòng 54–68
+`i_DocGiaQuaHan.cpp` dòng 59–73
 
 **Hỏi:** Ba lượt cùng quá hạn 5 ngày của thẻ 3, thẻ 7, thẻ 9. Thứ tự in ra có theo mã thẻ không?
 
 **Gợi ý trả lời:** Không bảo đảm. Sắp xếp chọn không ổn định: phép đổi chỗ có thể đẩy một phần tử ra sau các phần tử bằng nó. Kết quả vẫn cố định với cùng dữ liệu, nhưng không theo quy tắc nào giải thích được. Muốn rõ ràng thì thêm khóa phụ: cùng số ngày thì mã thẻ nhỏ đứng trước.
 
 ### QH04 · Bẫy
-`i_DocGiaQuaHan.cpp` dòng 24–50
+`i_DocGiaQuaHan.cpp` dòng 29–55
 
 **Hỏi:** Đề ghi "in danh sách độc giả mượn sách quá hạn". Một người giữ hai cuốn quá hạn thì hiện mấy dòng? Có đúng đề không?
 
 **Gợi ý trả lời:** Hai dòng, mỗi cuốn một dòng. Đây là giả định của nhóm: thủ thư cần biết đòi cuốn nào. Nếu thầy muốn mỗi độc giả một dòng thì lấy số ngày quá hạn lớn nhất của từng người rồi sắp theo số đó.
 
 ### QH05 · Bẫy
-`i_DocGiaQuaHan.cpp` dòng 29, 43
+`i_DocGiaQuaHan.cpp` dòng 34, 48
 
 **Hỏi:** Độc giả đang bị khóa thẻ mà còn giữ sách quá hạn có hiện trong danh sách không? Cuốn đã báo mất có hiện không?
 
 **Gợi ý trả lời:** Người bị khóa vẫn hiện, vì danh sách không lọc theo trạng thái thẻ, và đúng là vẫn phải đòi sách. Cuốn đã báo mất không hiện, vì lượt đó có trạng thái 2, danh sách chỉ lấy lượt trạng thái "đang mượn".
 
 ### QH06 · Bẫy
-`i_DocGiaQuaHan.cpp` dòng 15; `f_MuonSach.cpp` dòng 19
+`i_DocGiaQuaHan.cpp` dòng 20; `f_MuonSach.cpp` dòng 111
 
 **Hỏi:** Chức năng i, bảng h và kiểm tra quá hạn khi mượn đều lấy ngày từ đồng hồ máy. Đồng hồ máy bị đặt lùi một tháng thì ba chỗ đó ra sao? Vì sao em vẫn chọn tin đồng hồ máy?
 
 **Gợi ý trả lời:** Danh sách quá hạn trống hoặc thiếu, bảng h không tô đỏ, và người đang quá hạn mượn tiếp được. Thêm nữa, mọi giao dịch ghi đúng ngày thật sẽ bị từ chối vì "sau ngày hôm nay". Nhóm vẫn chọn đồng hồ máy vì nguồn còn lại là ngày người dùng gõ, dễ sai và dễ bị lợi dụng hơn nhiều. Tiêu đề mọi màn hình có in ngày máy để thủ thư nhận ra khi đồng hồ sai.
 
 ### TOP01 · Thuật toán
-`j_Top10Sach.cpp` dòng 15–60
+`j_Top10Sach.cpp` dòng 19–64
 
 **Hỏi:** Mô tả ba bước của Top 10 và chi phí từng bước. Với dữ liệu mẫu, kết quả là gì?
 
 **Gợi ý trả lời:** Bước 1 tạo mảng đếm theo chỉ số đầu sách. Bước 2 duyệt mọi lượt mượn của mọi độc giả, tách ISBN, tìm vị trí đầu sách (tuyến tính) rồi tăng đếm: chi phí số lượt nhân số đầu sách. Bước 3 chọn 10 lần phần tử lớn nhất: 10 nhân số đầu sách. Kết quả mẫu: Cau truc du lieu va giai thuat 5 lượt; Lap trinh C++ 3; Toan roi rac 3; Giai tich 1 có 1. Hai đầu sách còn lại 0 lượt nên không in.
 
 ### TOP02 · Thuật toán
-`j_Top10Sach.cpp` dòng 22–26, 46–60
+`j_Top10Sach.cpp` dòng 26–30, 50–64
 
 **Hỏi:** Sao sắp xếp chọn chỉ chạy 10 vòng? Mảng `thuTu[]` để làm gì, sao không đổi chỗ trực tiếp trên mảng đầu sách?
 
 **Gợi ý trả lời:** Chỉ cần 10 phần tử lớn nhất, nên dừng sau 10 vòng thay vì sắp cả mảng. `thuTu[]` giữ chỉ số đầu sách để đổi chỗ; mảng đầu sách gốc phải giữ nguyên thứ tự tên theo yêu cầu của đề, và `luotMuon[]` phải giữ khớp với chỉ số gốc.
 
 ### TOP03 · Bẫy
-`j_Top10Sach.cpp` dòng 49–60
+`j_Top10Sach.cpp` dòng 53–64
 
 **Hỏi:** Ba đầu sách theo thứ tự tên A, B, C có số lượt 1, 1, 5. Top in ra theo thứ tự nào? A và B đồng hạng, ai đứng trước?
 
 **Gợi ý trả lời:** In ra C, B, A. Ở vòng đầu, C đổi chỗ với A, đẩy A xuống cuối, nên B đứng trước A dù tên A đứng trước. Với dữ liệu mẫu, đồng hạng tình cờ vẫn theo tên. Sửa: khi so, nếu bằng số lượt thì chọn phần tử có chỉ số gốc nhỏ hơn.
 
 ### TOP04 · Bẫy
-`j_Top10Sach.cpp` dòng 46–48
+`j_Top10Sach.cpp` dòng 50–52
 
 **Hỏi:** Có 12 đầu sách cùng 5 lượt mượn và đó là số cao nhất. Top 10 in ai, bỏ ai?
 
 **Gợi ý trả lời:** In đúng 10 dòng, cắt cứng, hai đầu sách bị bỏ tùy theo thứ tự đổi chỗ. Đây là giả định của nhóm. Nếu thầy muốn in cả các sách đồng hạng với hạng 10 thì phải chạy tiếp vòng chọn và in thêm khi số lượt còn bằng số lượt của dòng thứ 10.
 
 ### TOP05 · Bẫy
-`j_Top10Sach.cpp` dòng 34–42
+`j_Top10Sach.cpp` dòng 38–46
 
 **Hỏi:** "Lượt mượn" đếm những trạng thái nào? Đếm theo đầu sách hay theo cuốn? Đề ghi "10 sách", nếu thầy hiểu là 10 cuốn thì sao?
 
 **Gợi ý trả lời:** Đếm mọi lượt: đang mượn, đã trả, làm mất, vì đều là một lần mượn. Đếm theo đầu sách (gộp theo ISBN). Nếu thầy muốn theo cuốn thì khóa đếm phải là mã sách: cần mảng đếm theo từng cuốn và cách tra mã sách ra chỉ số, tốn hơn. Nên hỏi thầy trước.
 
 ### TOP06 · Thuật toán
-`j_Top10Sach.cpp` dòng 73–78
+`j_Top10Sach.cpp` dòng 77–82
 
 **Hỏi:** Trong vòng in, gặp đầu sách 0 lượt thì `break`. Sao dùng `break` được mà không phải `continue`?
 
 **Gợi ý trả lời:** Sau bước chọn, các ô đầu của `thuTu[]` đã giảm dần theo số lượt. Gặp một ô bằng 0 thì mọi ô sau cũng bằng 0, nên dừng luôn.
 
 ### TOP07 · Vì sao thêm
-`b_InDanhSachDocGia.cpp` dòng 24–45; `d_InDauSachTheoTheLoai.cpp` dòng 15–28; `i_DocGiaQuaHan.cpp` dòng 54–68; `j_Top10Sach.cpp` dòng 49–60
+`b_InDanhSachDocGia.cpp` dòng 73–94; `d_InDauSachTheoTheLoai.cpp` dòng 18–31; `i_DocGiaQuaHan.cpp` dòng 59–73; `j_Top10Sach.cpp` dòng 53–64
 
 **Hỏi:** Chương trình dùng ba thuật toán sắp xếp khác nhau: Quick Sort cho b, sắp xếp chèn cho d, sắp xếp chọn cho i và j. Vì sao không viết một hàm rồi dùng cho cả bốn chỗ? Mỗi chỗ chọn thuật toán đó dựa vào đặc điểm gì của dữ liệu?
 
@@ -744,70 +744,70 @@ Toàn bộ `MaNguon`
 ## F. In danh sách, giao diện (Tấn)
 
 ### IN01 · Thuật toán
-`10_DocGia_CayAVL.cpp` dòng 468–507; `b_InDanhSachDocGia.cpp` dòng 59–62
+`b_InDanhSachDocGia.cpp` dòng 21–60; `b_InDanhSachDocGia.cpp` dòng 108–111
 
 **Hỏi:** In độc giả theo mã thẻ tăng dần dùng phép duyệt nào, vì sao ra đúng thứ tự? Sao phải đếm số nút trước rồi mới lấy danh sách, tức là duyệt cây hai lần?
 
 **Gợi ý trả lời:** Duyệt giữa (trái, nút, phải) trên cây tìm kiếm luôn cho khóa tăng dần. Phải đếm trước để biết cấp mảng tạm bao nhiêu ô, vì không lưu sẵn số độc giả thành một trường. Hai lần duyệt đều O(n).
 
 ### IN02 · Vì sao thêm
-`b_InDanhSachDocGia.cpp` dòng 59–64, 113
+`b_InDanhSachDocGia.cpp` dòng 108–113, 162
 
 **Hỏi:** Để in theo tên, em cấp một mảng tạm chứa con trỏ tới các nút rồi sắp mảng đó. Vì sao không sắp trực tiếp trên cây, và vì sao mảng chứa con trỏ chứ không chứa bản sao `DocGia`? Cách này tốn gì mỗi lần mở bảng?
 
 **Gợi ý trả lời:** Cây được tổ chức theo mã thẻ, mọi chức năng tìm thẻ dựa vào thứ tự đó, nên không được xáo dữ liệu trong cây theo tên. Mảng chỉ chứa con trỏ nên đổi chỗ khi sắp chỉ là đổi địa chỉ, không chép chuỗi họ tên; và chép cả `DocGia` còn chép luôn con trỏ lịch sử. Cái giá: mỗi lần mở bảng duyệt cây hai lần (đếm, lấy danh sách), cấp mảng n con trỏ, sắp O(n log n), rồi giải phóng ở dòng 107. Không lưu lại vì tên có thể bị hiệu chỉnh giữa hai lần xem.
 
 ### IN03 · Thuật toán
-`b_InDanhSachDocGia.cpp` dòng 14–45
+`b_InDanhSachDocGia.cpp` dòng 63–94
 
 **Hỏi:** Với sáu độc giả mẫu, bảng theo tên + họ in ra thứ tự nào? Hai người tên An, ai trước, vì sao?
 
 **Gợi ý trả lời:** Hoang Minh An (thẻ 5), Nguyen Van An (thẻ 4), Tran Thi Binh (2), Le Van Cuong (1), Pham Thi Dung (3), Vo Thi Hoa (6). So tên trước; hai người cùng tên An thì so họ, "Hoang Minh" đứng trước "Nguyen Van".
 
 ### IN04 · Bẫy
-`b_InDanhSachDocGia.cpp` dòng 14–20, 24–45
+`b_InDanhSachDocGia.cpp` dòng 63–69, 73–94
 
 **Hỏi:** Hai độc giả trùng cả họ lẫn tên. Thứ tự giữa họ là gì? Quick Sort có trường hợp xấu không?
 
 **Gợi ý trả lời:** Không xác định theo mã thẻ: hàm so sánh trả 0 và Quick Sort không ổn định. Nên thêm khóa phụ là mã thẻ. Quick Sort xấu nhất O(n²) khi chốt luôn rơi vào phần tử nhỏ nhất hoặc lớn nhất; chọn chốt ở giữa giúp mảng đã sắp sẵn không rơi vào trường hợp đó, nhưng không loại hẳn được.
 
 ### IN05 · Thuật toán
-`b_InDanhSachDocGia.cpp` dòng 28–33
+`b_InDanhSachDocGia.cpp` dòng 77–82
 
 **Hỏi:** Hai vòng `while` tăng `i`, giảm `j` không kiểm biên mảng. Có chạy ra ngoài không? Sao `chot` giữ con trỏ phần tử chứ không giữ chỉ số?
 
 **Gợi ý trả lời:** Không ra ngoài, vì phần tử chốt nằm trong đoạn đang xét nên `i` và `j` chắc chắn dừng khi gặp nó. Giữ giá trị chốt chứ không giữ chỉ số, vì trong lúc đổi chỗ phần tử ở vị trí giữa có thể đã bị thay bằng phần tử khác.
 
 ### IN06 · Bẫy
-`b_InDanhSachDocGia.cpp` dòng 14–20
+`b_InDanhSachDocGia.cpp` dòng 63–69
 
 **Hỏi:** Sao không ghép tên với họ thành một chuỗi rồi so một lần cho gọn?
 
 **Gợi ý trả lời:** Sai với tên này là phần đầu của tên kia. Ví dụ "An" họ "Vu" và "Anh" họ "Le": đúng ra An đứng trước Anh. Ghép lại thành "anvu" và "anhle", ký tự thứ ba là 'v' so với 'h', nên Anh lại đứng trước. Phải so tên xong mới so họ.
 
 ### IN07 · Thuật toán
-`d_InDauSachTheoTheLoai.cpp` dòng 15–28
+`d_InDauSachTheoTheLoai.cpp` dòng 18–31
 
 **Hỏi:** Chức năng b em dùng Quick Sort, chức năng d em lại dùng sắp xếp chèn và chỉ so thể loại, không so tên. Vậy "trong từng thể loại in theo tên tăng dần" được bảo đảm ở đâu? Chọn sắp xếp chèn thì tốn gì?
 
 **Gợi ý trả lời:** Mảng gốc vốn đã tăng theo tên. Sắp xếp chèn là ổn định: điều kiện ở dòng 18 chỉ dời phần tử khi thể loại lớn hơn hẳn, nên hai sách cùng thể loại giữ nguyên thứ tự cũ, tức là vẫn tăng theo tên. Quick Sort không ổn định, dùng ở đây thì phải so cả thể loại lẫn tên. Cái giá: sắp xếp chèn xấu nhất O(D²), khi thứ tự thể loại ngược với thứ tự tên; với vài nghìn đầu sách vẫn chấp nhận được.
 
 ### IN08 · Thuật toán
-`d_InDauSachTheoTheLoai.cpp` dòng 32–39
+`d_InDauSachTheoTheLoai.cpp` dòng 35–42
 
 **Hỏi:** Với kho mẫu, chức năng d in ra thế nào? "Tin hoc" và "tin  HOC" có vào cùng nhóm không? Khi nào sắp xếp chèn chậm nhất?
 
 **Gợi ý trả lời:** Tin hoc: Cau truc du lieu va giai thuat, Co so du lieu, Lap trinh C++. Toan hoc: Giai tich 1, Toan roi rac. Vat ly: Vat ly dai cuong. Hai cách viết kia cùng nhóm, vì `SoSanhChuoi` bỏ khoảng trắng thừa và không phân biệt hoa thường. Chậm nhất O(D²) khi thứ tự thể loại ngược hẳn với thứ tự tên.
 
 ### IN09 · Thuật toán
-`d_InDauSachTheoTheLoai.cpp` dòng 59
+`d_InDauSachTheoTheLoai.cpp` dòng 62
 
 **Hỏi:** Tên thể loại chỉ được in ở một số dòng, theo điều kiện "là dòng đầu của trang, hoặc khác thể loại với dòng liền trước". Vì sao cần vế "dòng đầu của trang"? Vì sao em viết vế đó trước?
 
 **Gợi ý trả lời:** Một thể loại có thể dài hơn 15 dòng và kéo sang trang sau; không có vế "đầu trang" thì trang sau không có tên thể loại, người xem không biết đang ở nhóm nào. Viết vế đó trước vì ở dòng đầu tiên của cả bảng (i = 0) không có dòng liền trước để so; khi vế đầu đã đúng thì C++ không tính vế sau, nên không đọc phần tử trước đầu mảng.
 
 ### IN10 · Thuật toán
-`f_MuonSach.cpp` dòng 89–119; `h_SachDangMuon.cpp`
+`f_MuonSach.cpp` dòng 181–211; `h_SachDangMuon.cpp`
 
 **Hỏi:** Lượt mượn chỉ lưu mã sách. Chức năng h lấy tên sách ở đâu, tốn bao nhiêu? Khi nào hiện "(không rõ đầu sách)"?
 
@@ -818,7 +818,7 @@ Toàn bộ `MaNguon`
 
 **Hỏi:** `DocPhim` trả mã phím mũi tên là 256 cộng mã phím, nên các hằng `PHIM_LEN`, `PHIM_PHAI` đều lớn hơn 256. Vì sao em làm vậy thay vì trả thẳng mã phím? Chỉ một màn hình trong chương trình mà nếu không làm vậy sẽ lẫn phím.
 
-**Gợi ý trả lời:** `_getch` trả phím mũi tên thành hai lần đọc: 0 hoặc 224, rồi mã phím. Mã thứ hai trùng với chữ cái thường: mũi tên phải là 77, bằng chữ 'M'; mũi tên lên là 72, bằng 'H'. Cộng 256 đưa phím mũi tên ra ngoài khoảng mã ký tự nên không bao giờ lẫn. Ở màn hình trả sách (g_TraSach.cpp dòng 103), phím 'M' là báo mất; không cộng 256 thì mũi tên phải cũng thành báo mất.
+**Gợi ý trả lời:** `_getch` trả phím mũi tên thành hai lần đọc: 0 hoặc 224, rồi mã phím. Mã thứ hai trùng với chữ cái thường: mũi tên phải là 77, bằng chữ 'M'; mũi tên lên là 72, bằng 'H'. Cộng 256 đưa phím mũi tên ra ngoài khoảng mã ký tự nên không bao giờ lẫn. Ở màn hình trả sách (g_TraSach.cpp dòng 139), phím 'M' là báo mất; không cộng 256 thì mũi tên phải cũng thành báo mất.
 
 ### IN12 · Vì sao thêm
 `02_GiaoDien.cpp` dòng 113–158, 186–243; `00_KhaiBaoChung.h` dòng 132–138
@@ -902,7 +902,7 @@ Toàn bộ `MaNguon`
 **Gợi ý trả lời:** Chạy tiếp với thư viện rỗng thì lần lưu đầu tiên (sau một thao tác, hoặc lúc thoát) sẽ ghi đè file hỏng bằng dữ liệu rỗng, mất cả phần còn cứu được. Dừng lại thì file hỏng còn nguyên để sửa tay. Mở file để ghi là xóa nội dung cũ ngay (04_LuuDocFile.cpp dòng 53), nên mất điện giữa chừng làm file cụt. Vì vậy mỗi lần mở chương trình và đọc file thành công, dòng 25–26 ghi một bản sao; file chính hỏng thì chép bản sao đè lên, chỉ mất các thao tác của phiên làm việc cuối. Thư viện rỗng thì không ghi, để lần chạy nhầm thư mục hoặc chưa có file không đè một bản sao rỗng lên bản sao đang có dữ liệu. Bản trước 15/11 chạy tiếp với thư viện rỗng và mất hết khi thoát.
 
 ### FL04 · Vì sao thêm
-`11_DauSach_MangConTro.cpp` dòng 43–50; `c_NhapSach.cpp` dòng 105–112
+`c_NhapSach.cpp` dòng 56–63, 373–380
 
 **Hỏi:** Điều kiện "năm xuất bản không vượt quá năm hiện tại" chỉ nằm ở màn hình nhập, còn `HopLeDauSach` chỉ kiểm năm lớn hơn 0. Vì sao em tách hai mức kiểm như vậy?
 
@@ -1027,7 +1027,7 @@ Các câu này không có "đáp án đúng trong code". Thầy muốn nghe: hi�
 ### TT16 · Thực tế
 **Hỏi:** Ban giám đốc muốn Top 10 của riêng tháng 11, không phải từ trước đến nay. Dữ liệu có đủ không? Lượt mượn 30/10 trả 02/11 tính vào tháng nào?
 
-**Gợi ý trả lời:** Đủ, vì mỗi lượt có ngày mượn. Chỉ cần thêm điều kiện lọc tháng và năm ở bước đếm (j_Top10Sach.cpp dòng 36–41). Lượt vắt qua hai tháng phải có quy ước; hợp lý nhất là tính theo ngày mượn, vì "lượt mượn" là sự kiện xảy ra lúc mượn.
+**Gợi ý trả lời:** Đủ, vì mỗi lượt có ngày mượn. Chỉ cần thêm điều kiện lọc tháng và năm ở bước đếm (j_Top10Sach.cpp dòng 40–45). Lượt vắt qua hai tháng phải có quy ước; hợp lý nhất là tính theo ngày mượn, vì "lượt mượn" là sự kiện xảy ra lúc mượn.
 
 ### TT17 · Thực tế
 **Hỏi:** Hạn trả rơi vào chủ nhật hoặc ngày lễ, thư viện đóng cửa. Độc giả trả vào thứ hai có bị tính quá hạn không?
@@ -1102,7 +1102,7 @@ Các câu này không có "đáp án đúng trong code". Thầy muốn nghe: hi�
 ### TT31 · Thực tế
 **Hỏi:** Sau nhiều năm, mã thẻ tăng tới 1.000.000. Chương trình còn dùng được không? Chỗ nào hỏng đầu tiên?
 
-**Gợi ý trả lời:** Kiểu `int` chứa được tới khoảng 2 tỉ và cây AVL 1 triệu nút chỉ cao khoảng 20–28, nên phần dữ liệu không sao. Hỏng đầu tiên là giao diện: ô nhập mã thẻ chỉ cho 6 chữ số (`NhapMaTheTimDocGia`, a_QuanLyDocGia.cpp dòng 37), nên thẻ 1.000.000 được cấp nhưng không gõ được mã để mượn, trả hay hiệu chỉnh. Tiếp theo là cột mã thẻ trên các bảng và thời gian lưu file sau mỗi thao tác.
+**Gợi ý trả lời:** Kiểu `int` chứa được tới khoảng 2 tỉ và cây AVL 1 triệu nút chỉ cao khoảng 20–28, nên phần dữ liệu không sao. Hỏng đầu tiên là giao diện: ô nhập mã thẻ chỉ cho 6 chữ số (`NhapMaTheTimDocGia`, a_QuanLyDocGia.cpp dòng 500), nên thẻ 1.000.000 được cấp nhưng không gõ được mã để mượn, trả hay hiệu chỉnh. Tiếp theo là cột mã thẻ trên các bảng và thời gian lưu file sau mỗi thao tác.
 
 ### TT32 · Thực tế
 **Hỏi:** File dữ liệu ngày càng nặng. Thủ thư đề nghị xóa các lượt mượn đã trả từ hơn hai năm trước. Việc này kéo theo những thay đổi nào ngoài chuyện file nhẹ đi?
@@ -1133,12 +1133,12 @@ Mỗi câu nên tự làm thử trên một bản sao, bấm giờ 10–15 phút
 ### SC01 · Sửa tại chỗ
 **Hỏi:** Đổi giới hạn mượn từ 3 thành 5 cuốn.
 
-**Gợi ý trả lời:** Sửa `MAX_SACH_MUON` trong `00_KhaiBaoChung.h` dòng 12 và chuỗi thông báo ở `f_MuonSach.cpp` dòng 32. Bảng sách đang mượn tự cao thêm vì dùng hằng (dòng 78), nhưng phải kiểm lại các nhãn bên dưới bảng (dòng 136–137 đặt ở y = 18, 20) có bị đè không.
+**Gợi ý trả lời:** Sửa `MAX_SACH_MUON` trong `00_KhaiBaoChung.h` dòng 12 và chuỗi thông báo ở `f_MuonSach.cpp` dòng 124. Bảng sách đang mượn tự cao thêm vì dùng hằng (dòng 78), nhưng phải kiểm lại các nhãn bên dưới bảng (dòng 136–137 đặt ở y = 18, 20) có bị đè không.
 
 ### SC02 · Sửa tại chỗ
 **Hỏi:** Đổi Top 10 thành Top 5.
 
-**Gợi ý trả lời:** Số 10 ghi cứng ở `j_Top10Sach.cpp` dòng 47–48, cùng tiêu đề màn hình và tên mục menu. Nên tách thành một hằng.
+**Gợi ý trả lời:** Số 10 ghi cứng ở `j_Top10Sach.cpp` dòng 51–52, cùng tiêu đề màn hình và tên mục menu. Nên tách thành một hằng.
 
 ### SC03 · Sửa tại chỗ
 **Hỏi:** In danh sách độc giả theo mã thẻ giảm dần.

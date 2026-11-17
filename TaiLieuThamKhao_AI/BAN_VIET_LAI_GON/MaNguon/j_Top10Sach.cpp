@@ -10,6 +10,10 @@
            Tinh ca luot dang muon, da tra va lam mat vi deu la mot lan muon.
    Buoc 3: mang tam thuTu[] giu chi so dau sach. Sap xep chon nhung chi chay 10 vong,
            moi vong dua dau sach nhieu luot nhat con lai len dau.
+
+   LAY HAM CUA CAU KHAC:
+     b_InDanhSachDocGia.cpp: DemDocGia, LayDanhSachDocGia
+     c_NhapSach.cpp: TachISBNTuMaSach, TimViTriDauSachTheoISBN
    ============================================================ */
 
 void ManHinhTop10Sach(const DanhSachDauSach &ds, CayDocGia &cay)
