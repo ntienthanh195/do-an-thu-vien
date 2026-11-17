@@ -5,100 +5,13 @@
    Nhap ma the, chuong trinh liet ke cac sach doc gia dang muon.
    Khong cho muon khi: the bi khoa, dang giu du 3 cuon, hoac dang giu sach qua han.
 
-   Danh sach muon tra: danh sach lien ket don, moi doc gia giu mot danh sach rieng.
-   Moi lan muon them mot nut vao cuoi danh sach. Khi tra khong xoa nut ma chi doi
-   trang thai va ghi ngay tra, nen danh sach cung la lich su muon cua doc gia.
-
-   LAY HAM CUA CAU KHAC:
+   HAM LAY TU FILE KHAC:
+     12_DanhMucSach_DSLKDon.cpp: TimCuonSachToanCuc
+     13_MuonTra_DSLKDon.cpp: CoSachQuaHan7Ngay, Dem_so_sach_dang_muon, SoNgayQuaHan, them_lich_su
      a_QuanLyDocGia.cpp: InThongTinDocGia, NhapMaTheTimDocGia
-     c_NhapSach.cpp: TimCuonSachToanCuc
-   CAU KHAC GOI HAM O DAY:
-     Dem_so_sach_dang_muon (b)
-     HuyDanhSachMuonTra (a)
-     InSachDangMuon (g, h)
-     SoNgayQuaHan (i)
    ============================================================ */
 
-/* ===================== XU LY: DANH SACH MUON TRA (DSLK DON) ===================== */
-
-// [THANH] Them mot luot muon vao cuoi danh sach.
-// @TT [f] Them luot muon vao cuoi DSLK don muon tra
-void them_lich_su(NutDocGia &q, MuonTra muontra)
-{
-    MuonTra *muontraa = new MuonTra;
-    *muontraa = muontra;
-    muontraa->next = nullptr;
-
-    MuonTra *p = q.thongTin.dsMuonTra;
-    while (p != nullptr && p->next != nullptr)
-    {
-        p = p->next;
-    }
-    if (p == nullptr)
-        q.thongTin.dsMuonTra = muontraa;
-    else
-        p->next = muontraa;
-}
-
-// [THANH]
-// @TT [f] Dem so sach dang muon (de chan muon qua 3 cuon): duyet DSLK, dem trang thai 0
-int Dem_so_sach_dang_muon(NutDocGia &q)
-{
-    int sachdangmuon = 0;
-    MuonTra *p = q.thongTin.dsMuonTra;
-    while (p != nullptr)
-    {
-        if (p->trangThai == MUON_DANG_MUON)
-            sachdangmuon++;
-        p = p->next;
-    }
-    return sachdangmuon;
-}
-
-// [THANH] Doc gia co dang giu cuon nao qua han tinh den ngay ngayktra khong.
-// Giu moc >= 7 cua nhom: muon ngay 01 thi den ngay 07 van trong han, ngay 08 la qua han.
-// @TT [f] Kiem tra doc gia dang giu sach qua han: khoang cach ngay >= 7
-bool CoSachQuaHan7Ngay(const NutDocGia &docgia, NgayThang ngayktra)
-{
-    MuonTra *q = docgia.thongTin.dsMuonTra;
-    while (q != nullptr)
-    {
-        if (q->trangThai == MUON_DANG_MUON)
-        {
-            long long k = KhoangCachNgay(q->ngayMuon, ngayktra);
-            if (k >= HAN_MUON)
-                return true;
-        }
-        q = q->next;
-    }
-    return false;
-}
-
-// So ngay qua han cua mot luot muon tinh den ngayXet, cung moc voi ham tren.
-// Vi du muon ngay 01: ngay 07 tra ve 0 (chua qua han), ngay 08 tra ve 1, ngay 09 tra ve 2.
-// @TT [f,g,h,i] So ngay qua han = khoang cach ngay - 7 + 1 (0 neu chua qua han)
-int SoNgayQuaHan(NgayThang ngayMuon, NgayThang ngayXet)
-{
-    long long k = KhoangCachNgay(ngayMuon, ngayXet);
-    if (k < HAN_MUON)
-        return 0;
-    return (int)(k - HAN_MUON + 1);
-}
-
-// [THANH]
-void HuyDanhSachMuonTra(NutDocGia &docgia)
-{
-    MuonTra *q = docgia.thongTin.dsMuonTra;
-    while (q != nullptr)
-    {
-        MuonTra *p = q;
-        q = q->next;
-        delete p;
-    }
-    docgia.thongTin.dsMuonTra = nullptr;
-}
-
-/* ===================== XU LY: MUON SACH ===================== */
+/* ===================== XU LY ===================== */
 
 // @TT [f] Muon sach: kiem tra lan luot ngay muon, the khoa, du 3 cuon, dang giu sach qua han,
 //         ma sach co ton tai, cuon dang muon/thanh ly; dat thi them cuoi DSLK muon tra

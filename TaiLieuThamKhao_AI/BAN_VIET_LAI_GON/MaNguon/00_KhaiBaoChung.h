@@ -199,7 +199,7 @@ bool DocFile(DanhSachDauSach &ds, CayDocGia &cay, const char tenFile[]);
 bool LuuFile(const DanhSachDauSach &ds, CayDocGia cay, const char tenFile[]);
 void LuuSauThayDoi(const DanhSachDauSach &ds, CayDocGia cay);
 
-/* ===================== a_QuanLyDocGia.cpp: cay doc gia AVL + man hinh ===================== */
+/* ===================== 10_DocGia_CayAVL.cpp: cay doc gia ===================== */
 
 NutDocGia *tim_cay(CayDocGia &caydocgia, int x);
 bool them_cay(CayDocGia &caydocgia, const DocGia &docGiaMoi);
@@ -210,18 +210,10 @@ int MaTheLonNhat(CayDocGia caydocgia);
 int SinhMaTheTiepTheo(int &maTheDaCap);
 void Huydocgia(NutDocGia *&nutdocgia);
 void HuyCayDocGia(CayDocGia &caydocgia);
-
-void InThongTinDocGia(int x, int y, const NutDocGia &docgia);
-NutDocGia *NhapMaTheTimDocGia(CayDocGia &caydocgia, int x, int y);
-void ManHinhQuanLyDocGia(DanhSachDauSach &ds, CayDocGia &cay);
-
-/* ===================== b_InDanhSachDocGia.cpp ===================== */
-
 int DemDocGia(CayDocGia tree);
 int LayDanhSachDocGia(CayDocGia tree, NutDocGia **out, int capacity);
-void ManHinhInDanhSachDocGia(CayDocGia &cay);
 
-/* ===================== c_NhapSach.cpp: mang con tro dau sach, danh muc sach + man hinh ===================== */
+/* ===================== 11_DauSach_MangConTro.cpp: mang con tro dau sach ===================== */
 
 bool HopLeDauSach(const DauSach &d, string &loi);
 int TimViTriDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn);
@@ -229,6 +221,8 @@ DauSach *TimDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn);
 int TimViTriChenTheoTen(const DanhSachDauSach &ds, const DauSach &d);
 bool ThemDauSach(DanhSachDauSach &ds, const DauSach &d, string &loi);
 void HuyDanhSachDauSach(DanhSachDauSach &ds);
+
+/* ===================== 12_DanhMucSach_DSLKDon.cpp: danh muc sach ===================== */
 
 bool HopLeViTri(const string &viTri);
 string TachISBNTuMaSach(const string &ma);
@@ -239,38 +233,53 @@ void ThemCuonSach(DauSach &d, const string &viTri, int trangThai);
 void ThemCuonSachCoMa(DauSach &d, const string &ma, const string &viTri, int trangThai);
 int DemCuonSach(const CuonSach *head);
 
-void ManHinhNhapSach(DanhSachDauSach &ds, CayDocGia &cay);
-
-/* ===================== d_InDauSachTheoTheLoai.cpp, e_TimSach.cpp ===================== */
-
-void ManHinhInDauSachTheoTheLoai(const DanhSachDauSach &ds);
-void ManHinhTimSach(const DanhSachDauSach &ds);
-
-/* ===================== f_MuonSach.cpp: danh sach muon tra + muon sach ===================== */
+/* ===================== 13_MuonTra_DSLKDon.cpp: danh sach muon tra ===================== */
 
 void them_lich_su(NutDocGia &q, MuonTra muontra);
 int Dem_so_sach_dang_muon(NutDocGia &q);
+MuonTra *TimMuonDangMuonTheoMa(NutDocGia &q, string maSach);
 bool CoSachQuaHan7Ngay(const NutDocGia &docgia, NgayThang ngayktra);
 int SoNgayQuaHan(NgayThang ngayMuon, NgayThang ngayXet);
+bool CapNhatLuotTra(const NutDocGia &docgia, string masach, NgayThang ngaytrasach, int trangThaiMoi);
 void HuyDanhSachMuonTra(NutDocGia &docgia);
 
+/* ===================== a..j: chuc nang theo de (moi file mot chu cai) ===================== */
+
+// a_QuanLyDocGia.cpp
+void InThongTinDocGia(int x, int y, const NutDocGia &docgia);
+NutDocGia *NhapMaTheTimDocGia(CayDocGia &caydocgia, int x, int y);
+void ManHinhQuanLyDocGia(DanhSachDauSach &ds, CayDocGia &cay);
+
+// b_InDanhSachDocGia.cpp
+void ManHinhInDanhSachDocGia(CayDocGia &cay);
+
+// c_NhapSach.cpp
+void ManHinhNhapSach(DanhSachDauSach &ds, CayDocGia &cay);
+
+// d_InDauSachTheoTheLoai.cpp
+void ManHinhInDauSachTheoTheLoai(const DanhSachDauSach &ds);
+
+// e_TimSach.cpp
+void ManHinhTimSach(const DanhSachDauSach &ds);
+
+// f_MuonSach.cpp
 bool MuonSach(DanhSachDauSach &ds, NutDocGia &docgia, const string &maSach, NgayThang ngayMuon,
               string &loi);
 int InSachDangMuon(const DanhSachDauSach &ds, NutDocGia &docgia, int x, int y, int dongChon);
 void ManHinhMuonSach(DanhSachDauSach &ds, CayDocGia &cay);
 
-/* ===================== g_TraSach.cpp ===================== */
-
-MuonTra *TimMuonDangMuonTheoMa(NutDocGia &q, string maSach);
-bool CapNhatLuotTra(const NutDocGia &docgia, string masach, NgayThang ngaytrasach, int trangThaiMoi);
+// g_TraSach.cpp
 bool TraSach(DanhSachDauSach &ds, NutDocGia &docgia, const string &maSach, NgayThang ngayTra,
              bool lamMat, string &loi);
 void ManHinhTraSach(DanhSachDauSach &ds, CayDocGia &cay);
 
-/* ===================== h_SachDangMuon.cpp, i_DocGiaQuaHan.cpp, j_Top10Sach.cpp ===================== */
-
+// h_SachDangMuon.cpp
 void ManHinhSachDangMuon(const DanhSachDauSach &ds, CayDocGia &cay);
+
+// i_DocGiaQuaHan.cpp
 void ManHinhDocGiaQuaHan(const DanhSachDauSach &ds, CayDocGia &cay);
+
+// j_Top10Sach.cpp
 void ManHinhTop10Sach(const DanhSachDauSach &ds, CayDocGia &cay);
 
 #endif

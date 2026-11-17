@@ -7,57 +7,12 @@
    - Theo ten + ho: cay chi sap theo ma the, nen lay dia chi cac nut ra mot mang tam
      roi sap mang tam bang Quick Sort. Cay khong bi thay doi.
 
-   LAY HAM CUA CAU KHAC:
-     f_MuonSach.cpp: Dem_so_sach_dang_muon
-   CAU KHAC GOI HAM O DAY:
-     DemDocGia (i, j)
-     LayDanhSachDocGia (i, j)
+   HAM LAY TU FILE KHAC:
+     10_DocGia_CayAVL.cpp: DemDocGia, LayDanhSachDocGia
+     13_MuonTra_DSLKDon.cpp: Dem_so_sach_dang_muon
    ============================================================ */
 
-/* ===================== XU LY: DUYET CAY RA MANG TAM, QUICK SORT ===================== */
-
-// [THAI] Duyet giua (trai - nut - phai) de dem so nut.
-// @TT [b,i,j] Dem so doc gia: duyet giua LNR - O(n)
-static void DuyetGiuaDem(const NutDocGia *p, int &dem)
-{
-    if (p == nullptr) return;
-    DuyetGiuaDem(p->left, dem);
-    ++dem;
-    DuyetGiuaDem(p->right, dem);
-}
-
-// [THAI] Duyet giua, ghi con tro nut vao out[] theo thu tu ma the tang dan.
-// Dung khi idx >= capacity de khong ghi vuot mang.
-// @TT [b,i,j] Do con tro cac nut ra mang tam: duyet giua LNR nen mang tang dan theo ma the - O(n)
-static void DuyetGiuaThuThap(NutDocGia *p, NutDocGia **out, int capacity, int &idx)
-{
-    if (p == nullptr || idx >= capacity) return;
-    DuyetGiuaThuThap(p->left, out, capacity, idx);
-    if (idx < capacity)
-    {
-        out[idx] = p;
-        ++idx;
-    }
-    DuyetGiuaThuThap(p->right, out, capacity, idx);
-}
-
-// [THAI] Dem toan bo doc gia trong cay. Cay rong tra ve 0.
-int DemDocGia(CayDocGia tree)
-{
-    int dem = 0;
-    DuyetGiuaDem(tree, dem);
-    return dem;
-}
-
-// [THAI] Thu thap con tro cac nut vao out[] theo ma the tang dan.
-// Tra ve so con tro da ghi (toi da la capacity).
-int LayDanhSachDocGia(CayDocGia tree, NutDocGia **out, int capacity)
-{
-    if (out == nullptr || capacity <= 0) return 0;
-    int idx = 0;
-    DuyetGiuaThuThap(tree, out, capacity, idx);
-    return idx;
-}
+/* ===================== XU LY ===================== */
 
 // So sanh hai doc gia theo ten, neu trung ten thi theo ho.
 static int SoSanhTenHo(const NutDocGia *a, const NutDocGia *b)

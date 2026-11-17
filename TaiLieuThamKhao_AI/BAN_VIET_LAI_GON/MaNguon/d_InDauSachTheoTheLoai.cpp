@@ -8,8 +8,8 @@
    Sap xep chen la thuat toan on dinh: hai dau sach cung the loai giu nguyen thu tu cu,
    tuc la van tang dan theo ten sach, nen khong can so sanh ten lan nua.
 
-   LAY HAM CUA CAU KHAC:
-     c_NhapSach.cpp: DemCuonSach
+   HAM LAY TU FILE KHAC:
+     12_DanhMucSach_DSLKDon.cpp: DemCuonSach
    ============================================================ */
 
 /* ===================== XU LY ===================== */
