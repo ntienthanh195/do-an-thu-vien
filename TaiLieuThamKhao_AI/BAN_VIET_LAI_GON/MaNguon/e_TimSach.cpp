@@ -70,6 +70,8 @@ void ManHinhTimSach(const DanhSachDauSach &ds)
             continue;
         }
 
+        // @TT [e] Tim sach theo ten: duyet tuyen tinh ca mang dau sach, ten nao chua tu khoa
+        //         (ChuaChuoi, khong phan biet hoa/thuong) thi luu chi so vao mang tam viTri[] - O(n*m)
         int soKetQua = 0;
         for (int i = 0; i < ds.soLuong; ++i)
         {

@@ -14,6 +14,7 @@ void ManHinhDocGiaQuaHan(const DanhSachDauSach &ds, CayDocGia &cay)
 {
     NgayThang homNay = HomNay();
 
+    // @TT [i] Buoc 1: duyet LNR do con tro doc gia ra mang tam
     // Buoc 1
     int soDocGia = DemDocGia(cay);
     NutDocGia **tatCa = new NutDocGia *[soDocGia + 1];
@@ -30,6 +31,7 @@ void ManHinhDocGiaQuaHan(const DanhSachDauSach &ds, CayDocGia &cay)
         }
     }
 
+    // @TT [i] Buoc 2: loc luot dang muon da qua han vao 2 mang song song dg[], luot[]
     // Buoc 2
     NutDocGia **dg = new NutDocGia *[n + 1];
     MuonTra **luot = new MuonTra *[n + 1];
@@ -47,6 +49,7 @@ void ManHinhDocGiaQuaHan(const DanhSachDauSach &ds, CayDocGia &cay)
         }
     }
 
+    // @TT [i] Buoc 3: Selection Sort giam dan theo so ngay qua han - O(k^2), k = so luot qua han
     // Buoc 3: ngay muon cang som thi qua han cang lau
     for (int i = 0; i < n - 1; ++i)
     {

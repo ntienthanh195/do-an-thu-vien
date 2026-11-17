@@ -28,7 +28,7 @@ Folders=
 IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
-UnitCount=18
+UnitCount=20
 
 [Unit1]
 FileName=MaNguon\00_KhaiBaoChung.h
@@ -51,7 +51,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=MaNguon\CuonSach.cpp
+FileName=MaNguon\02_GiaoDien.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -61,7 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit4]
-FileName=MaNguon\DocGiaQuaHan.cpp
+FileName=MaNguon\03_Menu_TongQuan.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -71,7 +71,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
-FileName=MaNguon\GiaoDien.cpp
+FileName=MaNguon\04_LuuDocFile.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -81,7 +81,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
-FileName=MaNguon\InDanhSachDocGia.cpp
+FileName=MaNguon\10_DocGia_CayAVL.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -91,7 +91,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit7]
-FileName=MaNguon\InDauSachTheoTheLoai.cpp
+FileName=MaNguon\11_DauSach_MangConTro.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -101,7 +101,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit8]
-FileName=MaNguon\LichSuMuonTra.cpp
+FileName=MaNguon\12_DanhMucSach_DSLKDon.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -111,7 +111,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit9]
-FileName=MaNguon\LuuDocFile.cpp
+FileName=MaNguon\13_MuonTra_DSLKDon.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -121,7 +121,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit10]
-FileName=MaNguon\Menu.cpp
+FileName=MaNguon\a_QuanLyDocGia.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -131,7 +131,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit11]
-FileName=MaNguon\MuonSach.cpp
+FileName=MaNguon\b_InDanhSachDocGia.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -141,7 +141,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit12]
-FileName=MaNguon\NhapSach.cpp
+FileName=MaNguon\c_NhapSach.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -151,7 +151,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit13]
-FileName=MaNguon\QuanLyDocGia.cpp
+FileName=MaNguon\d_InDauSachTheoTheLoai.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -161,7 +161,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit14]
-FileName=MaNguon\SachDangMuon.cpp
+FileName=MaNguon\e_TimSach.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -171,7 +171,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit15]
-FileName=MaNguon\TimSach.cpp
+FileName=MaNguon\f_MuonSach.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -181,7 +181,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit16]
-FileName=MaNguon\Top10Sach.cpp
+FileName=MaNguon\g_TraSach.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -191,7 +191,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit17]
-FileName=MaNguon\TraSach.cpp
+FileName=MaNguon\h_SachDangMuon.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -201,6 +201,26 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit18]
+FileName=MaNguon\i_DocGiaQuaHan.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit19]
+FileName=MaNguon\j_Top10Sach.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit20]
 FileName=MaNguon\main.cpp
 CompileCpp=1
 Folder=

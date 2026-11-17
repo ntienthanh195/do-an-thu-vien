@@ -1,12 +1,13 @@
 #include "00_KhaiBaoChung.h"
 
 /* ============================================================
-   DANH SACH MUON TRA: danh sach lien ket don, moi doc gia giu mot danh sach rieng.
+   13. CAU TRUC DU LIEU: DANH SACH MUON TRA (danh sach lien ket don), moi doc gia giu mot danh sach rieng.
    Moi lan muon them mot nut vao cuoi danh sach. Khi tra khong xoa nut ma chi doi
    trang thai va ghi ngay tra, nen danh sach cung la lich su muon cua doc gia.
    ============================================================ */
 
 // [THANH] Them mot luot muon vao cuoi danh sach.
+// @TT [f] Them luot muon vao cuoi DSLK don muon tra
 void them_lich_su(NutDocGia &q, MuonTra muontra)
 {
     MuonTra *muontraa = new MuonTra;
@@ -25,6 +26,7 @@ void them_lich_su(NutDocGia &q, MuonTra muontra)
 }
 
 // [THANH]
+// @TT [f] Dem so sach dang muon (de chan muon qua 3 cuon): duyet DSLK, dem trang thai 0
 int Dem_so_sach_dang_muon(NutDocGia &q)
 {
     int sachdangmuon = 0;
@@ -39,6 +41,7 @@ int Dem_so_sach_dang_muon(NutDocGia &q)
 }
 
 // [THANH] Tim luot dang muon (chua tra) cua mot ma sach.
+// @TT [g] Tim luot dang muon cua mot ma sach: duyet tuyen tinh DSLK muon tra
 MuonTra *TimMuonDangMuonTheoMa(NutDocGia &q, string maSach)
 {
     MuonTra *p = q.thongTin.dsMuonTra;
@@ -53,6 +56,7 @@ MuonTra *TimMuonDangMuonTheoMa(NutDocGia &q, string maSach)
 
 // [THANH] Doc gia co dang giu cuon nao qua han tinh den ngay ngayktra khong.
 // Giu moc >= 7 cua nhom: muon ngay 01 thi den ngay 07 van trong han, ngay 08 la qua han.
+// @TT [f] Kiem tra doc gia dang giu sach qua han: khoang cach ngay >= 7
 bool CoSachQuaHan7Ngay(const NutDocGia &docgia, NgayThang ngayktra)
 {
     MuonTra *q = docgia.thongTin.dsMuonTra;
@@ -71,6 +75,7 @@ bool CoSachQuaHan7Ngay(const NutDocGia &docgia, NgayThang ngayktra)
 
 // So ngay qua han cua mot luot muon tinh den ngayXet, cung moc voi ham tren.
 // Vi du muon ngay 01: ngay 07 tra ve 0 (chua qua han), ngay 08 tra ve 1, ngay 09 tra ve 2.
+// @TT [f,g,h,i] So ngay qua han = khoang cach ngay - 7 + 1 (0 neu chua qua han)
 int SoNgayQuaHan(NgayThang ngayMuon, NgayThang ngayXet)
 {
     long long k = KhoangCachNgay(ngayMuon, ngayXet);
@@ -81,6 +86,7 @@ int SoNgayQuaHan(NgayThang ngayMuon, NgayThang ngayXet)
 
 // [THANH] Ket thuc mot luot dang muon: ghi ngay tra va trang thai moi
 // (MUON_DA_TRA hoac MUON_LAM_MAT). Chi sua lich su, chua sua trang thai cuon sach.
+// @TT [g] Tra sach: khong xoa nut, chi doi trang thai + ghi ngay tra (giu lich su cho top 10)
 bool CapNhatLuotTra(const NutDocGia &docgia, string masach, NgayThang ngaytrasach, int trangThaiMoi)
 {
     MuonTra *q = docgia.thongTin.dsMuonTra;

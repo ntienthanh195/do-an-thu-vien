@@ -8,6 +8,8 @@
      roi sap mang tam bang Quick Sort. Cay khong bi thay doi.
    ============================================================ */
 
+/* ===================== XU LY ===================== */
+
 // So sanh hai doc gia theo ten, neu trung ten thi theo ho.
 static int SoSanhTenHo(const NutDocGia *a, const NutDocGia *b)
 {
@@ -18,6 +20,7 @@ static int SoSanhTenHo(const NutDocGia *a, const NutDocGia *b)
 }
 
 // Quick Sort tren mang con tro, lay phan tu giua lam chot.
+// @TT [b] In theo ten + ho: Quick Sort tren mang con tro (chot la phan tu giua) - O(n log n) trung binh
 static void SapXepTheoTenHo(NutDocGia *a[], int trai, int phai)
 {
     if (trai >= phai)
@@ -41,6 +44,8 @@ static void SapXepTheoTenHo(NutDocGia *a[], int trai, int phai)
     SapXepTheoTenHo(a, i, phai);
 }
 
+/* ===================== GIAO DIEN ===================== */
+
 void ManHinhInDanhSachDocGia(CayDocGia &cay)
 {
     string muc[2] = {"1. Theo tên + họ tăng dần", "2. Theo mã thẻ tăng dần"};
@@ -53,6 +58,7 @@ void ManHinhInDanhSachDocGia(CayDocGia &cay)
 
         int n = DemDocGia(cay);
         NutDocGia **a = new NutDocGia *[n + 1]; // mang tam, chi giu con tro
+        // @TT [b] Lay doc gia ra mang tam bang duyet LNR (da tang theo ma the), cay khong bi doi
         LayDanhSachDocGia(cay, a, n);
         if (kieu == 0)
             SapXepTheoTenHo(a, 0, n - 1);

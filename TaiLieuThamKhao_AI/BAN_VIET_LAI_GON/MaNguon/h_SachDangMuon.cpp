@@ -6,6 +6,7 @@
    Ten sach lay tu dau sach chua cuon do (tim qua ISBN nam trong ma sach).
    ============================================================ */
 
+// @TT [h] Tim doc gia bang tim_cay (10_), liet ke bang InSachDangMuon (f_MuonSach.cpp)
 void ManHinhSachDangMuon(const DanhSachDauSach &ds, CayDocGia &cay)
 {
     while (true)

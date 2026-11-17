@@ -71,6 +71,7 @@ string ChuanHoaTen(const string &s)
 }
 
 // [THAI] So sanh khong phan biet hoa/thuong. a < b: -1, a > b: 1, bang nhau: 0
+// @TT [b,c,d] So sanh 2 chuoi khong phan biet hoa/thuong, dung cho sap xep va tim nhi phan theo ten
 int SoSanhChuoi(const string &a, const string &b)
 {
     string x = ChuanHoaChuoi(a);
@@ -86,6 +87,7 @@ int SoSanhChuoi(const string &a, const string &b)
 }
 
 // [THAI] Kiem tra chuoi s co chua chuoi part khong (khong phan biet hoa/thuong).
+// @TT [e] Tim chuoi con khong phan biet hoa/thuong: thu tung vi tri bat dau, so tung ky tu - O(n*m)
 bool ChuaChuoi(const string &s, const string &part)
 {
     if (part.size() == 0) return true;
@@ -232,6 +234,7 @@ bool NgayHopLe(const NgayThang &ngay)
 }
 
 // [THANH] Doi mot ngay thanh so ngay tinh tu 01/01/0001.
+// @TT Doi ngay ra so ngay tinh tu 01/01/0001 (cong 365/366 tung nam, so ngay tung thang)
 long long Doirangay(NgayThang sngay)
 {
     long long soNgay = 0;
@@ -251,6 +254,7 @@ long long Doirangay(NgayThang sngay)
 }
 
 // [THANH] So ngay tu ngayt1 den ngayt2 (am neu ngayt2 truoc ngayt1).
+// @TT [f,g,h,i] Khoang cach 2 ngay = Doirangay(ngay 2) - Doirangay(ngay 1)
 long long KhoangCachNgay(NgayThang ngayt1, NgayThang ngayt2)
 {
     long long i = Doirangay(ngayt1);

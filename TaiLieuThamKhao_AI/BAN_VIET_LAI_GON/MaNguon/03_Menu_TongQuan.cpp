@@ -126,7 +126,7 @@ void MenuChinh(DanhSachDauSach &ds, CayDocGia &cay)
             }
         }
 
-        // Thu tu cac case phai khop thu tu ten muc trong VeMenuTrai (GiaoDien.cpp)
+        // Thu tu cac case phai khop thu tu ten muc trong VeMenuTrai (02_GiaoDien.cpp)
         switch (chon)
         {
         case 0: break; // Tong quan: chi ve lai

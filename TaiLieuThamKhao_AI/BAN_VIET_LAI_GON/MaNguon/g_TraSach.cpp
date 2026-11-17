@@ -7,6 +7,10 @@
              sang "da thanh ly", va the doc gia bi khoa (quy uoc cua nhom, can hoi lai thay).
    ============================================================ */
 
+/* ===================== XU LY ===================== */
+
+// @TT [g] Tra sach / bao mat: tim luot dang muon, kiem tra ngay tra, doi trang thai luot + cuon;
+//         bao mat thi cuon -> thanh ly va khoa the
 bool TraSach(DanhSachDauSach &ds, NutDocGia &docgia, const string &maSach, NgayThang ngayTra,
              bool lamMat, string &loi)
 {
@@ -48,6 +52,8 @@ bool TraSach(DanhSachDauSach &ds, NutDocGia &docgia, const string &maSach, NgayT
 }
 
 // Lay ma sach cua luot dang muon thu "thuTu" (tinh tu 0) trong lich su cua doc gia.
+/* ===================== GIAO DIEN ===================== */
+
 static string MaSachDangMuonThu(NutDocGia &docgia, int thuTu)
 {
     int dem = 0;

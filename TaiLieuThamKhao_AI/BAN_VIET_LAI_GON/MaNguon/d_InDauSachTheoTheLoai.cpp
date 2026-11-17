@@ -9,6 +9,9 @@
    tuc la van tang dan theo ten sach, nen khong can so sanh ten lan nua.
    ============================================================ */
 
+/* ===================== XU LY ===================== */
+
+// @TT [d] Sap mang tam theo the loai: Insertion Sort (on dinh nen cung the loai van tang theo ten) - O(n^2)
 static void SapXepTheoTheLoai(DauSach *a[], int n)
 {
     for (int i = 1; i < n; ++i)
@@ -23,6 +26,8 @@ static void SapXepTheoTheLoai(DauSach *a[], int n)
         a[j + 1] = x;
     }
 }
+
+/* ===================== GIAO DIEN ===================== */
 
 void ManHinhInDauSachTheoTheLoai(const DanhSachDauSach &ds)
 {
