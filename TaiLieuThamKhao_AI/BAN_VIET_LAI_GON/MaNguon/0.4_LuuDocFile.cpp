@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    DOC / GHI FILE VAN BAN. Moi dong la mot ban ghi, cac truong cach nhau boi dau '|'.

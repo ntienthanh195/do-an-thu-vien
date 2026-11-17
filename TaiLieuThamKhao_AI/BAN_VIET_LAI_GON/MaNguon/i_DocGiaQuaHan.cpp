@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    i. DANH SACH DOC GIA MUON SACH QUA HAN, thoi gian qua han giam dan
@@ -10,9 +10,9 @@
    Mot doc gia giu 2 cuon qua han se co 2 dong.
 
    HAM LAY TU FILE KHAC:
-     10_DocGia_CayAVL.cpp: DemDocGia, LayDanhSachDocGia
-     12_DanhMucSach_DSLKDon.cpp: TimCuonSachToanCuc
-     13_MuonTra_DSLKDon.cpp: SoNgayQuaHan
+     1.1_DocGia_CayAVL.cpp: DemDocGia, LayDanhSachDocGia
+     1.3_DanhMucSach_DSLKDon.cpp: TimCuonSachToanCuc
+     1.4_MuonTra_DSLKDon.cpp: SoNgayQuaHan
    ============================================================ */
 
 void ManHinhDocGiaQuaHan(const DanhSachDauSach &ds, CayDocGia &cay)

@@ -115,7 +115,7 @@ const int PHIM_XUONG = 256 + 80;
 const int PHIM_TRAI  = 256 + 75;
 const int PHIM_PHAI  = 256 + 77;
 
-// Ma mau cua chuong trinh. Moi ma ung voi mot mau RGB trong BANG_MAU (02_GiaoDien.cpp),
+// Ma mau cua chuong trinh. Moi ma ung voi mot mau RGB trong BANG_MAU (0.2_GiaoDien.cpp),
 // ham SetColor(mauChu, mauNen) doi ma mau thanh mau that tren man hinh.
 const int MAU_DEN          = 0;  // nen chinh cua vung noi dung (xanh den)
 const int MAU_NEN_MENU     = 1;  // nen thanh menu ben trai
@@ -140,7 +140,7 @@ const int DONG_THONG_BAO = 26;
 const int DONG_HUONG_DAN = 28;
 const int SO_DONG_TRANG  = 15; // so dong du lieu tren mot trang bang
 
-/* ===================== 01_HamTienIch.cpp: chuoi, so, ngay thang ===================== */
+/* ===================== 0.1_HamTienIch.cpp: chuoi, so, ngay thang ===================== */
 
 bool KhoangTrang(unsigned char c);
 bool LaChuoiRong(const string &s);
@@ -165,7 +165,7 @@ NgayThang HomNay();
 string ChuoiNgay(const NgayThang &d);
 bool DocNgay(const string &s, NgayThang &d);
 
-/* ===================== 02_GiaoDien.cpp: gotoxy, SetColor, khung, o nhap ===================== */
+/* ===================== 0.2_GiaoDien.cpp: gotoxy, SetColor, khung, o nhap ===================== */
 
 void KhoiTaoManHinh();
 void gotoxy(int x, int y);
@@ -191,7 +191,7 @@ bool XuLyPhimTrang(int phim, int &trang, int tongSoDong);
 void InSoTrang(int trang, int tongSoDong);
 string TenTrangThaiSach(int trangThai);
 
-/* ===================== 03_Menu_TongQuan.cpp, 04_LuuDocFile.cpp ===================== */
+/* ===================== 0.3_Menu_TongQuan.cpp, 0.4_LuuDocFile.cpp ===================== */
 
 void MenuChinh(DanhSachDauSach &ds, CayDocGia &cay);
 
@@ -199,7 +199,7 @@ bool DocFile(DanhSachDauSach &ds, CayDocGia &cay, const char tenFile[]);
 bool LuuFile(const DanhSachDauSach &ds, CayDocGia cay, const char tenFile[]);
 void LuuSauThayDoi(const DanhSachDauSach &ds, CayDocGia cay);
 
-/* ===================== 10_DocGia_CayAVL.cpp: cay doc gia ===================== */
+/* ===================== 1.1_DocGia_CayAVL.cpp: cay doc gia ===================== */
 
 NutDocGia *tim_cay(CayDocGia &caydocgia, int x);
 bool them_cay(CayDocGia &caydocgia, const DocGia &docGiaMoi);
@@ -213,7 +213,7 @@ void HuyCayDocGia(CayDocGia &caydocgia);
 int DemDocGia(CayDocGia tree);
 int LayDanhSachDocGia(CayDocGia tree, NutDocGia **out, int capacity);
 
-/* ===================== 11_DauSach_MangConTro.cpp: mang con tro dau sach ===================== */
+/* ===================== 1.2_DauSach_MangConTro.cpp: mang con tro dau sach ===================== */
 
 bool HopLeDauSach(const DauSach &d, string &loi);
 int TimViTriDauSachTheoISBN(const DanhSachDauSach &ds, const string &isbn);
@@ -222,7 +222,7 @@ int TimViTriChenTheoTen(const DanhSachDauSach &ds, const DauSach &d);
 bool ThemDauSach(DanhSachDauSach &ds, const DauSach &d, string &loi);
 void HuyDanhSachDauSach(DanhSachDauSach &ds);
 
-/* ===================== 12_DanhMucSach_DSLKDon.cpp: danh muc sach ===================== */
+/* ===================== 1.3_DanhMucSach_DSLKDon.cpp: danh muc sach ===================== */
 
 bool HopLeViTri(const string &viTri);
 string TachISBNTuMaSach(const string &ma);
@@ -233,7 +233,7 @@ void ThemCuonSach(DauSach &d, const string &viTri, int trangThai);
 void ThemCuonSachCoMa(DauSach &d, const string &ma, const string &viTri, int trangThai);
 int DemCuonSach(const CuonSach *head);
 
-/* ===================== 13_MuonTra_DSLKDon.cpp: danh sach muon tra ===================== */
+/* ===================== 1.4_MuonTra_DSLKDon.cpp: danh sach muon tra ===================== */
 
 void them_lich_su(NutDocGia &q, MuonTra muontra);
 int Dem_so_sach_dang_muon(NutDocGia &q);

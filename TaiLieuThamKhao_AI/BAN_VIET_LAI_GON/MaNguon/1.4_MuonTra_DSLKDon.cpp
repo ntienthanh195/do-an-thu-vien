@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    13. CAU TRUC DU LIEU: DANH SACH MUON TRA (danh sach lien ket don), moi doc gia giu mot danh sach rieng.

@@ -31,7 +31,7 @@ CompilerSet=0
 UnitCount=20
 
 [Unit1]
-FileName=MaNguon\00_KhaiBaoChung.h
+FileName=MaNguon\0.0_KhaiBaoChung.h
 CompileCpp=1
 Folder=
 Compile=0
@@ -41,7 +41,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=MaNguon\01_HamTienIch.cpp
+FileName=MaNguon\0.1_HamTienIch.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -51,7 +51,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=MaNguon\02_GiaoDien.cpp
+FileName=MaNguon\0.2_GiaoDien.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -61,7 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit4]
-FileName=MaNguon\03_Menu_TongQuan.cpp
+FileName=MaNguon\0.3_Menu_TongQuan.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -71,7 +71,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
-FileName=MaNguon\04_LuuDocFile.cpp
+FileName=MaNguon\0.4_LuuDocFile.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -81,7 +81,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
-FileName=MaNguon\10_DocGia_CayAVL.cpp
+FileName=MaNguon\1.1_DocGia_CayAVL.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -91,7 +91,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit7]
-FileName=MaNguon\11_DauSach_MangConTro.cpp
+FileName=MaNguon\1.2_DauSach_MangConTro.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -101,7 +101,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit8]
-FileName=MaNguon\12_DanhMucSach_DSLKDon.cpp
+FileName=MaNguon\1.3_DanhMucSach_DSLKDon.cpp
 CompileCpp=1
 Folder=
 Compile=1
@@ -111,7 +111,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit9]
-FileName=MaNguon\13_MuonTra_DSLKDon.cpp
+FileName=MaNguon\1.4_MuonTra_DSLKDon.cpp
 CompileCpp=1
 Folder=
 Compile=1

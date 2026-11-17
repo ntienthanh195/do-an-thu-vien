@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    b. IN DANH SACH DOC GIA theo ten + ho tang dan, hoac theo ma the tang dan.
@@ -8,8 +8,8 @@
      roi sap mang tam bang Quick Sort. Cay khong bi thay doi.
 
    HAM LAY TU FILE KHAC:
-     10_DocGia_CayAVL.cpp: DemDocGia, LayDanhSachDocGia
-     13_MuonTra_DSLKDon.cpp: Dem_so_sach_dang_muon
+     1.1_DocGia_CayAVL.cpp: DemDocGia, LayDanhSachDocGia
+     1.4_MuonTra_DSLKDon.cpp: Dem_so_sach_dang_muon
    ============================================================ */
 
 /* ===================== XU LY ===================== */

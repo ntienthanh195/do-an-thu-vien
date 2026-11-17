@@ -1,14 +1,14 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    c. NHAP DAU SACH, THEM CUON, THANH LY (cac man hinh)
-   Thao tac tren mang dau sach nam o 11_DauSach_MangConTro.cpp:
+   Thao tac tren mang dau sach nam o 1.2_DauSach_MangConTro.cpp:
      ThemDauSach (tim nhi phan vi tri chen + doi con tro), TimDauSachTheoISBN.
-   Danh ma sach tu dong nam o 12_DanhMucSach_DSLKDon.cpp: SinhMaSachTuDong, ThemCuonSach.
+   Danh ma sach tu dong nam o 1.3_DanhMucSach_DSLKDon.cpp: SinhMaSachTuDong, ThemCuonSach.
 
    HAM LAY TU FILE KHAC:
-     11_DauSach_MangConTro.cpp: ThemDauSach, TimDauSachTheoISBN
-     12_DanhMucSach_DSLKDon.cpp: DemCuonSach, HopLeViTri, ThemCuonSach, TimCuonSachToanCuc
+     1.2_DauSach_MangConTro.cpp: ThemDauSach, TimDauSachTheoISBN
+     1.3_DanhMucSach_DSLKDon.cpp: DemCuonSach, HopLeViTri, ThemCuonSach, TimCuonSachToanCuc
    ============================================================ */
 
 /* ===================== GIAO DIEN ===================== */

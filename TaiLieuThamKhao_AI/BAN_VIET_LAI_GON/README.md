@@ -21,7 +21,7 @@ Cửa sổ 120 cột × 30 dòng, chia hai vùng như một trang web quản tr�
 - **Trang Tổng quan**: lời chào, bốn ô số liệu (đầu sách, cuốn sách, độc giả, đang được mượn) và bảng danh mục đầu sách có dòng xen kẽ màu.
 - **Nhãn tiếng Việt có dấu**; dữ liệu nhập (tên sách, họ tên) vẫn không dấu.
 
-Cách làm (xem chú thích đầu `02_GiaoDien.cpp`):
+Cách làm (xem chú thích đầu `0.2_GiaoDien.cpp`):
 
 - `gotoxy(x, y)` tự viết: in mã ANSI `ESC[dòng;cộtH`.
 - `cout` được gom vào vùng đệm (`setvbuf`) và chỉ đẩy ra màn hình trong `DocPhim`, ngay trước khi chờ phím; `VeManHinh` vẽ đè chứ không xóa trắng. Nhờ vậy chuyển màn hình không nhấp nháy.
@@ -61,23 +61,23 @@ Các thống kê dùng **mảng tạm cấp phát trong hàm rồi giải phóng
 
 ## File và người phụ trách
 
-File chia thành 3 nhóm, tiền tố cho biết file thuộc nhóm nào (bảng tra từng chức năng → file → hàm → thuật toán: [`MUC_LUC.md`](MUC_LUC.md)):
+File chia thành 3 nhóm. Tên đánh số như mục lục sách: số trước dấu chấm là nhóm, số sau là thứ tự trong nhóm (`1.2` = nhóm 1, file thứ 2) (bảng tra từng chức năng → file → hàm → thuật toán: [`MUC_LUC.md`](MUC_LUC.md)):
 
-- **`0x_`: phần nền** dùng chung.
-- **`1x_`: mỗi file một cấu trúc dữ liệu**, chứa các thao tác thêm/xóa/tìm trên cấu trúc đó.
+- **`0.x_`: phần nền** dùng chung.
+- **`1.x_`: mỗi file một cấu trúc dữ liệu**, chứa các thao tác thêm/xóa/tìm trên cấu trúc đó.
 - **`a_` … `j_`: mỗi file một câu trong đề**, chứa màn hình và thuật toán riêng của câu đó.
 
 | File | Nội dung | Phụ trách |
 |---|---|---|
-| `00_KhaiBaoChung.h` | Hằng, struct theo đề, khai báo hàm (nhóm theo file) | Cả nhóm |
-| `01_HamTienIch.cpp` | Chuỗi, số, ngày tháng | Thái (chuỗi), Thành (ngày) |
-| `02_GiaoDien.cpp` | `gotoxy`, `SetColor`, khung, ô nhập | Cả nhóm |
-| `03_Menu_TongQuan.cpp` | Thanh menu, trang Tổng quan | Tấn |
-| `04_LuuDocFile.cpp` | Đọc / ghi `DuLieu/ThuVien.txt` | Cả nhóm |
-| `10_DocGia_CayAVL.cpp` | Cây độc giả: tìm, thêm, xóa, xoay AVL, cấp mã thẻ, duyệt LNR ra mảng | Thành (duyệt cây: Thái) |
-| `11_DauSach_MangConTro.cpp` | Mảng con trỏ đầu sách: tìm ISBN, tìm nhị phân vị trí chèn, thêm | Thái |
-| `12_DanhMucSach_DSLKDon.cpp` | DSLK cuốn sách, mã sách tự động `ISBN#N` | Thái |
-| `13_MuonTra_DSLKDon.cpp` | DSLK mượn trả, đếm đang mượn, quá hạn | Thành |
+| `0.0_KhaiBaoChung.h` | Hằng, struct theo đề, khai báo hàm (nhóm theo file) | Cả nhóm |
+| `0.1_HamTienIch.cpp` | Chuỗi, số, ngày tháng | Thái (chuỗi), Thành (ngày) |
+| `0.2_GiaoDien.cpp` | `gotoxy`, `SetColor`, khung, ô nhập | Cả nhóm |
+| `0.3_Menu_TongQuan.cpp` | Thanh menu, trang Tổng quan | Tấn |
+| `0.4_LuuDocFile.cpp` | Đọc / ghi `DuLieu/ThuVien.txt` | Cả nhóm |
+| `1.1_DocGia_CayAVL.cpp` | Cây độc giả: tìm, thêm, xóa, xoay AVL, cấp mã thẻ, duyệt LNR ra mảng | Thành (duyệt cây: Thái) |
+| `1.2_DauSach_MangConTro.cpp` | Mảng con trỏ đầu sách: tìm ISBN, tìm nhị phân vị trí chèn, thêm | Thái |
+| `1.3_DanhMucSach_DSLKDon.cpp` | DSLK cuốn sách, mã sách tự động `ISBN#N` | Thái |
+| `1.4_MuonTra_DSLKDon.cpp` | DSLK mượn trả, đếm đang mượn, quá hạn | Thành |
 | `a_QuanLyDocGia.cpp` | a. Màn hình thêm / xóa / hiệu chỉnh thẻ | Thành |
 | `b_InDanhSachDocGia.cpp` | b. In độc giả (Quick Sort theo tên + họ) | Tấn |
 | `c_NhapSach.cpp` | c. Màn hình nhập đầu sách, thêm cuốn, thanh lý | Thái |
@@ -96,18 +96,18 @@ Hàm có nhãn `[THANH]` / `[THAI]` là hàm nhóm đã viết trong `MaNguonUpd
 
 | Nguồn trong `MaNguonUpdate/` | Trong bản này | Mức thay đổi |
 |---|---|---|
-| `QuanLyDocGia.cpp`: `tim_cay`, `XoayTrai`, `XoayPhai`, `ThemDocGiaAVL`, `CanBangLai`, `TachNutNhoNhat`, `XoaNutAVL`, `HieuChinhDocGia`, `SinhMaTheTiepTheo`, `Huydocgia`, `HuyCayDocGia` | `10_DocGia_CayAVL.cpp` | Giữ nguyên thân hàm; `caydocgia.root` thành `caydocgia`; bỏ `cout` vì giao diện dùng `gotoxy` |
-| `them_cay`, `XoaDocGia` | `10_DocGia_CayAVL.cpp` | Trả về `bool` (và chuỗi lỗi) thay cho `cout` |
-| `LichSuMuonTra.cpp`: 6 hàm | `13_MuonTra_DSLKDon.cpp` | Giữ nguyên; `CapNhatLuotTra` thêm tham số trạng thái để dùng cho báo mất |
-| `01_HamTienIch.cpp`: chuỗi (Thái), ngày tháng (Thành) | `01_HamTienIch.cpp` | Giữ nguyên logic; `SoSanhChuoi` gọi lại `ChuanHoaChuoi` |
-| `NhapSach.cpp`: `HopLeDauSach`, `TimDauSachTheoISBN`, `TimViTriChenTheoTen`, `ThemDauSach` | `11_DauSach_MangConTro.cpp` | Giữ logic; tham số `ThuVien` thành `DanhSachDauSach` |
+| `QuanLyDocGia.cpp`: `tim_cay`, `XoayTrai`, `XoayPhai`, `ThemDocGiaAVL`, `CanBangLai`, `TachNutNhoNhat`, `XoaNutAVL`, `HieuChinhDocGia`, `SinhMaTheTiepTheo`, `Huydocgia`, `HuyCayDocGia` | `1.1_DocGia_CayAVL.cpp` | Giữ nguyên thân hàm; `caydocgia.root` thành `caydocgia`; bỏ `cout` vì giao diện dùng `gotoxy` |
+| `them_cay`, `XoaDocGia` | `1.1_DocGia_CayAVL.cpp` | Trả về `bool` (và chuỗi lỗi) thay cho `cout` |
+| `LichSuMuonTra.cpp`: 6 hàm | `1.4_MuonTra_DSLKDon.cpp` | Giữ nguyên; `CapNhatLuotTra` thêm tham số trạng thái để dùng cho báo mất |
+| `0.1_HamTienIch.cpp`: chuỗi (Thái), ngày tháng (Thành) | `0.1_HamTienIch.cpp` | Giữ nguyên logic; `SoSanhChuoi` gọi lại `ChuanHoaChuoi` |
+| `NhapSach.cpp`: `HopLeDauSach`, `TimDauSachTheoISBN`, `TimViTriChenTheoTen`, `ThemDauSach` | `1.2_DauSach_MangConTro.cpp` | Giữ logic; tham số `ThuVien` thành `DanhSachDauSach` |
 | `GiaoDien.cpp`: `ManHinhNhapDauSach` (kiểm tra từng ô ngay khi nhập) | `ManHinhThemDauSach` trong `c_NhapSach.cpp` | Giữ thứ tự và điều kiện kiểm tra từng ô; dùng ô nhập chung `NhapChuoi` |
-| `CuonSach.cpp`: `TimCuonSachTrongDauSach`, `TimCuonSachToanCuc`, `DemCuonSach` | `12_DanhMucSach_DSLKDon.cpp` | Giữ logic; tách ISBN thành hàm riêng `TachISBNTuMaSach` |
-| `CuonSach.cpp`: `SinhMaSachTuDong`, `HopLeCuonSach` | `12_DanhMucSach_DSLKDon.cpp` | Viết gọn lại: cộng 1 bằng số nguyên thay cho cộng chuỗi; `HopLeViTri` sửa lỗi điều kiện `&&` |
-| `TimSach.cpp`: `ChuaChuoi` | `01_HamTienIch.cpp` | Giữ nguyên |
-| `Top10Sach.cpp`: `DemDocGia`, `LayDanhSachDocGia` và hai hàm duyệt | `10_DocGia_CayAVL.cpp` | Giữ nguyên, bỏ `const` ở con trỏ nút |
+| `CuonSach.cpp`: `TimCuonSachTrongDauSach`, `TimCuonSachToanCuc`, `DemCuonSach` | `1.3_DanhMucSach_DSLKDon.cpp` | Giữ logic; tách ISBN thành hàm riêng `TachISBNTuMaSach` |
+| `CuonSach.cpp`: `SinhMaSachTuDong`, `HopLeCuonSach` | `1.3_DanhMucSach_DSLKDon.cpp` | Viết gọn lại: cộng 1 bằng số nguyên thay cho cộng chuỗi; `HopLeViTri` sửa lỗi điều kiện `&&` |
+| `TimSach.cpp`: `ChuaChuoi` | `0.1_HamTienIch.cpp` | Giữ nguyên |
+| `Top10Sach.cpp`: `DemDocGia`, `LayDanhSachDocGia` và hai hàm duyệt | `1.1_DocGia_CayAVL.cpp` | Giữ nguyên, bỏ `const` ở con trỏ nút |
 
-Phần viết mới hoàn toàn: `02_GiaoDien.cpp`, `04_LuuDocFile.cpp`, `03_Menu_TongQuan.cpp`, `main.cpp`, các màn hình b, d, f, g, h, i và phần xếp hạng của j (trong `MaNguonUpdate/` các file này còn trống).
+Phần viết mới hoàn toàn: `0.2_GiaoDien.cpp`, `0.4_LuuDocFile.cpp`, `0.3_Menu_TongQuan.cpp`, `main.cpp`, các màn hình b, d, f, g, h, i và phần xếp hạng của j (trong `MaNguonUpdate/` các file này còn trống).
 
 ## Các quy ước cần giải thích được với thầy
 

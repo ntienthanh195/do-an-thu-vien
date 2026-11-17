@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    10. CAU TRUC DU LIEU: CAY DOC GIA (cay nhi phan tim kiem, giu can bang theo AVL)

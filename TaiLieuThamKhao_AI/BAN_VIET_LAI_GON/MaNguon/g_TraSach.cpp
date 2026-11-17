@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    g. TRA SACH
@@ -7,8 +7,8 @@
              sang "da thanh ly", va the doc gia bi khoa (quy uoc cua nhom, can hoi lai thay).
 
    HAM LAY TU FILE KHAC:
-     12_DanhMucSach_DSLKDon.cpp: TimCuonSachToanCuc
-     13_MuonTra_DSLKDon.cpp: CapNhatLuotTra, TimMuonDangMuonTheoMa
+     1.3_DanhMucSach_DSLKDon.cpp: TimCuonSachToanCuc
+     1.4_MuonTra_DSLKDon.cpp: CapNhatLuotTra, TimMuonDangMuonTheoMa
      a_QuanLyDocGia.cpp: InThongTinDocGia, NhapMaTheTimDocGia
      f_MuonSach.cpp: InSachDangMuon
    ============================================================ */

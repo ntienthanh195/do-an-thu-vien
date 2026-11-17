@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    e. TIM THONG TIN SACH THEO TEN SACH
@@ -6,7 +6,7 @@
    Tim theo kieu "ten sach co chua tu khoa", khong phan biet hoa/thuong.
 
    HAM LAY TU FILE KHAC:
-     12_DanhMucSach_DSLKDon.cpp: DemCuonSach
+     1.3_DanhMucSach_DSLKDon.cpp: DemCuonSach
    ============================================================ */
 
 // In thong tin mot dau sach va mot trang cac cuon sach cua no.

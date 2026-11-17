@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    11. CAU TRUC DU LIEU: DANH SACH DAU SACH (danh sach tuyen tinh = mang con tro)

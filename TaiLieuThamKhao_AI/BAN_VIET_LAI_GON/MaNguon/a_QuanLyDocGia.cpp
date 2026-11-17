@@ -1,12 +1,12 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    a. QUAN LY THE DOC GIA: them / xoa / hieu chinh (cac man hinh)
-   Thao tac tren cay (tim, them, xoa, xoay AVL, cap ma the) nam o 10_DocGia_CayAVL.cpp:
+   Thao tac tren cay (tim, them, xoa, xoay AVL, cap ma the) nam o 1.1_DocGia_CayAVL.cpp:
      tim_cay, them_cay, XoaDocGia, HieuChinhDocGia, MaTheLonNhat, SinhMaTheTiepTheo.
 
    HAM LAY TU FILE KHAC:
-     10_DocGia_CayAVL.cpp: HieuChinhDocGia, MaTheLonNhat, SinhMaTheTiepTheo, XoaDocGia, them_cay, tim_cay
+     1.1_DocGia_CayAVL.cpp: HieuChinhDocGia, MaTheLonNhat, SinhMaTheTiepTheo, XoaDocGia, them_cay, tim_cay
    ============================================================ */
 
 /* ===================== GIAO DIEN ===================== */

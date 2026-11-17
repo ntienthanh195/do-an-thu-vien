@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    j. 10 SACH CO SO LUOT MUON NHIEU NHAT
@@ -12,9 +12,9 @@
            moi vong dua dau sach nhieu luot nhat con lai len dau.
 
    HAM LAY TU FILE KHAC:
-     10_DocGia_CayAVL.cpp: DemDocGia, LayDanhSachDocGia
-     11_DauSach_MangConTro.cpp: TimViTriDauSachTheoISBN
-     12_DanhMucSach_DSLKDon.cpp: TachISBNTuMaSach
+     1.1_DocGia_CayAVL.cpp: DemDocGia, LayDanhSachDocGia
+     1.2_DauSach_MangConTro.cpp: TimViTriDauSachTheoISBN
+     1.3_DanhMucSach_DSLKDon.cpp: TachISBNTuMaSach
    ============================================================ */
 
 void ManHinhTop10Sach(const DanhSachDauSach &ds, CayDocGia &cay)

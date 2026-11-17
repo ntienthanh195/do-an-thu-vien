@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    f. MUON SACH
@@ -6,8 +6,8 @@
    Khong cho muon khi: the bi khoa, dang giu du 3 cuon, hoac dang giu sach qua han.
 
    HAM LAY TU FILE KHAC:
-     12_DanhMucSach_DSLKDon.cpp: TimCuonSachToanCuc
-     13_MuonTra_DSLKDon.cpp: CoSachQuaHan7Ngay, Dem_so_sach_dang_muon, SoNgayQuaHan, them_lich_su
+     1.3_DanhMucSach_DSLKDon.cpp: TimCuonSachToanCuc
+     1.4_MuonTra_DSLKDon.cpp: CoSachQuaHan7Ngay, Dem_so_sach_dang_muon, SoNgayQuaHan, them_lich_su
      a_QuanLyDocGia.cpp: InThongTinDocGia, NhapMaTheTimDocGia
    ============================================================ */
 

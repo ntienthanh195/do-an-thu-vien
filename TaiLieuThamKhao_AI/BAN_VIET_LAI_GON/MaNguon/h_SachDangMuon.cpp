@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    h. LIET KE MA SACH, TEN SACH MA DOC GIA CO SO THE X DANG MUON
@@ -10,7 +10,7 @@
      f_MuonSach.cpp: InSachDangMuon
    ============================================================ */
 
-// @TT [h] Tim doc gia bang tim_cay (10_), liet ke bang InSachDangMuon (f_MuonSach.cpp)
+// @TT [h] Tim doc gia bang tim_cay (1.1_DocGia_CayAVL.cpp), liet ke bang InSachDangMuon (f_MuonSach.cpp)
 void ManHinhSachDangMuon(const DanhSachDauSach &ds, CayDocGia &cay)
 {
     while (true)

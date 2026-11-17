@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 
 /* ============================================================
    d. IN DAU SACH THEO TUNG THE LOAI, trong moi the loai thi ten sach tang dan.
@@ -9,7 +9,7 @@
    tuc la van tang dan theo ten sach, nen khong can so sanh ten lan nua.
 
    HAM LAY TU FILE KHAC:
-     12_DanhMucSach_DSLKDon.cpp: DemCuonSach
+     1.3_DanhMucSach_DSLKDon.cpp: DemCuonSach
    ============================================================ */
 
 /* ===================== XU LY ===================== */

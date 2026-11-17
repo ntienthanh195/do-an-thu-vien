@@ -1,4 +1,4 @@
-#include "00_KhaiBaoChung.h"
+#include "0.0_KhaiBaoChung.h"
 #include <ctime>
 
 /* ===================== XU LY CHUOI ===================== */
